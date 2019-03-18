@@ -1,0 +1,6 @@
+[submodule "Unity/Assets/ilib-mvvm"]
+	path = Unity/Assets/ilib-mvvm
+	url = https://github.com/yazawa-ichio/mvvm.git
+[submodule "Unity/Assets/ilib-untiy-etc"]
+	path = Unity/Assets/ilib-untiy-etc
+	url = https://github.com/yazawa-ichio/ilib-unity-etc.git
