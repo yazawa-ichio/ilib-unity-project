@@ -4,3 +4,6 @@
 [submodule "Unity/Assets/ilib-untiy-etc"]
 	path = Unity/Assets/ilib-untiy-etc
 	url = https://github.com/yazawa-ichio/ilib-unity-etc.git
+[submodule "Unity/Assets/ilib-abloader"]
+	path = Unity/Assets/ilib-abloader
+	url = https://github.com/yazawa-ichio/ilib-abloader.git
