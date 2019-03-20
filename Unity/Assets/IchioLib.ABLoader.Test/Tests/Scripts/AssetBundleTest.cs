@@ -51,6 +51,9 @@ public abstract class AssetBundleTest
 		//エラーのログを有効化
 		ABLoader.HandleErrorLog(null);
 		ABLoader.HandleAssert(null);
+		ABLoader.UnloadMode = UnloadMode.Immediately;
+		AutoUnloader.UnloadCycle = 2f;
+		AutoUnloader.Pause = false;
 
 		ABLoader.MaxDownloadCount = 5;
 		ABLoader.MaxLoadCount = 10;
@@ -608,6 +611,76 @@ public abstract class AssetBundleTest
 			CacheTest(name, !error);
 			LoadedTest(name, false);
 		}
+
+	}
+
+	[UnityTest]
+	public IEnumerator LoadTest14()
+	{
+		//オートアンロードテスト
+		yield return Init();
+		ABLoader.UnloadMode = UnloadMode.Auto;
+		AutoUnloader.UnloadCycle = 0;
+		BundleContainerRef containerRef = null;
+		ABLoader.LoadContainer("materials/testmaterial", (c) => c.Dispose(), ex => throw ex);
+		ABLoader.LoadContainer("materials/testmaterial", (c) => containerRef = c, ex => throw ex);
+		yield return new WaitWhile(() => containerRef == null);
+		Debug.Assert(containerRef.LoadAsset<Material>("TestMaterial") != null);
+		LoadedTest("materials/testmaterial", true);
+		containerRef.Dispose();
+		//オートモードでは即時解放されない
+		LoadedTest("materials/testmaterial", true);
+		yield return null;
+		yield return null;
+		//次のフレームで解放される
+		LoadedTest("materials/testmaterial", false);
+
+		//Unloaderを一旦無効にする
+		AutoUnloader.Pause = true;
+		System.WeakReference reference = null;
+		//GCで回収される
+		ABLoader.LoadContainer("materials/testmaterial", (c) => reference = new System.WeakReference(c), ex => throw ex);
+		yield return new WaitWhile(() => reference == null);
+		LoadedTest("materials/testmaterial", true);
+		while (reference.IsAlive)
+		{
+			yield return null;
+			System.GC.Collect();
+			System.GC.WaitForPendingFinalizers();
+			yield return null;
+		}
+		LoadedTest("materials/testmaterial", true);
+		//手動で解放する
+		ABLoader.Unload();
+		LoadedTest("materials/testmaterial", false);
+
+
+		reference = null;
+
+		//GCで解放した後、再ダウンロードしても正常に動く
+		ABLoader.LoadContainer("materials/testmaterial", (c) => reference = new System.WeakReference(c), ex => throw ex);
+		yield return new WaitWhile(() => reference == null);
+		LoadedTest("materials/testmaterial", true);
+		while (reference.IsAlive)
+		{
+			yield return null;
+			System.GC.Collect();
+			System.GC.WaitForPendingFinalizers();
+			yield return null;
+		}
+		LoadedTest("materials/testmaterial", true);
+		yield return null;
+		//実際にはアンロードされていないので即時ロードされる
+		ABLoader.LoadContainer("materials/testmaterial", (c) => containerRef = c, ex => throw ex);
+		Assert.IsNotNull(containerRef);
+
+		//解放されない
+		ABLoader.Unload();
+		LoadedTest("materials/testmaterial", true);
+		//アンロード
+		containerRef.Dispose();
+		ABLoader.Unload();
+		LoadedTest("materials/testmaterial", false);
 
 	}
 }
