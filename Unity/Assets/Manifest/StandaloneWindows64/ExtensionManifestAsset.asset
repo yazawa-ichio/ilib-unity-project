@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2718789ddcdc8414cbe5fb3b1b3515d4, type: 3}
+  m_Name: ExtensionManifestAsset
+  m_EditorClassIdentifier: 
+  Infos:
+  - Name: materials/testmaterial
+    Hash: 45c3eb89ae435302726ff22d95566410
+    CRC: 928336700
+    Size: 38278
+    DepIndex: -1
+    TagIndex: 0
+  - Name: prefabs
+    Hash: 095f0d8f9797c02c0e6d4ee660e78911
+    CRC: 583878744
+    Size: 40490
+    DepIndex: 0
+    TagIndex: 1
+  - Name: sprites/circle
+    Hash: cc8f84656a97abfecdcba99017c06a5d
+    CRC: 70312512
+    Size: 6169
+    DepIndex: -1
+    TagIndex: 2
+  - Name: sprites/diamond
+    Hash: b7b801200b2308ae84ab12550aef1a2b
+    CRC: 3297319974
+    Size: 3700
+    DepIndex: -1
+    TagIndex: 2
+  - Name: sprites/hexagon
+    Hash: c5754a5b0c8194695fe6e3f9f12c59c3
+    CRC: 2037280013
+    Size: 3726
+    DepIndex: -1
+    TagIndex: 2
+  - Name: sprites/polygon
+    Hash: 1090be430022a63b5f7182471ca8686f
+    CRC: 3420930570
+    Size: 3744
+    DepIndex: -1
+    TagIndex: 2
+  - Name: sprites/square
+    Hash: 18c9da594eea100aaa22c1c07f97e25f
+    CRC: 3436868912
+    Size: 3686
+    DepIndex: -1
+    TagIndex: 2
+  - Name: sprites/triangle
+    Hash: 058dbec3c10771b7b50300935c30cc42
+    CRC: 3720294959
+    Size: 3714
+    DepIndex: -1
+    TagIndex: 2
+  - Name: testscene
+    Hash: 6bc94fb6fda357188ae7ec9ee526af06
+    CRC: 3569621018
+    Size: 103613
+    DepIndex: -1
+    TagIndex: 3
+  DepInfo:
+  - Deps: 00000000
+  TagInfo:
+  - Names:
+    - Materials
+  - Names:
+    - Prefabs
+  - Names:
+    - Sprites
+  - Names:
+    - Scenes
+  RefInfo:
+  - Index: 0
+    Id: 6e22583ded32148498d47f9413efb63c
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Materials/TestMaterial.mat
+  - Index: 1
+    Id: 2653b11744d60e843941b9e68ff19b46
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Prefabs/Cube.prefab
+  - Index: 1
+    Id: 6d130a2cbf3857b40abd967b667b57d3
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Prefabs/Cylinder.prefab
+  - Index: 2
+    Id: e24db0a4401d8ad45ad5c77ce59d47c2
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Circle.png
+  - Index: 3
+    Id: 083e98c42f9344e4a92b1871cc1b5e2b
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Diamond.png
+  - Index: 4
+    Id: 56a5790ebf0c34b47ab7379d44495b59
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Hexagon.png
+  - Index: 5
+    Id: 591c86a03c082084d89ac347d0a54905
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Polygon.png
+  - Index: 6
+    Id: 8034396ad50cbaa4c868e918091d97fe
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Square.png
+  - Index: 7
+    Id: 371659616d089374aa27f81b0a8c1448
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Sprites/Triangle.png
+  - Index: 8
+    Id: e2b01d2fdbca70f409b7ab5ebbbce70d
+    AssetName: Assets/ABLoader/Tests/AssetBundles/Scenes/TestScene.unity

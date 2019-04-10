@@ -11,8 +11,9 @@ using UnityEngine.Assertions;
 public class EditorTest : AssetBundleTest
 {
 	protected override bool IsEditorTest() { return true; }
-	protected override ILoadOperator LoadOperator()
+	protected override ILoadOperator LoadOperator(bool useExManifet)
 	{
+		UseExManifest = false;
 		return new InternalLoadOperator("", "");
 	}
 }
@@ -20,34 +21,42 @@ public class EditorTest : AssetBundleTest
 
 public class InternalTest : AssetBundleTest
 {
-	protected override ILoadOperator LoadOperator()
+	protected override ILoadOperator LoadOperator(bool useExManifet)
 	{
-		return new InternalLoadOperator(Application.streamingAssetsPath, "StandaloneWindows");
+		string manifest = UseExManifest ? "manifest" : "StandaloneWindows64";
+		string assetName = UseExManifest ? "ExtensionManifestAsset" : "AssetBundleManifest";
+		return new InternalLoadOperator(Application.streamingAssetsPath, manifest, assetName);
 	}
 }
 
 public class SimulateDownloadTest : AssetBundleTest
 {	
 	protected override bool UseCache() { return true; }
-	protected override ILoadOperator LoadOperator()
+	protected override ILoadOperator LoadOperator(bool useExManifet)
 	{
-		return new NetworkLoadOperator("file://" + Application.streamingAssetsPath, Path.Combine(Application.temporaryCachePath, "AssetBundles"), "StandaloneWindows", "");
+		string path = "file://" + Application.streamingAssetsPath;
+		string cache = Path.Combine(Application.temporaryCachePath, "AssetBundles");
+		string manifest = UseExManifest ? "manifest" : "StandaloneWindows64";
+		string assetName = UseExManifest ? "ExtensionManifestAsset" : "AssetBundleManifest";
+		return new NetworkLoadOperator(path, cache, manifest, "", assetName);
 	}
 }
 
 
 public abstract class AssetBundleTest
 {
-	protected abstract ILoadOperator LoadOperator();
+	protected abstract ILoadOperator LoadOperator(bool useExManifet);
 	protected virtual bool UseCache() { return false; }
 	protected virtual bool IsEditorTest() { return false; }
+	protected bool UseExManifest { get; set; }
 
-	IEnumerator Init(bool clearCache = true)
+	IEnumerator Init(bool clearCache = true, bool useExManifet = false)
 	{
 		yield return ABLoader.Stop();
 #if UNITY_EDITOR
 		ABLoader.UseEditorAsset = IsEditorTest();
 #endif
+		UseExManifest = useExManifet;
 		//エラーのログを有効化
 		ABLoader.HandleErrorLog(null);
 		ABLoader.HandleAssert(null);
@@ -58,7 +67,7 @@ public abstract class AssetBundleTest
 		ABLoader.MaxDownloadCount = 5;
 		ABLoader.MaxLoadCount = 10;
 
-		var loadOperator = LoadOperator();
+		var loadOperator = LoadOperator(useExManifet);
 		if (UseCache() && clearCache && Directory.Exists(loadOperator.GetCacheRoot()))
 		{
 			Directory.Delete(loadOperator.GetCacheRoot(), true);
@@ -85,7 +94,7 @@ public abstract class AssetBundleTest
 	string GetCachePath(string name)
 	{
 		if (!UseCache()) return "";
-		var op = LoadOperator();
+		var op = LoadOperator(false);
 		var rootPath = op.GetCacheRoot();
 		var checkPath = op.LoadPath(name, "");
 		var dirPath = Path.GetDirectoryName(checkPath);
@@ -682,5 +691,49 @@ public abstract class AssetBundleTest
 		ABLoader.Unload();
 		LoadedTest("materials/testmaterial", false);
 
+	}
+
+	[UnityTest]
+	public IEnumerator LoadTest15()
+	{
+		//拡張マニフェストを利用する
+		yield return Init(useExManifet: true);
+		if (!UseExManifest)
+		{
+			yield break;
+		}
+		string[] bundles = new string[] {
+			"prefabs",
+			"testscene",
+			"sprites/circle",
+			"sprites/diamond",
+			"sprites/hexagon",
+			"sprites/polygon",
+			"sprites/triangle",
+		};
+
+		//サイズが取れている
+		Assert.AreNotEqual(ABLoader.GetSize(bundles), bundles.Length);
+
+		//CRCでのロードが出来る
+		List<BundleContainerRef> refs = new List<BundleContainerRef>();
+		for (int i = 0; i < bundles.Length; i++)
+		{
+			ABLoader.LoadContainer(bundles[i], (r) => refs.Add(r), ex => throw ex);
+		}
+		yield return new WaitUntil(() => refs.Count == bundles.Length);
+
+		//GUIDの参照からロードする
+		var (bundle, name) = ABLoader.GetReference("083e98c42f9344e4a92b1871cc1b5e2b");
+		Assert.AreEqual(bundle, "sprites/diamond");
+		Assert.AreEqual(name, "Assets/ABLoader/Tests/AssetBundles/Sprites/Diamond.png");
+		Sprite sprite = null;
+		ABLoader.LoadAsset<Sprite>(bundle, name, x => sprite = x, ex => throw ex);
+		yield return new WaitUntil(() => sprite != null);
+
+		bool ret = false;
+		var (length, progress) = ABLoader.DownloadByTags(new string[] { "Sprites" }, (r) => ret = r, ex => throw ex);
+		yield return new WaitUntil(() => ret);
+		Assert.AreEqual(length, 6);
 	}
 }
