@@ -7,3 +7,6 @@
 [submodule "Unity/Assets/ilib-abloader"]
 	path = Unity/Assets/ilib-abloader
 	url = https://github.com/yazawa-ichio/ilib-abloader.git
+[submodule "Unity/Assets/ilib-serv-injector"]
+	path = Unity/Assets/ilib-serv-injector
+	url = https://github.com/yazawa-ichio/ilib-serv-injector.git
