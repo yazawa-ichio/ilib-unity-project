@@ -10,3 +10,6 @@
 [submodule "Unity/Assets/ilib-serv-injector"]
 	path = Unity/Assets/ilib-serv-injector
 	url = https://github.com/yazawa-ichio/ilib-serv-injector.git
+[submodule "Unity/Assets/ilib-scwidgets"]
+	path = Unity/Assets/ilib-scwidgets
+	url = https://github.com/yazawa-ichio/ilib-scwidgets.git
