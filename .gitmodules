@@ -13,3 +13,6 @@
 [submodule "Unity/Assets/ilib-scwidgets"]
 	path = Unity/Assets/ilib-scwidgets
 	url = https://github.com/yazawa-ichio/ilib-scwidgets.git
+[submodule "Unity/Assets/ilib-unity-save"]
+	path = Unity/Assets/ilib-unity-save
+	url = https://github.com/yazawa-ichio/ilib-unity-save.git
