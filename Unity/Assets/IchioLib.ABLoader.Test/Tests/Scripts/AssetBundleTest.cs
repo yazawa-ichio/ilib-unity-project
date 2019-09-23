@@ -726,7 +726,7 @@ public abstract class AssetBundleTest
 		//GUIDの参照からロードする
 		var (bundle, name) = ABLoader.GetReference("083e98c42f9344e4a92b1871cc1b5e2b");
 		Assert.AreEqual(bundle, "sprites/diamond");
-		Assert.AreEqual(name, "Assets/ABLoader/Tests/AssetBundles/Sprites/Diamond.png");
+		Assert.AreEqual(name, "Assets/IchioLib.ABLoader.Test/Tests/AssetBundles/Sprites/Diamond.png");
 		Sprite sprite = null;
 		ABLoader.LoadAsset<Sprite>(bundle, name, x => sprite = x, ex => throw ex);
 		yield return new WaitUntil(() => sprite != null);

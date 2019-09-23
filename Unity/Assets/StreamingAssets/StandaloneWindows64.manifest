@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 465477449
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: testscene
+      Dependencies: {}
+    Info_1:
+      Name: sprites/diamond
+      Dependencies: {}
+    Info_2:
+      Name: sprites/triangle
+      Dependencies: {}
+    Info_3:
+      Name: sprites/hexagon
+      Dependencies: {}
+    Info_4:
+      Name: sprites/polygon
+      Dependencies: {}
+    Info_5:
+      Name: sprites/square
+      Dependencies: {}
+    Info_6:
+      Name: sprites/circle
+      Dependencies: {}
+    Info_7:
+      Name: materials/testmaterial
+      Dependencies: {}
+    Info_8:
+      Name: prefabs
+      Dependencies:
+        Dependency_0: materials/testmaterial

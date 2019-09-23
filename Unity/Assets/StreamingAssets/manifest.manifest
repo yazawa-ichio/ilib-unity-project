@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2272128551
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0fcfc806208d8ce2f953cbc7c820f7f2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4bd503ccdef300354c14a4b7f234df16
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 2718789ddcdc8414cbe5fb3b1b3515d4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Manifest/StandaloneWindows64/ExtensionManifestAsset.asset
+Dependencies: []

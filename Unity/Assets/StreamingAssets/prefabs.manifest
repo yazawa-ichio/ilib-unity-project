@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 3285911316
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 869e3e4e080d20de42f82c37ab9836ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 36016da3c9f0e99a32ad7e014d974731
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+Assets:
+- Assets/IchioLib.ABLoader.Test/Tests/AssetBundles/Prefabs/Cube.prefab
+- Assets/IchioLib.ABLoader.Test/Tests/AssetBundles/Prefabs/Cylinder.prefab
+Dependencies:
+- C:/Users/YUI/Documents/Work/GitHub/ilib-unity-project/Unity/AssetBundles/StandaloneWindows64/materials/testmaterial
