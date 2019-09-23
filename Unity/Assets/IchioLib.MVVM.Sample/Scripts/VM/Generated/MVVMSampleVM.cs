@@ -103,6 +103,64 @@ namespace ILib.Sample.MVVM
 		}
 		ReactiveProperty<UnityEngine.Vector3> m_Position;
 
+		/// BindingPath : Input
+		/// Target: ILib.MVVM.InputFieldBind
+		public ReactiveProperty<string> InputValue
+		{
+			get
+			{
+				if(m_InputValue == null) m_InputValue = new ReactiveProperty<string>("Input", this);
+				return m_InputValue;
+			}
+		}
+		ReactiveProperty<string> m_InputValue;
+
+		private BindingCommand<string> m_Input;
+
+		/// BindingPath : Input
+		/// Sender: ILib.MVVM.InputFieldBind
+		public ICommand<string> Input
+		{
+			get
+			{
+				return m_Input?.Get() ?? null;
+			}
+			set
+			{
+				if (m_Input == null) m_Input = new BindingCommand<string>("Input", this);
+				m_Input.Set(value);
+			}
+		}
+
+		/// BindingPath : Submit
+		/// Target: ILib.MVVM.ButtonBind
+		public ReactiveProperty<bool> SubmitValue
+		{
+			get
+			{
+				if(m_SubmitValue == null) m_SubmitValue = new ReactiveProperty<bool>("Submit", this);
+				return m_SubmitValue;
+			}
+		}
+		ReactiveProperty<bool> m_SubmitValue;
+
+		private BindingCommand<string> m_Submit;
+
+		/// BindingPath : Submit
+		/// Sender: ILib.MVVM.ButtonBind
+		public ICommand<string> Submit
+		{
+			get
+			{
+				return m_Submit?.Get() ?? null;
+			}
+			set
+			{
+				if (m_Submit == null) m_Submit = new BindingCommand<string>("Submit", this);
+				m_Submit.Set(value);
+			}
+		}
+
 
 
 	}

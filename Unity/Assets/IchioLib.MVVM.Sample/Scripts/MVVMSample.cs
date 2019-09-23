@@ -21,6 +21,7 @@ namespace ILib.Sample.MVVM
 					vm.Collection.Add(new SampleMVVMTextVM { Text = "test"+count });
 				});
 				vm.Slider = new DelegateCommand<float>(v => vm.Position.Value = new Vector3(0, v * 10f, 0));
+				vm.Submit = new DelegateCommand<string>(v => Debug.Log(v));
 			});
 
 		}

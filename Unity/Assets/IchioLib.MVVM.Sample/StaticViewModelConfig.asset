@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StaticViewModelConfig
   m_EditorClassIdentifier: 
   m_GenerateConfig:
-    Output: Assets\IchioLib.Sample\MVVM\Scripts/VM/Generated
+    Output: Assets\IchioLib.MVVM.Sample\Scripts/VM/Generated
     NameSpace: ILib.Sample.MVVM
     NameSuffix: VM
     ReactivePropertyMode: 1
