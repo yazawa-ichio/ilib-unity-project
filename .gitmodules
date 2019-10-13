@@ -1,8 +1,8 @@
 [submodule "Unity/Assets/ilib-mvvm"]
 	path = Unity/Assets/ilib-mvvm
 	url = https://github.com/yazawa-ichio/mvvm.git
-[submodule "Unity/Assets/ilib-untiy-etc"]
-	path = Unity/Assets/ilib-untiy-etc
+[submodule "Unity/Assets/ilib-unity-etc"]
+	path = Unity/Assets/ilib-unity-etc
 	url = https://github.com/yazawa-ichio/ilib-unity-etc.git
 [submodule "Unity/Assets/ilib-abloader"]
 	path = Unity/Assets/ilib-abloader
