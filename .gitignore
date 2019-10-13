@@ -5,7 +5,7 @@ Unity/*.sln
 Unity/*.csproj
 Unity/*.vs/
 Unity/obj/
-doc/api/
-doc/obj/
-doc/manual/ilib-*/
+doc_source/api/
+doc_source/obj/
+doc_source/manual/ilib-*/
 _site/

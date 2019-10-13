@@ -56,7 +56,6 @@
     ],
     "dest": "../_site/",
     "disableGitFeatures": false,
-    "template": "statictoc",
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ]

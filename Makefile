@@ -3,10 +3,10 @@ ifndef UNITY_APP
 endif
 
 doc-build: doc-metadata
-	docfx build doc/docfx.json
+	docfx build doc_source/docfx.json -t statictoc
 
 doc-metadata:
-	docfx metadata doc/docfx.json
+	docfx metadata doc_source/docfx.json
 	sh ./sync_doc.sh
 
 rebuild-project:
@@ -18,11 +18,6 @@ rebuild-project:
 
 doc-release: rebuild-project doc-metadata
 	rm -rf _site
-	rm -rf site
-	docfx build doc/docfx.json
-	cp -r _site site
-
-
-
-
-
+	rm -rf docs
+	docfx build doc_source/docfx.json
+	cp -r _site docs
