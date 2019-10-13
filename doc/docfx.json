@@ -1,0 +1,63 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../Unity",
+          "files": [
+            "IchioLib.MVVM*.csproj",
+            "ILib.MVVM.StaticViewModel.csproj",
+            "ILib.ScDebugMenu*.csproj",
+            "ILib.ScWidgets.csproj",
+            "ILib.AssetBundles.csproj",
+            "ILib.AssetBundles.*.csproj",
+            "ILib.csproj",
+            "ILib.Editor.csproj",
+            "ILib.Save.csproj",
+            "ILib.ServInjector.csproj"
+          ]
+        }
+      ],
+      "filter": "filterConfig.yml",
+      "dest": "api",
+      "disableGitFeatures": false
+    }
+  ],
+  "build": {
+    "globalMetadata":
+    {
+      "_appTitle": "Yazawa Ichio Unity Package Document",
+      "_appFooter": "Yazawa Ichio Unity Package Document",
+      "_enableSearch": true,
+      "_gitContribute": {
+        "branch": "master",
+        "path": ""
+      },
+      "_gitUrlPattern": "github"
+    },
+    "content": [
+      {
+        "files": [ "api/*.{md,yml}" ]
+      },
+      {
+        "src": "manual/",
+        "dest": "manual/",
+        "files": [ "**/*.{md,yml}" ]
+      },
+      {
+        "files": [ "toc.yml", "index.md" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "images/*" ]
+      }
+    ],
+    "dest": "../_site/",
+    "disableGitFeatures": false,
+    "template": "statictoc",
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ]
+  }
+}

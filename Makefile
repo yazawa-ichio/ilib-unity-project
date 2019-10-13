@@ -1,0 +1,27 @@
+ifndef UNITY_APP
+	UNITY_APP="C:/Program Files/Unity/Hub/Editor/2018.4.8f1/Editor/Unity.exe"
+endif
+
+doc-build: doc-metadata
+	docfx build doc/docfx.json
+
+doc-metadata:
+	docfx metadata doc/docfx.json
+	echo "# Scripting API" > doc/api/index.md
+
+rebuild-project:
+	echo ${PWD}
+	rm -f ./Unity/*.csproj
+	rm -f ./Unity/*.sln
+	rm -rf ./Unity/Library/ScriptAssemblies
+	${UNITY_APP}  -quit -batchmode -projectPath "${PWD}/Unity" -executeMethod "ILib.SolutionSync.Run"
+
+doc-release: rebuild-project doc-metadata
+	rm -rf _site
+	docfx build doc/docfx.json
+	cp -r _site site
+
+
+
+
+
