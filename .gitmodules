@@ -16,3 +16,6 @@
 [submodule "Unity/Assets/ilib-unity-save"]
 	path = Unity/Assets/ilib-unity-save
 	url = https://github.com/yazawa-ichio/ilib-unity-save.git
+[submodule "Unity/Assets/ilib-sound-control"]
+	path = Unity/Assets/ilib-sound-control
+	url = https://github.com/yazawa-ichio/ilib-sound-control.git
