@@ -8,7 +8,7 @@ namespace ILib
 {
 	public static class SolutionSync
 	{
-		[MenuItem("Tool/SolutionSync")]
+		[MenuItem("Tools/SolutionSync")]
 		public static void Run()
 		{
 			AssetDatabase.Refresh();

@@ -7,7 +7,7 @@ using System.Linq;
 
 public class TestWindow : EditorWindow
 {
-	[MenuItem("Tool/ScWidgetTest")]
+	[MenuItem("Tools/ScWidgetTest")]
 	static void Open()
 	{
 		GetWindow<TestWindow>();
