@@ -7,7 +7,7 @@ doc-build: doc-metadata
 
 doc-metadata:
 	docfx metadata doc/docfx.json
-	echo "# Scripting API" > doc/api/index.md
+	sh ./sync_doc.sh
 
 rebuild-project:
 	echo ${PWD}
@@ -18,6 +18,7 @@ rebuild-project:
 
 doc-release: rebuild-project doc-metadata
 	rm -rf _site
+	rm -rf site
 	docfx build doc/docfx.json
 	cp -r _site site
 
