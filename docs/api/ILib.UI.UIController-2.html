@@ -1,0 +1,1412 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UIController&lt;TParam, UControl&gt;
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UIController&lt;TParam, UControl&gt;
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.UI.UIController`2">
+  
+  
+  <h1 id="ILib_UI_UIController_2" data-uid="ILib.UI.UIController`2" class="text-break">Class UIController&lt;TParam, UControl&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>UIの表示制御の基底クラスです。
+Open・Change・Closeの操作を行えます。
+実行中に非アクティブにするとコルーチンが停止するため正常に動かなくなります。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UIController&lt;TParam, UControl&gt;</span></div>
+      <div class="level6"><a class="xref" href="ILib.UI.UIQueue-2.html">UIQueue&lt;TParam, UControl&gt;</a></div>
+      <div class="level6"><a class="xref" href="ILib.UI.UIStack-2.html">UIStack&lt;TParam, UControl&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ILib.UI.IController.html">IController</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
+  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h5 id="ILib_UI_UIController_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UIController&lt;TParam, UControl&gt; : MonoBehaviour, IController where UControl : class, IControl</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TParam</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">UControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L99">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_HasProcess_" data-uid="ILib.UI.UIController`2.HasProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_HasProcess" data-uid="ILib.UI.UIController`2.HasProcess">HasProcess</h4>
+  <div class="markdown level1 summary"><p>実行中のプロセスがある場合にtrueが返ります。
+UIQueueの場合、表示待ちのリクエストはプロセスに含まれないことに注意してください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProcess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L266">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Change_" data-uid="ILib.UI.UIController`2.Change*"></a>
+  <h4 id="ILib_UI_UIController_2_Change__1_System_String__0_ILib_UI_UIInstance_ILib_UI_UIInstance___" data-uid="ILib.UI.UIController`2.Change``1(System.String,`0,ILib.UI.UIInstance,ILib.UI.UIInstance[])">Change&lt;T&gt;(String, TParam, UIInstance, UIInstance[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;UIInstance&gt; Change&lt;T&gt;(string path, TParam prm, UIInstance parent, UIInstance[] releases)
+    where T : UControl</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>[]</td>
+        <td><span class="parametername">releases</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L20">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Close_" data-uid="ILib.UI.UIController`2.Close*"></a>
+  <h4 id="ILib_UI_UIController_2_Close_ILib_UI_IControl_" data-uid="ILib.UI.UIController`2.Close(ILib.UI.IControl)">Close(IControl)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ITriggerAction Close(IControl control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.IControl.html">IControl</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L346">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Close_" data-uid="ILib.UI.UIController`2.Close*"></a>
+  <h4 id="ILib_UI_UIController_2_Close_ILib_UI_UIInstance___ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.Close(ILib.UI.UIInstance[],ILib.UI.UIInstance)">Close(UIInstance[], UIInstance)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;bool&gt; Close(UIInstance[] releases, UIInstance front = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>[]</td>
+        <td><span class="parametername">releases</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></td>
+        <td><span class="parametername">front</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L228">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_CloseControls_" data-uid="ILib.UI.UIController`2.CloseControls*"></a>
+  <h4 id="ILib_UI_UIController_2_CloseControls_ILib_UI_UIInstance___" data-uid="ILib.UI.UIController`2.CloseControls(ILib.UI.UIInstance[])">CloseControls(UIInstance[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ITriggerAction CloseControls(UIInstance[] controls)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>[]</td>
+        <td><span class="parametername">controls</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L357">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_CloseImpl_" data-uid="ILib.UI.UIController`2.CloseImpl*"></a>
+  <h4 id="ILib_UI_UIController_2_CloseImpl_ILib_UI_UIInstance___ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.CloseImpl(ILib.UI.UIInstance[],ILib.UI.UIInstance)">CloseImpl(UIInstance[], UIInstance)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerator CloseImpl(UIInstance[] releases, UIInstance front = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>[]</td>
+        <td><span class="parametername">releases</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></td>
+        <td><span class="parametername">front</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L120">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_EndProcess_" data-uid="ILib.UI.UIController`2.EndProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_EndProcess" data-uid="ILib.UI.UIController`2.EndProcess">EndProcess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndProcess()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L101">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_EnqueueProcess_" data-uid="ILib.UI.UIController`2.EnqueueProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_EnqueueProcess_System_Action_" data-uid="ILib.UI.UIController`2.EnqueueProcess(System.Action)">EnqueueProcess(Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnqueueProcess(Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L49">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Execute_" data-uid="ILib.UI.UIController`2.Execute*"></a>
+  <h4 id="ILib_UI_UIController_2_Execute__1_System_Action___0__" data-uid="ILib.UI.UIController`2.Execute``1(System.Action{``0})">Execute&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>現在アクティブな指定型のUIに対して処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Execute&lt;T&gt;(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L63">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_ExecuteAnyOne_" data-uid="ILib.UI.UIController`2.ExecuteAnyOne*"></a>
+  <h4 id="ILib_UI_UIController_2_ExecuteAnyOne__1_System_Action___0__" data-uid="ILib.UI.UIController`2.ExecuteAnyOne``1(System.Action{``0})">ExecuteAnyOne&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>現在アクティブな指定型のUIに対して一つだけ処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExecuteAnyOne&lt;T&gt;(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L75">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_ExecuteAnyOne_" data-uid="ILib.UI.UIController`2.ExecuteAnyOne*"></a>
+  <h4 id="ILib_UI_UIController_2_ExecuteAnyOne__1_System_Func___0_System_Boolean__" data-uid="ILib.UI.UIController`2.ExecuteAnyOne``1(System.Func{``0,System.Boolean})">ExecuteAnyOne&lt;T&gt;(Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>現在アクティブな指定型のUIに対して一つだけ処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExecuteAnyOne&lt;T&gt;(Func&lt;T, bool&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L88">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_ExecuteBack_" data-uid="ILib.UI.UIController`2.ExecuteBack*"></a>
+  <h4 id="ILib_UI_UIController_2_ExecuteBack" data-uid="ILib.UI.UIController`2.ExecuteBack">ExecuteBack()</h4>
+  <div class="markdown level1 summary"><p>IExecuteBackを実装したUIに対してバック処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExecuteBack()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L44">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_GetActive_" data-uid="ILib.UI.UIController`2.GetActive*"></a>
+  <h4 id="ILib_UI_UIController_2_GetActive__1" data-uid="ILib.UI.UIController`2.GetActive``1">GetActive&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerable&lt;T&gt; GetActive&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L164">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_IsWaitBehindBeforeOnFront_" data-uid="ILib.UI.UIController`2.IsWaitBehindBeforeOnFront*"></a>
+  <h4 id="ILib_UI_UIController_2_IsWaitBehindBeforeOnFront__1_System_String__0_" data-uid="ILib.UI.UIController`2.IsWaitBehindBeforeOnFront``1(System.String,`0)">IsWaitBehindBeforeOnFront&lt;T&gt;(String, TParam)</h4>
+  <div class="markdown level1 summary"><p>親のUIのBehind処理の実行が完了するまでOnFrontの処理を実行しません
+標準は無効です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsWaitBehindBeforeOnFront&lt;T&gt;(string path, TParam prm)
+    where T : UControl</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L341">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_IsWaitCloseBeforeOnFront_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnFront*"></a>
+  <h4 id="ILib_UI_UIController_2_IsWaitCloseBeforeOnFront__1_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnFront(`1)">IsWaitCloseBeforeOnFront(UControl)</h4>
+  <div class="markdown level1 summary"><p>Close処理の実行が完了するまでOnFrontの処理を実行しません
+標準は無効です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsWaitCloseBeforeOnFront(UControl font)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UControl</span></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L261">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_IsWaitCloseBeforeOnOpen_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnOpen*"></a>
+  <h4 id="ILib_UI_UIController_2_IsWaitCloseBeforeOnOpen__1_System_String__0_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnOpen``1(System.String,`0)">IsWaitCloseBeforeOnOpen&lt;T&gt;(String, TParam)</h4>
+  <div class="markdown level1 summary"><p>親のUIのClose処理の実行が完了するまでOnOpenの処理を実行しません
+標準は無効です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsWaitCloseBeforeOnOpen&lt;T&gt;(string path, TParam prm)
+    where T : UControl</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L25">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Load_" data-uid="ILib.UI.UIController`2.Load*"></a>
+  <h4 id="ILib_UI_UIController_2_Load__1_System_String__0_" data-uid="ILib.UI.UIController`2.Load``1(System.String,`0)">Load&lt;T&gt;(String, TParam)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドル等から読む時は継承先で書き換えてください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction&lt;GameObject&gt; Load&lt;T&gt;(string path, TParam prm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<span class="xref">UnityEngine.GameObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L250">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnBeginChange_" data-uid="ILib.UI.UIController`2.OnBeginChange*"></a>
+  <h4 id="ILib_UI_UIController_2_OnBeginChange" data-uid="ILib.UI.UIController`2.OnBeginChange">OnBeginChange()</h4>
+  <div class="markdown level1 summary"><p>遷移処理が開始された際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginChange()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L325">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnBeginClose_" data-uid="ILib.UI.UIController`2.OnBeginClose*"></a>
+  <h4 id="ILib_UI_UIController_2_OnBeginClose" data-uid="ILib.UI.UIController`2.OnBeginClose">OnBeginClose()</h4>
+  <div class="markdown level1 summary"><p>削除処理が開始された際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginClose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L148">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnBeginOpen_" data-uid="ILib.UI.UIController`2.OnBeginOpen*"></a>
+  <h4 id="ILib_UI_UIController_2_OnBeginOpen" data-uid="ILib.UI.UIController`2.OnBeginOpen">OnBeginOpen()</h4>
+  <div class="markdown level1 summary"><p>オープン処理が開始された際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginOpen()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L330">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnClose_" data-uid="ILib.UI.UIController`2.OnClose*"></a>
+  <h4 id="ILib_UI_UIController_2_OnClose__1_" data-uid="ILib.UI.UIController`2.OnClose(`1)">OnClose(UControl)</h4>
+  <div class="markdown level1 summary"><p>インスタンスを削除する直前に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnClose(UControl ui)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UControl</span></td>
+        <td><span class="parametername">ui</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L255">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnEndChange_" data-uid="ILib.UI.UIController`2.OnEndChange*"></a>
+  <h4 id="ILib_UI_UIController_2_OnEndChange" data-uid="ILib.UI.UIController`2.OnEndChange">OnEndChange()</h4>
+  <div class="markdown level1 summary"><p>遷移処理が完了した際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndChange()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L335">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnEndClose_" data-uid="ILib.UI.UIController`2.OnEndClose*"></a>
+  <h4 id="ILib_UI_UIController_2_OnEndClose" data-uid="ILib.UI.UIController`2.OnEndClose">OnEndClose()</h4>
+  <div class="markdown level1 summary"><p>削除処理が完了した際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndClose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L158">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnEndOpen_" data-uid="ILib.UI.UIController`2.OnEndOpen*"></a>
+  <h4 id="ILib_UI_UIController_2_OnEndOpen" data-uid="ILib.UI.UIController`2.OnEndOpen">OnEndOpen()</h4>
+  <div class="markdown level1 summary"><p>オープン処理が完了した際に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndOpen()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L143">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnEndProcess_" data-uid="ILib.UI.UIController`2.OnEndProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_OnEndProcess" data-uid="ILib.UI.UIController`2.OnEndProcess">OnEndProcess()</h4>
+  <div class="markdown level1 summary"><p>全てのプロセスが終了した際に実行されます。
+ダブルタップが出来ないように入力制限を行う等に利用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEndProcess()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L153">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnOpen_" data-uid="ILib.UI.UIController`2.OnOpen*"></a>
+  <h4 id="ILib_UI_UIController_2_OnOpen__1_" data-uid="ILib.UI.UIController`2.OnOpen(`1)">OnOpen(UControl)</h4>
+  <div class="markdown level1 summary"><p>UIが生成された直後に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnOpen(UControl ui)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UControl</span></td>
+        <td><span class="parametername">ui</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L137">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_OnStartProcess_" data-uid="ILib.UI.UIController`2.OnStartProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_OnStartProcess" data-uid="ILib.UI.UIController`2.OnStartProcess">OnStartProcess()</h4>
+  <div class="markdown level1 summary"><p>プロセスが開始された際に実行されます。
+ダブルタップが出来ないように入力制限を行う等に利用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStartProcess()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L169">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_Open_" data-uid="ILib.UI.UIController`2.Open*"></a>
+  <h4 id="ILib_UI_UIController_2_Open__1_System_String__0_ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.Open``1(System.String,`0,ILib.UI.UIInstance)">Open&lt;T&gt;(String, TParam, UIInstance)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;UIInstance&gt; Open&lt;T&gt;(string path, TParam prm, UIInstance parent = null)
+    where T : UControl</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L114">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_StartProcess_" data-uid="ILib.UI.UIController`2.StartProcess*"></a>
+  <h4 id="ILib_UI_UIController_2_StartProcess" data-uid="ILib.UI.UIController`2.StartProcess">StartProcess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void StartProcess()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L18">View Source</a>
+  </span>
+  <a id="ILib_UI_UIController_2_ILib_UI_IController_Close_" data-uid="ILib.UI.UIController`2.ILib#UI#IController#Close*"></a>
+  <h4 id="ILib_UI_UIController_2_ILib_UI_IController_Close_ILib_UI_IControl_" data-uid="ILib.UI.UIController`2.ILib#UI#IController#Close(ILib.UI.IControl)">IController.Close(IControl)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITriggerAction IController.Close(IControl control)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.IControl.html">IControl</a></td>
+        <td><span class="parametername">control</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ILib.UI.IController.html">IController</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.Routine(MonoBehaviour, IEnumerator)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatRoutine(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_TaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.TaskRoutine&lt;T&gt;(MonoBehaviour, IEnumerator)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine(MonoBehaviour, IEnumerator)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(MonoBehaviour, IEnumerator)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatTaskRoutine&lt;T&gt;(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

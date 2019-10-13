@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITriggerAction
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITriggerAction
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.ITriggerAction">
+  
+  
+  <h1 id="ILib_ITriggerAction" data-uid="ILib.ITriggerAction" class="text-break">Interface ITriggerAction
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.movenext#System_Collections_IEnumerator_MoveNext">IEnumerator.MoveNext()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.reset#System_Collections_IEnumerator_Reset">IEnumerator.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.current#System_Collections_IEnumerator_Current">IEnumerator.Current</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.html">ILib</a></h6>
+  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h5 id="ILib_ITriggerAction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITriggerAction : IDisposable, IEnumerator</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L34">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Canceled_" data-uid="ILib.ITriggerAction.Canceled*"></a>
+  <h4 id="ILib_ITriggerAction_Canceled" data-uid="ILib.ITriggerAction.Canceled">Canceled</h4>
+  <div class="markdown level1 summary"><p>キャンセル済みか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Canceled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L30">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Error_" data-uid="ILib.ITriggerAction.Error*"></a>
+  <h4 id="ILib_ITriggerAction_Error" data-uid="ILib.ITriggerAction.Error">Error</h4>
+  <div class="markdown level1 summary"><p>失敗時の値です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Exception Error { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L26">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Fired_" data-uid="ILib.ITriggerAction.Fired*"></a>
+  <h4 id="ILib_ITriggerAction_Fired" data-uid="ILib.ITriggerAction.Fired">Fired</h4>
+  <div class="markdown level1 summary"><p>発火済みか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Fired { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L38">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_OneShot_" data-uid="ILib.ITriggerAction.OneShot*"></a>
+  <h4 id="ILib_ITriggerAction_OneShot" data-uid="ILib.ITriggerAction.OneShot">OneShot</h4>
+  <div class="markdown level1 summary"><p>一度だけ発火するか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool OneShot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L42">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Add_" data-uid="ILib.ITriggerAction.Add*"></a>
+  <h4 id="ILib_ITriggerAction_Add_System_Action_" data-uid="ILib.ITriggerAction.Add(System.Action)">Add(Action)</h4>
+  <div class="markdown level1 summary"><p>成功時のコールバックを追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITriggerAction Add(Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L52">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Cancel_" data-uid="ILib.ITriggerAction.Cancel*"></a>
+  <h4 id="ILib_ITriggerAction_Cancel" data-uid="ILib.ITriggerAction.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>キャンセルを行います。
+以後、イベントの発火は出来なくなります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Cancel()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L47">View Source</a>
+  </span>
+  <a id="ILib_ITriggerAction_Clear_" data-uid="ILib.ITriggerAction.Clear*"></a>
+  <h4 id="ILib_ITriggerAction_Clear" data-uid="ILib.ITriggerAction.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>イベントをすべて解除します。
+発火前のみ有効です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Clear()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L17">View Source</a>
+  </span>
+  <h4 id="ILib_ITriggerAction_OnCancel" data-uid="ILib.ITriggerAction.OnCancel">OnCancel</h4>
+  <div class="markdown level1 summary"><p>キャンセル時のコールバックです</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnCancel</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L22">View Source</a>
+  </span>
+  <h4 id="ILib_ITriggerAction_OnComplete" data-uid="ILib.ITriggerAction.OnComplete">OnComplete</h4>
+  <div class="markdown level1 summary"><p>完了時のコールバックです。
+発火時はtrue、キャンセル時はfalseが返ります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;bool&gt; OnComplete</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L13">View Source</a>
+  </span>
+  <h4 id="ILib_ITriggerAction_OnFail" data-uid="ILib.ITriggerAction.OnFail">OnFail</h4>
+  <div class="markdown level1 summary"><p>失敗時のコールバックです。
+内部的にAddFail・RemoveFail関数が実行されます</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;Exception&gt; OnFail</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Select__1_ILib_ITriggerAction_System_Func___0__System_Boolean_">TriggerExtensions.Select&lt;T&gt;(ITriggerAction, Func&lt;T&gt;, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/ITriggerAction.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

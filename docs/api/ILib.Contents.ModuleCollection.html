@@ -1,0 +1,1117 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModuleCollection
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModuleCollection
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.Contents.ModuleCollection">
+  
+  
+  <h1 id="ILib_Contents_ModuleCollection" data-uid="ILib.Contents.ModuleCollection" class="text-break">Class ModuleCollection
+  </h1>
+  <div class="markdown level0 summary"><p>モジュールのコレクションです。
+親が指定されている場合、親のモジュールも実行されます。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ILib.Contents.LockCollection-1.html">LockCollection</a>&lt;<a class="xref" href="ILib.Contents.Module.html">Module</a>&gt;</div>
+    <div class="level2"><span class="xref">ModuleCollection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ILib.Contents.Module.html">Module</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ILib.Contents.LockCollection-1.html#ILib_Contents_LockCollection_1_Count">LockCollection&lt;Module&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.LockCollection-1.html#ILib_Contents_LockCollection_1_System_Collections_Generic_IEnumerable_T__GetEnumerator">LockCollection&lt;Module&gt;.IEnumerable&lt;Module&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.LockCollection-1.html#ILib_Contents_LockCollection_1_System_Collections_IEnumerable_GetEnumerator">LockCollection&lt;Module&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
+  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h5 id="ILib_Contents_ModuleCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModuleCollection : LockCollection&lt;Module&gt;, IEnumerable&lt;Module&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L26">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection__ctor_" data-uid="ILib.Contents.ModuleCollection.#ctor*"></a>
+  <h4 id="ILib_Contents_ModuleCollection__ctor" data-uid="ILib.Contents.ModuleCollection.#ctor">ModuleCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleCollection()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L28">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection__ctor_" data-uid="ILib.Contents.ModuleCollection.#ctor*"></a>
+  <h4 id="ILib_Contents_ModuleCollection__ctor_ILib_Contents_ModuleCollection_" data-uid="ILib.Contents.ModuleCollection.#ctor(ILib.Contents.ModuleCollection)">ModuleCollection(ModuleCollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleCollection(ModuleCollection parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.ModuleCollection.html">ModuleCollection</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L17">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Type_" data-uid="ILib.Contents.ModuleCollection.Type*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Type" data-uid="ILib.Contents.ModuleCollection.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.ModuleType.html">ModuleType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L64">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Add_" data-uid="ILib.Contents.ModuleCollection.Add*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Add_ILib_Contents_Module_" data-uid="ILib.Contents.ModuleCollection.Add(ILib.Contents.Module)">Add(Module)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Add(Module child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Module.html">Module</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">ILib.Contents.LockCollection&lt;ILib.Contents.Module&gt;.Add(ILib.Contents.Module)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L43">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Add_" data-uid="ILib.Contents.ModuleCollection.Add*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Add__1" data-uid="ILib.Contents.ModuleCollection.Add``1">Add&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add&lt;T&gt;()
+    where T : Module, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L54">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Get_" data-uid="ILib.Contents.ModuleCollection.Get*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Get__1" data-uid="ILib.Contents.ModuleCollection.Get``1">Get&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()
+    where T : Module</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L59">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_GetModules_" data-uid="ILib.Contents.ModuleCollection.GetModules*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_GetModules__1" data-uid="ILib.Contents.ModuleCollection.GetModules``1">GetModules&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetModules&lt;T&gt;()
+    where T : Module</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L97">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnBoot_" data-uid="ILib.Contents.ModuleCollection.OnBoot*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnBoot_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnBoot(ILib.Contents.Content)">OnBoot(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnBoot(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L117">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnDisable_" data-uid="ILib.Contents.ModuleCollection.OnDisable*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnDisable_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnDisable(ILib.Contents.Content)">OnDisable(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnDisable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L113">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnEnable_" data-uid="ILib.Contents.ModuleCollection.OnEnable*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnEnable_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnEnable(ILib.Contents.Content)">OnEnable(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnEnable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L123">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnEndSwitch_" data-uid="ILib.Contents.ModuleCollection.OnEndSwitch*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnEndSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnEndSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L95">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreBoot_" data-uid="ILib.Contents.ModuleCollection.OnPreBoot*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreBoot_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreBoot(ILib.Contents.Content)">OnPreBoot(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreBoot(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L115">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreDisable_" data-uid="ILib.Contents.ModuleCollection.OnPreDisable*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreDisable_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreDisable(ILib.Contents.Content)">OnPreDisable(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreDisable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L111">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreEnable_" data-uid="ILib.Contents.ModuleCollection.OnPreEnable*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreEnable_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreEnable(ILib.Contents.Content)">OnPreEnable(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreEnable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L103">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreRun_" data-uid="ILib.Contents.ModuleCollection.OnPreRun*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreRun_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreRun(ILib.Contents.Content)">OnPreRun(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreRun(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L99">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreShutdown_" data-uid="ILib.Contents.ModuleCollection.OnPreShutdown*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreShutdown(ILib.Contents.Content)">OnPreShutdown(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreShutdown(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L107">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreSuspend_" data-uid="ILib.Contents.ModuleCollection.OnPreSuspend*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreSuspend(ILib.Contents.Content)">OnPreSuspend(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreSuspend(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L119">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnPreSwitch_" data-uid="ILib.Contents.ModuleCollection.OnPreSwitch*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnPreSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnPreSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L105">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnRun_" data-uid="ILib.Contents.ModuleCollection.OnRun*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnRun_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnRun(ILib.Contents.Content)">OnRun(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnRun(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L101">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnShutdown_" data-uid="ILib.Contents.ModuleCollection.OnShutdown*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnShutdown(ILib.Contents.Content)">OnShutdown(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnShutdown(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L109">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnSuspend_" data-uid="ILib.Contents.ModuleCollection.OnSuspend*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnSuspend(ILib.Contents.Content)">OnSuspend(Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnSuspend(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L121">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_OnSwitch_" data-uid="ILib.Contents.ModuleCollection.OnSwitch*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.ModuleCollection.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator OnSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L70">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Remove_" data-uid="ILib.Contents.ModuleCollection.Remove*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Remove_ILib_Contents_Module_" data-uid="ILib.Contents.ModuleCollection.Remove(ILib.Contents.Module)">Remove(Module)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Remove(Module child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Module.html">Module</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">ILib.Contents.LockCollection&lt;ILib.Contents.Module&gt;.Remove(ILib.Contents.Module)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L48">View Source</a>
+  </span>
+  <a id="ILib_Contents_ModuleCollection_Remove_" data-uid="ILib.Contents.ModuleCollection.Remove*"></a>
+  <h4 id="ILib_Contents_ModuleCollection_Remove__1" data-uid="ILib.Contents.ModuleCollection.Remove``1">Remove&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove&lt;T&gt;()
+    where T : Module</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ModuleCollection.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

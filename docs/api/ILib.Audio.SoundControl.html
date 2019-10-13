@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SoundControl
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SoundControl
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.Audio.SoundControl">
+  
+  
+  <h1 id="ILib_Audio_SoundControl" data-uid="ILib.Audio.SoundControl" class="text-break">Class SoundControl
+  </h1>
+  <div class="markdown level0 summary"><p>オーディオソース等のを必要なゲームオブジェクトを確保し管理する用のクラスです。
+使用しているプレイヤーが破棄されたときに自動的に削除されます。
+また、Release関数を呼ぶと生成したすべてのプールを強制的に破棄します。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SoundControl</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Audio.html">ILib.Audio</a></h6>
+  <h6><strong>Assembly</strong>: ILib.SoundControl.dll</h6>
+  <h5 id="ILib_Audio_SoundControl_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SoundControl</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L17">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_SharedPlayingList_" data-uid="ILib.Audio.SoundControl.SharedPlayingList*"></a>
+  <h4 id="ILib_Audio_SoundControl_SharedPlayingList" data-uid="ILib.Audio.SoundControl.SharedPlayingList">SharedPlayingList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayingList SharedPlayingList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.PlayingList.html">PlayingList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L109">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayer_" data-uid="ILib.Audio.SoundControl.CreatePlayer*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayer_ILib_Audio_IMusicProvider_ILib_Audio_MusicPlayerConfig_" data-uid="ILib.Audio.SoundControl.CreatePlayer(ILib.Audio.IMusicProvider,ILib.Audio.MusicPlayerConfig)">CreatePlayer(IMusicProvider, MusicPlayerConfig)</h4>
+  <div class="markdown level1 summary"><p>音声プレイヤーを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMusicPlayer CreatePlayer(IMusicProvider provider, MusicPlayerConfig config = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.IMusicProvider.html">IMusicProvider</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.MusicPlayerConfig.html">MusicPlayerConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.IMusicPlayer.html">IMusicPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L84">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayer_" data-uid="ILib.Audio.SoundControl.CreatePlayer*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayer_ILib_Audio_ISoundProvider_System_String__ILib_Audio_SoundPlayerConfig_" data-uid="ILib.Audio.SoundControl.CreatePlayer(ILib.Audio.ISoundProvider{System.String},ILib.Audio.SoundPlayerConfig)">CreatePlayer(ISoundProvider&lt;String&gt;, SoundPlayerConfig)</h4>
+  <div class="markdown level1 summary"><p>サウンドプレイヤーを作成します。
+設定情報がnullの場合は共有リストを使用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISoundPlayer CreatePlayer(ISoundProvider&lt;string&gt; provider, SoundPlayerConfig config = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.ISoundProvider-1.html">ISoundProvider</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.SoundPlayerConfig.html">SoundPlayerConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.ISoundPlayer.html">ISoundPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L100">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayer_" data-uid="ILib.Audio.SoundControl.CreatePlayer*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayer__1_ILib_Audio_IMusicProvider___0__ILib_Audio_MusicPlayerConfig_" data-uid="ILib.Audio.SoundControl.CreatePlayer``1(ILib.Audio.IMusicProvider{``0},ILib.Audio.MusicPlayerConfig)">CreatePlayer&lt;T&gt;(IMusicProvider&lt;T&gt;, MusicPlayerConfig)</h4>
+  <div class="markdown level1 summary"><p>音声プレイヤーを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMusicPlayer&lt;T&gt; CreatePlayer&lt;T&gt;(IMusicProvider&lt;T&gt; provider, MusicPlayerConfig config = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.IMusicProvider-1.html">IMusicProvider</a>&lt;T&gt;</td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.MusicPlayerConfig.html">MusicPlayerConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.IMusicPlayer-1.html">IMusicPlayer</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L75">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayer_" data-uid="ILib.Audio.SoundControl.CreatePlayer*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayer__1_ILib_Audio_ISoundProvider___0__ILib_Audio_SoundPlayerConfig_" data-uid="ILib.Audio.SoundControl.CreatePlayer``1(ILib.Audio.ISoundProvider{``0},ILib.Audio.SoundPlayerConfig)">CreatePlayer&lt;T&gt;(ISoundProvider&lt;T&gt;, SoundPlayerConfig)</h4>
+  <div class="markdown level1 summary"><p>サウンドプレイヤーを作成します。
+設定情報がnullの場合は共有リストを使用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISoundPlayer&lt;T&gt; CreatePlayer&lt;T&gt;(ISoundProvider&lt;T&gt; provider, SoundPlayerConfig config = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.ISoundProvider-1.html">ISoundProvider</a>&lt;T&gt;</td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.SoundPlayerConfig.html">SoundPlayerConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.ISoundPlayer-1.html">ISoundPlayer</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L66">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayingList_" data-uid="ILib.Audio.SoundControl.CreatePlayingList*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayingList_System_String_" data-uid="ILib.Audio.SoundControl.CreatePlayingList(System.String)">CreatePlayingList(String)</h4>
+  <div class="markdown level1 summary"><p>再生リストを作成します。
+デフォルトの共有リスト以外で、プレイヤーの再生リストを共有する際に利用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayingList CreatePlayingList(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.PlayingList.html">PlayingList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L92">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreatePlayingMusic_" data-uid="ILib.Audio.SoundControl.CreatePlayingMusic*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreatePlayingMusic_System_String_" data-uid="ILib.Audio.SoundControl.CreatePlayingMusic(System.String)">CreatePlayingMusic(String)</h4>
+  <div class="markdown level1 summary"><p>音声リストを作成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayingMusic CreatePlayingMusic(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.PlayingMusic.html">PlayingMusic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L54">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_CreateRoot_" data-uid="ILib.Audio.SoundControl.CreateRoot*"></a>
+  <h4 id="ILib_Audio_SoundControl_CreateRoot_System_String_" data-uid="ILib.Audio.SoundControl.CreateRoot(System.String)">CreateRoot(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateRoot(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L33">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_Initialize_" data-uid="ILib.Audio.SoundControl.Initialize*"></a>
+  <h4 id="ILib_Audio_SoundControl_Initialize" data-uid="ILib.Audio.SoundControl.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>プールをのルートオブジェクトを初期化します。
+この処理は手動で実行しなくても自動で実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L45">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundControl_Release_" data-uid="ILib.Audio.SoundControl.Release*"></a>
+  <h4 id="ILib_Audio_SoundControl_Release" data-uid="ILib.Audio.SoundControl.Release">Release()</h4>
+  <div class="markdown level1 summary"><p>管理しているオブジェクトを破棄します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Release()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/Common/SoundControl.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

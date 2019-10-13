@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPlayingSoundContext
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPlayingSoundContext
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.Audio.IPlayingSoundContext">
+  
+  
+  <h1 id="ILib_Audio_IPlayingSoundContext" data-uid="ILib.Audio.IPlayingSoundContext" class="text-break">Interface IPlayingSoundContext
+  </h1>
+  <div class="markdown level0 summary"><p>再生中のSEのコントローラーです。
+キャッシュがなく遅延再生時でも再生開始時に設定が適応されます。
+再生停止後は一切の操作が反映されなくなります。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Audio.html">ILib.Audio</a></h6>
+  <h6><strong>Assembly</strong>: ILib.SoundControl.dll</h6>
+  <h5 id="ILib_Audio_IPlayingSoundContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPlayingSoundContext : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L43">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Error_" data-uid="ILib.Audio.IPlayingSoundContext.Error*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Error" data-uid="ILib.Audio.IPlayingSoundContext.Error">Error</h4>
+  <div class="markdown level1 summary"><p>再生に失敗した場合のエラー情報です</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Exception Error { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L15">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_IsLoading_" data-uid="ILib.Audio.IPlayingSoundContext.IsLoading*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_IsLoading" data-uid="ILib.Audio.IPlayingSoundContext.IsLoading">IsLoading</h4>
+  <div class="markdown level1 summary"><p>ローディング中もしくは再生待ち中です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsLoading { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L20">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_IsValid_" data-uid="ILib.Audio.IPlayingSoundContext.IsValid*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_IsValid" data-uid="ILib.Audio.IPlayingSoundContext.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"><p>有効かチェックします。
+ローディングはtrueを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L25">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Loop_" data-uid="ILib.Audio.IPlayingSoundContext.Loop*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Loop" data-uid="ILib.Audio.IPlayingSoundContext.Loop">Loop</h4>
+  <div class="markdown level1 summary"><p>ループフラグ
+デフォルト無効です</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Loop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L29">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Pause_" data-uid="ILib.Audio.IPlayingSoundContext.Pause*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Pause" data-uid="ILib.Audio.IPlayingSoundContext.Pause">Pause</h4>
+  <div class="markdown level1 summary"><p>ポーズ状態</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Pause { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L34">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Pitch_" data-uid="ILib.Audio.IPlayingSoundContext.Pitch*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Pitch" data-uid="ILib.Audio.IPlayingSoundContext.Pitch">Pitch</h4>
+  <div class="markdown level1 summary"><p>ピッチ
+SoundInfoのPitchに乗算した値が実際には使われます</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Pitch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L39">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Volume_" data-uid="ILib.Audio.IPlayingSoundContext.Volume*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Volume" data-uid="ILib.Audio.IPlayingSoundContext.Volume">Volume</h4>
+  <div class="markdown level1 summary"><p>音量を設定します。
+フェード中の場合、フェードは停止します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Volume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L51">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Fade_" data-uid="ILib.Audio.IPlayingSoundContext.Fade*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Fade_System_Single_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.Fade(System.Single,System.Single)">Fade(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>現在の音量から指定の音量にフェードさせます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Fade(float end, float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L55">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Fade_" data-uid="ILib.Audio.IPlayingSoundContext.Fade*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Fade_System_Single_System_Single_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.Fade(System.Single,System.Single,System.Single)">Fade(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>指定の音量から指定の音量にフェードさせます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Fade(float start, float end, float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L47">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_FadeIn_" data-uid="ILib.Audio.IPlayingSoundContext.FadeIn*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_FadeIn_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.FadeIn(System.Single)">FadeIn(Single)</h4>
+  <div class="markdown level1 summary"><p>0音量からフェードインします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FadeIn(float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L61">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_FadeOut_" data-uid="ILib.Audio.IPlayingSoundContext.FadeOut*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_FadeOut_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.FadeOut(System.Single)">FadeOut(Single)</h4>
+  <div class="markdown level1 summary"><p>フェードアウトを行います。
+操作後、他のフェード関数は無効になります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FadeOut(float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L67">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_Stop_" data-uid="ILib.Audio.IPlayingSoundContext.Stop*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_Stop" data-uid="ILib.Audio.IPlayingSoundContext.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>再生を即時停止します。
+短いループSEはLoopをfalseにする。
+長いSEはFadeOutを推奨します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Stop()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

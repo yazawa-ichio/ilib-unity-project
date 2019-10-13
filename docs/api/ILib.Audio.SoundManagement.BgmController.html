@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BgmController
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BgmController
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.Audio.SoundManagement.BgmController">
+  
+  
+  <h1 id="ILib_Audio_SoundManagement_BgmController" data-uid="ILib.Audio.SoundManagement.BgmController" class="text-break">Class BgmController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BgmController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ILib.Audio.IMusicPlayer.html">IMusicPlayer</a></div>
+    <div><a class="xref" href="ILib.Audio.IMusicPlayer-1.html">IMusicPlayer</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Audio.SoundManagement.html">ILib.Audio.SoundManagement</a></h6>
+  <h6><strong>Assembly</strong>: ILib.SoundManager.dll</h6>
+  <h5 id="ILib_Audio_SoundManagement_BgmController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BgmController : IMusicPlayer, IMusicPlayer&lt;string&gt;, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L24">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController__ctor_" data-uid="ILib.Audio.SoundManagement.BgmController.#ctor*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController__ctor_ILib_Audio_SoundManagement_Config_" data-uid="ILib.Audio.SoundManagement.BgmController.#ctor(ILib.Audio.SoundManagement.Config)">BgmController(Config)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BgmController(Config config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.SoundManagement.Config.html">Config</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L20">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Current_" data-uid="ILib.Audio.SoundManagement.BgmController.Current*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Current" data-uid="ILib.Audio.SoundManagement.BgmController.Current">Current</h4>
+  <div class="markdown level1 summary"><p>現在のパラメーター</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Current { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L15">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_IsCacheInfoInStack_" data-uid="ILib.Audio.SoundManagement.BgmController.IsCacheInfoInStack*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_IsCacheInfoInStack" data-uid="ILib.Audio.SoundManagement.BgmController.IsCacheInfoInStack">IsCacheInfoInStack</h4>
+  <div class="markdown level1 summary"><p>Musicのスタック中は音声情報をキャッシュしておくか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCacheInfoInStack { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L50">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Change_" data-uid="ILib.Audio.SoundManagement.BgmController.Change*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Change_System_String_ILib_Audio_MusicPlayConfig_System_Boolean_" data-uid="ILib.Audio.SoundManagement.BgmController.Change(System.String,ILib.Audio.MusicPlayConfig,System.Boolean)">Change(String, MusicPlayConfig, Boolean)</h4>
+  <div class="markdown level1 summary"><p>音声を切り替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Change(string prm, MusicPlayConfig config, bool clearStack = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.MusicPlayConfig.html">MusicPlayConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">clearStack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L42">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Change_" data-uid="ILib.Audio.SoundManagement.BgmController.Change*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Change_System_String_System_Single_System_Boolean_" data-uid="ILib.Audio.SoundManagement.BgmController.Change(System.String,System.Single,System.Boolean)">Change(String, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>音声を切り替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Change(string prm, float time = 2F, bool clearStack = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">clearStack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L120">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_ClearStack_" data-uid="ILib.Audio.SoundManagement.BgmController.ClearStack*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_ClearStack" data-uid="ILib.Audio.SoundManagement.BgmController.ClearStack">ClearStack()</h4>
+  <div class="markdown level1 summary"><p>スタックをすべてクリアします</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearStack()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L104">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Pause_" data-uid="ILib.Audio.SoundManagement.BgmController.Pause*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Pause_System_Single_" data-uid="ILib.Audio.SoundManagement.BgmController.Pause(System.Single)">Pause(Single)</h4>
+  <div class="markdown level1 summary"><p>音声を一時停止します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause(float time = 0.3F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L88">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Pop_" data-uid="ILib.Audio.SoundManagement.BgmController.Pop*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Pop_ILib_Audio_MusicPlayConfig_System_Boolean_" data-uid="ILib.Audio.SoundManagement.BgmController.Pop(ILib.Audio.MusicPlayConfig,System.Boolean)">Pop(MusicPlayConfig, Boolean)</h4>
+  <div class="markdown level1 summary"><p>現在の音声を停止し
+スタックの音声に切り替えます。
+startLastPositionを有効にするとスタックに積んだ時の再生位置で開始します</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pop(MusicPlayConfig config, bool startLastPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.MusicPlayConfig.html">MusicPlayConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">startLastPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L78">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Pop_" data-uid="ILib.Audio.SoundManagement.BgmController.Pop*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Pop_System_Single_System_Boolean_" data-uid="ILib.Audio.SoundManagement.BgmController.Pop(System.Single,System.Boolean)">Pop(Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>現在の音声を停止し
+スタックの音声に切り替えます。
+startLastPositionを有効にするとスタックに積んだ時の再生位置で開始します</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pop(float time = 2F, bool startLastPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">startLastPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L68">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Push_" data-uid="ILib.Audio.SoundManagement.BgmController.Push*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Push_System_String_ILib_Audio_MusicPlayConfig_" data-uid="ILib.Audio.SoundManagement.BgmController.Push(System.String,ILib.Audio.MusicPlayConfig)">Push(String, MusicPlayConfig)</h4>
+  <div class="markdown level1 summary"><p>現在の音声をスタックに積み
+音声を切り替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Push(string prm, MusicPlayConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Audio.MusicPlayConfig.html">MusicPlayConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L59">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Push_" data-uid="ILib.Audio.SoundManagement.BgmController.Push*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Push_System_String_System_Single_" data-uid="ILib.Audio.SoundManagement.BgmController.Push(System.String,System.Single)">Push(String, Single)</h4>
+  <div class="markdown level1 summary"><p>現在の音声をスタックに積み
+音声を切り替えます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Push(string prm, float time = 2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L112">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Resume_" data-uid="ILib.Audio.SoundManagement.BgmController.Resume*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Resume_System_Single_" data-uid="ILib.Audio.SoundManagement.BgmController.Resume(System.Single)">Resume(Single)</h4>
+  <div class="markdown level1 summary"><p>音声を一時停止を解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume(float time = 0.3F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L96">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_Stop_" data-uid="ILib.Audio.SoundManagement.BgmController.Stop*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_Stop_System_Single_" data-uid="ILib.Audio.SoundManagement.BgmController.Stop(System.Single)">Stop(Single)</h4>
+  <div class="markdown level1 summary"><p>音声を停止します</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop(float time = 2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L22">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_ILib_Audio_IMusicPlayer_System_String__MaxPoolCount_" data-uid="ILib.Audio.SoundManagement.BgmController.ILib#Audio#IMusicPlayer{System#String}#MaxPoolCount*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_ILib_Audio_IMusicPlayer_System_String__MaxPoolCount" data-uid="ILib.Audio.SoundManagement.BgmController.ILib#Audio#IMusicPlayer{System#String}#MaxPoolCount">IMusicPlayer&lt;String&gt;.MaxPoolCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IMusicPlayer&lt;string&gt;.MaxPoolCount { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L29">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_BgmController_System_IDisposable_Dispose_" data-uid="ILib.Audio.SoundManagement.BgmController.System#IDisposable#Dispose*"></a>
+  <h4 id="ILib_Audio_SoundManagement_BgmController_System_IDisposable_Dispose" data-uid="ILib.Audio.SoundManagement.BgmController.System#IDisposable#Dispose">IDisposable.Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDisposable.Dispose()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ILib.Audio.IMusicPlayer.html">IMusicPlayer</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Audio.IMusicPlayer-1.html">IMusicPlayer&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/BgmController.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

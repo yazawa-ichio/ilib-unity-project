@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Module
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Module
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.Contents.Module">
+  
+  
+  <h1 id="ILib_Contents_Module" data-uid="ILib.Contents.Module" class="text-break">Class Module
+  </h1>
+  <div class="markdown level0 summary"><p>アプリケーションの共通で行いたい処理を実装します。
+Typeで指定した関数しか実行されません。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Module</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
+  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h5 id="ILib_Contents_Module_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Module</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L13">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_Priority_" data-uid="ILib.Contents.Module.Priority*"></a>
+  <h4 id="ILib_Contents_Module_Priority" data-uid="ILib.Contents.Module.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L18">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_Type_" data-uid="ILib.Contents.Module.Type*"></a>
+  <h4 id="ILib_Contents_Module_Type" data-uid="ILib.Contents.Module.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Typeに登録したイベントのみ実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ModuleType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.ModuleType.html">ModuleType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L29">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnBoot_" data-uid="ILib.Contents.Module.OnBoot*"></a>
+  <h4 id="ILib_Contents_Module_OnBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnBoot(ILib.Contents.Content)">OnBoot(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの初期化直後のイベントです。
+コンテンツ毎に一度しか実行されません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnBoot(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L77">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnDisable_" data-uid="ILib.Contents.Module.OnDisable*"></a>
+  <h4 id="ILib_Contents_Module_OnDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnDisable(ILib.Contents.Content)">OnDisable(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの無効化直後のイベントです。
+親のコンテンツが無効になった際も実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnDisable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L67">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnEnable_" data-uid="ILib.Contents.Module.OnEnable*"></a>
+  <h4 id="ILib_Contents_Module_OnEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEnable(ILib.Contents.Content)">OnEnable(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの有効化直後のイベントです。
+親のコンテンツが有効になった際も実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnEnable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L89">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnEndSwitch_" data-uid="ILib.Contents.Module.OnEndSwitch*"></a>
+  <h4 id="ILib_Contents_Module_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnEndSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツを遷移完了イベントです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnEndSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L24">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreBoot_" data-uid="ILib.Contents.Module.OnPreBoot*"></a>
+  <h4 id="ILib_Contents_Module_OnPreBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreBoot(ILib.Contents.Content)">OnPreBoot(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの初期化直前のイベントです。
+コンテンツ毎に一度しか実行されません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreBoot(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L72">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreDisable_" data-uid="ILib.Contents.Module.OnPreDisable*"></a>
+  <h4 id="ILib_Contents_Module_OnPreDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreDisable(ILib.Contents.Content)">OnPreDisable(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの無効化直前のイベントです。
+親のコンテンツが無効になった際も実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreDisable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L62">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreEnable_" data-uid="ILib.Contents.Module.OnPreEnable*"></a>
+  <h4 id="ILib_Contents_Module_OnPreEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreEnable(ILib.Contents.Content)">OnPreEnable(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの有効化直前のイベントです。
+親のコンテンツが有効になった際も実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreEnable(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L44">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreRun_" data-uid="ILib.Contents.Module.OnPreRun*"></a>
+  <h4 id="ILib_Contents_Module_OnPreRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreRun(ILib.Contents.Content)">OnPreRun(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの実行直前のイベントです。
+サスペンドから復帰する際にも呼ばれます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreRun(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L34">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreShutdown_" data-uid="ILib.Contents.Module.OnPreShutdown*"></a>
+  <h4 id="ILib_Contents_Module_OnPreShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreShutdown(ILib.Contents.Content)">OnPreShutdown(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの終了直前のイベントです。
+コンテンツ毎に一度しか実行されません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreShutdown(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L53">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreSuspend_" data-uid="ILib.Contents.Module.OnPreSuspend*"></a>
+  <h4 id="ILib_Contents_Module_OnPreSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSuspend(ILib.Contents.Content)">OnPreSuspend(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの停止直前のイベントです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreSuspend(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L81">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnPreSwitch_" data-uid="ILib.Contents.Module.OnPreSwitch*"></a>
+  <h4 id="ILib_Contents_Module_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnPreSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツを遷移直前のイベントです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnPreSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L49">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnRun_" data-uid="ILib.Contents.Module.OnRun*"></a>
+  <h4 id="ILib_Contents_Module_OnRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnRun(ILib.Contents.Content)">OnRun(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの実行時のイベントです。
+サスペンドから復帰する際にも呼ばれます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnRun(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L39">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnShutdown_" data-uid="ILib.Contents.Module.OnShutdown*"></a>
+  <h4 id="ILib_Contents_Module_OnShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnShutdown(ILib.Contents.Content)">OnShutdown(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの終了直後のイベントです。
+コンテンツ毎に一度しか実行されません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnShutdown(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L57">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnSuspend_" data-uid="ILib.Contents.Module.OnSuspend*"></a>
+  <h4 id="ILib_Contents_Module_OnSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSuspend(ILib.Contents.Content)">OnSuspend(Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツの停止時のイベントです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnSuspend(Content content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L85">View Source</a>
+  </span>
+  <a id="ILib_Contents_Module_OnSwitch_" data-uid="ILib.Contents.Module.OnSwitch*"></a>
+  <h4 id="ILib_Contents_Module_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"><p>コンテンツを遷移イベントです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITriggerAction OnSwitch(Content prev, Content next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">prev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.Contents.Content.html">Content</a></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

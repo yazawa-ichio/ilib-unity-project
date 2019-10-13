@@ -9,3 +9,4 @@ doc_source/api/
 doc_source/obj/
 doc_source/manual/ilib-*/
 _site/
+docs/manifest.json

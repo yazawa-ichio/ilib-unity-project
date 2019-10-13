@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#12510;&#12491;&#12517;&#12450;&#12523; | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#12510;&#12491;&#12517;&#12450;&#12523; | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="マニュアル">マニュアル</h1>
+
+<h2 id="概要">概要</h2>
+<p>個人開発用に作っていた自分用ライブラリをパッケージ化したものです。<br>
+複数のプロジェクトで使うためUPM化したかったため公開しました。<br>
+<br>
+ライセンスは各パッケージのLICENSEファイルを確認してください。<br>
+他のライセンスに依存しない限り、基本的に<a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/LICENSE">NYSL</a>を採用する方針のため煮るなり焼くなり好きにご自由にしてください。<br></p>
+<h2 id="導入方法">導入方法</h2>
+<p>リポジトリから直接落としてきて入れることも出来ますがUPM経由での導入をサポートしています。<br>
+UPM経由で導入する場合、UnityプロジェクトのPackages以下にあるmanifest.jsonに以下のように追記してください。<br>
+Unity2019.3以降はPackageManagerUIの方から直接リポジトリを指定できます。<br></p>
+<p>manifest.json</p>
+<pre><code class="lang-json">{
+  &quot;dependencies&quot;: {
+~~~
+    &quot;com.unity.assetbundlebrowser&quot;: &quot;1.7.0&quot;,
+    &quot;jp.yazawa-ichio.ilib-abloader&quot;: &quot;https://github.com/yazawa-ichio/ilib-abloader.git&quot;,
+    &quot;com.unity.modules.assetbundle&quot;: &quot;1.0.0&quot;,
+~~~
+  }
+}
+</code></pre><h3 id="バージョンを指定する">バージョンを指定する</h3>
+<p>インストールするバージョンを指定する場合はリポジトリのURLの後ろに <code>#0.1.0</code> のようにタグを指定します。<br></p>
+<p>manifest.json</p>
+<pre><code class="lang-json">    &quot;jp.yazawa-ichio.ilib-abloader&quot;: &quot;https://github.com/yazawa-ichio/ilib-abloader.git#0.1.0&quot;,
+</code></pre><h2 id="一覧">一覧</h2>
+<h3 id="ilib-unity-etcilib-unity-etcindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-unity-etc"><a href="ilib-unity-etc/index.html">ilib-unity-etc</a> (<a href="https://github.com/yazawa-ichio/ilib-unity-etc">リポジトリ</a>)</h3>
+<p>ゲームの全体管理やUI管理、簡易なステートマシーンなど、プロジェクトに必要な小物が入ったパッケージです。<br>
+色々は入っているのはUPMのパッケージが依存関係を解決してくれないので、依存関係があるパッケージを全部突っ込んでいます。<br>
+依存関係が解決してくれるようになれば、おそらく分割します。</p>
+<h3 id="ilib-mvvmilib-mvvmindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-mvvm"><a href="ilib-mvvm/index.html">ilib-mvvm</a> (<a href="https://github.com/yazawa-ichio/ilib-mvvm">リポジトリ</a>)</h3>
+<p>UnityでMVVMでUIのバインディングを行うパッケージです。<br>
+リファレクションの実行がボキシングがないため比較的軽量に動作します。</p>
+<h3 id="ilib-abloaderilib-abloaderindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-abloader"><a href="ilib-abloader/index.html">ilib-abloader</a> (<a href="https://github.com/yazawa-ichio/ilib-abloader">リポジトリ</a>)</h3>
+<p>AssetBundleのロード管理とファイルサイズ等を収集する簡単なビルドパイプラインのパッケージです。<br>
+Updateを利用しない縛りで作ってみたが、アンロード周りの自動解放でUpdateを使ってしまった中途半端なヤツです。<br>
+パフォーマンスを切り詰めてませんが、実務レベルで利用するのに必要なAPIは最低限揃っているかと思います。</p>
+<h3 id="ilib-serv-injectorilib-serv-injectorindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-serv-injector"><a href="ilib-serv-injector/index.html">ilib-serv-injector</a> (<a href="https://github.com/yazawa-ichio/ilib-serv-injector">リポジトリ</a>)</h3>
+<p>シンプルなサービスロケーターと最低限のDIを行えるパッケージです。<br>
+参照関係の整理やテストを行いやすくするためにDIを使用したいが、巨大なDIコンテナは導入したくないケースに有効です。<br>
+Interfaceによる注入では型解決するため比較的高速に動作します。</p>
+<h3 id="ilib-unity-saveilib-unity-saveindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-unity-save"><a href="ilib-unity-save/index.html">ilib-unity-save</a> (<a href="https://github.com/yazawa-ichio/ilib-unity-save">リポジトリ</a>)</h3>
+<p>Unity上でPlayerPrefs等によるセーブ時にキーの難読化や文字列の暗号化等を行うパッケージです。<br>
+プロジェクト毎に実装する方が早いぐらいの奴です。自分用。</p>
+<h3 id="ilib-sound-controlilib-sound-controlindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-sound-control"><a href="ilib-sound-control/index.html">ilib-sound-control</a> (<a href="https://github.com/yazawa-ichio/ilib-sound-control">リポジトリ</a>)</h3>
+<p>オレオレサウンドマネージャーを作りやすくするためSEやBGMの発音制御などが入ったパッケージです。<br>
+リファレンス実装としてのサウンドマネージャーも入っています。<br>
+3Dサウンドは未対応です。</p>
+<h3 id="ilib-scwidgetsilib-scwidgetsindexmd-リポジトリhttpsgithubcomyazawa-ichioilib-scwidgets"><a href="ilib-scwidgets/index.html">ilib-scwidgets</a> (<a href="https://github.com/yazawa-ichio/ilib-scwidgets">リポジトリ</a>)</h3>
+<p>IMGUIで使える簡単なウィジェットツールです。<br>
+多少見た目がいいスキンを利用もできます。<br>
+内部的にウィジェットを利用したランタイム用のデバックメニューも含みます。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

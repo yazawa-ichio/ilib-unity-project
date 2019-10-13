@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>lib-unity-save | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="lib-unity-save | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lib-unity-savehttpsgithubcomyazawa-ichioilib-unity-save"><a href="https://github.com/yazawa-ichio/ilib-unity-save">lib-unity-save</a></h1>
+
+<p>Unity Save Data Package</p>
+<p>リポジトリ <a href="https://github.com/yazawa-ichio/ilib-unity-save">https://github.com/yazawa-ichio/ilib-unity-save</a></p>
+<h2 id="概要">概要</h2>
+<p>Unity用のデータ保存のパッケージです。<br>簡単な暗号化や難読化を行えます。<br>アプリケーション毎に作った方が速いぐらい簡易な実装です。</p>
+<h2 id="セットアップ方法">セットアップ方法</h2>
+<h3 id="保存用のキーと作成">保存用のキーと作成</h3>
+<p>セーブ用のキーを列挙型で作成してください。<br>キーは文字列で解決します。<br>そのため、上下の入れ替えが可能ですが、名前が変更された場合に読み取りが出来なくなります。<br><em>リリース後は、名前の変更は避けるようにしてください。</em></p>
+<pre><code class="lang-csharp">//セーブ用のキー
+//ToString()を行った文字列で解決します。
+public enum AppSaveKey
+{
+    UserId,
+    Config,
+    PlayData,
+}
+</code></pre><p>保存キーは<code>Ilib.Save.SaveData&lt;T&gt;</code>のジェネリックとして指定します。<br>以下の例では継承して利用していますが、<code>SaveData&lt;AppSaveKey&gt;</code>のインスタンスをそのまま使用することも可能です。</p>
+<pre><code class="lang-csharp">//パッケージの名前空間
+using ILib.Save;
+
+public class AppSaveData : SaveData&lt;AppSaveKey&gt;
+{
+    public AppSaveData(string iv, string key, System.Func&lt;string&gt; keyPrefix) : base(iv, key, keyPrefix) {
+    }
+}
+</code></pre><h3 id="暗号化用の鍵の作成">暗号化用の鍵の作成</h3>
+<p>事前にアプリケーションで利用する暗号化用の情報を作成します。<br>暗号化のため<code>System.Security.Cryptography.RijndaelManaged</code>を利用しているためIVとKeyが必要になります。  </p>
+<p>IVとKeyの作り方が分からない場合、以下のようなスクリプトで作成できます。<br>ただし、<code>ソルト生成</code>と<code>ILibSave</code>の部分は、必ず適当な置き換えてください。</p>
+<p>例: 暗号化用のキーを作成</p>
+<pre><code class="lang-csharp">using UnityEditor;
+class Tool
+{
+    [MenuItem(&quot;Tool/ILib/GenSave IV and Key&quot;)]
+    static void GenIVAndKey()
+    {
+        byte[] salt = System.Text.Encoding.UTF8.GetBytes(&quot;ソルト生成&quot;);
+        //ソルトとパスワードからKeyとIVを作成。
+        var deriveBytes = new System.Security.Cryptography.Rfc2898DeriveBytes(&quot;ILbSave&quot;, salt);
+        var key = System.Convert.ToBase64String(deriveBytes.GetBytes(keySize / 8));
+        var iv = System.Convert.ToBase64String(deriveBytes.GetBytes(blockSize / 8));
+        Debug.Log($&quot;key:{key},iv:{iv}&quot;);
+    }
+}
+</code></pre><p>ここでは説明しませんが、生成した<code>Key</code>と<code>IV</code>は可能であれはbyte配列等にして、さらにXORなどを利用し難読化した型で組み込んでください。<br>殆どのデータがサーバー側で保存されている、コンフィグ等のデータしかない場合は、ハードコードしてもそれ程問題はありません。</p>
+<h3 id="インスタンスの作成">インスタンスの作成</h3>
+<p>後はKeyとIVを<code>SaveData&lt;AppSaveKey&gt;</code>の作成時に渡したり、継承したクラスでラップするなどして、インスタンスを作成します。</p>
+<p>例: <code>SaveData&lt;T&gt;</code>をそのまま使う</p>
+<pre><code class="lang-csharp">//パッケージの名前空間
+using ILib.Save;
+
+var key = &quot;hogehoge&quot;;
+var iv = &quot;hogehoge&quot;;
+var data = new SaveData&lt;AppSaveKey&gt;(key,iv, keyPrefix: () =&gt; &quot;&quot;);
+</code></pre><p>例: <code>SaveData&lt;T&gt;</code>をラップして使う</p>
+<pre><code class="lang-csharp">//パッケージの名前空間
+using ILib.Save;
+
+// クラスでラップする
+public class AppSaveData : SaveData&lt;AppSaveKey&gt;
+{
+    //可能であれば難読化した物をハードコードしておき、実行時に復号化してデータを返す
+    static string GetKey() =&gt; &quot;hogehoge&quot;;
+    static string GetIV() =&gt; &quot;hogehoge&quot;;
+
+    public AppSaveData(System.Func&lt;string&gt; keyPrefix) : base(GetKey(), GetIV(), keyPrefix) {
+    }
+}
+
+var data = new AppSaveData(keyPrefix: () =&gt; &quot;&quot;);
+</code></pre><h3 id="keyprefixについて">keyPrefixについて</h3>
+<p>keyPrefixは環境ごとに保存したい場合が違う場合に使用します。<br>例えば、複数のセーブデータを持てるタイプのゲームであれば、そのスロット毎に別の <code>KeyPrefix</code> を変えれば、同じキーでスロット毎に保存ができます。<br>また、サーバーを利用するゲームであれば、接続先ごとに保存するデータを変更するなども可能です。  </p>
+<h2 id="クラスをシリアライズして保存する">クラスをシリアライズして保存する</h2>
+<h3 id="保存用のクラスを作成する">保存用のクラスを作成する</h3>
+<p><code>Ilib.Save.Data</code>を継承したクラスに、<code>ILib.Save.SaveKeyAttribute</code>属性を設定します。<br>Unityの<code>JsonUtility</code>クラスを通して保存するため、Unityのシリアライズの制約に縛られます。  </p>
+<pre><code class="lang-csharp">//パッケージの名前空間
+using ILib.Save;
+using UnityEngine;
+
+[SaveData(AppSaveKey.Config)]
+public class Config : Data
+{
+    public float SoundVolume = 1f;
+}
+</code></pre><h3 id="データを取得保存する">データを取得・保存する</h3>
+<p>データを取り出す場合は<code>SaveData&lt;TKey&gt;.TryGet&lt;TData&gt;(out TData data)</code>を使用します。<br>保存する場合は、<code>ILib.Save.Data.SetDitry</code>クラスを利用します。  内部的には、<code>SaveData&lt;T&gt;.Set</code>関数を実行した後に<code>SaveData&lt;T&gt;.Save</code>関数を実行しています。</p>
+<pre><code class="lang-csharp">SaveData&lt;AppSaveKey&gt; data = GetData(); 
+Config config;
+//&lt;Config&gt;は省略可
+var ret = data.TryGet&lt;Config&gt;(out config);
+Debug.Assert(ret, &quot;デシリアライズに失敗した場合ret=falseが返る。新規作成時とロード成功時はret=trueが返る&quot;);
+
+//保存する
+//saveがtrueの場合はPlayerPrefへの永続化も行います。
+data.SetDitry(save: true);
+</code></pre><h2 id="license">LICENSE</h2>
+<p><a href="https://github.com/yazawa-ichio/ilib-unity-save/blob/master/LICENSE">https://github.com/yazawa-ichio/ilib-unity-save/blob/master/LICENSE</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

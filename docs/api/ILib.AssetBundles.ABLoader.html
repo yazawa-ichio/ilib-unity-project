@@ -1,0 +1,1176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ABLoader
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ABLoader
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.AssetBundles.ABLoader">
+  
+  
+  <h1 id="ILib_AssetBundles_ABLoader" data-uid="ILib.AssetBundles.ABLoader" class="text-break">Class ABLoader
+  </h1>
+  <div class="markdown level0 summary"><p>アセットバンドルのローダーです。
+開始時にInitializeで初期化してから利用してください。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ABLoader</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.AssetBundles.html">ILib.AssetBundles</a></h6>
+  <h6><strong>Assembly</strong>: ILib.AssetBundles.dll</h6>
+  <h5 id="ILib_AssetBundles_ABLoader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ABLoader</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L26">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_Initialized_" data-uid="ILib.AssetBundles.ABLoader.Initialized*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_Initialized" data-uid="ILib.AssetBundles.ABLoader.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"><p>初期化済みか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Initialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L62">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_MaxDownloadCount_" data-uid="ILib.AssetBundles.ABLoader.MaxDownloadCount*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_MaxDownloadCount" data-uid="ILib.AssetBundles.ABLoader.MaxDownloadCount">MaxDownloadCount</h4>
+  <div class="markdown level1 summary"><p>同時ダウンロード数です。
+現在値よりも低い値を設定した場合、適応されるのに遅延があります。
+デフォルトは5です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaxDownloadCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L74">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_MaxLoadCount_" data-uid="ILib.AssetBundles.ABLoader.MaxLoadCount*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_MaxLoadCount" data-uid="ILib.AssetBundles.ABLoader.MaxLoadCount">MaxLoadCount</h4>
+  <div class="markdown level1 summary"><p>同時ロード数です。
+現在値よりも低い値を設定した場合、適応されるのに遅延があります。
+デフォルトは10です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaxLoadCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L85">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_UnloadMode_" data-uid="ILib.AssetBundles.ABLoader.UnloadMode*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_UnloadMode" data-uid="ILib.AssetBundles.ABLoader.UnloadMode">UnloadMode</h4>
+  <div class="markdown level1 summary"><p>アンロードのモードです。
+デフォルトは自動破棄になります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnloadMode UnloadMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.UnloadMode.html">UnloadMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L151">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_CacheClear_" data-uid="ILib.AssetBundles.ABLoader.CacheClear*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_CacheClear_System_Action_" data-uid="ILib.AssetBundles.ABLoader.CacheClear(System.Action)">CacheClear(Action)</h4>
+  <div class="markdown level1 summary"><p>キャッシュのクリアを行います。
+停止後に実行されるため、実行完了後に再度初期化が必要になります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CustomYieldInstruction CacheClear(Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.CustomYieldInstruction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L100">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_CreateInternalOperator_" data-uid="ILib.AssetBundles.ABLoader.CreateInternalOperator*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_CreateInternalOperator_System_String_System_String_System_String_" data-uid="ILib.AssetBundles.ABLoader.CreateInternalOperator(System.String,System.String,System.String)">CreateInternalOperator(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>StreamingAssetsのバンドルを利用する場合のオペレーターです。
+ディレクトリ名とマニフェストの相対パスを渡してください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InternalLoadOperator CreateInternalOperator(string directory, string manifest, string manifestAssetName = &quot;AssetBundleManifest&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">manifest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">manifestAssetName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.InternalLoadOperator.html">InternalLoadOperator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L110">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_CreateNetworkOperator_" data-uid="ILib.AssetBundles.ABLoader.CreateNetworkOperator*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_CreateNetworkOperator_System_String_System_String_System_String_System_String_" data-uid="ILib.AssetBundles.ABLoader.CreateNetworkOperator(System.String,System.String,System.String,System.String)">CreateNetworkOperator(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>サーバからバンドルをダウンロードしてからロードする場合のオペレーターです。
+リクエスト時のベースのURLとマニフェストのパスとバージョンを指定してください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkLoadOperator CreateNetworkOperator(string url, string manifest, string version, string manifestAssetName = &quot;AssetBundleManifest&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">manifest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">manifestAssetName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.NetworkLoadOperator.html">NetworkLoadOperator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L217">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_Download_" data-uid="ILib.AssetBundles.ABLoader.Download*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_Download_System_String___System_Action_System_Boolean__System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.Download(System.String[],System.Action{System.Boolean},System.Action{System.Exception})">Download(String[], Action&lt;Boolean&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>ファイルの一括ダウンロードを行います。
+すべての処理が終了した際にonCompleteが実行されます。
+失敗したリクエストがあった場合はfalseが引数に渡されます。
+onFailは失敗したすべてのリクエストに対して実行されます。
+進捗を取得したい場合は返り値を利用してください。
+エディタモードでは正常に動作しません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;float&gt; Download(string[] names, Action&lt;bool&gt; onComplete, Action&lt;Exception&gt; onFail = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L244">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_DownloadByTags_" data-uid="ILib.AssetBundles.ABLoader.DownloadByTags*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_DownloadByTags_System_String___System_Action_System_Boolean__System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.DownloadByTags(System.String[],System.Action{System.Boolean},System.Action{System.Exception})">DownloadByTags(String[], Action&lt;Boolean&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>指定したタグのファイルの一括ダウンロードを行います。
+すべての処理が終了した際にonCompleteが実行されます。
+失敗したリクエストがあった場合はfalseが引数に渡されます。
+onFailは失敗したすべてのリクエストに対して実行されます。
+リクエスト件数と進捗を取得したい場合は返り値を利用してください。
+エディタモードでは正常に動作しません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (int, Func&lt;float&gt;)DownloadByTags(string[] tags, Action&lt;bool&gt; onComplete, Action&lt;Exception&gt; onFail = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">tags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L189">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_GetDownloadSize_" data-uid="ILib.AssetBundles.ABLoader.GetDownloadSize*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_GetDownloadSize_System_String___" data-uid="ILib.AssetBundles.ABLoader.GetDownloadSize(System.String[])">GetDownloadSize(String[])</h4>
+  <div class="markdown level1 summary"><p>指定した名前のダウンロードが必要なサイズを返します。
+標準では機能していません。IBundleDataからサイズを取得できるようにする必要があります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetDownloadSize(string[] names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L201">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_GetReference_" data-uid="ILib.AssetBundles.ABLoader.GetReference*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_GetReference_System_String_" data-uid="ILib.AssetBundles.ABLoader.GetReference(System.String)">GetReference(String)</h4>
+  <div class="markdown level1 summary"><p>Idに対してアセットを読み込みます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (string bundleName, string assetName)GetReference(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L177">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_GetSize_" data-uid="ILib.AssetBundles.ABLoader.GetSize*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_GetSize_System_String___System_Boolean_" data-uid="ILib.AssetBundles.ABLoader.GetSize(System.String[],System.Boolean)">GetSize(String[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>指定した名前のサイズを返します。
+キャッシュ済みかなどは考慮しません。
+標準では機能していません。IBundleDataからサイズを取得できるようにする必要があります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetSize(string[] names, bool ignoreDpend = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ignoreDpend</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L376">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_HandleAssert_" data-uid="ILib.AssetBundles.ABLoader.HandleAssert*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_HandleAssert_System_Action_System_String__" data-uid="ILib.AssetBundles.ABLoader.HandleAssert(System.Action{System.String})">HandleAssert(Action&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Assertの出力を指定します。
+標準のログでそのまま出力されたくない場合に利用してください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HandleAssert(Action&lt;string&gt; onAssert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">onAssert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L367">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_HandleErrorLog_" data-uid="ILib.AssetBundles.ABLoader.HandleErrorLog*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_HandleErrorLog_System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.HandleErrorLog(System.Action{System.Exception})">HandleErrorLog(Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>例外をハンドリングした際に吐き出すログを出力を指定します。
+標準のログでそのまま出力されたくない場合に利用してください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HandleErrorLog(Action&lt;Exception&gt; onError)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L121">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_Initialize_" data-uid="ILib.AssetBundles.ABLoader.Initialize*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_Initialize_ILib_AssetBundles_ILoadOperator_System_Action_System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.Initialize(ILib.AssetBundles.ILoadOperator,System.Action,System.Action{System.Exception})">Initialize(ILoadOperator, Action, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>初期化を行います。
+ロードの時の処理を決めるオペレーターを指定してください。
+オペレーターは手動での作成の他にCreateInternalOperatorやCreateNetworkOperatorで作成ができます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CustomYieldInstruction Initialize(ILoadOperator loadOperator, Action onSuccess, Action&lt;Exception&gt; onFail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.ILoadOperator.html">ILoadOperator</a></td>
+        <td><span class="parametername">loadOperator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.CustomYieldInstruction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L164">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_IsCache_" data-uid="ILib.AssetBundles.ABLoader.IsCache*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_IsCache_System_String_" data-uid="ILib.AssetBundles.ABLoader.IsCache(System.String)">IsCache(String)</h4>
+  <div class="markdown level1 summary"><p>キャッシュファイルが存在するか？</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCache(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L299">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_LoadAsset_" data-uid="ILib.AssetBundles.ABLoader.LoadAsset*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_LoadAsset__1_System_String_System_String_System_Action___0__System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.LoadAsset``1(System.String,System.String,System.Action{``0},System.Action{System.Exception})">LoadAsset&lt;T&gt;(String, String, Action&lt;T&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドルからアセットを同期ロードします。
+コンテナへの参照は自動で解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadAsset&lt;T&gt;(string name, string assetName, Action&lt;T&gt; onSuccess, Action&lt;Exception&gt; onFail)
+    where T : Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L313">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_LoadAssetAsync_" data-uid="ILib.AssetBundles.ABLoader.LoadAssetAsync*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_LoadAssetAsync__1_System_String_System_String_System_Action___0__System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.LoadAssetAsync``1(System.String,System.String,System.Action{``0},System.Action{System.Exception})">LoadAssetAsync&lt;T&gt;(String, String, Action&lt;T&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドルからアセットを非同期ロードします。
+コンテナへの参照は自動で解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadAssetAsync&lt;T&gt;(string name, string assetName, Action&lt;T&gt; onSuccess, Action&lt;Exception&gt; onFail)
+    where T : Object</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L268">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_LoadContainer_" data-uid="ILib.AssetBundles.ABLoader.LoadContainer*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_LoadContainer_System_String_System_Action_ILib_AssetBundles_BundleContainerRef__System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.LoadContainer(System.String,System.Action{ILib.AssetBundles.BundleContainerRef},System.Action{System.Exception})">LoadContainer(String, Action&lt;BundleContainerRef&gt;, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドルをロードします。
+BundleContainerRefからアセットをロードし、不要になった際にDisposeを実行してください。
+UnloadMode.ImmediatelyモードでDisposeを実行し忘れるとバンドルがリークします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadContainer(string name, Action&lt;BundleContainerRef&gt; onSuccess, Action&lt;Exception&gt; onFail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="ILib.AssetBundles.BundleContainerRef.html">BundleContainerRef</a>&gt;</td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L329">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_LoadScene_" data-uid="ILib.AssetBundles.ABLoader.LoadScene*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_LoadScene_System_String_System_String_UnityEngine_SceneManagement_LoadSceneMode_System_Action_System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.LoadScene(System.String,System.String,UnityEngine.SceneManagement.LoadSceneMode,System.Action,System.Action{System.Exception})">LoadScene(String, String, LoadSceneMode, Action, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドルからシーンを同期ロードします。
+コンテナへの参照は自動で解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadScene(string name, string scaneName, LoadSceneMode mode, Action onSuccess, Action&lt;Exception&gt; onFail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">scaneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.SceneManagement.LoadSceneMode</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L343">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_LoadSceneAsync_" data-uid="ILib.AssetBundles.ABLoader.LoadSceneAsync*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_LoadSceneAsync_System_String_System_String_UnityEngine_SceneManagement_LoadSceneMode_System_Action_System_Action_System_Exception__" data-uid="ILib.AssetBundles.ABLoader.LoadSceneAsync(System.String,System.String,UnityEngine.SceneManagement.LoadSceneMode,System.Action,System.Action{System.Exception})">LoadSceneAsync(String, String, LoadSceneMode, Action, Action&lt;Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>アセットバンドルからシーンを非同期ロードします。
+コンテナへの参照は自動で解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadSceneAsync(string name, string sceneName, LoadSceneMode mode, Action onSuccess, Action&lt;Exception&gt; onFail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.SceneManagement.LoadSceneMode</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">onFail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L132">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_Stop_" data-uid="ILib.AssetBundles.ABLoader.Stop*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_Stop_System_Action_" data-uid="ILib.AssetBundles.ABLoader.Stop(System.Action)">Stop(Action)</h4>
+  <div class="markdown level1 summary"><p>現在のリクエストを中断し機能を停止します。
+リクエスト元に中断は通知されません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CustomYieldInstruction Stop(Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.CustomYieldInstruction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L355">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_Unload_" data-uid="ILib.AssetBundles.ABLoader.Unload*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_Unload" data-uid="ILib.AssetBundles.ABLoader.Unload">Unload()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unload()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
