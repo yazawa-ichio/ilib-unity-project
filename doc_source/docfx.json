@@ -7,8 +7,8 @@
           "files": [
             "IchioLib.MVVM*.csproj",
             "ILib.MVVM.StaticViewModel.csproj",
-            "ILib.ScDebugMenu*.csproj",
-            "ILib.ScWidgets.csproj",
+            "IchioLib.ScDebugMenu*.csproj",
+            "IchioLib.ScWidgets.csproj",
             "ILib.AssetBundles.csproj",
             "ILib.AssetBundles.*.csproj",
             "ILib.csproj",
@@ -21,7 +21,10 @@
       ],
       "filter": "filterConfig.yml",
       "dest": "api",
-      "disableGitFeatures": false
+      "disableGitFeatures": false,
+      "properties": {
+        "DefineConstants": "ILIB_DEBUG_MENU"
+      }
     }
   ],
   "build": {
