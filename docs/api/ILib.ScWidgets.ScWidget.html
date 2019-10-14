@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScWidget
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScWidget
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.ScWidgets.ScWidget">
+  
+  
+  <h1 id="ILib_ScWidgets_ScWidget" data-uid="ILib.ScWidgets.ScWidget" class="text-break">Class ScWidget
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ScWidget</span></div>
+      <div class="level2"><a class="xref" href="ILib.Debugs.Widgets.CategoryTab.html">CategoryTab</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScFunction.html">ScFunction</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScGraphic.html">ScGraphic</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScGrid.html">ScGrid</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScGridBySize.html">ScGridBySize</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScScrollView.html">ScScrollView</a></div>
+      <div class="level2"><a class="xref" href="ILib.ScWidgets.ScWindow.html">ScWindow</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.ScWidgets.html">ILib.ScWidgets</a></h6>
+  <h6><strong>Assembly</strong>: IchioLib.ScWidgets.dll</h6>
+  <h5 id="ILib_ScWidgets_ScWidget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScWidget : IScWidget</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L72">View Source</a>
+  </span>
+  <h4 id="ILib_ScWidgets_ScWidget_m_Children" data-uid="ILib.ScWidgets.ScWidget.m_Children">m_Children</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;IScWidget&gt; m_Children</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L62">View Source</a>
+  </span>
+  <h4 id="ILib_ScWidgets_ScWidget_m_ParentRect" data-uid="ILib.ScWidgets.ScWidget.m_ParentRect">m_ParentRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rect m_ParentRect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L61">View Source</a>
+  </span>
+  <h4 id="ILib_ScWidgets_ScWidget_m_Rect" data-uid="ILib.ScWidgets.ScWidget.m_Rect">m_Rect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rect m_Rect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L86">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Child_" data-uid="ILib.ScWidgets.ScWidget.Child*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Child" data-uid="ILib.ScWidgets.ScWidget.Child">Child</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScWidget Child { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L73">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Children_" data-uid="ILib.ScWidgets.ScWidget.Children*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Children" data-uid="ILib.ScWidgets.ScWidget.Children">Children</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScWidget[] Children { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L67">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Extend_" data-uid="ILib.ScWidgets.ScWidget.Extend*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Extend" data-uid="ILib.ScWidgets.ScWidget.Extend">Extend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExtend Extend { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IExtend.html">IExtend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L65">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Extends_" data-uid="ILib.ScWidgets.ScWidget.Extends*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Extends" data-uid="ILib.ScWidgets.ScWidget.Extends">Extends</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExtend[] Extends { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IExtend.html">IExtend</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L48">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_IsDirty_" data-uid="ILib.ScWidgets.ScWidget.IsDirty*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_IsDirty" data-uid="ILib.ScWidgets.ScWidget.IsDirty">IsDirty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDirty { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L36">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Layout_" data-uid="ILib.ScWidgets.ScWidget.Layout*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Layout" data-uid="ILib.ScWidgets.ScWidget.Layout">Layout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILayout Layout { protected get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.ILayout.html">ILayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L27">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Name_" data-uid="ILib.ScWidgets.ScWidget.Name*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Name" data-uid="ILib.ScWidgets.ScWidget.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L63">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Parent_" data-uid="ILib.ScWidgets.ScWidget.Parent*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Parent" data-uid="ILib.ScWidgets.ScWidget.Parent">Parent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScWidget Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L46">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Revision_" data-uid="ILib.ScWidgets.ScWidget.Revision*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Revision" data-uid="ILib.ScWidgets.ScWidget.Revision">Revision</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Revision { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L113">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Add_" data-uid="ILib.ScWidgets.ScWidget.Add*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Add_ILib_ScWidgets_IScWidget_" data-uid="ILib.ScWidgets.ScWidget.Add(ILib.ScWidgets.IScWidget)">Add(IScWidget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IScWidget widget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></td>
+        <td><span class="parametername">widget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L148">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_CalcLayout_" data-uid="ILib.ScWidgets.ScWidget.CalcLayout*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_CalcLayout_UnityEngine_Rect_" data-uid="ILib.ScWidgets.ScWidget.CalcLayout(UnityEngine.Rect)">CalcLayout(Rect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalcLayout(Rect rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L108">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_GetChildren_" data-uid="ILib.ScWidgets.ScWidget.GetChildren*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_GetChildren" data-uid="ILib.ScWidgets.ScWidget.GetChildren">GetChildren()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IScWidget&gt; GetChildren()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L177">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_GetMaskColor_" data-uid="ILib.ScWidgets.ScWidget.GetMaskColor*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_GetMaskColor" data-uid="ILib.ScWidgets.ScWidget.GetMaskColor">GetMaskColor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color GetMaskColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L167">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_GetRect_" data-uid="ILib.ScWidgets.ScWidget.GetRect*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_GetRect" data-uid="ILib.ScWidgets.ScWidget.GetRect">GetRect()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect GetRect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L172">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_GetRelativeRect_" data-uid="ILib.ScWidgets.ScWidget.GetRelativeRect*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_GetRelativeRect" data-uid="ILib.ScWidgets.ScWidget.GetRelativeRect">GetRelativeRect()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect GetRelativeRect()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L187">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_GetViewRectWithoutClip_" data-uid="ILib.ScWidgets.ScWidget.GetViewRectWithoutClip*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_GetViewRectWithoutClip" data-uid="ILib.ScWidgets.ScWidget.GetViewRectWithoutClip">GetViewRectWithoutClip()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect GetViewRectWithoutClip()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L182">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_IsOutsideClip_" data-uid="ILib.ScWidgets.ScWidget.IsOutsideClip*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_IsOutsideClip" data-uid="ILib.ScWidgets.ScWidget.IsOutsideClip">IsOutsideClip()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOutsideClip()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L124">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_Remove_" data-uid="ILib.ScWidgets.ScWidget.Remove*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_Remove_ILib_ScWidgets_IScWidget_" data-uid="ILib.ScWidgets.ScWidget.Remove(ILib.ScWidgets.IScWidget)">Remove(IScWidget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(IScWidget widget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></td>
+        <td><span class="parametername">widget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L135">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_SetDitry_" data-uid="ILib.ScWidgets.ScWidget.SetDitry*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_SetDitry" data-uid="ILib.ScWidgets.ScWidget.SetDitry">SetDitry()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDitry()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L29">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_ILib_ScWidgets_IScWidget_Layout_" data-uid="ILib.ScWidgets.ScWidget.ILib#ScWidgets#IScWidget#Layout*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_ILib_ScWidgets_IScWidget_Layout" data-uid="ILib.ScWidgets.ScWidget.ILib#ScWidgets#IScWidget#Layout">IScWidget.Layout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILayout IScWidget.Layout { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.ILayout.html">ILayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L103">View Source</a>
+  </span>
+  <a id="ILib_ScWidgets_ScWidget_ILib_ScWidgets_IScWidget_SetParent_" data-uid="ILib.ScWidgets.ScWidget.ILib#ScWidgets#IScWidget#SetParent*"></a>
+  <h4 id="ILib_ScWidgets_ScWidget_ILib_ScWidgets_IScWidget_SetParent_ILib_ScWidgets_IScWidget_" data-uid="ILib.ScWidgets.ScWidget.ILib#ScWidgets#IScWidget#SetParent(ILib.ScWidgets.IScWidget)">IScWidget.SetParent(IScWidget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IScWidget.SetParent(IScWidget widget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a></td>
+        <td><span class="parametername">widget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IScWidget.html">IScWidget</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.ExtendSizeExtensions.html#ILib_ScWidgets_ExtendSizeExtensions_GetFixedExtendSize_ILib_ScWidgets_IScWidget_UnityEngine_Vector2_">ExtendSizeExtensions.GetFixedExtendSize(IScWidget, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.ExtendSizeExtensions.html#ILib_ScWidgets_ExtendSizeExtensions_GetFixedExtendSize_ILib_ScWidgets_IScWidget_UnityEngine_Vector2_UnityEngine_Vector2_">ExtendSizeExtensions.GetFixedExtendSize(IScWidget, Vector2, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IExtendExtensions.html#ILib_ScWidgets_IExtendExtensions_GetExtend__1_ILib_ScWidgets_IScWidget_">IExtendExtensions.GetExtend&lt;T&gt;(IScWidget)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IExtendExtensions.html#ILib_ScWidgets_IExtendExtensions_GetExtends__1_ILib_ScWidgets_IScWidget_">IExtendExtensions.GetExtends&lt;T&gt;(IScWidget)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IExtendExtensions.html#ILib_ScWidgets_IExtendExtensions_GetOrAddExtend__1_ILib_ScWidgets_IScWidget_">IExtendExtensions.GetOrAddExtend&lt;T&gt;(IScWidget)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IExtendExtensions.html#ILib_ScWidgets_IExtendExtensions_AddExtend__1_ILib_ScWidgets_IScWidget___0_">IExtendExtensions.AddExtend&lt;T&gt;(IScWidget, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.ScWidgets.IExtendExtensions.html#ILib_ScWidgets_IExtendExtensions_AddExtend__1_ILib_ScWidgets_IScWidget_">IExtendExtensions.AddExtend&lt;T&gt;(IScWidget)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-scwidgets/blob/master/IchioLib.ScWidgets/Runtime/Widgets/ScWidget.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

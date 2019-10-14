@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ScDebugMene | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ScDebugMene | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="scdebugmenehttpsgithubcomyazawa-ichioilib-scwidgetichiolibscwidgetsextenstionscdebugmenu"><a href="https://github.com/yazawa-ichio/ilib-scwidget/IchioLib.ScWidgets/Extenstion/ScDebugMenu">ScDebugMene</a></h1>
+
+<p>ScWidget Extention Debug Menu</p>
+<p>リポジトリ <a href="https://github.com/yazawa-ichio/ilib-scwidget/IchioLib.ScWidgets/Extenstion/ScDebugMenu">https://github.com/yazawa-ichio/ilib-scwidget/IchioLib.ScWidgets/Extenstion/ScDebugMenu</a></p>
+<h2 id="概要">概要</h2>
+<p>ScWidgetsを使用したUnityのデバッグ用のメニューです。<br>IMGUIベースで作られており、リリース時に切り離しやすかったり、uGUIに干渉しないのが利点です。  </p>
+<p><img src="debugmenu-sample.png" alt="サンプル画像"> </p>
+<h2 id="導入方法">導入方法</h2>
+<p>Unityのデバッグビルド時はデフォルトで利用できます。<br>デバッグビルド以外の際は<code>ILIB_DEBUG_MENU</code>シンボルを利用すると利用できます。<br><a href="https://docs.unity3d.com/ja/2018.4/Manual/PlatformDependentCompilation.html">こちら公式ドキュメント</a> などを参考にシンボルを定義してください。</p>
+<h3 id="scdebugmenuのセットアップ">ScDebugMenuのセットアップ</h3>
+<p><code>ScDebugMenu</code>コンポーネントはデバッグメニューの描写や制御を行うコンポーネントです。<br>アプリケーション側から行う操作は全て<code>ScDebugMenu</code>を通して行われます。  </p>
+<h4 id="menuのコンポーネントを追加する">Menuのコンポーネントを追加する</h4>
+<p>プレハブやシーンのオブジェクトに<code>ScDebugMenu</code>コンポーネントを追加してください。<br>おすすめはデバッグ用のシーンを作り、その中のゲームオブジェクトにコンポーネントを追加する方法です。<br>シーンにして置くことで、リリースビルド時にデバッグ用のリソースを切り離すことが出来ます。</p>
+<p><img src="add-menu.png" alt="メニューの追加"> </p>
+<h4 id="スキンを設定する">スキンを設定する</h4>
+<p>新規の場合は<code>スキンを新規作成</code>のボタンを実行してください。<br>指定のフォルダにスキンのアセットを作成します。<br>この際、<code>Resources</code>フォルダに入れるとビルド時に含まれるので避けてください。<br>作成した後は、<code>ScDebugMenu</code>コンポーネントの<code>Skin</code>フィールドにセットします。</p>
+<p><img src="skin-menu.png" alt="メニューの追加"> </p>
+<h4 id="scdebugmenuを表示する">ScDebugMenuを表示する</h4>
+<p>メニューを開く場合は<code>ScDebugMenu.Open</code>関数を実行します。<br><code>ScDebugMenu</code>はあくまでデバッグメニューの描写を行うためのコンポーネントであるため、メニュー開閉などは追加で実装する必要があります。  </p>
+<p>以下のような制御用のコンポーネントを作成してメニューを開きます。<br>表示のトリガーはゲーム内容やプラットフォームに応じて適宜変えてください。
+この例はスマホ向けのゲームを想定しています。</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using ILib.ScWidgets;
+
+public class DebugManager : MonoBehaviour
+{
+#if DEBUG || ILIB_DEBUG_MENU
+    ScDebugMenu m_DebugMenu;
+
+    void Awake()
+    {
+        m_DebugMenu = GetComponent&lt;ScDebugMenu&gt;();
+        m_DebugMenu.Contexts.Bind(this);
+    }
+
+    void Update()
+    {
+#if UNITY_EDITOR
+        //エディタ上だと右クリックで開く
+        if (Input.GetMouseButtonUp(1))
+        {
+            m_DebugMenu.Open();
+        }
+#else
+        //スマホだと四本指のタップで開く
+        //ゲームにおいて利用しないタップ判定などにしておく
+        if (Input.touchCount == 4)
+        {
+            m_DebugMenu.Open();
+        }
+#endif
+    }
+#endif
+}
+</code></pre><h2 id="機能">機能</h2>
+<h3 id="コンテキスト">コンテキスト</h3>
+<p>デバッグメニューの項目は、全て対象のコンテキスト（<code>System.Type</code>）を持ち、対象のコンテキストがバインドされている時のみ表示されます。<br><code>ScDebugMenu.Contexts.Bind&lt;TContext&gt;(T obj)</code>関数で任意のコンテキストをバインド出来ます。<br>解除する際は<code>ScDebugMenu.Contexts.Unbind&lt;TContext&gt;(T obj)</code>関数で行えます。<br>弱参照でバインドしているため<code>Unbind</code>関数を実行しない場合でも、<code>GC</code>によって回収された場合は自動で解除されます。</p>
+<p>この機能を利用する事でゲームのシーン（インゲーム・アウトゲーム）のみ必要なメニューを表示することが出来ます。<br>まだ、常に表示するようなメニューであれば、先ほど例に出した<code>ScDebugMenu</code>を制御するコンポーネントなどを初期化時にバインドしておきます。</p>
+<pre><code class="lang-csharp">public class DebugManager : MonoBehaviour
+{
+#if DEBUG || ILIB_DEBUG_MENU
+    ScDebugMenu m_DebugMenu;
+
+    void Awake()
+    {
+        m_DebugMenu = GetComponent&lt;ScDebugMenu&gt;();
+        //自身をコンテキストとしてバインドする。
+        m_DebugMenu.Contexts.Bind(this);
+    }
+~~~
+~~~
+}
+</code></pre><h3 id="階層構造について">階層構造について</h3>
+<p>デバッグメニューの項目は<code>Category</code>と<code>Path</code>を持ちます。<br><code>Category</code>は下部のメニューのタブになります。指定しない場合一番左の<em>共通</em>カテゴリーになります。<br><code>Path</code>はメニューの階層構造を作る事が出来ます。<code>/</code>毎にページ側が分かれ、ページ遷移用のメニューが作られます。<br><code>Path</code>は先頭に<code>@</code>を付ける事で通常の階層構造と切り離したページを持つことが出来ます。  </p>
+<pre><code class="lang-csharp">using ILib.Debugs;
+
+public class Sample1Button : ButtonContent&lt;DebugManager&gt;
+{
+    public override string Category =&gt; &quot;サンプル&quot;;
+    public override string Path =&gt; &quot;ページ1/ページ2&quot;;
+    protected override void OnClick() =&gt; Debug.Log(&quot;OnClick Sample1&quot;);
+}
+
+public class Sample2Button : ButtonContent&lt;DebugManager&gt;
+{
+    //Categoryを定義しない場合、共通カテゴリーになる
+    //public override string Category =&gt; &quot;サンプル&quot;;
+
+    //ページがない場合はカテゴリーのトップページに表示される
+    //public override string Path =&gt; &quot;ページ1&quot;;
+    protected override void OnClick() =&gt; Debug.Log(&quot;OnClick Sample1&quot;);
+}
+</code></pre><h2 id="メニューの追加">メニューの追加</h2>
+<p>メニューの追加方法は大きく二つあります。<br>デバッグ用の<code>Content</code>クラスを継承する方法と自動登録（<code>AutoRegisterAttribute</code>）属性による方法です。<br>どちらも定義さえすれば<code>ScDebugMenu</code>への登録は自動で行われます。<br>大半の用途では自動登録の方式で済むため、そちらを利用するのがおすすめです。</p>
+<h2 id="contentクラスを利用する">Contentクラスを利用する</h2>
+<p>基本的に<code>Content</code>クラスを基底クラスに持つ、ボタン等の機能を実装した<code>ButtonContent&lt;TContext&gt;</code>を継承して利用します。
+この方法を利用する利点ですが、対象のコンテキストを操作できるのがメリットです。
+<code>Content.Context</code>プロパティからアクセス出来ます。</p>
+<p>例</p>
+<pre><code class="lang-csharp">using ILib.Debugs;
+
+//クラスを定義すると自動でScDebugMenuに登録される
+public class SampleInputContent : InputFieldContent&lt;SampleContext&gt;
+{
+    //項目のラベル
+    protected override string Label =&gt; &quot;サンプル入力&quot;;
+
+    protected override string Value
+    {
+        get =&gt; Context.SampleInput;
+        set =&gt; Context.SampleInput = value;
+    }
+}
+</code></pre><h3 id="情報表示系">情報表示系</h3>
+<h3 id="labelcontenthttpsyazawa-ichiogithubioilib-unity-projectapilabelcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/LabelContent-1.html">LabelContent</a></h3>
+<p><img src="item-label.png" alt="ラベルコンテンツ"> </p>
+<h3 id="ボタン系">ボタン系</h3>
+<h3 id="buttoncontnthttpsyazawa-ichiogithubioilib-unity-projectapiilibdebugsbuttoncontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Debugs.ButtonContent-1.html">ButtonContnt</a></h3>
+<h3 id="togglecontenthttpsyazawa-ichiogithubioilib-unity-projectapitogglecontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ToggleContent-1.html">ToggleContent</a></h3>
+<p><img src="item-button.png" alt="ボタンコンテンツ"> </p>
+<h3 id="checkboxcontenthttpsyazawa-ichiogithubioilib-unity-projectapiilibdebugscheckboxcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Debugs.CheckBoxContent-1.html">CheckBoxContent</a></h3>
+<h3 id="radiobuttoncontenthttpsyazawa-ichiogithubioilib-unity-projectapiradiobuttoncontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/RadioButtonContent-1.html">RadioButtonContent</a></h3>
+<p><img src="item-button2.png" alt="ボタンコンテンツ"> </p>
+<h3 id="入力系">入力系</h3>
+<h3 id="inputfieldcontenthttpsyazawa-ichiogithubioilib-unity-projectapiilibdebugsinputfieldcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Debugs.InputFieldContent-1.html">InputFieldContent</a></h3>
+<h3 id="intfieldcontenthttpsyazawa-ichiogithubioilib-unity-projectapiintfieldcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/IntFieldContent-1.html">IntFieldContent</a></h3>
+<h3 id="intslidercontenthttpsyazawa-ichiogithubioilib-unity-projectapiintslidercontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/IntSliderContent-1.html">IntSliderContent</a></h3>
+<h3 id="floatfieldcontenthttpsyazawa-ichiogithubioilib-unity-projectapiilibdebugsfloatfieldcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Debugs.FloatFieldContent-1.html">FloatFieldContent</a></h3>
+<h3 id="floatslidercontenthttpsyazawa-ichiogithubioilib-unity-projectapiilibdebugsfloatslidercontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Debugs.FloatSliderContent-1.html">FloatSliderContent</a></h3>
+<p><img src="item-input.png" alt="入力コンテンツ"> </p>
+<h4 id="特殊">特殊</h4>
+<h3 id="pagejumpcontenthttpsyazawa-ichiogithubioilib-unity-projectapipagejumpcontent-1html"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/PageJumpContent-1.html">PageJumpContent</a></h3>
+<p><code>@</code>指定を行ったページに遷移するための機能です。</p>
+<p><img src="item-jump.png" alt="ページコンテンツ"></p>
+<h2 id="自動登録autoregisterを利用する">自動登録(<code>AutoRegister</code>)を利用する</h2>
+<p>名前空間<code>ILib.Debugs.AutoRegisters</code>の属性をクラスやメソッドに指定する事でメニューを作成する事が出来ます。<br><code>Content</code>を継承する場合はより複雑な実装が可能ですが、大半の用途ではこちらの方法で指定できます。<br>この方での指定ではコンテキスト内のプロパティやメソッドしか項目を追加できません。</p>
+<h3 id="コンテキストを指定する">コンテキストを指定する</h3>
+<p>コンテキストとして扱いたいクラスに<code>AutoRegisterTarget</code>属性を追加します。<br>これによりプロパティやメソッドが自動登録の対象にする事が出来ます。<br><code>ScDebugMenu.Contexts.Bind</code>関数でインスタンスを登録する箇所などは変わりありません。</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using ILib.Debugs;
+using ILib.Debugs.AutoRegisters;
+
+[AutoRegisterTarget]
+public class AutoSampleContext
+{
+    [DebugToggle(&quot;AutoRegisterToggle&quot;)]
+    public bool ToggleValue{ get; set; }
+
+    [DeubgButton(&quot;AutoRegisterButton&quot;)]
+    void OnDebugButton()
+    {
+        Debug.Log(&quot;OnDebugButton&quot;);
+    }
+}
+</code></pre><h3 id="項目を追加する">項目を追加する</h3>
+<p><code>AutoRegisterTarget</code>属性を追加したクラスに対して、中のプロパティや関数に属性を追加すると自動でメニューが追加されます。<br>自動実装出来る機能は以下の表で確認できます。  </p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>対象</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DebugLabel</td>
+<td>関数(return string)</td>
+<td>文字列表示</td>
+</tr>
+<tr>
+<td>DebugButton</td>
+<td>関数(return void)</td>
+<td>関数実行</td>
+</tr>
+<tr>
+<td>DebugSlider</td>
+<td>フィールドorプロパティ(float or int)</td>
+<td>数値スライダー</td>
+</tr>
+<tr>
+<td>DebugInput</td>
+<td>フィールドorプロパティ(string)</td>
+<td>文字列入力</td>
+</tr>
+<tr>
+<td>DebugToggle</td>
+<td>フィールドorプロパティ(bool)</td>
+<td>トグル</td>
+</tr>
+</tbody>
+</table>
+<p>カテゴリーやパスに関しても属性のプロパティ経由で設定できます。</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using ILib.Debugs;
+using ILib.Debugs.AutoRegisters;
+
+[AutoRegisterTarget]
+public class AutoSampleContext
+{
+    int m_Count;
+    [DeubgButton(&quot;CountUp&quot;, Category = &quot;カテゴリー&quot;)]
+    void OnCountUp()
+    {
+        m_Count++
+    }
+    [DebugLabel(&quot;Count&quot;, Path = &quot;Path1/Path2&quot;)]
+    string GetCount()
+    {
+        return &quot;Count &quot; + m_Count;
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
