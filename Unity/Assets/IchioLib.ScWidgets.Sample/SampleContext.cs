@@ -64,6 +64,9 @@ namespace ILib.Sample.Debugs
 		[DebugSlider("DebugSlider5")]
 		public float SliderTest5 = 0.5f;
 
+
+		public int SelectIndex;
+
 		private void Awake()
 		{
 			m_DebugMenu = GetComponent<ScDebugMenu>();
@@ -183,6 +186,31 @@ namespace ILib.Sample.Debugs
 		protected override string Category => "カテゴリテスト4";
 		protected override string Label => "JumpPage";
 		protected override string Path => "TestPage/NestPage";
+	}
+
+	public class SampleCheckBoxContent : CheckBoxContent<SampleContext>
+	{
+		protected override string Label => "チェックボックス";
+
+		protected override bool Value { get => Context.Toggle; set => Context.Toggle = value; }
+	}
+
+	public class SampleRadioButtonContent : RadioButtonContent<SampleContext>
+	{
+		protected override string[] Items => new string[] {
+			"RadioButton1",
+			"RadioButton2",
+			"RadioButton3",
+			"RadioButton4",
+			"RadioButton5"
+		};
+
+		protected override int Select => Context.SelectIndex;
+
+		protected override void OnChanged(int index, string name)
+		{
+			Context.SelectIndex = index;
+		}
 	}
 
 
