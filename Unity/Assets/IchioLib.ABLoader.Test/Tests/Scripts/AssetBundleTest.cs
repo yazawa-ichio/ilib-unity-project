@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using ILib.AssetBundles;
 using UnityEngine.Assertions;
+using ABLog = ILib.AssetBundles.Logger.Log;
 
 #if UNITY_EDITOR
 public class EditorTest : AssetBundleTest
@@ -58,8 +59,9 @@ public abstract class AssetBundleTest
 #endif
 		UseExManifest = useExManifet;
 		//エラーのログを有効化
-		ABLoader.HandleErrorLog(null);
-		ABLoader.HandleAssert(null);
+		ABLog.Level = ABLog.LogLevel.Debug;
+		ABLog.Enabled = true;
+		ABLog.EnabledAssert = true;
 		ABLoader.UnloadMode = UnloadMode.Immediately;
 		AutoUnloader.UnloadCycle = 2f;
 		AutoUnloader.Pause = false;
@@ -204,7 +206,7 @@ public abstract class AssetBundleTest
 		yield return Init();
 
 		//ログの無効化
-		ABLoader.HandleErrorLog((ex) => { });
+		ABLog.Enabled = false;
 
 		//単発だと即時解放
 		ABLoader.LoadContainer("materials/testmaterial", (c) => throw new System.Exception("test error"), ex => throw ex);
@@ -601,7 +603,7 @@ public abstract class AssetBundleTest
 			"error_data2",
 		};
 
-		ABLoader.HandleAssert((s) => { });
+		ABLog.EnabledAssert = false;
 		bool complete = false;
 		bool ret = false;
 		List<System.Exception> errors = new List<System.Exception>();
