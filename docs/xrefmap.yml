@@ -135,38 +135,6 @@ references:
   isSpec: "True"
   fullName: ILib.AssetBundles.ABLoader.GetSize
   nameWithType: ABLoader.GetSize
-- uid: ILib.AssetBundles.ABLoader.HandleAssert(System.Action{System.String})
-  name: HandleAssert(Action<String>)
-  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_HandleAssert_System_Action_System_String__
-  commentId: M:ILib.AssetBundles.ABLoader.HandleAssert(System.Action{System.String})
-  name.vb: HandleAssert(Action(Of String))
-  fullName: ILib.AssetBundles.ABLoader.HandleAssert(System.Action<System.String>)
-  fullName.vb: ILib.AssetBundles.ABLoader.HandleAssert(System.Action(Of System.String))
-  nameWithType: ABLoader.HandleAssert(Action<String>)
-  nameWithType.vb: ABLoader.HandleAssert(Action(Of String))
-- uid: ILib.AssetBundles.ABLoader.HandleAssert*
-  name: HandleAssert
-  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_HandleAssert_
-  commentId: Overload:ILib.AssetBundles.ABLoader.HandleAssert
-  isSpec: "True"
-  fullName: ILib.AssetBundles.ABLoader.HandleAssert
-  nameWithType: ABLoader.HandleAssert
-- uid: ILib.AssetBundles.ABLoader.HandleErrorLog(System.Action{System.Exception})
-  name: HandleErrorLog(Action<Exception>)
-  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_HandleErrorLog_System_Action_System_Exception__
-  commentId: M:ILib.AssetBundles.ABLoader.HandleErrorLog(System.Action{System.Exception})
-  name.vb: HandleErrorLog(Action(Of Exception))
-  fullName: ILib.AssetBundles.ABLoader.HandleErrorLog(System.Action<System.Exception>)
-  fullName.vb: ILib.AssetBundles.ABLoader.HandleErrorLog(System.Action(Of System.Exception))
-  nameWithType: ABLoader.HandleErrorLog(Action<Exception>)
-  nameWithType.vb: ABLoader.HandleErrorLog(Action(Of Exception))
-- uid: ILib.AssetBundles.ABLoader.HandleErrorLog*
-  name: HandleErrorLog
-  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_HandleErrorLog_
-  commentId: Overload:ILib.AssetBundles.ABLoader.HandleErrorLog
-  isSpec: "True"
-  fullName: ILib.AssetBundles.ABLoader.HandleErrorLog
-  nameWithType: ABLoader.HandleErrorLog
 - uid: ILib.AssetBundles.ABLoader.Initialize(ILib.AssetBundles.ILoadOperator,System.Action,System.Action{System.Exception})
   name: Initialize(ILoadOperator, Action, Action<Exception>)
   href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_Initialize_ILib_AssetBundles_ILoadOperator_System_Action_System_Action_System_Exception__
@@ -360,19 +328,19 @@ references:
   commentId: T:ILib.AssetBundles.AutoUnloader
   fullName: ILib.AssetBundles.AutoUnloader
   nameWithType: AutoUnloader
-- uid: ILib.AssetBundles.AutoUnloader.ChangeModel(ILib.AssetBundles.UnloadMode)
-  name: ChangeModel(UnloadMode)
-  href: api/ILib.AssetBundles.AutoUnloader.html#ILib_AssetBundles_AutoUnloader_ChangeModel_ILib_AssetBundles_UnloadMode_
-  commentId: M:ILib.AssetBundles.AutoUnloader.ChangeModel(ILib.AssetBundles.UnloadMode)
-  fullName: ILib.AssetBundles.AutoUnloader.ChangeModel(ILib.AssetBundles.UnloadMode)
-  nameWithType: AutoUnloader.ChangeModel(UnloadMode)
-- uid: ILib.AssetBundles.AutoUnloader.ChangeModel*
-  name: ChangeModel
-  href: api/ILib.AssetBundles.AutoUnloader.html#ILib_AssetBundles_AutoUnloader_ChangeModel_
-  commentId: Overload:ILib.AssetBundles.AutoUnloader.ChangeModel
+- uid: ILib.AssetBundles.AutoUnloader.ChangeMode(ILib.AssetBundles.UnloadMode)
+  name: ChangeMode(UnloadMode)
+  href: api/ILib.AssetBundles.AutoUnloader.html#ILib_AssetBundles_AutoUnloader_ChangeMode_ILib_AssetBundles_UnloadMode_
+  commentId: M:ILib.AssetBundles.AutoUnloader.ChangeMode(ILib.AssetBundles.UnloadMode)
+  fullName: ILib.AssetBundles.AutoUnloader.ChangeMode(ILib.AssetBundles.UnloadMode)
+  nameWithType: AutoUnloader.ChangeMode(UnloadMode)
+- uid: ILib.AssetBundles.AutoUnloader.ChangeMode*
+  name: ChangeMode
+  href: api/ILib.AssetBundles.AutoUnloader.html#ILib_AssetBundles_AutoUnloader_ChangeMode_
+  commentId: Overload:ILib.AssetBundles.AutoUnloader.ChangeMode
   isSpec: "True"
-  fullName: ILib.AssetBundles.AutoUnloader.ChangeModel
-  nameWithType: AutoUnloader.ChangeModel
+  fullName: ILib.AssetBundles.AutoUnloader.ChangeMode
+  nameWithType: AutoUnloader.ChangeMode
 - uid: ILib.AssetBundles.AutoUnloader.Pause
   name: Pause
   href: api/ILib.AssetBundles.AutoUnloader.html#ILib_AssetBundles_AutoUnloader_Pause
@@ -2044,6 +2012,112 @@ references:
   isSpec: "True"
   fullName: ILib.AssetBundles.LoadOperation.Success
   nameWithType: LoadOperation.Success
+- uid: ILib.AssetBundles.Logger
+  name: ILib.AssetBundles.Logger
+  href: api/ILib.AssetBundles.Logger.html
+  commentId: N:ILib.AssetBundles.Logger
+  fullName: ILib.AssetBundles.Logger
+  nameWithType: ILib.AssetBundles.Logger
+- uid: ILib.AssetBundles.Logger.Log
+  name: Log
+  href: api/ILib.AssetBundles.Logger.Log.html
+  commentId: T:ILib.AssetBundles.Logger.Log
+  fullName: ILib.AssetBundles.Logger.Log
+  nameWithType: Log
+- uid: ILib.AssetBundles.Logger.Log.Enabled
+  name: Enabled
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Enabled
+  commentId: P:ILib.AssetBundles.Logger.Log.Enabled
+  fullName: ILib.AssetBundles.Logger.Log.Enabled
+  nameWithType: Log.Enabled
+- uid: ILib.AssetBundles.Logger.Log.Enabled*
+  name: Enabled
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Enabled_
+  commentId: Overload:ILib.AssetBundles.Logger.Log.Enabled
+  isSpec: "True"
+  fullName: ILib.AssetBundles.Logger.Log.Enabled
+  nameWithType: Log.Enabled
+- uid: ILib.AssetBundles.Logger.Log.EnabledAssert
+  name: EnabledAssert
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_EnabledAssert
+  commentId: P:ILib.AssetBundles.Logger.Log.EnabledAssert
+  fullName: ILib.AssetBundles.Logger.Log.EnabledAssert
+  nameWithType: Log.EnabledAssert
+- uid: ILib.AssetBundles.Logger.Log.EnabledAssert*
+  name: EnabledAssert
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_EnabledAssert_
+  commentId: Overload:ILib.AssetBundles.Logger.Log.EnabledAssert
+  isSpec: "True"
+  fullName: ILib.AssetBundles.Logger.Log.EnabledAssert
+  nameWithType: Log.EnabledAssert
+- uid: ILib.AssetBundles.Logger.Log.Level
+  name: Level
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Level
+  commentId: P:ILib.AssetBundles.Logger.Log.Level
+  fullName: ILib.AssetBundles.Logger.Log.Level
+  nameWithType: Log.Level
+- uid: ILib.AssetBundles.Logger.Log.Level*
+  name: Level
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Level_
+  commentId: Overload:ILib.AssetBundles.Logger.Log.Level
+  isSpec: "True"
+  fullName: ILib.AssetBundles.Logger.Log.Level
+  nameWithType: Log.Level
+- uid: ILib.AssetBundles.Logger.Log.Logger
+  name: Logger
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Logger
+  commentId: P:ILib.AssetBundles.Logger.Log.Logger
+  fullName: ILib.AssetBundles.Logger.Log.Logger
+  nameWithType: Log.Logger
+- uid: ILib.AssetBundles.Logger.Log.Logger*
+  name: Logger
+  href: api/ILib.AssetBundles.Logger.Log.html#ILib_AssetBundles_Logger_Log_Logger_
+  commentId: Overload:ILib.AssetBundles.Logger.Log.Logger
+  isSpec: "True"
+  fullName: ILib.AssetBundles.Logger.Log.Logger
+  nameWithType: Log.Logger
+- uid: ILib.AssetBundles.Logger.Log.LogLevel
+  name: Log.LogLevel
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html
+  commentId: T:ILib.AssetBundles.Logger.Log.LogLevel
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel
+  nameWithType: Log.LogLevel
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.All
+  name: All
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_All
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.All
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.All
+  nameWithType: Log.LogLevel.All
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.Debug
+  name: Debug
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_Debug
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.Debug
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.Debug
+  nameWithType: Log.LogLevel.Debug
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.Error
+  name: Error
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_Error
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.Error
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.Error
+  nameWithType: Log.LogLevel.Error
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.Exception
+  name: Exception
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_Exception
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.Exception
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.Exception
+  nameWithType: Log.LogLevel.Exception
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.Trace
+  name: Trace
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_Trace
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.Trace
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.Trace
+  nameWithType: Log.LogLevel.Trace
+- uid: ILib.AssetBundles.Logger.Log.LogLevel.Warning
+  name: Warning
+  href: api/ILib.AssetBundles.Logger.Log.LogLevel.html#ILib_AssetBundles_Logger_Log_LogLevel_Warning
+  commentId: F:ILib.AssetBundles.Logger.Log.LogLevel.Warning
+  fullName: ILib.AssetBundles.Logger.Log.LogLevel.Warning
+  nameWithType: Log.LogLevel.Warning
 - uid: ILib.AssetBundles.NameSetter
   name: ILib.AssetBundles.NameSetter
   href: api/ILib.AssetBundles.NameSetter.html
