@@ -6856,240 +6856,18 @@ references:
   commentId: T:ILib.Caller.Call
   fullName: ILib.Caller.Call
   nameWithType: Call
-- uid: ILib.Caller.Call.Bind(System.Object)
-  name: Bind(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Bind_System_Object_
-  commentId: M:ILib.Caller.Call.Bind(System.Object)
-  fullName: ILib.Caller.Call.Bind(System.Object)
-  nameWithType: Call.Bind(Object)
-- uid: ILib.Caller.Call.Bind*
-  name: Bind
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Bind_
-  commentId: Overload:ILib.Caller.Call.Bind
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Bind
-  nameWithType: Call.Bind
-- uid: ILib.Caller.Call.Broadcast(System.Object)
-  name: Broadcast(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Broadcast_System_Object_
-  commentId: M:ILib.Caller.Call.Broadcast(System.Object)
-  fullName: ILib.Caller.Call.Broadcast(System.Object)
-  nameWithType: Call.Broadcast(Object)
-- uid: ILib.Caller.Call.Broadcast(System.String)
-  name: Broadcast(String)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Broadcast_System_String_
-  commentId: M:ILib.Caller.Call.Broadcast(System.String)
-  fullName: ILib.Caller.Call.Broadcast(System.String)
-  nameWithType: Call.Broadcast(String)
-- uid: ILib.Caller.Call.Broadcast*
-  name: Broadcast
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Broadcast_
-  commentId: Overload:ILib.Caller.Call.Broadcast
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Broadcast
-  nameWithType: Call.Broadcast
-- uid: ILib.Caller.Call.Broadcast``1(System.Object,``0)
-  name: Broadcast<T>(Object, T)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Broadcast__1_System_Object___0_
-  commentId: M:ILib.Caller.Call.Broadcast``1(System.Object,``0)
-  name.vb: Broadcast(Of T)(Object, T)
-  fullName: ILib.Caller.Call.Broadcast<T>(System.Object, T)
-  fullName.vb: ILib.Caller.Call.Broadcast(Of T)(System.Object, T)
-  nameWithType: Call.Broadcast<T>(Object, T)
-  nameWithType.vb: Call.Broadcast(Of T)(Object, T)
-- uid: ILib.Caller.Call.Broadcast``1(System.String,``0)
-  name: Broadcast<T>(String, T)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Broadcast__1_System_String___0_
-  commentId: M:ILib.Caller.Call.Broadcast``1(System.String,``0)
-  name.vb: Broadcast(Of T)(String, T)
-  fullName: ILib.Caller.Call.Broadcast<T>(System.String, T)
-  fullName.vb: ILib.Caller.Call.Broadcast(Of T)(System.String, T)
-  nameWithType: Call.Broadcast<T>(String, T)
-  nameWithType.vb: Call.Broadcast(Of T)(String, T)
-- uid: ILib.Caller.Call.Dispose
-  name: Dispose()
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Dispose
-  commentId: M:ILib.Caller.Call.Dispose
-  fullName: ILib.Caller.Call.Dispose()
-  nameWithType: Call.Dispose()
-- uid: ILib.Caller.Call.Dispose*
-  name: Dispose
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Dispose_
-  commentId: Overload:ILib.Caller.Call.Dispose
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Dispose
-  nameWithType: Call.Dispose
-- uid: ILib.Caller.Call.Disposed
-  name: Disposed
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Disposed
-  commentId: P:ILib.Caller.Call.Disposed
-  fullName: ILib.Caller.Call.Disposed
-  nameWithType: Call.Disposed
-- uid: ILib.Caller.Call.Disposed*
-  name: Disposed
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Disposed_
-  commentId: Overload:ILib.Caller.Call.Disposed
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Disposed
-  nameWithType: Call.Disposed
-- uid: ILib.Caller.Call.Enabled
-  name: Enabled
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Enabled
-  commentId: P:ILib.Caller.Call.Enabled
-  fullName: ILib.Caller.Call.Enabled
-  nameWithType: Call.Enabled
-- uid: ILib.Caller.Call.Enabled*
-  name: Enabled
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Enabled_
-  commentId: Overload:ILib.Caller.Call.Enabled
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Enabled
-  nameWithType: Call.Enabled
-- uid: ILib.Caller.Call.Finalize
-  name: Finalize()
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Finalize
-  commentId: M:ILib.Caller.Call.Finalize
-  fullName: ILib.Caller.Call.Finalize()
-  nameWithType: Call.Finalize()
-- uid: ILib.Caller.Call.Finalize*
-  name: Finalize
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Finalize_
-  commentId: Overload:ILib.Caller.Call.Finalize
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Finalize
-  nameWithType: Call.Finalize
-- uid: ILib.Caller.Call.InvokeBeforChild
-  name: InvokeBeforChild
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_InvokeBeforChild
-  commentId: P:ILib.Caller.Call.InvokeBeforChild
-  fullName: ILib.Caller.Call.InvokeBeforChild
-  nameWithType: Call.InvokeBeforChild
-- uid: ILib.Caller.Call.InvokeBeforChild*
-  name: InvokeBeforChild
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_InvokeBeforChild_
-  commentId: Overload:ILib.Caller.Call.InvokeBeforChild
-  isSpec: "True"
-  fullName: ILib.Caller.Call.InvokeBeforChild
-  nameWithType: Call.InvokeBeforChild
-- uid: ILib.Caller.Call.Message(System.Object)
-  name: Message(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Message_System_Object_
-  commentId: M:ILib.Caller.Call.Message(System.Object)
-  fullName: ILib.Caller.Call.Message(System.Object)
-  nameWithType: Call.Message(Object)
-- uid: ILib.Caller.Call.Message(System.String)
-  name: Message(String)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Message_System_String_
-  commentId: M:ILib.Caller.Call.Message(System.String)
-  fullName: ILib.Caller.Call.Message(System.String)
-  nameWithType: Call.Message(String)
-- uid: ILib.Caller.Call.Message*
-  name: Message
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Message_
-  commentId: Overload:ILib.Caller.Call.Message
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Message
-  nameWithType: Call.Message
-- uid: ILib.Caller.Call.Message``1(System.Object,``0)
-  name: Message<T>(Object, T)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Message__1_System_Object___0_
-  commentId: M:ILib.Caller.Call.Message``1(System.Object,``0)
-  name.vb: Message(Of T)(Object, T)
-  fullName: ILib.Caller.Call.Message<T>(System.Object, T)
-  fullName.vb: ILib.Caller.Call.Message(Of T)(System.Object, T)
-  nameWithType: Call.Message<T>(Object, T)
-  nameWithType.vb: Call.Message(Of T)(Object, T)
-- uid: ILib.Caller.Call.Message``1(System.String,``0)
-  name: Message<T>(String, T)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Message__1_System_String___0_
-  commentId: M:ILib.Caller.Call.Message``1(System.String,``0)
-  name.vb: Message(Of T)(String, T)
-  fullName: ILib.Caller.Call.Message<T>(System.String, T)
-  fullName.vb: ILib.Caller.Call.Message(Of T)(System.String, T)
-  nameWithType: Call.Message<T>(String, T)
-  nameWithType.vb: Call.Message(Of T)(String, T)
-- uid: ILib.Caller.Call.Path(System.Object,System.Action)
-  name: Path(Object, Action)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Path_System_Object_System_Action_
-  commentId: M:ILib.Caller.Call.Path(System.Object,System.Action)
-  fullName: ILib.Caller.Call.Path(System.Object, System.Action)
-  nameWithType: Call.Path(Object, Action)
-- uid: ILib.Caller.Call.Path*
-  name: Path
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Path_
-  commentId: Overload:ILib.Caller.Call.Path
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Path
-  nameWithType: Call.Path
-- uid: ILib.Caller.Call.Path``1(System.Object,System.Action{``0})
-  name: Path<T>(Object, Action<T>)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Path__1_System_Object_System_Action___0__
-  commentId: M:ILib.Caller.Call.Path``1(System.Object,System.Action{``0})
-  name.vb: Path(Of T)(Object, Action(Of T))
-  fullName: ILib.Caller.Call.Path<T>(System.Object, System.Action<T>)
-  fullName.vb: ILib.Caller.Call.Path(Of T)(System.Object, System.Action(Of T))
-  nameWithType: Call.Path<T>(Object, Action<T>)
-  nameWithType.vb: Call.Path(Of T)(Object, Action(Of T))
-- uid: ILib.Caller.Call.SubCall
-  name: SubCall()
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_SubCall
-  commentId: M:ILib.Caller.Call.SubCall
-  fullName: ILib.Caller.Call.SubCall()
-  nameWithType: Call.SubCall()
-- uid: ILib.Caller.Call.SubCall*
-  name: SubCall
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_SubCall_
-  commentId: Overload:ILib.Caller.Call.SubCall
-  isSpec: "True"
-  fullName: ILib.Caller.Call.SubCall
-  nameWithType: Call.SubCall
-- uid: ILib.Caller.Call.ToKey(System.Object)
-  name: ToKey(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_ToKey_System_Object_
-  commentId: M:ILib.Caller.Call.ToKey(System.Object)
-  fullName: ILib.Caller.Call.ToKey(System.Object)
-  nameWithType: Call.ToKey(Object)
-- uid: ILib.Caller.Call.ToKey*
-  name: ToKey
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_ToKey_
-  commentId: Overload:ILib.Caller.Call.ToKey
-  isSpec: "True"
-  fullName: ILib.Caller.Call.ToKey
-  nameWithType: Call.ToKey
-- uid: ILib.Caller.Call.Trigger(System.Object)
-  name: Trigger(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Trigger_System_Object_
-  commentId: M:ILib.Caller.Call.Trigger(System.Object)
-  fullName: ILib.Caller.Call.Trigger(System.Object)
-  nameWithType: Call.Trigger(Object)
-- uid: ILib.Caller.Call.Trigger*
-  name: Trigger
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Trigger_
-  commentId: Overload:ILib.Caller.Call.Trigger
-  isSpec: "True"
-  fullName: ILib.Caller.Call.Trigger
-  nameWithType: Call.Trigger
-- uid: ILib.Caller.Call.Trigger``1(System.Object)
-  name: Trigger<T>(Object)
-  href: api/ILib.Caller.Call.html#ILib_Caller_Call_Trigger__1_System_Object_
-  commentId: M:ILib.Caller.Call.Trigger``1(System.Object)
-  name.vb: Trigger(Of T)(Object)
-  fullName: ILib.Caller.Call.Trigger<T>(System.Object)
-  fullName.vb: ILib.Caller.Call.Trigger(Of T)(System.Object)
-  nameWithType: Call.Trigger<T>(Object)
-  nameWithType.vb: Call.Trigger(Of T)(Object)
 - uid: ILib.Caller.Dispatcher
   name: Dispatcher
   href: api/ILib.Caller.Dispatcher.html
   commentId: T:ILib.Caller.Dispatcher
   fullName: ILib.Caller.Dispatcher
   nameWithType: Dispatcher
-- uid: ILib.Caller.Dispatcher.#ctor(ILib.Caller.Call)
-  name: Dispatcher(Call)
-  href: api/ILib.Caller.Dispatcher.html#ILib_Caller_Dispatcher__ctor_ILib_Caller_Call_
-  commentId: M:ILib.Caller.Dispatcher.#ctor(ILib.Caller.Call)
-  fullName: ILib.Caller.Dispatcher.Dispatcher(ILib.Caller.Call)
-  nameWithType: Dispatcher.Dispatcher(Call)
+- uid: ILib.Caller.Dispatcher.#ctor(ILib.Caller.EventCall)
+  name: Dispatcher(EventCall)
+  href: api/ILib.Caller.Dispatcher.html#ILib_Caller_Dispatcher__ctor_ILib_Caller_EventCall_
+  commentId: M:ILib.Caller.Dispatcher.#ctor(ILib.Caller.EventCall)
+  fullName: ILib.Caller.Dispatcher.Dispatcher(ILib.Caller.EventCall)
+  nameWithType: Dispatcher.Dispatcher(EventCall)
 - uid: ILib.Caller.Dispatcher.#ctor*
   name: Dispatcher
   href: api/ILib.Caller.Dispatcher.html#ILib_Caller_Dispatcher__ctor_
@@ -7141,56 +6919,256 @@ references:
   fullName.vb: ILib.Caller.Dispatcher.Message(Of T)(System.Object, T)
   nameWithType: Dispatcher.Message<T>(Object, T)
   nameWithType.vb: Dispatcher.Message(Of T)(Object, T)
-- uid: ILib.Caller.DispatcherExtensions
-  name: DispatcherExtensions
-  href: api/ILib.Caller.DispatcherExtensions.html
-  commentId: T:ILib.Caller.DispatcherExtensions
-  fullName: ILib.Caller.DispatcherExtensions
-  nameWithType: DispatcherExtensions
-- uid: ILib.Caller.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher,System.Object)
-  name: Broadcast(IHasDispatcher, Object)
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_
-  commentId: M:ILib.Caller.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher,System.Object)
-  fullName: ILib.Caller.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher, System.Object)
-  nameWithType: DispatcherExtensions.Broadcast(IHasDispatcher, Object)
-- uid: ILib.Caller.DispatcherExtensions.Broadcast*
+- uid: ILib.Caller.EventCall
+  name: EventCall
+  href: api/ILib.Caller.EventCall.html
+  commentId: T:ILib.Caller.EventCall
+  fullName: ILib.Caller.EventCall
+  nameWithType: EventCall
+- uid: ILib.Caller.EventCall.Bind(System.Object)
+  name: Bind(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Bind_System_Object_
+  commentId: M:ILib.Caller.EventCall.Bind(System.Object)
+  fullName: ILib.Caller.EventCall.Bind(System.Object)
+  nameWithType: EventCall.Bind(Object)
+- uid: ILib.Caller.EventCall.Bind*
+  name: Bind
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Bind_
+  commentId: Overload:ILib.Caller.EventCall.Bind
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Bind
+  nameWithType: EventCall.Bind
+- uid: ILib.Caller.EventCall.Broadcast(System.Object)
+  name: Broadcast(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Broadcast_System_Object_
+  commentId: M:ILib.Caller.EventCall.Broadcast(System.Object)
+  fullName: ILib.Caller.EventCall.Broadcast(System.Object)
+  nameWithType: EventCall.Broadcast(Object)
+- uid: ILib.Caller.EventCall.Broadcast(System.String)
+  name: Broadcast(String)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Broadcast_System_String_
+  commentId: M:ILib.Caller.EventCall.Broadcast(System.String)
+  fullName: ILib.Caller.EventCall.Broadcast(System.String)
+  nameWithType: EventCall.Broadcast(String)
+- uid: ILib.Caller.EventCall.Broadcast*
   name: Broadcast
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Broadcast_
-  commentId: Overload:ILib.Caller.DispatcherExtensions.Broadcast
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Broadcast_
+  commentId: Overload:ILib.Caller.EventCall.Broadcast
   isSpec: "True"
-  fullName: ILib.Caller.DispatcherExtensions.Broadcast
-  nameWithType: DispatcherExtensions.Broadcast
-- uid: ILib.Caller.DispatcherExtensions.Broadcast``1(ILib.Caller.IHasDispatcher,System.Object,``0)
-  name: Broadcast<T>(IHasDispatcher, Object, T)
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_
-  commentId: M:ILib.Caller.DispatcherExtensions.Broadcast``1(ILib.Caller.IHasDispatcher,System.Object,``0)
-  name.vb: Broadcast(Of T)(IHasDispatcher, Object, T)
-  fullName: ILib.Caller.DispatcherExtensions.Broadcast<T>(ILib.Caller.IHasDispatcher, System.Object, T)
-  fullName.vb: ILib.Caller.DispatcherExtensions.Broadcast(Of T)(ILib.Caller.IHasDispatcher, System.Object, T)
-  nameWithType: DispatcherExtensions.Broadcast<T>(IHasDispatcher, Object, T)
-  nameWithType.vb: DispatcherExtensions.Broadcast(Of T)(IHasDispatcher, Object, T)
-- uid: ILib.Caller.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher,System.Object)
-  name: Message(IHasDispatcher, Object)
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_
-  commentId: M:ILib.Caller.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher,System.Object)
-  fullName: ILib.Caller.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher, System.Object)
-  nameWithType: DispatcherExtensions.Message(IHasDispatcher, Object)
-- uid: ILib.Caller.DispatcherExtensions.Message*
+  fullName: ILib.Caller.EventCall.Broadcast
+  nameWithType: EventCall.Broadcast
+- uid: ILib.Caller.EventCall.Broadcast``1(System.Object,``0)
+  name: Broadcast<T>(Object, T)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Broadcast__1_System_Object___0_
+  commentId: M:ILib.Caller.EventCall.Broadcast``1(System.Object,``0)
+  name.vb: Broadcast(Of T)(Object, T)
+  fullName: ILib.Caller.EventCall.Broadcast<T>(System.Object, T)
+  fullName.vb: ILib.Caller.EventCall.Broadcast(Of T)(System.Object, T)
+  nameWithType: EventCall.Broadcast<T>(Object, T)
+  nameWithType.vb: EventCall.Broadcast(Of T)(Object, T)
+- uid: ILib.Caller.EventCall.Broadcast``1(System.String,``0)
+  name: Broadcast<T>(String, T)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Broadcast__1_System_String___0_
+  commentId: M:ILib.Caller.EventCall.Broadcast``1(System.String,``0)
+  name.vb: Broadcast(Of T)(String, T)
+  fullName: ILib.Caller.EventCall.Broadcast<T>(System.String, T)
+  fullName.vb: ILib.Caller.EventCall.Broadcast(Of T)(System.String, T)
+  nameWithType: EventCall.Broadcast<T>(String, T)
+  nameWithType.vb: EventCall.Broadcast(Of T)(String, T)
+- uid: ILib.Caller.EventCall.Dispose
+  name: Dispose()
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Dispose
+  commentId: M:ILib.Caller.EventCall.Dispose
+  fullName: ILib.Caller.EventCall.Dispose()
+  nameWithType: EventCall.Dispose()
+- uid: ILib.Caller.EventCall.Dispose*
+  name: Dispose
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Dispose_
+  commentId: Overload:ILib.Caller.EventCall.Dispose
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Dispose
+  nameWithType: EventCall.Dispose
+- uid: ILib.Caller.EventCall.Disposed
+  name: Disposed
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Disposed
+  commentId: P:ILib.Caller.EventCall.Disposed
+  fullName: ILib.Caller.EventCall.Disposed
+  nameWithType: EventCall.Disposed
+- uid: ILib.Caller.EventCall.Disposed*
+  name: Disposed
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Disposed_
+  commentId: Overload:ILib.Caller.EventCall.Disposed
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Disposed
+  nameWithType: EventCall.Disposed
+- uid: ILib.Caller.EventCall.Enabled
+  name: Enabled
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Enabled
+  commentId: P:ILib.Caller.EventCall.Enabled
+  fullName: ILib.Caller.EventCall.Enabled
+  nameWithType: EventCall.Enabled
+- uid: ILib.Caller.EventCall.Enabled*
+  name: Enabled
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Enabled_
+  commentId: Overload:ILib.Caller.EventCall.Enabled
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Enabled
+  nameWithType: EventCall.Enabled
+- uid: ILib.Caller.EventCall.Finalize
+  name: Finalize()
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Finalize
+  commentId: M:ILib.Caller.EventCall.Finalize
+  fullName: ILib.Caller.EventCall.Finalize()
+  nameWithType: EventCall.Finalize()
+- uid: ILib.Caller.EventCall.Finalize*
+  name: Finalize
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Finalize_
+  commentId: Overload:ILib.Caller.EventCall.Finalize
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Finalize
+  nameWithType: EventCall.Finalize
+- uid: ILib.Caller.EventCall.InvokeBeforChild
+  name: InvokeBeforChild
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_InvokeBeforChild
+  commentId: P:ILib.Caller.EventCall.InvokeBeforChild
+  fullName: ILib.Caller.EventCall.InvokeBeforChild
+  nameWithType: EventCall.InvokeBeforChild
+- uid: ILib.Caller.EventCall.InvokeBeforChild*
+  name: InvokeBeforChild
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_InvokeBeforChild_
+  commentId: Overload:ILib.Caller.EventCall.InvokeBeforChild
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.InvokeBeforChild
+  nameWithType: EventCall.InvokeBeforChild
+- uid: ILib.Caller.EventCall.Message(System.Object)
+  name: Message(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Message_System_Object_
+  commentId: M:ILib.Caller.EventCall.Message(System.Object)
+  fullName: ILib.Caller.EventCall.Message(System.Object)
+  nameWithType: EventCall.Message(Object)
+- uid: ILib.Caller.EventCall.Message(System.String)
+  name: Message(String)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Message_System_String_
+  commentId: M:ILib.Caller.EventCall.Message(System.String)
+  fullName: ILib.Caller.EventCall.Message(System.String)
+  nameWithType: EventCall.Message(String)
+- uid: ILib.Caller.EventCall.Message*
   name: Message
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Message_
-  commentId: Overload:ILib.Caller.DispatcherExtensions.Message
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Message_
+  commentId: Overload:ILib.Caller.EventCall.Message
   isSpec: "True"
-  fullName: ILib.Caller.DispatcherExtensions.Message
-  nameWithType: DispatcherExtensions.Message
-- uid: ILib.Caller.DispatcherExtensions.Message``1(ILib.Caller.IHasDispatcher,System.Object,``0)
-  name: Message<T>(IHasDispatcher, Object, T)
-  href: api/ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_
-  commentId: M:ILib.Caller.DispatcherExtensions.Message``1(ILib.Caller.IHasDispatcher,System.Object,``0)
-  name.vb: Message(Of T)(IHasDispatcher, Object, T)
-  fullName: ILib.Caller.DispatcherExtensions.Message<T>(ILib.Caller.IHasDispatcher, System.Object, T)
-  fullName.vb: ILib.Caller.DispatcherExtensions.Message(Of T)(ILib.Caller.IHasDispatcher, System.Object, T)
-  nameWithType: DispatcherExtensions.Message<T>(IHasDispatcher, Object, T)
-  nameWithType.vb: DispatcherExtensions.Message(Of T)(IHasDispatcher, Object, T)
+  fullName: ILib.Caller.EventCall.Message
+  nameWithType: EventCall.Message
+- uid: ILib.Caller.EventCall.Message``1(System.Object,``0)
+  name: Message<T>(Object, T)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Message__1_System_Object___0_
+  commentId: M:ILib.Caller.EventCall.Message``1(System.Object,``0)
+  name.vb: Message(Of T)(Object, T)
+  fullName: ILib.Caller.EventCall.Message<T>(System.Object, T)
+  fullName.vb: ILib.Caller.EventCall.Message(Of T)(System.Object, T)
+  nameWithType: EventCall.Message<T>(Object, T)
+  nameWithType.vb: EventCall.Message(Of T)(Object, T)
+- uid: ILib.Caller.EventCall.Message``1(System.String,``0)
+  name: Message<T>(String, T)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Message__1_System_String___0_
+  commentId: M:ILib.Caller.EventCall.Message``1(System.String,``0)
+  name.vb: Message(Of T)(String, T)
+  fullName: ILib.Caller.EventCall.Message<T>(System.String, T)
+  fullName.vb: ILib.Caller.EventCall.Message(Of T)(System.String, T)
+  nameWithType: EventCall.Message<T>(String, T)
+  nameWithType.vb: EventCall.Message(Of T)(String, T)
+- uid: ILib.Caller.EventCall.Path(System.Object,System.Action)
+  name: Path(Object, Action)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Path_System_Object_System_Action_
+  commentId: M:ILib.Caller.EventCall.Path(System.Object,System.Action)
+  fullName: ILib.Caller.EventCall.Path(System.Object, System.Action)
+  nameWithType: EventCall.Path(Object, Action)
+- uid: ILib.Caller.EventCall.Path*
+  name: Path
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Path_
+  commentId: Overload:ILib.Caller.EventCall.Path
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Path
+  nameWithType: EventCall.Path
+- uid: ILib.Caller.EventCall.Path``1(System.Object,System.Action{``0})
+  name: Path<T>(Object, Action<T>)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Path__1_System_Object_System_Action___0__
+  commentId: M:ILib.Caller.EventCall.Path``1(System.Object,System.Action{``0})
+  name.vb: Path(Of T)(Object, Action(Of T))
+  fullName: ILib.Caller.EventCall.Path<T>(System.Object, System.Action<T>)
+  fullName.vb: ILib.Caller.EventCall.Path(Of T)(System.Object, System.Action(Of T))
+  nameWithType: EventCall.Path<T>(Object, Action<T>)
+  nameWithType.vb: EventCall.Path(Of T)(Object, Action(Of T))
+- uid: ILib.Caller.EventCall.SubCall
+  name: SubCall()
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_SubCall
+  commentId: M:ILib.Caller.EventCall.SubCall
+  fullName: ILib.Caller.EventCall.SubCall()
+  nameWithType: EventCall.SubCall()
+- uid: ILib.Caller.EventCall.SubCall*
+  name: SubCall
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_SubCall_
+  commentId: Overload:ILib.Caller.EventCall.SubCall
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.SubCall
+  nameWithType: EventCall.SubCall
+- uid: ILib.Caller.EventCall.Subscribe(System.Object,System.Action)
+  name: Subscribe(Object, Action)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Subscribe_System_Object_System_Action_
+  commentId: M:ILib.Caller.EventCall.Subscribe(System.Object,System.Action)
+  fullName: ILib.Caller.EventCall.Subscribe(System.Object, System.Action)
+  nameWithType: EventCall.Subscribe(Object, Action)
+- uid: ILib.Caller.EventCall.Subscribe*
+  name: Subscribe
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Subscribe_
+  commentId: Overload:ILib.Caller.EventCall.Subscribe
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Subscribe
+  nameWithType: EventCall.Subscribe
+- uid: ILib.Caller.EventCall.Subscribe``1(System.Object,System.Action{``0})
+  name: Subscribe<T>(Object, Action<T>)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Subscribe__1_System_Object_System_Action___0__
+  commentId: M:ILib.Caller.EventCall.Subscribe``1(System.Object,System.Action{``0})
+  name.vb: Subscribe(Of T)(Object, Action(Of T))
+  fullName: ILib.Caller.EventCall.Subscribe<T>(System.Object, System.Action<T>)
+  fullName.vb: ILib.Caller.EventCall.Subscribe(Of T)(System.Object, System.Action(Of T))
+  nameWithType: EventCall.Subscribe<T>(Object, Action<T>)
+  nameWithType.vb: EventCall.Subscribe(Of T)(Object, Action(Of T))
+- uid: ILib.Caller.EventCall.ToKey(System.Object)
+  name: ToKey(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_ToKey_System_Object_
+  commentId: M:ILib.Caller.EventCall.ToKey(System.Object)
+  fullName: ILib.Caller.EventCall.ToKey(System.Object)
+  nameWithType: EventCall.ToKey(Object)
+- uid: ILib.Caller.EventCall.ToKey*
+  name: ToKey
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_ToKey_
+  commentId: Overload:ILib.Caller.EventCall.ToKey
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.ToKey
+  nameWithType: EventCall.ToKey
+- uid: ILib.Caller.EventCall.Trigger(System.Object)
+  name: Trigger(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger_System_Object_
+  commentId: M:ILib.Caller.EventCall.Trigger(System.Object)
+  fullName: ILib.Caller.EventCall.Trigger(System.Object)
+  nameWithType: EventCall.Trigger(Object)
+- uid: ILib.Caller.EventCall.Trigger*
+  name: Trigger
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger_
+  commentId: Overload:ILib.Caller.EventCall.Trigger
+  isSpec: "True"
+  fullName: ILib.Caller.EventCall.Trigger
+  nameWithType: EventCall.Trigger
+- uid: ILib.Caller.EventCall.Trigger``1(System.Object)
+  name: Trigger<T>(Object)
+  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger__1_System_Object_
+  commentId: M:ILib.Caller.EventCall.Trigger``1(System.Object)
+  name.vb: Trigger(Of T)(Object)
+  fullName: ILib.Caller.EventCall.Trigger<T>(System.Object)
+  fullName.vb: ILib.Caller.EventCall.Trigger(Of T)(System.Object)
+  nameWithType: EventCall.Trigger<T>(Object)
+  nameWithType.vb: EventCall.Trigger(Of T)(Object)
 - uid: ILib.Caller.Handle
   name: Handle
   href: api/ILib.Caller.Handle.html
@@ -7330,6 +7308,259 @@ references:
   isSpec: "True"
   fullName: ILib.Caller.IPath.Key
   nameWithType: IPath.Key
+- uid: ILib.CL
+  name: ILib.CL
+  href: api/ILib.CL.html
+  commentId: N:ILib.CL
+  fullName: ILib.CL
+  nameWithType: ILib.CL
+- uid: ILib.CL.ArgAttribute
+  name: ArgAttribute
+  href: api/ILib.CL.ArgAttribute.html
+  commentId: T:ILib.CL.ArgAttribute
+  fullName: ILib.CL.ArgAttribute
+  nameWithType: ArgAttribute
+- uid: ILib.CL.ArgAttribute.#ctor(System.Char)
+  name: ArgAttribute(Char)
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute__ctor_System_Char_
+  commentId: M:ILib.CL.ArgAttribute.#ctor(System.Char)
+  fullName: ILib.CL.ArgAttribute.ArgAttribute(System.Char)
+  nameWithType: ArgAttribute.ArgAttribute(Char)
+- uid: ILib.CL.ArgAttribute.#ctor(System.Char,System.String)
+  name: ArgAttribute(Char, String)
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute__ctor_System_Char_System_String_
+  commentId: M:ILib.CL.ArgAttribute.#ctor(System.Char,System.String)
+  fullName: ILib.CL.ArgAttribute.ArgAttribute(System.Char, System.String)
+  nameWithType: ArgAttribute.ArgAttribute(Char, String)
+- uid: ILib.CL.ArgAttribute.#ctor(System.String)
+  name: ArgAttribute(String)
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute__ctor_System_String_
+  commentId: M:ILib.CL.ArgAttribute.#ctor(System.String)
+  fullName: ILib.CL.ArgAttribute.ArgAttribute(System.String)
+  nameWithType: ArgAttribute.ArgAttribute(String)
+- uid: ILib.CL.ArgAttribute.#ctor*
+  name: ArgAttribute
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute__ctor_
+  commentId: Overload:ILib.CL.ArgAttribute.#ctor
+  isSpec: "True"
+  fullName: ILib.CL.ArgAttribute.ArgAttribute
+  nameWithType: ArgAttribute.ArgAttribute
+- uid: ILib.CL.ArgAttribute.LongName
+  name: LongName
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_LongName
+  commentId: P:ILib.CL.ArgAttribute.LongName
+  fullName: ILib.CL.ArgAttribute.LongName
+  nameWithType: ArgAttribute.LongName
+- uid: ILib.CL.ArgAttribute.LongName*
+  name: LongName
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_LongName_
+  commentId: Overload:ILib.CL.ArgAttribute.LongName
+  isSpec: "True"
+  fullName: ILib.CL.ArgAttribute.LongName
+  nameWithType: ArgAttribute.LongName
+- uid: ILib.CL.ArgAttribute.Required
+  name: Required
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_Required
+  commentId: P:ILib.CL.ArgAttribute.Required
+  fullName: ILib.CL.ArgAttribute.Required
+  nameWithType: ArgAttribute.Required
+- uid: ILib.CL.ArgAttribute.Required*
+  name: Required
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_Required_
+  commentId: Overload:ILib.CL.ArgAttribute.Required
+  isSpec: "True"
+  fullName: ILib.CL.ArgAttribute.Required
+  nameWithType: ArgAttribute.Required
+- uid: ILib.CL.ArgAttribute.ShortName
+  name: ShortName
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_ShortName
+  commentId: P:ILib.CL.ArgAttribute.ShortName
+  fullName: ILib.CL.ArgAttribute.ShortName
+  nameWithType: ArgAttribute.ShortName
+- uid: ILib.CL.ArgAttribute.ShortName*
+  name: ShortName
+  href: api/ILib.CL.ArgAttribute.html#ILib_CL_ArgAttribute_ShortName_
+  commentId: Overload:ILib.CL.ArgAttribute.ShortName
+  isSpec: "True"
+  fullName: ILib.CL.ArgAttribute.ShortName
+  nameWithType: ArgAttribute.ShortName
+- uid: ILib.CL.ArgBinder
+  name: ArgBinder
+  href: api/ILib.CL.ArgBinder.html
+  commentId: T:ILib.CL.ArgBinder
+  fullName: ILib.CL.ArgBinder
+  nameWithType: ArgBinder
+- uid: ILib.CL.ArgBinder.CheckRequired(ILib.CL.ArgEntry[])
+  name: CheckRequired(ArgEntry[])
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_CheckRequired_ILib_CL_ArgEntry___
+  commentId: M:ILib.CL.ArgBinder.CheckRequired(ILib.CL.ArgEntry[])
+  name.vb: CheckRequired(ArgEntry())
+  fullName: ILib.CL.ArgBinder.CheckRequired(ILib.CL.ArgEntry[])
+  fullName.vb: ILib.CL.ArgBinder.CheckRequired(ILib.CL.ArgEntry())
+  nameWithType: ArgBinder.CheckRequired(ArgEntry[])
+  nameWithType.vb: ArgBinder.CheckRequired(ArgEntry())
+- uid: ILib.CL.ArgBinder.CheckRequired*
+  name: CheckRequired
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_CheckRequired_
+  commentId: Overload:ILib.CL.ArgBinder.CheckRequired
+  isSpec: "True"
+  fullName: ILib.CL.ArgBinder.CheckRequired
+  nameWithType: ArgBinder.CheckRequired
+- uid: ILib.CL.ArgBinder.Get(System.Object)
+  name: Get(Object)
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_Get_System_Object_
+  commentId: M:ILib.CL.ArgBinder.Get(System.Object)
+  fullName: ILib.CL.ArgBinder.Get(System.Object)
+  nameWithType: ArgBinder.Get(Object)
+- uid: ILib.CL.ArgBinder.Get*
+  name: Get
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_Get_
+  commentId: Overload:ILib.CL.ArgBinder.Get
+  isSpec: "True"
+  fullName: ILib.CL.ArgBinder.Get
+  nameWithType: ArgBinder.Get
+- uid: ILib.CL.ArgBinder.IsMatch(ILib.CL.ArgEntry)
+  name: IsMatch(ArgEntry)
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_IsMatch_ILib_CL_ArgEntry_
+  commentId: M:ILib.CL.ArgBinder.IsMatch(ILib.CL.ArgEntry)
+  fullName: ILib.CL.ArgBinder.IsMatch(ILib.CL.ArgEntry)
+  nameWithType: ArgBinder.IsMatch(ArgEntry)
+- uid: ILib.CL.ArgBinder.IsMatch*
+  name: IsMatch
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_IsMatch_
+  commentId: Overload:ILib.CL.ArgBinder.IsMatch
+  isSpec: "True"
+  fullName: ILib.CL.ArgBinder.IsMatch
+  nameWithType: ArgBinder.IsMatch
+- uid: ILib.CL.ArgBinder.m_Arg
+  name: m_Arg
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_m_Arg
+  commentId: F:ILib.CL.ArgBinder.m_Arg
+  fullName: ILib.CL.ArgBinder.m_Arg
+  nameWithType: ArgBinder.m_Arg
+- uid: ILib.CL.ArgBinder.m_Info
+  name: m_Info
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_m_Info
+  commentId: F:ILib.CL.ArgBinder.m_Info
+  fullName: ILib.CL.ArgBinder.m_Info
+  nameWithType: ArgBinder.m_Info
+- uid: ILib.CL.ArgBinder.m_Obj
+  name: m_Obj
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_m_Obj
+  commentId: F:ILib.CL.ArgBinder.m_Obj
+  fullName: ILib.CL.ArgBinder.m_Obj
+  nameWithType: ArgBinder.m_Obj
+- uid: ILib.CL.ArgBinder.Set(ILib.CL.ArgEntry)
+  name: Set(ArgEntry)
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_Set_ILib_CL_ArgEntry_
+  commentId: M:ILib.CL.ArgBinder.Set(ILib.CL.ArgEntry)
+  fullName: ILib.CL.ArgBinder.Set(ILib.CL.ArgEntry)
+  nameWithType: ArgBinder.Set(ArgEntry)
+- uid: ILib.CL.ArgBinder.Set*
+  name: Set
+  href: api/ILib.CL.ArgBinder.html#ILib_CL_ArgBinder_Set_
+  commentId: Overload:ILib.CL.ArgBinder.Set
+  isSpec: "True"
+  fullName: ILib.CL.ArgBinder.Set
+  nameWithType: ArgBinder.Set
+- uid: ILib.CL.ArgEntry
+  name: ArgEntry
+  href: api/ILib.CL.ArgEntry.html
+  commentId: T:ILib.CL.ArgEntry
+  fullName: ILib.CL.ArgEntry
+  nameWithType: ArgEntry
+- uid: ILib.CL.ArgEntry.LongName
+  name: LongName
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_LongName
+  commentId: P:ILib.CL.ArgEntry.LongName
+  fullName: ILib.CL.ArgEntry.LongName
+  nameWithType: ArgEntry.LongName
+- uid: ILib.CL.ArgEntry.LongName*
+  name: LongName
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_LongName_
+  commentId: Overload:ILib.CL.ArgEntry.LongName
+  isSpec: "True"
+  fullName: ILib.CL.ArgEntry.LongName
+  nameWithType: ArgEntry.LongName
+- uid: ILib.CL.ArgEntry.ShortName
+  name: ShortName
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_ShortName
+  commentId: P:ILib.CL.ArgEntry.ShortName
+  fullName: ILib.CL.ArgEntry.ShortName
+  nameWithType: ArgEntry.ShortName
+- uid: ILib.CL.ArgEntry.ShortName*
+  name: ShortName
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_ShortName_
+  commentId: Overload:ILib.CL.ArgEntry.ShortName
+  isSpec: "True"
+  fullName: ILib.CL.ArgEntry.ShortName
+  nameWithType: ArgEntry.ShortName
+- uid: ILib.CL.ArgEntry.Value
+  name: Value
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_Value
+  commentId: P:ILib.CL.ArgEntry.Value
+  fullName: ILib.CL.ArgEntry.Value
+  nameWithType: ArgEntry.Value
+- uid: ILib.CL.ArgEntry.Value*
+  name: Value
+  href: api/ILib.CL.ArgEntry.html#ILib_CL_ArgEntry_Value_
+  commentId: Overload:ILib.CL.ArgEntry.Value
+  isSpec: "True"
+  fullName: ILib.CL.ArgEntry.Value
+  nameWithType: ArgEntry.Value
+- uid: ILib.CL.CLParser
+  name: CLParser
+  href: api/ILib.CL.CLParser.html
+  commentId: T:ILib.CL.CLParser
+  fullName: ILib.CL.CLParser
+  nameWithType: CLParser
+- uid: ILib.CL.CLParser.Run(System.Object,System.String[])
+  name: Run(Object, String[])
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_Run_System_Object_System_String___
+  commentId: M:ILib.CL.CLParser.Run(System.Object,System.String[])
+  name.vb: Run(Object, String())
+  fullName: ILib.CL.CLParser.Run(System.Object, System.String[])
+  fullName.vb: ILib.CL.CLParser.Run(System.Object, System.String())
+  nameWithType: CLParser.Run(Object, String[])
+  nameWithType.vb: CLParser.Run(Object, String())
+- uid: ILib.CL.CLParser.Run*
+  name: Run
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_Run_
+  commentId: Overload:ILib.CL.CLParser.Run
+  isSpec: "True"
+  fullName: ILib.CL.CLParser.Run
+  nameWithType: CLParser.Run
+- uid: ILib.CL.CLParser.Run``1
+  name: Run<T>()
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_Run__1
+  commentId: M:ILib.CL.CLParser.Run``1
+  name.vb: Run(Of T)()
+  fullName: ILib.CL.CLParser.Run<T>()
+  fullName.vb: ILib.CL.CLParser.Run(Of T)()
+  nameWithType: CLParser.Run<T>()
+  nameWithType.vb: CLParser.Run(Of T)()
+- uid: ILib.CL.CLParser.Run``1(System.String[])
+  name: Run<T>(String[])
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_Run__1_System_String___
+  commentId: M:ILib.CL.CLParser.Run``1(System.String[])
+  name.vb: Run(Of T)(String())
+  fullName: ILib.CL.CLParser.Run<T>(System.String[])
+  fullName.vb: ILib.CL.CLParser.Run(Of T)(System.String())
+  nameWithType: CLParser.Run<T>(String[])
+  nameWithType.vb: CLParser.Run(Of T)(String())
+- uid: ILib.CL.CLParser.SetDefault(System.Char,System.String,System.String)
+  name: SetDefault(Char, String, String)
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_SetDefault_System_Char_System_String_System_String_
+  commentId: M:ILib.CL.CLParser.SetDefault(System.Char,System.String,System.String)
+  fullName: ILib.CL.CLParser.SetDefault(System.Char, System.String, System.String)
+  nameWithType: CLParser.SetDefault(Char, String, String)
+- uid: ILib.CL.CLParser.SetDefault*
+  name: SetDefault
+  href: api/ILib.CL.CLParser.html#ILib_CL_CLParser_SetDefault_
+  commentId: Overload:ILib.CL.CLParser.SetDefault
+  isSpec: "True"
+  fullName: ILib.CL.CLParser.SetDefault
+  nameWithType: CLParser.SetDefault
 - uid: ILib.CodeEmit
   name: ILib.CodeEmit
   href: api/ILib.CodeEmit.html
@@ -8441,12 +8672,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.Dispatcher
   nameWithType: Content.Dispatcher
-- uid: ILib.Contents.Content.Get(System.Type,System.Boolean)
-  name: Get(Type, Boolean)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Get_System_Type_System_Boolean_
-  commentId: M:ILib.Contents.Content.Get(System.Type,System.Boolean)
-  fullName: ILib.Contents.Content.Get(System.Type, System.Boolean)
-  nameWithType: Content.Get(Type, Boolean)
 - uid: ILib.Contents.Content.Get*
   name: Get
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Get_
@@ -8522,6 +8747,19 @@ references:
   fullName: ILib.Contents.Content.ILib.IHasRoutineOwner.RoutineOwner
   nameWithType: Content.IHasRoutineOwner.RoutineOwner
   nameWithType.vb: Content.ILib.IHasRoutineOwner.RoutineOwner
+- uid: ILib.Contents.Content.IsModalContent
+  name: IsModalContent
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsModalContent
+  commentId: P:ILib.Contents.Content.IsModalContent
+  fullName: ILib.Contents.Content.IsModalContent
+  nameWithType: Content.IsModalContent
+- uid: ILib.Contents.Content.IsModalContent*
+  name: IsModalContent
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsModalContent_
+  commentId: Overload:ILib.Contents.Content.IsModalContent
+  isSpec: "True"
+  fullName: ILib.Contents.Content.IsModalContent
+  nameWithType: Content.IsModalContent
 - uid: ILib.Contents.Content.IsSelfThrowErrorIfNeeded
   name: IsSelfThrowErrorIfNeeded
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsSelfThrowErrorIfNeeded
@@ -8535,6 +8773,97 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.IsSelfThrowErrorIfNeeded
   nameWithType: Content.IsSelfThrowErrorIfNeeded
+- uid: ILib.Contents.Content.IsUseSubCall
+  name: IsUseSubCall
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsUseSubCall
+  commentId: P:ILib.Contents.Content.IsUseSubCall
+  fullName: ILib.Contents.Content.IsUseSubCall
+  nameWithType: Content.IsUseSubCall
+- uid: ILib.Contents.Content.IsUseSubCall*
+  name: IsUseSubCall
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsUseSubCall_
+  commentId: Overload:ILib.Contents.Content.IsUseSubCall
+  isSpec: "True"
+  fullName: ILib.Contents.Content.IsUseSubCall
+  nameWithType: Content.IsUseSubCall
+- uid: ILib.Contents.Content.IsWaitModalContent
+  name: IsWaitModalContent
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsWaitModalContent
+  commentId: P:ILib.Contents.Content.IsWaitModalContent
+  fullName: ILib.Contents.Content.IsWaitModalContent
+  nameWithType: Content.IsWaitModalContent
+- uid: ILib.Contents.Content.IsWaitModalContent*
+  name: IsWaitModalContent
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsWaitModalContent_
+  commentId: Overload:ILib.Contents.Content.IsWaitModalContent
+  isSpec: "True"
+  fullName: ILib.Contents.Content.IsWaitModalContent
+  nameWithType: Content.IsWaitModalContent
+- uid: ILib.Contents.Content.Modal*
+  name: Modal
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal_
+  commentId: Overload:ILib.Contents.Content.Modal
+  isSpec: "True"
+  fullName: ILib.Contents.Content.Modal
+  nameWithType: Content.Modal
+- uid: ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam)
+  name: Modal<TResult>(IContentParam)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_
+  commentId: M:ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam)
+  name.vb: Modal(Of TResult)(IContentParam)
+  fullName: ILib.Contents.Content.Modal<TResult>(ILib.Contents.IContentParam)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(ILib.Contents.IContentParam)
+  nameWithType: Content.Modal<TResult>(IContentParam)
+  nameWithType.vb: Content.Modal(Of TResult)(IContentParam)
+- uid: ILib.Contents.Content.Modal``1(System.Type,System.Object)
+  name: Modal<TResult>(Type, Object)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_System_Type_System_Object_
+  commentId: M:ILib.Contents.Content.Modal``1(System.Type,System.Object)
+  name.vb: Modal(Of TResult)(Type, Object)
+  fullName: ILib.Contents.Content.Modal<TResult>(System.Type, System.Object)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(System.Type, System.Object)
+  nameWithType: Content.Modal<TResult>(Type, Object)
+  nameWithType.vb: Content.Modal(Of TResult)(Type, Object)
+- uid: ILib.Contents.Content.Modal``2(System.Object)
+  name: Modal<TResult, UContent>(Object)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__2_System_Object_
+  commentId: M:ILib.Contents.Content.Modal``2(System.Object)
+  name.vb: Modal(Of TResult, UContent)(Object)
+  fullName: ILib.Contents.Content.Modal<TResult, UContent>(System.Object)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult, UContent)(System.Object)
+  nameWithType: Content.Modal<TResult, UContent>(Object)
+  nameWithType.vb: Content.Modal(Of TResult, UContent)(Object)
+- uid: ILib.Contents.Content.ModalResult(System.Exception)
+  name: ModalResult(Exception)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult_System_Exception_
+  commentId: M:ILib.Contents.Content.ModalResult(System.Exception)
+  fullName: ILib.Contents.Content.ModalResult(System.Exception)
+  nameWithType: Content.ModalResult(Exception)
+- uid: ILib.Contents.Content.ModalResult*
+  name: ModalResult
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult_
+  commentId: Overload:ILib.Contents.Content.ModalResult
+  isSpec: "True"
+  fullName: ILib.Contents.Content.ModalResult
+  nameWithType: Content.ModalResult
+- uid: ILib.Contents.Content.ModalResult``1(``0)
+  name: ModalResult<T>(T)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_
+  commentId: M:ILib.Contents.Content.ModalResult``1(``0)
+  name.vb: ModalResult(Of T)(T)
+  fullName: ILib.Contents.Content.ModalResult<T>(T)
+  fullName.vb: ILib.Contents.Content.ModalResult(Of T)(T)
+  nameWithType: Content.ModalResult<T>(T)
+  nameWithType.vb: Content.ModalResult(Of T)(T)
+- uid: ILib.Contents.Content.ModalResult``1(``0,System.Exception)
+  name: ModalResult<T>(T, Exception)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_System_Exception_
+  commentId: M:ILib.Contents.Content.ModalResult``1(``0,System.Exception)
+  name.vb: ModalResult(Of T)(T, Exception)
+  fullName: ILib.Contents.Content.ModalResult<T>(T, System.Exception)
+  fullName.vb: ILib.Contents.Content.ModalResult(Of T)(T, System.Exception)
+  nameWithType: Content.ModalResult<T>(T, Exception)
+  nameWithType.vb: Content.ModalResult(Of T)(T, Exception)
 - uid: ILib.Contents.Content.Modules
   name: Modules
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modules
@@ -8851,6 +9180,19 @@ references:
   fullName.vb: ILib.Contents.ContentsController.Boot(Of T)(System.Object, System.Boolean)
   nameWithType: ContentsController.Boot<T>(Object, Boolean)
   nameWithType.vb: ContentsController.Boot(Of T)(Object, Boolean)
+- uid: ILib.Contents.ContentsController.Call
+  name: Call
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Call
+  commentId: P:ILib.Contents.ContentsController.Call
+  fullName: ILib.Contents.ContentsController.Call
+  nameWithType: ContentsController.Call
+- uid: ILib.Contents.ContentsController.Call*
+  name: Call
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Call_
+  commentId: Overload:ILib.Contents.ContentsController.Call
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsController.Call
+  nameWithType: ContentsController.Call
 - uid: ILib.Contents.ContentsController.Dispatcher
   name: Dispatcher
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Dispatcher
@@ -8864,12 +9206,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Dispatcher
   nameWithType: ContentsController.Dispatcher
-- uid: ILib.Contents.ContentsController.Get(System.Type)
-  name: Get(Type)
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Get_System_Type_
-  commentId: M:ILib.Contents.ContentsController.Get(System.Type)
-  fullName: ILib.Contents.ContentsController.Get(System.Type)
-  nameWithType: ContentsController.Get(Type)
 - uid: ILib.Contents.ContentsController.Get*
   name: Get
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Get_
@@ -8928,25 +9264,38 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Modules
   nameWithType: ContentsController.Modules
+- uid: ILib.Contents.ContentsController.OnDestroyEvent
+  name: OnDestroyEvent()
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnDestroyEvent
+  commentId: M:ILib.Contents.ContentsController.OnDestroyEvent
+  fullName: ILib.Contents.ContentsController.OnDestroyEvent()
+  nameWithType: ContentsController.OnDestroyEvent()
+- uid: ILib.Contents.ContentsController.OnDestroyEvent*
+  name: OnDestroyEvent
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnDestroyEvent_
+  commentId: Overload:ILib.Contents.ContentsController.OnDestroyEvent
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsController.OnDestroyEvent
+  nameWithType: ContentsController.OnDestroyEvent
 - uid: ILib.Contents.ContentsController.OnException
   name: OnException
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnException
   commentId: E:ILib.Contents.ContentsController.OnException
   fullName: ILib.Contents.ContentsController.OnException
   nameWithType: ContentsController.OnException
-- uid: ILib.Contents.ContentsController.OnOnDestroyEvent
-  name: OnOnDestroyEvent()
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnOnDestroyEvent
-  commentId: M:ILib.Contents.ContentsController.OnOnDestroyEvent
-  fullName: ILib.Contents.ContentsController.OnOnDestroyEvent()
-  nameWithType: ContentsController.OnOnDestroyEvent()
-- uid: ILib.Contents.ContentsController.OnOnDestroyEvent*
-  name: OnOnDestroyEvent
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnOnDestroyEvent_
-  commentId: Overload:ILib.Contents.ContentsController.OnOnDestroyEvent
+- uid: ILib.Contents.ContentsController.Root
+  name: Root
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Root
+  commentId: P:ILib.Contents.ContentsController.Root
+  fullName: ILib.Contents.ContentsController.Root
+  nameWithType: ContentsController.Root
+- uid: ILib.Contents.ContentsController.Root*
+  name: Root
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Root_
+  commentId: Overload:ILib.Contents.ContentsController.Root
   isSpec: "True"
-  fullName: ILib.Contents.ContentsController.OnOnDestroyEvent
-  nameWithType: ContentsController.OnOnDestroyEvent
+  fullName: ILib.Contents.ContentsController.Root
+  nameWithType: ContentsController.Root
 - uid: ILib.Contents.ContentsController.Shutdown
   name: Shutdown()
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Shutdown
@@ -8992,79 +9341,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.IContentParam.GetContentType
   nameWithType: IContentParam.GetContentType
-- uid: ILib.Contents.IContentRef
-  name: IContentRef
-  href: api/ILib.Contents.IContentRef.html
-  commentId: T:ILib.Contents.IContentRef
-  fullName: ILib.Contents.IContentRef
-  nameWithType: IContentRef
-- uid: ILib.Contents.IContentRef.Resume
-  name: Resume()
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Resume
-  commentId: M:ILib.Contents.IContentRef.Resume
-  fullName: ILib.Contents.IContentRef.Resume()
-  nameWithType: IContentRef.Resume()
-- uid: ILib.Contents.IContentRef.Resume*
-  name: Resume
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Resume_
-  commentId: Overload:ILib.Contents.IContentRef.Resume
-  isSpec: "True"
-  fullName: ILib.Contents.IContentRef.Resume
-  nameWithType: IContentRef.Resume
-- uid: ILib.Contents.IContentRef.Shutdown
-  name: Shutdown()
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Shutdown
-  commentId: M:ILib.Contents.IContentRef.Shutdown
-  fullName: ILib.Contents.IContentRef.Shutdown()
-  nameWithType: IContentRef.Shutdown()
-- uid: ILib.Contents.IContentRef.Shutdown*
-  name: Shutdown
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Shutdown_
-  commentId: Overload:ILib.Contents.IContentRef.Shutdown
-  isSpec: "True"
-  fullName: ILib.Contents.IContentRef.Shutdown
-  nameWithType: IContentRef.Shutdown
-- uid: ILib.Contents.IContentRef.Suspend
-  name: Suspend()
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Suspend
-  commentId: M:ILib.Contents.IContentRef.Suspend
-  fullName: ILib.Contents.IContentRef.Suspend()
-  nameWithType: IContentRef.Suspend()
-- uid: ILib.Contents.IContentRef.Suspend*
-  name: Suspend
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Suspend_
-  commentId: Overload:ILib.Contents.IContentRef.Suspend
-  isSpec: "True"
-  fullName: ILib.Contents.IContentRef.Suspend
-  nameWithType: IContentRef.Suspend
-- uid: ILib.Contents.IContentRef.Switch(ILib.Contents.IContentParam)
-  name: Switch(IContentParam)
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Switch_ILib_Contents_IContentParam_
-  commentId: M:ILib.Contents.IContentRef.Switch(ILib.Contents.IContentParam)
-  fullName: ILib.Contents.IContentRef.Switch(ILib.Contents.IContentParam)
-  nameWithType: IContentRef.Switch(IContentParam)
-- uid: ILib.Contents.IContentRef.Switch(System.Type,System.Object)
-  name: Switch(Type, Object)
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Switch_System_Type_System_Object_
-  commentId: M:ILib.Contents.IContentRef.Switch(System.Type,System.Object)
-  fullName: ILib.Contents.IContentRef.Switch(System.Type, System.Object)
-  nameWithType: IContentRef.Switch(Type, Object)
-- uid: ILib.Contents.IContentRef.Switch*
-  name: Switch
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Switch_
-  commentId: Overload:ILib.Contents.IContentRef.Switch
-  isSpec: "True"
-  fullName: ILib.Contents.IContentRef.Switch
-  nameWithType: IContentRef.Switch
-- uid: ILib.Contents.IContentRef.Switch``1
-  name: Switch<T>()
-  href: api/ILib.Contents.IContentRef.html#ILib_Contents_IContentRef_Switch__1
-  commentId: M:ILib.Contents.IContentRef.Switch``1
-  name.vb: Switch(Of T)()
-  fullName: ILib.Contents.IContentRef.Switch<T>()
-  fullName.vb: ILib.Contents.IContentRef.Switch(Of T)()
-  nameWithType: IContentRef.Switch<T>()
-  nameWithType.vb: IContentRef.Switch(Of T)()
 - uid: ILib.Contents.LockCollection`1
   name: LockCollection<T>
   href: api/ILib.Contents.LockCollection-1.html
@@ -12218,6 +12494,56 @@ references:
   isSpec: "True"
   fullName: ILib.Debugs.Widgets.HeaderButton.OnClick
   nameWithType: HeaderButton.OnClick
+- uid: ILib.DispatcherExtensions
+  name: DispatcherExtensions
+  href: api/ILib.DispatcherExtensions.html
+  commentId: T:ILib.DispatcherExtensions
+  fullName: ILib.DispatcherExtensions
+  nameWithType: DispatcherExtensions
+- uid: ILib.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher,System.Object)
+  name: Broadcast(IHasDispatcher, Object)
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_
+  commentId: M:ILib.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher,System.Object)
+  fullName: ILib.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher, System.Object)
+  nameWithType: DispatcherExtensions.Broadcast(IHasDispatcher, Object)
+- uid: ILib.DispatcherExtensions.Broadcast*
+  name: Broadcast
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast_
+  commentId: Overload:ILib.DispatcherExtensions.Broadcast
+  isSpec: "True"
+  fullName: ILib.DispatcherExtensions.Broadcast
+  nameWithType: DispatcherExtensions.Broadcast
+- uid: ILib.DispatcherExtensions.Broadcast``1(ILib.Caller.IHasDispatcher,System.Object,``0)
+  name: Broadcast<T>(IHasDispatcher, Object, T)
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_
+  commentId: M:ILib.DispatcherExtensions.Broadcast``1(ILib.Caller.IHasDispatcher,System.Object,``0)
+  name.vb: Broadcast(Of T)(IHasDispatcher, Object, T)
+  fullName: ILib.DispatcherExtensions.Broadcast<T>(ILib.Caller.IHasDispatcher, System.Object, T)
+  fullName.vb: ILib.DispatcherExtensions.Broadcast(Of T)(ILib.Caller.IHasDispatcher, System.Object, T)
+  nameWithType: DispatcherExtensions.Broadcast<T>(IHasDispatcher, Object, T)
+  nameWithType.vb: DispatcherExtensions.Broadcast(Of T)(IHasDispatcher, Object, T)
+- uid: ILib.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher,System.Object)
+  name: Message(IHasDispatcher, Object)
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_
+  commentId: M:ILib.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher,System.Object)
+  fullName: ILib.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher, System.Object)
+  nameWithType: DispatcherExtensions.Message(IHasDispatcher, Object)
+- uid: ILib.DispatcherExtensions.Message*
+  name: Message
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message_
+  commentId: Overload:ILib.DispatcherExtensions.Message
+  isSpec: "True"
+  fullName: ILib.DispatcherExtensions.Message
+  nameWithType: DispatcherExtensions.Message
+- uid: ILib.DispatcherExtensions.Message``1(ILib.Caller.IHasDispatcher,System.Object,``0)
+  name: Message<T>(IHasDispatcher, Object, T)
+  href: api/ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_
+  commentId: M:ILib.DispatcherExtensions.Message``1(ILib.Caller.IHasDispatcher,System.Object,``0)
+  name.vb: Message(Of T)(IHasDispatcher, Object, T)
+  fullName: ILib.DispatcherExtensions.Message<T>(ILib.Caller.IHasDispatcher, System.Object, T)
+  fullName.vb: ILib.DispatcherExtensions.Message(Of T)(ILib.Caller.IHasDispatcher, System.Object, T)
+  nameWithType: DispatcherExtensions.Message<T>(IHasDispatcher, Object, T)
+  nameWithType.vb: DispatcherExtensions.Message(Of T)(IHasDispatcher, Object, T)
 - uid: ILib.FSM
   name: ILib.FSM
   href: api/ILib.FSM.html
@@ -13227,6 +13553,23 @@ references:
   fullName.vb: ILib.ITriggerAction(Of T).AddFail
   nameWithType: ITriggerAction<T>.AddFail
   nameWithType.vb: ITriggerAction(Of T).AddFail
+- uid: ILib.ITriggerAction`1.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.ITriggerAction-1.html#ILib_ITriggerAction_1_GetAwaiter
+  commentId: M:ILib.ITriggerAction`1.GetAwaiter
+  fullName: ILib.ITriggerAction<T>.GetAwaiter()
+  fullName.vb: ILib.ITriggerAction(Of T).GetAwaiter()
+  nameWithType: ITriggerAction<T>.GetAwaiter()
+  nameWithType.vb: ITriggerAction(Of T).GetAwaiter()
+- uid: ILib.ITriggerAction`1.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.ITriggerAction-1.html#ILib_ITriggerAction_1_GetAwaiter_
+  commentId: Overload:ILib.ITriggerAction`1.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.ITriggerAction<T>.GetAwaiter
+  fullName.vb: ILib.ITriggerAction(Of T).GetAwaiter
+  nameWithType: ITriggerAction<T>.GetAwaiter
+  nameWithType.vb: ITriggerAction(Of T).GetAwaiter
 - uid: ILib.ITriggerAction`1.OnFire
   name: OnFire
   href: api/ILib.ITriggerAction-1.html#ILib_ITriggerAction_1_OnFire
@@ -13306,6 +13649,125 @@ references:
   fullName.vb: ILib.ITriggerAction(Of T).Result
   nameWithType: ITriggerAction<T>.Result
   nameWithType.vb: ITriggerAction(Of T).Result
+- uid: ILib.Logger
+  name: ILib.Logger
+  href: api/ILib.Logger.html
+  commentId: N:ILib.Logger
+  fullName: ILib.Logger
+  nameWithType: ILib.Logger
+- uid: ILib.Logger.Log
+  name: Log
+  href: api/ILib.Logger.Log.html
+  commentId: T:ILib.Logger.Log
+  fullName: ILib.Logger.Log
+  nameWithType: Log
+- uid: ILib.Logger.Log.Enabled
+  name: Enabled
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Enabled
+  commentId: P:ILib.Logger.Log.Enabled
+  fullName: ILib.Logger.Log.Enabled
+  nameWithType: Log.Enabled
+- uid: ILib.Logger.Log.Enabled*
+  name: Enabled
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Enabled_
+  commentId: Overload:ILib.Logger.Log.Enabled
+  isSpec: "True"
+  fullName: ILib.Logger.Log.Enabled
+  nameWithType: Log.Enabled
+- uid: ILib.Logger.Log.EnabledAssert
+  name: EnabledAssert
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_EnabledAssert
+  commentId: P:ILib.Logger.Log.EnabledAssert
+  fullName: ILib.Logger.Log.EnabledAssert
+  nameWithType: Log.EnabledAssert
+- uid: ILib.Logger.Log.EnabledAssert*
+  name: EnabledAssert
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_EnabledAssert_
+  commentId: Overload:ILib.Logger.Log.EnabledAssert
+  isSpec: "True"
+  fullName: ILib.Logger.Log.EnabledAssert
+  nameWithType: Log.EnabledAssert
+- uid: ILib.Logger.Log.Init
+  name: Init()
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Init
+  commentId: M:ILib.Logger.Log.Init
+  fullName: ILib.Logger.Log.Init()
+  nameWithType: Log.Init()
+- uid: ILib.Logger.Log.Init*
+  name: Init
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Init_
+  commentId: Overload:ILib.Logger.Log.Init
+  isSpec: "True"
+  fullName: ILib.Logger.Log.Init
+  nameWithType: Log.Init
+- uid: ILib.Logger.Log.Level
+  name: Level
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Level
+  commentId: P:ILib.Logger.Log.Level
+  fullName: ILib.Logger.Log.Level
+  nameWithType: Log.Level
+- uid: ILib.Logger.Log.Level*
+  name: Level
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Level_
+  commentId: Overload:ILib.Logger.Log.Level
+  isSpec: "True"
+  fullName: ILib.Logger.Log.Level
+  nameWithType: Log.Level
+- uid: ILib.Logger.Log.Logger
+  name: Logger
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Logger
+  commentId: P:ILib.Logger.Log.Logger
+  fullName: ILib.Logger.Log.Logger
+  nameWithType: Log.Logger
+- uid: ILib.Logger.Log.Logger*
+  name: Logger
+  href: api/ILib.Logger.Log.html#ILib_Logger_Log_Logger_
+  commentId: Overload:ILib.Logger.Log.Logger
+  isSpec: "True"
+  fullName: ILib.Logger.Log.Logger
+  nameWithType: Log.Logger
+- uid: ILib.Logger.Log.LogLevel
+  name: Log.LogLevel
+  href: api/ILib.Logger.Log.LogLevel.html
+  commentId: T:ILib.Logger.Log.LogLevel
+  fullName: ILib.Logger.Log.LogLevel
+  nameWithType: Log.LogLevel
+- uid: ILib.Logger.Log.LogLevel.All
+  name: All
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_All
+  commentId: F:ILib.Logger.Log.LogLevel.All
+  fullName: ILib.Logger.Log.LogLevel.All
+  nameWithType: Log.LogLevel.All
+- uid: ILib.Logger.Log.LogLevel.Debug
+  name: Debug
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_Debug
+  commentId: F:ILib.Logger.Log.LogLevel.Debug
+  fullName: ILib.Logger.Log.LogLevel.Debug
+  nameWithType: Log.LogLevel.Debug
+- uid: ILib.Logger.Log.LogLevel.Error
+  name: Error
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_Error
+  commentId: F:ILib.Logger.Log.LogLevel.Error
+  fullName: ILib.Logger.Log.LogLevel.Error
+  nameWithType: Log.LogLevel.Error
+- uid: ILib.Logger.Log.LogLevel.Exception
+  name: Exception
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_Exception
+  commentId: F:ILib.Logger.Log.LogLevel.Exception
+  fullName: ILib.Logger.Log.LogLevel.Exception
+  nameWithType: Log.LogLevel.Exception
+- uid: ILib.Logger.Log.LogLevel.Trace
+  name: Trace
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_Trace
+  commentId: F:ILib.Logger.Log.LogLevel.Trace
+  fullName: ILib.Logger.Log.LogLevel.Trace
+  nameWithType: Log.LogLevel.Trace
+- uid: ILib.Logger.Log.LogLevel.Warning
+  name: Warning
+  href: api/ILib.Logger.Log.LogLevel.html#ILib_Logger_Log_LogLevel_Warning
+  commentId: F:ILib.Logger.Log.LogLevel.Warning
+  fullName: ILib.Logger.Log.LogLevel.Warning
+  nameWithType: Log.LogLevel.Warning
 - uid: ILib.MVVM
   name: ILib.MVVM
   href: api/ILib.MVVM.html
@@ -26461,6 +26923,28 @@ references:
   isSpec: "True"
   fullName: ILib.Trigger.Fired
   nameWithType: Trigger.Fired
+- uid: ILib.Trigger.From(System.Threading.Tasks.Task)
+  name: From(Task)
+  href: api/ILib.Trigger.html#ILib_Trigger_From_System_Threading_Tasks_Task_
+  commentId: M:ILib.Trigger.From(System.Threading.Tasks.Task)
+  fullName: ILib.Trigger.From(System.Threading.Tasks.Task)
+  nameWithType: Trigger.From(Task)
+- uid: ILib.Trigger.From*
+  name: From
+  href: api/ILib.Trigger.html#ILib_Trigger_From_
+  commentId: Overload:ILib.Trigger.From
+  isSpec: "True"
+  fullName: ILib.Trigger.From
+  nameWithType: Trigger.From
+- uid: ILib.Trigger.From``1(System.Threading.Tasks.Task{``0})
+  name: From<T>(Task<T>)
+  href: api/ILib.Trigger.html#ILib_Trigger_From__1_System_Threading_Tasks_Task___0__
+  commentId: M:ILib.Trigger.From``1(System.Threading.Tasks.Task{``0})
+  name.vb: From(Of T)(Task(Of T))
+  fullName: ILib.Trigger.From<T>(System.Threading.Tasks.Task<T>)
+  fullName.vb: ILib.Trigger.From(Of T)(System.Threading.Tasks.Task(Of T))
+  nameWithType: Trigger.From<T>(Task<T>)
+  nameWithType.vb: Trigger.From(Of T)(Task(Of T))
 - uid: ILib.Trigger.ILib#IHasTriggerAction#Action
   name: IHasTriggerAction.Action
   href: api/ILib.Trigger.html#ILib_Trigger_ILib_IHasTriggerAction_Action
@@ -26522,6 +27006,19 @@ references:
   fullName.vb: ILib.Trigger.Parallel(Of T)(System.Collections.Generic.IEnumerable(Of System.Func(Of ILib.ITriggerAction(Of T))))
   nameWithType: Trigger.Parallel<T>(IEnumerable<Func<ITriggerAction<T>>>)
   nameWithType.vb: Trigger.Parallel(Of T)(IEnumerable(Of Func(Of ITriggerAction(Of T))))
+- uid: ILib.Trigger.Realtime(System.Single)
+  name: Realtime(Single)
+  href: api/ILib.Trigger.html#ILib_Trigger_Realtime_System_Single_
+  commentId: M:ILib.Trigger.Realtime(System.Single)
+  fullName: ILib.Trigger.Realtime(System.Single)
+  nameWithType: Trigger.Realtime(Single)
+- uid: ILib.Trigger.Realtime*
+  name: Realtime
+  href: api/ILib.Trigger.html#ILib_Trigger_Realtime_
+  commentId: Overload:ILib.Trigger.Realtime
+  isSpec: "True"
+  fullName: ILib.Trigger.Realtime
+  nameWithType: Trigger.Realtime
 - uid: ILib.Trigger.Sequential(System.Collections.Generic.IEnumerable{System.Func{ILib.ITriggerAction}})
   name: Sequential(IEnumerable<Func<ITriggerAction>>)
   href: api/ILib.Trigger.html#ILib_Trigger_Sequential_System_Collections_Generic_IEnumerable_System_Func_ILib_ITriggerAction___
@@ -26620,6 +27117,19 @@ references:
   fullName: ILib.Trigger.System.Collections.IEnumerator.Reset
   nameWithType: Trigger.IEnumerator.Reset
   nameWithType.vb: Trigger.System.Collections.IEnumerator.Reset
+- uid: ILib.Trigger.Time(System.Single)
+  name: Time(Single)
+  href: api/ILib.Trigger.html#ILib_Trigger_Time_System_Single_
+  commentId: M:ILib.Trigger.Time(System.Single)
+  fullName: ILib.Trigger.Time(System.Single)
+  nameWithType: Trigger.Time(Single)
+- uid: ILib.Trigger.Time*
+  name: Time
+  href: api/ILib.Trigger.html#ILib_Trigger_Time_
+  commentId: Overload:ILib.Trigger.Time
+  isSpec: "True"
+  fullName: ILib.Trigger.Time
+  nameWithType: Trigger.Time
 - uid: ILib.Trigger.Wait(ILib.ITriggerAction[])
   name: Wait(ITriggerAction[])
   href: api/ILib.Trigger.html#ILib_Trigger_Wait_ILib_ITriggerAction___
@@ -27056,6 +27566,23 @@ references:
   fullName.vb: ILib.TriggerAction(Of T).Fired
   nameWithType: TriggerAction<T>.Fired
   nameWithType.vb: TriggerAction(Of T).Fired
+- uid: ILib.TriggerAction`1.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_GetAwaiter
+  commentId: M:ILib.TriggerAction`1.GetAwaiter
+  fullName: ILib.TriggerAction<T>.GetAwaiter()
+  fullName.vb: ILib.TriggerAction(Of T).GetAwaiter()
+  nameWithType: TriggerAction<T>.GetAwaiter()
+  nameWithType.vb: TriggerAction(Of T).GetAwaiter()
+- uid: ILib.TriggerAction`1.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_GetAwaiter_
+  commentId: Overload:ILib.TriggerAction`1.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.TriggerAction<T>.GetAwaiter
+  fullName.vb: ILib.TriggerAction(Of T).GetAwaiter
+  nameWithType: TriggerAction<T>.GetAwaiter
+  nameWithType.vb: TriggerAction(Of T).GetAwaiter
 - uid: ILib.TriggerAction`1.OnCancel
   name: OnCancel
   href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_OnCancel
@@ -27105,6 +27632,25 @@ references:
   fullName.vb: ILib.TriggerAction(Of T).OnFire
   nameWithType: TriggerAction<T>.OnFire
   nameWithType.vb: TriggerAction(Of T).OnFire
+- uid: ILib.TriggerAction`1.op_Explicit(System.Threading.Tasks.Task{`0})~ILib.TriggerAction{`0}
+  name: Explicit(Task<T> to TriggerAction<T>)
+  href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_op_Explicit_System_Threading_Tasks_Task__0___ILib_TriggerAction__0_
+  commentId: M:ILib.TriggerAction`1.op_Explicit(System.Threading.Tasks.Task{`0})~ILib.TriggerAction{`0}
+  name.vb: Narrowing(Task(Of T) to TriggerAction(Of T))
+  fullName: ILib.TriggerAction<T>.Explicit(System.Threading.Tasks.Task<T> to ILib.TriggerAction<T>)
+  fullName.vb: ILib.TriggerAction(Of T).Narrowing(System.Threading.Tasks.Task(Of T) to ILib.TriggerAction(Of T))
+  nameWithType: TriggerAction<T>.Explicit(Task<T> to TriggerAction<T>)
+  nameWithType.vb: TriggerAction(Of T).Narrowing(Task(Of T) to TriggerAction(Of T))
+- uid: ILib.TriggerAction`1.op_Explicit*
+  name: Explicit
+  href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_op_Explicit_
+  commentId: Overload:ILib.TriggerAction`1.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: ILib.TriggerAction<T>.Explicit
+  fullName.vb: ILib.TriggerAction(Of T).Narrowing
+  nameWithType: TriggerAction<T>.Explicit
+  nameWithType.vb: TriggerAction(Of T).Narrowing
 - uid: ILib.TriggerAction`1.Remove(System.Action{`0})
   name: Remove(Action<T>)
   href: api/ILib.TriggerAction-1.html#ILib_TriggerAction_1_Remove_System_Action__0__
@@ -27233,6 +27779,187 @@ references:
   fullName.vb: ILib.TriggerAction(Of T).System.Collections.IEnumerator.Reset
   nameWithType: TriggerAction<T>.IEnumerator.Reset
   nameWithType.vb: TriggerAction(Of T).System.Collections.IEnumerator.Reset
+- uid: ILib.TriggerActionAwaiter
+  name: TriggerActionAwaiter
+  href: api/ILib.TriggerActionAwaiter.html
+  commentId: T:ILib.TriggerActionAwaiter
+  fullName: ILib.TriggerActionAwaiter
+  nameWithType: TriggerActionAwaiter
+- uid: ILib.TriggerActionAwaiter.#ctor(ILib.IHasTriggerAction)
+  name: TriggerActionAwaiter(IHasTriggerAction)
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter__ctor_ILib_IHasTriggerAction_
+  commentId: M:ILib.TriggerActionAwaiter.#ctor(ILib.IHasTriggerAction)
+  fullName: ILib.TriggerActionAwaiter.TriggerActionAwaiter(ILib.IHasTriggerAction)
+  nameWithType: TriggerActionAwaiter.TriggerActionAwaiter(IHasTriggerAction)
+- uid: ILib.TriggerActionAwaiter.#ctor(ILib.ITriggerAction)
+  name: TriggerActionAwaiter(ITriggerAction)
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter__ctor_ILib_ITriggerAction_
+  commentId: M:ILib.TriggerActionAwaiter.#ctor(ILib.ITriggerAction)
+  fullName: ILib.TriggerActionAwaiter.TriggerActionAwaiter(ILib.ITriggerAction)
+  nameWithType: TriggerActionAwaiter.TriggerActionAwaiter(ITriggerAction)
+- uid: ILib.TriggerActionAwaiter.#ctor*
+  name: TriggerActionAwaiter
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter__ctor_
+  commentId: Overload:ILib.TriggerActionAwaiter.#ctor
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter.TriggerActionAwaiter
+  nameWithType: TriggerActionAwaiter.TriggerActionAwaiter
+- uid: ILib.TriggerActionAwaiter.GetResult
+  name: GetResult()
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_GetResult
+  commentId: M:ILib.TriggerActionAwaiter.GetResult
+  fullName: ILib.TriggerActionAwaiter.GetResult()
+  nameWithType: TriggerActionAwaiter.GetResult()
+- uid: ILib.TriggerActionAwaiter.GetResult*
+  name: GetResult
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_GetResult_
+  commentId: Overload:ILib.TriggerActionAwaiter.GetResult
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter.GetResult
+  nameWithType: TriggerActionAwaiter.GetResult
+- uid: ILib.TriggerActionAwaiter.IsCompleted
+  name: IsCompleted
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_IsCompleted
+  commentId: P:ILib.TriggerActionAwaiter.IsCompleted
+  fullName: ILib.TriggerActionAwaiter.IsCompleted
+  nameWithType: TriggerActionAwaiter.IsCompleted
+- uid: ILib.TriggerActionAwaiter.IsCompleted*
+  name: IsCompleted
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_IsCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter.IsCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter.IsCompleted
+  nameWithType: TriggerActionAwaiter.IsCompleted
+- uid: ILib.TriggerActionAwaiter.OnCompleted(System.Action)
+  name: OnCompleted(Action)
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_OnCompleted_System_Action_
+  commentId: M:ILib.TriggerActionAwaiter.OnCompleted(System.Action)
+  fullName: ILib.TriggerActionAwaiter.OnCompleted(System.Action)
+  nameWithType: TriggerActionAwaiter.OnCompleted(Action)
+- uid: ILib.TriggerActionAwaiter.OnCompleted*
+  name: OnCompleted
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_OnCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter.OnCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter.OnCompleted
+  nameWithType: TriggerActionAwaiter.OnCompleted
+- uid: ILib.TriggerActionAwaiter.UnsafeOnCompleted(System.Action)
+  name: UnsafeOnCompleted(Action)
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_UnsafeOnCompleted_System_Action_
+  commentId: M:ILib.TriggerActionAwaiter.UnsafeOnCompleted(System.Action)
+  fullName: ILib.TriggerActionAwaiter.UnsafeOnCompleted(System.Action)
+  nameWithType: TriggerActionAwaiter.UnsafeOnCompleted(Action)
+- uid: ILib.TriggerActionAwaiter.UnsafeOnCompleted*
+  name: UnsafeOnCompleted
+  href: api/ILib.TriggerActionAwaiter.html#ILib_TriggerActionAwaiter_UnsafeOnCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter.UnsafeOnCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter.UnsafeOnCompleted
+  nameWithType: TriggerActionAwaiter.UnsafeOnCompleted
+- uid: ILib.TriggerActionAwaiter`1
+  name: TriggerActionAwaiter<T>
+  href: api/ILib.TriggerActionAwaiter-1.html
+  commentId: T:ILib.TriggerActionAwaiter`1
+  name.vb: TriggerActionAwaiter(Of T)
+  fullName: ILib.TriggerActionAwaiter<T>
+  fullName.vb: ILib.TriggerActionAwaiter(Of T)
+  nameWithType: TriggerActionAwaiter<T>
+  nameWithType.vb: TriggerActionAwaiter(Of T)
+- uid: ILib.TriggerActionAwaiter`1.#ctor(ILib.IHasTriggerAction{`0})
+  name: TriggerActionAwaiter(IHasTriggerAction<T>)
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1__ctor_ILib_IHasTriggerAction__0__
+  commentId: M:ILib.TriggerActionAwaiter`1.#ctor(ILib.IHasTriggerAction{`0})
+  name.vb: TriggerActionAwaiter(IHasTriggerAction(Of T))
+  fullName: ILib.TriggerActionAwaiter<T>.TriggerActionAwaiter(ILib.IHasTriggerAction<T>)
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).TriggerActionAwaiter(ILib.IHasTriggerAction(Of T))
+  nameWithType: TriggerActionAwaiter<T>.TriggerActionAwaiter(IHasTriggerAction<T>)
+  nameWithType.vb: TriggerActionAwaiter(Of T).TriggerActionAwaiter(IHasTriggerAction(Of T))
+- uid: ILib.TriggerActionAwaiter`1.#ctor(ILib.ITriggerAction{`0})
+  name: TriggerActionAwaiter(ITriggerAction<T>)
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1__ctor_ILib_ITriggerAction__0__
+  commentId: M:ILib.TriggerActionAwaiter`1.#ctor(ILib.ITriggerAction{`0})
+  name.vb: TriggerActionAwaiter(ITriggerAction(Of T))
+  fullName: ILib.TriggerActionAwaiter<T>.TriggerActionAwaiter(ILib.ITriggerAction<T>)
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).TriggerActionAwaiter(ILib.ITriggerAction(Of T))
+  nameWithType: TriggerActionAwaiter<T>.TriggerActionAwaiter(ITriggerAction<T>)
+  nameWithType.vb: TriggerActionAwaiter(Of T).TriggerActionAwaiter(ITriggerAction(Of T))
+- uid: ILib.TriggerActionAwaiter`1.#ctor*
+  name: TriggerActionAwaiter
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1__ctor_
+  commentId: Overload:ILib.TriggerActionAwaiter`1.#ctor
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter<T>.TriggerActionAwaiter
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).TriggerActionAwaiter
+  nameWithType: TriggerActionAwaiter<T>.TriggerActionAwaiter
+  nameWithType.vb: TriggerActionAwaiter(Of T).TriggerActionAwaiter
+- uid: ILib.TriggerActionAwaiter`1.GetResult
+  name: GetResult()
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_GetResult
+  commentId: M:ILib.TriggerActionAwaiter`1.GetResult
+  fullName: ILib.TriggerActionAwaiter<T>.GetResult()
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).GetResult()
+  nameWithType: TriggerActionAwaiter<T>.GetResult()
+  nameWithType.vb: TriggerActionAwaiter(Of T).GetResult()
+- uid: ILib.TriggerActionAwaiter`1.GetResult*
+  name: GetResult
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_GetResult_
+  commentId: Overload:ILib.TriggerActionAwaiter`1.GetResult
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter<T>.GetResult
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).GetResult
+  nameWithType: TriggerActionAwaiter<T>.GetResult
+  nameWithType.vb: TriggerActionAwaiter(Of T).GetResult
+- uid: ILib.TriggerActionAwaiter`1.IsCompleted
+  name: IsCompleted
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_IsCompleted
+  commentId: P:ILib.TriggerActionAwaiter`1.IsCompleted
+  fullName: ILib.TriggerActionAwaiter<T>.IsCompleted
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).IsCompleted
+  nameWithType: TriggerActionAwaiter<T>.IsCompleted
+  nameWithType.vb: TriggerActionAwaiter(Of T).IsCompleted
+- uid: ILib.TriggerActionAwaiter`1.IsCompleted*
+  name: IsCompleted
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_IsCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter`1.IsCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter<T>.IsCompleted
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).IsCompleted
+  nameWithType: TriggerActionAwaiter<T>.IsCompleted
+  nameWithType.vb: TriggerActionAwaiter(Of T).IsCompleted
+- uid: ILib.TriggerActionAwaiter`1.OnCompleted(System.Action)
+  name: OnCompleted(Action)
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_OnCompleted_System_Action_
+  commentId: M:ILib.TriggerActionAwaiter`1.OnCompleted(System.Action)
+  fullName: ILib.TriggerActionAwaiter<T>.OnCompleted(System.Action)
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).OnCompleted(System.Action)
+  nameWithType: TriggerActionAwaiter<T>.OnCompleted(Action)
+  nameWithType.vb: TriggerActionAwaiter(Of T).OnCompleted(Action)
+- uid: ILib.TriggerActionAwaiter`1.OnCompleted*
+  name: OnCompleted
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_OnCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter`1.OnCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter<T>.OnCompleted
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).OnCompleted
+  nameWithType: TriggerActionAwaiter<T>.OnCompleted
+  nameWithType.vb: TriggerActionAwaiter(Of T).OnCompleted
+- uid: ILib.TriggerActionAwaiter`1.UnsafeOnCompleted(System.Action)
+  name: UnsafeOnCompleted(Action)
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_UnsafeOnCompleted_System_Action_
+  commentId: M:ILib.TriggerActionAwaiter`1.UnsafeOnCompleted(System.Action)
+  fullName: ILib.TriggerActionAwaiter<T>.UnsafeOnCompleted(System.Action)
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).UnsafeOnCompleted(System.Action)
+  nameWithType: TriggerActionAwaiter<T>.UnsafeOnCompleted(Action)
+  nameWithType.vb: TriggerActionAwaiter(Of T).UnsafeOnCompleted(Action)
+- uid: ILib.TriggerActionAwaiter`1.UnsafeOnCompleted*
+  name: UnsafeOnCompleted
+  href: api/ILib.TriggerActionAwaiter-1.html#ILib_TriggerActionAwaiter_1_UnsafeOnCompleted_
+  commentId: Overload:ILib.TriggerActionAwaiter`1.UnsafeOnCompleted
+  isSpec: "True"
+  fullName: ILib.TriggerActionAwaiter<T>.UnsafeOnCompleted
+  fullName.vb: ILib.TriggerActionAwaiter(Of T).UnsafeOnCompleted
+  nameWithType: TriggerActionAwaiter<T>.UnsafeOnCompleted
+  nameWithType.vb: TriggerActionAwaiter(Of T).UnsafeOnCompleted
 - uid: ILib.TriggerExtensions
   name: TriggerExtensions
   href: api/ILib.TriggerExtensions.html
@@ -27323,6 +28050,52 @@ references:
   fullName.vb: ILib.TriggerExtensions.Any(Of T)(ILib.ITriggerAction(Of T))
   nameWithType: TriggerExtensions.Any<T>(ITriggerAction<T>)
   nameWithType.vb: TriggerExtensions.Any(Of T)(ITriggerAction(Of T))
+- uid: ILib.TriggerExtensions.GetAwaiter(ILib.IHasTriggerAction)
+  name: GetAwaiter(IHasTriggerAction)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter_ILib_IHasTriggerAction_
+  commentId: M:ILib.TriggerExtensions.GetAwaiter(ILib.IHasTriggerAction)
+  fullName: ILib.TriggerExtensions.GetAwaiter(ILib.IHasTriggerAction)
+  nameWithType: TriggerExtensions.GetAwaiter(IHasTriggerAction)
+- uid: ILib.TriggerExtensions.GetAwaiter(ILib.ITriggerAction)
+  name: GetAwaiter(ITriggerAction)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter_ILib_ITriggerAction_
+  commentId: M:ILib.TriggerExtensions.GetAwaiter(ILib.ITriggerAction)
+  fullName: ILib.TriggerExtensions.GetAwaiter(ILib.ITriggerAction)
+  nameWithType: TriggerExtensions.GetAwaiter(ITriggerAction)
+- uid: ILib.TriggerExtensions.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter_
+  commentId: Overload:ILib.TriggerExtensions.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.TriggerExtensions.GetAwaiter
+  nameWithType: TriggerExtensions.GetAwaiter
+- uid: ILib.TriggerExtensions.GetAwaiter``1(ILib.IHasTriggerAction{``0})
+  name: GetAwaiter<T>(IHasTriggerAction<T>)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter__1_ILib_IHasTriggerAction___0__
+  commentId: M:ILib.TriggerExtensions.GetAwaiter``1(ILib.IHasTriggerAction{``0})
+  name.vb: GetAwaiter(Of T)(IHasTriggerAction(Of T))
+  fullName: ILib.TriggerExtensions.GetAwaiter<T>(ILib.IHasTriggerAction<T>)
+  fullName.vb: ILib.TriggerExtensions.GetAwaiter(Of T)(ILib.IHasTriggerAction(Of T))
+  nameWithType: TriggerExtensions.GetAwaiter<T>(IHasTriggerAction<T>)
+  nameWithType.vb: TriggerExtensions.GetAwaiter(Of T)(IHasTriggerAction(Of T))
+- uid: ILib.TriggerExtensions.GetAwaiter``1(ILib.IHasTriggerAction{``0},System.Threading.CancellationToken)
+  name: GetAwaiter<T>(IHasTriggerAction<T>, CancellationToken)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter__1_ILib_IHasTriggerAction___0__System_Threading_CancellationToken_
+  commentId: M:ILib.TriggerExtensions.GetAwaiter``1(ILib.IHasTriggerAction{``0},System.Threading.CancellationToken)
+  name.vb: GetAwaiter(Of T)(IHasTriggerAction(Of T), CancellationToken)
+  fullName: ILib.TriggerExtensions.GetAwaiter<T>(ILib.IHasTriggerAction<T>, System.Threading.CancellationToken)
+  fullName.vb: ILib.TriggerExtensions.GetAwaiter(Of T)(ILib.IHasTriggerAction(Of T), System.Threading.CancellationToken)
+  nameWithType: TriggerExtensions.GetAwaiter<T>(IHasTriggerAction<T>, CancellationToken)
+  nameWithType.vb: TriggerExtensions.GetAwaiter(Of T)(IHasTriggerAction(Of T), CancellationToken)
+- uid: ILib.TriggerExtensions.GetAwaiter``1(ILib.ITriggerAction{``0},System.Threading.CancellationToken)
+  name: GetAwaiter<T>(ITriggerAction<T>, CancellationToken)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter__1_ILib_ITriggerAction___0__System_Threading_CancellationToken_
+  commentId: M:ILib.TriggerExtensions.GetAwaiter``1(ILib.ITriggerAction{``0},System.Threading.CancellationToken)
+  name.vb: GetAwaiter(Of T)(ITriggerAction(Of T), CancellationToken)
+  fullName: ILib.TriggerExtensions.GetAwaiter<T>(ILib.ITriggerAction<T>, System.Threading.CancellationToken)
+  fullName.vb: ILib.TriggerExtensions.GetAwaiter(Of T)(ILib.ITriggerAction(Of T), System.Threading.CancellationToken)
+  nameWithType: TriggerExtensions.GetAwaiter<T>(ITriggerAction<T>, CancellationToken)
+  nameWithType.vb: TriggerExtensions.GetAwaiter(Of T)(ITriggerAction(Of T), CancellationToken)
 - uid: ILib.TriggerExtensions.Realtime*
   name: Realtime
   href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_Realtime_
@@ -27502,6 +28275,28 @@ references:
   fullName.vb: ILib.TriggerExtensions.Timeout(Of T)(ILib.ITriggerAction(Of T), System.Single, System.Boolean)
   nameWithType: TriggerExtensions.Timeout<T>(ITriggerAction<T>, Single, Boolean)
   nameWithType.vb: TriggerExtensions.Timeout(Of T)(ITriggerAction(Of T), Single, Boolean)
+- uid: ILib.TriggerExtensions.ToTrigger(System.Threading.Tasks.Task)
+  name: ToTrigger(Task)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_ToTrigger_System_Threading_Tasks_Task_
+  commentId: M:ILib.TriggerExtensions.ToTrigger(System.Threading.Tasks.Task)
+  fullName: ILib.TriggerExtensions.ToTrigger(System.Threading.Tasks.Task)
+  nameWithType: TriggerExtensions.ToTrigger(Task)
+- uid: ILib.TriggerExtensions.ToTrigger*
+  name: ToTrigger
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_ToTrigger_
+  commentId: Overload:ILib.TriggerExtensions.ToTrigger
+  isSpec: "True"
+  fullName: ILib.TriggerExtensions.ToTrigger
+  nameWithType: TriggerExtensions.ToTrigger
+- uid: ILib.TriggerExtensions.ToTrigger``1(System.Threading.Tasks.Task{``0})
+  name: ToTrigger<T>(Task<T>)
+  href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_ToTrigger__1_System_Threading_Tasks_Task___0__
+  commentId: M:ILib.TriggerExtensions.ToTrigger``1(System.Threading.Tasks.Task{``0})
+  name.vb: ToTrigger(Of T)(Task(Of T))
+  fullName: ILib.TriggerExtensions.ToTrigger<T>(System.Threading.Tasks.Task<T>)
+  fullName.vb: ILib.TriggerExtensions.ToTrigger(Of T)(System.Threading.Tasks.Task(Of T))
+  nameWithType: TriggerExtensions.ToTrigger<T>(Task<T>)
+  nameWithType.vb: TriggerExtensions.ToTrigger(Of T)(Task(Of T))
 - uid: ILib.TriggerExtensions.Wait*
   name: Wait
   href: api/ILib.TriggerExtensions.html#ILib_TriggerExtensions_Wait_
@@ -27765,6 +28560,23 @@ references:
   fullName.vb: ILib.Triggers.SuccessedAction(Of T).Fired
   nameWithType: SuccessedAction<T>.Fired
   nameWithType.vb: SuccessedAction(Of T).Fired
+- uid: ILib.Triggers.SuccessedAction`1.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.Triggers.SuccessedAction-1.html#ILib_Triggers_SuccessedAction_1_GetAwaiter
+  commentId: M:ILib.Triggers.SuccessedAction`1.GetAwaiter
+  fullName: ILib.Triggers.SuccessedAction<T>.GetAwaiter()
+  fullName.vb: ILib.Triggers.SuccessedAction(Of T).GetAwaiter()
+  nameWithType: SuccessedAction<T>.GetAwaiter()
+  nameWithType.vb: SuccessedAction(Of T).GetAwaiter()
+- uid: ILib.Triggers.SuccessedAction`1.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.Triggers.SuccessedAction-1.html#ILib_Triggers_SuccessedAction_1_GetAwaiter_
+  commentId: Overload:ILib.Triggers.SuccessedAction`1.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.Triggers.SuccessedAction<T>.GetAwaiter
+  fullName.vb: ILib.Triggers.SuccessedAction(Of T).GetAwaiter
+  nameWithType: SuccessedAction<T>.GetAwaiter
+  nameWithType.vb: SuccessedAction(Of T).GetAwaiter
 - uid: ILib.Triggers.SuccessedAction`1.OnCancel
   name: OnCancel
   href: api/ILib.Triggers.SuccessedAction-1.html#ILib_Triggers_SuccessedAction_1_OnCancel

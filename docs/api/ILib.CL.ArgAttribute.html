@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DispatcherExtensions
+    <title>Class ArgAttribute
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DispatcherExtensions
+    <meta name="title" content="Class ArgAttribute
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,37 +78,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.Caller.DispatcherExtensions">
+            <article class="content wrap" id="_content" data-uid="ILib.CL.ArgAttribute">
   
   
-  <h1 id="ILib_Caller_DispatcherExtensions" data-uid="ILib.Caller.DispatcherExtensions" class="text-break">Class DispatcherExtensions
+  <h1 id="ILib_CL_ArgAttribute" data-uid="ILib.CL.ArgAttribute" class="text-break">Class ArgAttribute
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">DispatcherExtensions</span></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+    <div class="level2"><span class="xref">ArgAttribute</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Caller.html">ILib.Caller</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
-  <h5 id="ILib_Caller_DispatcherExtensions_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.CL.html">ILib.CL</a></h6>
+  <h6><strong>Assembly</strong>: ILib.CL.dll</h6>
+  <h5 id="ILib_CL_ArgAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DispatcherExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Class | AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
+public class ArgAttribute : Attribute</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Caller/Dispatcher.cs/#L32">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L19">View Source</a>
   </span>
-  <a id="ILib_Caller_DispatcherExtensions_Broadcast_" data-uid="ILib.Caller.DispatcherExtensions.Broadcast*"></a>
-  <h4 id="ILib_Caller_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_" data-uid="ILib.Caller.DispatcherExtensions.Broadcast(ILib.Caller.IHasDispatcher,System.Object)">Broadcast(IHasDispatcher, Object)</h4>
+  <a id="ILib_CL_ArgAttribute__ctor_" data-uid="ILib.CL.ArgAttribute.#ctor*"></a>
+  <h4 id="ILib_CL_ArgAttribute__ctor_System_Char_" data-uid="ILib.CL.ArgAttribute.#ctor(System.Char)">ArgAttribute(Char)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Broadcast(this IHasDispatcher self, object key)</code></pre>
+    <pre><code class="lang-csharp hljs">public ArgAttribute(char shortName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,18 +123,117 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></td>
-        <td><span class="parametername">self</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">key</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
+        <td><span class="parametername">shortName</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L24">View Source</a>
+  </span>
+  <a id="ILib_CL_ArgAttribute__ctor_" data-uid="ILib.CL.ArgAttribute.#ctor*"></a>
+  <h4 id="ILib_CL_ArgAttribute__ctor_System_Char_System_String_" data-uid="ILib.CL.ArgAttribute.#ctor(System.Char,System.String)">ArgAttribute(Char, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArgAttribute(char shortName, string longName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
+        <td><span class="parametername">shortName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">longName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L14">View Source</a>
+  </span>
+  <a id="ILib_CL_ArgAttribute__ctor_" data-uid="ILib.CL.ArgAttribute.#ctor*"></a>
+  <h4 id="ILib_CL_ArgAttribute__ctor_System_String_" data-uid="ILib.CL.ArgAttribute.#ctor(System.String)">ArgAttribute(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArgAttribute(string longName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">longName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L8">View Source</a>
+  </span>
+  <a id="ILib_CL_ArgAttribute_LongName_" data-uid="ILib.CL.ArgAttribute.LongName*"></a>
+  <h4 id="ILib_CL_ArgAttribute_LongName" data-uid="ILib.CL.ArgAttribute.LongName">LongName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L12">View Source</a>
+  </span>
+  <a id="ILib_CL_ArgAttribute_Required_" data-uid="ILib.CL.ArgAttribute.Required*"></a>
+  <h4 id="ILib_CL_ArgAttribute_Required" data-uid="ILib.CL.ArgAttribute.Required">Required</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Required { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -149,44 +250,17 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Caller/Dispatcher.cs/#L33">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L10">View Source</a>
   </span>
-  <a id="ILib_Caller_DispatcherExtensions_Broadcast_" data-uid="ILib.Caller.DispatcherExtensions.Broadcast*"></a>
-  <h4 id="ILib_Caller_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_" data-uid="ILib.Caller.DispatcherExtensions.Broadcast``1(ILib.Caller.IHasDispatcher,System.Object,``0)">Broadcast&lt;T&gt;(IHasDispatcher, Object, T)</h4>
+  <a id="ILib_CL_ArgAttribute_ShortName_" data-uid="ILib.CL.ArgAttribute.ShortName*"></a>
+  <h4 id="ILib_CL_ArgAttribute_ShortName" data-uid="ILib.CL.ArgAttribute.ShortName">ShortName</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Broadcast&lt;T&gt;(this IHasDispatcher self, object key, T prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public char ShortName { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></td>
-        <td><span class="parametername">self</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">prm</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -196,140 +270,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Caller/Dispatcher.cs/#L30">View Source</a>
-  </span>
-  <a id="ILib_Caller_DispatcherExtensions_Message_" data-uid="ILib.Caller.DispatcherExtensions.Message*"></a>
-  <h4 id="ILib_Caller_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_" data-uid="ILib.Caller.DispatcherExtensions.Message(ILib.Caller.IHasDispatcher,System.Object)">Message(IHasDispatcher, Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Message(this IHasDispatcher self, object key)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></td>
-        <td><span class="parametername">self</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Caller/Dispatcher.cs/#L31">View Source</a>
-  </span>
-  <a id="ILib_Caller_DispatcherExtensions_Message_" data-uid="ILib.Caller.DispatcherExtensions.Message*"></a>
-  <h4 id="ILib_Caller_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_" data-uid="ILib.Caller.DispatcherExtensions.Message``1(ILib.Caller.IHasDispatcher,System.Object,``0)">Message&lt;T&gt;(IHasDispatcher, Object, T)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Message&lt;T&gt;(this IHasDispatcher self, object key, T prm)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></td>
-        <td><span class="parametername">self</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">prm</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -342,7 +283,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Caller/Dispatcher.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-cl/blob/master/Runtime/ArgBind/ArgAttribute.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

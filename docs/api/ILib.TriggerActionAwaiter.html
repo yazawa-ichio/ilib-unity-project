@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AsyncTrigger
+    <title>Struct TriggerActionAwaiter
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AsyncTrigger
+    <meta name="title" content="Struct TriggerActionAwaiter
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,38 +78,150 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.AsyncTrigger">
+            <article class="content wrap" id="_content" data-uid="ILib.TriggerActionAwaiter">
   
   
-  <h1 id="ILib_AsyncTrigger" data-uid="ILib.AsyncTrigger" class="text-break">Class AsyncTrigger
+  <h1 id="ILib_TriggerActionAwaiter" data-uid="ILib.TriggerActionAwaiter" class="text-break">Struct TriggerActionAwaiter
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">AsyncTrigger</span></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.icriticalnotifycompletion">ICriticalNotifyCompletion</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.inotifycompletion">INotifyCompletion</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.html">ILib</a></h6>
   <h6><strong>Assembly</strong>: ILib.dll</h6>
-  <h5 id="ILib_AsyncTrigger_syntax">Syntax</h5>
+  <h5 id="ILib_TriggerActionAwaiter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;use Trigger.Time&quot;, true)]
-public static class AsyncTrigger</code></pre>
+    <pre><code class="lang-csharp hljs">public struct TriggerActionAwaiter : ICriticalNotifyCompletion, INotifyCompletion</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L68">View Source</a>
+  </span>
+  <a id="ILib_TriggerActionAwaiter__ctor_" data-uid="ILib.TriggerActionAwaiter.#ctor*"></a>
+  <h4 id="ILib_TriggerActionAwaiter__ctor_ILib_IHasTriggerAction_" data-uid="ILib.TriggerActionAwaiter.#ctor(ILib.IHasTriggerAction)">TriggerActionAwaiter(IHasTriggerAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriggerActionAwaiter(IHasTriggerAction trigger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.IHasTriggerAction.html">IHasTriggerAction</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L63">View Source</a>
+  </span>
+  <a id="ILib_TriggerActionAwaiter__ctor_" data-uid="ILib.TriggerActionAwaiter.#ctor*"></a>
+  <h4 id="ILib_TriggerActionAwaiter__ctor_ILib_ITriggerAction_" data-uid="ILib.TriggerActionAwaiter.#ctor(ILib.ITriggerAction)">TriggerActionAwaiter(ITriggerAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriggerActionAwaiter(ITriggerAction action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L61">View Source</a>
+  </span>
+  <a id="ILib_TriggerActionAwaiter_IsCompleted_" data-uid="ILib.TriggerActionAwaiter.IsCompleted*"></a>
+  <h4 id="ILib_TriggerActionAwaiter_IsCompleted" data-uid="ILib.TriggerActionAwaiter.IsCompleted">IsCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/AsyncTrigger.cs/#L57">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L93">View Source</a>
   </span>
-  <a id="ILib_AsyncTrigger_Realtime_" data-uid="ILib.AsyncTrigger.Realtime*"></a>
-  <h4 id="ILib_AsyncTrigger_Realtime_System_Single_" data-uid="ILib.AsyncTrigger.Realtime(System.Single)">Realtime(Single)</h4>
+  <a id="ILib_TriggerActionAwaiter_GetResult_" data-uid="ILib.TriggerActionAwaiter.GetResult*"></a>
+  <h4 id="ILib_TriggerActionAwaiter_GetResult" data-uid="ILib.TriggerActionAwaiter.GetResult">GetResult()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ITriggerAction&lt;bool&gt; Realtime(float time)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetResult()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L73">View Source</a>
+  </span>
+  <a id="ILib_TriggerActionAwaiter_OnCompleted_" data-uid="ILib.TriggerActionAwaiter.OnCompleted*"></a>
+  <h4 id="ILib_TriggerActionAwaiter_OnCompleted_System_Action_" data-uid="ILib.TriggerActionAwaiter.OnCompleted(System.Action)">OnCompleted(Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCompleted(Action continuation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,38 +234,23 @@ public static class AsyncTrigger</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">time</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">continuation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/AsyncTrigger.cs/#L64">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L83">View Source</a>
   </span>
-  <a id="ILib_AsyncTrigger_Realtime_" data-uid="ILib.AsyncTrigger.Realtime*"></a>
-  <h4 id="ILib_AsyncTrigger_Realtime_UnityEngine_MonoBehaviour_System_Single_" data-uid="ILib.AsyncTrigger.Realtime(UnityEngine.MonoBehaviour,System.Single)">Realtime(MonoBehaviour, Single)</h4>
+  <a id="ILib_TriggerActionAwaiter_UnsafeOnCompleted_" data-uid="ILib.TriggerActionAwaiter.UnsafeOnCompleted*"></a>
+  <h4 id="ILib_TriggerActionAwaiter_UnsafeOnCompleted_System_Action_" data-uid="ILib.TriggerActionAwaiter.UnsafeOnCompleted(System.Action)">UnsafeOnCompleted(Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ITriggerAction&lt;bool&gt; Realtime(MonoBehaviour behaviour, float time)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UnsafeOnCompleted(Action continuation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,125 +263,19 @@ public static class AsyncTrigger</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.MonoBehaviour</span></td>
-        <td><span class="parametername">behaviour</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">time</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">continuation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/AsyncTrigger.cs/#L43">View Source</a>
-  </span>
-  <a id="ILib_AsyncTrigger_Time_" data-uid="ILib.AsyncTrigger.Time*"></a>
-  <h4 id="ILib_AsyncTrigger_Time_System_Single_" data-uid="ILib.AsyncTrigger.Time(System.Single)">Time(Single)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ITriggerAction&lt;bool&gt; Time(float time)</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.icriticalnotifycompletion">System.Runtime.CompilerServices.ICriticalNotifyCompletion</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">time</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/AsyncTrigger.cs/#L50">View Source</a>
-  </span>
-  <a id="ILib_AsyncTrigger_Time_" data-uid="ILib.AsyncTrigger.Time*"></a>
-  <h4 id="ILib_AsyncTrigger_Time_UnityEngine_MonoBehaviour_System_Single_" data-uid="ILib.AsyncTrigger.Time(UnityEngine.MonoBehaviour,System.Single)">Time(MonoBehaviour, Single)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ITriggerAction&lt;bool&gt; Time(MonoBehaviour behaviour, float time)</code></pre>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.inotifycompletion">System.Runtime.CompilerServices.INotifyCompletion</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.MonoBehaviour</span></td>
-        <td><span class="parametername">behaviour</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">time</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -293,7 +284,7 @@ public static class AsyncTrigger</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/AsyncTrigger.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Triggers/TriggerActionAwaiter.cs/#L57" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

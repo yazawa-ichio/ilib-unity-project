@@ -108,10 +108,19 @@
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_HasChildren">Content.HasChildren</a>
     </div>
     <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_IsModalContent">Content.IsModalContent</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_IsWaitModalContent">Content.IsWaitModalContent</a>
+    </div>
+    <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Running">Content.Running</a>
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_IsSelfThrowErrorIfNeeded">Content.IsSelfThrowErrorIfNeeded</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_IsUseSubCall">Content.IsUseSubCall</a>
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Call">Content.Call</a>
@@ -159,6 +168,15 @@
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Append_System_Type_System_Object_">Content.Append(Type, Object)</a>
     </div>
     <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_">Content.Modal&lt;TResult&gt;(IContentParam)</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Modal__2_System_Object_">Content.Modal&lt;TResult, UContent&gt;(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_System_Type_System_Object_">Content.Modal&lt;TResult&gt;(Type, Object)</a>
+    </div>
+    <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Resume">Content.Resume()</a>
     </div>
     <div>
@@ -166,6 +184,15 @@
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Shutdown">Content.Shutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_">Content.ModalResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_ModalResult_System_Exception_">Content.ModalResult(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_System_Exception_">Content.ModalResult&lt;T&gt;(T, Exception)</a>
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Switch_ILib_Contents_IContentParam_">Content.Switch(IContentParam)</a>
@@ -178,9 +205,6 @@
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Get__1_System_Boolean_">Content.Get&lt;T&gt;(Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_Get_System_Type_System_Boolean_">Content.Get(Type, Boolean)</a>
     </div>
     <div>
       <a class="xref" href="ILib.Contents.Content.html#ILib_Contents_Content_GetAll__1_System_Boolean_">Content.GetAll&lt;T&gt;(Boolean)</a>
@@ -217,7 +241,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L12">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L13">View Source</a>
   </span>
   <a id="ILib_Contents_Content_1_Param_" data-uid="ILib.Contents.Content`1.Param*"></a>
   <h4 id="ILib_Contents_Content_1_Param" data-uid="ILib.Contents.Content`1.Param">Param</h4>
@@ -251,6 +275,18 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
+      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Message(IHasDispatcher, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Message&lt;T&gt;(IHasDispatcher, Object, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Broadcast(IHasDispatcher, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Broadcast&lt;T&gt;(IHasDispatcher, Object, T)</a>
+  </div>
+  <div>
       <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_ILib_IHasRoutineOwner_System_Collections_IEnumerator_">RoutineExtensions.Routine(IHasRoutineOwner, IEnumerator)</a>
   </div>
   <div>
@@ -274,18 +310,6 @@
   <div>
       <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatTaskRoutine&lt;T&gt;(IHasRoutineOwner, Func&lt;IEnumerator&gt;)</a>
   </div>
-  <div>
-      <a class="xref" href="ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Message(IHasDispatcher, Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Message&lt;T&gt;(IHasDispatcher, Object, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Broadcast(IHasDispatcher, Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.Caller.DispatcherExtensions.html#ILib_Caller_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Broadcast&lt;T&gt;(IHasDispatcher, Object, T)</a>
-  </div>
 </article>
           </div>
           
@@ -294,7 +318,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

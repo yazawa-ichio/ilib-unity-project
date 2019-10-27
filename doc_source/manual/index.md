@@ -76,3 +76,8 @@ Unity上でPlayerPrefs等によるセーブ時にキーの難読化や文字列�
 IMGUIで使える簡単なウィジェットツールです。<br>
 多少見た目がいいスキンを利用もできます。<br>
 内部的にウィジェットを利用したランタイム用のデバックメニューも含みます。
+
+### [ilib-unity-cl](ilib-unity-cl/index.md) ([リポジトリ](https://github.com/yazawa-ichio/ilib-unity-cl))
+
+Unityで利用するコマンドラインのヘルパーとツールです。<br>
+今のところ引数のバインダーの機能しかありません。
