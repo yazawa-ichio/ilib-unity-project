@@ -18,10 +18,12 @@ namespace ILib.Sample.UI
 		{
 			m_UIStack.Push("SampleUI", (ViewModel vm) =>
 			{
-				vm.SubscribeViewEvent(SampleUIControl.Event.Push, () => {
+				vm.SubscribeViewEvent(SampleUIControl.Event.Push, () =>
+				{
 					Push();
 				});
-				vm.SubscribeViewEvent(SampleUIControl.Event.Change, () => {
+				vm.SubscribeViewEvent(SampleUIControl.Event.Change, () =>
+				{
 					m_UIStack.Switch("SampleUI2", new ViewModel());
 				});
 			});
@@ -44,9 +46,9 @@ namespace ILib.Sample.UI
 			*/
 		}
 
-		void Push()
+		async void Push()
 		{
-			m_UIStack.Push("SampleUI", (ViewModel vm) =>
+			await m_UIStack.Push("SampleUI", (ViewModel vm) =>
 			{
 				vm.SubscribeViewEvent(SampleUIControl.Event.Push, () => {
 					Push();
