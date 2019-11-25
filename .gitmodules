@@ -22,3 +22,6 @@
 [submodule "Unity/Assets/ilib-unity-cl"]
 	path = Unity/Assets/ilib-unity-cl
 	url = https://github.com/yazawa-ichio/ilib-unity-cl.git
+[submodule "Unity/Assets/ilib-ui-control"]
+	path = Unity/Assets/ilib-ui-control
+	url = https://github.com/yazawa-ichio/ilib-ui-control.git
