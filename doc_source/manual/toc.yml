@@ -10,6 +10,8 @@
   href: ilib-serv-injector/toc.yml
 - name: ilib-sound-control
   href: ilib-sound-control/toc.yml
+- name: ilib-ui-control
+  href: ilib-ui-control/toc.yml
 - name: ilib-unity-cl
   href: ilib-unity-cl/toc.yml
 - name: ilib-unity-etc

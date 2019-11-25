@@ -16,7 +16,8 @@
             "ILib.Save.csproj",
             "ILib.ServInjector.csproj",
             "ILib.Sound*.csproj",
-            "ILib.CL.csproj"
+            "ILib.CL.csproj",
+            "ILib.UI.Control.csproj"
           ]
         }
       ],
