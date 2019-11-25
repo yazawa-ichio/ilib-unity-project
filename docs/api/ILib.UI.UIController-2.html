@@ -104,7 +104,7 @@ Open・Change・Closeの操作を行えます。
     <div><a class="xref" href="ILib.UI.IController.html">IController</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_UIController_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class UIController&lt;TParam, UControl&gt; : MonoBehaviour, IController where UControl : class, IControl</code></pre>
@@ -132,7 +132,7 @@ Open・Change・Closeの操作を行えます。
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L109">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L110">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_HasProcess_" data-uid="ILib.UI.UIController`2.HasProcess*"></a>
   <h4 id="ILib_UI_UIController_2_HasProcess" data-uid="ILib.UI.UIController`2.HasProcess">HasProcess</h4>
@@ -163,7 +163,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L285">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L273">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Change_" data-uid="ILib.UI.UIController`2.Change*"></a>
   <h4 id="ILib_UI_UIController_2_Change__1_System_String__0_ILib_UI_UIInstance_ILib_UI_UIInstance___" data-uid="ILib.UI.UIController`2.Change``1(System.String,`0,ILib.UI.UIInstance,ILib.UI.UIInstance[])">Change&lt;T&gt;(String, TParam, UIInstance, UIInstance[])</h4>
@@ -171,7 +171,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;UIInstance&gt; Change&lt;T&gt;(string path, TParam prm, UIInstance parent, UIInstance[] releases)
+    <pre><code class="lang-csharp hljs">protected Task&lt;UIInstance&gt; Change&lt;T&gt;(string path, TParam prm, UIInstance parent, UIInstance[] releases)
     where T : UControl</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -216,7 +216,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -238,7 +238,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L21">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L22">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Close_" data-uid="ILib.UI.UIController`2.Close*"></a>
   <h4 id="ILib_UI_UIController_2_Close_ILib_UI_IControl_" data-uid="ILib.UI.UIController`2.Close(ILib.UI.IControl)">Close(IControl)</h4>
@@ -246,7 +246,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract ITriggerAction Close(IControl control)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract Task Close(IControl control)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -275,14 +275,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L368">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L348">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Close_" data-uid="ILib.UI.UIController`2.Close*"></a>
   <h4 id="ILib_UI_UIController_2_Close_ILib_UI_UIInstance___ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.Close(ILib.UI.UIInstance[],ILib.UI.UIInstance)">Close(UIInstance[], UIInstance)</h4>
@@ -290,7 +290,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;bool&gt; Close(UIInstance[] releases, UIInstance front = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task Close(UIInstance[] releases, UIInstance front = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -324,14 +324,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L246">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L239">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_CloseControls_" data-uid="ILib.UI.UIController`2.CloseControls*"></a>
   <h4 id="ILib_UI_UIController_2_CloseControls_ILib_UI_UIInstance___" data-uid="ILib.UI.UIController`2.CloseControls(ILib.UI.UIInstance[])">CloseControls(UIInstance[])</h4>
@@ -339,7 +339,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ITriggerAction CloseControls(UIInstance[] controls)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task CloseControls(UIInstance[] controls)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -368,63 +368,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L381">View Source</a>
-  </span>
-  <a id="ILib_UI_UIController_2_CloseImpl_" data-uid="ILib.UI.UIController`2.CloseImpl*"></a>
-  <h4 id="ILib_UI_UIController_2_CloseImpl_ILib_UI_UIInstance___ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.CloseImpl(ILib.UI.UIInstance[],ILib.UI.UIInstance)">CloseImpl(UIInstance[], UIInstance)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IEnumerator CloseImpl(UIInstance[] releases, UIInstance front = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>[]</td>
-        <td><span class="parametername">releases</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></td>
-        <td><span class="parametername">front</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L134">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L135">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_EndProcess_" data-uid="ILib.UI.UIController`2.EndProcess*"></a>
   <h4 id="ILib_UI_UIController_2_EndProcess" data-uid="ILib.UI.UIController`2.EndProcess">EndProcess()</h4>
@@ -436,7 +387,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L111">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L112">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_EnqueueProcess_" data-uid="ILib.UI.UIController`2.EnqueueProcess*"></a>
   <h4 id="ILib_UI_UIController_2_EnqueueProcess_System_Action_" data-uid="ILib.UI.UIController`2.EnqueueProcess(System.Action)">EnqueueProcess(Action)</h4>
@@ -465,7 +416,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L50">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L51">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Execute_" data-uid="ILib.UI.UIController`2.Execute*"></a>
   <h4 id="ILib_UI_UIController_2_Execute__1_System_Action___0__" data-uid="ILib.UI.UIController`2.Execute``1(System.Action{``0})">Execute&lt;T&gt;(Action&lt;T&gt;)</h4>
@@ -525,7 +476,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L65">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L66">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_ExecuteAnyOne_" data-uid="ILib.UI.UIController`2.ExecuteAnyOne*"></a>
   <h4 id="ILib_UI_UIController_2_ExecuteAnyOne__1_System_Action___0__" data-uid="ILib.UI.UIController`2.ExecuteAnyOne``1(System.Action{``0})">ExecuteAnyOne&lt;T&gt;(Action&lt;T&gt;)</h4>
@@ -585,7 +536,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L78">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L79">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_ExecuteAnyOne_" data-uid="ILib.UI.UIController`2.ExecuteAnyOne*"></a>
   <h4 id="ILib_UI_UIController_2_ExecuteAnyOne__1_System_Func___0_System_Boolean__" data-uid="ILib.UI.UIController`2.ExecuteAnyOne``1(System.Func{``0,System.Boolean})">ExecuteAnyOne&lt;T&gt;(Func&lt;T, Boolean&gt;)</h4>
@@ -645,7 +596,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L92">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L93">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_ExecuteBack_" data-uid="ILib.UI.UIController`2.ExecuteBack*"></a>
   <h4 id="ILib_UI_UIController_2_ExecuteBack" data-uid="ILib.UI.UIController`2.ExecuteBack">ExecuteBack()</h4>
@@ -673,7 +624,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L45">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L46">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_GetActive_" data-uid="ILib.UI.UIController`2.GetActive*"></a>
   <h4 id="ILib_UI_UIController_2_GetActive__1" data-uid="ILib.UI.UIController`2.GetActive``1">GetActive&lt;T&gt;()</h4>
@@ -715,7 +666,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L179">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L180">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_IsWaitBehindBeforeOnFront_" data-uid="ILib.UI.UIController`2.IsWaitBehindBeforeOnFront*"></a>
   <h4 id="ILib_UI_UIController_2_IsWaitBehindBeforeOnFront__1_System_String__0_" data-uid="ILib.UI.UIController`2.IsWaitBehindBeforeOnFront``1(System.String,`0)">IsWaitBehindBeforeOnFront&lt;T&gt;(String, TParam)</h4>
@@ -782,7 +733,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L363">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L343">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_IsWaitCloseBeforeOnFront_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnFront*"></a>
   <h4 id="ILib_UI_UIController_2_IsWaitCloseBeforeOnFront__1_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnFront(`1)">IsWaitCloseBeforeOnFront(UControl)</h4>
@@ -828,7 +779,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L280">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L268">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_IsWaitCloseBeforeOnOpen_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnOpen*"></a>
   <h4 id="ILib_UI_UIController_2_IsWaitCloseBeforeOnOpen__1_System_String__0_" data-uid="ILib.UI.UIController`2.IsWaitCloseBeforeOnOpen``1(System.String,`0)">IsWaitCloseBeforeOnOpen&lt;T&gt;(String, TParam)</h4>
@@ -895,7 +846,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L26">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L27">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Load_" data-uid="ILib.UI.UIController`2.Load*"></a>
   <h4 id="ILib_UI_UIController_2_Load__1_System_String__0_" data-uid="ILib.UI.UIController`2.Load``1(System.String,`0)">Load&lt;T&gt;(String, TParam)</h4>
@@ -904,7 +855,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction&lt;GameObject&gt; Load&lt;T&gt;(string path, TParam prm)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;GameObject&gt; Load&lt;T&gt;(string path, TParam prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -938,7 +889,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<span class="xref">UnityEngine.GameObject</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">UnityEngine.GameObject</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -960,7 +911,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L269">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L257">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnBeginChange_" data-uid="ILib.UI.UIController`2.OnBeginChange*"></a>
   <h4 id="ILib_UI_UIController_2_OnBeginChange" data-uid="ILib.UI.UIController`2.OnBeginChange">OnBeginChange()</h4>
@@ -969,7 +920,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginChange()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnBeginChange()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -981,14 +932,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L347">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L327">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnBeginClose_" data-uid="ILib.UI.UIController`2.OnBeginClose*"></a>
   <h4 id="ILib_UI_UIController_2_OnBeginClose" data-uid="ILib.UI.UIController`2.OnBeginClose">OnBeginClose()</h4>
@@ -997,7 +948,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginClose()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnBeginClose()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1009,14 +960,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L163">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L164">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnBeginOpen_" data-uid="ILib.UI.UIController`2.OnBeginOpen*"></a>
   <h4 id="ILib_UI_UIController_2_OnBeginOpen" data-uid="ILib.UI.UIController`2.OnBeginOpen">OnBeginOpen()</h4>
@@ -1025,7 +976,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnBeginOpen()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnBeginOpen()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1037,14 +988,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L352">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L332">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnClose_" data-uid="ILib.UI.UIController`2.OnClose*"></a>
   <h4 id="ILib_UI_UIController_2_OnClose__1_" data-uid="ILib.UI.UIController`2.OnClose(`1)">OnClose(UControl)</h4>
@@ -1074,7 +1025,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L274">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L262">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnEndChange_" data-uid="ILib.UI.UIController`2.OnEndChange*"></a>
   <h4 id="ILib_UI_UIController_2_OnEndChange" data-uid="ILib.UI.UIController`2.OnEndChange">OnEndChange()</h4>
@@ -1083,7 +1034,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndChange()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnEndChange()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1095,14 +1046,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L357">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L337">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnEndClose_" data-uid="ILib.UI.UIController`2.OnEndClose*"></a>
   <h4 id="ILib_UI_UIController_2_OnEndClose" data-uid="ILib.UI.UIController`2.OnEndClose">OnEndClose()</h4>
@@ -1111,7 +1062,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndClose()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnEndClose()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1123,14 +1074,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L173">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L174">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnEndOpen_" data-uid="ILib.UI.UIController`2.OnEndOpen*"></a>
   <h4 id="ILib_UI_UIController_2_OnEndOpen" data-uid="ILib.UI.UIController`2.OnEndOpen">OnEndOpen()</h4>
@@ -1139,7 +1090,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual ITriggerAction OnEndOpen()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnEndOpen()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1151,14 +1102,14 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L158">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L159">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnEndProcess_" data-uid="ILib.UI.UIController`2.OnEndProcess*"></a>
   <h4 id="ILib_UI_UIController_2_OnEndProcess" data-uid="ILib.UI.UIController`2.OnEndProcess">OnEndProcess()</h4>
@@ -1172,7 +1123,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L168">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L169">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnOpen_" data-uid="ILib.UI.UIController`2.OnOpen*"></a>
   <h4 id="ILib_UI_UIController_2_OnOpen__1_" data-uid="ILib.UI.UIController`2.OnOpen(`1)">OnOpen(UControl)</h4>
@@ -1202,7 +1153,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L152">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L153">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_OnStartProcess_" data-uid="ILib.UI.UIController`2.OnStartProcess*"></a>
   <h4 id="ILib_UI_UIController_2_OnStartProcess" data-uid="ILib.UI.UIController`2.OnStartProcess">OnStartProcess()</h4>
@@ -1216,7 +1167,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L184">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L185">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_Open_" data-uid="ILib.UI.UIController`2.Open*"></a>
   <h4 id="ILib_UI_UIController_2_Open__1_System_String__0_ILib_UI_UIInstance_" data-uid="ILib.UI.UIController`2.Open``1(System.String,`0,ILib.UI.UIInstance)">Open&lt;T&gt;(String, TParam, UIInstance)</h4>
@@ -1224,7 +1175,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ITriggerAction&lt;UIInstance&gt; Open&lt;T&gt;(string path, TParam prm, UIInstance parent = null)
+    <pre><code class="lang-csharp hljs">protected Task&lt;UIInstance&gt; Open&lt;T&gt;(string path, TParam prm, UIInstance parent = null)
     where T : UControl</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1264,7 +1215,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1286,7 +1237,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L124">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L125">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_StartProcess_" data-uid="ILib.UI.UIController`2.StartProcess*"></a>
   <h4 id="ILib_UI_UIController_2_StartProcess" data-uid="ILib.UI.UIController`2.StartProcess">StartProcess()</h4>
@@ -1300,7 +1251,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L19">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L20">View Source</a>
   </span>
   <a id="ILib_UI_UIController_2_ILib_UI_IController_Close_" data-uid="ILib.UI.UIController`2.ILib#UI#IController#Close*"></a>
   <h4 id="ILib_UI_UIController_2_ILib_UI_IController_Close_ILib_UI_IControl_" data-uid="ILib.UI.UIController`2.ILib#UI#IController#Close(ILib.UI.IControl)">IController.Close(IControl)</h4>
@@ -1308,7 +1259,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction IController.Close(IControl control)</code></pre>
+    <pre><code class="lang-csharp hljs">Task IController.Close(IControl control)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1337,7 +1288,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1379,7 +1330,7 @@ UIQueueの場合、表示待ちのリクエストはプロセスに含まれな�
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/UIController.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIController.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

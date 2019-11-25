@@ -87,7 +87,7 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_IControl_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IControl</code></pre>
@@ -96,7 +96,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L14">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L15">View Source</a>
   </span>
   <a id="ILib_UI_IControl_IsActive_" data-uid="ILib.UI.IControl.IsActive*"></a>
   <h4 id="ILib_UI_IControl_IsActive" data-uid="ILib.UI.IControl.IsActive">IsActive</h4>
@@ -124,7 +124,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L18">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L19">View Source</a>
   </span>
   <a id="ILib_UI_IControl_IsDeactivateInBehind_" data-uid="ILib.UI.IControl.IsDeactivateInBehind*"></a>
   <h4 id="ILib_UI_IControl_IsDeactivateInBehind" data-uid="ILib.UI.IControl.IsDeactivateInBehind">IsDeactivateInBehind</h4>
@@ -154,7 +154,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L31">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L32">View Source</a>
   </span>
   <a id="ILib_UI_IControl_OnBehind_" data-uid="ILib.UI.IControl.OnBehind*"></a>
   <h4 id="ILib_UI_IControl_OnBehind" data-uid="ILib.UI.IControl.OnBehind">OnBehind()</h4>
@@ -163,7 +163,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction OnBehind()</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnBehind()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,14 +175,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L35">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L36">View Source</a>
   </span>
   <a id="ILib_UI_IControl_OnClose_" data-uid="ILib.UI.IControl.OnClose*"></a>
   <h4 id="ILib_UI_IControl_OnClose" data-uid="ILib.UI.IControl.OnClose">OnClose()</h4>
@@ -191,7 +191,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction OnClose()</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnClose()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,14 +203,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L23">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L24">View Source</a>
   </span>
   <a id="ILib_UI_IControl_OnCreated_" data-uid="ILib.UI.IControl.OnCreated*"></a>
   <h4 id="ILib_UI_IControl_OnCreated_System_Object_" data-uid="ILib.UI.IControl.OnCreated(System.Object)">OnCreated(Object)</h4>
@@ -219,7 +219,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction OnCreated(object prm)</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnCreated(object prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,14 +248,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L27">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L28">View Source</a>
   </span>
   <a id="ILib_UI_IControl_OnFront_" data-uid="ILib.UI.IControl.OnFront*"></a>
   <h4 id="ILib_UI_IControl_OnFront_System_Boolean_" data-uid="ILib.UI.IControl.OnFront(System.Boolean)">OnFront(Boolean)</h4>
@@ -264,7 +264,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction OnFront(bool open)</code></pre>
+    <pre><code class="lang-csharp hljs">Task OnFront(bool open)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,14 +293,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L19">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L20">View Source</a>
   </span>
   <a id="ILib_UI_IControl_SetController_" data-uid="ILib.UI.IControl.SetController*"></a>
   <h4 id="ILib_UI_IControl_SetController_ILib_UI_IController_" data-uid="ILib.UI.IControl.SetController(ILib.UI.IController)">SetController(IController)</h4>
@@ -335,7 +335,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/IControl.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/IControl.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

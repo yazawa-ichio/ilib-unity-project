@@ -86,7 +86,7 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_UITransition_IAnim_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IAnim</code></pre>
@@ -95,7 +95,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Transition/UITransition.cs/#L17">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Transition/UITransition.cs/#L18">View Source</a>
   </span>
   <a id="ILib_UI_UITransition_IAnim_Init_" data-uid="ILib.UI.UITransition.IAnim.Init*"></a>
   <h4 id="ILib_UI_UITransition_IAnim_Init" data-uid="ILib.UI.UITransition.IAnim.Init">Init()</h4>
@@ -107,15 +107,15 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Transition/UITransition.cs/#L18">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Transition/UITransition.cs/#L19">View Source</a>
   </span>
   <a id="ILib_UI_UITransition_IAnim_Run_" data-uid="ILib.UI.UITransition.IAnim.Run*"></a>
-  <h4 id="ILib_UI_UITransition_IAnim_Run_System_Boolean_" data-uid="ILib.UI.UITransition.IAnim.Run(System.Boolean)">Run(Boolean)</h4>
+  <h4 id="ILib_UI_UITransition_IAnim_Run_UnityEngine_MonoBehaviour_System_Boolean_" data-uid="ILib.UI.UITransition.IAnim.Run(UnityEngine.MonoBehaviour,System.Boolean)">Run(MonoBehaviour, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerator Run(bool show)</code></pre>
+    <pre><code class="lang-csharp hljs">Task Run(MonoBehaviour owner, bool show)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,6 +127,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.MonoBehaviour</span></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">show</span></td>
@@ -144,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -157,7 +162,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Transition/UITransition.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Transition/UITransition.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

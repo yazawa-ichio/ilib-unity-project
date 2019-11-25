@@ -83,7 +83,8 @@
   
   <h1 id="ILib_UI_IQueueEntry" data-uid="ILib.UI.IQueueEntry" class="text-break">Interface IQueueEntry
   </h1>
-  <div class="markdown level0 summary"><p>UIQueueのリクエストです。</p>
+  <div class="markdown level0 summary"><p>UIQueueのリクエストです。
+awaitした場合はCloseを待ちます</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -93,7 +94,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_IQueueEntry_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IQueueEntry : IDisposable</code></pre>
@@ -102,7 +103,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Queue/IQueueEntry.cs/#L8">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L13">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_IsClosed_" data-uid="ILib.UI.IQueueEntry.IsClosed*"></a>
   <h4 id="ILib_UI_IQueueEntry_IsClosed" data-uid="ILib.UI.IQueueEntry.IsClosed">IsClosed</h4>
@@ -127,38 +128,11 @@
       </tr>
     </tbody>
   </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Queue/IQueueEntry.cs/#L9">View Source</a>
-  </span>
-  <a id="ILib_UI_IQueueEntry_ObserveClosed_" data-uid="ILib.UI.IQueueEntry.ObserveClosed*"></a>
-  <h4 id="ILib_UI_IQueueEntry_ObserveClosed" data-uid="ILib.UI.IQueueEntry.ObserveClosed">ObserveClosed</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction ObserveClosed { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Queue/IQueueEntry.cs/#L10">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L14">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_Close_" data-uid="ILib.UI.IQueueEntry.Close*"></a>
   <h4 id="ILib_UI_IQueueEntry_Close" data-uid="ILib.UI.IQueueEntry.Close">Close()</h4>
@@ -166,7 +140,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction&lt;bool&gt; Close()</code></pre>
+    <pre><code class="lang-csharp hljs">Task Close()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -178,7 +152,78 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L16">View Source</a>
+  </span>
+  <a id="ILib_UI_IQueueEntry_GetAwaiter_" data-uid="ILib.UI.IQueueEntry.GetAwaiter*"></a>
+  <h4 id="ILib_UI_IQueueEntry_GetAwaiter" data-uid="ILib.UI.IQueueEntry.GetAwaiter">GetAwaiter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TaskAwaiter GetAwaiter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.taskawaiter">TaskAwaiter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L15">View Source</a>
+  </span>
+  <a id="ILib_UI_IQueueEntry_WaitClose_" data-uid="ILib.UI.IQueueEntry.WaitClose*"></a>
+  <h4 id="ILib_UI_IQueueEntry_WaitClose_System_Threading_CancellationToken_" data-uid="ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)">WaitClose(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitClose(CancellationToken token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -191,7 +236,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Queue/IQueueEntry.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

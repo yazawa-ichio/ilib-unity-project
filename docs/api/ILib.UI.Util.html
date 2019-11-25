@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace ILib.UI
+    <title>Class Util
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace ILib.UI
+    <meta name="title" content="Class Util
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,84 +78,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.UI">
+            <article class="content wrap" id="_content" data-uid="ILib.UI.Util">
   
-  <h1 id="ILib_UI" data-uid="ILib.UI" class="text-break">Namespace ILib.UI
+  
+  <h1 id="ILib_UI_Util" data-uid="ILib.UI.Util" class="text-break">Class Util
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Util</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
+  <h5 id="ILib_UI_Util_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Util</code></pre>
+  </div>
+  <h3 id="properties">Properties
   </h3>
-      <h4><a class="xref" href="ILib.UI.AnimatorTransition.html">AnimatorTransition</a></h4>
-      <section><p>Animatorを利用した遷移処理です。
-SHOW・HIDEステートの完了を検知して遷移します。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIControl-1.html">UIControl&lt;TParam&gt;</a></h4>
-      <section><p>UIの表示制御を行うクラスです。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIController-2.html">UIController&lt;TParam, UControl&gt;</a></h4>
-      <section><p>UIの表示制御の基底クラスです。
-Open・Change・Closeの操作を行えます。
-実行中に非アクティブにするとコルーチンが停止するため正常に動かなくなります。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIControlLog.html">UIControlLog</a></h4>
-      <section></section>
-      <h4><a class="xref" href="ILib.UI.UIInstance.html">UIInstance</a></h4>
-      <section><p>UIのインスタンスを保持します</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIQueue.html">UIQueue</a></h4>
-      <section><p>UIの表示をキュー制御で行います。現在のUIが閉じられるまで、次の表示リクエストは実行されません。
-表示前に不要になったリクエストはキャンセルできます。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIQueue-2.html">UIQueue&lt;TParam, UControl&gt;</a></h4>
-      <section><p>UIの表示をキュー制御で行います。現在のUIが閉じられるまで、次の表示リクエストは実行されません。
-表示前に不要になったリクエストはキャンセルできます。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIStack.html">UIStack</a></h4>
-      <section><p>UIの表示をスタック制御で行います。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UIStack-2.html">UIStack&lt;TParam, UControl&gt;</a></h4>
-      <section><p>UIの表示をスタック制御で行います。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UITransition.html">UITransition</a></h4>
-      <section><p>uGUIの機能を使った簡単なアニメーションの遷移の実装です。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UITransition.Fade.html">UITransition.Fade</a></h4>
-      <section></section>
-      <h4><a class="xref" href="ILib.UI.UITransition.Move.html">UITransition.Move</a></h4>
-      <section></section>
-      <h4><a class="xref" href="ILib.UI.Util.html">Util</a></h4>
-      <section></section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="ILib.UI.IControl.html">IControl</a></h4>
-      <section><p>UIの表示制御</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.IControl-1.html">IControl&lt;TParam&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="ILib.UI.IController.html">IController</a></h4>
-      <section></section>
-      <h4><a class="xref" href="ILib.UI.IExecuteBack.html">IExecuteBack</a></h4>
-      <section><p>UIのバック処理</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.IQueueEntry.html">IQueueEntry</a></h4>
-      <section><p>UIQueueのリクエストです。
-awaitした場合はCloseを待ちます</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.IStackEntry.html">IStackEntry</a></h4>
-      <section><p>UIStackのリクエストです。
-Pushの完了を受け取れます。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.ITransition.html">ITransition</a></h4>
-      <section><p>アニメーションの遷移を行います。</p>
-</section>
-      <h4><a class="xref" href="ILib.UI.UITransition.IAnim.html">UITransition.IAnim</a></h4>
-      <section></section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="ILib.UI.UIControlLog.LogLevel.html">UIControlLog.LogLevel</a></h4>
-      <section></section>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Util.cs/#L8">View Source</a>
+  </span>
+  <a id="ILib_UI_Util_Successed_" data-uid="ILib.UI.Util.Successed*"></a>
+  <h4 id="ILib_UI_Util_Successed" data-uid="ILib.UI.Util.Successed">Successed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;bool&gt; Successed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -163,6 +132,9 @@ Pushの完了を受け取れます。</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Util.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

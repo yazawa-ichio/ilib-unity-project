@@ -87,62 +87,17 @@
 Pushの完了を受け取れます。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_OnFail">ITriggerAction.OnFail</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_OnCancel">ITriggerAction.OnCancel</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_OnComplete">ITriggerAction.OnComplete</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Fired">ITriggerAction.Fired</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Error">ITriggerAction.Error</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Canceled">ITriggerAction.Canceled</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_OneShot">ITriggerAction.OneShot</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Add_System_Action_">ITriggerAction.Add(Action)</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Clear">ITriggerAction.Clear()</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.ITriggerAction.html#ILib_ITriggerAction_Cancel">ITriggerAction.Cancel()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.movenext#System_Collections_IEnumerator_MoveNext">IEnumerator.MoveNext()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.reset#System_Collections_IEnumerator_Reset">IEnumerator.Reset()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator.current#System_Collections_IEnumerator_Current">IEnumerator.Current</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.UI.html">ILib.UI</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_IStackEntry_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IStackEntry : ITriggerAction, IDisposable, IEnumerator</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IStackEntry</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Stack/IStackEntry.cs/#L9">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L12">View Source</a>
   </span>
   <a id="ILib_UI_IStackEntry_IsActive_" data-uid="ILib.UI.IStackEntry.IsActive*"></a>
   <h4 id="ILib_UI_IStackEntry_IsActive" data-uid="ILib.UI.IStackEntry.IsActive">IsActive</h4>
@@ -169,7 +124,7 @@ Pushの完了を受け取れます。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Stack/IStackEntry.cs/#L10">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L13">View Source</a>
   </span>
   <a id="ILib_UI_IStackEntry_IsFornt_" data-uid="ILib.UI.IStackEntry.IsFornt*"></a>
   <h4 id="ILib_UI_IStackEntry_IsFornt" data-uid="ILib.UI.IStackEntry.IsFornt">IsFornt</h4>
@@ -198,7 +153,7 @@ Pushの完了を受け取れます。</p>
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Stack/IStackEntry.cs/#L12">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L15">View Source</a>
   </span>
   <a id="ILib_UI_IStackEntry_Execute_" data-uid="ILib.UI.IStackEntry.Execute*"></a>
   <h4 id="ILib_UI_IStackEntry_Execute__1_System_Action___0__System_Boolean_" data-uid="ILib.UI.IStackEntry.Execute``1(System.Action{``0},System.Boolean)">Execute&lt;T&gt;(Action&lt;T&gt;, Boolean)</h4>
@@ -247,15 +202,15 @@ Pushの完了を受け取れます。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Stack/IStackEntry.cs/#L11">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L16">View Source</a>
   </span>
-  <a id="ILib_UI_IStackEntry_Pop_" data-uid="ILib.UI.IStackEntry.Pop*"></a>
-  <h4 id="ILib_UI_IStackEntry_Pop" data-uid="ILib.UI.IStackEntry.Pop">Pop()</h4>
+  <a id="ILib_UI_IStackEntry_GetAwaiter_" data-uid="ILib.UI.IStackEntry.GetAwaiter*"></a>
+  <h4 id="ILib_UI_IStackEntry_GetAwaiter" data-uid="ILib.UI.IStackEntry.GetAwaiter">GetAwaiter()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction Pop()</code></pre>
+    <pre><code class="lang-csharp hljs">TaskAwaiter&lt;IStackEntry&gt; GetAwaiter()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,18 +222,38 @@ Pushの完了を受け取れます。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.taskawaiter-1">TaskAwaiter</a>&lt;<a class="xref" href="ILib.UI.IStackEntry.html">IStackEntry</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Select__1_ILib_ITriggerAction_System_Func___0__System_Boolean_">TriggerExtensions.Select&lt;T&gt;(ITriggerAction, Func&lt;T&gt;, Boolean)</a>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L14">View Source</a>
+  </span>
+  <a id="ILib_UI_IStackEntry_Pop_" data-uid="ILib.UI.IStackEntry.Pop*"></a>
+  <h4 id="ILib_UI_IStackEntry_Pop" data-uid="ILib.UI.IStackEntry.Pop">Pop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Pop()</code></pre>
   </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter_ILib_ITriggerAction_">TriggerExtensions.GetAwaiter(ITriggerAction)</a>
-  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -287,7 +262,7 @@ Pushの完了を受け取れます。</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/UIControl/Stack/IStackEntry.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Stack/IStackEntry.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

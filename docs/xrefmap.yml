@@ -28968,6 +28968,19 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IQueueEntry.Close
   nameWithType: IQueueEntry.Close
+- uid: ILib.UI.IQueueEntry.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_GetAwaiter
+  commentId: M:ILib.UI.IQueueEntry.GetAwaiter
+  fullName: ILib.UI.IQueueEntry.GetAwaiter()
+  nameWithType: IQueueEntry.GetAwaiter()
+- uid: ILib.UI.IQueueEntry.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_GetAwaiter_
+  commentId: Overload:ILib.UI.IQueueEntry.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.UI.IQueueEntry.GetAwaiter
+  nameWithType: IQueueEntry.GetAwaiter
 - uid: ILib.UI.IQueueEntry.IsClosed
   name: IsClosed
   href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_IsClosed
@@ -28981,19 +28994,19 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IQueueEntry.IsClosed
   nameWithType: IQueueEntry.IsClosed
-- uid: ILib.UI.IQueueEntry.ObserveClosed
-  name: ObserveClosed
-  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_ObserveClosed
-  commentId: P:ILib.UI.IQueueEntry.ObserveClosed
-  fullName: ILib.UI.IQueueEntry.ObserveClosed
-  nameWithType: IQueueEntry.ObserveClosed
-- uid: ILib.UI.IQueueEntry.ObserveClosed*
-  name: ObserveClosed
-  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_ObserveClosed_
-  commentId: Overload:ILib.UI.IQueueEntry.ObserveClosed
+- uid: ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)
+  name: WaitClose(CancellationToken)
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_WaitClose_System_Threading_CancellationToken_
+  commentId: M:ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)
+  fullName: ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)
+  nameWithType: IQueueEntry.WaitClose(CancellationToken)
+- uid: ILib.UI.IQueueEntry.WaitClose*
+  name: WaitClose
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_WaitClose_
+  commentId: Overload:ILib.UI.IQueueEntry.WaitClose
   isSpec: "True"
-  fullName: ILib.UI.IQueueEntry.ObserveClosed
-  nameWithType: IQueueEntry.ObserveClosed
+  fullName: ILib.UI.IQueueEntry.WaitClose
+  nameWithType: IQueueEntry.WaitClose
 - uid: ILib.UI.IStackEntry
   name: IStackEntry
   href: api/ILib.UI.IStackEntry.html
@@ -29016,6 +29029,19 @@ references:
   fullName.vb: ILib.UI.IStackEntry.Execute(Of T)(System.Action(Of T), System.Boolean)
   nameWithType: IStackEntry.Execute<T>(Action<T>, Boolean)
   nameWithType.vb: IStackEntry.Execute(Of T)(Action(Of T), Boolean)
+- uid: ILib.UI.IStackEntry.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.UI.IStackEntry.html#ILib_UI_IStackEntry_GetAwaiter
+  commentId: M:ILib.UI.IStackEntry.GetAwaiter
+  fullName: ILib.UI.IStackEntry.GetAwaiter()
+  nameWithType: IStackEntry.GetAwaiter()
+- uid: ILib.UI.IStackEntry.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.UI.IStackEntry.html#ILib_UI_IStackEntry_GetAwaiter_
+  commentId: Overload:ILib.UI.IStackEntry.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.UI.IStackEntry.GetAwaiter
+  nameWithType: IStackEntry.GetAwaiter
 - uid: ILib.UI.IStackEntry.IsActive
   name: IsActive
   href: api/ILib.UI.IStackEntry.html#ILib_UI_IStackEntry_IsActive
@@ -29462,24 +29488,6 @@ references:
   fullName.vb: ILib.UI.UIController(Of TParam, UControl).CloseControls
   nameWithType: UIController<TParam, UControl>.CloseControls
   nameWithType.vb: UIController(Of TParam, UControl).CloseControls
-- uid: ILib.UI.UIController`2.CloseImpl(ILib.UI.UIInstance[],ILib.UI.UIInstance)
-  name: CloseImpl(UIInstance[], UIInstance)
-  href: api/ILib.UI.UIController-2.html#ILib_UI_UIController_2_CloseImpl_ILib_UI_UIInstance___ILib_UI_UIInstance_
-  commentId: M:ILib.UI.UIController`2.CloseImpl(ILib.UI.UIInstance[],ILib.UI.UIInstance)
-  name.vb: CloseImpl(UIInstance(), UIInstance)
-  fullName: ILib.UI.UIController<TParam, UControl>.CloseImpl(ILib.UI.UIInstance[], ILib.UI.UIInstance)
-  fullName.vb: ILib.UI.UIController(Of TParam, UControl).CloseImpl(ILib.UI.UIInstance(), ILib.UI.UIInstance)
-  nameWithType: UIController<TParam, UControl>.CloseImpl(UIInstance[], UIInstance)
-  nameWithType.vb: UIController(Of TParam, UControl).CloseImpl(UIInstance(), UIInstance)
-- uid: ILib.UI.UIController`2.CloseImpl*
-  name: CloseImpl
-  href: api/ILib.UI.UIController-2.html#ILib_UI_UIController_2_CloseImpl_
-  commentId: Overload:ILib.UI.UIController`2.CloseImpl
-  isSpec: "True"
-  fullName: ILib.UI.UIController<TParam, UControl>.CloseImpl
-  fullName.vb: ILib.UI.UIController(Of TParam, UControl).CloseImpl
-  nameWithType: UIController<TParam, UControl>.CloseImpl
-  nameWithType.vb: UIController(Of TParam, UControl).CloseImpl
 - uid: ILib.UI.UIController`2.EndProcess
   name: EndProcess()
   href: api/ILib.UI.UIController-2.html#ILib_UI_UIController_2_EndProcess
@@ -29906,6 +29914,119 @@ references:
   fullName.vb: ILib.UI.UIController(Of TParam, UControl).StartProcess
   nameWithType: UIController<TParam, UControl>.StartProcess
   nameWithType.vb: UIController(Of TParam, UControl).StartProcess
+- uid: ILib.UI.UIControlLog
+  name: UIControlLog
+  href: api/ILib.UI.UIControlLog.html
+  commentId: T:ILib.UI.UIControlLog
+  fullName: ILib.UI.UIControlLog
+  nameWithType: UIControlLog
+- uid: ILib.UI.UIControlLog.Enabled
+  name: Enabled
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Enabled
+  commentId: P:ILib.UI.UIControlLog.Enabled
+  fullName: ILib.UI.UIControlLog.Enabled
+  nameWithType: UIControlLog.Enabled
+- uid: ILib.UI.UIControlLog.Enabled*
+  name: Enabled
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Enabled_
+  commentId: Overload:ILib.UI.UIControlLog.Enabled
+  isSpec: "True"
+  fullName: ILib.UI.UIControlLog.Enabled
+  nameWithType: UIControlLog.Enabled
+- uid: ILib.UI.UIControlLog.EnabledAssert
+  name: EnabledAssert
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_EnabledAssert
+  commentId: P:ILib.UI.UIControlLog.EnabledAssert
+  fullName: ILib.UI.UIControlLog.EnabledAssert
+  nameWithType: UIControlLog.EnabledAssert
+- uid: ILib.UI.UIControlLog.EnabledAssert*
+  name: EnabledAssert
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_EnabledAssert_
+  commentId: Overload:ILib.UI.UIControlLog.EnabledAssert
+  isSpec: "True"
+  fullName: ILib.UI.UIControlLog.EnabledAssert
+  nameWithType: UIControlLog.EnabledAssert
+- uid: ILib.UI.UIControlLog.Init
+  name: Init()
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Init
+  commentId: M:ILib.UI.UIControlLog.Init
+  fullName: ILib.UI.UIControlLog.Init()
+  nameWithType: UIControlLog.Init()
+- uid: ILib.UI.UIControlLog.Init*
+  name: Init
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Init_
+  commentId: Overload:ILib.UI.UIControlLog.Init
+  isSpec: "True"
+  fullName: ILib.UI.UIControlLog.Init
+  nameWithType: UIControlLog.Init
+- uid: ILib.UI.UIControlLog.Level
+  name: Level
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Level
+  commentId: P:ILib.UI.UIControlLog.Level
+  fullName: ILib.UI.UIControlLog.Level
+  nameWithType: UIControlLog.Level
+- uid: ILib.UI.UIControlLog.Level*
+  name: Level
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Level_
+  commentId: Overload:ILib.UI.UIControlLog.Level
+  isSpec: "True"
+  fullName: ILib.UI.UIControlLog.Level
+  nameWithType: UIControlLog.Level
+- uid: ILib.UI.UIControlLog.Logger
+  name: Logger
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Logger
+  commentId: P:ILib.UI.UIControlLog.Logger
+  fullName: ILib.UI.UIControlLog.Logger
+  nameWithType: UIControlLog.Logger
+- uid: ILib.UI.UIControlLog.Logger*
+  name: Logger
+  href: api/ILib.UI.UIControlLog.html#ILib_UI_UIControlLog_Logger_
+  commentId: Overload:ILib.UI.UIControlLog.Logger
+  isSpec: "True"
+  fullName: ILib.UI.UIControlLog.Logger
+  nameWithType: UIControlLog.Logger
+- uid: ILib.UI.UIControlLog.LogLevel
+  name: UIControlLog.LogLevel
+  href: api/ILib.UI.UIControlLog.LogLevel.html
+  commentId: T:ILib.UI.UIControlLog.LogLevel
+  fullName: ILib.UI.UIControlLog.LogLevel
+  nameWithType: UIControlLog.LogLevel
+- uid: ILib.UI.UIControlLog.LogLevel.All
+  name: All
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_All
+  commentId: F:ILib.UI.UIControlLog.LogLevel.All
+  fullName: ILib.UI.UIControlLog.LogLevel.All
+  nameWithType: UIControlLog.LogLevel.All
+- uid: ILib.UI.UIControlLog.LogLevel.Debug
+  name: Debug
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_Debug
+  commentId: F:ILib.UI.UIControlLog.LogLevel.Debug
+  fullName: ILib.UI.UIControlLog.LogLevel.Debug
+  nameWithType: UIControlLog.LogLevel.Debug
+- uid: ILib.UI.UIControlLog.LogLevel.Error
+  name: Error
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_Error
+  commentId: F:ILib.UI.UIControlLog.LogLevel.Error
+  fullName: ILib.UI.UIControlLog.LogLevel.Error
+  nameWithType: UIControlLog.LogLevel.Error
+- uid: ILib.UI.UIControlLog.LogLevel.Exception
+  name: Exception
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_Exception
+  commentId: F:ILib.UI.UIControlLog.LogLevel.Exception
+  fullName: ILib.UI.UIControlLog.LogLevel.Exception
+  nameWithType: UIControlLog.LogLevel.Exception
+- uid: ILib.UI.UIControlLog.LogLevel.Trace
+  name: Trace
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_Trace
+  commentId: F:ILib.UI.UIControlLog.LogLevel.Trace
+  fullName: ILib.UI.UIControlLog.LogLevel.Trace
+  nameWithType: UIControlLog.LogLevel.Trace
+- uid: ILib.UI.UIControlLog.LogLevel.Warning
+  name: Warning
+  href: api/ILib.UI.UIControlLog.LogLevel.html#ILib_UI_UIControlLog_LogLevel_Warning
+  commentId: F:ILib.UI.UIControlLog.LogLevel.Warning
+  fullName: ILib.UI.UIControlLog.LogLevel.Warning
+  nameWithType: UIControlLog.LogLevel.Warning
 - uid: ILib.UI.UIInstance
   name: UIInstance
   href: api/ILib.UI.UIInstance.html
@@ -29970,14 +30091,14 @@ references:
   fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Close
   nameWithType: UIQueue<TParam, UControl>.Close
   nameWithType.vb: UIQueue(Of TParam, UControl).Close
-- uid: ILib.UI.UIQueue`2.Enqueue(System.String,`0)
-  name: Enqueue(String, TParam)
-  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Enqueue_System_String__0_
-  commentId: M:ILib.UI.UIQueue`2.Enqueue(System.String,`0)
-  fullName: ILib.UI.UIQueue<TParam, UControl>.Enqueue(System.String, TParam)
-  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Enqueue(System.String, TParam)
-  nameWithType: UIQueue<TParam, UControl>.Enqueue(String, TParam)
-  nameWithType.vb: UIQueue(Of TParam, UControl).Enqueue(String, TParam)
+- uid: ILib.UI.UIQueue`2.Enqueue(System.String,`0,System.Threading.CancellationToken)
+  name: Enqueue(String, TParam, CancellationToken)
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Enqueue_System_String__0_System_Threading_CancellationToken_
+  commentId: M:ILib.UI.UIQueue`2.Enqueue(System.String,`0,System.Threading.CancellationToken)
+  fullName: ILib.UI.UIQueue<TParam, UControl>.Enqueue(System.String, TParam, System.Threading.CancellationToken)
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Enqueue(System.String, TParam, System.Threading.CancellationToken)
+  nameWithType: UIQueue<TParam, UControl>.Enqueue(String, TParam, CancellationToken)
+  nameWithType.vb: UIQueue(Of TParam, UControl).Enqueue(String, TParam, CancellationToken)
 - uid: ILib.UI.UIQueue`2.Enqueue*
   name: Enqueue
   href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Enqueue_
@@ -30131,12 +30252,12 @@ references:
   isSpec: "True"
   fullName: ILib.UI.UITransition.Fade.Init
   nameWithType: UITransition.Fade.Init
-- uid: ILib.UI.UITransition.Fade.Run(System.Boolean)
-  name: Run(Boolean)
-  href: api/ILib.UI.UITransition.Fade.html#ILib_UI_UITransition_Fade_Run_System_Boolean_
-  commentId: M:ILib.UI.UITransition.Fade.Run(System.Boolean)
-  fullName: ILib.UI.UITransition.Fade.Run(System.Boolean)
-  nameWithType: UITransition.Fade.Run(Boolean)
+- uid: ILib.UI.UITransition.Fade.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  name: Run(MonoBehaviour, Boolean)
+  href: api/ILib.UI.UITransition.Fade.html#ILib_UI_UITransition_Fade_Run_UnityEngine_MonoBehaviour_System_Boolean_
+  commentId: M:ILib.UI.UITransition.Fade.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  fullName: ILib.UI.UITransition.Fade.Run(UnityEngine.MonoBehaviour, System.Boolean)
+  nameWithType: UITransition.Fade.Run(MonoBehaviour, Boolean)
 - uid: ILib.UI.UITransition.Fade.Run*
   name: Run
   href: api/ILib.UI.UITransition.Fade.html#ILib_UI_UITransition_Fade_Run_
@@ -30176,12 +30297,12 @@ references:
   isSpec: "True"
   fullName: ILib.UI.UITransition.IAnim.Init
   nameWithType: UITransition.IAnim.Init
-- uid: ILib.UI.UITransition.IAnim.Run(System.Boolean)
-  name: Run(Boolean)
-  href: api/ILib.UI.UITransition.IAnim.html#ILib_UI_UITransition_IAnim_Run_System_Boolean_
-  commentId: M:ILib.UI.UITransition.IAnim.Run(System.Boolean)
-  fullName: ILib.UI.UITransition.IAnim.Run(System.Boolean)
-  nameWithType: UITransition.IAnim.Run(Boolean)
+- uid: ILib.UI.UITransition.IAnim.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  name: Run(MonoBehaviour, Boolean)
+  href: api/ILib.UI.UITransition.IAnim.html#ILib_UI_UITransition_IAnim_Run_UnityEngine_MonoBehaviour_System_Boolean_
+  commentId: M:ILib.UI.UITransition.IAnim.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  fullName: ILib.UI.UITransition.IAnim.Run(UnityEngine.MonoBehaviour, System.Boolean)
+  nameWithType: UITransition.IAnim.Run(MonoBehaviour, Boolean)
 - uid: ILib.UI.UITransition.IAnim.Run*
   name: Run
   href: api/ILib.UI.UITransition.IAnim.html#ILib_UI_UITransition_IAnim_Run_
@@ -30208,12 +30329,12 @@ references:
   isSpec: "True"
   fullName: ILib.UI.UITransition.Move.Init
   nameWithType: UITransition.Move.Init
-- uid: ILib.UI.UITransition.Move.Run(System.Boolean)
-  name: Run(Boolean)
-  href: api/ILib.UI.UITransition.Move.html#ILib_UI_UITransition_Move_Run_System_Boolean_
-  commentId: M:ILib.UI.UITransition.Move.Run(System.Boolean)
-  fullName: ILib.UI.UITransition.Move.Run(System.Boolean)
-  nameWithType: UITransition.Move.Run(Boolean)
+- uid: ILib.UI.UITransition.Move.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  name: Run(MonoBehaviour, Boolean)
+  href: api/ILib.UI.UITransition.Move.html#ILib_UI_UITransition_Move_Run_UnityEngine_MonoBehaviour_System_Boolean_
+  commentId: M:ILib.UI.UITransition.Move.Run(UnityEngine.MonoBehaviour,System.Boolean)
+  fullName: ILib.UI.UITransition.Move.Run(UnityEngine.MonoBehaviour, System.Boolean)
+  nameWithType: UITransition.Move.Run(MonoBehaviour, Boolean)
 - uid: ILib.UI.UITransition.Move.Run*
   name: Run
   href: api/ILib.UI.UITransition.Move.html#ILib_UI_UITransition_Move_Run_
@@ -30247,3 +30368,22 @@ references:
   isSpec: "True"
   fullName: ILib.UI.UITransition.Show
   nameWithType: UITransition.Show
+- uid: ILib.UI.Util
+  name: Util
+  href: api/ILib.UI.Util.html
+  commentId: T:ILib.UI.Util
+  fullName: ILib.UI.Util
+  nameWithType: Util
+- uid: ILib.UI.Util.Successed
+  name: Successed
+  href: api/ILib.UI.Util.html#ILib_UI_Util_Successed
+  commentId: P:ILib.UI.Util.Successed
+  fullName: ILib.UI.Util.Successed
+  nameWithType: Util.Successed
+- uid: ILib.UI.Util.Successed*
+  name: Successed
+  href: api/ILib.UI.Util.html#ILib_UI_Util_Successed_
+  commentId: Overload:ILib.UI.Util.Successed
+  isSpec: "True"
+  fullName: ILib.UI.Util.Successed
+  nameWithType: Util.Successed
