@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using ILib.UI;
 using ILib.MVVM;
-using ILib.Routines;
-using ILib;
 using System.Threading.Tasks;
 
 namespace ILib.Sample.UI
