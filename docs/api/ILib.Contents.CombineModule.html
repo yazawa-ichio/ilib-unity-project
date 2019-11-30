@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Module
+    <title>Class CombineModule
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Module
+    <meta name="title" content="Class CombineModule
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,69 +78,78 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.Contents.Module">
+            <article class="content wrap" id="_content" data-uid="ILib.Contents.CombineModule">
   
   
-  <h1 id="ILib_Contents_Module" data-uid="ILib.Contents.Module" class="text-break">Class Module
+  <h1 id="ILib_Contents_CombineModule" data-uid="ILib.Contents.CombineModule" class="text-break">Class CombineModule
   </h1>
-  <div class="markdown level0 summary"><p>アプリケーションの共通で行いたい処理を実装します。
-Typeで指定した関数しか実行されません。</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">Module</span></div>
-      <div class="level2"><a class="xref" href="ILib.Contents.CombineModule.html">CombineModule</a></div>
+    <div class="level1"><a class="xref" href="ILib.Contents.Module.html">Module</a></div>
+    <div class="level2"><span class="xref">CombineModule</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_Controller">Module.Controller</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_Combine_System_Collections_Generic_IEnumerable_ILib_Contents_Module__">Module.Combine(IEnumerable&lt;Module&gt;)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
   <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
-  <h5 id="ILib_Contents_Module_syntax">Syntax</h5>
+  <h5 id="ILib_Contents_CombineModule_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Module</code></pre>
+    <pre><code class="lang-csharp hljs">public class CombineModule : Module</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L24">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L10">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_Controller_" data-uid="ILib.Contents.Module.Controller*"></a>
-  <h4 id="ILib_Contents_Module_Controller" data-uid="ILib.Contents.Module.Controller">Controller</h4>
-  <div class="markdown level1 summary"><p>Ownerのオブジェクトです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule__ctor_" data-uid="ILib.Contents.CombineModule.#ctor*"></a>
+  <h4 id="ILib_Contents_CombineModule__ctor_ILib_Contents_Module___" data-uid="ILib.Contents.CombineModule.#ctor(ILib.Contents.Module[])">CombineModule(Module[])</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ContentsController Controller { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public CombineModule(Module[] modules)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.Contents.ContentsController.html">ContentsController</a></td>
+        <td><a class="xref" href="ILib.Contents.Module.html">Module</a>[]</td>
+        <td><span class="parametername">modules</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L19">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L12">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_Type_" data-uid="ILib.Contents.Module.Type*"></a>
-  <h4 id="ILib_Contents_Module_Type" data-uid="ILib.Contents.Module.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Typeに登録したイベントのみ実行されます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_Type_" data-uid="ILib.Contents.CombineModule.Type*"></a>
+  <h4 id="ILib_Contents_CombineModule_Type" data-uid="ILib.Contents.CombineModule.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ModuleType Type { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ModuleType Type { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -157,66 +166,21 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_Type">Module.Type</a></div>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L100">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L27">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_Combine_" data-uid="ILib.Contents.Module.Combine*"></a>
-  <h4 id="ILib_Contents_Module_Combine_System_Collections_Generic_IEnumerable_ILib_Contents_Module__" data-uid="ILib.Contents.Module.Combine(System.Collections.Generic.IEnumerable{ILib.Contents.Module})">Combine(IEnumerable&lt;Module&gt;)</h4>
-  <div class="markdown level1 summary"><p>並列実行するためModuleを結合します。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnBoot_" data-uid="ILib.Contents.CombineModule.OnBoot*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnBoot_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnBoot(ILib.Contents.Content)">OnBoot(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CombineModule Combine(IEnumerable&lt;Module&gt; enumerable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ILib.Contents.Module.html">Module</a>&gt;</td>
-        <td><span class="parametername">enumerable</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Contents.CombineModule.html">CombineModule</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L35">View Source</a>
-  </span>
-  <a id="ILib_Contents_Module_OnBoot_" data-uid="ILib.Contents.Module.OnBoot*"></a>
-  <h4 id="ILib_Contents_Module_OnBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnBoot(ILib.Contents.Content)">OnBoot(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの初期化直後のイベントです。
-コンテンツ毎に一度しか実行されません。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnBoot(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnBoot(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,19 +214,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnBoot_ILib_Contents_Content_">Module.OnBoot(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L83">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L47">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnDisable_" data-uid="ILib.Contents.Module.OnDisable*"></a>
-  <h4 id="ILib_Contents_Module_OnDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnDisable(ILib.Contents.Content)">OnDisable(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの無効化直後のイベントです。
-親のコンテンツが無効になった際も実行されます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnDisable_" data-uid="ILib.Contents.CombineModule.OnDisable*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnDisable_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnDisable(ILib.Contents.Content)">OnDisable(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnDisable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnDisable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -296,19 +260,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnDisable_ILib_Contents_Content_">Module.OnDisable(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L73">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L43">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnEnable_" data-uid="ILib.Contents.Module.OnEnable*"></a>
-  <h4 id="ILib_Contents_Module_OnEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEnable(ILib.Contents.Content)">OnEnable(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの有効化直後のイベントです。
-親のコンテンツが有効になった際も実行されます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnEnable_" data-uid="ILib.Contents.CombineModule.OnEnable*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnEnable_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnEnable(ILib.Contents.Content)">OnEnable(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnEnable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnEnable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -342,18 +306,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnEnable_ILib_Contents_Content_">Module.OnEnable(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L95">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L53">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnEndSwitch_" data-uid="ILib.Contents.Module.OnEndSwitch*"></a>
-  <h4 id="ILib_Contents_Module_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnEndSwitch(Content, Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツを遷移完了イベントです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnEndSwitch_" data-uid="ILib.Contents.CombineModule.OnEndSwitch*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnEndSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnEndSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnEndSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -392,19 +357,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_">Module.OnEndSwitch(Content, Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L30">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L25">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreBoot_" data-uid="ILib.Contents.Module.OnPreBoot*"></a>
-  <h4 id="ILib_Contents_Module_OnPreBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreBoot(ILib.Contents.Content)">OnPreBoot(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの初期化直前のイベントです。
-コンテンツ毎に一度しか実行されません。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreBoot_" data-uid="ILib.Contents.CombineModule.OnPreBoot*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreBoot_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreBoot(ILib.Contents.Content)">OnPreBoot(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreBoot(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreBoot(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -438,19 +403,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreBoot_ILib_Contents_Content_">Module.OnPreBoot(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L78">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L45">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreDisable_" data-uid="ILib.Contents.Module.OnPreDisable*"></a>
-  <h4 id="ILib_Contents_Module_OnPreDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreDisable(ILib.Contents.Content)">OnPreDisable(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの無効化直前のイベントです。
-親のコンテンツが無効になった際も実行されます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreDisable_" data-uid="ILib.Contents.CombineModule.OnPreDisable*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreDisable_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreDisable(ILib.Contents.Content)">OnPreDisable(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreDisable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreDisable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -484,19 +449,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreDisable_ILib_Contents_Content_">Module.OnPreDisable(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L68">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L41">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreEnable_" data-uid="ILib.Contents.Module.OnPreEnable*"></a>
-  <h4 id="ILib_Contents_Module_OnPreEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreEnable(ILib.Contents.Content)">OnPreEnable(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの有効化直前のイベントです。
-親のコンテンツが有効になった際も実行されます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreEnable_" data-uid="ILib.Contents.CombineModule.OnPreEnable*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreEnable_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreEnable(ILib.Contents.Content)">OnPreEnable(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreEnable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreEnable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -530,19 +495,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreEnable_ILib_Contents_Content_">Module.OnPreEnable(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L50">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L33">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreRun_" data-uid="ILib.Contents.Module.OnPreRun*"></a>
-  <h4 id="ILib_Contents_Module_OnPreRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreRun(ILib.Contents.Content)">OnPreRun(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの実行直前のイベントです。
-サスペンドから復帰する際にも呼ばれます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreRun_" data-uid="ILib.Contents.CombineModule.OnPreRun*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreRun_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreRun(ILib.Contents.Content)">OnPreRun(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreRun(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreRun(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,19 +541,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreRun_ILib_Contents_Content_">Module.OnPreRun(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L40">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L29">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreShutdown_" data-uid="ILib.Contents.Module.OnPreShutdown*"></a>
-  <h4 id="ILib_Contents_Module_OnPreShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreShutdown(ILib.Contents.Content)">OnPreShutdown(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの終了直前のイベントです。
-コンテンツ毎に一度しか実行されません。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreShutdown_" data-uid="ILib.Contents.CombineModule.OnPreShutdown*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreShutdown(ILib.Contents.Content)">OnPreShutdown(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreShutdown(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreShutdown(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -622,18 +587,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreShutdown_ILib_Contents_Content_">Module.OnPreShutdown(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L59">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L37">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreSuspend_" data-uid="ILib.Contents.Module.OnPreSuspend*"></a>
-  <h4 id="ILib_Contents_Module_OnPreSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSuspend(ILib.Contents.Content)">OnPreSuspend(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの停止直前のイベントです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreSuspend_" data-uid="ILib.Contents.CombineModule.OnPreSuspend*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreSuspend(ILib.Contents.Content)">OnPreSuspend(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreSuspend(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreSuspend(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -667,18 +633,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreSuspend_ILib_Contents_Content_">Module.OnPreSuspend(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L87">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L49">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnPreSwitch_" data-uid="ILib.Contents.Module.OnPreSwitch*"></a>
-  <h4 id="ILib_Contents_Module_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnPreSwitch(Content, Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツを遷移直前のイベントです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnPreSwitch_" data-uid="ILib.Contents.CombineModule.OnPreSwitch*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnPreSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnPreSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnPreSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -717,19 +684,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_">Module.OnPreSwitch(Content, Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L55">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L35">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnRun_" data-uid="ILib.Contents.Module.OnRun*"></a>
-  <h4 id="ILib_Contents_Module_OnRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnRun(ILib.Contents.Content)">OnRun(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの実行時のイベントです。
-サスペンドから復帰する際にも呼ばれます。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnRun_" data-uid="ILib.Contents.CombineModule.OnRun*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnRun_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnRun(ILib.Contents.Content)">OnRun(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnRun(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnRun(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -763,19 +730,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnRun_ILib_Contents_Content_">Module.OnRun(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L45">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L31">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnShutdown_" data-uid="ILib.Contents.Module.OnShutdown*"></a>
-  <h4 id="ILib_Contents_Module_OnShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnShutdown(ILib.Contents.Content)">OnShutdown(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの終了直後のイベントです。
-コンテンツ毎に一度しか実行されません。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnShutdown_" data-uid="ILib.Contents.CombineModule.OnShutdown*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnShutdown(ILib.Contents.Content)">OnShutdown(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnShutdown(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnShutdown(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -809,18 +776,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnShutdown_ILib_Contents_Content_">Module.OnShutdown(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L63">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L39">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnSuspend_" data-uid="ILib.Contents.Module.OnSuspend*"></a>
-  <h4 id="ILib_Contents_Module_OnSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSuspend(ILib.Contents.Content)">OnSuspend(Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツの停止時のイベントです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnSuspend_" data-uid="ILib.Contents.CombineModule.OnSuspend*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnSuspend(ILib.Contents.Content)">OnSuspend(Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnSuspend(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnSuspend(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -854,18 +822,19 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnSuspend_ILib_Contents_Content_">Module.OnSuspend(Content)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L91">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L51">View Source</a>
   </span>
-  <a id="ILib_Contents_Module_OnSwitch_" data-uid="ILib.Contents.Module.OnSwitch*"></a>
-  <h4 id="ILib_Contents_Module_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnSwitch(Content, Content)</h4>
-  <div class="markdown level1 summary"><p>コンテンツを遷移イベントです。</p>
-</div>
+  <a id="ILib_Contents_CombineModule_OnSwitch_" data-uid="ILib.Contents.CombineModule.OnSwitch*"></a>
+  <h4 id="ILib_Contents_CombineModule_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.CombineModule.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnSwitch(Content, Content)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task OnSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -904,6 +873,8 @@ Typeで指定した関数しか実行されません。</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.Contents.Module.html#ILib_Contents_Module_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_">Module.OnSwitch(Content, Content)</a></div>
 </article>
           </div>
           
@@ -912,7 +883,7 @@ Typeで指定した関数しか実行されません。</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/CombineModule.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

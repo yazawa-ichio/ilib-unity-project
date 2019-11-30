@@ -8616,6 +8616,236 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.BootParam.ParallelBoot
   nameWithType: BootParam.ParallelBoot
+- uid: ILib.Contents.CombineModule
+  name: CombineModule
+  href: api/ILib.Contents.CombineModule.html
+  commentId: T:ILib.Contents.CombineModule
+  fullName: ILib.Contents.CombineModule
+  nameWithType: CombineModule
+- uid: ILib.Contents.CombineModule.#ctor(ILib.Contents.Module[])
+  name: CombineModule(Module[])
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule__ctor_ILib_Contents_Module___
+  commentId: M:ILib.Contents.CombineModule.#ctor(ILib.Contents.Module[])
+  name.vb: CombineModule(Module())
+  fullName: ILib.Contents.CombineModule.CombineModule(ILib.Contents.Module[])
+  fullName.vb: ILib.Contents.CombineModule.CombineModule(ILib.Contents.Module())
+  nameWithType: CombineModule.CombineModule(Module[])
+  nameWithType.vb: CombineModule.CombineModule(Module())
+- uid: ILib.Contents.CombineModule.#ctor*
+  name: CombineModule
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule__ctor_
+  commentId: Overload:ILib.Contents.CombineModule.#ctor
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.CombineModule
+  nameWithType: CombineModule.CombineModule
+- uid: ILib.Contents.CombineModule.OnBoot(ILib.Contents.Content)
+  name: OnBoot(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnBoot_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnBoot(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnBoot(ILib.Contents.Content)
+  nameWithType: CombineModule.OnBoot(Content)
+- uid: ILib.Contents.CombineModule.OnBoot*
+  name: OnBoot
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnBoot_
+  commentId: Overload:ILib.Contents.CombineModule.OnBoot
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnBoot
+  nameWithType: CombineModule.OnBoot
+- uid: ILib.Contents.CombineModule.OnDisable(ILib.Contents.Content)
+  name: OnDisable(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnDisable_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnDisable(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnDisable(ILib.Contents.Content)
+  nameWithType: CombineModule.OnDisable(Content)
+- uid: ILib.Contents.CombineModule.OnDisable*
+  name: OnDisable
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnDisable_
+  commentId: Overload:ILib.Contents.CombineModule.OnDisable
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnDisable
+  nameWithType: CombineModule.OnDisable
+- uid: ILib.Contents.CombineModule.OnEnable(ILib.Contents.Content)
+  name: OnEnable(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnEnable_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnEnable(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnEnable(ILib.Contents.Content)
+  nameWithType: CombineModule.OnEnable(Content)
+- uid: ILib.Contents.CombineModule.OnEnable*
+  name: OnEnable
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnEnable_
+  commentId: Overload:ILib.Contents.CombineModule.OnEnable
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnEnable
+  nameWithType: CombineModule.OnEnable
+- uid: ILib.Contents.CombineModule.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  name: OnEndSwitch(Content, Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnEndSwitch(ILib.Contents.Content, ILib.Contents.Content)
+  nameWithType: CombineModule.OnEndSwitch(Content, Content)
+- uid: ILib.Contents.CombineModule.OnEndSwitch*
+  name: OnEndSwitch
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnEndSwitch_
+  commentId: Overload:ILib.Contents.CombineModule.OnEndSwitch
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnEndSwitch
+  nameWithType: CombineModule.OnEndSwitch
+- uid: ILib.Contents.CombineModule.OnPreBoot(ILib.Contents.Content)
+  name: OnPreBoot(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreBoot_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreBoot(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreBoot(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreBoot(Content)
+- uid: ILib.Contents.CombineModule.OnPreBoot*
+  name: OnPreBoot
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreBoot_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreBoot
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreBoot
+  nameWithType: CombineModule.OnPreBoot
+- uid: ILib.Contents.CombineModule.OnPreDisable(ILib.Contents.Content)
+  name: OnPreDisable(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreDisable_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreDisable(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreDisable(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreDisable(Content)
+- uid: ILib.Contents.CombineModule.OnPreDisable*
+  name: OnPreDisable
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreDisable_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreDisable
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreDisable
+  nameWithType: CombineModule.OnPreDisable
+- uid: ILib.Contents.CombineModule.OnPreEnable(ILib.Contents.Content)
+  name: OnPreEnable(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreEnable_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreEnable(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreEnable(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreEnable(Content)
+- uid: ILib.Contents.CombineModule.OnPreEnable*
+  name: OnPreEnable
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreEnable_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreEnable
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreEnable
+  nameWithType: CombineModule.OnPreEnable
+- uid: ILib.Contents.CombineModule.OnPreRun(ILib.Contents.Content)
+  name: OnPreRun(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreRun_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreRun(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreRun(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreRun(Content)
+- uid: ILib.Contents.CombineModule.OnPreRun*
+  name: OnPreRun
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreRun_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreRun
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreRun
+  nameWithType: CombineModule.OnPreRun
+- uid: ILib.Contents.CombineModule.OnPreShutdown(ILib.Contents.Content)
+  name: OnPreShutdown(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreShutdown_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreShutdown(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreShutdown(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreShutdown(Content)
+- uid: ILib.Contents.CombineModule.OnPreShutdown*
+  name: OnPreShutdown
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreShutdown_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreShutdown
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreShutdown
+  nameWithType: CombineModule.OnPreShutdown
+- uid: ILib.Contents.CombineModule.OnPreSuspend(ILib.Contents.Content)
+  name: OnPreSuspend(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreSuspend_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreSuspend(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreSuspend(ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreSuspend(Content)
+- uid: ILib.Contents.CombineModule.OnPreSuspend*
+  name: OnPreSuspend
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreSuspend_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreSuspend
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreSuspend
+  nameWithType: CombineModule.OnPreSuspend
+- uid: ILib.Contents.CombineModule.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  name: OnPreSwitch(Content, Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnPreSwitch(ILib.Contents.Content, ILib.Contents.Content)
+  nameWithType: CombineModule.OnPreSwitch(Content, Content)
+- uid: ILib.Contents.CombineModule.OnPreSwitch*
+  name: OnPreSwitch
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnPreSwitch_
+  commentId: Overload:ILib.Contents.CombineModule.OnPreSwitch
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnPreSwitch
+  nameWithType: CombineModule.OnPreSwitch
+- uid: ILib.Contents.CombineModule.OnRun(ILib.Contents.Content)
+  name: OnRun(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnRun_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnRun(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnRun(ILib.Contents.Content)
+  nameWithType: CombineModule.OnRun(Content)
+- uid: ILib.Contents.CombineModule.OnRun*
+  name: OnRun
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnRun_
+  commentId: Overload:ILib.Contents.CombineModule.OnRun
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnRun
+  nameWithType: CombineModule.OnRun
+- uid: ILib.Contents.CombineModule.OnShutdown(ILib.Contents.Content)
+  name: OnShutdown(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnShutdown_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnShutdown(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnShutdown(ILib.Contents.Content)
+  nameWithType: CombineModule.OnShutdown(Content)
+- uid: ILib.Contents.CombineModule.OnShutdown*
+  name: OnShutdown
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnShutdown_
+  commentId: Overload:ILib.Contents.CombineModule.OnShutdown
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnShutdown
+  nameWithType: CombineModule.OnShutdown
+- uid: ILib.Contents.CombineModule.OnSuspend(ILib.Contents.Content)
+  name: OnSuspend(Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnSuspend_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnSuspend(ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnSuspend(ILib.Contents.Content)
+  nameWithType: CombineModule.OnSuspend(Content)
+- uid: ILib.Contents.CombineModule.OnSuspend*
+  name: OnSuspend
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnSuspend_
+  commentId: Overload:ILib.Contents.CombineModule.OnSuspend
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnSuspend
+  nameWithType: CombineModule.OnSuspend
+- uid: ILib.Contents.CombineModule.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  name: OnSwitch(Content, Content)
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_
+  commentId: M:ILib.Contents.CombineModule.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)
+  fullName: ILib.Contents.CombineModule.OnSwitch(ILib.Contents.Content, ILib.Contents.Content)
+  nameWithType: CombineModule.OnSwitch(Content, Content)
+- uid: ILib.Contents.CombineModule.OnSwitch*
+  name: OnSwitch
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_OnSwitch_
+  commentId: Overload:ILib.Contents.CombineModule.OnSwitch
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.OnSwitch
+  nameWithType: CombineModule.OnSwitch
+- uid: ILib.Contents.CombineModule.Type
+  name: Type
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_Type
+  commentId: P:ILib.Contents.CombineModule.Type
+  fullName: ILib.Contents.CombineModule.Type
+  nameWithType: CombineModule.Type
+- uid: ILib.Contents.CombineModule.Type*
+  name: Type
+  href: api/ILib.Contents.CombineModule.html#ILib_Contents_CombineModule_Type_
+  commentId: Overload:ILib.Contents.CombineModule.Type
+  isSpec: "True"
+  fullName: ILib.Contents.CombineModule.Type
+  nameWithType: CombineModule.Type
 - uid: ILib.Contents.Content
   name: Content
   href: api/ILib.Contents.Content.html
@@ -8721,6 +8951,41 @@ references:
   fullName.vb: ILib.Contents.Content.GetAll(Of T)(System.Boolean)
   nameWithType: Content.GetAll<T>(Boolean)
   nameWithType.vb: Content.GetAll(Of T)(Boolean)
+- uid: ILib.Contents.Content.Handle(System.Threading.Tasks.Task,System.Boolean)
+  name: Handle(Task, Boolean)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Handle_System_Threading_Tasks_Task_System_Boolean_
+  commentId: M:ILib.Contents.Content.Handle(System.Threading.Tasks.Task,System.Boolean)
+  fullName: ILib.Contents.Content.Handle(System.Threading.Tasks.Task, System.Boolean)
+  nameWithType: Content.Handle(Task, Boolean)
+- uid: ILib.Contents.Content.Handle*
+  name: Handle
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Handle_
+  commentId: Overload:ILib.Contents.Content.Handle
+  isSpec: "True"
+  fullName: ILib.Contents.Content.Handle
+  nameWithType: Content.Handle
+- uid: ILib.Contents.Content.Handle``1(System.Threading.Tasks.Task{``0},System.Boolean)
+  name: Handle<T>(Task<T>, Boolean)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Handle__1_System_Threading_Tasks_Task___0__System_Boolean_
+  commentId: M:ILib.Contents.Content.Handle``1(System.Threading.Tasks.Task{``0},System.Boolean)
+  name.vb: Handle(Of T)(Task(Of T), Boolean)
+  fullName: ILib.Contents.Content.Handle<T>(System.Threading.Tasks.Task<T>, System.Boolean)
+  fullName.vb: ILib.Contents.Content.Handle(Of T)(System.Threading.Tasks.Task(Of T), System.Boolean)
+  nameWithType: Content.Handle<T>(Task<T>, Boolean)
+  nameWithType.vb: Content.Handle(Of T)(Task(Of T), Boolean)
+- uid: ILib.Contents.Content.HandleException(System.Exception)
+  name: HandleException(Exception)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_HandleException_System_Exception_
+  commentId: M:ILib.Contents.Content.HandleException(System.Exception)
+  fullName: ILib.Contents.Content.HandleException(System.Exception)
+  nameWithType: Content.HandleException(Exception)
+- uid: ILib.Contents.Content.HandleException*
+  name: HandleException
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_HandleException_
+  commentId: Overload:ILib.Contents.Content.HandleException
+  isSpec: "True"
+  fullName: ILib.Contents.Content.HandleException
+  nameWithType: Content.HandleException
 - uid: ILib.Contents.Content.HasChildren
   name: HasChildren
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_HasChildren
@@ -8734,6 +8999,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.HasChildren
   nameWithType: Content.HasChildren
+- uid: ILib.Contents.Content.IsHandleException
+  name: IsHandleException
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsHandleException
+  commentId: P:ILib.Contents.Content.IsHandleException
+  fullName: ILib.Contents.Content.IsHandleException
+  nameWithType: Content.IsHandleException
+- uid: ILib.Contents.Content.IsHandleException*
+  name: IsHandleException
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsHandleException_
+  commentId: Overload:ILib.Contents.Content.IsHandleException
+  isSpec: "True"
+  fullName: ILib.Contents.Content.IsHandleException
+  nameWithType: Content.IsHandleException
 - uid: ILib.Contents.Content.IsModalContent
   name: IsModalContent
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsModalContent
@@ -9059,6 +9337,19 @@ references:
   fullName.vb: ILib.Contents.Content.TaskRoutine(Of T)(System.Collections.IEnumerator)
   nameWithType: Content.TaskRoutine<T>(IEnumerator)
   nameWithType.vb: Content.TaskRoutine(Of T)(IEnumerator)
+- uid: ILib.Contents.Content.ThrowException(System.Exception)
+  name: ThrowException(Exception)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ThrowException_System_Exception_
+  commentId: M:ILib.Contents.Content.ThrowException(System.Exception)
+  fullName: ILib.Contents.Content.ThrowException(System.Exception)
+  nameWithType: Content.ThrowException(Exception)
+- uid: ILib.Contents.Content.ThrowException*
+  name: ThrowException
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ThrowException_
+  commentId: Overload:ILib.Contents.Content.ThrowException
+  isSpec: "True"
+  fullName: ILib.Contents.Content.ThrowException
+  nameWithType: Content.ThrowException
 - uid: ILib.Contents.Content`1
   name: Content<T>
   href: api/ILib.Contents.Content-1.html
@@ -9197,6 +9488,19 @@ references:
   fullName.vb: ILib.Contents.ContentsController.GetAll(Of T)()
   nameWithType: ContentsController.GetAll<T>()
   nameWithType.vb: ContentsController.GetAll(Of T)()
+- uid: ILib.Contents.ContentsController.HandleException(System.Exception)
+  name: HandleException(Exception)
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_HandleException_System_Exception_
+  commentId: M:ILib.Contents.ContentsController.HandleException(System.Exception)
+  fullName: ILib.Contents.ContentsController.HandleException(System.Exception)
+  nameWithType: ContentsController.HandleException(Exception)
+- uid: ILib.Contents.ContentsController.HandleException*
+  name: HandleException
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_HandleException_
+  commentId: Overload:ILib.Contents.ContentsController.HandleException
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsController.HandleException
+  nameWithType: ContentsController.HandleException
 - uid: ILib.Contents.ContentsController.Modules
   name: Modules
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Modules
@@ -9223,6 +9527,12 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.OnDestroyEvent
   nameWithType: ContentsController.OnDestroyEvent
+- uid: ILib.Contents.ContentsController.OnException
+  name: OnException
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnException
+  commentId: E:ILib.Contents.ContentsController.OnException
+  fullName: ILib.Contents.ContentsController.OnException
+  nameWithType: ContentsController.OnException
 - uid: ILib.Contents.ContentsController.Root
   name: Root
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Root
@@ -9249,6 +9559,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Shutdown
   nameWithType: ContentsController.Shutdown
+- uid: ILib.Contents.ContentsController.ThrowException(System.Exception)
+  name: ThrowException(Exception)
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_ThrowException_System_Exception_
+  commentId: M:ILib.Contents.ContentsController.ThrowException(System.Exception)
+  fullName: ILib.Contents.ContentsController.ThrowException(System.Exception)
+  nameWithType: ContentsController.ThrowException(Exception)
+- uid: ILib.Contents.ContentsController.ThrowException*
+  name: ThrowException
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_ThrowException_
+  commentId: Overload:ILib.Contents.ContentsController.ThrowException
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsController.ThrowException
+  nameWithType: ContentsController.ThrowException
 - uid: ILib.Contents.ContentsLog
   name: ContentsLog
   href: api/ILib.Contents.ContentsLog.html
@@ -9517,6 +9840,35 @@ references:
   commentId: T:ILib.Contents.Module
   fullName: ILib.Contents.Module
   nameWithType: Module
+- uid: ILib.Contents.Module.Combine(System.Collections.Generic.IEnumerable{ILib.Contents.Module})
+  name: Combine(IEnumerable<Module>)
+  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Combine_System_Collections_Generic_IEnumerable_ILib_Contents_Module__
+  commentId: M:ILib.Contents.Module.Combine(System.Collections.Generic.IEnumerable{ILib.Contents.Module})
+  name.vb: Combine(IEnumerable(Of Module))
+  fullName: ILib.Contents.Module.Combine(System.Collections.Generic.IEnumerable<ILib.Contents.Module>)
+  fullName.vb: ILib.Contents.Module.Combine(System.Collections.Generic.IEnumerable(Of ILib.Contents.Module))
+  nameWithType: Module.Combine(IEnumerable<Module>)
+  nameWithType.vb: Module.Combine(IEnumerable(Of Module))
+- uid: ILib.Contents.Module.Combine*
+  name: Combine
+  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Combine_
+  commentId: Overload:ILib.Contents.Module.Combine
+  isSpec: "True"
+  fullName: ILib.Contents.Module.Combine
+  nameWithType: Module.Combine
+- uid: ILib.Contents.Module.Controller
+  name: Controller
+  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Controller
+  commentId: P:ILib.Contents.Module.Controller
+  fullName: ILib.Contents.Module.Controller
+  nameWithType: Module.Controller
+- uid: ILib.Contents.Module.Controller*
+  name: Controller
+  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Controller_
+  commentId: Overload:ILib.Contents.Module.Controller
+  isSpec: "True"
+  fullName: ILib.Contents.Module.Controller
+  nameWithType: Module.Controller
 - uid: ILib.Contents.Module.OnBoot(ILib.Contents.Content)
   name: OnBoot(Content)
   href: api/ILib.Contents.Module.html#ILib_Contents_Module_OnBoot_ILib_Contents_Content_
