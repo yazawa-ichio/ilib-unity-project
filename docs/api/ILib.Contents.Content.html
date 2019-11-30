@@ -91,50 +91,18 @@
     <div class="level1"><span class="xref">Content</span></div>
       <div class="level2"><a class="xref" href="ILib.Contents.Content-1.html">Content&lt;T&gt;</a></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></div>
-    <div><a class="xref" href="ILib.IHasRoutineOwner.html">IHasRoutineOwner</a></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
   <h5 id="ILib_Contents_Content_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Content : IHasDispatcher, IHasRoutineOwner</code></pre>
+    <pre><code class="lang-csharp hljs">[Preserve]
+public abstract class Content</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L81">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_Call_" data-uid="ILib.Contents.Content.Call*"></a>
-  <h4 id="ILib_Contents_Content_Call" data-uid="ILib.Contents.Content.Call">Call</h4>
-  <div class="markdown level1 summary"><p>イベントの発火装置です。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected EventCall Call { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Caller.EventCall.html">EventCall</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L28">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L41">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Controller_" data-uid="ILib.Contents.Content.Controller*"></a>
   <h4 id="ILib_Contents_Content_Controller" data-uid="ILib.Contents.Content.Controller">Controller</h4>
@@ -162,16 +130,16 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L86">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L94">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Dispatcher_" data-uid="ILib.Contents.Content.Dispatcher*"></a>
   <h4 id="ILib_Contents_Content_Dispatcher" data-uid="ILib.Contents.Content.Dispatcher">Dispatcher</h4>
-  <div class="markdown level1 summary"><p>イベントの発火装置です。</p>
+  <div class="markdown level1 summary"><p>イベントの発火装置です</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDispatcher Dispatcher { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IDispatcher Dispatcher { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,7 +158,35 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L32">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L99">View Source</a>
+  </span>
+  <a id="ILib_Contents_Content_EventCall_" data-uid="ILib.Contents.Content.EventCall*"></a>
+  <h4 id="ILib_Contents_Content_EventCall" data-uid="ILib.Contents.Content.EventCall">EventCall</h4>
+  <div class="markdown level1 summary"><p>イベントの発火装置です</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EventCall EventCall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Caller.EventCall.html">EventCall</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L50">View Source</a>
   </span>
   <a id="ILib_Contents_Content_HasChildren_" data-uid="ILib.Contents.Content.HasChildren*"></a>
   <h4 id="ILib_Contents_Content_HasChildren" data-uid="ILib.Contents.Content.HasChildren">HasChildren</h4>
@@ -217,7 +213,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L41">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L59">View Source</a>
   </span>
   <a id="ILib_Contents_Content_IsModalContent_" data-uid="ILib.Contents.Content.IsModalContent*"></a>
   <h4 id="ILib_Contents_Content_IsModalContent" data-uid="ILib.Contents.Content.IsModalContent">IsModalContent</h4>
@@ -245,63 +241,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L71">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_IsSelfThrowErrorIfNeeded_" data-uid="ILib.Contents.Content.IsSelfThrowErrorIfNeeded*"></a>
-  <h4 id="ILib_Contents_Content_IsSelfThrowErrorIfNeeded" data-uid="ILib.Contents.Content.IsSelfThrowErrorIfNeeded">IsSelfThrowErrorIfNeeded</h4>
-  <div class="markdown level1 summary"><p>コンテンツのイベントに関してエラー時に自身のハンドルに例外をスローします</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool IsSelfThrowErrorIfNeeded { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L76">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_IsUseSubCall_" data-uid="ILib.Contents.Content.IsUseSubCall*"></a>
-  <h4 id="ILib_Contents_Content_IsUseSubCall" data-uid="ILib.Contents.Content.IsUseSubCall">IsUseSubCall</h4>
-  <div class="markdown level1 summary"><p>親のEventCallに親子関係を設定するか？</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool IsUseSubCall { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L46">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L64">View Source</a>
   </span>
   <a id="ILib_Contents_Content_IsWaitModalContent_" data-uid="ILib.Contents.Content.IsWaitModalContent*"></a>
   <h4 id="ILib_Contents_Content_IsWaitModalContent" data-uid="ILib.Contents.Content.IsWaitModalContent">IsWaitModalContent</h4>
@@ -329,7 +269,35 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L91">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L46">View Source</a>
+  </span>
+  <a id="ILib_Contents_Content_Managed_" data-uid="ILib.Contents.Content.Managed*"></a>
+  <h4 id="ILib_Contents_Content_Managed" data-uid="ILib.Contents.Content.Managed">Managed</h4>
+  <div class="markdown level1 summary"><p>リソースのホルダーです</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ManagedHolder Managed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Managed.ManagedHolder.html">ManagedHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L89">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Modules_" data-uid="ILib.Contents.Content.Modules*"></a>
   <h4 id="ILib_Contents_Content_Modules" data-uid="ILib.Contents.Content.Modules">Modules</h4>
@@ -357,7 +325,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L61">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L79">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Param_" data-uid="ILib.Contents.Content.Param*"></a>
   <h4 id="ILib_Contents_Content_Param" data-uid="ILib.Contents.Content.Param">Param</h4>
@@ -384,7 +352,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L23">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L36">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Parent_" data-uid="ILib.Contents.Content.Parent*"></a>
   <h4 id="ILib_Contents_Content_Parent" data-uid="ILib.Contents.Content.Parent">Parent</h4>
@@ -412,7 +380,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L66">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L84">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Running_" data-uid="ILib.Contents.Content.Running*"></a>
   <h4 id="ILib_Contents_Content_Running" data-uid="ILib.Contents.Content.Running">Running</h4>
@@ -442,7 +410,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L162">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L138">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Append_" data-uid="ILib.Contents.Content.Append*"></a>
   <h4 id="ILib_Contents_Content_Append_ILib_Contents_IContentParam_" data-uid="ILib.Contents.Content.Append(ILib.Contents.IContentParam)">Append(IContentParam)</h4>
@@ -451,7 +419,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Append(IContentParam prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Append(IContentParam prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -480,14 +448,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L178">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L154">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Append_" data-uid="ILib.Contents.Content.Append*"></a>
   <h4 id="ILib_Contents_Content_Append_System_Type_System_Object_" data-uid="ILib.Contents.Content.Append(System.Type,System.Object)">Append(Type, Object)</h4>
@@ -496,7 +464,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Append(Type type, object prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Append(Type type, object prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -530,14 +498,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L170">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L146">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Append_" data-uid="ILib.Contents.Content.Append*"></a>
   <h4 id="ILib_Contents_Content_Append__1_System_Object_" data-uid="ILib.Contents.Content.Append``1(System.Object)">Append&lt;T&gt;(Object)</h4>
@@ -546,7 +514,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Append&lt;T&gt;(object prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Append&lt;T&gt;(object prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -575,7 +543,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -597,17 +565,16 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L472">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L415">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Get_" data-uid="ILib.Contents.Content.Get*"></a>
   <h4 id="ILib_Contents_Content_Get__1_System_Boolean_" data-uid="ILib.Contents.Content.Get``1(System.Boolean)">Get&lt;T&gt;(Boolean)</h4>
-  <div class="markdown level1 summary"><p>子に登録されている指定のタイプのコンテンツを取得します。</p>
+  <div class="markdown level1 summary"><p>子に登録されている指定のタイプを取得します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(bool recursive = true)
-    where T : Content</code></pre>
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(bool recursive = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -658,11 +625,11 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L495">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L438">View Source</a>
   </span>
   <a id="ILib_Contents_Content_GetAll_" data-uid="ILib.Contents.Content.GetAll*"></a>
   <h4 id="ILib_Contents_Content_GetAll__1_System_Boolean_" data-uid="ILib.Contents.Content.GetAll``1(System.Boolean)">GetAll&lt;T&gt;(Boolean)</h4>
-  <div class="markdown level1 summary"><p>子に登録されている指定のタイプのコンテンツをすべて取得します。</p>
+  <div class="markdown level1 summary"><p>子に登録されている指定のタイプをすべて取得します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -718,61 +685,17 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L549">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_HandleException_" data-uid="ILib.Contents.Content.HandleException*"></a>
-  <h4 id="ILib_Contents_Content_HandleException_System_Exception_" data-uid="ILib.Contents.Content.HandleException(System.Exception)">HandleException(Exception)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool HandleException(Exception ex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">ex</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L194">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L170">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Modal_" data-uid="ILib.Contents.Content.Modal*"></a>
-  <h4 id="ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_" data-uid="ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam)">Modal&lt;TResult&gt;(IContentParam)</h4>
+  <h4 id="ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_System_Threading_CancellationToken_" data-uid="ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam,System.Threading.CancellationToken)">Modal&lt;TResult&gt;(IContentParam, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>モーダルとして子のコンテンツを追加します。
 追加したコンテンツの結果を待ちます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;TResult&gt; Modal&lt;TResult&gt;(IContentParam prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TResult&gt; Modal&lt;TResult&gt;(IContentParam prm, CancellationToken token = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -789,6 +712,11 @@
         <td><span class="parametername">prm</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -801,7 +729,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;TResult&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -823,17 +751,17 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L212">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L188">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Modal_" data-uid="ILib.Contents.Content.Modal*"></a>
-  <h4 id="ILib_Contents_Content_Modal__1_System_Type_System_Object_" data-uid="ILib.Contents.Content.Modal``1(System.Type,System.Object)">Modal&lt;TResult&gt;(Type, Object)</h4>
+  <h4 id="ILib_Contents_Content_Modal__1_System_Type_System_Object_System_Threading_CancellationToken_" data-uid="ILib.Contents.Content.Modal``1(System.Type,System.Object,System.Threading.CancellationToken)">Modal&lt;TResult&gt;(Type, Object, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>モーダルとして子のコンテンツを追加します。
 追加したコンテンツの結果を待ちます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;TResult&gt; Modal&lt;TResult&gt;(Type type, object prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TResult&gt; Modal&lt;TResult&gt;(Type type, object prm = null, CancellationToken token = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -855,6 +783,11 @@
         <td><span class="parametername">prm</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -867,7 +800,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;TResult&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -889,17 +822,18 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L203">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L179">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Modal_" data-uid="ILib.Contents.Content.Modal*"></a>
-  <h4 id="ILib_Contents_Content_Modal__2_System_Object_" data-uid="ILib.Contents.Content.Modal``2(System.Object)">Modal&lt;TResult, UContent&gt;(Object)</h4>
+  <h4 id="ILib_Contents_Content_Modal__2_System_Object_System_Threading_CancellationToken_" data-uid="ILib.Contents.Content.Modal``2(System.Object,System.Threading.CancellationToken)">Modal&lt;TResult, UContent&gt;(Object, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>モーダルとして子のコンテンツを追加します。
 追加したコンテンツの結果を待ちます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;TResult&gt; Modal&lt;TResult, UContent&gt;(object prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TResult&gt; Modal&lt;TResult, UContent&gt;(object prm = null, CancellationToken token = default(CancellationToken))
+    where UContent : Content, IModalContent&lt;TResult&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -916,6 +850,11 @@
         <td><span class="parametername">prm</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -928,7 +867,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;TResult&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -954,132 +893,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L257">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_ModalResult_" data-uid="ILib.Contents.Content.ModalResult*"></a>
-  <h4 id="ILib_Contents_Content_ModalResult_System_Exception_" data-uid="ILib.Contents.Content.ModalResult(System.Exception)">ModalResult(Exception)</h4>
-  <div class="markdown level1 summary"><p>モーダルの結果を通知します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ModalResult(Exception error)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">error</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L248">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_ModalResult_" data-uid="ILib.Contents.Content.ModalResult*"></a>
-  <h4 id="ILib_Contents_Content_ModalResult__1___0_" data-uid="ILib.Contents.Content.ModalResult``1(``0)">ModalResult&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"><p>モーダルの結果を通知します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ModalResult&lt;T&gt;(T obj)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L266">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_ModalResult_" data-uid="ILib.Contents.Content.ModalResult*"></a>
-  <h4 id="ILib_Contents_Content_ModalResult__1___0_System_Exception_" data-uid="ILib.Contents.Content.ModalResult``1(``0,System.Exception)">ModalResult&lt;T&gt;(T, Exception)</h4>
-  <div class="markdown level1 summary"><p>モーダルの結果を通知します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ModalResult&lt;T&gt;(T obj, Exception error)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">error</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L98">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L104">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnBoot_" data-uid="ILib.Contents.Content.OnBoot*"></a>
   <h4 id="ILib_Contents_Content_OnBoot" data-uid="ILib.Contents.Content.OnBoot">OnBoot()</h4>
@@ -1088,7 +902,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnBoot()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnBoot()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1100,14 +914,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L110">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L116">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnCompleteRun_" data-uid="ILib.Contents.Content.OnCompleteRun*"></a>
   <h4 id="ILib_Contents_Content_OnCompleteRun" data-uid="ILib.Contents.Content.OnCompleteRun">OnCompleteRun()</h4>
@@ -1120,7 +934,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L118">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L124">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnDisable_" data-uid="ILib.Contents.Content.OnDisable*"></a>
   <h4 id="ILib_Contents_Content_OnDisable" data-uid="ILib.Contents.Content.OnDisable">OnDisable()</h4>
@@ -1129,7 +943,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnDisable()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnDisable()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1141,14 +955,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L102">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L108">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnEnable_" data-uid="ILib.Contents.Content.OnEnable*"></a>
   <h4 id="ILib_Contents_Content_OnEnable" data-uid="ILib.Contents.Content.OnEnable">OnEnable()</h4>
@@ -1157,7 +971,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnEnable()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnEnable()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1169,14 +983,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L122">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L128">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnPreShutdown_" data-uid="ILib.Contents.Content.OnPreShutdown*"></a>
   <h4 id="ILib_Contents_Content_OnPreShutdown" data-uid="ILib.Contents.Content.OnPreShutdown">OnPreShutdown()</h4>
@@ -1189,7 +1003,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L106">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L112">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnRun_" data-uid="ILib.Contents.Content.OnRun*"></a>
   <h4 id="ILib_Contents_Content_OnRun" data-uid="ILib.Contents.Content.OnRun">OnRun()</h4>
@@ -1198,7 +1012,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnRun()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnRun()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1210,14 +1024,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L126">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L132">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnShutdown_" data-uid="ILib.Contents.Content.OnShutdown*"></a>
   <h4 id="ILib_Contents_Content_OnShutdown" data-uid="ILib.Contents.Content.OnShutdown">OnShutdown()</h4>
@@ -1226,7 +1040,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnShutdown()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnShutdown()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1238,14 +1052,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L114">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L120">View Source</a>
   </span>
   <a id="ILib_Contents_Content_OnSuspend_" data-uid="ILib.Contents.Content.OnSuspend*"></a>
   <h4 id="ILib_Contents_Content_OnSuspend" data-uid="ILib.Contents.Content.OnSuspend">OnSuspend()</h4>
@@ -1254,7 +1068,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual IEnumerator OnSuspend()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task OnSuspend()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1266,14 +1080,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L233">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L224">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Resume_" data-uid="ILib.Contents.Content.Resume*"></a>
   <h4 id="ILib_Contents_Content_Resume" data-uid="ILib.Contents.Content.Resume">Resume()</h4>
@@ -1282,7 +1096,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Resume()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Resume()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1294,14 +1108,58 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L243">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L454">View Source</a>
+  </span>
+  <a id="ILib_Contents_Content_Routine_" data-uid="ILib.Contents.Content.Routine*"></a>
+  <h4 id="ILib_Contents_Content_Routine_System_Collections_IEnumerator_" data-uid="ILib.Contents.Content.Routine(System.Collections.IEnumerator)">Routine(IEnumerator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Routine Routine(IEnumerator enumerator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><span class="parametername">enumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Routine.html">Routine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L234">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Shutdown_" data-uid="ILib.Contents.Content.Shutdown*"></a>
   <h4 id="ILib_Contents_Content_Shutdown" data-uid="ILib.Contents.Content.Shutdown">Shutdown()</h4>
@@ -1310,7 +1168,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Shutdown()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Shutdown()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1322,14 +1180,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L238">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L229">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Suspend_" data-uid="ILib.Contents.Content.Suspend*"></a>
   <h4 id="ILib_Contents_Content_Suspend" data-uid="ILib.Contents.Content.Suspend">Suspend()</h4>
@@ -1338,7 +1196,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Suspend()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Suspend()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1350,14 +1208,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L275">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L239">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Switch_" data-uid="ILib.Contents.Content.Switch*"></a>
   <h4 id="ILib_Contents_Content_Switch_ILib_Contents_IContentParam_" data-uid="ILib.Contents.Content.Switch(ILib.Contents.IContentParam)">Switch(IContentParam)</h4>
@@ -1366,7 +1224,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Switch(IContentParam prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Switch(IContentParam prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1395,14 +1253,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L285">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L249">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Switch_" data-uid="ILib.Contents.Content.Switch*"></a>
   <h4 id="ILib_Contents_Content_Switch_System_Type_System_Object_" data-uid="ILib.Contents.Content.Switch(System.Type,System.Object)">Switch(Type, Object)</h4>
@@ -1411,7 +1269,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Switch(Type type, object prm = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Switch(Type type, object prm = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1445,14 +1303,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L280">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L244">View Source</a>
   </span>
   <a id="ILib_Contents_Content_Switch_" data-uid="ILib.Contents.Content.Switch*"></a>
   <h4 id="ILib_Contents_Content_Switch__1_System_Object_" data-uid="ILib.Contents.Content.Switch``1(System.Object)">Switch&lt;T&gt;(Object)</h4>
@@ -1461,7 +1319,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;Content&gt; Switch&lt;T&gt;(object prm = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Content&gt; Switch&lt;T&gt;(object prm = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1490,7 +1348,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ILib.Contents.Content.html">Content</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1512,17 +1370,15 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L516">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L461">View Source</a>
   </span>
-  <a id="ILib_Contents_Content_ThrowException_" data-uid="ILib.Contents.Content.ThrowException*"></a>
-  <h4 id="ILib_Contents_Content_ThrowException_System_Exception_" data-uid="ILib.Contents.Content.ThrowException(System.Exception)">ThrowException(Exception)</h4>
-  <div class="markdown level1 summary"><p>例外をスローします。
-ハンドリングされない場合、親へと投げられます。</p>
-</div>
+  <a id="ILib_Contents_Content_TaskRoutine_" data-uid="ILib.Contents.Content.TaskRoutine*"></a>
+  <h4 id="ILib_Contents_Content_TaskRoutine__1_System_Collections_IEnumerator_" data-uid="ILib.Contents.Content.TaskRoutine``1(System.Collections.IEnumerator)">TaskRoutine&lt;T&gt;(IEnumerator)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void ThrowException(Exception exception)</code></pre>
+    <pre><code class="lang-csharp hljs">protected TaskRoutine&lt;T&gt; TaskRoutine&lt;T&gt;(IEnumerator enumerator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1535,26 +1391,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><span class="parametername">enumerator</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="eii">Explicit Interface Implementations
-  </h3>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L93">View Source</a>
-  </span>
-  <a id="ILib_Contents_Content_ILib_IHasRoutineOwner_RoutineOwner_" data-uid="ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner*"></a>
-  <h4 id="ILib_Contents_Content_ILib_IHasRoutineOwner_RoutineOwner" data-uid="ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner">IHasRoutineOwner.RoutineOwner</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">MonoBehaviour IHasRoutineOwner.RoutineOwner { get; }</code></pre>
-  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -1565,55 +1407,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.MonoBehaviour</span></td>
+        <td><a class="xref" href="ILib.TaskRoutine-1.html">TaskRoutine</a>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.IHasRoutineOwner.html">IHasRoutineOwner</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Message(IHasDispatcher, Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Message__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Message&lt;T&gt;(IHasDispatcher, Object, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast_ILib_Caller_IHasDispatcher_System_Object_">DispatcherExtensions.Broadcast(IHasDispatcher, Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.DispatcherExtensions.html#ILib_DispatcherExtensions_Broadcast__1_ILib_Caller_IHasDispatcher_System_Object___0_">DispatcherExtensions.Broadcast&lt;T&gt;(IHasDispatcher, Object, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_ILib_IHasRoutineOwner_System_Collections_IEnumerator_">RoutineExtensions.Routine(IHasRoutineOwner, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatRoutine(IHasRoutineOwner, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_TaskRoutine__1_ILib_IHasRoutineOwner_System_Collections_IEnumerator_">RoutineExtensions.TaskRoutine&lt;T&gt;(IHasRoutineOwner, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_ILib_IHasRoutineOwner_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine(IHasRoutineOwner, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine(IHasRoutineOwner, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_ILib_IHasRoutineOwner_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(IHasRoutineOwner, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(IHasRoutineOwner, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatTaskRoutine&lt;T&gt;(IHasRoutineOwner, Func&lt;IEnumerator&gt;)</a>
-  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -1622,7 +1435,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Content.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Content.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

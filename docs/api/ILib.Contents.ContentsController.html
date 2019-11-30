@@ -101,7 +101,7 @@
     <div><a class="xref" href="ILib.Caller.IHasDispatcher.html">IHasDispatcher</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
   <h5 id="ILib_Contents_ContentsController_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ContentsController : MonoBehaviour, IHasDispatcher</code></pre>
@@ -110,35 +110,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L36">View Source</a>
-  </span>
-  <a id="ILib_Contents_ContentsController_Call_" data-uid="ILib.Contents.ContentsController.Call*"></a>
-  <h4 id="ILib_Contents_ContentsController_Call" data-uid="ILib.Contents.ContentsController.Call">Call</h4>
-  <div class="markdown level1 summary"><p>イベントの</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EventCall Call { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.Caller.EventCall.html">EventCall</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L41">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L41">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Dispatcher_" data-uid="ILib.Contents.ContentsController.Dispatcher*"></a>
   <h4 id="ILib_Contents_ContentsController_Dispatcher" data-uid="ILib.Contents.ContentsController.Dispatcher">Dispatcher</h4>
@@ -166,7 +138,35 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L26">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L36">View Source</a>
+  </span>
+  <a id="ILib_Contents_ContentsController_EventCall_" data-uid="ILib.Contents.ContentsController.EventCall*"></a>
+  <h4 id="ILib_Contents_ContentsController_EventCall" data-uid="ILib.Contents.ContentsController.EventCall">EventCall</h4>
+  <div class="markdown level1 summary"><p>イベントの</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventCall EventCall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.Caller.EventCall.html">EventCall</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L26">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Modules_" data-uid="ILib.Contents.ContentsController.Modules*"></a>
   <h4 id="ILib_Contents_ContentsController_Modules" data-uid="ILib.Contents.ContentsController.Modules">Modules</h4>
@@ -194,7 +194,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L31">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L31">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Root_" data-uid="ILib.Contents.ContentsController.Root*"></a>
   <h4 id="ILib_Contents_ContentsController_Root" data-uid="ILib.Contents.ContentsController.Root">Root</h4>
@@ -224,17 +224,17 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L59">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L47">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Boot_" data-uid="ILib.Contents.ContentsController.Boot*"></a>
-  <h4 id="ILib_Contents_ContentsController_Boot_ILib_Contents_BootParam_System_Boolean_" data-uid="ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam,System.Boolean)">Boot(BootParam, Boolean)</h4>
+  <h4 id="ILib_Contents_ContentsController_Boot_ILib_Contents_BootParam_" data-uid="ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam)">Boot(BootParam)</h4>
   <div class="markdown level1 summary"><p>コントローラーを起動します。
 BootParamで指定したコンテンツが起動します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Boot(BootParam param, bool throwError = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Boot(BootParam param)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,11 +251,6 @@ BootParamで指定したコンテンツが起動します。</p>
         <td><span class="parametername">param</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">throwError</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -268,23 +263,23 @@ BootParamで指定したコンテンツが起動します。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L67">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L55">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Boot_" data-uid="ILib.Contents.ContentsController.Boot*"></a>
-  <h4 id="ILib_Contents_ContentsController_Boot__1_System_Object_System_Boolean_" data-uid="ILib.Contents.ContentsController.Boot``1(System.Object,System.Boolean)">Boot&lt;T&gt;(Object, Boolean)</h4>
+  <h4 id="ILib_Contents_ContentsController_Boot__1_System_Object_" data-uid="ILib.Contents.ContentsController.Boot``1(System.Object)">Boot&lt;T&gt;(Object)</h4>
   <div class="markdown level1 summary"><p>指定したコンテンツでコントローラーを起動します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Boot&lt;T&gt;(object prm, bool throwError = true)
+    <pre><code class="lang-csharp hljs">public Task Boot&lt;T&gt;(object prm)
     where T : Content, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -302,11 +297,6 @@ BootParamで指定したコンテンツが起動します。</p>
         <td><span class="parametername">prm</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">throwError</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -319,7 +309,7 @@ BootParamで指定したコンテンツが起動します。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -341,7 +331,7 @@ BootParamで指定したコンテンツが起動します。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L91">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L74">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Get_" data-uid="ILib.Contents.ContentsController.Get*"></a>
   <h4 id="ILib_Contents_ContentsController_Get__1" data-uid="ILib.Contents.ContentsController.Get``1">Get&lt;T&gt;()</h4>
@@ -350,8 +340,7 @@ BootParamで指定したコンテンツが起動します。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()
-    where T : Content</code></pre>
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -385,7 +374,7 @@ BootParamで指定したコンテンツが起動します。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L99">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L82">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_GetAll_" data-uid="ILib.Contents.ContentsController.GetAll*"></a>
   <h4 id="ILib_Contents_ContentsController_GetAll__1" data-uid="ILib.Contents.ContentsController.GetAll``1">GetAll&lt;T&gt;()</h4>
@@ -394,8 +383,7 @@ BootParamで指定したコンテンツが起動します。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetAll&lt;T&gt;()
-    where T : Content</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetAll&lt;T&gt;()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -429,51 +417,7 @@ BootParamで指定したコンテンツが起動します。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L131">View Source</a>
-  </span>
-  <a id="ILib_Contents_ContentsController_HandleException_" data-uid="ILib.Contents.ContentsController.HandleException*"></a>
-  <h4 id="ILib_Contents_ContentsController_HandleException_System_Exception_" data-uid="ILib.Contents.ContentsController.HandleException(System.Exception)">HandleException(Exception)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool HandleException(Exception ex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">ex</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L111">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L94">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_OnDestroyEvent_" data-uid="ILib.Contents.ContentsController.OnDestroyEvent*"></a>
   <h4 id="ILib_Contents_ContentsController_OnDestroyEvent" data-uid="ILib.Contents.ContentsController.OnDestroyEvent">OnDestroyEvent()</h4>
@@ -485,7 +429,7 @@ BootParamで指定したコンテンツが起動します。</p>
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L77">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L65">View Source</a>
   </span>
   <a id="ILib_Contents_ContentsController_Shutdown_" data-uid="ILib.Contents.ContentsController.Shutdown*"></a>
   <h4 id="ILib_Contents_ContentsController_Shutdown" data-uid="ILib.Contents.ContentsController.Shutdown">Shutdown()</h4>
@@ -494,7 +438,7 @@ BootParamで指定したコンテンツが起動します。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;bool&gt; Shutdown()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Shutdown()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -506,66 +450,7 @@ BootParamで指定したコンテンツが起動します。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L116">View Source</a>
-  </span>
-  <a id="ILib_Contents_ContentsController_ThrowException_" data-uid="ILib.Contents.ContentsController.ThrowException*"></a>
-  <h4 id="ILib_Contents_ContentsController_ThrowException_System_Exception_" data-uid="ILib.Contents.ContentsController.ThrowException(System.Exception)">ThrowException(Exception)</h4>
-  <div class="markdown level1 summary"><p>コントローラーに例外をスローします</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ThrowException(Exception ex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">ex</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-  </h3>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L46">View Source</a>
-  </span>
-  <h4 id="ILib_Contents_ContentsController_OnException" data-uid="ILib.Contents.ContentsController.OnException">OnException</h4>
-  <div class="markdown level1 summary"><p>コンテンツの例外をハンドリングします</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;Exception&gt; OnException</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -591,25 +476,7 @@ BootParamで指定したコンテンツが起動します。</p>
       <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.Routine(MonoBehaviour, IEnumerator)</a>
   </div>
   <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatRoutine(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
       <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_TaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.TaskRoutine&lt;T&gt;(MonoBehaviour, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine(MonoBehaviour, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(MonoBehaviour, IEnumerator)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.IterationTaskRoutine&lt;T&gt;(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__">RoutineExtensions.RepeatTaskRoutine&lt;T&gt;(MonoBehaviour, Func&lt;IEnumerator&gt;)</a>
   </div>
 </article>
           </div>
@@ -619,7 +486,7 @@ BootParamで指定したコンテンツが起動します。</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/ContentsController.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/ContentsController.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

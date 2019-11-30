@@ -7147,47 +7147,51 @@ references:
   isSpec: "True"
   fullName: ILib.Caller.EventCall.ToKey
   nameWithType: EventCall.ToKey
-- uid: ILib.Caller.EventCall.Trigger(System.Object)
-  name: Trigger(Object)
-  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger_System_Object_
-  commentId: M:ILib.Caller.EventCall.Trigger(System.Object)
-  fullName: ILib.Caller.EventCall.Trigger(System.Object)
-  nameWithType: EventCall.Trigger(Object)
-- uid: ILib.Caller.EventCall.Trigger*
-  name: Trigger
-  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger_
-  commentId: Overload:ILib.Caller.EventCall.Trigger
-  isSpec: "True"
-  fullName: ILib.Caller.EventCall.Trigger
-  nameWithType: EventCall.Trigger
-- uid: ILib.Caller.EventCall.Trigger``1(System.Object)
-  name: Trigger<T>(Object)
-  href: api/ILib.Caller.EventCall.html#ILib_Caller_EventCall_Trigger__1_System_Object_
-  commentId: M:ILib.Caller.EventCall.Trigger``1(System.Object)
-  name.vb: Trigger(Of T)(Object)
-  fullName: ILib.Caller.EventCall.Trigger<T>(System.Object)
-  fullName.vb: ILib.Caller.EventCall.Trigger(Of T)(System.Object)
-  nameWithType: EventCall.Trigger<T>(Object)
-  nameWithType.vb: EventCall.Trigger(Of T)(Object)
-- uid: ILib.Caller.Handle
-  name: Handle
-  href: api/ILib.Caller.Handle.html
-  commentId: T:ILib.Caller.Handle
-  fullName: ILib.Caller.Handle
-  nameWithType: Handle
-- uid: ILib.Caller.Handle.Dispose
+- uid: ILib.Caller.EventHandle
+  name: EventHandle
+  href: api/ILib.Caller.EventHandle.html
+  commentId: T:ILib.Caller.EventHandle
+  fullName: ILib.Caller.EventHandle
+  nameWithType: EventHandle
+- uid: ILib.Caller.EventHandle.Dispose
   name: Dispose()
-  href: api/ILib.Caller.Handle.html#ILib_Caller_Handle_Dispose
-  commentId: M:ILib.Caller.Handle.Dispose
-  fullName: ILib.Caller.Handle.Dispose()
-  nameWithType: Handle.Dispose()
-- uid: ILib.Caller.Handle.Dispose*
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_Dispose
+  commentId: M:ILib.Caller.EventHandle.Dispose
+  fullName: ILib.Caller.EventHandle.Dispose()
+  nameWithType: EventHandle.Dispose()
+- uid: ILib.Caller.EventHandle.Dispose*
   name: Dispose
-  href: api/ILib.Caller.Handle.html#ILib_Caller_Handle_Dispose_
-  commentId: Overload:ILib.Caller.Handle.Dispose
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_Dispose_
+  commentId: Overload:ILib.Caller.EventHandle.Dispose
   isSpec: "True"
-  fullName: ILib.Caller.Handle.Dispose
-  nameWithType: Handle.Dispose
+  fullName: ILib.Caller.EventHandle.Dispose
+  nameWithType: EventHandle.Dispose
+- uid: ILib.Caller.EventHandle.Enabled
+  name: Enabled
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_Enabled
+  commentId: P:ILib.Caller.EventHandle.Enabled
+  fullName: ILib.Caller.EventHandle.Enabled
+  nameWithType: EventHandle.Enabled
+- uid: ILib.Caller.EventHandle.Enabled*
+  name: Enabled
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_Enabled_
+  commentId: Overload:ILib.Caller.EventHandle.Enabled
+  isSpec: "True"
+  fullName: ILib.Caller.EventHandle.Enabled
+  nameWithType: EventHandle.Enabled
+- uid: ILib.Caller.EventHandle.SetEnabled(System.Object,System.Boolean)
+  name: SetEnabled(Object, Boolean)
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_SetEnabled_System_Object_System_Boolean_
+  commentId: M:ILib.Caller.EventHandle.SetEnabled(System.Object,System.Boolean)
+  fullName: ILib.Caller.EventHandle.SetEnabled(System.Object, System.Boolean)
+  nameWithType: EventHandle.SetEnabled(Object, Boolean)
+- uid: ILib.Caller.EventHandle.SetEnabled*
+  name: SetEnabled
+  href: api/ILib.Caller.EventHandle.html#ILib_Caller_EventHandle_SetEnabled_
+  commentId: Overload:ILib.Caller.EventHandle.SetEnabled
+  isSpec: "True"
+  fullName: ILib.Caller.EventHandle.SetEnabled
+  nameWithType: EventHandle.SetEnabled
 - uid: ILib.Caller.HandleAttribute
   name: HandleAttribute
   href: api/ILib.Caller.HandleAttribute.html
@@ -7295,6 +7299,19 @@ references:
   commentId: T:ILib.Caller.IPath
   fullName: ILib.Caller.IPath
   nameWithType: IPath
+- uid: ILib.Caller.IPath.Enabled
+  name: Enabled
+  href: api/ILib.Caller.IPath.html#ILib_Caller_IPath_Enabled
+  commentId: P:ILib.Caller.IPath.Enabled
+  fullName: ILib.Caller.IPath.Enabled
+  nameWithType: IPath.Enabled
+- uid: ILib.Caller.IPath.Enabled*
+  name: Enabled
+  href: api/ILib.Caller.IPath.html#ILib_Caller_IPath_Enabled_
+  commentId: Overload:ILib.Caller.IPath.Enabled
+  isSpec: "True"
+  fullName: ILib.Caller.IPath.Enabled
+  nameWithType: IPath.Enabled
 - uid: ILib.Caller.IPath.Key
   name: Key
   href: api/ILib.Caller.IPath.html#ILib_Caller_IPath_Key
@@ -8633,19 +8650,6 @@ references:
   fullName.vb: ILib.Contents.Content.Append(Of T)(System.Object)
   nameWithType: Content.Append<T>(Object)
   nameWithType.vb: Content.Append(Of T)(Object)
-- uid: ILib.Contents.Content.Call
-  name: Call
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Call
-  commentId: P:ILib.Contents.Content.Call
-  fullName: ILib.Contents.Content.Call
-  nameWithType: Content.Call
-- uid: ILib.Contents.Content.Call*
-  name: Call
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Call_
-  commentId: Overload:ILib.Contents.Content.Call
-  isSpec: "True"
-  fullName: ILib.Contents.Content.Call
-  nameWithType: Content.Call
 - uid: ILib.Contents.Content.Controller
   name: Controller
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Controller
@@ -8672,6 +8676,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.Dispatcher
   nameWithType: Content.Dispatcher
+- uid: ILib.Contents.Content.EventCall
+  name: EventCall
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_EventCall
+  commentId: P:ILib.Contents.Content.EventCall
+  fullName: ILib.Contents.Content.EventCall
+  nameWithType: Content.EventCall
+- uid: ILib.Contents.Content.EventCall*
+  name: EventCall
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_EventCall_
+  commentId: Overload:ILib.Contents.Content.EventCall
+  isSpec: "True"
+  fullName: ILib.Contents.Content.EventCall
+  nameWithType: Content.EventCall
 - uid: ILib.Contents.Content.Get*
   name: Get
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Get_
@@ -8704,19 +8721,6 @@ references:
   fullName.vb: ILib.Contents.Content.GetAll(Of T)(System.Boolean)
   nameWithType: Content.GetAll<T>(Boolean)
   nameWithType.vb: Content.GetAll(Of T)(Boolean)
-- uid: ILib.Contents.Content.HandleException(System.Exception)
-  name: HandleException(Exception)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_HandleException_System_Exception_
-  commentId: M:ILib.Contents.Content.HandleException(System.Exception)
-  fullName: ILib.Contents.Content.HandleException(System.Exception)
-  nameWithType: Content.HandleException(Exception)
-- uid: ILib.Contents.Content.HandleException*
-  name: HandleException
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_HandleException_
-  commentId: Overload:ILib.Contents.Content.HandleException
-  isSpec: "True"
-  fullName: ILib.Contents.Content.HandleException
-  nameWithType: Content.HandleException
 - uid: ILib.Contents.Content.HasChildren
   name: HasChildren
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_HasChildren
@@ -8730,23 +8734,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.HasChildren
   nameWithType: Content.HasChildren
-- uid: ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner
-  name: IHasRoutineOwner.RoutineOwner
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ILib_IHasRoutineOwner_RoutineOwner
-  commentId: P:ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner
-  name.vb: ILib.IHasRoutineOwner.RoutineOwner
-  fullName: ILib.Contents.Content.ILib.IHasRoutineOwner.RoutineOwner
-  nameWithType: Content.IHasRoutineOwner.RoutineOwner
-  nameWithType.vb: Content.ILib.IHasRoutineOwner.RoutineOwner
-- uid: ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner*
-  name: IHasRoutineOwner.RoutineOwner
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ILib_IHasRoutineOwner_RoutineOwner_
-  commentId: Overload:ILib.Contents.Content.ILib#IHasRoutineOwner#RoutineOwner
-  isSpec: "True"
-  name.vb: ILib.IHasRoutineOwner.RoutineOwner
-  fullName: ILib.Contents.Content.ILib.IHasRoutineOwner.RoutineOwner
-  nameWithType: Content.IHasRoutineOwner.RoutineOwner
-  nameWithType.vb: Content.ILib.IHasRoutineOwner.RoutineOwner
 - uid: ILib.Contents.Content.IsModalContent
   name: IsModalContent
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsModalContent
@@ -8760,32 +8747,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.IsModalContent
   nameWithType: Content.IsModalContent
-- uid: ILib.Contents.Content.IsSelfThrowErrorIfNeeded
-  name: IsSelfThrowErrorIfNeeded
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsSelfThrowErrorIfNeeded
-  commentId: P:ILib.Contents.Content.IsSelfThrowErrorIfNeeded
-  fullName: ILib.Contents.Content.IsSelfThrowErrorIfNeeded
-  nameWithType: Content.IsSelfThrowErrorIfNeeded
-- uid: ILib.Contents.Content.IsSelfThrowErrorIfNeeded*
-  name: IsSelfThrowErrorIfNeeded
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsSelfThrowErrorIfNeeded_
-  commentId: Overload:ILib.Contents.Content.IsSelfThrowErrorIfNeeded
-  isSpec: "True"
-  fullName: ILib.Contents.Content.IsSelfThrowErrorIfNeeded
-  nameWithType: Content.IsSelfThrowErrorIfNeeded
-- uid: ILib.Contents.Content.IsUseSubCall
-  name: IsUseSubCall
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsUseSubCall
-  commentId: P:ILib.Contents.Content.IsUseSubCall
-  fullName: ILib.Contents.Content.IsUseSubCall
-  nameWithType: Content.IsUseSubCall
-- uid: ILib.Contents.Content.IsUseSubCall*
-  name: IsUseSubCall
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsUseSubCall_
-  commentId: Overload:ILib.Contents.Content.IsUseSubCall
-  isSpec: "True"
-  fullName: ILib.Contents.Content.IsUseSubCall
-  nameWithType: Content.IsUseSubCall
 - uid: ILib.Contents.Content.IsWaitModalContent
   name: IsWaitModalContent
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_IsWaitModalContent
@@ -8799,6 +8760,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.IsWaitModalContent
   nameWithType: Content.IsWaitModalContent
+- uid: ILib.Contents.Content.Managed
+  name: Managed
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Managed
+  commentId: P:ILib.Contents.Content.Managed
+  fullName: ILib.Contents.Content.Managed
+  nameWithType: Content.Managed
+- uid: ILib.Contents.Content.Managed*
+  name: Managed
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Managed_
+  commentId: Overload:ILib.Contents.Content.Managed
+  isSpec: "True"
+  fullName: ILib.Contents.Content.Managed
+  nameWithType: Content.Managed
 - uid: ILib.Contents.Content.Modal*
   name: Modal
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal_
@@ -8806,64 +8780,33 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.Modal
   nameWithType: Content.Modal
-- uid: ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam)
-  name: Modal<TResult>(IContentParam)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_
-  commentId: M:ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam)
-  name.vb: Modal(Of TResult)(IContentParam)
-  fullName: ILib.Contents.Content.Modal<TResult>(ILib.Contents.IContentParam)
-  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(ILib.Contents.IContentParam)
-  nameWithType: Content.Modal<TResult>(IContentParam)
-  nameWithType.vb: Content.Modal(Of TResult)(IContentParam)
-- uid: ILib.Contents.Content.Modal``1(System.Type,System.Object)
-  name: Modal<TResult>(Type, Object)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_System_Type_System_Object_
-  commentId: M:ILib.Contents.Content.Modal``1(System.Type,System.Object)
-  name.vb: Modal(Of TResult)(Type, Object)
-  fullName: ILib.Contents.Content.Modal<TResult>(System.Type, System.Object)
-  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(System.Type, System.Object)
-  nameWithType: Content.Modal<TResult>(Type, Object)
-  nameWithType.vb: Content.Modal(Of TResult)(Type, Object)
-- uid: ILib.Contents.Content.Modal``2(System.Object)
-  name: Modal<TResult, UContent>(Object)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__2_System_Object_
-  commentId: M:ILib.Contents.Content.Modal``2(System.Object)
-  name.vb: Modal(Of TResult, UContent)(Object)
-  fullName: ILib.Contents.Content.Modal<TResult, UContent>(System.Object)
-  fullName.vb: ILib.Contents.Content.Modal(Of TResult, UContent)(System.Object)
-  nameWithType: Content.Modal<TResult, UContent>(Object)
-  nameWithType.vb: Content.Modal(Of TResult, UContent)(Object)
-- uid: ILib.Contents.Content.ModalResult(System.Exception)
-  name: ModalResult(Exception)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult_System_Exception_
-  commentId: M:ILib.Contents.Content.ModalResult(System.Exception)
-  fullName: ILib.Contents.Content.ModalResult(System.Exception)
-  nameWithType: Content.ModalResult(Exception)
-- uid: ILib.Contents.Content.ModalResult*
-  name: ModalResult
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult_
-  commentId: Overload:ILib.Contents.Content.ModalResult
-  isSpec: "True"
-  fullName: ILib.Contents.Content.ModalResult
-  nameWithType: Content.ModalResult
-- uid: ILib.Contents.Content.ModalResult``1(``0)
-  name: ModalResult<T>(T)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_
-  commentId: M:ILib.Contents.Content.ModalResult``1(``0)
-  name.vb: ModalResult(Of T)(T)
-  fullName: ILib.Contents.Content.ModalResult<T>(T)
-  fullName.vb: ILib.Contents.Content.ModalResult(Of T)(T)
-  nameWithType: Content.ModalResult<T>(T)
-  nameWithType.vb: Content.ModalResult(Of T)(T)
-- uid: ILib.Contents.Content.ModalResult``1(``0,System.Exception)
-  name: ModalResult<T>(T, Exception)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ModalResult__1___0_System_Exception_
-  commentId: M:ILib.Contents.Content.ModalResult``1(``0,System.Exception)
-  name.vb: ModalResult(Of T)(T, Exception)
-  fullName: ILib.Contents.Content.ModalResult<T>(T, System.Exception)
-  fullName.vb: ILib.Contents.Content.ModalResult(Of T)(T, System.Exception)
-  nameWithType: Content.ModalResult<T>(T, Exception)
-  nameWithType.vb: Content.ModalResult(Of T)(T, Exception)
+- uid: ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam,System.Threading.CancellationToken)
+  name: Modal<TResult>(IContentParam, CancellationToken)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_ILib_Contents_IContentParam_System_Threading_CancellationToken_
+  commentId: M:ILib.Contents.Content.Modal``1(ILib.Contents.IContentParam,System.Threading.CancellationToken)
+  name.vb: Modal(Of TResult)(IContentParam, CancellationToken)
+  fullName: ILib.Contents.Content.Modal<TResult>(ILib.Contents.IContentParam, System.Threading.CancellationToken)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(ILib.Contents.IContentParam, System.Threading.CancellationToken)
+  nameWithType: Content.Modal<TResult>(IContentParam, CancellationToken)
+  nameWithType.vb: Content.Modal(Of TResult)(IContentParam, CancellationToken)
+- uid: ILib.Contents.Content.Modal``1(System.Type,System.Object,System.Threading.CancellationToken)
+  name: Modal<TResult>(Type, Object, CancellationToken)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__1_System_Type_System_Object_System_Threading_CancellationToken_
+  commentId: M:ILib.Contents.Content.Modal``1(System.Type,System.Object,System.Threading.CancellationToken)
+  name.vb: Modal(Of TResult)(Type, Object, CancellationToken)
+  fullName: ILib.Contents.Content.Modal<TResult>(System.Type, System.Object, System.Threading.CancellationToken)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult)(System.Type, System.Object, System.Threading.CancellationToken)
+  nameWithType: Content.Modal<TResult>(Type, Object, CancellationToken)
+  nameWithType.vb: Content.Modal(Of TResult)(Type, Object, CancellationToken)
+- uid: ILib.Contents.Content.Modal``2(System.Object,System.Threading.CancellationToken)
+  name: Modal<TResult, UContent>(Object, CancellationToken)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modal__2_System_Object_System_Threading_CancellationToken_
+  commentId: M:ILib.Contents.Content.Modal``2(System.Object,System.Threading.CancellationToken)
+  name.vb: Modal(Of TResult, UContent)(Object, CancellationToken)
+  fullName: ILib.Contents.Content.Modal<TResult, UContent>(System.Object, System.Threading.CancellationToken)
+  fullName.vb: ILib.Contents.Content.Modal(Of TResult, UContent)(System.Object, System.Threading.CancellationToken)
+  nameWithType: Content.Modal<TResult, UContent>(Object, CancellationToken)
+  nameWithType.vb: Content.Modal(Of TResult, UContent)(Object, CancellationToken)
 - uid: ILib.Contents.Content.Modules
   name: Modules
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Modules
@@ -9020,6 +8963,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Content.Resume
   nameWithType: Content.Resume
+- uid: ILib.Contents.Content.Routine(System.Collections.IEnumerator)
+  name: Routine(IEnumerator)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Routine_System_Collections_IEnumerator_
+  commentId: M:ILib.Contents.Content.Routine(System.Collections.IEnumerator)
+  fullName: ILib.Contents.Content.Routine(System.Collections.IEnumerator)
+  nameWithType: Content.Routine(IEnumerator)
+- uid: ILib.Contents.Content.Routine*
+  name: Routine
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_Routine_
+  commentId: Overload:ILib.Contents.Content.Routine
+  isSpec: "True"
+  fullName: ILib.Contents.Content.Routine
+  nameWithType: Content.Routine
 - uid: ILib.Contents.Content.Running
   name: Running
   href: api/ILib.Contents.Content.html#ILib_Contents_Content_Running
@@ -9087,19 +9043,22 @@ references:
   fullName.vb: ILib.Contents.Content.Switch(Of T)(System.Object)
   nameWithType: Content.Switch<T>(Object)
   nameWithType.vb: Content.Switch(Of T)(Object)
-- uid: ILib.Contents.Content.ThrowException(System.Exception)
-  name: ThrowException(Exception)
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ThrowException_System_Exception_
-  commentId: M:ILib.Contents.Content.ThrowException(System.Exception)
-  fullName: ILib.Contents.Content.ThrowException(System.Exception)
-  nameWithType: Content.ThrowException(Exception)
-- uid: ILib.Contents.Content.ThrowException*
-  name: ThrowException
-  href: api/ILib.Contents.Content.html#ILib_Contents_Content_ThrowException_
-  commentId: Overload:ILib.Contents.Content.ThrowException
+- uid: ILib.Contents.Content.TaskRoutine*
+  name: TaskRoutine
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_TaskRoutine_
+  commentId: Overload:ILib.Contents.Content.TaskRoutine
   isSpec: "True"
-  fullName: ILib.Contents.Content.ThrowException
-  nameWithType: Content.ThrowException
+  fullName: ILib.Contents.Content.TaskRoutine
+  nameWithType: Content.TaskRoutine
+- uid: ILib.Contents.Content.TaskRoutine``1(System.Collections.IEnumerator)
+  name: TaskRoutine<T>(IEnumerator)
+  href: api/ILib.Contents.Content.html#ILib_Contents_Content_TaskRoutine__1_System_Collections_IEnumerator_
+  commentId: M:ILib.Contents.Content.TaskRoutine``1(System.Collections.IEnumerator)
+  name.vb: TaskRoutine(Of T)(IEnumerator)
+  fullName: ILib.Contents.Content.TaskRoutine<T>(System.Collections.IEnumerator)
+  fullName.vb: ILib.Contents.Content.TaskRoutine(Of T)(System.Collections.IEnumerator)
+  nameWithType: Content.TaskRoutine<T>(IEnumerator)
+  nameWithType.vb: Content.TaskRoutine(Of T)(IEnumerator)
 - uid: ILib.Contents.Content`1
   name: Content<T>
   href: api/ILib.Contents.Content-1.html
@@ -9158,12 +9117,12 @@ references:
   commentId: T:ILib.Contents.ContentsController
   fullName: ILib.Contents.ContentsController
   nameWithType: ContentsController
-- uid: ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam,System.Boolean)
-  name: Boot(BootParam, Boolean)
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Boot_ILib_Contents_BootParam_System_Boolean_
-  commentId: M:ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam,System.Boolean)
-  fullName: ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam, System.Boolean)
-  nameWithType: ContentsController.Boot(BootParam, Boolean)
+- uid: ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam)
+  name: Boot(BootParam)
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Boot_ILib_Contents_BootParam_
+  commentId: M:ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam)
+  fullName: ILib.Contents.ContentsController.Boot(ILib.Contents.BootParam)
+  nameWithType: ContentsController.Boot(BootParam)
 - uid: ILib.Contents.ContentsController.Boot*
   name: Boot
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Boot_
@@ -9171,28 +9130,15 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Boot
   nameWithType: ContentsController.Boot
-- uid: ILib.Contents.ContentsController.Boot``1(System.Object,System.Boolean)
-  name: Boot<T>(Object, Boolean)
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Boot__1_System_Object_System_Boolean_
-  commentId: M:ILib.Contents.ContentsController.Boot``1(System.Object,System.Boolean)
-  name.vb: Boot(Of T)(Object, Boolean)
-  fullName: ILib.Contents.ContentsController.Boot<T>(System.Object, System.Boolean)
-  fullName.vb: ILib.Contents.ContentsController.Boot(Of T)(System.Object, System.Boolean)
-  nameWithType: ContentsController.Boot<T>(Object, Boolean)
-  nameWithType.vb: ContentsController.Boot(Of T)(Object, Boolean)
-- uid: ILib.Contents.ContentsController.Call
-  name: Call
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Call
-  commentId: P:ILib.Contents.ContentsController.Call
-  fullName: ILib.Contents.ContentsController.Call
-  nameWithType: ContentsController.Call
-- uid: ILib.Contents.ContentsController.Call*
-  name: Call
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Call_
-  commentId: Overload:ILib.Contents.ContentsController.Call
-  isSpec: "True"
-  fullName: ILib.Contents.ContentsController.Call
-  nameWithType: ContentsController.Call
+- uid: ILib.Contents.ContentsController.Boot``1(System.Object)
+  name: Boot<T>(Object)
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Boot__1_System_Object_
+  commentId: M:ILib.Contents.ContentsController.Boot``1(System.Object)
+  name.vb: Boot(Of T)(Object)
+  fullName: ILib.Contents.ContentsController.Boot<T>(System.Object)
+  fullName.vb: ILib.Contents.ContentsController.Boot(Of T)(System.Object)
+  nameWithType: ContentsController.Boot<T>(Object)
+  nameWithType.vb: ContentsController.Boot(Of T)(Object)
 - uid: ILib.Contents.ContentsController.Dispatcher
   name: Dispatcher
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Dispatcher
@@ -9206,6 +9152,19 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Dispatcher
   nameWithType: ContentsController.Dispatcher
+- uid: ILib.Contents.ContentsController.EventCall
+  name: EventCall
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_EventCall
+  commentId: P:ILib.Contents.ContentsController.EventCall
+  fullName: ILib.Contents.ContentsController.EventCall
+  nameWithType: ContentsController.EventCall
+- uid: ILib.Contents.ContentsController.EventCall*
+  name: EventCall
+  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_EventCall_
+  commentId: Overload:ILib.Contents.ContentsController.EventCall
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsController.EventCall
+  nameWithType: ContentsController.EventCall
 - uid: ILib.Contents.ContentsController.Get*
   name: Get
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Get_
@@ -9238,19 +9197,6 @@ references:
   fullName.vb: ILib.Contents.ContentsController.GetAll(Of T)()
   nameWithType: ContentsController.GetAll<T>()
   nameWithType.vb: ContentsController.GetAll(Of T)()
-- uid: ILib.Contents.ContentsController.HandleException(System.Exception)
-  name: HandleException(Exception)
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_HandleException_System_Exception_
-  commentId: M:ILib.Contents.ContentsController.HandleException(System.Exception)
-  fullName: ILib.Contents.ContentsController.HandleException(System.Exception)
-  nameWithType: ContentsController.HandleException(Exception)
-- uid: ILib.Contents.ContentsController.HandleException*
-  name: HandleException
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_HandleException_
-  commentId: Overload:ILib.Contents.ContentsController.HandleException
-  isSpec: "True"
-  fullName: ILib.Contents.ContentsController.HandleException
-  nameWithType: ContentsController.HandleException
 - uid: ILib.Contents.ContentsController.Modules
   name: Modules
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Modules
@@ -9277,12 +9223,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.OnDestroyEvent
   nameWithType: ContentsController.OnDestroyEvent
-- uid: ILib.Contents.ContentsController.OnException
-  name: OnException
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_OnException
-  commentId: E:ILib.Contents.ContentsController.OnException
-  fullName: ILib.Contents.ContentsController.OnException
-  nameWithType: ContentsController.OnException
 - uid: ILib.Contents.ContentsController.Root
   name: Root
   href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_Root
@@ -9309,19 +9249,119 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.ContentsController.Shutdown
   nameWithType: ContentsController.Shutdown
-- uid: ILib.Contents.ContentsController.ThrowException(System.Exception)
-  name: ThrowException(Exception)
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_ThrowException_System_Exception_
-  commentId: M:ILib.Contents.ContentsController.ThrowException(System.Exception)
-  fullName: ILib.Contents.ContentsController.ThrowException(System.Exception)
-  nameWithType: ContentsController.ThrowException(Exception)
-- uid: ILib.Contents.ContentsController.ThrowException*
-  name: ThrowException
-  href: api/ILib.Contents.ContentsController.html#ILib_Contents_ContentsController_ThrowException_
-  commentId: Overload:ILib.Contents.ContentsController.ThrowException
+- uid: ILib.Contents.ContentsLog
+  name: ContentsLog
+  href: api/ILib.Contents.ContentsLog.html
+  commentId: T:ILib.Contents.ContentsLog
+  fullName: ILib.Contents.ContentsLog
+  nameWithType: ContentsLog
+- uid: ILib.Contents.ContentsLog.Enabled
+  name: Enabled
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Enabled
+  commentId: P:ILib.Contents.ContentsLog.Enabled
+  fullName: ILib.Contents.ContentsLog.Enabled
+  nameWithType: ContentsLog.Enabled
+- uid: ILib.Contents.ContentsLog.Enabled*
+  name: Enabled
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Enabled_
+  commentId: Overload:ILib.Contents.ContentsLog.Enabled
   isSpec: "True"
-  fullName: ILib.Contents.ContentsController.ThrowException
-  nameWithType: ContentsController.ThrowException
+  fullName: ILib.Contents.ContentsLog.Enabled
+  nameWithType: ContentsLog.Enabled
+- uid: ILib.Contents.ContentsLog.EnabledAssert
+  name: EnabledAssert
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_EnabledAssert
+  commentId: P:ILib.Contents.ContentsLog.EnabledAssert
+  fullName: ILib.Contents.ContentsLog.EnabledAssert
+  nameWithType: ContentsLog.EnabledAssert
+- uid: ILib.Contents.ContentsLog.EnabledAssert*
+  name: EnabledAssert
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_EnabledAssert_
+  commentId: Overload:ILib.Contents.ContentsLog.EnabledAssert
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsLog.EnabledAssert
+  nameWithType: ContentsLog.EnabledAssert
+- uid: ILib.Contents.ContentsLog.Init
+  name: Init()
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Init
+  commentId: M:ILib.Contents.ContentsLog.Init
+  fullName: ILib.Contents.ContentsLog.Init()
+  nameWithType: ContentsLog.Init()
+- uid: ILib.Contents.ContentsLog.Init*
+  name: Init
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Init_
+  commentId: Overload:ILib.Contents.ContentsLog.Init
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsLog.Init
+  nameWithType: ContentsLog.Init
+- uid: ILib.Contents.ContentsLog.Level
+  name: Level
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Level
+  commentId: P:ILib.Contents.ContentsLog.Level
+  fullName: ILib.Contents.ContentsLog.Level
+  nameWithType: ContentsLog.Level
+- uid: ILib.Contents.ContentsLog.Level*
+  name: Level
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Level_
+  commentId: Overload:ILib.Contents.ContentsLog.Level
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsLog.Level
+  nameWithType: ContentsLog.Level
+- uid: ILib.Contents.ContentsLog.Logger
+  name: Logger
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Logger
+  commentId: P:ILib.Contents.ContentsLog.Logger
+  fullName: ILib.Contents.ContentsLog.Logger
+  nameWithType: ContentsLog.Logger
+- uid: ILib.Contents.ContentsLog.Logger*
+  name: Logger
+  href: api/ILib.Contents.ContentsLog.html#ILib_Contents_ContentsLog_Logger_
+  commentId: Overload:ILib.Contents.ContentsLog.Logger
+  isSpec: "True"
+  fullName: ILib.Contents.ContentsLog.Logger
+  nameWithType: ContentsLog.Logger
+- uid: ILib.Contents.ContentsLog.LogLevel
+  name: ContentsLog.LogLevel
+  href: api/ILib.Contents.ContentsLog.LogLevel.html
+  commentId: T:ILib.Contents.ContentsLog.LogLevel
+  fullName: ILib.Contents.ContentsLog.LogLevel
+  nameWithType: ContentsLog.LogLevel
+- uid: ILib.Contents.ContentsLog.LogLevel.All
+  name: All
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_All
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.All
+  fullName: ILib.Contents.ContentsLog.LogLevel.All
+  nameWithType: ContentsLog.LogLevel.All
+- uid: ILib.Contents.ContentsLog.LogLevel.Debug
+  name: Debug
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_Debug
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.Debug
+  fullName: ILib.Contents.ContentsLog.LogLevel.Debug
+  nameWithType: ContentsLog.LogLevel.Debug
+- uid: ILib.Contents.ContentsLog.LogLevel.Error
+  name: Error
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_Error
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.Error
+  fullName: ILib.Contents.ContentsLog.LogLevel.Error
+  nameWithType: ContentsLog.LogLevel.Error
+- uid: ILib.Contents.ContentsLog.LogLevel.Exception
+  name: Exception
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_Exception
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.Exception
+  fullName: ILib.Contents.ContentsLog.LogLevel.Exception
+  nameWithType: ContentsLog.LogLevel.Exception
+- uid: ILib.Contents.ContentsLog.LogLevel.Trace
+  name: Trace
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_Trace
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.Trace
+  fullName: ILib.Contents.ContentsLog.LogLevel.Trace
+  nameWithType: ContentsLog.LogLevel.Trace
+- uid: ILib.Contents.ContentsLog.LogLevel.Warning
+  name: Warning
+  href: api/ILib.Contents.ContentsLog.LogLevel.html#ILib_Contents_ContentsLog_LogLevel_Warning
+  commentId: F:ILib.Contents.ContentsLog.LogLevel.Warning
+  fullName: ILib.Contents.ContentsLog.LogLevel.Warning
+  nameWithType: ContentsLog.LogLevel.Warning
 - uid: ILib.Contents.IContentParam
   name: IContentParam
   href: api/ILib.Contents.IContentParam.html
@@ -9341,6 +9381,38 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.IContentParam.GetContentType
   nameWithType: IContentParam.GetContentType
+- uid: ILib.Contents.IModalContent
+  name: IModalContent
+  href: api/ILib.Contents.IModalContent.html
+  commentId: T:ILib.Contents.IModalContent
+  fullName: ILib.Contents.IModalContent
+  nameWithType: IModalContent
+- uid: ILib.Contents.IModalContent`1
+  name: IModalContent<T>
+  href: api/ILib.Contents.IModalContent-1.html
+  commentId: T:ILib.Contents.IModalContent`1
+  name.vb: IModalContent(Of T)
+  fullName: ILib.Contents.IModalContent<T>
+  fullName.vb: ILib.Contents.IModalContent(Of T)
+  nameWithType: IModalContent<T>
+  nameWithType.vb: IModalContent(Of T)
+- uid: ILib.Contents.IModalContent`1.GetModalResult(System.Threading.CancellationToken)
+  name: GetModalResult(CancellationToken)
+  href: api/ILib.Contents.IModalContent-1.html#ILib_Contents_IModalContent_1_GetModalResult_System_Threading_CancellationToken_
+  commentId: M:ILib.Contents.IModalContent`1.GetModalResult(System.Threading.CancellationToken)
+  fullName: ILib.Contents.IModalContent<T>.GetModalResult(System.Threading.CancellationToken)
+  fullName.vb: ILib.Contents.IModalContent(Of T).GetModalResult(System.Threading.CancellationToken)
+  nameWithType: IModalContent<T>.GetModalResult(CancellationToken)
+  nameWithType.vb: IModalContent(Of T).GetModalResult(CancellationToken)
+- uid: ILib.Contents.IModalContent`1.GetModalResult*
+  name: GetModalResult
+  href: api/ILib.Contents.IModalContent-1.html#ILib_Contents_IModalContent_1_GetModalResult_
+  commentId: Overload:ILib.Contents.IModalContent`1.GetModalResult
+  isSpec: "True"
+  fullName: ILib.Contents.IModalContent<T>.GetModalResult
+  fullName.vb: ILib.Contents.IModalContent(Of T).GetModalResult
+  nameWithType: IModalContent<T>.GetModalResult
+  nameWithType.vb: IModalContent(Of T).GetModalResult
 - uid: ILib.Contents.LockCollection`1
   name: LockCollection<T>
   href: api/ILib.Contents.LockCollection-1.html
@@ -9640,19 +9712,6 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.Module.OnSwitch
   nameWithType: Module.OnSwitch
-- uid: ILib.Contents.Module.Priority
-  name: Priority
-  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Priority
-  commentId: P:ILib.Contents.Module.Priority
-  fullName: ILib.Contents.Module.Priority
-  nameWithType: Module.Priority
-- uid: ILib.Contents.Module.Priority*
-  name: Priority
-  href: api/ILib.Contents.Module.html#ILib_Contents_Module_Priority_
-  commentId: Overload:ILib.Contents.Module.Priority
-  isSpec: "True"
-  fullName: ILib.Contents.Module.Priority
-  nameWithType: Module.Priority
 - uid: ILib.Contents.Module.Type
   name: Type
   href: api/ILib.Contents.Module.html#ILib_Contents_Module_Type
@@ -10151,6 +10210,25 @@ references:
   isSpec: "True"
   fullName: ILib.Contents.SimpleParam.Value
   nameWithType: SimpleParam.Value
+- uid: ILib.Contents.Util
+  name: Util
+  href: api/ILib.Contents.Util.html
+  commentId: T:ILib.Contents.Util
+  fullName: ILib.Contents.Util
+  nameWithType: Util
+- uid: ILib.Contents.Util.Successed
+  name: Successed
+  href: api/ILib.Contents.Util.html#ILib_Contents_Util_Successed
+  commentId: P:ILib.Contents.Util.Successed
+  fullName: ILib.Contents.Util.Successed
+  nameWithType: Util.Successed
+- uid: ILib.Contents.Util.Successed*
+  name: Successed
+  href: api/ILib.Contents.Util.html#ILib_Contents_Util_Successed_
+  commentId: Overload:ILib.Contents.Util.Successed
+  isSpec: "True"
+  fullName: ILib.Contents.Util.Successed
+  nameWithType: Util.Successed
 - uid: ILib.Debugs
   name: ILib.Debugs
   href: api/ILib.Debugs.html
@@ -13108,264 +13186,6 @@ references:
   isSpec: "True"
   fullName: ILib.IRoutine.Start
   nameWithType: IRoutine.Start
-- uid: ILib.IRoutine`1
-  name: IRoutine<T>
-  href: api/ILib.IRoutine-1.html
-  commentId: T:ILib.IRoutine`1
-  name.vb: IRoutine(Of T)
-  fullName: ILib.IRoutine<T>
-  fullName.vb: ILib.IRoutine(Of T)
-  nameWithType: IRoutine<T>
-  nameWithType.vb: IRoutine(Of T)
-- uid: ILib.IterationTaskRoutine
-  name: IterationTaskRoutine
-  href: api/ILib.IterationTaskRoutine.html
-  commentId: T:ILib.IterationTaskRoutine
-  fullName: ILib.IterationTaskRoutine
-  nameWithType: IterationTaskRoutine
-- uid: ILib.IterationTaskRoutine.#ctor(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTaskRoutine(MonoBehaviour, IEnumerator)
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine__ctor_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.IterationTaskRoutine.#ctor(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  fullName: ILib.IterationTaskRoutine.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: IterationTaskRoutine.IterationTaskRoutine(MonoBehaviour, IEnumerator)
-- uid: ILib.IterationTaskRoutine.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine__ctor_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.IterationTaskRoutine.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.IterationTaskRoutine.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.IterationTaskRoutine.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: IterationTaskRoutine.IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: IterationTaskRoutine.IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.IterationTaskRoutine.#ctor*
-  name: IterationTaskRoutine
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine__ctor_
-  commentId: Overload:ILib.IterationTaskRoutine.#ctor
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.IterationTaskRoutine
-  nameWithType: IterationTaskRoutine.IterationTaskRoutine
-- uid: ILib.IterationTaskRoutine.Action
-  name: Action
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Action
-  commentId: P:ILib.IterationTaskRoutine.Action
-  fullName: ILib.IterationTaskRoutine.Action
-  nameWithType: IterationTaskRoutine.Action
-- uid: ILib.IterationTaskRoutine.Action*
-  name: Action
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Action_
-  commentId: Overload:ILib.IterationTaskRoutine.Action
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.Action
-  nameWithType: IterationTaskRoutine.Action
-- uid: ILib.IterationTaskRoutine.Complete
-  name: Complete
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Complete
-  commentId: P:ILib.IterationTaskRoutine.Complete
-  fullName: ILib.IterationTaskRoutine.Complete
-  nameWithType: IterationTaskRoutine.Complete
-- uid: ILib.IterationTaskRoutine.Complete*
-  name: Complete
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Complete_
-  commentId: Overload:ILib.IterationTaskRoutine.Complete
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.Complete
-  nameWithType: IterationTaskRoutine.Complete
-- uid: ILib.IterationTaskRoutine.Fail(System.Exception)
-  name: Fail(Exception)
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Fail_System_Exception_
-  commentId: M:ILib.IterationTaskRoutine.Fail(System.Exception)
-  fullName: ILib.IterationTaskRoutine.Fail(System.Exception)
-  nameWithType: IterationTaskRoutine.Fail(Exception)
-- uid: ILib.IterationTaskRoutine.Fail*
-  name: Fail
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Fail_
-  commentId: Overload:ILib.IterationTaskRoutine.Fail
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.Fail
-  nameWithType: IterationTaskRoutine.Fail
-- uid: ILib.IterationTaskRoutine.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.IterationTaskRoutine.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.IterationTaskRoutine.ILib.IHasTriggerAction.Action
-  nameWithType: IterationTaskRoutine.IHasTriggerAction.Action
-  nameWithType.vb: IterationTaskRoutine.ILib.IHasTriggerAction.Action
-- uid: ILib.IterationTaskRoutine.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.IterationTaskRoutine.ILib#IHasTriggerAction#Action
-  isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.IterationTaskRoutine.ILib.IHasTriggerAction.Action
-  nameWithType: IterationTaskRoutine.IHasTriggerAction.Action
-  nameWithType.vb: IterationTaskRoutine.ILib.IHasTriggerAction.Action
-- uid: ILib.IterationTaskRoutine.Result(ILib.Routines.IHasResult)
-  name: Result(IHasResult)
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Result_ILib_Routines_IHasResult_
-  commentId: M:ILib.IterationTaskRoutine.Result(ILib.Routines.IHasResult)
-  fullName: ILib.IterationTaskRoutine.Result(ILib.Routines.IHasResult)
-  nameWithType: IterationTaskRoutine.Result(IHasResult)
-- uid: ILib.IterationTaskRoutine.Result*
-  name: Result
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Result_
-  commentId: Overload:ILib.IterationTaskRoutine.Result
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.Result
-  nameWithType: IterationTaskRoutine.Result
-- uid: ILib.IterationTaskRoutine.Success
-  name: Success()
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Success
-  commentId: M:ILib.IterationTaskRoutine.Success
-  fullName: ILib.IterationTaskRoutine.Success()
-  nameWithType: IterationTaskRoutine.Success()
-- uid: ILib.IterationTaskRoutine.Success*
-  name: Success
-  href: api/ILib.IterationTaskRoutine.html#ILib_IterationTaskRoutine_Success_
-  commentId: Overload:ILib.IterationTaskRoutine.Success
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine.Success
-  nameWithType: IterationTaskRoutine.Success
-- uid: ILib.IterationTaskRoutine`1
-  name: IterationTaskRoutine<T>
-  href: api/ILib.IterationTaskRoutine-1.html
-  commentId: T:ILib.IterationTaskRoutine`1
-  name.vb: IterationTaskRoutine(Of T)
-  fullName: ILib.IterationTaskRoutine<T>
-  fullName.vb: ILib.IterationTaskRoutine(Of T)
-  nameWithType: IterationTaskRoutine<T>
-  nameWithType.vb: IterationTaskRoutine(Of T)
-- uid: ILib.IterationTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTaskRoutine(MonoBehaviour, IEnumerator)
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1__ctor_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.IterationTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  fullName: ILib.IterationTaskRoutine<T>.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  fullName.vb: ILib.IterationTaskRoutine(Of T).IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: IterationTaskRoutine<T>.IterationTaskRoutine(MonoBehaviour, IEnumerator)
-  nameWithType.vb: IterationTaskRoutine(Of T).IterationTaskRoutine(MonoBehaviour, IEnumerator)
-- uid: ILib.IterationTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1__ctor_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.IterationTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.IterationTaskRoutine<T>.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.IterationTaskRoutine(Of T).IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: IterationTaskRoutine<T>.IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: IterationTaskRoutine(Of T).IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.IterationTaskRoutine`1.#ctor*
-  name: IterationTaskRoutine
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1__ctor_
-  commentId: Overload:ILib.IterationTaskRoutine`1.#ctor
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.IterationTaskRoutine
-  fullName.vb: ILib.IterationTaskRoutine(Of T).IterationTaskRoutine
-  nameWithType: IterationTaskRoutine<T>.IterationTaskRoutine
-  nameWithType.vb: IterationTaskRoutine(Of T).IterationTaskRoutine
-- uid: ILib.IterationTaskRoutine`1.Action
-  name: Action
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Action
-  commentId: P:ILib.IterationTaskRoutine`1.Action
-  fullName: ILib.IterationTaskRoutine<T>.Action
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Action
-  nameWithType: IterationTaskRoutine<T>.Action
-  nameWithType.vb: IterationTaskRoutine(Of T).Action
-- uid: ILib.IterationTaskRoutine`1.Action*
-  name: Action
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Action_
-  commentId: Overload:ILib.IterationTaskRoutine`1.Action
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.Action
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Action
-  nameWithType: IterationTaskRoutine<T>.Action
-  nameWithType.vb: IterationTaskRoutine(Of T).Action
-- uid: ILib.IterationTaskRoutine`1.Complete
-  name: Complete
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Complete
-  commentId: P:ILib.IterationTaskRoutine`1.Complete
-  fullName: ILib.IterationTaskRoutine<T>.Complete
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Complete
-  nameWithType: IterationTaskRoutine<T>.Complete
-  nameWithType.vb: IterationTaskRoutine(Of T).Complete
-- uid: ILib.IterationTaskRoutine`1.Complete*
-  name: Complete
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Complete_
-  commentId: Overload:ILib.IterationTaskRoutine`1.Complete
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.Complete
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Complete
-  nameWithType: IterationTaskRoutine<T>.Complete
-  nameWithType.vb: IterationTaskRoutine(Of T).Complete
-- uid: ILib.IterationTaskRoutine`1.Fail(System.Exception)
-  name: Fail(Exception)
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Fail_System_Exception_
-  commentId: M:ILib.IterationTaskRoutine`1.Fail(System.Exception)
-  fullName: ILib.IterationTaskRoutine<T>.Fail(System.Exception)
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Fail(System.Exception)
-  nameWithType: IterationTaskRoutine<T>.Fail(Exception)
-  nameWithType.vb: IterationTaskRoutine(Of T).Fail(Exception)
-- uid: ILib.IterationTaskRoutine`1.Fail*
-  name: Fail
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Fail_
-  commentId: Overload:ILib.IterationTaskRoutine`1.Fail
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.Fail
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Fail
-  nameWithType: IterationTaskRoutine<T>.Fail
-  nameWithType.vb: IterationTaskRoutine(Of T).Fail
-- uid: ILib.IterationTaskRoutine`1.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.IterationTaskRoutine`1.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.IterationTaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.IterationTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: IterationTaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: IterationTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-- uid: ILib.IterationTaskRoutine`1.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.IterationTaskRoutine`1.ILib#IHasTriggerAction#Action
-  isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.IterationTaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.IterationTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: IterationTaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: IterationTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-- uid: ILib.IterationTaskRoutine`1.Result(ILib.Routines.IHasResult)
-  name: Result(IHasResult)
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Result_ILib_Routines_IHasResult_
-  commentId: M:ILib.IterationTaskRoutine`1.Result(ILib.Routines.IHasResult)
-  fullName: ILib.IterationTaskRoutine<T>.Result(ILib.Routines.IHasResult)
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Result(ILib.Routines.IHasResult)
-  nameWithType: IterationTaskRoutine<T>.Result(IHasResult)
-  nameWithType.vb: IterationTaskRoutine(Of T).Result(IHasResult)
-- uid: ILib.IterationTaskRoutine`1.Result*
-  name: Result
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Result_
-  commentId: Overload:ILib.IterationTaskRoutine`1.Result
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.Result
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Result
-  nameWithType: IterationTaskRoutine<T>.Result
-  nameWithType.vb: IterationTaskRoutine(Of T).Result
-- uid: ILib.IterationTaskRoutine`1.Success
-  name: Success()
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Success
-  commentId: M:ILib.IterationTaskRoutine`1.Success
-  fullName: ILib.IterationTaskRoutine<T>.Success()
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Success()
-  nameWithType: IterationTaskRoutine<T>.Success()
-  nameWithType.vb: IterationTaskRoutine(Of T).Success()
-- uid: ILib.IterationTaskRoutine`1.Success*
-  name: Success
-  href: api/ILib.IterationTaskRoutine-1.html#ILib_IterationTaskRoutine_1_Success_
-  commentId: Overload:ILib.IterationTaskRoutine`1.Success
-  isSpec: "True"
-  fullName: ILib.IterationTaskRoutine<T>.Success
-  fullName.vb: ILib.IterationTaskRoutine(Of T).Success
-  nameWithType: IterationTaskRoutine<T>.Success
-  nameWithType.vb: IterationTaskRoutine(Of T).Success
 - uid: ILib.ITriggerAction
   name: ITriggerAction
   href: api/ILib.ITriggerAction.html
@@ -13768,6 +13588,406 @@ references:
   commentId: F:ILib.Logger.Log.LogLevel.Warning
   fullName: ILib.Logger.Log.LogLevel.Warning
   nameWithType: Log.LogLevel.Warning
+- uid: ILib.Managed
+  name: ILib.Managed
+  href: api/ILib.Managed.html
+  commentId: N:ILib.Managed
+  fullName: ILib.Managed
+  nameWithType: ILib.Managed
+- uid: ILib.Managed.ActionDisposer
+  name: ActionDisposer
+  href: api/ILib.Managed.ActionDisposer.html
+  commentId: T:ILib.Managed.ActionDisposer
+  fullName: ILib.Managed.ActionDisposer
+  nameWithType: ActionDisposer
+- uid: ILib.Managed.ActionDisposer.#ctor(System.Action)
+  name: ActionDisposer(Action)
+  href: api/ILib.Managed.ActionDisposer.html#ILib_Managed_ActionDisposer__ctor_System_Action_
+  commentId: M:ILib.Managed.ActionDisposer.#ctor(System.Action)
+  fullName: ILib.Managed.ActionDisposer.ActionDisposer(System.Action)
+  nameWithType: ActionDisposer.ActionDisposer(Action)
+- uid: ILib.Managed.ActionDisposer.#ctor*
+  name: ActionDisposer
+  href: api/ILib.Managed.ActionDisposer.html#ILib_Managed_ActionDisposer__ctor_
+  commentId: Overload:ILib.Managed.ActionDisposer.#ctor
+  isSpec: "True"
+  fullName: ILib.Managed.ActionDisposer.ActionDisposer
+  nameWithType: ActionDisposer.ActionDisposer
+- uid: ILib.Managed.ActionDisposer.Dispose
+  name: Dispose()
+  href: api/ILib.Managed.ActionDisposer.html#ILib_Managed_ActionDisposer_Dispose
+  commentId: M:ILib.Managed.ActionDisposer.Dispose
+  fullName: ILib.Managed.ActionDisposer.Dispose()
+  nameWithType: ActionDisposer.Dispose()
+- uid: ILib.Managed.ActionDisposer.Dispose*
+  name: Dispose
+  href: api/ILib.Managed.ActionDisposer.html#ILib_Managed_ActionDisposer_Dispose_
+  commentId: Overload:ILib.Managed.ActionDisposer.Dispose
+  isSpec: "True"
+  fullName: ILib.Managed.ActionDisposer.Dispose
+  nameWithType: ActionDisposer.Dispose
+- uid: ILib.Managed.ComponentDisposer
+  name: ComponentDisposer
+  href: api/ILib.Managed.ComponentDisposer.html
+  commentId: T:ILib.Managed.ComponentDisposer
+  fullName: ILib.Managed.ComponentDisposer
+  nameWithType: ComponentDisposer
+- uid: ILib.Managed.ComponentDisposer.#ctor(UnityEngine.Component)
+  name: ComponentDisposer(Component)
+  href: api/ILib.Managed.ComponentDisposer.html#ILib_Managed_ComponentDisposer__ctor_UnityEngine_Component_
+  commentId: M:ILib.Managed.ComponentDisposer.#ctor(UnityEngine.Component)
+  fullName: ILib.Managed.ComponentDisposer.ComponentDisposer(UnityEngine.Component)
+  nameWithType: ComponentDisposer.ComponentDisposer(Component)
+- uid: ILib.Managed.ComponentDisposer.#ctor*
+  name: ComponentDisposer
+  href: api/ILib.Managed.ComponentDisposer.html#ILib_Managed_ComponentDisposer__ctor_
+  commentId: Overload:ILib.Managed.ComponentDisposer.#ctor
+  isSpec: "True"
+  fullName: ILib.Managed.ComponentDisposer.ComponentDisposer
+  nameWithType: ComponentDisposer.ComponentDisposer
+- uid: ILib.Managed.ComponentDisposer.Dispose
+  name: Dispose()
+  href: api/ILib.Managed.ComponentDisposer.html#ILib_Managed_ComponentDisposer_Dispose
+  commentId: M:ILib.Managed.ComponentDisposer.Dispose
+  fullName: ILib.Managed.ComponentDisposer.Dispose()
+  nameWithType: ComponentDisposer.Dispose()
+- uid: ILib.Managed.ComponentDisposer.Dispose*
+  name: Dispose
+  href: api/ILib.Managed.ComponentDisposer.html#ILib_Managed_ComponentDisposer_Dispose_
+  commentId: Overload:ILib.Managed.ComponentDisposer.Dispose
+  isSpec: "True"
+  fullName: ILib.Managed.ComponentDisposer.Dispose
+  nameWithType: ComponentDisposer.Dispose
+- uid: ILib.Managed.GameObjectDisposer
+  name: GameObjectDisposer
+  href: api/ILib.Managed.GameObjectDisposer.html
+  commentId: T:ILib.Managed.GameObjectDisposer
+  fullName: ILib.Managed.GameObjectDisposer
+  nameWithType: GameObjectDisposer
+- uid: ILib.Managed.GameObjectDisposer.#ctor(UnityEngine.GameObject)
+  name: GameObjectDisposer(GameObject)
+  href: api/ILib.Managed.GameObjectDisposer.html#ILib_Managed_GameObjectDisposer__ctor_UnityEngine_GameObject_
+  commentId: M:ILib.Managed.GameObjectDisposer.#ctor(UnityEngine.GameObject)
+  fullName: ILib.Managed.GameObjectDisposer.GameObjectDisposer(UnityEngine.GameObject)
+  nameWithType: GameObjectDisposer.GameObjectDisposer(GameObject)
+- uid: ILib.Managed.GameObjectDisposer.#ctor*
+  name: GameObjectDisposer
+  href: api/ILib.Managed.GameObjectDisposer.html#ILib_Managed_GameObjectDisposer__ctor_
+  commentId: Overload:ILib.Managed.GameObjectDisposer.#ctor
+  isSpec: "True"
+  fullName: ILib.Managed.GameObjectDisposer.GameObjectDisposer
+  nameWithType: GameObjectDisposer.GameObjectDisposer
+- uid: ILib.Managed.GameObjectDisposer.Dispose
+  name: Dispose()
+  href: api/ILib.Managed.GameObjectDisposer.html#ILib_Managed_GameObjectDisposer_Dispose
+  commentId: M:ILib.Managed.GameObjectDisposer.Dispose
+  fullName: ILib.Managed.GameObjectDisposer.Dispose()
+  nameWithType: GameObjectDisposer.Dispose()
+- uid: ILib.Managed.GameObjectDisposer.Dispose*
+  name: Dispose
+  href: api/ILib.Managed.GameObjectDisposer.html#ILib_Managed_GameObjectDisposer_Dispose_
+  commentId: Overload:ILib.Managed.GameObjectDisposer.Dispose
+  isSpec: "True"
+  fullName: ILib.Managed.GameObjectDisposer.Dispose
+  nameWithType: GameObjectDisposer.Dispose
+- uid: ILib.Managed.IHasManagedHolder
+  name: IHasManagedHolder
+  href: api/ILib.Managed.IHasManagedHolder.html
+  commentId: T:ILib.Managed.IHasManagedHolder
+  fullName: ILib.Managed.IHasManagedHolder
+  nameWithType: IHasManagedHolder
+- uid: ILib.Managed.IHasManagedHolder.Managed
+  name: Managed
+  href: api/ILib.Managed.IHasManagedHolder.html#ILib_Managed_IHasManagedHolder_Managed
+  commentId: P:ILib.Managed.IHasManagedHolder.Managed
+  fullName: ILib.Managed.IHasManagedHolder.Managed
+  nameWithType: IHasManagedHolder.Managed
+- uid: ILib.Managed.IHasManagedHolder.Managed*
+  name: Managed
+  href: api/ILib.Managed.IHasManagedHolder.html#ILib_Managed_IHasManagedHolder_Managed_
+  commentId: Overload:ILib.Managed.IHasManagedHolder.Managed
+  isSpec: "True"
+  fullName: ILib.Managed.IHasManagedHolder.Managed
+  nameWithType: IHasManagedHolder.Managed
+- uid: ILib.Managed.IHasManagedHolderExtensions
+  name: IHasManagedHolderExtensions
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html
+  commentId: T:ILib.Managed.IHasManagedHolderExtensions
+  fullName: ILib.Managed.IHasManagedHolderExtensions
+  nameWithType: IHasManagedHolderExtensions
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Action)
+  name: Manage(IHasManagedHolder, Action)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Action_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Action)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder, System.Action)
+  nameWithType: IHasManagedHolderExtensions.Manage(IHasManagedHolder, Action)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Threading.CancellationToken)
+  name: Manage(IHasManagedHolder, CancellationToken)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Threading_CancellationToken_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Threading.CancellationToken)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder, System.Threading.CancellationToken)
+  nameWithType: IHasManagedHolderExtensions.Manage(IHasManagedHolder, CancellationToken)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Threading.CancellationTokenSource)
+  name: Manage(IHasManagedHolder, CancellationTokenSource)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Threading_CancellationTokenSource_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,System.Threading.CancellationTokenSource)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder, System.Threading.CancellationTokenSource)
+  nameWithType: IHasManagedHolderExtensions.Manage(IHasManagedHolder, CancellationTokenSource)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,UnityEngine.GameObject)
+  name: Manage(IHasManagedHolder, GameObject)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_UnityEngine_GameObject_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder,UnityEngine.GameObject)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage(ILib.Managed.IHasManagedHolder, UnityEngine.GameObject)
+  nameWithType: IHasManagedHolderExtensions.Manage(IHasManagedHolder, GameObject)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage*
+  name: Manage
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_
+  commentId: Overload:ILib.Managed.IHasManagedHolderExtensions.Manage
+  isSpec: "True"
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage
+  nameWithType: IHasManagedHolderExtensions.Manage
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage``1(ILib.Managed.IHasManagedHolder,``0)
+  name: Manage<T>(IHasManagedHolder, T)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage__1_ILib_Managed_IHasManagedHolder___0_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage``1(ILib.Managed.IHasManagedHolder,``0)
+  name.vb: Manage(Of T)(IHasManagedHolder, T)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage<T>(ILib.Managed.IHasManagedHolder, T)
+  fullName.vb: ILib.Managed.IHasManagedHolderExtensions.Manage(Of T)(ILib.Managed.IHasManagedHolder, T)
+  nameWithType: IHasManagedHolderExtensions.Manage<T>(IHasManagedHolder, T)
+  nameWithType.vb: IHasManagedHolderExtensions.Manage(Of T)(IHasManagedHolder, T)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Manage``1(ILib.Managed.IHasManagedHolder,System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  name: Manage<T>(IHasManagedHolder, Func<CancellationToken, Task<T>>)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage__1_ILib_Managed_IHasManagedHolder_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Manage``1(ILib.Managed.IHasManagedHolder,System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  name.vb: Manage(Of T)(IHasManagedHolder, Func(Of CancellationToken, Task(Of T)))
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Manage<T>(ILib.Managed.IHasManagedHolder, System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>)
+  fullName.vb: ILib.Managed.IHasManagedHolderExtensions.Manage(Of T)(ILib.Managed.IHasManagedHolder, System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)))
+  nameWithType: IHasManagedHolderExtensions.Manage<T>(IHasManagedHolder, Func<CancellationToken, Task<T>>)
+  nameWithType.vb: IHasManagedHolderExtensions.Manage(Of T)(IHasManagedHolder, Func(Of CancellationToken, Task(Of T)))
+- uid: ILib.Managed.IHasManagedHolderExtensions.ManageAsync*
+  name: ManageAsync
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageAsync_
+  commentId: Overload:ILib.Managed.IHasManagedHolderExtensions.ManageAsync
+  isSpec: "True"
+  fullName: ILib.Managed.IHasManagedHolderExtensions.ManageAsync
+  nameWithType: IHasManagedHolderExtensions.ManageAsync
+- uid: ILib.Managed.IHasManagedHolderExtensions.ManageAsync``1(ILib.Managed.IHasManagedHolder,``0)
+  name: ManageAsync<T>(IHasManagedHolder, T)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageAsync__1_ILib_Managed_IHasManagedHolder___0_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.ManageAsync``1(ILib.Managed.IHasManagedHolder,``0)
+  name.vb: ManageAsync(Of T)(IHasManagedHolder, T)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.ManageAsync<T>(ILib.Managed.IHasManagedHolder, T)
+  fullName.vb: ILib.Managed.IHasManagedHolderExtensions.ManageAsync(Of T)(ILib.Managed.IHasManagedHolder, T)
+  nameWithType: IHasManagedHolderExtensions.ManageAsync<T>(IHasManagedHolder, T)
+  nameWithType.vb: IHasManagedHolderExtensions.ManageAsync(Of T)(IHasManagedHolder, T)
+- uid: ILib.Managed.IHasManagedHolderExtensions.ManageComponent*
+  name: ManageComponent
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageComponent_
+  commentId: Overload:ILib.Managed.IHasManagedHolderExtensions.ManageComponent
+  isSpec: "True"
+  fullName: ILib.Managed.IHasManagedHolderExtensions.ManageComponent
+  nameWithType: IHasManagedHolderExtensions.ManageComponent
+- uid: ILib.Managed.IHasManagedHolderExtensions.ManageComponent``1(ILib.Managed.IHasManagedHolder,``0)
+  name: ManageComponent<T>(IHasManagedHolder, T)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageComponent__1_ILib_Managed_IHasManagedHolder___0_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.ManageComponent``1(ILib.Managed.IHasManagedHolder,``0)
+  name.vb: ManageComponent(Of T)(IHasManagedHolder, T)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.ManageComponent<T>(ILib.Managed.IHasManagedHolder, T)
+  fullName.vb: ILib.Managed.IHasManagedHolderExtensions.ManageComponent(Of T)(ILib.Managed.IHasManagedHolder, T)
+  nameWithType: IHasManagedHolderExtensions.ManageComponent<T>(IHasManagedHolder, T)
+  nameWithType.vb: IHasManagedHolderExtensions.ManageComponent(Of T)(IHasManagedHolder, T)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Unmanage(ILib.Managed.IHasManagedHolder,ILib.Managed.IManagedAsyncDisposable,System.Boolean)
+  name: Unmanage(IHasManagedHolder, IManagedAsyncDisposable, Boolean)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Unmanage_ILib_Managed_IHasManagedHolder_ILib_Managed_IManagedAsyncDisposable_System_Boolean_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Unmanage(ILib.Managed.IHasManagedHolder,ILib.Managed.IManagedAsyncDisposable,System.Boolean)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Unmanage(ILib.Managed.IHasManagedHolder, ILib.Managed.IManagedAsyncDisposable, System.Boolean)
+  nameWithType: IHasManagedHolderExtensions.Unmanage(IHasManagedHolder, IManagedAsyncDisposable, Boolean)
+- uid: ILib.Managed.IHasManagedHolderExtensions.Unmanage*
+  name: Unmanage
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Unmanage_
+  commentId: Overload:ILib.Managed.IHasManagedHolderExtensions.Unmanage
+  isSpec: "True"
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Unmanage
+  nameWithType: IHasManagedHolderExtensions.Unmanage
+- uid: ILib.Managed.IHasManagedHolderExtensions.Unmanage``1(ILib.Managed.IHasManagedHolder,``0,System.Boolean)
+  name: Unmanage<T>(IHasManagedHolder, T, Boolean)
+  href: api/ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Unmanage__1_ILib_Managed_IHasManagedHolder___0_System_Boolean_
+  commentId: M:ILib.Managed.IHasManagedHolderExtensions.Unmanage``1(ILib.Managed.IHasManagedHolder,``0,System.Boolean)
+  name.vb: Unmanage(Of T)(IHasManagedHolder, T, Boolean)
+  fullName: ILib.Managed.IHasManagedHolderExtensions.Unmanage<T>(ILib.Managed.IHasManagedHolder, T, System.Boolean)
+  fullName.vb: ILib.Managed.IHasManagedHolderExtensions.Unmanage(Of T)(ILib.Managed.IHasManagedHolder, T, System.Boolean)
+  nameWithType: IHasManagedHolderExtensions.Unmanage<T>(IHasManagedHolder, T, Boolean)
+  nameWithType.vb: IHasManagedHolderExtensions.Unmanage(Of T)(IHasManagedHolder, T, Boolean)
+- uid: ILib.Managed.IManagedAsyncDisposable
+  name: IManagedAsyncDisposable
+  href: api/ILib.Managed.IManagedAsyncDisposable.html
+  commentId: T:ILib.Managed.IManagedAsyncDisposable
+  fullName: ILib.Managed.IManagedAsyncDisposable
+  nameWithType: IManagedAsyncDisposable
+- uid: ILib.Managed.IManagedAsyncDisposable.DisposeAsync
+  name: DisposeAsync()
+  href: api/ILib.Managed.IManagedAsyncDisposable.html#ILib_Managed_IManagedAsyncDisposable_DisposeAsync
+  commentId: M:ILib.Managed.IManagedAsyncDisposable.DisposeAsync
+  fullName: ILib.Managed.IManagedAsyncDisposable.DisposeAsync()
+  nameWithType: IManagedAsyncDisposable.DisposeAsync()
+- uid: ILib.Managed.IManagedAsyncDisposable.DisposeAsync*
+  name: DisposeAsync
+  href: api/ILib.Managed.IManagedAsyncDisposable.html#ILib_Managed_IManagedAsyncDisposable_DisposeAsync_
+  commentId: Overload:ILib.Managed.IManagedAsyncDisposable.DisposeAsync
+  isSpec: "True"
+  fullName: ILib.Managed.IManagedAsyncDisposable.DisposeAsync
+  nameWithType: IManagedAsyncDisposable.DisposeAsync
+- uid: ILib.Managed.ManagedHolder
+  name: ManagedHolder
+  href: api/ILib.Managed.ManagedHolder.html
+  commentId: T:ILib.Managed.ManagedHolder
+  fullName: ILib.Managed.ManagedHolder
+  nameWithType: ManagedHolder
+- uid: ILib.Managed.ManagedHolder.CancellationToken
+  name: CancellationToken
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_CancellationToken
+  commentId: P:ILib.Managed.ManagedHolder.CancellationToken
+  fullName: ILib.Managed.ManagedHolder.CancellationToken
+  nameWithType: ManagedHolder.CancellationToken
+- uid: ILib.Managed.ManagedHolder.CancellationToken*
+  name: CancellationToken
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_CancellationToken_
+  commentId: Overload:ILib.Managed.ManagedHolder.CancellationToken
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.CancellationToken
+  nameWithType: ManagedHolder.CancellationToken
+- uid: ILib.Managed.ManagedHolder.DisposeAsync
+  name: DisposeAsync()
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_DisposeAsync
+  commentId: M:ILib.Managed.ManagedHolder.DisposeAsync
+  fullName: ILib.Managed.ManagedHolder.DisposeAsync()
+  nameWithType: ManagedHolder.DisposeAsync()
+- uid: ILib.Managed.ManagedHolder.DisposeAsync*
+  name: DisposeAsync
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_DisposeAsync_
+  commentId: Overload:ILib.Managed.ManagedHolder.DisposeAsync
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.DisposeAsync
+  nameWithType: ManagedHolder.DisposeAsync
+- uid: ILib.Managed.ManagedHolder.Get*
+  name: Get
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Get_
+  commentId: Overload:ILib.Managed.ManagedHolder.Get
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.Get
+  nameWithType: ManagedHolder.Get
+- uid: ILib.Managed.ManagedHolder.Get``1
+  name: Get<T>()
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Get__1
+  commentId: M:ILib.Managed.ManagedHolder.Get``1
+  name.vb: Get(Of T)()
+  fullName: ILib.Managed.ManagedHolder.Get<T>()
+  fullName.vb: ILib.Managed.ManagedHolder.Get(Of T)()
+  nameWithType: ManagedHolder.Get<T>()
+  nameWithType.vb: ManagedHolder.Get(Of T)()
+- uid: ILib.Managed.ManagedHolder.Manage(System.Action)
+  name: Manage(Action)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage_System_Action_
+  commentId: M:ILib.Managed.ManagedHolder.Manage(System.Action)
+  fullName: ILib.Managed.ManagedHolder.Manage(System.Action)
+  nameWithType: ManagedHolder.Manage(Action)
+- uid: ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationToken)
+  name: Manage(CancellationToken)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage_System_Threading_CancellationToken_
+  commentId: M:ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationToken)
+  fullName: ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationToken)
+  nameWithType: ManagedHolder.Manage(CancellationToken)
+- uid: ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationTokenSource)
+  name: Manage(CancellationTokenSource)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage_System_Threading_CancellationTokenSource_
+  commentId: M:ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationTokenSource)
+  fullName: ILib.Managed.ManagedHolder.Manage(System.Threading.CancellationTokenSource)
+  nameWithType: ManagedHolder.Manage(CancellationTokenSource)
+- uid: ILib.Managed.ManagedHolder.Manage(UnityEngine.GameObject)
+  name: Manage(GameObject)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage_UnityEngine_GameObject_
+  commentId: M:ILib.Managed.ManagedHolder.Manage(UnityEngine.GameObject)
+  fullName: ILib.Managed.ManagedHolder.Manage(UnityEngine.GameObject)
+  nameWithType: ManagedHolder.Manage(GameObject)
+- uid: ILib.Managed.ManagedHolder.Manage*
+  name: Manage
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage_
+  commentId: Overload:ILib.Managed.ManagedHolder.Manage
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.Manage
+  nameWithType: ManagedHolder.Manage
+- uid: ILib.Managed.ManagedHolder.Manage``1(``0)
+  name: Manage<T>(T)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage__1___0_
+  commentId: M:ILib.Managed.ManagedHolder.Manage``1(``0)
+  name.vb: Manage(Of T)(T)
+  fullName: ILib.Managed.ManagedHolder.Manage<T>(T)
+  fullName.vb: ILib.Managed.ManagedHolder.Manage(Of T)(T)
+  nameWithType: ManagedHolder.Manage<T>(T)
+  nameWithType.vb: ManagedHolder.Manage(Of T)(T)
+- uid: ILib.Managed.ManagedHolder.Manage``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  name: Manage<T>(Func<CancellationToken, Task<T>>)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Manage__1_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___
+  commentId: M:ILib.Managed.ManagedHolder.Manage``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  name.vb: Manage(Of T)(Func(Of CancellationToken, Task(Of T)))
+  fullName: ILib.Managed.ManagedHolder.Manage<T>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<T>>)
+  fullName.vb: ILib.Managed.ManagedHolder.Manage(Of T)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of T)))
+  nameWithType: ManagedHolder.Manage<T>(Func<CancellationToken, Task<T>>)
+  nameWithType.vb: ManagedHolder.Manage(Of T)(Func(Of CancellationToken, Task(Of T)))
+- uid: ILib.Managed.ManagedHolder.ManageAsync*
+  name: ManageAsync
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_ManageAsync_
+  commentId: Overload:ILib.Managed.ManagedHolder.ManageAsync
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.ManageAsync
+  nameWithType: ManagedHolder.ManageAsync
+- uid: ILib.Managed.ManagedHolder.ManageAsync``1(``0)
+  name: ManageAsync<T>(T)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_ManageAsync__1___0_
+  commentId: M:ILib.Managed.ManagedHolder.ManageAsync``1(``0)
+  name.vb: ManageAsync(Of T)(T)
+  fullName: ILib.Managed.ManagedHolder.ManageAsync<T>(T)
+  fullName.vb: ILib.Managed.ManagedHolder.ManageAsync(Of T)(T)
+  nameWithType: ManagedHolder.ManageAsync<T>(T)
+  nameWithType.vb: ManagedHolder.ManageAsync(Of T)(T)
+- uid: ILib.Managed.ManagedHolder.ManageComponent*
+  name: ManageComponent
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_ManageComponent_
+  commentId: Overload:ILib.Managed.ManagedHolder.ManageComponent
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.ManageComponent
+  nameWithType: ManagedHolder.ManageComponent
+- uid: ILib.Managed.ManagedHolder.ManageComponent``1(``0)
+  name: ManageComponent<T>(T)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_ManageComponent__1___0_
+  commentId: M:ILib.Managed.ManagedHolder.ManageComponent``1(``0)
+  name.vb: ManageComponent(Of T)(T)
+  fullName: ILib.Managed.ManagedHolder.ManageComponent<T>(T)
+  fullName.vb: ILib.Managed.ManagedHolder.ManageComponent(Of T)(T)
+  nameWithType: ManagedHolder.ManageComponent<T>(T)
+  nameWithType.vb: ManagedHolder.ManageComponent(Of T)(T)
+- uid: ILib.Managed.ManagedHolder.Unmanage(ILib.Managed.IManagedAsyncDisposable,System.Boolean)
+  name: Unmanage(IManagedAsyncDisposable, Boolean)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Unmanage_ILib_Managed_IManagedAsyncDisposable_System_Boolean_
+  commentId: M:ILib.Managed.ManagedHolder.Unmanage(ILib.Managed.IManagedAsyncDisposable,System.Boolean)
+  fullName: ILib.Managed.ManagedHolder.Unmanage(ILib.Managed.IManagedAsyncDisposable, System.Boolean)
+  nameWithType: ManagedHolder.Unmanage(IManagedAsyncDisposable, Boolean)
+- uid: ILib.Managed.ManagedHolder.Unmanage*
+  name: Unmanage
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Unmanage_
+  commentId: Overload:ILib.Managed.ManagedHolder.Unmanage
+  isSpec: "True"
+  fullName: ILib.Managed.ManagedHolder.Unmanage
+  nameWithType: ManagedHolder.Unmanage
+- uid: ILib.Managed.ManagedHolder.Unmanage``1(``0,System.Boolean)
+  name: Unmanage<T>(T, Boolean)
+  href: api/ILib.Managed.ManagedHolder.html#ILib_Managed_ManagedHolder_Unmanage__1___0_System_Boolean_
+  commentId: M:ILib.Managed.ManagedHolder.Unmanage``1(``0,System.Boolean)
+  name.vb: Unmanage(Of T)(T, Boolean)
+  fullName: ILib.Managed.ManagedHolder.Unmanage<T>(T, System.Boolean)
+  fullName.vb: ILib.Managed.ManagedHolder.Unmanage(Of T)(T, System.Boolean)
+  nameWithType: ManagedHolder.Unmanage<T>(T, Boolean)
+  nameWithType.vb: ManagedHolder.Unmanage(Of T)(T, Boolean)
 - uid: ILib.MVVM
   name: ILib.MVVM
   href: api/ILib.MVVM.html
@@ -20011,215 +20231,6 @@ references:
   isSpec: "True"
   fullName: ILib.NoResultTaskRoutineException.NoResultTaskRoutineException
   nameWithType: NoResultTaskRoutineException.NoResultTaskRoutineException
-- uid: ILib.RepeatRoutine
-  name: RepeatRoutine
-  href: api/ILib.RepeatRoutine.html
-  commentId: T:ILib.RepeatRoutine
-  fullName: ILib.RepeatRoutine
-  nameWithType: RepeatRoutine
-- uid: ILib.RepeatRoutine.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: RepeatRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine__ctor_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RepeatRoutine.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RepeatRoutine.RepeatRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RepeatRoutine.RepeatRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RepeatRoutine.RepeatRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RepeatRoutine.RepeatRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.RepeatRoutine.#ctor*
-  name: RepeatRoutine
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine__ctor_
-  commentId: Overload:ILib.RepeatRoutine.#ctor
-  isSpec: "True"
-  fullName: ILib.RepeatRoutine.RepeatRoutine
-  nameWithType: RepeatRoutine.RepeatRoutine
-- uid: ILib.RepeatRoutine.Action
-  name: Action
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Action
-  commentId: P:ILib.RepeatRoutine.Action
-  fullName: ILib.RepeatRoutine.Action
-  nameWithType: RepeatRoutine.Action
-- uid: ILib.RepeatRoutine.Action*
-  name: Action
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Action_
-  commentId: Overload:ILib.RepeatRoutine.Action
-  isSpec: "True"
-  fullName: ILib.RepeatRoutine.Action
-  nameWithType: RepeatRoutine.Action
-- uid: ILib.RepeatRoutine.Fail(System.Exception)
-  name: Fail(Exception)
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Fail_System_Exception_
-  commentId: M:ILib.RepeatRoutine.Fail(System.Exception)
-  fullName: ILib.RepeatRoutine.Fail(System.Exception)
-  nameWithType: RepeatRoutine.Fail(Exception)
-- uid: ILib.RepeatRoutine.Fail*
-  name: Fail
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Fail_
-  commentId: Overload:ILib.RepeatRoutine.Fail
-  isSpec: "True"
-  fullName: ILib.RepeatRoutine.Fail
-  nameWithType: RepeatRoutine.Fail
-- uid: ILib.RepeatRoutine.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.RepeatRoutine.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.RepeatRoutine.ILib.IHasTriggerAction.Action
-  nameWithType: RepeatRoutine.IHasTriggerAction.Action
-  nameWithType.vb: RepeatRoutine.ILib.IHasTriggerAction.Action
-- uid: ILib.RepeatRoutine.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.RepeatRoutine.ILib#IHasTriggerAction#Action
-  isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.RepeatRoutine.ILib.IHasTriggerAction.Action
-  nameWithType: RepeatRoutine.IHasTriggerAction.Action
-  nameWithType.vb: RepeatRoutine.ILib.IHasTriggerAction.Action
-- uid: ILib.RepeatRoutine.Success
-  name: Success()
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Success
-  commentId: M:ILib.RepeatRoutine.Success
-  fullName: ILib.RepeatRoutine.Success()
-  nameWithType: RepeatRoutine.Success()
-- uid: ILib.RepeatRoutine.Success*
-  name: Success
-  href: api/ILib.RepeatRoutine.html#ILib_RepeatRoutine_Success_
-  commentId: Overload:ILib.RepeatRoutine.Success
-  isSpec: "True"
-  fullName: ILib.RepeatRoutine.Success
-  nameWithType: RepeatRoutine.Success
-- uid: ILib.RepeatTaskRoutine`1
-  name: RepeatTaskRoutine<T>
-  href: api/ILib.RepeatTaskRoutine-1.html
-  commentId: T:ILib.RepeatTaskRoutine`1
-  name.vb: RepeatTaskRoutine(Of T)
-  fullName: ILib.RepeatTaskRoutine<T>
-  fullName.vb: ILib.RepeatTaskRoutine(Of T)
-  nameWithType: RepeatTaskRoutine<T>
-  nameWithType.vb: RepeatTaskRoutine(Of T)
-- uid: ILib.RepeatTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: RepeatTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1__ctor_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RepeatTaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RepeatTaskRoutine<T>.RepeatTaskRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).RepeatTaskRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RepeatTaskRoutine<T>.RepeatTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RepeatTaskRoutine(Of T).RepeatTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.RepeatTaskRoutine`1.#ctor*
-  name: RepeatTaskRoutine
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1__ctor_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.#ctor
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.RepeatTaskRoutine
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).RepeatTaskRoutine
-  nameWithType: RepeatTaskRoutine<T>.RepeatTaskRoutine
-  nameWithType.vb: RepeatTaskRoutine(Of T).RepeatTaskRoutine
-- uid: ILib.RepeatTaskRoutine`1.Action
-  name: Action
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Action
-  commentId: P:ILib.RepeatTaskRoutine`1.Action
-  fullName: ILib.RepeatTaskRoutine<T>.Action
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Action
-  nameWithType: RepeatTaskRoutine<T>.Action
-  nameWithType.vb: RepeatTaskRoutine(Of T).Action
-- uid: ILib.RepeatTaskRoutine`1.Action*
-  name: Action
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Action_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.Action
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.Action
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Action
-  nameWithType: RepeatTaskRoutine<T>.Action
-  nameWithType.vb: RepeatTaskRoutine(Of T).Action
-- uid: ILib.RepeatTaskRoutine`1.Complete
-  name: Complete
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Complete
-  commentId: P:ILib.RepeatTaskRoutine`1.Complete
-  fullName: ILib.RepeatTaskRoutine<T>.Complete
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Complete
-  nameWithType: RepeatTaskRoutine<T>.Complete
-  nameWithType.vb: RepeatTaskRoutine(Of T).Complete
-- uid: ILib.RepeatTaskRoutine`1.Complete*
-  name: Complete
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Complete_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.Complete
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.Complete
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Complete
-  nameWithType: RepeatTaskRoutine<T>.Complete
-  nameWithType.vb: RepeatTaskRoutine(Of T).Complete
-- uid: ILib.RepeatTaskRoutine`1.Fail(System.Exception)
-  name: Fail(Exception)
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Fail_System_Exception_
-  commentId: M:ILib.RepeatTaskRoutine`1.Fail(System.Exception)
-  fullName: ILib.RepeatTaskRoutine<T>.Fail(System.Exception)
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Fail(System.Exception)
-  nameWithType: RepeatTaskRoutine<T>.Fail(Exception)
-  nameWithType.vb: RepeatTaskRoutine(Of T).Fail(Exception)
-- uid: ILib.RepeatTaskRoutine`1.Fail*
-  name: Fail
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Fail_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.Fail
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.Fail
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Fail
-  nameWithType: RepeatTaskRoutine<T>.Fail
-  nameWithType.vb: RepeatTaskRoutine(Of T).Fail
-- uid: ILib.RepeatTaskRoutine`1.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.RepeatTaskRoutine`1.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.RepeatTaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: RepeatTaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: RepeatTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-- uid: ILib.RepeatTaskRoutine`1.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.ILib#IHasTriggerAction#Action
-  isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.RepeatTaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: RepeatTaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: RepeatTaskRoutine(Of T).ILib.IHasTriggerAction.Action
-- uid: ILib.RepeatTaskRoutine`1.Result(ILib.Routines.IHasResult)
-  name: Result(IHasResult)
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Result_ILib_Routines_IHasResult_
-  commentId: M:ILib.RepeatTaskRoutine`1.Result(ILib.Routines.IHasResult)
-  fullName: ILib.RepeatTaskRoutine<T>.Result(ILib.Routines.IHasResult)
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Result(ILib.Routines.IHasResult)
-  nameWithType: RepeatTaskRoutine<T>.Result(IHasResult)
-  nameWithType.vb: RepeatTaskRoutine(Of T).Result(IHasResult)
-- uid: ILib.RepeatTaskRoutine`1.Result*
-  name: Result
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Result_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.Result
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.Result
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Result
-  nameWithType: RepeatTaskRoutine<T>.Result
-  nameWithType.vb: RepeatTaskRoutine(Of T).Result
-- uid: ILib.RepeatTaskRoutine`1.Success
-  name: Success()
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Success
-  commentId: M:ILib.RepeatTaskRoutine`1.Success
-  fullName: ILib.RepeatTaskRoutine<T>.Success()
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Success()
-  nameWithType: RepeatTaskRoutine<T>.Success()
-  nameWithType.vb: RepeatTaskRoutine(Of T).Success()
-- uid: ILib.RepeatTaskRoutine`1.Success*
-  name: Success
-  href: api/ILib.RepeatTaskRoutine-1.html#ILib_RepeatTaskRoutine_1_Success_
-  commentId: Overload:ILib.RepeatTaskRoutine`1.Success
-  isSpec: "True"
-  fullName: ILib.RepeatTaskRoutine<T>.Success
-  fullName.vb: ILib.RepeatTaskRoutine(Of T).Success
-  nameWithType: RepeatTaskRoutine<T>.Success
-  nameWithType.vb: RepeatTaskRoutine(Of T).Success
 - uid: ILib.Routine
   name: Routine
   href: api/ILib.Routine.html
@@ -20239,19 +20250,6 @@ references:
   isSpec: "True"
   fullName: ILib.Routine.Routine
   nameWithType: Routine.Routine
-- uid: ILib.Routine.Action
-  name: Action
-  href: api/ILib.Routine.html#ILib_Routine_Action
-  commentId: P:ILib.Routine.Action
-  fullName: ILib.Routine.Action
-  nameWithType: Routine.Action
-- uid: ILib.Routine.Action*
-  name: Action
-  href: api/ILib.Routine.html#ILib_Routine_Action_
-  commentId: Overload:ILib.Routine.Action
-  isSpec: "True"
-  fullName: ILib.Routine.Action
-  nameWithType: Routine.Action
 - uid: ILib.Routine.Fail(System.Exception)
   name: Fail(Exception)
   href: api/ILib.Routine.html#ILib_Routine_Fail_System_Exception_
@@ -20265,95 +20263,35 @@ references:
   isSpec: "True"
   fullName: ILib.Routine.Fail
   nameWithType: Routine.Fail
-- uid: ILib.Routine.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.Routine.html#ILib_Routine_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.Routine.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.Routine.ILib.IHasTriggerAction.Action
-  nameWithType: Routine.IHasTriggerAction.Action
-  nameWithType.vb: Routine.ILib.IHasTriggerAction.Action
-- uid: ILib.Routine.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.Routine.html#ILib_Routine_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.Routine.ILib#IHasTriggerAction#Action
+- uid: ILib.Routine.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.Routine.html#ILib_Routine_GetAwaiter
+  commentId: M:ILib.Routine.GetAwaiter
+  fullName: ILib.Routine.GetAwaiter()
+  nameWithType: Routine.GetAwaiter()
+- uid: ILib.Routine.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.Routine.html#ILib_Routine_GetAwaiter_
+  commentId: Overload:ILib.Routine.GetAwaiter
   isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.Routine.ILib.IHasTriggerAction.Action
-  nameWithType: Routine.IHasTriggerAction.Action
-  nameWithType.vb: Routine.ILib.IHasTriggerAction.Action
-- uid: ILib.Routine.IterationTask(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTask(MonoBehaviour, IEnumerator)
-  href: api/ILib.Routine.html#ILib_Routine_IterationTask_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.Routine.IterationTask(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  fullName: ILib.Routine.IterationTask(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: Routine.IterationTask(MonoBehaviour, IEnumerator)
-- uid: ILib.Routine.IterationTask(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTask(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.Routine.html#ILib_Routine_IterationTask_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.Routine.IterationTask(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTask(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.Routine.IterationTask(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.Routine.IterationTask(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: Routine.IterationTask(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: Routine.IterationTask(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.Routine.IterationTask*
-  name: IterationTask
-  href: api/ILib.Routine.html#ILib_Routine_IterationTask_
-  commentId: Overload:ILib.Routine.IterationTask
+  fullName: ILib.Routine.GetAwaiter
+  nameWithType: Routine.GetAwaiter
+- uid: ILib.Routine.Observe(System.Action{System.Boolean,System.Exception})
+  name: Observe(Action<Boolean, Exception>)
+  href: api/ILib.Routine.html#ILib_Routine_Observe_System_Action_System_Boolean_System_Exception__
+  commentId: M:ILib.Routine.Observe(System.Action{System.Boolean,System.Exception})
+  name.vb: Observe(Action(Of Boolean, Exception))
+  fullName: ILib.Routine.Observe(System.Action<System.Boolean, System.Exception>)
+  fullName.vb: ILib.Routine.Observe(System.Action(Of System.Boolean, System.Exception))
+  nameWithType: Routine.Observe(Action<Boolean, Exception>)
+  nameWithType.vb: Routine.Observe(Action(Of Boolean, Exception))
+- uid: ILib.Routine.Observe*
+  name: Observe
+  href: api/ILib.Routine.html#ILib_Routine_Observe_
+  commentId: Overload:ILib.Routine.Observe
   isSpec: "True"
-  fullName: ILib.Routine.IterationTask
-  nameWithType: Routine.IterationTask
-- uid: ILib.Routine.IterationTask``1(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTask<T>(MonoBehaviour, IEnumerator)
-  href: api/ILib.Routine.html#ILib_Routine_IterationTask__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.Routine.IterationTask``1(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name.vb: IterationTask(Of T)(MonoBehaviour, IEnumerator)
-  fullName: ILib.Routine.IterationTask<T>(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  fullName.vb: ILib.Routine.IterationTask(Of T)(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: Routine.IterationTask<T>(MonoBehaviour, IEnumerator)
-  nameWithType.vb: Routine.IterationTask(Of T)(MonoBehaviour, IEnumerator)
-- uid: ILib.Routine.IterationTask``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTask<T>(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.Routine.html#ILib_Routine_IterationTask__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.Routine.IterationTask``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTask(Of T)(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.Routine.IterationTask<T>(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.Routine.IterationTask(Of T)(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: Routine.IterationTask<T>(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: Routine.IterationTask(Of T)(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.Routine.Repeat(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: Repeat(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.Routine.html#ILib_Routine_Repeat_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.Routine.Repeat(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: Repeat(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.Routine.Repeat(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.Routine.Repeat(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: Routine.Repeat(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: Routine.Repeat(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.Routine.Repeat*
-  name: Repeat
-  href: api/ILib.Routine.html#ILib_Routine_Repeat_
-  commentId: Overload:ILib.Routine.Repeat
-  isSpec: "True"
-  fullName: ILib.Routine.Repeat
-  nameWithType: Routine.Repeat
-- uid: ILib.Routine.RepeatTask*
-  name: RepeatTask
-  href: api/ILib.Routine.html#ILib_Routine_RepeatTask_
-  commentId: Overload:ILib.Routine.RepeatTask
-  isSpec: "True"
-  fullName: ILib.Routine.RepeatTask
-  nameWithType: Routine.RepeatTask
-- uid: ILib.Routine.RepeatTask``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: RepeatTask<T>(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.Routine.html#ILib_Routine_RepeatTask__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.Routine.RepeatTask``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatTask(Of T)(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.Routine.RepeatTask<T>(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.Routine.RepeatTask(Of T)(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: Routine.RepeatTask<T>(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: Routine.RepeatTask(Of T)(MonoBehaviour, Func(Of IEnumerator))
+  fullName: ILib.Routine.Observe
+  nameWithType: Routine.Observe
 - uid: ILib.Routine.Start(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
   name: Start(MonoBehaviour, IEnumerator)
   href: api/ILib.Routine.html#ILib_Routine_Start_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
@@ -20402,129 +20340,6 @@ references:
   commentId: T:ILib.RoutineExtensions
   fullName: ILib.RoutineExtensions
   nameWithType: RoutineExtensions
-- uid: ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner,System.Collections.IEnumerator)
-  name: IterationTaskRoutine(IHasRoutineOwner, IEnumerator)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_ILib_IHasRoutineOwner_System_Collections_IEnumerator_
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner,System.Collections.IEnumerator)
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner, System.Collections.IEnumerator)
-  nameWithType: RoutineExtensions.IterationTaskRoutine(IHasRoutineOwner, IEnumerator)
-- uid: ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine(IHasRoutineOwner, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(IHasRoutineOwner, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(ILib.IHasRoutineOwner, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.IterationTaskRoutine(IHasRoutineOwner, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(IHasRoutineOwner, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTaskRoutine(MonoBehaviour, IEnumerator)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: RoutineExtensions.IterationTaskRoutine(MonoBehaviour, IEnumerator)
-- uid: ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.IterationTaskRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.IterationTaskRoutine*
-  name: IterationTaskRoutine
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine_
-  commentId: Overload:ILib.RoutineExtensions.IterationTaskRoutine
-  isSpec: "True"
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine
-  nameWithType: RoutineExtensions.IterationTaskRoutine
-- uid: ILib.RoutineExtensions.IterationTaskRoutine``1(ILib.IHasRoutineOwner,System.Collections.IEnumerator)
-  name: IterationTaskRoutine<T>(IHasRoutineOwner, IEnumerator)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_ILib_IHasRoutineOwner_System_Collections_IEnumerator_
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine``1(ILib.IHasRoutineOwner,System.Collections.IEnumerator)
-  name.vb: IterationTaskRoutine(Of T)(IHasRoutineOwner, IEnumerator)
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine<T>(ILib.IHasRoutineOwner, System.Collections.IEnumerator)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(Of T)(ILib.IHasRoutineOwner, System.Collections.IEnumerator)
-  nameWithType: RoutineExtensions.IterationTaskRoutine<T>(IHasRoutineOwner, IEnumerator)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(Of T)(IHasRoutineOwner, IEnumerator)
-- uid: ILib.RoutineExtensions.IterationTaskRoutine``1(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine<T>(IHasRoutineOwner, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine``1(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(Of T)(IHasRoutineOwner, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine<T>(ILib.IHasRoutineOwner, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(Of T)(ILib.IHasRoutineOwner, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.IterationTaskRoutine<T>(IHasRoutineOwner, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(Of T)(IHasRoutineOwner, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.IterationTaskRoutine``1(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name: IterationTaskRoutine<T>(MonoBehaviour, IEnumerator)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine``1(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)
-  name.vb: IterationTaskRoutine(Of T)(MonoBehaviour, IEnumerator)
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine<T>(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(Of T)(UnityEngine.MonoBehaviour, System.Collections.IEnumerator)
-  nameWithType: RoutineExtensions.IterationTaskRoutine<T>(MonoBehaviour, IEnumerator)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(Of T)(MonoBehaviour, IEnumerator)
-- uid: ILib.RoutineExtensions.IterationTaskRoutine``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: IterationTaskRoutine<T>(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_IterationTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.IterationTaskRoutine``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: IterationTaskRoutine(Of T)(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.IterationTaskRoutine<T>(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.IterationTaskRoutine(Of T)(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.IterationTaskRoutine<T>(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.IterationTaskRoutine(Of T)(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.RepeatRoutine(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name: RepeatRoutine(IHasRoutineOwner, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.RepeatRoutine(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatRoutine(IHasRoutineOwner, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.RepeatRoutine(ILib.IHasRoutineOwner, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.RepeatRoutine(ILib.IHasRoutineOwner, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.RepeatRoutine(IHasRoutineOwner, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.RepeatRoutine(IHasRoutineOwner, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.RepeatRoutine(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: RepeatRoutine(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.RepeatRoutine(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatRoutine(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.RepeatRoutine(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.RepeatRoutine(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.RepeatRoutine(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.RepeatRoutine(MonoBehaviour, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.RepeatRoutine*
-  name: RepeatRoutine
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatRoutine_
-  commentId: Overload:ILib.RoutineExtensions.RepeatRoutine
-  isSpec: "True"
-  fullName: ILib.RoutineExtensions.RepeatRoutine
-  nameWithType: RoutineExtensions.RepeatRoutine
-- uid: ILib.RoutineExtensions.RepeatTaskRoutine*
-  name: RepeatTaskRoutine
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine_
-  commentId: Overload:ILib.RoutineExtensions.RepeatTaskRoutine
-  isSpec: "True"
-  fullName: ILib.RoutineExtensions.RepeatTaskRoutine
-  nameWithType: RoutineExtensions.RepeatTaskRoutine
-- uid: ILib.RoutineExtensions.RepeatTaskRoutine``1(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name: RepeatTaskRoutine<T>(IHasRoutineOwner, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_ILib_IHasRoutineOwner_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.RepeatTaskRoutine``1(ILib.IHasRoutineOwner,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatTaskRoutine(Of T)(IHasRoutineOwner, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.RepeatTaskRoutine<T>(ILib.IHasRoutineOwner, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.RepeatTaskRoutine(Of T)(ILib.IHasRoutineOwner, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.RepeatTaskRoutine<T>(IHasRoutineOwner, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.RepeatTaskRoutine(Of T)(IHasRoutineOwner, Func(Of IEnumerator))
-- uid: ILib.RoutineExtensions.RepeatTaskRoutine``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name: RepeatTaskRoutine<T>(MonoBehaviour, Func<IEnumerator>)
-  href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_RepeatTaskRoutine__1_UnityEngine_MonoBehaviour_System_Func_System_Collections_IEnumerator__
-  commentId: M:ILib.RoutineExtensions.RepeatTaskRoutine``1(UnityEngine.MonoBehaviour,System.Func{System.Collections.IEnumerator})
-  name.vb: RepeatTaskRoutine(Of T)(MonoBehaviour, Func(Of IEnumerator))
-  fullName: ILib.RoutineExtensions.RepeatTaskRoutine<T>(UnityEngine.MonoBehaviour, System.Func<System.Collections.IEnumerator>)
-  fullName.vb: ILib.RoutineExtensions.RepeatTaskRoutine(Of T)(UnityEngine.MonoBehaviour, System.Func(Of System.Collections.IEnumerator))
-  nameWithType: RoutineExtensions.RepeatTaskRoutine<T>(MonoBehaviour, Func<IEnumerator>)
-  nameWithType.vb: RoutineExtensions.RepeatTaskRoutine(Of T)(MonoBehaviour, Func(Of IEnumerator))
 - uid: ILib.RoutineExtensions.Routine(ILib.IHasRoutineOwner,System.Collections.IEnumerator)
   name: Routine(IHasRoutineOwner, IEnumerator)
   href: api/ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_ILib_IHasRoutineOwner_System_Collections_IEnumerator_
@@ -20873,19 +20688,6 @@ references:
   isSpec: "True"
   fullName: ILib.Routines.RoutineBase.keepWaiting
   nameWithType: RoutineBase.keepWaiting
-- uid: ILib.Routines.RoutineBase.Restartable
-  name: Restartable
-  href: api/ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Restartable
-  commentId: P:ILib.Routines.RoutineBase.Restartable
-  fullName: ILib.Routines.RoutineBase.Restartable
-  nameWithType: RoutineBase.Restartable
-- uid: ILib.Routines.RoutineBase.Restartable*
-  name: Restartable
-  href: api/ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Restartable_
-  commentId: Overload:ILib.Routines.RoutineBase.Restartable
-  isSpec: "True"
-  fullName: ILib.Routines.RoutineBase.Restartable
-  nameWithType: RoutineBase.Restartable
 - uid: ILib.Routines.RoutineBase.Result(ILib.Routines.IHasResult)
   name: Result(IHasResult)
   href: api/ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Result_ILib_Routines_IHasResult_
@@ -26727,23 +26529,6 @@ references:
   fullName.vb: ILib.TaskRoutine(Of T).TaskRoutine
   nameWithType: TaskRoutine<T>.TaskRoutine
   nameWithType.vb: TaskRoutine(Of T).TaskRoutine
-- uid: ILib.TaskRoutine`1.Action
-  name: Action
-  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Action
-  commentId: P:ILib.TaskRoutine`1.Action
-  fullName: ILib.TaskRoutine<T>.Action
-  fullName.vb: ILib.TaskRoutine(Of T).Action
-  nameWithType: TaskRoutine<T>.Action
-  nameWithType.vb: TaskRoutine(Of T).Action
-- uid: ILib.TaskRoutine`1.Action*
-  name: Action
-  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Action_
-  commentId: Overload:ILib.TaskRoutine`1.Action
-  isSpec: "True"
-  fullName: ILib.TaskRoutine<T>.Action
-  fullName.vb: ILib.TaskRoutine(Of T).Action
-  nameWithType: TaskRoutine<T>.Action
-  nameWithType.vb: TaskRoutine(Of T).Action
 - uid: ILib.TaskRoutine`1.Fail(System.Exception)
   name: Fail(Exception)
   href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Fail_System_Exception_
@@ -26761,25 +26546,41 @@ references:
   fullName.vb: ILib.TaskRoutine(Of T).Fail
   nameWithType: TaskRoutine<T>.Fail
   nameWithType.vb: TaskRoutine(Of T).Fail
-- uid: ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action
-  name: IHasTriggerAction.Action
-  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_ILib_IHasTriggerAction_Action
-  commentId: P:ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.TaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.TaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: TaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: TaskRoutine(Of T).ILib.IHasTriggerAction.Action
-- uid: ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action*
-  name: IHasTriggerAction.Action
-  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_ILib_IHasTriggerAction_Action_
-  commentId: Overload:ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action
+- uid: ILib.TaskRoutine`1.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_GetAwaiter
+  commentId: M:ILib.TaskRoutine`1.GetAwaiter
+  fullName: ILib.TaskRoutine<T>.GetAwaiter()
+  fullName.vb: ILib.TaskRoutine(Of T).GetAwaiter()
+  nameWithType: TaskRoutine<T>.GetAwaiter()
+  nameWithType.vb: TaskRoutine(Of T).GetAwaiter()
+- uid: ILib.TaskRoutine`1.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_GetAwaiter_
+  commentId: Overload:ILib.TaskRoutine`1.GetAwaiter
   isSpec: "True"
-  name.vb: ILib.IHasTriggerAction.Action
-  fullName: ILib.TaskRoutine<T>.ILib.IHasTriggerAction.Action
-  fullName.vb: ILib.TaskRoutine(Of T).ILib.IHasTriggerAction.Action
-  nameWithType: TaskRoutine<T>.IHasTriggerAction.Action
-  nameWithType.vb: TaskRoutine(Of T).ILib.IHasTriggerAction.Action
+  fullName: ILib.TaskRoutine<T>.GetAwaiter
+  fullName.vb: ILib.TaskRoutine(Of T).GetAwaiter
+  nameWithType: TaskRoutine<T>.GetAwaiter
+  nameWithType.vb: TaskRoutine(Of T).GetAwaiter
+- uid: ILib.TaskRoutine`1.Observe(System.Action{`0,System.Exception})
+  name: Observe(Action<T, Exception>)
+  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Observe_System_Action__0_System_Exception__
+  commentId: M:ILib.TaskRoutine`1.Observe(System.Action{`0,System.Exception})
+  name.vb: Observe(Action(Of T, Exception))
+  fullName: ILib.TaskRoutine<T>.Observe(System.Action<T, System.Exception>)
+  fullName.vb: ILib.TaskRoutine(Of T).Observe(System.Action(Of T, System.Exception))
+  nameWithType: TaskRoutine<T>.Observe(Action<T, Exception>)
+  nameWithType.vb: TaskRoutine(Of T).Observe(Action(Of T, Exception))
+- uid: ILib.TaskRoutine`1.Observe*
+  name: Observe
+  href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Observe_
+  commentId: Overload:ILib.TaskRoutine`1.Observe
+  isSpec: "True"
+  fullName: ILib.TaskRoutine<T>.Observe
+  fullName.vb: ILib.TaskRoutine(Of T).Observe
+  nameWithType: TaskRoutine<T>.Observe
+  nameWithType.vb: TaskRoutine(Of T).Observe
 - uid: ILib.TaskRoutine`1.Result(ILib.Routines.IHasResult)
   name: Result(IHasResult)
   href: api/ILib.TaskRoutine-1.html#ILib_TaskRoutine_1_Result_ILib_Routines_IHasResult_

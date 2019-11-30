@@ -93,7 +93,7 @@ Typeで指定した関数しか実行されません。</p>
     <div class="level1"><span class="xref">Module</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Contents.html">ILib.Contents</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
   <h5 id="ILib_Contents_Module_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class Module</code></pre>
@@ -102,34 +102,7 @@ Typeで指定した関数しか実行されません。</p>
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L13">View Source</a>
-  </span>
-  <a id="ILib_Contents_Module_Priority_" data-uid="ILib.Contents.Module.Priority*"></a>
-  <h4 id="ILib_Contents_Module_Priority" data-uid="ILib.Contents.Module.Priority">Priority</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Priority { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L18">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L17">View Source</a>
   </span>
   <a id="ILib_Contents_Module_Type_" data-uid="ILib.Contents.Module.Type*"></a>
   <h4 id="ILib_Contents_Module_Type" data-uid="ILib.Contents.Module.Type">Type</h4>
@@ -159,7 +132,7 @@ Typeで指定した関数しか実行されません。</p>
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L29">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L28">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnBoot_" data-uid="ILib.Contents.Module.OnBoot*"></a>
   <h4 id="ILib_Contents_Module_OnBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnBoot(ILib.Contents.Content)">OnBoot(Content)</h4>
@@ -169,7 +142,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnBoot(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnBoot(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -198,14 +171,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L77">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L76">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnDisable_" data-uid="ILib.Contents.Module.OnDisable*"></a>
   <h4 id="ILib_Contents_Module_OnDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnDisable(ILib.Contents.Content)">OnDisable(Content)</h4>
@@ -215,7 +188,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnDisable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnDisable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -244,14 +217,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L67">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L66">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnEnable_" data-uid="ILib.Contents.Module.OnEnable*"></a>
   <h4 id="ILib_Contents_Module_OnEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEnable(ILib.Contents.Content)">OnEnable(Content)</h4>
@@ -261,7 +234,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnEnable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnEnable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,14 +263,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L89">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L88">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnEndSwitch_" data-uid="ILib.Contents.Module.OnEndSwitch*"></a>
   <h4 id="ILib_Contents_Module_OnEndSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnEndSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnEndSwitch(Content, Content)</h4>
@@ -306,7 +279,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnEndSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnEndSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,14 +313,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L24">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L23">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreBoot_" data-uid="ILib.Contents.Module.OnPreBoot*"></a>
   <h4 id="ILib_Contents_Module_OnPreBoot_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreBoot(ILib.Contents.Content)">OnPreBoot(Content)</h4>
@@ -357,7 +330,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreBoot(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreBoot(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -386,14 +359,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L72">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L71">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreDisable_" data-uid="ILib.Contents.Module.OnPreDisable*"></a>
   <h4 id="ILib_Contents_Module_OnPreDisable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreDisable(ILib.Contents.Content)">OnPreDisable(Content)</h4>
@@ -403,7 +376,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreDisable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreDisable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -432,14 +405,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L62">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L61">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreEnable_" data-uid="ILib.Contents.Module.OnPreEnable*"></a>
   <h4 id="ILib_Contents_Module_OnPreEnable_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreEnable(ILib.Contents.Content)">OnPreEnable(Content)</h4>
@@ -449,7 +422,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreEnable(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreEnable(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -478,14 +451,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L44">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L43">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreRun_" data-uid="ILib.Contents.Module.OnPreRun*"></a>
   <h4 id="ILib_Contents_Module_OnPreRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreRun(ILib.Contents.Content)">OnPreRun(Content)</h4>
@@ -495,7 +468,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreRun(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreRun(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -524,14 +497,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L34">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L33">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreShutdown_" data-uid="ILib.Contents.Module.OnPreShutdown*"></a>
   <h4 id="ILib_Contents_Module_OnPreShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreShutdown(ILib.Contents.Content)">OnPreShutdown(Content)</h4>
@@ -541,7 +514,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreShutdown(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreShutdown(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -570,14 +543,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L53">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L52">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreSuspend_" data-uid="ILib.Contents.Module.OnPreSuspend*"></a>
   <h4 id="ILib_Contents_Module_OnPreSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSuspend(ILib.Contents.Content)">OnPreSuspend(Content)</h4>
@@ -586,7 +559,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreSuspend(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreSuspend(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -615,14 +588,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L81">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L80">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnPreSwitch_" data-uid="ILib.Contents.Module.OnPreSwitch*"></a>
   <h4 id="ILib_Contents_Module_OnPreSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnPreSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnPreSwitch(Content, Content)</h4>
@@ -631,7 +604,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnPreSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnPreSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -665,14 +638,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L49">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L48">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnRun_" data-uid="ILib.Contents.Module.OnRun*"></a>
   <h4 id="ILib_Contents_Module_OnRun_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnRun(ILib.Contents.Content)">OnRun(Content)</h4>
@@ -682,7 +655,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnRun(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnRun(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -711,14 +684,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L39">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L38">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnShutdown_" data-uid="ILib.Contents.Module.OnShutdown*"></a>
   <h4 id="ILib_Contents_Module_OnShutdown_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnShutdown(ILib.Contents.Content)">OnShutdown(Content)</h4>
@@ -728,7 +701,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnShutdown(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnShutdown(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -757,14 +730,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L57">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L56">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnSuspend_" data-uid="ILib.Contents.Module.OnSuspend*"></a>
   <h4 id="ILib_Contents_Module_OnSuspend_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSuspend(ILib.Contents.Content)">OnSuspend(Content)</h4>
@@ -773,7 +746,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnSuspend(Content content)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnSuspend(Content content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -802,14 +775,14 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L85">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L84">View Source</a>
   </span>
   <a id="ILib_Contents_Module_OnSwitch_" data-uid="ILib.Contents.Module.OnSwitch*"></a>
   <h4 id="ILib_Contents_Module_OnSwitch_ILib_Contents_Content_ILib_Contents_Content_" data-uid="ILib.Contents.Module.OnSwitch(ILib.Contents.Content,ILib.Contents.Content)">OnSwitch(Content, Content)</h4>
@@ -818,7 +791,7 @@ Typeで指定した関数しか実行されません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator OnSwitch(Content prev, Content next)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task OnSwitch(Content prev, Content next)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -852,7 +825,7 @@ Typeで指定した関数しか実行されません。</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -865,7 +838,7 @@ Typeで指定した関数しか実行されません。</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Contents/Module.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Contents/Module.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

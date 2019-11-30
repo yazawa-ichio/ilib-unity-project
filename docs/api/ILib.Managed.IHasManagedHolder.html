@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TextArgument
+    <title>Interface IHasManagedHolder
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TextArgument
+    <meta name="title" content="Interface IHasManagedHolder
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,54 +78,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.MVVM.TextArgument">
+            <article class="content wrap" id="_content" data-uid="ILib.Managed.IHasManagedHolder">
   
   
-  <h1 id="ILib_MVVM_TextArgument" data-uid="ILib.MVVM.TextArgument" class="text-break">Class TextArgument
+  <h1 id="ILib_Managed_IHasManagedHolder" data-uid="ILib.Managed.IHasManagedHolder" class="text-break">Interface IHasManagedHolder
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
-    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
-    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><a class="xref" href="ILib.MVVM.EventArgument.html">EventArgument</a></div>
-    <div class="level6"><a class="xref" href="ILib.MVVM.EventArgument-1.html">EventArgument</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</div>
-    <div class="level7"><span class="xref">TextArgument</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_GetEventType">EventArgument&lt;String&gt;.GetEventType()</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_IViewEventHandler_">EventArgument&lt;String&gt;.Do(String, IViewEventHandler)</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.html">ILib.MVVM</a></h6>
-  <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
-  <h5 id="ILib_MVVM_TextArgument_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.Managed.html">ILib.Managed</a></h6>
+  <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
+  <h5 id="ILib_Managed_IHasManagedHolder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TextArgument : EventArgument&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IHasManagedHolder</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/Argument/TextArgument.cs/#L11">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Managed/IHasManagedHolder.cs/#L10">View Source</a>
   </span>
-  <a id="ILib_MVVM_TextArgument_GetValue_" data-uid="ILib.MVVM.TextArgument.GetValue*"></a>
-  <h4 id="ILib_MVVM_TextArgument_GetValue" data-uid="ILib.MVVM.TextArgument.GetValue">GetValue()</h4>
+  <a id="ILib_Managed_IHasManagedHolder_Managed_" data-uid="ILib.Managed.IHasManagedHolder.Managed*"></a>
+  <h4 id="ILib_Managed_IHasManagedHolder_Managed" data-uid="ILib.Managed.IHasManagedHolder.Managed">Managed</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string GetValue()</code></pre>
+    <pre><code class="lang-csharp hljs">ManagedHolder Managed { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -135,19 +115,41 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="ILib.Managed.ManagedHolder.html">ManagedHolder</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">ILib.MVVM.EventArgument&lt;System.String&gt;.GetValue()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_Routine_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.Routine(MonoBehaviour, IEnumerator)</a>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage__1_ILib_Managed_IHasManagedHolder___0_">IHasManagedHolderExtensions.Manage&lt;T&gt;(IHasManagedHolder, T)</a>
   </div>
   <div>
-      <a class="xref" href="ILib.RoutineExtensions.html#ILib_RoutineExtensions_TaskRoutine__1_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_">RoutineExtensions.TaskRoutine&lt;T&gt;(MonoBehaviour, IEnumerator)</a>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_UnityEngine_GameObject_">IHasManagedHolderExtensions.Manage(IHasManagedHolder, GameObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Action_">IHasManagedHolderExtensions.Manage(IHasManagedHolder, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage__1_ILib_Managed_IHasManagedHolder_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___">IHasManagedHolderExtensions.Manage&lt;T&gt;(IHasManagedHolder, Func&lt;CancellationToken, Task&lt;T&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Threading_CancellationTokenSource_">IHasManagedHolderExtensions.Manage(IHasManagedHolder, CancellationTokenSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Manage_ILib_Managed_IHasManagedHolder_System_Threading_CancellationToken_">IHasManagedHolderExtensions.Manage(IHasManagedHolder, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageAsync__1_ILib_Managed_IHasManagedHolder___0_">IHasManagedHolderExtensions.ManageAsync&lt;T&gt;(IHasManagedHolder, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_ManageComponent__1_ILib_Managed_IHasManagedHolder___0_">IHasManagedHolderExtensions.ManageComponent&lt;T&gt;(IHasManagedHolder, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Unmanage__1_ILib_Managed_IHasManagedHolder___0_System_Boolean_">IHasManagedHolderExtensions.Unmanage&lt;T&gt;(IHasManagedHolder, T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.Managed.IHasManagedHolderExtensions.html#ILib_Managed_IHasManagedHolderExtensions_Unmanage_ILib_Managed_IHasManagedHolder_ILib_Managed_IManagedAsyncDisposable_System_Boolean_">IHasManagedHolderExtensions.Unmanage(IHasManagedHolder, IManagedAsyncDisposable, Boolean)</a>
   </div>
 </article>
           </div>
@@ -157,7 +159,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/Argument/TextArgument.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Managed/IHasManagedHolder.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

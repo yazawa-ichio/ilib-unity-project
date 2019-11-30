@@ -2,6 +2,8 @@
   href: index.md
 - name: ilib-abloader
   href: ilib-abloader/toc.yml
+- name: ilib-contents
+  href: ilib-contents/toc.yml
 - name: ilib-mvvm
   href: ilib-mvvm/toc.yml
 - name: ilib-scwidgets

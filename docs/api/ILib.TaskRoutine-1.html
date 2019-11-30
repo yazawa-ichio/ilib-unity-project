@@ -98,19 +98,12 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
-    <div><a class="xref" href="ILib.IRoutine-1.html">IRoutine</a>&lt;T&gt;</div>
-    <div><a class="xref" href="ILib.IHasTriggerAction-1.html">IHasTriggerAction</a>&lt;T&gt;</div>
-    <div><a class="xref" href="ILib.IHasTriggerAction.html">IHasTriggerAction</a></div>
-    <div><a class="xref" href="ILib.IRoutine.html">IRoutine</a></div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_IsRunning">RoutineBase.IsRunning</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Restartable">RoutineBase.Restartable</a>
     </div>
     <div>
       <a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_keepWaiting">RoutineBase.keepWaiting</a>
@@ -135,10 +128,10 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.html">ILib</a></h6>
-  <h6><strong>Assembly</strong>: ILib.dll</h6>
+  <h6><strong>Assembly</strong>: ILib.Contents.dll</h6>
   <h5 id="ILib_TaskRoutine_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TaskRoutine&lt;T&gt; : RoutineBase, IEnumerator, IRoutine&lt;T&gt;, IHasTriggerAction&lt;T&gt;, IHasTriggerAction, IRoutine, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TaskRoutine&lt;T&gt; : RoutineBase, IEnumerator, IDisposable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +152,7 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L30">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L30">View Source</a>
   </span>
   <a id="ILib_TaskRoutine_1__ctor_" data-uid="ILib.TaskRoutine`1.#ctor*"></a>
   <h4 id="ILib_TaskRoutine_1__ctor_UnityEngine_MonoBehaviour_System_Collections_IEnumerator_" data-uid="ILib.TaskRoutine`1.#ctor(UnityEngine.MonoBehaviour,System.Collections.IEnumerator)">TaskRoutine(MonoBehaviour, IEnumerator)</h4>
@@ -191,40 +184,11 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L28">View Source</a>
-  </span>
-  <a id="ILib_TaskRoutine_1_Action_" data-uid="ILib.TaskRoutine`1.Action*"></a>
-  <h4 id="ILib_TaskRoutine_1_Action" data-uid="ILib.TaskRoutine`1.Action">Action</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITriggerAction&lt;T&gt; Action { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction-1.html">ITriggerAction</a>&lt;T&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L43">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L45">View Source</a>
   </span>
   <a id="ILib_TaskRoutine_1_Fail_" data-uid="ILib.TaskRoutine`1.Fail*"></a>
   <h4 id="ILib_TaskRoutine_1_Fail_System_Exception_" data-uid="ILib.TaskRoutine`1.Fail(System.Exception)">Fail(Exception)</h4>
@@ -255,7 +219,63 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
   <div><a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Fail_System_Exception_">RoutineBase.Fail(Exception)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L32">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L69">View Source</a>
+  </span>
+  <a id="ILib_TaskRoutine_1_GetAwaiter_" data-uid="ILib.TaskRoutine`1.GetAwaiter*"></a>
+  <h4 id="ILib_TaskRoutine_1_GetAwaiter" data-uid="ILib.TaskRoutine`1.GetAwaiter">GetAwaiter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskAwaiter&lt;T&gt; GetAwaiter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.taskawaiter-1">TaskAwaiter</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L57">View Source</a>
+  </span>
+  <a id="ILib_TaskRoutine_1_Observe_" data-uid="ILib.TaskRoutine`1.Observe*"></a>
+  <h4 id="ILib_TaskRoutine_1_Observe_System_Action__0_System_Exception__" data-uid="ILib.TaskRoutine`1.Observe(System.Action{`0,System.Exception})">Observe(Action&lt;T, Exception&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Observe(Action&lt;T, Exception&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L32">View Source</a>
   </span>
   <a id="ILib_TaskRoutine_1_Result_" data-uid="ILib.TaskRoutine`1.Result*"></a>
   <h4 id="ILib_TaskRoutine_1_Result_ILib_Routines_IHasResult_" data-uid="ILib.TaskRoutine`1.Result(ILib.Routines.IHasResult)">Result(IHasResult)</h4>
@@ -301,7 +321,7 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
   <div><a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Result_ILib_Routines_IHasResult_">RoutineBase.Result(IHasResult)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L48">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L52">View Source</a>
   </span>
   <a id="ILib_TaskRoutine_1_Success_" data-uid="ILib.TaskRoutine`1.Success*"></a>
   <h4 id="ILib_TaskRoutine_1_Success" data-uid="ILib.TaskRoutine`1.Success">Success()</h4>
@@ -313,99 +333,12 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="ILib.Routines.RoutineBase.html#ILib_Routines_RoutineBase_Success">RoutineBase.Success()</a></div>
-  <h3 id="eii">Explicit Interface Implementations
-  </h3>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L26">View Source</a>
-  </span>
-  <a id="ILib_TaskRoutine_1_ILib_IHasTriggerAction_Action_" data-uid="ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action*"></a>
-  <h4 id="ILib_TaskRoutine_1_ILib_IHasTriggerAction_Action" data-uid="ILib.TaskRoutine`1.ILib#IHasTriggerAction#Action">IHasTriggerAction.Action</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ITriggerAction IHasTriggerAction.Action { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.ITriggerAction.html">ITriggerAction</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">System.Collections.IEnumerator</a>
   </div>
   <div>
-      <a class="xref" href="ILib.IRoutine-1.html">IRoutine&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.IHasTriggerAction-1.html">IHasTriggerAction&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.IHasTriggerAction.html">IHasTriggerAction</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.IRoutine.html">IRoutine</a>
-  </div>
-  <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Add__1_ILib_IHasTriggerAction___0__System_Action___0__">TriggerExtensions.Add&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Action&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Add__1_ILib_IHasTriggerAction___0__System_Action___0_System_Exception__">TriggerExtensions.Add&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Action&lt;T, Exception&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Add__1_ILib_IHasTriggerAction___0__ILib_Trigger___0__">TriggerExtensions.Add&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Trigger&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_AddFail__1_ILib_IHasTriggerAction___0__System_Action_System_Exception__">TriggerExtensions.AddFail&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Action&lt;Exception&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Wait__1_ILib_IHasTriggerAction___0__">TriggerExtensions.Wait&lt;T&gt;(IHasTriggerAction&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Select__2_ILib_IHasTriggerAction___0__System_Func___0___1__System_Boolean_">TriggerExtensions.Select&lt;T, U&gt;(IHasTriggerAction&lt;T&gt;, Func&lt;T, U&gt;, Boolean)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Where__1_ILib_IHasTriggerAction___0__System_Func___0_System_Boolean__">TriggerExtensions.Where&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Func&lt;T, Boolean&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Any__1_ILib_IHasTriggerAction___0__">TriggerExtensions.Any&lt;T&gt;(IHasTriggerAction&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Then__2_ILib_IHasTriggerAction___0__System_Func___0_ILib_ITriggerAction___1___System_Boolean_">TriggerExtensions.Then&lt;T, U&gt;(IHasTriggerAction&lt;T&gt;, Func&lt;T, ITriggerAction&lt;U&gt;&gt;, Boolean)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Then__1_ILib_IHasTriggerAction___0__System_Func___0_ILib_ITriggerAction__System_Boolean_">TriggerExtensions.Then&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Func&lt;T, ITriggerAction&gt;, Boolean)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Time__1_ILib_IHasTriggerAction___0__System_Single_">TriggerExtensions.Time&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_Realtime__1_ILib_IHasTriggerAction___0__System_Single_">TriggerExtensions.Realtime&lt;T&gt;(IHasTriggerAction&lt;T&gt;, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter_ILib_IHasTriggerAction_">TriggerExtensions.GetAwaiter(IHasTriggerAction)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter__1_ILib_IHasTriggerAction___0__">TriggerExtensions.GetAwaiter&lt;T&gt;(IHasTriggerAction&lt;T&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="ILib.TriggerExtensions.html#ILib_TriggerExtensions_GetAwaiter__1_ILib_IHasTriggerAction___0__System_Threading_CancellationToken_">TriggerExtensions.GetAwaiter&lt;T&gt;(IHasTriggerAction&lt;T&gt;, CancellationToken)</a>
   </div>
 </article>
           </div>
@@ -415,7 +348,7 @@ IHasResult[T]型を返すイテレータをコンストラクタで指定して�
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/Routines/RoutineTask.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/Runtime/Routines/RoutineTask.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
