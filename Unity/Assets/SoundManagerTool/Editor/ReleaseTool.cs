@@ -10,7 +10,7 @@ public class ReleaseTool
 	static void ReleaseSoundManager()
 	{
 		var name = "Assets/ilib-sound-control/Extension/ILib.SoundManager.unitypackage";
-		var paths = AssetDatabase.GetAllAssetPaths().Where(x => x.StartsWith("Assets/SoundManager"));
+		var paths = AssetDatabase.GetAllAssetPaths().Where(x => x.StartsWith("Assets/SoundManager/"));
 		AssetDatabase.ExportPackage(paths.ToArray(), name, ExportPackageOptions.Default);
 	}
 }

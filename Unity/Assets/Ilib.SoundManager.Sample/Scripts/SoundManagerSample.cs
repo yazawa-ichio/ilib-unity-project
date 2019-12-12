@@ -30,27 +30,27 @@ namespace ILib.Audio.Sample
 		[DebugButton("PlaySe")]
 		void PlaySe()
 		{
-			SoundManager.Se.Play("test1");
+			SoundManager.Se.PlayHandle("test1");
 		}
 
 		[DebugButton("PlaySePitch")]
 		void PlaySePitch()
 		{
-			SoundManager.Se.Play("test1").Pitch = 2f;
+			SoundManager.Se.PlayHandle("test1").Pitch = 2f;
 		}
 
 
 		[DebugButton("PlaySe FadeIn")]
 		void PlaySeFadeIn()
 		{
-			SoundManager.Se.Play("test2").FadeIn(2f);
+			SoundManager.Se.PlayHandle("test2").FadeIn(2f);
 		}
 
 
 		[DebugButton("PlaySe FadeOut")]
 		void PlaySeFadeOut()
 		{
-			SoundManager.Se.Play("test2").FadeOut(2f);
+			SoundManager.Se.PlayHandle("test2").FadeOut(2f);
 		}
 
 		[DebugButton("Push", Path = "BGM")]

@@ -16,23 +16,23 @@ namespace ILib.Audio.SoundManagement
 
 		public IPlayingSoundContext Play(string prm)
 		{
-			return m_Player.Play(prm);
+			return m_Player.PlayHandle(prm);
 		}
 
 		public IPlayingSoundContext Play(SoundInfo info)
 		{
-			return m_Player.Play(info);
+			return m_Player.PlayHandle(info);
 		}
 
 
 		public void PlayOneShot(string prm)
 		{
-			m_Player.PlayOneShot(prm);
+			m_Player.Play(prm);
 		}
 
 		public void PlayOneShot(SoundInfo info)
 		{
-			m_Player.PlayOneShot(info);
+			m_Player.Play(info);
 		}
 
 		internal void Release()
