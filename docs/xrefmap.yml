@@ -3541,6 +3541,23 @@ references:
   fullName.vb: ILib.Audio.IMusicProvider(Of T).Load
   nameWithType: IMusicProvider<T>.Load
   nameWithType.vb: IMusicProvider(Of T).Load
+- uid: ILib.Audio.IMusicProvider`1.MixerGroup
+  name: MixerGroup
+  href: api/ILib.Audio.IMusicProvider-1.html#ILib_Audio_IMusicProvider_1_MixerGroup
+  commentId: P:ILib.Audio.IMusicProvider`1.MixerGroup
+  fullName: ILib.Audio.IMusicProvider<T>.MixerGroup
+  fullName.vb: ILib.Audio.IMusicProvider(Of T).MixerGroup
+  nameWithType: IMusicProvider<T>.MixerGroup
+  nameWithType.vb: IMusicProvider(Of T).MixerGroup
+- uid: ILib.Audio.IMusicProvider`1.MixerGroup*
+  name: MixerGroup
+  href: api/ILib.Audio.IMusicProvider-1.html#ILib_Audio_IMusicProvider_1_MixerGroup_
+  commentId: Overload:ILib.Audio.IMusicProvider`1.MixerGroup
+  isSpec: "True"
+  fullName: ILib.Audio.IMusicProvider<T>.MixerGroup
+  fullName.vb: ILib.Audio.IMusicProvider(Of T).MixerGroup
+  nameWithType: IMusicProvider<T>.MixerGroup
+  nameWithType.vb: IMusicProvider(Of T).MixerGroup
 - uid: ILib.Audio.IMusicProviderEx
   name: IMusicProviderEx
   href: api/ILib.Audio.IMusicProviderEx.html
@@ -4032,31 +4049,31 @@ references:
   fullName.vb: ILib.Audio.ISoundPlayer(Of T).Play
   nameWithType: ISoundPlayer<T>.Play
   nameWithType.vb: ISoundPlayer(Of T).Play
-- uid: ILib.Audio.ISoundPlayer`1.PlayOneShot(`0)
-  name: PlayOneShot(T)
-  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayOneShot__0_
-  commentId: M:ILib.Audio.ISoundPlayer`1.PlayOneShot(`0)
-  fullName: ILib.Audio.ISoundPlayer<T>.PlayOneShot(T)
-  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayOneShot(T)
-  nameWithType: ISoundPlayer<T>.PlayOneShot(T)
-  nameWithType.vb: ISoundPlayer(Of T).PlayOneShot(T)
-- uid: ILib.Audio.ISoundPlayer`1.PlayOneShot(ILib.Audio.SoundInfo)
-  name: PlayOneShot(SoundInfo)
-  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayOneShot_ILib_Audio_SoundInfo_
-  commentId: M:ILib.Audio.ISoundPlayer`1.PlayOneShot(ILib.Audio.SoundInfo)
-  fullName: ILib.Audio.ISoundPlayer<T>.PlayOneShot(ILib.Audio.SoundInfo)
-  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayOneShot(ILib.Audio.SoundInfo)
-  nameWithType: ISoundPlayer<T>.PlayOneShot(SoundInfo)
-  nameWithType.vb: ISoundPlayer(Of T).PlayOneShot(SoundInfo)
-- uid: ILib.Audio.ISoundPlayer`1.PlayOneShot*
-  name: PlayOneShot
-  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayOneShot_
-  commentId: Overload:ILib.Audio.ISoundPlayer`1.PlayOneShot
+- uid: ILib.Audio.ISoundPlayer`1.PlayHandle(`0)
+  name: PlayHandle(T)
+  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayHandle__0_
+  commentId: M:ILib.Audio.ISoundPlayer`1.PlayHandle(`0)
+  fullName: ILib.Audio.ISoundPlayer<T>.PlayHandle(T)
+  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayHandle(T)
+  nameWithType: ISoundPlayer<T>.PlayHandle(T)
+  nameWithType.vb: ISoundPlayer(Of T).PlayHandle(T)
+- uid: ILib.Audio.ISoundPlayer`1.PlayHandle(ILib.Audio.SoundInfo)
+  name: PlayHandle(SoundInfo)
+  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayHandle_ILib_Audio_SoundInfo_
+  commentId: M:ILib.Audio.ISoundPlayer`1.PlayHandle(ILib.Audio.SoundInfo)
+  fullName: ILib.Audio.ISoundPlayer<T>.PlayHandle(ILib.Audio.SoundInfo)
+  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayHandle(ILib.Audio.SoundInfo)
+  nameWithType: ISoundPlayer<T>.PlayHandle(SoundInfo)
+  nameWithType.vb: ISoundPlayer(Of T).PlayHandle(SoundInfo)
+- uid: ILib.Audio.ISoundPlayer`1.PlayHandle*
+  name: PlayHandle
+  href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_PlayHandle_
+  commentId: Overload:ILib.Audio.ISoundPlayer`1.PlayHandle
   isSpec: "True"
-  fullName: ILib.Audio.ISoundPlayer<T>.PlayOneShot
-  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayOneShot
-  nameWithType: ISoundPlayer<T>.PlayOneShot
-  nameWithType.vb: ISoundPlayer(Of T).PlayOneShot
+  fullName: ILib.Audio.ISoundPlayer<T>.PlayHandle
+  fullName.vb: ILib.Audio.ISoundPlayer(Of T).PlayHandle
+  nameWithType: ISoundPlayer<T>.PlayHandle
+  nameWithType.vb: ISoundPlayer(Of T).PlayHandle
 - uid: ILib.Audio.ISoundPlayer`1.RemoveCache(`0)
   name: RemoveCache(T)
   href: api/ILib.Audio.ISoundPlayer-1.html#ILib_Audio_ISoundPlayer_1_RemoveCache__0_
@@ -4214,15 +4231,12 @@ references:
   commentId: F:ILib.Audio.MusicData.Clip
   fullName: ILib.Audio.MusicData.Clip
   nameWithType: MusicData.Clip
-- uid: ILib.Audio.MusicData.CreateMusic(System.Func{System.String,UnityEngine.Audio.AudioMixerGroup})
-  name: CreateMusic(Func<String, AudioMixerGroup>)
-  href: api/ILib.Audio.MusicData.html#ILib_Audio_MusicData_CreateMusic_System_Func_System_String_UnityEngine_Audio_AudioMixerGroup__
-  commentId: M:ILib.Audio.MusicData.CreateMusic(System.Func{System.String,UnityEngine.Audio.AudioMixerGroup})
-  name.vb: CreateMusic(Func(Of String, AudioMixerGroup))
-  fullName: ILib.Audio.MusicData.CreateMusic(System.Func<System.String, UnityEngine.Audio.AudioMixerGroup>)
-  fullName.vb: ILib.Audio.MusicData.CreateMusic(System.Func(Of System.String, UnityEngine.Audio.AudioMixerGroup))
-  nameWithType: MusicData.CreateMusic(Func<String, AudioMixerGroup>)
-  nameWithType.vb: MusicData.CreateMusic(Func(Of String, AudioMixerGroup))
+- uid: ILib.Audio.MusicData.CreateMusic
+  name: CreateMusic()
+  href: api/ILib.Audio.MusicData.html#ILib_Audio_MusicData_CreateMusic
+  commentId: M:ILib.Audio.MusicData.CreateMusic
+  fullName: ILib.Audio.MusicData.CreateMusic()
+  nameWithType: MusicData.CreateMusic()
 - uid: ILib.Audio.MusicData.CreateMusic*
   name: CreateMusic
   href: api/ILib.Audio.MusicData.html#ILib_Audio_MusicData_CreateMusic_
@@ -4230,12 +4244,6 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.MusicData.CreateMusic
   nameWithType: MusicData.CreateMusic
-- uid: ILib.Audio.MusicData.Group
-  name: Group
-  href: api/ILib.Audio.MusicData.html#ILib_Audio_MusicData_Group
-  commentId: F:ILib.Audio.MusicData.Group
-  fullName: ILib.Audio.MusicData.Group
-  nameWithType: MusicData.Group
 - uid: ILib.Audio.MusicData.Pitch
   name: Pitch
   href: api/ILib.Audio.MusicData.html#ILib_Audio_MusicData_Pitch
@@ -4273,12 +4281,6 @@ references:
   commentId: F:ILib.Audio.MusicInfo.Clip
   fullName: ILib.Audio.MusicInfo.Clip
   nameWithType: MusicInfo.Clip
-- uid: ILib.Audio.MusicInfo.Group
-  name: Group
-  href: api/ILib.Audio.MusicInfo.html#ILib_Audio_MusicInfo_Group
-  commentId: F:ILib.Audio.MusicInfo.Group
-  fullName: ILib.Audio.MusicInfo.Group
-  nameWithType: MusicInfo.Group
 - uid: ILib.Audio.MusicInfo.OnUnused
   name: OnUnused
   href: api/ILib.Audio.MusicInfo.html#ILib_Audio_MusicInfo_OnUnused
@@ -4341,12 +4343,18 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.MusicPlayConfig.Get
   nameWithType: MusicPlayConfig.Get
-- uid: ILib.Audio.MusicPlayConfig.IsOverrideEqualParam
-  name: IsOverrideEqualParam
-  href: api/ILib.Audio.MusicPlayConfig.html#ILib_Audio_MusicPlayConfig_IsOverrideEqualParam
-  commentId: F:ILib.Audio.MusicPlayConfig.IsOverrideEqualParam
-  fullName: ILib.Audio.MusicPlayConfig.IsOverrideEqualParam
-  nameWithType: MusicPlayConfig.IsOverrideEqualParam
+- uid: ILib.Audio.MusicPlayConfig.Group
+  name: Group
+  href: api/ILib.Audio.MusicPlayConfig.html#ILib_Audio_MusicPlayConfig_Group
+  commentId: F:ILib.Audio.MusicPlayConfig.Group
+  fullName: ILib.Audio.MusicPlayConfig.Group
+  nameWithType: MusicPlayConfig.Group
+- uid: ILib.Audio.MusicPlayConfig.IsForceRestartIfEqualParam
+  name: IsForceRestartIfEqualParam
+  href: api/ILib.Audio.MusicPlayConfig.html#ILib_Audio_MusicPlayConfig_IsForceRestartIfEqualParam
+  commentId: F:ILib.Audio.MusicPlayConfig.IsForceRestartIfEqualParam
+  fullName: ILib.Audio.MusicPlayConfig.IsForceRestartIfEqualParam
+  nameWithType: MusicPlayConfig.IsForceRestartIfEqualParam
 - uid: ILib.Audio.MusicPlayConfig.NoLoop
   name: NoLoop
   href: api/ILib.Audio.MusicPlayConfig.html#ILib_Audio_MusicPlayConfig_NoLoop
@@ -4825,23 +4833,6 @@ references:
   fullName.vb: ILib.Audio.MusicProviderBase(Of T).GetString
   nameWithType: MusicProviderBase<T>.GetString
   nameWithType.vb: MusicProviderBase(Of T).GetString
-- uid: ILib.Audio.MusicProviderBase`1.GroupSelector
-  name: GroupSelector
-  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_GroupSelector
-  commentId: P:ILib.Audio.MusicProviderBase`1.GroupSelector
-  fullName: ILib.Audio.MusicProviderBase<T>.GroupSelector
-  fullName.vb: ILib.Audio.MusicProviderBase(Of T).GroupSelector
-  nameWithType: MusicProviderBase<T>.GroupSelector
-  nameWithType.vb: MusicProviderBase(Of T).GroupSelector
-- uid: ILib.Audio.MusicProviderBase`1.GroupSelector*
-  name: GroupSelector
-  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_GroupSelector_
-  commentId: Overload:ILib.Audio.MusicProviderBase`1.GroupSelector
-  isSpec: "True"
-  fullName: ILib.Audio.MusicProviderBase<T>.GroupSelector
-  fullName.vb: ILib.Audio.MusicProviderBase(Of T).GroupSelector
-  nameWithType: MusicProviderBase<T>.GroupSelector
-  nameWithType.vb: MusicProviderBase(Of T).GroupSelector
 - uid: ILib.Audio.MusicProviderBase`1.ILib#Audio#IMusicProvider{T}#Load(`0,System.Action{ILib.Audio.MusicInfo,System.Exception})
   name: IMusicProvider<T>.Load(T, Action<MusicInfo, Exception>)
   href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_ILib_Audio_IMusicProvider_T__Load__0_System_Action_ILib_Audio_MusicInfo_System_Exception__
@@ -4879,6 +4870,23 @@ references:
   fullName.vb: ILib.Audio.MusicProviderBase(Of T).Load
   nameWithType: MusicProviderBase<T>.Load
   nameWithType.vb: MusicProviderBase(Of T).Load
+- uid: ILib.Audio.MusicProviderBase`1.MixerGroup
+  name: MixerGroup
+  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_MixerGroup
+  commentId: P:ILib.Audio.MusicProviderBase`1.MixerGroup
+  fullName: ILib.Audio.MusicProviderBase<T>.MixerGroup
+  fullName.vb: ILib.Audio.MusicProviderBase(Of T).MixerGroup
+  nameWithType: MusicProviderBase<T>.MixerGroup
+  nameWithType.vb: MusicProviderBase(Of T).MixerGroup
+- uid: ILib.Audio.MusicProviderBase`1.MixerGroup*
+  name: MixerGroup
+  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_MixerGroup_
+  commentId: Overload:ILib.Audio.MusicProviderBase`1.MixerGroup
+  isSpec: "True"
+  fullName: ILib.Audio.MusicProviderBase<T>.MixerGroup
+  fullName.vb: ILib.Audio.MusicProviderBase(Of T).MixerGroup
+  nameWithType: MusicProviderBase<T>.MixerGroup
+  nameWithType.vb: MusicProviderBase(Of T).MixerGroup
 - uid: ILib.Audio.MusicProviderBase`1.PathConversion
   name: PathConversion
   href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_PathConversion
@@ -4896,23 +4904,6 @@ references:
   fullName.vb: ILib.Audio.MusicProviderBase(Of T).PathConversion
   nameWithType: MusicProviderBase<T>.PathConversion
   nameWithType.vb: MusicProviderBase(Of T).PathConversion
-- uid: ILib.Audio.MusicProviderBase`1.SetGroup(UnityEngine.Audio.AudioMixerGroup)
-  name: SetGroup(AudioMixerGroup)
-  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_SetGroup_UnityEngine_Audio_AudioMixerGroup_
-  commentId: M:ILib.Audio.MusicProviderBase`1.SetGroup(UnityEngine.Audio.AudioMixerGroup)
-  fullName: ILib.Audio.MusicProviderBase<T>.SetGroup(UnityEngine.Audio.AudioMixerGroup)
-  fullName.vb: ILib.Audio.MusicProviderBase(Of T).SetGroup(UnityEngine.Audio.AudioMixerGroup)
-  nameWithType: MusicProviderBase<T>.SetGroup(AudioMixerGroup)
-  nameWithType.vb: MusicProviderBase(Of T).SetGroup(AudioMixerGroup)
-- uid: ILib.Audio.MusicProviderBase`1.SetGroup*
-  name: SetGroup
-  href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_SetGroup_
-  commentId: Overload:ILib.Audio.MusicProviderBase`1.SetGroup
-  isSpec: "True"
-  fullName: ILib.Audio.MusicProviderBase<T>.SetGroup
-  fullName.vb: ILib.Audio.MusicProviderBase(Of T).SetGroup
-  nameWithType: MusicProviderBase<T>.SetGroup
-  nameWithType.vb: MusicProviderBase(Of T).SetGroup
 - uid: ILib.Audio.MusicProviderBase`1.SetPathFormat(System.String)
   name: SetPathFormat(String)
   href: api/ILib.Audio.MusicProviderBase-1.html#ILib_Audio_MusicProviderBase_1_SetPathFormat_System_String_
@@ -5692,6 +5683,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.SeController.AddCache
   nameWithType: SeController.AddCache
+- uid: ILib.Audio.SoundManagement.SeController.ClearCache(System.Boolean)
+  name: ClearCache(Boolean)
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_ClearCache_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.SeController.ClearCache(System.Boolean)
+  fullName: ILib.Audio.SoundManagement.SeController.ClearCache(System.Boolean)
+  nameWithType: SeController.ClearCache(Boolean)
+- uid: ILib.Audio.SoundManagement.SeController.ClearCache*
+  name: ClearCache
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_ClearCache_
+  commentId: Overload:ILib.Audio.SoundManagement.SeController.ClearCache
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeController.ClearCache
+  nameWithType: SeController.ClearCache
 - uid: ILib.Audio.SoundManagement.SeController.CreateCacheScope(System.String[])
   name: CreateCacheScope(String[])
   href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_CreateCacheScope_System_String___
@@ -5734,6 +5738,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.SeController.Play
   nameWithType: SeController.Play
+- uid: ILib.Audio.SoundManagement.SeController.PlayHandle(System.String)
+  name: PlayHandle(String)
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlayHandle_System_String_
+  commentId: M:ILib.Audio.SoundManagement.SeController.PlayHandle(System.String)
+  fullName: ILib.Audio.SoundManagement.SeController.PlayHandle(System.String)
+  nameWithType: SeController.PlayHandle(String)
+- uid: ILib.Audio.SoundManagement.SeController.PlayHandle*
+  name: PlayHandle
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlayHandle_
+  commentId: Overload:ILib.Audio.SoundManagement.SeController.PlayHandle
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeController.PlayHandle
+  nameWithType: SeController.PlayHandle
 - uid: ILib.Audio.SoundManagement.SeController.PlayJingle(System.String)
   name: PlayJingle(String)
   href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlayJingle_System_String_
@@ -5747,19 +5764,6 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.SeController.PlayJingle
   nameWithType: SeController.PlayJingle
-- uid: ILib.Audio.SoundManagement.SeController.PlayOneShot(System.String)
-  name: PlayOneShot(String)
-  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlayOneShot_System_String_
-  commentId: M:ILib.Audio.SoundManagement.SeController.PlayOneShot(System.String)
-  fullName: ILib.Audio.SoundManagement.SeController.PlayOneShot(System.String)
-  nameWithType: SeController.PlayOneShot(String)
-- uid: ILib.Audio.SoundManagement.SeController.PlayOneShot*
-  name: PlayOneShot
-  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlayOneShot_
-  commentId: Overload:ILib.Audio.SoundManagement.SeController.PlayOneShot
-  isSpec: "True"
-  fullName: ILib.Audio.SoundManagement.SeController.PlayOneShot
-  nameWithType: SeController.PlayOneShot
 - uid: ILib.Audio.SoundManagement.SeController.PlaySeFromUI(System.String)
   name: PlaySeFromUI(String)
   href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_PlaySeFromUI_System_String_
@@ -6295,31 +6299,31 @@ references:
   fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).Play
   nameWithType: SoundPlayerImpl<T>.Play
   nameWithType.vb: SoundPlayerImpl(Of T).Play
-- uid: ILib.Audio.SoundPlayerImpl`1.PlayOneShot(`0)
-  name: PlayOneShot(T)
-  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayOneShot__0_
-  commentId: M:ILib.Audio.SoundPlayerImpl`1.PlayOneShot(`0)
-  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayOneShot(T)
-  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayOneShot(T)
-  nameWithType: SoundPlayerImpl<T>.PlayOneShot(T)
-  nameWithType.vb: SoundPlayerImpl(Of T).PlayOneShot(T)
-- uid: ILib.Audio.SoundPlayerImpl`1.PlayOneShot(ILib.Audio.SoundInfo)
-  name: PlayOneShot(SoundInfo)
-  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayOneShot_ILib_Audio_SoundInfo_
-  commentId: M:ILib.Audio.SoundPlayerImpl`1.PlayOneShot(ILib.Audio.SoundInfo)
-  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayOneShot(ILib.Audio.SoundInfo)
-  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayOneShot(ILib.Audio.SoundInfo)
-  nameWithType: SoundPlayerImpl<T>.PlayOneShot(SoundInfo)
-  nameWithType.vb: SoundPlayerImpl(Of T).PlayOneShot(SoundInfo)
-- uid: ILib.Audio.SoundPlayerImpl`1.PlayOneShot*
-  name: PlayOneShot
-  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayOneShot_
-  commentId: Overload:ILib.Audio.SoundPlayerImpl`1.PlayOneShot
+- uid: ILib.Audio.SoundPlayerImpl`1.PlayHandle(`0)
+  name: PlayHandle(T)
+  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayHandle__0_
+  commentId: M:ILib.Audio.SoundPlayerImpl`1.PlayHandle(`0)
+  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayHandle(T)
+  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayHandle(T)
+  nameWithType: SoundPlayerImpl<T>.PlayHandle(T)
+  nameWithType.vb: SoundPlayerImpl(Of T).PlayHandle(T)
+- uid: ILib.Audio.SoundPlayerImpl`1.PlayHandle(ILib.Audio.SoundInfo)
+  name: PlayHandle(SoundInfo)
+  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayHandle_ILib_Audio_SoundInfo_
+  commentId: M:ILib.Audio.SoundPlayerImpl`1.PlayHandle(ILib.Audio.SoundInfo)
+  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayHandle(ILib.Audio.SoundInfo)
+  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayHandle(ILib.Audio.SoundInfo)
+  nameWithType: SoundPlayerImpl<T>.PlayHandle(SoundInfo)
+  nameWithType.vb: SoundPlayerImpl(Of T).PlayHandle(SoundInfo)
+- uid: ILib.Audio.SoundPlayerImpl`1.PlayHandle*
+  name: PlayHandle
+  href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_PlayHandle_
+  commentId: Overload:ILib.Audio.SoundPlayerImpl`1.PlayHandle
   isSpec: "True"
-  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayOneShot
-  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayOneShot
-  nameWithType: SoundPlayerImpl<T>.PlayOneShot
-  nameWithType.vb: SoundPlayerImpl(Of T).PlayOneShot
+  fullName: ILib.Audio.SoundPlayerImpl<T>.PlayHandle
+  fullName.vb: ILib.Audio.SoundPlayerImpl(Of T).PlayHandle
+  nameWithType: SoundPlayerImpl<T>.PlayHandle
+  nameWithType.vb: SoundPlayerImpl(Of T).PlayHandle
 - uid: ILib.Audio.SoundPlayerImpl`1.RemoveCache(`0)
   name: RemoveCache(T)
   href: api/ILib.Audio.SoundPlayerImpl-1.html#ILib_Audio_SoundPlayerImpl_1_RemoveCache__0_

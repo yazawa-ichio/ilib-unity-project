@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ILib.SoundManager | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ILib.SoundManager | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ilibsoundmanager">ILib.SoundManager</h1>
+
+<p>ILib Unity SoundManager Package</p>
+<h2 id="概要">概要</h2>
+<p><a href="https://github.com/yazawa-ichio/ilib-sound-control">ilib-sound-control</a>を利用したサウンドマネージャーのリファレンス実装です。<br>読み込み方法のみ拡張できるようになっているため、アセットバンドルを利用して再生する事も可能です。  </p>
+<h2 id="導入方法">導入方法</h2>
+<p><a href="https://yazawa-ichio.github.io/ilib-unity-project/manual/index.html">upm経由</a>で<a href="https://github.com/yazawa-ichio/ilib-sound-control">ilib-sound-control</a>のパッケージを導入してください。<br>導入するとメニューに<code>[Tools/SoundControl/Import SoundManager]</code>が表示されるのでインポートを実行します。  </p>
+<p><img src="soundmanager-import.png" alt="インポート画面"> </p>
+<hr>
+<h3 id="設定を行う">設定を行う</h3>
+<p>インポートした <code>Assets/SoundManager/Config.asset</code> を選択します。<br>基本的にそのままで使用できる状態になっています。<br><code>Format</code> はロードに使用するパスになります。<br><code>Audio/BGM/{0}</code> だと <code>{0}</code> の部分に再生時に指定したファイル名が入ります。<br>デフォルトでは <code>Resources</code> フォルダから相対パスになります。</p>
+<p><img src="soundmanager-config.png" alt="コンフィグ設定"> </p>
+<h3 id="初期化">初期化</h3>
+<p><code>Assets/SoundManager/SoundManagerInstaller.prefab</code> をシーンに配置するだけで起動が可能です。<br><code>SoundManagerInstaller</code> は自身が破棄されると <code>SoundManager</code> も自動で破棄します。<br>また、<code>Dont Destroy</code> にチェックを入れるとシーン遷移で破棄されなくなります。</p>
+<p><img src="soundmanager-installer.png" alt="コンフィグ設定"></p>
+<h4 id="補足">補足</h4>
+<p><code>ILib.Audio.SoundManager.Initialize</code> 関数を利用して手動で初期化する事も出来ます。</p>
+<h3 id="サウンドデータ作成する">サウンドデータ作成する</h3>
+<h4 id="ロードするアセットについて">ロードするアセットについて</h4>
+<p>オーディオの読み取り方法は、Unityの<code>AudioClip</code>と専用のデータアセットの<code>SoundData</code>・<code>MusicData</code>の三種類あります。<br>SEは<code>AudioClip</code>or<code>SoundData</code>、BGMは<code>AudioClip</code>or<code>MusicData</code>の二種類になります。
+指定のロードパスにあるアセットの型で自動的に判断するためコード側で特にどちらを利用しているかを指定をする必要はありません。  </p>
+<h4 id="audioclipとsounddataの違い">AudioClipとSoundDataの違い</h4>
+<p><code>SoundData</code> を利用すると<code>Pitch</code>や<code>Volume</code>をデータとして設定出来るほか、簡単な発音制御を指定できます。<br>逆にこのような複雑な制御を必要としないのであれば <code>AudioClip</code> をそのまま利用するのが一番です。<br><code>AudioData</code>を利用しなくても<code>Pitch</code>や<code>Volume</code>などは実行時に変更できます。<br><code>MusicData</code>に関しても概ね同じです。</p>
+<h4 id="sounddatamusicdataを作成する">SoundData・MusicDataを作成する</h4>
+<p><code>[Assets/Create/ILib/Audio/SoundData]</code>・<code>[Assets/Create/ILib/Audio/MusicData]</code>で作成できます。<br>Configの<code>Format</code>指定したパスに作成・配置してください。<br>この作業は <code>AudioClip</code> をそのまま使う場合は必要ありません。</p>
+<p>以下が、<code>SoundData</code>のパラメーターです。</p>
+<p><img src="soundmanager-sounddata.png" alt="サウンドデータ設定"></p>
+<blockquote><p>音源(Clip)  </p>
+</blockquote>
+<p>再生したい<code>AudioClip</code>を設定してください。  </p>
+<blockquote><p>音量(Volume)　　</p>
+</blockquote>
+<p>音量です。コード上でも音量を指定した場合、この値と乗算されます。</p>
+<blockquote><p>ピッチ(Pitch)</p>
+</blockquote>
+<p>ピッチです。コード上でも音量を指定した場合、この値と乗算されます。</p>
+<blockquote><p>再生管理用のID(Control Id)</p>
+</blockquote>
+<p>後述の再生管理に利用するIDです。<br>空の場合は自動でアセット名が設定されますが、同じ管理をしたいサウンドデータがある場合は明示的に指定してください。  </p>
+<blockquote><p>再生管理方法</p>
+</blockquote>
+<p>同じ<code>Control Id</code>のサウンドデータに対して発音制御が行えます。<br>現在、<code>再生個数を制限</code>・<code>再生間隔を制限</code>・<code>先勝ち</code>・<code>後勝ち</code> が設定できます。</p>
+<p><code>MusicData</code> は音源・音量・ピッチのみ指定でき<code>SoundData</code>と同じ内容ため説明を省略します。</p>
+<h2 id="使用方法">使用方法</h2>
+<p>全ての操作は<code>ILib.Audio.SoundManager</code>クラスを通して利用します。  </p>
+<h3 id="bgmのロードについて">BGMのロードについて</h3>
+<p>BGMの音源は再生関数の実行時にロードされます。<br><code>Resources</code>から読む場合は十分問題ない速度で読めると想定されるため、事前にキャッシュする機能は今現在ありません。<br>拡張して独自のロードを行う場合は、必要に応じて独自ロード側でプリロードを行ってください。</p>
+<h3 id="bgmを再生する">BGMを再生する</h3>
+<p>BGMの再生操作は<code>Change</code>・<code>Push</code>・<code>Pop</code>の三つがあります。<br><code>Push</code>と<code>Pop</code>から分かるようにBGMは全てスタック管理されています。  </p>
+<blockquote><p>SoundManager.Bgm.Change(&quot;BGM_FILE_NAME&quot;)</p>
+</blockquote>
+<p>再生されているBGMを停止し、新しいBGMを再生します。<br><code>clearStack</code>フラグを有効にすると、詰まれているスタックも全て消してから再生します。<br>スタック管理をしない場合、全てChange関数で行ってください。</p>
+<blockquote><p>SoundManager.Bgm.Push(&quot;BGM_FILE_NAME&quot;)</p>
+</blockquote>
+<p>再生されているBGMを停止しスタックに積んでから、新しいBGMを再生します。</p>
+<blockquote><p>SoundManager.Bgm.Pop()</p>
+</blockquote>
+<p>再生されているBGMの再生を停止し、スタックに詰まれているBGMの再生を開始します。<br><code>startLastPosition</code>フラグで前回再生を停止した再生位置から再開できます。  </p>
+<h5 id="例メニューのみbgmを変えて閉じた際に元に戻す場合は以下のようなコードで出来ます">例:メニューのみBGMを変えて、閉じた際に元に戻す場合は以下のようなコードで出来ます。</h5>
+<pre><code class="lang-csharp">void Prop
+{
+    // メニューを開く前のBGM
+    SoundManager.BGM.Change(&quot;NORMAL_BGM&quot;);
+    // メニューを開く
+    Menu.Open();
+    // NORMAL_BGMかMENU_BGMに切り替わる
+    SoundManager.BGM.Push(&quot;MENU_BGM&quot;); 
+    // メニューが閉じられた
+    Menu.Close();
+    // NORMAL_BGMが再生される
+    SoundManager.BGM.Pop();
+}
+</code></pre><h4 id="musicplayconfighttpsgithubcomyazawa-ichioilib-sound-controlblobmasterruntimemusicplayermusicplayconfigcs"><a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs">MusicPlayConfig</a></h4>
+<p>再生時に <code>MusicPlayConfig</code> を渡すことでより細かい再生指示を行えます。</p>
+<p><a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs">https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs</a></p>
+<h3 id="seを再生する">SEを再生する</h3>
+<h3 id="seのロードについて">SEのロードについて</h3>
+<p>SEに関しては事前にロードしてキャッシュを作ることが出来ます。<br>キャッシュがない場合はロードしてから再生されます。<br>この遅延ロード再生の機能は便利ですが、SoundManager側では遅延ロード時は一切キャッシュをしない実装になっているため毎回ロード処理が走ります。<br>基本的に利用するSEは事前に<code>SoundManager.Se.AddCache</code>関数等でキャッシュを作成してください。</p>
+<h4 id="補足-1">補足</h4>
+<p>SoundPlayer側の実装で遅延ロード時にキャッシュする機能自体はあります。<br>そのため、SoundMangerのコードを一部変更すれば遅延ロード時にキャッシュを持つ挙動に変えることが可能です。<br>デフォルトで有効になっていない理由は、初心者が解放を明示的に行わず気づかぬままにメモリが肥大化するのを避けるためです。  </p>
+<h3 id="seを再生する-1">SEを再生する</h3>
+<h4 id="seの種類">SEの種類</h4>
+<p>SEの種類としてGame・UI・Jingleの三つを用意してあります。<br>それぞれ以下の用途で使います。</p>
+<blockquote><p>Game</p>
+</blockquote>
+<p>ゲーム用の通常のSEです。Jingleの再生時にダッキングの影響を受けます。</p>
+<blockquote><p>UI</p>
+</blockquote>
+<p>UI用のSEです。ダッキング等の影響を受けません。</p>
+<blockquote><p>Jingle</p>
+</blockquote>
+<p>特別なSEです。レベルアップの効果音などに使います。<br>再生時にダッキングによってGameとBGMに影響を与えます。  </p>
+<h4 id="再生関数について">再生関数について</h4>
+<blockquote><p>SoundManager.Se.Play</p>
+</blockquote>
+<p>Game用のSEを再生します。</p>
+<blockquote><p>SoundManager.Se.PlayHandle</p>
+</blockquote>
+<p>Game用のSEを再生します。<br>返り値の<code>IPlayingSoundContext</code>から音量・ピッチの変更やフェードイン・アウトなどの操作が出来ます。</p>
+<blockquote><p>SoundManager.Se.PlaySeFromUI</p>
+</blockquote>
+<p>UI用のSEを再生します。</p>
+<blockquote><p>SoundManager.Se.PlayJingle</p>
+</blockquote>
+<p>Jingle用のSEを再生します。<br>返り値の<code>IPlayingSoundContext</code>から音量・ピッチの変更やフェードイン・アウトなどの操作が出来ます。</p>
+<h2 id="拡張方法">拡張方法</h2>
+<h3 id="ロードの方法を変更する">ロードの方法を変更する</h3>
+<p><code>SoundManagerInstaller</code>のゲームオブジェクトに<code>ILib.Audio.SoundManagement.ISoundLoader</code>が実装された<code>Component</code>があった場合、SoundManagerは<code>ISoundLoader</code>経由でロードを行います。<br>以下のようなスクリプトを<code>SoundManagerInstaller.prefab</code>に<code>AddComponent</code>しておくとロード方法を変更できます。</p>
+<pre><code class="lang-csharp">using System;
+using UnityEngine;
+using ILib.Audio;
+using ILib.Audio.SoundManagement;
+
+namespace App.Audio
+{
+    public class SoundLoader : MonoBehaviour, ISoundLoader
+    {
+        public bool LoadMusic(string path, Action&lt;MusicInfo, Exception&gt; onLoad)
+        {
+            //独自のローダー
+            ResourceLoader.Load(path,(MusicData data, Exception ex) =&gt; 
+            {
+                onComplete?.Invoke(data?.CreateMusic() ?? null, ex);
+            });
+        }
+
+        public bool LoadSound(string path, Action&lt;SoundInfo, Exception&gt; onLoad)
+        {
+            //独自のローダー
+            ResourceLoader.Load(path,(SoundData data, Exception ex) =&gt; 
+            {
+                onComplete?.Invoke(data?.CreateMusic() ?? null, ex);
+            });
+        }
+
+        public bool LoadVoice(string path, Action&lt;SoundInfo, Exception&gt; onLoad)
+        {
+            //独自のローダー
+            ResourceLoader.Load(path,(AudioClip clip, Exception ex) =&gt; 
+            {
+                if (ex != null)
+                {
+                    onComplete?.Invoke(null, ex);
+                    return;
+                }
+                SoundInfo info = new SoundInfo();
+                info.Clip = clip;
+                info.ControlId = path;
+                onComplete?.Invoke(info, null);
+            });
+
+        }
+
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

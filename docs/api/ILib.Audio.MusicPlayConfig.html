@@ -107,7 +107,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L8">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L10">View Source</a>
   </span>
   <h4 id="ILib_Audio_MusicPlayConfig_FadeInTime" data-uid="ILib.Audio.MusicPlayConfig.FadeInTime">FadeInTime</h4>
   <div class="markdown level1 summary"><p>フェードイン時間です</p>
@@ -134,7 +134,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L12">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L14">View Source</a>
   </span>
   <h4 id="ILib_Audio_MusicPlayConfig_FadeOutTime" data-uid="ILib.Audio.MusicPlayConfig.FadeOutTime">FadeOutTime</h4>
   <div class="markdown level1 summary"><p>フェードアウト時間です</p>
@@ -161,15 +161,42 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L24">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L30">View Source</a>
   </span>
-  <h4 id="ILib_Audio_MusicPlayConfig_IsOverrideEqualParam" data-uid="ILib.Audio.MusicPlayConfig.IsOverrideEqualParam">IsOverrideEqualParam</h4>
-  <div class="markdown level1 summary"><p>同一パラメーターの場合、上書せず音声を継続させます</p>
+  <h4 id="ILib_Audio_MusicPlayConfig_Group" data-uid="ILib.Audio.MusicPlayConfig.Group">Group</h4>
+  <div class="markdown level1 summary"><p>基底のミキサーグループを上書きます</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOverrideEqualParam</code></pre>
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup Group</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Audio.AudioMixerGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L26">View Source</a>
+  </span>
+  <h4 id="ILib_Audio_MusicPlayConfig_IsForceRestartIfEqualParam" data-uid="ILib.Audio.MusicPlayConfig.IsForceRestartIfEqualParam">IsForceRestartIfEqualParam</h4>
+  <div class="markdown level1 summary"><p>同一パラメーターの場合でも強制的に最初から再生を行います</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsForceRestartIfEqualParam</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,7 +215,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L20">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L22">View Source</a>
   </span>
   <h4 id="ILib_Audio_MusicPlayConfig_NoLoop" data-uid="ILib.Audio.MusicPlayConfig.NoLoop">NoLoop</h4>
   <div class="markdown level1 summary"><p>ループを無効にします</p>
@@ -215,7 +242,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L16">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L18">View Source</a>
   </span>
   <h4 id="ILib_Audio_MusicPlayConfig_SkipLoadWait" data-uid="ILib.Audio.MusicPlayConfig.SkipLoadWait">SkipLoadWait</h4>
   <div class="markdown level1 summary"><p>ロード待ちを無視して遷移処理を走らせます</p>
@@ -244,7 +271,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L26">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L32">View Source</a>
   </span>
   <a id="ILib_Audio_MusicPlayConfig_Get_" data-uid="ILib.Audio.MusicPlayConfig.Get*"></a>
   <h4 id="ILib_Audio_MusicPlayConfig_Get_System_Single_" data-uid="ILib.Audio.MusicPlayConfig.Get(System.Single)">Get(Single)</h4>
@@ -294,7 +321,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/MusicPlayer/MusicPlayConfig.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -100,7 +100,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L21">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L22">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController__ctor_" data-uid="ILib.Audio.SoundManagement.SeController.#ctor*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController__ctor_ILib_Audio_SoundManagement_Config_" data-uid="ILib.Audio.SoundManagement.SeController.#ctor(ILib.Audio.SoundManagement.Config)">SeController(Config)</h4>
@@ -131,7 +131,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L15">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L16">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_MaxPoolCount_" data-uid="ILib.Audio.SoundManagement.SeController.MaxPoolCount*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_MaxPoolCount" data-uid="ILib.Audio.SoundManagement.SeController.MaxPoolCount">MaxPoolCount</h4>
@@ -160,7 +160,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L78">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L79">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_AddCache_" data-uid="ILib.Audio.SoundManagement.SeController.AddCache*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_AddCache_System_String_System_Action_System_Boolean_System_Exception__" data-uid="ILib.Audio.SoundManagement.SeController.AddCache(System.String,System.Action{System.Boolean,System.Exception})">AddCache(String, Action&lt;Boolean, Exception&gt;)</h4>
@@ -198,7 +198,39 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L98">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L109">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_SeController_ClearCache_" data-uid="ILib.Audio.SoundManagement.SeController.ClearCache*"></a>
+  <h4 id="ILib_Audio_SoundManagement_SeController_ClearCache_System_Boolean_" data-uid="ILib.Audio.SoundManagement.SeController.ClearCache(System.Boolean)">ClearCache(Boolean)</h4>
+  <div class="markdown level1 summary"><p>AddCacheで追加したキャッシュは全て解放します
+forceフラグが無効の際は、CreateCacheScopeで参照カウントがある場合は破棄されません。
+有効の際は参照カウントがあっても破棄されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCache(bool force = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L99">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_CreateCacheScope_" data-uid="ILib.Audio.SoundManagement.SeController.CreateCacheScope*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_CreateCacheScope_System_String___" data-uid="ILib.Audio.SoundManagement.SeController.CreateCacheScope(System.String[])">CreateCacheScope(String[])</h4>
@@ -245,7 +277,7 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L35">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L44">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_Play_" data-uid="ILib.Audio.SoundManagement.SeController.Play*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_Play_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.Play(System.String)">Play(String)</h4>
@@ -254,7 +286,37 @@ Voiceはキャッシュされません。</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IPlayingSoundContext Play(string prm)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Play(string prm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L36">View Source</a>
+  </span>
+  <a id="ILib_Audio_SoundManagement_SeController_PlayHandle_" data-uid="ILib.Audio.SoundManagement.SeController.PlayHandle*"></a>
+  <h4 id="ILib_Audio_SoundManagement_SeController_PlayHandle_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.PlayHandle(System.String)">PlayHandle(String)</h4>
+  <div class="markdown level1 summary"><p>SEを再生します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPlayingSoundContext PlayHandle(string prm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,7 +352,7 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L67">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L68">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_PlayJingle_" data-uid="ILib.Audio.SoundManagement.SeController.PlayJingle*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_PlayJingle_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.PlayJingle(System.String)">PlayJingle(String)</h4>
@@ -335,37 +397,7 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L43">View Source</a>
-  </span>
-  <a id="ILib_Audio_SoundManagement_SeController_PlayOneShot_" data-uid="ILib.Audio.SoundManagement.SeController.PlayOneShot*"></a>
-  <h4 id="ILib_Audio_SoundManagement_SeController_PlayOneShot_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.PlayOneShot(System.String)">PlayOneShot(String)</h4>
-  <div class="markdown level1 summary"><p>SEを再生します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayOneShot(string prm)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">prm</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L51">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L52">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_PlaySeFromUI_" data-uid="ILib.Audio.SoundManagement.SeController.PlaySeFromUI*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_PlaySeFromUI_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.PlaySeFromUI(System.String)">PlaySeFromUI(String)</h4>
@@ -395,7 +427,7 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L59">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L60">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_PlaySeFromUI_" data-uid="ILib.Audio.SoundManagement.SeController.PlaySeFromUI*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_PlaySeFromUI_System_String_ILib_Audio_IPlayingSoundContext__" data-uid="ILib.Audio.SoundManagement.SeController.PlaySeFromUI(System.String,ILib.Audio.IPlayingSoundContext@)">PlaySeFromUI(String, out IPlayingSoundContext)</h4>
@@ -430,7 +462,7 @@ Voiceはキャッシュされません。</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L88">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-project/blob/master/Unity/Assets/SoundManager/Scripts/SeController.cs/#L89">View Source</a>
   </span>
   <a id="ILib_Audio_SoundManagement_SeController_RemoveCache_" data-uid="ILib.Audio.SoundManagement.SeController.RemoveCache*"></a>
   <h4 id="ILib_Audio_SoundManagement_SeController_RemoveCache_System_String_" data-uid="ILib.Audio.SoundManagement.SeController.RemoveCache(System.String)">RemoveCache(String)</h4>
