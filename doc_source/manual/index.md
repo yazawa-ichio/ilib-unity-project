@@ -48,6 +48,11 @@ manifest.json
 UnityでMVVMでUIのバインディングを行うパッケージです。<br>
 リファレクションの実行がボキシングがないため比較的軽量に動作します。
 
+### [ilib-ui-control](ilib-ui-control/index.md) ([リポジトリ](https://github.com/yazawa-ichio/ilib-ui-control))
+
+UnityでUIをスタックやキューで管理できるパッケージです。  
+1から実装するよりは少し便利なぐらいの機能です。  
+
 ### [ilib-abloader](ilib-abloader/index.md) ([リポジトリ](https://github.com/yazawa-ichio/ilib-abloader))
 
 AssetBundleのロード管理とファイルサイズ等を収集する簡単なビルドパイプラインのパッケージです。<br>

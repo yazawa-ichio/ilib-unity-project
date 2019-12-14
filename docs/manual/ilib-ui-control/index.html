@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>WIP | Yazawa Ichio Unity Package Document </title>
+    <title>ilib-ui-control | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="WIP | Yazawa Ichio Unity Package Document ">
+    <meta name="title" content="ilib-ui-control | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,8 +77,119 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="wip">WIP</h1>
+<h1 id="ilib-ui-controlhttpsgithubcomyazawa-ichioilib-ui-control"><a href="https://github.com/yazawa-ichio/ilib-ui-control">ilib-ui-control</a></h1>
 
+<p>Unity UI Control</p>
+<p>リポジトリ <a href="https://github.com/yazawa-ichio/ilib-ui-control">https://github.com/yazawa-ichio/ilib-ui-control</a></p>
+<h2 id="概要">概要</h2>
+<p>UnityでUIをスタックやキューで管理できるパッケージです。<br>1から実装するよりは少し便利なぐらいの機能です。  </p>
+<h2 id="使用方法wip">使用方法(WIP)</h2>
+<h3 id="uiのプレハブの設定">UIのプレハブの設定</h3>
+<p>まず、UIのプレハブ用にScriptを作成します。<br><code>UIControl&lt;T&gt;</code>を継承したクラスをプレハブに<code>AddComponent</code>してください。<br><code>UIControl&lt;T&gt;</code>はUIの表示・非表示など必要なイベントをoverrideしてフック出来ます。<br>自身を閉じる場合は<code>Close</code>関数で簡単に閉じることが出来ます。<br>作成したUIは<code>Resources</code>フォルダに配置します。  </p>
+<p>例</p>
+<pre><code class="lang-csharp">using System;
+using UnityEngine;
+using UnityEngine.UI;
+using ILib.UI;
+
+namespace App
+{
+    public class SampleUIParam
+    {
+        public Action OnExceute;
+        public Action OnClose;
+    }
+    //パラメーターを指定できる。
+    public class SampleUIControl : UIControl&lt;SampleUIParam&gt;
+    {
+        [SerializeField]
+        Button m_ExceuteButton;
+        [SerializeField]
+        Button m_CloseButton;
+
+        // UIが作成された直後に呼び出されます。
+        protected override Task OnCreated(SampleUIParam prm)
+        {
+            m_ExceuteButton.onClick.AddListener(prm.OnExceute);
+            m_CloseButton.onClick.AddListener(OnCloseButton);
+            return base.OnCreated(prm);
+        }
+
+        void OnCloseButton()
+        {
+            //Paramでも取り出せる
+            Param.OnClose();
+            //自身を閉じる場合はCloseボタンを実行する
+            Close();
+        }
+    }
+}
+</code></pre><h3 id="uiのcontrollerを設定する">UIのControllerを設定する</h3>
+<p>UIのControllerは<code>UIStack</code>と<code>UIQueue</code>の二種類あります。
+それぞれ<code>UIStack</code>はPush・Pop・Switch操作、<code>UIQueue</code>はEnqueue・Close操作が行えます。
+基本的なUIは<code>UIStack</code>を利用し、<code>UIQueue</code>はダイヤログなど表示が終わるまで操作を出来ないようにする場合に利用します。
+継承を行うことでロード方法を変えたり、共通処理を仕込んだりより細かい制御が可能になります。</p>
+<h4 id="パラメーターやコントローラーを制限する">パラメーターやコントローラーを制限する</h4>
+<p><code>UIStack&lt;TParam, UControl&gt;</code>と<code>UIQueue&lt;TParam, UControl&gt;</code>を継承する事で基底のパラメーターやコントローラーを明示的に宣言できます。  </p>
+<p>例えばMVVMなどのデータバインディングを行うのであれば、パラメーターはViewMovelのため以下の用に宣言します。  </p>
+<pre><code class="lang-csharp">using System;
+using UnityEngine;
+using UnityEngine.UI;
+using ILib.UI;
+
+namespace App
+{
+    public class SampleViewModel : IViewModel
+    {
+        //パラメーター
+        public string Message { get; set; }
+    }
+
+    public class ViewControl : UIControl&lt;IViewModel&gt;
+    {
+        IView m_View;
+        protected sealed override Task OnCreated(IViewModel prm)
+        {
+            //Viewを取得
+            m_View = GetComponent&lt;IView&gt;();
+            //データバインディングを実行
+            m_View.Attach(prm);
+            return OnCreatedImpl();
+        }
+    }
+
+    public class MVVMUIStack : UIStack&lt;IViewModel, IControl&lt;IViewModel&gt;&gt;
+    {
+        CanvasGroup m_CanvasGroup;
+        private void Awake()
+        {
+            m_CanvasGroup = GetComponent&lt;CanvasGroup&gt;();
+        }
+        // 処理中（アニメーション中）などレイキャストを切る
+        protected override void OnStartProcess()
+        {
+            m_CanvasGroup.blocksRaycasts = false;
+        }
+        protected override void OnEndProcess()
+        {
+            m_CanvasGroup.blocksRaycasts = true;
+        }
+    }
+
+    public class Application
+    {
+        MVVMUIStack m_UIStack;
+        void Prop()
+        {
+            var vm = new SampleViewModel();
+            vm.Message = &quot;Message&quot;;
+            m_UIStack.Push(path:&quot;UI/Exsample&quot;, prm: vm);
+        }
+    }
+
+}
+</code></pre><h2 id="license">LICENSE</h2>
+<p><a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/LICENSE">https://github.com/yazawa-ichio/ilib-ui-control/blob/master/LICENSE</a></p>
 </article>
           </div>
           

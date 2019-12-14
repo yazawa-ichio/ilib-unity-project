@@ -29506,6 +29506,23 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).OnBehind
   nameWithType: UIControl<TParam>.OnBehind
   nameWithType.vb: UIControl(Of TParam).OnBehind
+- uid: ILib.UI.UIControl`1.OnBehindTransition
+  name: OnBehindTransition()
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnBehindTransition
+  commentId: M:ILib.UI.UIControl`1.OnBehindTransition
+  fullName: ILib.UI.UIControl<TParam>.OnBehindTransition()
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnBehindTransition()
+  nameWithType: UIControl<TParam>.OnBehindTransition()
+  nameWithType.vb: UIControl(Of TParam).OnBehindTransition()
+- uid: ILib.UI.UIControl`1.OnBehindTransition*
+  name: OnBehindTransition
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnBehindTransition_
+  commentId: Overload:ILib.UI.UIControl`1.OnBehindTransition
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnBehindTransition
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnBehindTransition
+  nameWithType: UIControl<TParam>.OnBehindTransition
+  nameWithType.vb: UIControl(Of TParam).OnBehindTransition
 - uid: ILib.UI.UIControl`1.OnClose
   name: OnClose()
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnClose
@@ -29523,6 +29540,23 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).OnClose
   nameWithType: UIControl<TParam>.OnClose
   nameWithType.vb: UIControl(Of TParam).OnClose
+- uid: ILib.UI.UIControl`1.OnCloseTransition
+  name: OnCloseTransition()
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnCloseTransition
+  commentId: M:ILib.UI.UIControl`1.OnCloseTransition
+  fullName: ILib.UI.UIControl<TParam>.OnCloseTransition()
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnCloseTransition()
+  nameWithType: UIControl<TParam>.OnCloseTransition()
+  nameWithType.vb: UIControl(Of TParam).OnCloseTransition()
+- uid: ILib.UI.UIControl`1.OnCloseTransition*
+  name: OnCloseTransition
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnCloseTransition_
+  commentId: Overload:ILib.UI.UIControl`1.OnCloseTransition
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnCloseTransition
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnCloseTransition
+  nameWithType: UIControl<TParam>.OnCloseTransition
+  nameWithType.vb: UIControl(Of TParam).OnCloseTransition
 - uid: ILib.UI.UIControl`1.OnCreated(`0)
   name: OnCreated(TParam)
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnCreated__0_
@@ -29557,6 +29591,91 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).OnFront
   nameWithType: UIControl<TParam>.OnFront
   nameWithType.vb: UIControl(Of TParam).OnFront
+- uid: ILib.UI.UIControl`1.OnFrontTransition(System.Boolean)
+  name: OnFrontTransition(Boolean)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnFrontTransition_System_Boolean_
+  commentId: M:ILib.UI.UIControl`1.OnFrontTransition(System.Boolean)
+  fullName: ILib.UI.UIControl<TParam>.OnFrontTransition(System.Boolean)
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnFrontTransition(System.Boolean)
+  nameWithType: UIControl<TParam>.OnFrontTransition(Boolean)
+  nameWithType.vb: UIControl(Of TParam).OnFrontTransition(Boolean)
+- uid: ILib.UI.UIControl`1.OnFrontTransition*
+  name: OnFrontTransition
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnFrontTransition_
+  commentId: Overload:ILib.UI.UIControl`1.OnFrontTransition
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnFrontTransition
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnFrontTransition
+  nameWithType: UIControl<TParam>.OnFrontTransition
+  nameWithType.vb: UIControl(Of TParam).OnFrontTransition
+- uid: ILib.UI.UIControl`1.OnPreBehind
+  name: OnPreBehind()
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreBehind
+  commentId: M:ILib.UI.UIControl`1.OnPreBehind
+  fullName: ILib.UI.UIControl<TParam>.OnPreBehind()
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreBehind()
+  nameWithType: UIControl<TParam>.OnPreBehind()
+  nameWithType.vb: UIControl(Of TParam).OnPreBehind()
+- uid: ILib.UI.UIControl`1.OnPreBehind*
+  name: OnPreBehind
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreBehind_
+  commentId: Overload:ILib.UI.UIControl`1.OnPreBehind
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnPreBehind
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreBehind
+  nameWithType: UIControl<TParam>.OnPreBehind
+  nameWithType.vb: UIControl(Of TParam).OnPreBehind
+- uid: ILib.UI.UIControl`1.OnPreClose
+  name: OnPreClose()
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreClose
+  commentId: M:ILib.UI.UIControl`1.OnPreClose
+  fullName: ILib.UI.UIControl<TParam>.OnPreClose()
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreClose()
+  nameWithType: UIControl<TParam>.OnPreClose()
+  nameWithType.vb: UIControl(Of TParam).OnPreClose()
+- uid: ILib.UI.UIControl`1.OnPreClose*
+  name: OnPreClose
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreClose_
+  commentId: Overload:ILib.UI.UIControl`1.OnPreClose
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnPreClose
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreClose
+  nameWithType: UIControl<TParam>.OnPreClose
+  nameWithType.vb: UIControl(Of TParam).OnPreClose
+- uid: ILib.UI.UIControl`1.OnPreFront(System.Boolean)
+  name: OnPreFront(Boolean)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreFront_System_Boolean_
+  commentId: M:ILib.UI.UIControl`1.OnPreFront(System.Boolean)
+  fullName: ILib.UI.UIControl<TParam>.OnPreFront(System.Boolean)
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreFront(System.Boolean)
+  nameWithType: UIControl<TParam>.OnPreFront(Boolean)
+  nameWithType.vb: UIControl(Of TParam).OnPreFront(Boolean)
+- uid: ILib.UI.UIControl`1.OnPreFront*
+  name: OnPreFront
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnPreFront_
+  commentId: Overload:ILib.UI.UIControl`1.OnPreFront
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.OnPreFront
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnPreFront
+  nameWithType: UIControl<TParam>.OnPreFront
+  nameWithType.vb: UIControl(Of TParam).OnPreFront
+- uid: ILib.UI.UIControl`1.Param
+  name: Param
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_Param
+  commentId: P:ILib.UI.UIControl`1.Param
+  fullName: ILib.UI.UIControl<TParam>.Param
+  fullName.vb: ILib.UI.UIControl(Of TParam).Param
+  nameWithType: UIControl<TParam>.Param
+  nameWithType.vb: UIControl(Of TParam).Param
+- uid: ILib.UI.UIControl`1.Param*
+  name: Param
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_Param_
+  commentId: Overload:ILib.UI.UIControl`1.Param
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.Param
+  fullName.vb: ILib.UI.UIControl(Of TParam).Param
+  nameWithType: UIControl<TParam>.Param
+  nameWithType.vb: UIControl(Of TParam).Param
 - uid: ILib.UI.UIControl`1.Transition
   name: Transition
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_Transition

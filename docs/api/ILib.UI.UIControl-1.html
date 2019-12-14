@@ -239,6 +239,33 @@
   </table>
   
   <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L39">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_Param_" data-uid="ILib.UI.UIControl`1.Param*"></a>
+  <h4 id="ILib_UI_UIControl_1_Param" data-uid="ILib.UI.UIControl`1.Param">Param</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TParam Param { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
     <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L32">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_Transition_" data-uid="ILib.UI.UIControl`1.Transition*"></a>
@@ -269,7 +296,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L48">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L50">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_Close_" data-uid="ILib.UI.UIControl`1.Close*"></a>
   <h4 id="ILib_UI_UIControl_1_Close" data-uid="ILib.UI.UIControl`1.Close">Close()</h4>
@@ -281,7 +308,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L57">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L59">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_GetTransition_" data-uid="ILib.UI.UIControl`1.GetTransition*"></a>
   <h4 id="ILib_UI_UIControl_1_GetTransition" data-uid="ILib.UI.UIControl`1.GetTransition">GetTransition()</h4>
@@ -310,12 +337,12 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L105">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L171">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_OnBehind_" data-uid="ILib.UI.UIControl`1.OnBehind*"></a>
   <h4 id="ILib_UI_UIControl_1_OnBehind" data-uid="ILib.UI.UIControl`1.OnBehind">OnBehind()</h4>
   <div class="markdown level1 summary"><p>UIが最前面から後ろになった際に実行されます。Close時は実行されません。
-デフォルトでは可能であれば開くアニメーションを実行します。</p>
+アニメーションよりも後に実行されます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -339,11 +366,41 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L84">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L180">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnBehindTransition_" data-uid="ILib.UI.UIControl`1.OnBehindTransition*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnBehindTransition" data-uid="ILib.UI.UIControl`1.OnBehindTransition">OnBehindTransition()</h4>
+  <div class="markdown level1 summary"><p>UIが最前面から後ろになった際に実行されます。Close時は実行されません。
+デフォルトでは可能であれば閉じるアニメーションを実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnBehindTransition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L116">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_OnClose_" data-uid="ILib.UI.UIControl`1.OnClose*"></a>
   <h4 id="ILib_UI_UIControl_1_OnClose" data-uid="ILib.UI.UIControl`1.OnClose">OnClose()</h4>
   <div class="markdown level1 summary"><p>UIを削除する直前に実行されます。
+非表示のアニメーションよりも後に実行されます。
 デフォルトでは可能であれば閉じるアニメーションを実行します。
 アクティブではない場合は何も行いません。</p>
 </div>
@@ -369,7 +426,37 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L77">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L123">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnCloseTransition_" data-uid="ILib.UI.UIControl`1.OnCloseTransition*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnCloseTransition" data-uid="ILib.UI.UIControl`1.OnCloseTransition">OnCloseTransition()</h4>
+  <div class="markdown level1 summary"><p>UIを削除する直前に実行されます。
+デフォルトでは可能であれば閉じるアニメーションを実行します。
+アクティブではない場合は何も行いません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnCloseTransition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L102">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_OnCreated_" data-uid="ILib.UI.UIControl`1.OnCreated*"></a>
   <h4 id="ILib_UI_UIControl_1_OnCreated__0_" data-uid="ILib.UI.UIControl`1.OnCreated(`0)">OnCreated(TParam)</h4>
@@ -414,11 +501,12 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L90">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L139">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_OnFront_" data-uid="ILib.UI.UIControl`1.OnFront*"></a>
   <h4 id="ILib_UI_UIControl_1_OnFront_System_Boolean_" data-uid="ILib.UI.UIControl`1.OnFront(System.Boolean)">OnFront(Boolean)</h4>
   <div class="markdown level1 summary"><p>UIが最前面に来た際に実行されます。オープン処理かどうかは引数で確認できます。
+表示のアニメーションよりも後に実行されます。
 デフォルトでは可能であれば開くアニメーションを実行します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -458,11 +546,161 @@
       </tr>
     </tbody>
   </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L148">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnFrontTransition_" data-uid="ILib.UI.UIControl`1.OnFrontTransition*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnFrontTransition_System_Boolean_" data-uid="ILib.UI.UIControl`1.OnFrontTransition(System.Boolean)">OnFrontTransition(Boolean)</h4>
+  <div class="markdown level1 summary"><p>UIが最前面に来た際に実行されます。オープン処理かどうかは引数で確認できます。
+デフォルトでは可能であれば開くアニメーションを実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnFrontTransition(bool open)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">open</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L162">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnPreBehind_" data-uid="ILib.UI.UIControl`1.OnPreBehind*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnPreBehind" data-uid="ILib.UI.UIControl`1.OnPreBehind">OnPreBehind()</h4>
+  <div class="markdown level1 summary"><p>UIが最前面から後ろになった際に実行されます。Close時は実行されません。
+アニメーションよりも早くに実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnPreBehind()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L108">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnPreClose_" data-uid="ILib.UI.UIControl`1.OnPreClose*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnPreClose" data-uid="ILib.UI.UIControl`1.OnPreClose">OnPreClose()</h4>
+  <div class="markdown level1 summary"><p>UIを削除する直前に実行されます。
+非表示のアニメーションよりも前に実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnPreClose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L129">View Source</a>
+  </span>
+  <a id="ILib_UI_UIControl_1_OnPreFront_" data-uid="ILib.UI.UIControl`1.OnPreFront*"></a>
+  <h4 id="ILib_UI_UIControl_1_OnPreFront_System_Boolean_" data-uid="ILib.UI.UIControl`1.OnPreFront(System.Boolean)">OnPreFront(Boolean)</h4>
+  <div class="markdown level1 summary"><p>UIが最前面に来た際に実行されます。オープン処理かどうかは引数で確認できます。
+アニメーションよりも早くに実行されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnPreFront(bool open)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">open</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L72">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L91">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_ILib_UI_IControl_OnBehind_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind*"></a>
   <h4 id="ILib_UI_UIControl_1_ILib_UI_IControl_OnBehind" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind">IControl.OnBehind()</h4>
@@ -489,7 +727,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L68">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L75">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_ILib_UI_IControl_OnClose_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnClose*"></a>
   <h4 id="ILib_UI_UIControl_1_ILib_UI_IControl_OnClose" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnClose">IControl.OnClose()</h4>
@@ -516,7 +754,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L62">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L64">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_ILib_UI_IControl_OnCreated_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnCreated*"></a>
   <h4 id="ILib_UI_UIControl_1_ILib_UI_IControl_OnCreated_System_Object_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnCreated(System.Object)">IControl.OnCreated(Object)</h4>
@@ -560,7 +798,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L70">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L83">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_ILib_UI_IControl_OnFront_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnFront*"></a>
   <h4 id="ILib_UI_UIControl_1_ILib_UI_IControl_OnFront_System_Boolean_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#OnFront(System.Boolean)">IControl.OnFront(Boolean)</h4>
@@ -604,7 +842,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L42">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/UIControl.cs/#L44">View Source</a>
   </span>
   <a id="ILib_UI_UIControl_1_ILib_UI_IControl_SetController_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#SetController*"></a>
   <h4 id="ILib_UI_UIControl_1_ILib_UI_IControl_SetController_ILib_UI_IController_" data-uid="ILib.UI.UIControl`1.ILib#UI#IControl#SetController(ILib.UI.IController)">IControl.SetController(IController)</h4>
