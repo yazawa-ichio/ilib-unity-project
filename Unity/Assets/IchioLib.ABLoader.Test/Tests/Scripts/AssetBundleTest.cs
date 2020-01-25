@@ -7,6 +7,7 @@ using UnityEngine.TestTools;
 using ILib.AssetBundles;
 using UnityEngine.Assertions;
 using ABLog = ILib.AssetBundles.Logger.Log;
+using System.Threading.Tasks;
 
 #if UNITY_EDITOR
 public class EditorTest : AssetBundleTest
@@ -738,4 +739,173 @@ public abstract class AssetBundleTest
 		yield return new WaitUntil(() => ret);
 		Assert.AreEqual(length, 6);
 	}
+
+	IEnumerator TaskTest(System.Func<Task> action)
+	{
+		yield return Init();
+		try
+		{
+			var task = action();
+			while (!task.IsCompleted)
+			{
+				yield return null;
+			}
+			if (task.IsFaulted)
+			{
+				throw task.Exception;
+			}
+		}
+		finally
+		{
+			ABLoader.Unload();
+		}
+	}
+
+	[UnityTest]
+	public IEnumerator LoadTest16() => TaskTest(async () =>
+	{
+		//ロード出来た
+		var c = await ABLoader.Load("materials/testmaterial");
+		Assert.IsNotNull(c);
+		//コンテナからの非同期ロードも待てる
+		var mat = await c.LoadAssetAsync<Material>("TestMaterial");
+		Assert.IsNotNull(mat);
+
+		//個別のアセットのロード
+		var sprite = await ABLoader.LoadAsset<Sprite>("sprites/circle", "Circle");
+		Assert.IsNotNull(sprite);
+	});
+
+
+	[UnityTest]
+	public IEnumerator LoadTest17() => TaskTest(async () =>
+	{
+		//エディタモードではテストしない
+		if (IsEditorTest()) return;
+
+		//エラーのリトライのハンドリング
+		System.Exception error = null;
+		var loading = ABLoader.Load("dummy");
+		loading.MaxRetryCount = 10;
+		int retry = 0;
+		loading.RetryHandle = (x, err, handle) =>
+		{
+			//リトライのフック
+			retry++;
+			handle(true);
+		};
+		loading.ErrorHandle += x => error = x;
+
+		//Errorを無視しても完了する
+		loading.IgnoreError = true;
+		loading.ForceAwaiterCompleteIfError = true;
+
+		try
+		{
+			//一旦、エラーを無視する
+			LogAssert.ignoreFailingMessages = true;
+			var c = await loading;
+			LogAssert.ignoreFailingMessages = false;
+			Assert.IsNull(c);
+			Assert.IsNull(error);
+			//エディタではリトライのエラーはないので
+			Assert.AreEqual(retry, loading.MaxRetryCount);
+
+		}
+		finally
+		{
+			LogAssert.ignoreFailingMessages = false;
+		}
+
+	});
+
+	[UnityTest]
+	public IEnumerator LoadTest18() => TaskTest(async () =>
+	{
+		//エディタモードではテストしない
+		if (IsEditorTest()) return;
+	
+		//エラーのハンドリング
+		System.Exception catchError = null;
+		try
+		{
+			LogAssert.ignoreFailingMessages = true;
+			await ABLoader.Load("dummy");
+		}
+		catch (System.Exception ex)
+		{
+			catchError = ex;
+		}
+		finally
+		{
+			LogAssert.ignoreFailingMessages = false;
+		}
+		Assert.IsNotNull(catchError);
+		catchError = null;
+
+		try
+		{
+			LogAssert.ignoreFailingMessages = true;
+			System.Exception handleError = null;
+			
+			var loading = ABLoader.Load("dummy");
+			loading.ErrorHandle = x => handleError = x;
+			var now = System.DateTime.Now;
+			try
+			{
+				await (await Task.WhenAny(loading, Task.Delay(2000)));
+			}
+			catch (System.Exception ex)
+			{
+				catchError = ex;
+			}
+
+			LogAssert.ignoreFailingMessages = false;
+
+			//ErrorHandleが指定された場合は、ErrorHandleが優先されawaitでエラーは発生しない
+			Assert.IsNull(catchError);
+			Assert.IsTrue(System.TimeSpan.FromMilliseconds(1500) < (System.DateTime.Now - now));
+			Assert.IsNotNull(handleError);
+			Assert.IsNotNull(loading.Error);
+
+		}
+		finally
+		{
+			LogAssert.ignoreFailingMessages = false;
+		}
+
+		try
+		{
+			LogAssert.ignoreFailingMessages = true;
+			System.Exception handleError = null;
+
+			var loading = ABLoader.Load("dummy");
+			loading.ErrorHandle = x => handleError = x;
+			loading.ForceAwaiterCompleteIfError = true;
+			var now = System.DateTime.Now;
+			try
+			{
+				await (await Task.WhenAny(loading, Task.Delay(2000)));
+			}
+			catch (System.Exception ex)
+			{
+				catchError = ex;
+			}
+
+			LogAssert.ignoreFailingMessages = false;
+
+			//ForceAwaiterCompleteIfErrorが有効な場合はどちらも発火される
+			Assert.IsTrue(System.TimeSpan.FromMilliseconds(500) > (System.DateTime.Now - now));
+			Assert.IsNotNull(catchError);
+			Assert.IsNotNull(handleError);
+			Assert.IsNotNull(loading.Error);
+
+		}
+		finally
+		{
+			LogAssert.ignoreFailingMessages = false;
+		}
+
+	});
+
 }
