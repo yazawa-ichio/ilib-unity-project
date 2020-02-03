@@ -90,21 +90,17 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Messenger</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="ILib.MVVM.IMessenger.html">IMessenger</a></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.html">ILib.MVVM</a></h6>
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_Messenger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Messenger : IMessenger</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Messenger</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L9">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L12">View Source</a>
   </span>
   <a id="ILib_MVVM_Messenger_Default_" data-uid="ILib.MVVM.Messenger.Default*"></a>
   <h4 id="ILib_MVVM_Messenger_Default" data-uid="ILib.MVVM.Messenger.Default">Default</h4>
@@ -112,7 +108,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IMessenger Default { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Messenger Default { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,7 +120,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.MVVM.IMessenger.html">IMessenger</a></td>
+        <td><a class="xref" href="ILib.MVVM.Messenger.html">Messenger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L17">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Hook_" data-uid="ILib.MVVM.Messenger.Hook*"></a>
+  <h4 id="ILib_MVVM_Messenger_Hook" data-uid="ILib.MVVM.Messenger.Hook">Hook</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMessengerHook Hook { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.IMessengerHook.html">IMessengerHook</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -133,7 +156,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L144">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L163">View Source</a>
   </span>
   <a id="ILib_MVVM_Messenger_Refresh_" data-uid="ILib.MVVM.Messenger.Refresh*"></a>
   <h4 id="ILib_MVVM_Messenger_Refresh" data-uid="ILib.MVVM.Messenger.Refresh">Refresh()</h4>
@@ -145,15 +168,54 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L37">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L44">View Source</a>
   </span>
   <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
-  <h4 id="ILib_MVVM_Messenger_Register__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.Messenger.Register``1(System.Object,System.String,System.Action{``0})">Register&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
+  <h4 id="ILib_MVVM_Messenger_Register_System_Object_System_Object_System_Action_" data-uid="ILib.MVVM.Messenger.Register(System.Object,System.Object,System.Action)">Register(Object, Object, Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(object recipient, string name, Action&lt;T&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Register(object recipient, object eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L34">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
+  <h4 id="ILib_MVVM_Messenger_Register_System_Object_System_String_System_Action_" data-uid="ILib.MVVM.Messenger.Register(System.Object,System.String,System.Action)">Register(Object, String, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register(object recipient, string eventName, Action action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,7 +234,100 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L39">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
+  <h4 id="ILib_MVVM_Messenger_Register__1_System_Object___0_System_Action_" data-uid="ILib.MVVM.Messenger.Register``1(System.Object,``0,System.Action)">Register&lt;T&gt;(Object, T, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(object recipient, T eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L29">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
+  <h4 id="ILib_MVVM_Messenger_Register__1_System_Object_System_Object_System_Action___0__" data-uid="ILib.MVVM.Messenger.Register``1(System.Object,System.Object,System.Action{``0})">Register&lt;T&gt;(Object, Object, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(object recipient, object eventName, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">eventName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -199,15 +354,156 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L120">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L19">View Source</a>
   </span>
-  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
-  <h4 id="ILib_MVVM_Messenger_Send__1_System_String___0_" data-uid="ILib.MVVM.Messenger.Send``1(System.String,``0)">Send&lt;T&gt;(String, T)</h4>
+  <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
+  <h4 id="ILib_MVVM_Messenger_Register__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.Messenger.Register``1(System.Object,System.String,System.Action{``0})">Register&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(string name, T message)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(object recipient, string eventName, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L24">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Register_" data-uid="ILib.MVVM.Messenger.Register*"></a>
+  <h4 id="ILib_MVVM_Messenger_Register__2_System_Object___0_System_Action___1__" data-uid="ILib.MVVM.Messenger.Register``2(System.Object,``0,System.Action{``1})">Register&lt;T, U&gt;(Object, T, Action&lt;U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register&lt;T, U&gt;(object recipient, T eventName, Action&lt;U&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;U&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L79">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_RegisterHandle_" data-uid="ILib.MVVM.Messenger.RegisterHandle*"></a>
+  <h4 id="ILib_MVVM_Messenger_RegisterHandle_System_Object_" data-uid="ILib.MVVM.Messenger.RegisterHandle(System.Object)">RegisterHandle(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterHandle(object target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L151">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
+  <h4 id="ILib_MVVM_Messenger_Send_System_String_" data-uid="ILib.MVVM.Messenger.Send(System.String)">Send(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(string eventName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +517,80 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L157">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
+  <h4 id="ILib_MVVM_Messenger_Send__1___0_" data-uid="ILib.MVVM.Messenger.Send``1(``0)">Send&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(T eventName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L145">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
+  <h4 id="ILib_MVVM_Messenger_Send__1_System_Object___0_" data-uid="ILib.MVVM.Messenger.Send``1(System.Object,``0)">Send&lt;T&gt;(Object, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(object eventName, T message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">eventName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -248,7 +617,109 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L93">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L133">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
+  <h4 id="ILib_MVVM_Messenger_Send__1_System_String___0_" data-uid="ILib.MVVM.Messenger.Send``1(System.String,``0)">Send&lt;T&gt;(String, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(string eventName, T message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L139">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Send_" data-uid="ILib.MVVM.Messenger.Send*"></a>
+  <h4 id="ILib_MVVM_Messenger_Send__2___0___1_" data-uid="ILib.MVVM.Messenger.Send``2(``0,``1)">Send&lt;T, U&gt;(T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T, U&gt;(T eventName, U message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L121">View Source</a>
   </span>
   <a id="ILib_MVVM_Messenger_Unregister_" data-uid="ILib.MVVM.Messenger.Unregister*"></a>
   <h4 id="ILib_MVVM_Messenger_Unregister_System_Object_" data-uid="ILib.MVVM.Messenger.Unregister(System.Object)">Unregister(Object)</h4>
@@ -277,15 +748,15 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L49">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L105">View Source</a>
   </span>
   <a id="ILib_MVVM_Messenger_Unregister_" data-uid="ILib.MVVM.Messenger.Unregister*"></a>
-  <h4 id="ILib_MVVM_Messenger_Unregister__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.Messenger.Unregister``1(System.Object,System.String,System.Action{``0})">Unregister&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
+  <h4 id="ILib_MVVM_Messenger_Unregister_System_Object_System_String_System_Action_" data-uid="ILib.MVVM.Messenger.Unregister(System.Object,System.String,System.Action)">Unregister(Object, String, Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unregister&lt;T&gt;(object recipient, string name, Action&lt;T&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Unregister(object recipient, string eventName, Action action)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -304,7 +775,100 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L116">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Unregister_" data-uid="ILib.MVVM.Messenger.Unregister*"></a>
+  <h4 id="ILib_MVVM_Messenger_Unregister__1_System_Object___0_System_Action_" data-uid="ILib.MVVM.Messenger.Unregister``1(System.Object,``0,System.Action)">Unregister&lt;T&gt;(Object, T, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister&lt;T&gt;(object recipient, T eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L89">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Unregister_" data-uid="ILib.MVVM.Messenger.Unregister*"></a>
+  <h4 id="ILib_MVVM_Messenger_Unregister__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.Messenger.Unregister``1(System.Object,System.String,System.Action{``0})">Unregister&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister&lt;T&gt;(object recipient, string eventName, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -329,10 +893,496 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="ILib.MVVM.IMessenger.html">IMessenger</a>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L100">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_Unregister_" data-uid="ILib.MVVM.Messenger.Unregister*"></a>
+  <h4 id="ILib_MVVM_Messenger_Unregister__2_System_Object___0_System_Action___1__" data-uid="ILib.MVVM.Messenger.Unregister``2(System.Object,``0,System.Action{``1})">Unregister&lt;T, U&gt;(Object, T, Action&lt;U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister&lt;T, U&gt;(object recipient, T eventName, Action&lt;U&gt; action)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;U&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L74">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister_System_Object_System_Object_System_Action_" data-uid="ILib.MVVM.Messenger.WeakRegister(System.Object,System.Object,System.Action)">WeakRegister(Object, Object, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister(object recipient, object eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L64">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister_System_Object_System_String_System_Action_" data-uid="ILib.MVVM.Messenger.WeakRegister(System.Object,System.String,System.Action)">WeakRegister(Object, String, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister(object recipient, string eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L69">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister__1_System_Object___0_System_Action_" data-uid="ILib.MVVM.Messenger.WeakRegister``1(System.Object,``0,System.Action)">WeakRegister&lt;T&gt;(Object, T, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister&lt;T&gt;(object recipient, T eventName, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L59">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister__1_System_Object_System_Object_System_Action___0__" data-uid="ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.Object,System.Action{``0})">WeakRegister&lt;T&gt;(Object, Object, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister&lt;T&gt;(object recipient, object eventName, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L49">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.String,System.Action{``0})">WeakRegister&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister&lt;T&gt;(object recipient, string eventName, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L54">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegister_" data-uid="ILib.MVVM.Messenger.WeakRegister*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegister__2_System_Object___0_System_Action___1__" data-uid="ILib.MVVM.Messenger.WeakRegister``2(System.Object,``0,System.Action{``1})">WeakRegister&lt;T, U&gt;(Object, T, Action&lt;U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegister&lt;T, U&gt;(object recipient, T eventName, Action&lt;U&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">recipient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;U&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L84">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Messenger_WeakRegisterHandle_" data-uid="ILib.MVVM.Messenger.WeakRegisterHandle*"></a>
+  <h4 id="ILib_MVVM_Messenger_WeakRegisterHandle_System_Object_" data-uid="ILib.MVVM.Messenger.WeakRegisterHandle(System.Object)">WeakRegisterHandle(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceHandle WeakRegisterHandle(object target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Message.ReferenceHandle.html">ReferenceHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -341,7 +1391,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/Messenger.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

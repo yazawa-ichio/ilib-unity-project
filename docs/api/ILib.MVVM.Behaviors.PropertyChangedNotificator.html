@@ -94,18 +94,19 @@
     <h5>Implements</h5>
     <div><a class="xref" href="ILib.MVVM.IBindable.html">IBindable</a></div>
     <div><a class="xref" href="ILib.MVVM.IViewElement.html">IViewElement</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.Behaviors.html">ILib.MVVM.Behaviors</a></h6>
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PropertyChangedNotificator : IBindable, IViewElement</code></pre>
+    <pre><code class="lang-csharp hljs">public class PropertyChangedNotificator : IBindable, IViewElement, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L40">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L25">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_System_String_System_Func_System_Boolean__" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor(System.String,System.Func{System.Boolean})">PropertyChangedNotificator(String, Func&lt;Boolean&gt;)</h4>
@@ -142,40 +143,6 @@
     <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L19">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor*"></a>
-  <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_System_String_System_Object_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor(System.String,System.Object)">PropertyChangedNotificator(String, Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PropertyChangedNotificator(string path, object owner)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">owner</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L34">View Source</a>
-  </span>
-  <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator__ctor_System_String_UnityEngine_Object_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.#ctor(System.String,UnityEngine.Object)">PropertyChangedNotificator(String, Object)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -201,34 +168,6 @@
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">owner</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L15">View Source</a>
-  </span>
-  <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_m_Hash" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.m_Hash">m_Hash</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int m_Hash</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -289,11 +228,38 @@
       </tr>
     </tbody>
   </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L14">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_Value_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.Value*"></a>
+  <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_Value" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L46">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L31">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_BindType_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.BindType*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_BindType" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.BindType">BindType()</h4>
@@ -314,6 +280,45 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L59">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_Dispose_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.Dispose*"></a>
+  <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_Dispose" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L54">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_GetConverter_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.GetConverter*"></a>
+  <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_GetConverter" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.GetConverter">GetConverter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConverter GetConverter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.IConverter.html">IConverter</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -350,7 +355,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L51">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L36">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_Bind_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#Bind*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_Bind_ILib_MVVM_IBindingProperty_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#Bind(ILib.MVVM.IBindingProperty)">IBindable.Bind(IBindingProperty)</h4>
@@ -379,7 +384,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L61">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L46">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_TryUpdate_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#TryUpdate*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_TryUpdate" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#TryUpdate">IBindable.TryUpdate()</h4>
@@ -391,7 +396,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L56">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Behavior/PropertyChangedNotificator.cs/#L41">View Source</a>
   </span>
   <a id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_Unbind_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#Unbind*"></a>
   <h4 id="ILib_MVVM_Behaviors_PropertyChangedNotificator_ILib_MVVM_IBindable_Unbind_ILib_MVVM_IBindingProperty_" data-uid="ILib.MVVM.Behaviors.PropertyChangedNotificator.ILib#MVVM#IBindable#Unbind(ILib.MVVM.IBindingProperty)">IBindable.Unbind(IBindingProperty)</h4>
@@ -424,6 +429,9 @@
   </div>
   <div>
       <a class="xref" href="ILib.MVVM.IViewElement.html">IViewElement</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
 </article>
           </div>

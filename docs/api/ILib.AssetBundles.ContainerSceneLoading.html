@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IMessenger
+    <title>Class ContainerSceneLoading
    | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IMessenger
+    <meta name="title" content="Class ContainerSceneLoading
    | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,44 +78,110 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ILib.MVVM.IMessenger">
+            <article class="content wrap" id="_content" data-uid="ILib.AssetBundles.ContainerSceneLoading">
   
   
-  <h1 id="ILib_MVVM_IMessenger" data-uid="ILib.MVVM.IMessenger" class="text-break">Interface IMessenger
+  <h1 id="ILib_AssetBundles_ContainerSceneLoading" data-uid="ILib.AssetBundles.ContainerSceneLoading" class="text-break">Class ContainerSceneLoading
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.html">ILib.MVVM</a></h6>
-  <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
-  <h5 id="ILib_MVVM_IMessenger_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMessenger</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ContainerSceneLoading</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.icriticalnotifycompletion">ICriticalNotifyCompletion</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.inotifycompletion">INotifyCompletion</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.AssetBundles.html">ILib.AssetBundles</a></h6>
+  <h6><strong>Assembly</strong>: ILib.AssetBundles.dll</h6>
+  <h5 id="ILib_AssetBundles_ContainerSceneLoading_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ContainerSceneLoading : ICriticalNotifyCompletion, INotifyCompletion</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L8">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ContainerSceneLoading_IsCompleted_" data-uid="ILib.AssetBundles.ContainerSceneLoading.IsCompleted*"></a>
+  <h4 id="ILib_AssetBundles_ContainerSceneLoading_IsCompleted" data-uid="ILib.AssetBundles.ContainerSceneLoading.IsCompleted">IsCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L9">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L39">View Source</a>
   </span>
-  <a id="ILib_MVVM_IMessenger_Refresh_" data-uid="ILib.MVVM.IMessenger.Refresh*"></a>
-  <h4 id="ILib_MVVM_IMessenger_Refresh" data-uid="ILib.MVVM.IMessenger.Refresh">Refresh()</h4>
+  <a id="ILib_AssetBundles_ContainerSceneLoading_GetAwaiter_" data-uid="ILib.AssetBundles.ContainerSceneLoading.GetAwaiter*"></a>
+  <h4 id="ILib_AssetBundles_ContainerSceneLoading_GetAwaiter" data-uid="ILib.AssetBundles.ContainerSceneLoading.GetAwaiter">GetAwaiter()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Refresh()</code></pre>
+    <pre><code class="lang-csharp hljs">public ContainerSceneLoading GetAwaiter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.ContainerSceneLoading.html">ContainerSceneLoading</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L35">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ContainerSceneLoading_GetResult_" data-uid="ILib.AssetBundles.ContainerSceneLoading.GetResult*"></a>
+  <h4 id="ILib_AssetBundles_ContainerSceneLoading_GetResult" data-uid="ILib.AssetBundles.ContainerSceneLoading.GetResult">GetResult()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetResult()</code></pre>
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L5">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L18">View Source</a>
   </span>
-  <a id="ILib_MVVM_IMessenger_Register_" data-uid="ILib.MVVM.IMessenger.Register*"></a>
-  <h4 id="ILib_MVVM_IMessenger_Register__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.IMessenger.Register``1(System.Object,System.String,System.Action{``0})">Register&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
+  <a id="ILib_AssetBundles_ContainerSceneLoading_OnCompleted_" data-uid="ILib.AssetBundles.ContainerSceneLoading.OnCompleted*"></a>
+  <h4 id="ILib_AssetBundles_ContainerSceneLoading_OnCompleted_System_Action_" data-uid="ILib.AssetBundles.ContainerSceneLoading.OnCompleted(System.Action)">OnCompleted(Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Register&lt;T&gt;(object recipient, string name, Action&lt;T&gt; action)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnCompleted(Action continuation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,48 +194,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">recipient</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">continuation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L8">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L30">View Source</a>
   </span>
-  <a id="ILib_MVVM_IMessenger_Send_" data-uid="ILib.MVVM.IMessenger.Send*"></a>
-  <h4 id="ILib_MVVM_IMessenger_Send__1_System_String___0_" data-uid="ILib.MVVM.IMessenger.Send``1(System.String,``0)">Send&lt;T&gt;(String, T)</h4>
+  <a id="ILib_AssetBundles_ContainerSceneLoading_UnsafeOnCompleted_" data-uid="ILib.AssetBundles.ContainerSceneLoading.UnsafeOnCompleted*"></a>
+  <h4 id="ILib_AssetBundles_ContainerSceneLoading_UnsafeOnCompleted_System_Action_" data-uid="ILib.AssetBundles.ContainerSceneLoading.UnsafeOnCompleted(System.Action)">UnsafeOnCompleted(Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Send&lt;T&gt;(string name, T message)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UnsafeOnCompleted(Action continuation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,115 +223,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">message</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">continuation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L7">View Source</a>
-  </span>
-  <a id="ILib_MVVM_IMessenger_Unregister_" data-uid="ILib.MVVM.IMessenger.Unregister*"></a>
-  <h4 id="ILib_MVVM_IMessenger_Unregister_System_Object_" data-uid="ILib.MVVM.IMessenger.Unregister(System.Object)">Unregister(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Unregister(object recipient)</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.icriticalnotifycompletion">System.Runtime.CompilerServices.ICriticalNotifyCompletion</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">recipient</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L6">View Source</a>
-  </span>
-  <a id="ILib_MVVM_IMessenger_Unregister_" data-uid="ILib.MVVM.IMessenger.Unregister*"></a>
-  <h4 id="ILib_MVVM_IMessenger_Unregister__1_System_Object_System_String_System_Action___0__" data-uid="ILib.MVVM.IMessenger.Unregister``1(System.Object,System.String,System.Action{``0})">Unregister&lt;T&gt;(Object, String, Action&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Unregister&lt;T&gt;(object recipient, string name, Action&lt;T&gt; action)</code></pre>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.inotifycompletion">System.Runtime.CompilerServices.INotifyCompletion</a>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">recipient</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -299,7 +244,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Messenger/IMessenger.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/ContainerSceneLoading.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

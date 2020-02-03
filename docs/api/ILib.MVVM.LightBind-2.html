@@ -109,7 +109,8 @@
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_LightBind_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class LightBind&lt;TValue, UTarget&gt; : ILightBind, IBindable&lt;TValue&gt;, IBindable, IViewElement where UTarget : Object</code></pre>
+    <pre><code class="lang-csharp hljs">[Preserve]
+public abstract class LightBind&lt;TValue, UTarget&gt; : ILightBind, IBindable&lt;TValue&gt;, IBindable, IViewElement where UTarget : Object</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,7 +135,59 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L21">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L25">View Source</a>
+  </span>
+  <h4 id="ILib_MVVM_LightBind_2_m_Converter" data-uid="ILib.MVVM.LightBind`2.m_Converter">m_Converter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IConverter m_Converter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.IConverter.html">IConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L24">View Source</a>
+  </span>
+  <h4 id="ILib_MVVM_LightBind_2_m_ForceUpdate" data-uid="ILib.MVVM.LightBind`2.m_ForceUpdate">m_ForceUpdate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ForceUpdate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L23">View Source</a>
   </span>
   <h4 id="ILib_MVVM_LightBind_2_m_Hash" data-uid="ILib.MVVM.LightBind`2.m_Hash">m_Hash</h4>
   <div class="markdown level1 summary"></div>
@@ -160,7 +213,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L20">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L22">View Source</a>
   </span>
   <h4 id="ILib_MVVM_LightBind_2_m_Target" data-uid="ILib.MVVM.LightBind`2.m_Target">m_Target</h4>
   <div class="markdown level1 summary"></div>
@@ -188,7 +241,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L17">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L19">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_IsActive_" data-uid="ILib.MVVM.LightBind`2.IsActive*"></a>
   <h4 id="ILib_MVVM_LightBind_2_IsActive" data-uid="ILib.MVVM.LightBind`2.IsActive">IsActive</h4>
@@ -215,7 +268,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L16">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L18">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_Path_" data-uid="ILib.MVVM.LightBind`2.Path*"></a>
   <h4 id="ILib_MVVM_LightBind_2_Path" data-uid="ILib.MVVM.LightBind`2.Path">Path</h4>
@@ -242,7 +295,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L23">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L27">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_Value_" data-uid="ILib.MVVM.LightBind`2.Value*"></a>
   <h4 id="ILib_MVVM_LightBind_2_Value" data-uid="ILib.MVVM.LightBind`2.Value">Value</h4>
@@ -271,7 +324,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L32">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L36">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_BindType_" data-uid="ILib.MVVM.LightBind`2.BindType*"></a>
   <h4 id="ILib_MVVM_LightBind_2_BindType" data-uid="ILib.MVVM.LightBind`2.BindType">BindType()</h4>
@@ -298,7 +351,34 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L55">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L57">View Source</a>
+  </span>
+  <a id="ILib_MVVM_LightBind_2_GetConverter_" data-uid="ILib.MVVM.LightBind`2.GetConverter*"></a>
+  <h4 id="ILib_MVVM_LightBind_2_GetConverter" data-uid="ILib.MVVM.LightBind`2.GetConverter">GetConverter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConverter GetConverter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.IConverter.html">IConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L49">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_Init_" data-uid="ILib.MVVM.LightBind`2.Init*"></a>
   <h4 id="ILib_MVVM_LightBind_2_Init_UnityEngine_Object_System_String_" data-uid="ILib.MVVM.LightBind`2.Init(UnityEngine.Object,System.String)">Init(Object, String)</h4>
@@ -344,7 +424,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L86">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L91">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_OnUnbind_" data-uid="ILib.MVVM.LightBind`2.OnUnbind*"></a>
   <h4 id="ILib_MVVM_LightBind_2_OnUnbind" data-uid="ILib.MVVM.LightBind`2.OnUnbind">OnUnbind()</h4>
@@ -356,15 +436,15 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L39">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L41">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_Set_" data-uid="ILib.MVVM.LightBind`2.Set*"></a>
-  <h4 id="ILib_MVVM_LightBind_2_Set__0_System_Boolean_" data-uid="ILib.MVVM.LightBind`2.Set(`0,System.Boolean)">Set(TValue, Boolean)</h4>
+  <h4 id="ILib_MVVM_LightBind_2_Set__0_" data-uid="ILib.MVVM.LightBind`2.Set(`0)">Set(TValue)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Set(TValue val, bool update = false)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Set(TValue val)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -381,16 +461,23 @@
         <td><span class="parametername">val</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">update</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L96">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L98">View Source</a>
+  </span>
+  <a id="ILib_MVVM_LightBind_2_TryUpdate_" data-uid="ILib.MVVM.LightBind`2.TryUpdate*"></a>
+  <h4 id="ILib_MVVM_LightBind_2_TryUpdate" data-uid="ILib.MVVM.LightBind`2.TryUpdate">TryUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TryUpdate()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L110">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_UpdateValue_" data-uid="ILib.MVVM.LightBind`2.UpdateValue*"></a>
   <h4 id="ILib_MVVM_LightBind_2_UpdateValue__0_" data-uid="ILib.MVVM.LightBind`2.UpdateValue(`0)">UpdateValue(TValue)</h4>
@@ -450,7 +537,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L88">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L93">View Source</a>
   </span>
   <a id="ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TryUpdate_" data-uid="ILib.MVVM.LightBind`2.ILib#MVVM#IBindable#TryUpdate*"></a>
   <h4 id="ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TryUpdate" data-uid="ILib.MVVM.LightBind`2.ILib#MVVM#IBindable#TryUpdate">IBindable.TryUpdate()</h4>
@@ -489,35 +576,6 @@
       </tr>
     </tbody>
   </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L72">View Source</a>
-  </span>
-  <a id="ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TValue__Bind_" data-uid="ILib.MVVM.LightBind`2.ILib#MVVM#IBindable{TValue}#Bind*"></a>
-  <h4 id="ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TValue__Bind_ILib_MVVM_IBindingProperty__0__" data-uid="ILib.MVVM.LightBind`2.ILib#MVVM#IBindable{TValue}#Bind(ILib.MVVM.IBindingProperty{`0})">IBindable&lt;TValue&gt;.Bind(IBindingProperty&lt;TValue&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void IBindable&lt;TValue&gt;.Bind(IBindingProperty&lt;TValue&gt; prop)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.MVVM.IBindingProperty-1.html">IBindingProperty</a>&lt;TValue&gt;</td>
-        <td><span class="parametername">prop</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="ILib.MVVM.ILightBind.html">ILightBind</a>
@@ -539,7 +597,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBind.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

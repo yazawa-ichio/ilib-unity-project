@@ -1,0 +1,855 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Loading&lt;T&gt;
+   | Yazawa Ichio Unity Package Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Loading&lt;T&gt;
+   | Yazawa Ichio Unity Package Document ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ILib.AssetBundles.Loading`1">
+  
+  
+  <h1 id="ILib_AssetBundles_Loading_1" data-uid="ILib.AssetBundles.Loading`1" class="text-break">Class Loading&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Loading&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="ILib.AssetBundles.AssetLoading-1.html">AssetLoading&lt;T&gt;</a></div>
+      <div class="level2"><a class="xref" href="ILib.AssetBundles.BundleLoading.html">BundleLoading</a></div>
+      <div class="level2"><a class="xref" href="ILib.AssetBundles.SceneLoading.html">SceneLoading</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ILib.AssetBundles.ILoading.html">ILoading</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ILib.AssetBundles.html">ILib.AssetBundles</a></h6>
+  <h6><strong>Assembly</strong>: ILib.AssetBundles.dll</h6>
+  <h5 id="ILib_AssetBundles_Loading_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Loading&lt;T&gt; : ILoading, IDisposable, IEnumerator</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L74">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1__ctor_" data-uid="ILib.AssetBundles.Loading`1.#ctor*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1__ctor_System_String_System_String_" data-uid="ILib.AssetBundles.Loading`1.#ctor(System.String,System.String)">Loading(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Loading(string bundleName, string assetName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">bundleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">assetName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L40">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_AssetName_" data-uid="ILib.AssetBundles.Loading`1.AssetName*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_AssetName" data-uid="ILib.AssetBundles.Loading`1.AssetName">AssetName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AssetName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L38">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_BundleName_" data-uid="ILib.AssetBundles.Loading`1.BundleName*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_BundleName" data-uid="ILib.AssetBundles.Loading`1.BundleName">BundleName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BundleName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L65">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_Disposed_" data-uid="ILib.AssetBundles.Loading`1.Disposed*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_Disposed" data-uid="ILib.AssetBundles.Loading`1.Disposed">Disposed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Disposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L67">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_DoRequested_" data-uid="ILib.AssetBundles.Loading`1.DoRequested*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_DoRequested" data-uid="ILib.AssetBundles.Loading`1.DoRequested">DoRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L54">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_Error_" data-uid="ILib.AssetBundles.Loading`1.Error*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_Error" data-uid="ILib.AssetBundles.Loading`1.Error">Error</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception Error { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L50">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_ErrorHandle_" data-uid="ILib.AssetBundles.Loading`1.ErrorHandle*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_ErrorHandle" data-uid="ILib.AssetBundles.Loading`1.ErrorHandle">ErrorHandle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Exception&gt; ErrorHandle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L44">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_ForceAwaiterCompleteIfError_" data-uid="ILib.AssetBundles.Loading`1.ForceAwaiterCompleteIfError*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_ForceAwaiterCompleteIfError" data-uid="ILib.AssetBundles.Loading`1.ForceAwaiterCompleteIfError">ForceAwaiterCompleteIfError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForceAwaiterCompleteIfError { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L42">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_IgnoreError_" data-uid="ILib.AssetBundles.Loading`1.IgnoreError*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_IgnoreError" data-uid="ILib.AssetBundles.Loading`1.IgnoreError">IgnoreError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreError { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L56">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_IsCompleted_" data-uid="ILib.AssetBundles.Loading`1.IsCompleted*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_IsCompleted" data-uid="ILib.AssetBundles.Loading`1.IsCompleted">IsCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L46">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_MaxRetryCount_" data-uid="ILib.AssetBundles.Loading`1.MaxRetryCount*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_MaxRetryCount" data-uid="ILib.AssetBundles.Loading`1.MaxRetryCount">MaxRetryCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRetryCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L52">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_Result_" data-uid="ILib.AssetBundles.Loading`1.Result*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_Result" data-uid="ILib.AssetBundles.Loading`1.Result">Result</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Result { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L48">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_RetryHandle_" data-uid="ILib.AssetBundles.Loading`1.RetryHandle*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_RetryHandle" data-uid="ILib.AssetBundles.Loading`1.RetryHandle">RetryHandle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;ILoading, Exception, Action&lt;bool&gt;&gt; RetryHandle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="ILib.AssetBundles.ILoading.html">ILoading</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L123">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_Dispose_" data-uid="ILib.AssetBundles.Loading`1.Dispose*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_Dispose" data-uid="ILib.AssetBundles.Loading`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L117">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_GetAwaiter_" data-uid="ILib.AssetBundles.Loading`1.GetAwaiter*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_GetAwaiter" data-uid="ILib.AssetBundles.Loading`1.GetAwaiter">GetAwaiter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoadingAwaiter&lt;T&gt; GetAwaiter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.LoadingAwaiter-1.html">LoadingAwaiter</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L88">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_Load_" data-uid="ILib.AssetBundles.Loading`1.Load*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_Load_System_Action__0__" data-uid="ILib.AssetBundles.Loading`1.Load(System.Action{`0})">Load(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L151">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_OnError_" data-uid="ILib.AssetBundles.Loading`1.OnError*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_OnError_System_Exception_" data-uid="ILib.AssetBundles.Loading`1.OnError(System.Exception)">OnError(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnError(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L142">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_OnSuccess_" data-uid="ILib.AssetBundles.Loading`1.OnSuccess*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_OnSuccess__0_" data-uid="ILib.AssetBundles.Loading`1.OnSuccess(`0)">OnSuccess(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnSuccess(T ret)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">ret</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L140">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_RequestImpl_" data-uid="ILib.AssetBundles.Loading`1.RequestImpl*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_RequestImpl" data-uid="ILib.AssetBundles.Loading`1.RequestImpl">RequestImpl()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RequestImpl()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L80">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_SetConfig_" data-uid="ILib.AssetBundles.Loading`1.SetConfig*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_SetConfig_ILib_AssetBundles_LoadingConfig_" data-uid="ILib.AssetBundles.Loading`1.SetConfig(ILib.AssetBundles.LoadingConfig)">SetConfig(LoadingConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConfig(LoadingConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.LoadingConfig.html">LoadingConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L219">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_ToTask_" data-uid="ILib.AssetBundles.Loading`1.ToTask*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_ToTask" data-uid="ILib.AssetBundles.Loading`1.ToTask">ToTask()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; ToTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L133">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_TryRequest_" data-uid="ILib.AssetBundles.Loading`1.TryRequest*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_TryRequest" data-uid="ILib.AssetBundles.Loading`1.TryRequest">TryRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryRequest()</code></pre>
+  </div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L224">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_op_Implicit_" data-uid="ILib.AssetBundles.Loading`1.op_Implicit*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_op_Implicit_ILib_AssetBundles_Loading__0___System_Threading_Tasks_Task__0_" data-uid="ILib.AssetBundles.Loading`1.op_Implicit(ILib.AssetBundles.Loading{`0})~System.Threading.Tasks.Task{`0}">Implicit(Loading&lt;T&gt; to Task&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Task&lt;T&gt;(Loading&lt;T&gt; loading)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.AssetBundles.Loading-1.html">Loading</a>&lt;T&gt;</td>
+        <td><span class="parametername">loading</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L209">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_Current_" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#Current*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_Current" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#Current">IEnumerator.Current</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object IEnumerator.Current { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L211">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_MoveNext_" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#MoveNext*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_MoveNext" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#MoveNext">IEnumerator.MoveNext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IEnumerator.MoveNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L217">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_Reset_" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#Reset*"></a>
+  <h4 id="ILib_AssetBundles_Loading_1_System_Collections_IEnumerator_Reset" data-uid="ILib.AssetBundles.Loading`1.System#Collections#IEnumerator#Reset">IEnumerator.Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IEnumerator.Reset()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ILib.AssetBundles.ILoading.html">ILoading</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">System.Collections.IEnumerator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/Loading/Loading.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Yazawa Ichio Unity Package Document
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

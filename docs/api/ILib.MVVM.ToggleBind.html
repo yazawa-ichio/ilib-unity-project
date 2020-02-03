@@ -113,25 +113,31 @@
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_m_Hash">LightBind&lt;Boolean, Toggle&gt;.m_Hash</a>
     </div>
     <div>
+      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_m_ForceUpdate">LightBind&lt;Boolean, Toggle&gt;.m_ForceUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_m_Converter">LightBind&lt;Boolean, Toggle&gt;.m_Converter</a>
+    </div>
+    <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_Value">LightBind&lt;Boolean, Toggle&gt;.Value</a>
     </div>
     <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_BindType">LightBind&lt;Boolean, Toggle&gt;.BindType()</a>
     </div>
     <div>
-      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_Set__0_System_Boolean_">LightBind&lt;Boolean, Toggle&gt;.Set(Boolean, Boolean)</a>
+      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_Set__0_">LightBind&lt;Boolean, Toggle&gt;.Set(Boolean)</a>
     </div>
     <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_Init_UnityEngine_Object_System_String_">LightBind&lt;Boolean, Toggle&gt;.Init(Object, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_GetConverter">LightBind&lt;Boolean, Toggle&gt;.GetConverter()</a>
     </div>
     <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_OnInit">LightBind&lt;Boolean, Toggle&gt;.OnInit()</a>
     </div>
     <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_Bind_ILib_MVVM_IBindingProperty_">LightBind&lt;Boolean, Toggle&gt;.IBindable.Bind(IBindingProperty)</a>
-    </div>
-    <div>
-      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TValue__Bind_ILib_MVVM_IBindingProperty__0__">LightBind&lt;Boolean, Toggle&gt;.IBindable&lt;Boolean&gt;.Bind(IBindingProperty&lt;Boolean&gt;)</a>
     </div>
     <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_Unbind_ILib_MVVM_IBindingProperty_">LightBind&lt;Boolean, Toggle&gt;.IBindable.Unbind(IBindingProperty)</a>
@@ -143,6 +149,9 @@
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_ILib_MVVM_IBindable_TryUpdate">LightBind&lt;Boolean, Toggle&gt;.IBindable.TryUpdate()</a>
     </div>
     <div>
+      <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_TryUpdate">LightBind&lt;Boolean, Toggle&gt;.TryUpdate()</a>
+    </div>
+    <div>
       <a class="xref" href="ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_UpdateValue__0_">LightBind&lt;Boolean, Toggle&gt;.UpdateValue(Boolean)</a>
     </div>
   </div>
@@ -150,13 +159,14 @@
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_ToggleBind_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ToggleBind : LightBind&lt;bool, Toggle&gt;, ILightBind, IBindable&lt;bool&gt;, IBindable, IViewElement</code></pre>
+    <pre><code class="lang-csharp hljs">[Preserve]
+public class ToggleBind : LightBind&lt;bool, Toggle&gt;, ILightBind, IBindable&lt;bool&gt;, IBindable, IViewElement</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBinds/ToggleBind.cs/#L10">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBinds/ToggleBind.cs/#L11">View Source</a>
   </span>
   <a id="ILib_MVVM_ToggleBind_OnInit_" data-uid="ILib.MVVM.ToggleBind.OnInit*"></a>
   <h4 id="ILib_MVVM_ToggleBind_OnInit" data-uid="ILib.MVVM.ToggleBind.OnInit">OnInit()</h4>
@@ -170,7 +180,7 @@
   <div><span class="xref">ILib.MVVM.LightBind&lt;System.Boolean, UnityEngine.UI.Toggle&gt;.OnInit()</span></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBinds/ToggleBind.cs/#L15">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/LightBinds/ToggleBind.cs/#L16">View Source</a>
   </span>
   <a id="ILib_MVVM_ToggleBind_UpdateValue_" data-uid="ILib.MVVM.ToggleBind.UpdateValue*"></a>
   <h4 id="ILib_MVVM_ToggleBind_UpdateValue_System_Boolean_" data-uid="ILib.MVVM.ToggleBind.UpdateValue(System.Boolean)">UpdateValue(Boolean)</h4>

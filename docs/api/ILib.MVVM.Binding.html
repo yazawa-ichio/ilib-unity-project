@@ -92,29 +92,30 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="ILib.MVVM.IBinding.html">IBinding</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="ILib.MVVM.IMultipleBindable.html">IMultipleBindable</a></div>
+    <div><a class="xref" href="ILib.MVVM.IViewEventDispatcher.html">IViewEventDispatcher</a></div>
     <div><a class="xref" href="ILib.MVVM.IViewElement.html">IViewElement</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.html">ILib.MVVM</a></h6>
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_Binding_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Binding : IBinding, IMultipleBindable, IViewElement</code></pre>
+    <pre><code class="lang-csharp hljs">public class Binding : IDisposable, IMultipleBindable, IViewEventDispatcher, IViewElement</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L126">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L85">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_Bind_" data-uid="ILib.MVVM.Binding.Bind*"></a>
-  <h4 id="ILib_MVVM_Binding_Bind_ILib_MVVM_IViewEventHandler_" data-uid="ILib.MVVM.Binding.Bind(ILib.MVVM.IViewEventHandler)">Bind(IViewEventHandler)</h4>
+  <h4 id="ILib_MVVM_Binding_Bind_ILib_MVVM_IViewModel_" data-uid="ILib.MVVM.Binding.Bind(ILib.MVVM.IViewModel)">Bind(IViewModel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Bind(IViewEventHandler handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Bind(IViewModel model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,49 +128,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.MVVM.IViewEventHandler.html">IViewEventHandler</a></td>
-        <td><span class="parametername">handler</span></td>
+        <td><a class="xref" href="ILib.MVVM.IViewModel.html">IViewModel</a></td>
+        <td><span class="parametername">model</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L100">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L151">View Source</a>
   </span>
-  <a id="ILib_MVVM_Binding_Bind_" data-uid="ILib.MVVM.Binding.Bind*"></a>
-  <h4 id="ILib_MVVM_Binding_Bind_System_String_ILib_MVVM_IBindingProperty_" data-uid="ILib.MVVM.Binding.Bind(System.String,ILib.MVVM.IBindingProperty)">Bind(String, IBindingProperty)</h4>
+  <a id="ILib_MVVM_Binding_Dispose_" data-uid="ILib.MVVM.Binding.Dispose*"></a>
+  <h4 id="ILib_MVVM_Binding_Dispose" data-uid="ILib.MVVM.Binding.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Bind(string path, IBindingProperty prop)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="ILib.MVVM.IBindingProperty.html">IBindingProperty</a></td>
-        <td><span class="parametername">prop</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L50">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L45">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_Init_" data-uid="ILib.MVVM.Binding.Init*"></a>
   <h4 id="ILib_MVVM_Binding_Init_ILib_MVVM_IViewElement___" data-uid="ILib.MVVM.Binding.Init(ILib.MVVM.IViewElement[])">Init(IViewElement[])</h4>
@@ -198,7 +177,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L81">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L57">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_TryUpdate_" data-uid="ILib.MVVM.Binding.TryUpdate*"></a>
   <h4 id="ILib_MVVM_Binding_TryUpdate" data-uid="ILib.MVVM.Binding.TryUpdate">TryUpdate()</h4>
@@ -210,15 +189,15 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L131">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L96">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_Unbind_" data-uid="ILib.MVVM.Binding.Unbind*"></a>
-  <h4 id="ILib_MVVM_Binding_Unbind_ILib_MVVM_IViewEventHandler_" data-uid="ILib.MVVM.Binding.Unbind(ILib.MVVM.IViewEventHandler)">Unbind(IViewEventHandler)</h4>
+  <h4 id="ILib_MVVM_Binding_Unbind_ILib_MVVM_IViewModel_" data-uid="ILib.MVVM.Binding.Unbind(ILib.MVVM.IViewModel)">Unbind(IViewModel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unbind(IViewEventHandler handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Unbind(IViewModel model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,42 +210,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ILib.MVVM.IViewEventHandler.html">IViewEventHandler</a></td>
-        <td><span class="parametername">handler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L113">View Source</a>
-  </span>
-  <a id="ILib_MVVM_Binding_Unbind_" data-uid="ILib.MVVM.Binding.Unbind*"></a>
-  <h4 id="ILib_MVVM_Binding_Unbind_System_String_ILib_MVVM_IBindingProperty_" data-uid="ILib.MVVM.Binding.Unbind(System.String,ILib.MVVM.IBindingProperty)">Unbind(String, IBindingProperty)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unbind(string path, IBindingProperty prop)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="ILib.MVVM.IBindingProperty.html">IBindingProperty</a></td>
-        <td><span class="parametername">prop</span></td>
+        <td><a class="xref" href="ILib.MVVM.IViewModel.html">IViewModel</a></td>
+        <td><span class="parametername">model</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -275,7 +220,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L48">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L43">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_ILib_MVVM_IMultipleBindable_GetBindables_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IMultipleBindable#GetBindables*"></a>
   <h4 id="ILib_MVVM_Binding_ILib_MVVM_IMultipleBindable_GetBindables" data-uid="ILib.MVVM.Binding.ILib#MVVM#IMultipleBindable#GetBindables">IMultipleBindable.GetBindables()</h4>
@@ -302,7 +247,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L22">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L17">View Source</a>
   </span>
   <a id="ILib_MVVM_Binding_ILib_MVVM_IMultipleBindable_OnPrepare_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IMultipleBindable#OnPrepare*"></a>
   <h4 id="ILib_MVVM_Binding_ILib_MVVM_IMultipleBindable_OnPrepare" data-uid="ILib.MVVM.Binding.ILib#MVVM#IMultipleBindable#OnPrepare">IMultipleBindable.OnPrepare()</h4>
@@ -312,12 +257,93 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void IMultipleBindable.OnPrepare()</code></pre>
   </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L133">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Binding_ILib_MVVM_IViewEventDispatcher_Dispatch_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IViewEventDispatcher#Dispatch*"></a>
+  <h4 id="ILib_MVVM_Binding_ILib_MVVM_IViewEventDispatcher_Dispatch_System_String_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IViewEventDispatcher#Dispatch(System.String)">IViewEventDispatcher.Dispatch(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IViewEventDispatcher.Dispatch(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Binding/Binding.cs/#L142">View Source</a>
+  </span>
+  <a id="ILib_MVVM_Binding_ILib_MVVM_IViewEventDispatcher_Dispatch_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IViewEventDispatcher#Dispatch*"></a>
+  <h4 id="ILib_MVVM_Binding_ILib_MVVM_IViewEventDispatcher_Dispatch__1_System_String___0_" data-uid="ILib.MVVM.Binding.ILib#MVVM#IViewEventDispatcher#Dispatch``1(System.String,``0)">IViewEventDispatcher.Dispatch&lt;T&gt;(String, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IViewEventDispatcher.Dispatch&lt;T&gt;(string name, T args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="ILib.MVVM.IBinding.html">IBinding</a>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
   <div>
       <a class="xref" href="ILib.MVVM.IMultipleBindable.html">IMultipleBindable</a>
+  </div>
+  <div>
+      <a class="xref" href="ILib.MVVM.IViewEventDispatcher.html">IViewEventDispatcher</a>
   </div>
   <div>
       <a class="xref" href="ILib.MVVM.IViewElement.html">IViewElement</a>

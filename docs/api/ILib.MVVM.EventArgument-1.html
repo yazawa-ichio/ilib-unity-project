@@ -94,6 +94,7 @@
     <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
     <div class="level5"><a class="xref" href="ILib.MVVM.EventArgument.html">EventArgument</a></div>
     <div class="level6"><span class="xref">EventArgument&lt;T&gt;</span></div>
+      <div class="level7"><a class="xref" href="ILib.MVVM.CollectionIndexArgument.html">CollectionIndexArgument</a></div>
       <div class="level7"><a class="xref" href="ILib.MVVM.ComponentEnabledArgument.html">ComponentEnabledArgument</a></div>
       <div class="level7"><a class="xref" href="ILib.MVVM.GraphicColorArgument.html">GraphicColorArgument</a></div>
       <div class="level7"><a class="xref" href="ILib.MVVM.InputFieldArgument.html">InputFieldArgument</a></div>
@@ -124,15 +125,15 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L19">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L20">View Source</a>
   </span>
   <a id="ILib_MVVM_EventArgument_1_Do_" data-uid="ILib.MVVM.EventArgument`1.Do*"></a>
-  <h4 id="ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_IViewEventHandler_" data-uid="ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.IViewEventHandler)">Do(String, IViewEventHandler)</h4>
+  <h4 id="ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_IViewEventDispatcher_" data-uid="ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.IViewEventDispatcher)">Do(String, IViewEventDispatcher)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Do(string name, IViewEventHandler handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Do(string name, IViewEventDispatcher handler)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,17 +151,53 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="ILib.MVVM.IViewEventHandler.html">IViewEventHandler</a></td>
+        <td><a class="xref" href="ILib.MVVM.IViewEventDispatcher.html">IViewEventDispatcher</a></td>
         <td><span class="parametername">handler</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IViewEventHandler_">EventArgument.Do(String, IViewEventHandler)</a></div>
+  <div><a class="xref" href="ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IViewEventDispatcher_">EventArgument.Do(String, IViewEventDispatcher)</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L17">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L25">View Source</a>
+  </span>
+  <a id="ILib_MVVM_EventArgument_1_Do_" data-uid="ILib.MVVM.EventArgument`1.Do*"></a>
+  <h4 id="ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_Messenger_" data-uid="ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.Messenger)">Do(String, Messenger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Do(string name, Messenger messenger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Messenger.html">Messenger</a></td>
+        <td><span class="parametername">messenger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_Messenger_">EventArgument.Do(String, Messenger)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L18">View Source</a>
   </span>
   <a id="ILib_MVVM_EventArgument_1_GetEventType_" data-uid="ILib.MVVM.EventArgument`1.GetEventType*"></a>
   <h4 id="ILib_MVVM_EventArgument_1_GetEventType" data-uid="ILib.MVVM.EventArgument`1.GetEventType">GetEventType()</h4>
@@ -189,7 +226,7 @@
   <div><a class="xref" href="ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_GetEventType">EventArgument.GetEventType()</a></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L15">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L16">View Source</a>
   </span>
   <a id="ILib_MVVM_EventArgument_1_GetValue_" data-uid="ILib.MVVM.EventArgument`1.GetValue*"></a>
   <h4 id="ILib_MVVM_EventArgument_1_GetValue" data-uid="ILib.MVVM.EventArgument`1.GetValue">GetValue()</h4>
@@ -229,7 +266,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

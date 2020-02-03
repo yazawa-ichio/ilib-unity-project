@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>WIP | Yazawa Ichio Unity Package Document </title>
+    <title>ilib-serv-injector | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="WIP | Yazawa Ichio Unity Package Document ">
+    <meta name="title" content="ilib-serv-injector | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,8 +77,222 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="wip">WIP</h1>
+<h1 id="ilib-serv-injectorhttpsgithubcomyazawa-ichioilib-mvvm"><a href="https://github.com/yazawa-ichio/ilib-mvvm">ilib-serv-injector</a></h1>
 
+<p>Unity MVVM DataBinding Package.</p>
+<p>リポジトリ <a href="https://github.com/yazawa-ichio/ilib-mvvm">https://github.com/yazawa-ichio/ilib-mvvm</a></p>
+<h2 id="概要">概要</h2>
+<p>UnityのUIに対してMVVMでデータバインディングを行うためのパッケージです。<br>導入する事でViewModelを通してViewを操作する事で、Model層にUIを操作する実装をなくし疎結合を保つことが可能です。
+基本設計は値型を利用する際にボキシングを可能な限り抑える事を目標にしています。  </p>
+<p>オプションを持たない指定のコンポートに対しての単一パラメータのバインディングを行う場合、LightBindという軽量のバインダーを利用できます。<br>また、プレハブに設定してあるバインダーのパスから自動生成で静的なViewModelを利用するジェネレーターもあります。  </p>
+<h1 id="使用方法">使用方法</h1>
+<h2 id="viewの設定">Viewの設定</h2>
+<p>プレハブに対してデータバインディングを行うためにViewを設定します。<br>まず、プレハブに対して<code>View</code>Componentを<code>AddComponent</code>します。<br>Viewのバインドの対象は全て<code>Path</code>を持ちます。
+ViewModelに設定されたデータとBind対象に設定するデータはこの<code>Path</code>を通して行われます。</p>
+<p><img src="mvvm-view.png" alt="Viewのサンプル"> </p>
+<h3 id="viewの情報">Viewの情報</h3>
+<h4 id="select-element">Select Element</h4>
+<p>ViewがBindする対象のパラメーターを確認出来ます。<br><code>Component</code>のBindでは対象のInspectorと同様の物が見れます。<br><code>LightBind</code>では<code>Path</code>や<code>Target</code>を指定や、追加・削除が行えます。</p>
+<h4 id="bindable-list">Bindable List</h4>
+<p>Viewにバインドされている対象の一覧が表示されます。
+<code>Select Element</code>に指定されている対象にはマーカーが付きます。
+一覧から<code>Select Element</code>の対象を選択する事も出来ます。</p>
+<h4 id="viewmodel">ViewModel</h4>
+<p>Viewに紐づけられている、ViewModelの情報が表示されます。
+BindにPathが設定されていても、ViewModelに値として設定されていない対象は表示されません。</p>
+<h3 id="lightbindを利用する">LightBindを利用する</h3>
+<p>LightBindは軽量なバインドです。<br><code>Component</code>ではなく型情報、対象、パスの情報だけしか持たないため<code>View</code>のみで追加出来ます。  </p>
+<h4 id="lightbindを追加する">LightBindを追加する</h4>
+<p><code>Select Element</code>の横の「+」ボタンをクリックすると、新規のメニューを追加出来ます。<br>逆に削除する場合は<code>Select Element</code>で対象を選択した後「-」のボタンを押すと削除が出来ます。  </p>
+<p><img src="mvvm-light-add.png" alt="LightBindの追加"> </p>
+<p><img src="mvvm-light-add-menu.png" alt="LightBindメニュー"> </p>
+<h4 id="lightbindの設定">LightBindの設定</h4>
+<p>LightBindで設定できる項目は<code>Path</code>と<code>Target</code>です。<br>追加した後で<code>Type</code>を変更する事も可能です。  </p>
+<h3 id="独自のbindcomponentを作成する">独自のBindComponentを作成する</h3>
+<p><code>BindBase&lt;T&gt;</code>もしくは<code>AssignableBindBase&lt;T&gt;</code>を継承します。<br><code>BindBase&lt;T&gt;</code>は<code>&lt;T&gt;</code>で指定した型しか受け取れません。
+<code>AssignableBindBase&lt;T&gt;</code>は<code>&lt;T&gt;</code>にclassしか指定できませんが、代わりに<code>T</code>型に代入可能であれば受け取れます。  </p>
+<p>例:与えられたstringを指定のFormatで変換して適応するBind</p>
+<pre><code class="lang-csharp">using ILib.MVVM;
+using UnityEngine.UI;
+public class FormatStringTextBind : BindBase&lt;string&gt;
+{
+    [SerializeField]
+    string m_Format = &quot;{0}&quot;;
+    [SerializeField]
+    Text m_Text = null;
+    protected abstract void UpdateValue(string val)
+    {
+        //UpdateはViewModelのパスの更新時のみ反映される
+        m_Text.text = string.Format(m_Format, val);
+    }
+}
+</code></pre><h2 id="viewmodelを設定する">ViewModelを設定する</h2>
+<p>このパッケージのViewModelは<code>Path</code>を設定する際に型を明示的に指定します。<br>また、ボタンなどのイベントの名前に関してEnumを用いて指定する事が出来ます。<br>基本的にUIに応じたViewModelのクラスを作ることを推奨しますが、GeneralViewModelなど汎用的な操作が可能なViewModelも利用できます。  </p>
+<h3 id="独自のviewmodelを作成">独自のViewModelを作成</h3>
+<p>ViewModelBaseを継承する事で比較的手軽に実装出来ます。</p>
+<pre><code class="lang-csharp">using ILib.MVVM;
+public class SampleViewModel : ViewModelBase
+{
+    //GetImpl/SetImplメソッドを利用すると最も簡単に実装できます。
+    public int IntValue
+    {
+        get =&gt; GetImpl&lt;int&gt;(&quot;IntValue&quot;);
+        set =&gt; SetImpl&lt;int&gt;(&quot;IntValue&quot;, value);
+    }
+    //ReactivePropertyを利用すると値の更新が取得出来ます。
+    //StringValue.OnChanged += (x) =&gt; { };
+    //StringValue.Value = &quot;Update&quot;;
+    ReactiveProperty&lt;string&gt; m_StringValue;
+    public ReactiveProperty&lt;string&gt; StringValue
+    {
+        get
+        {
+            if(m_StringValue == null)
+            {
+                m_StringValue = new ReactiveProperty&lt;string&gt;(&quot;StringValue&quot;, this);
+            }
+            return m_StringValue;
+        }
+    }
+    //m_EventのSubscribe/Unsubscribeでイベントを登録できます。
+    public event Action&lt;int&gt; OnButton
+    {
+        add =&gt; m_Event.Subscribe&lt;int&gt;(&quot;Button&quot;, value);
+        remove =&gt; m_Event.Unsubscribe&lt;int&gt;(&quot;Button&quot;, value);
+    }
+
+}
+</code></pre><h3 id="generalviewmodel">GeneralViewModel</h3>
+<p>GeneralViewModelは、汎用的なViewModelの実装です。<br>GeneralViewModelに対して、パスやイベントを追加できるため、クラスを定義するまでもない小さなUIなどに利用できます。<br>ただし、基本的にパラメーターを固定化する方が安全なので、全てをGeneralViewModelで行うのは非推奨です。  </p>
+<pre><code class="lang-csharp">void Prop()
+{
+    var view = GameObject.FindObjectOfType&lt;View&gt;();
+    view.Attach&lt;GeneralViewModel&gt;(vm =&gt;
+    {
+        //intのデータを設定
+        vm.Set&lt;int&gt;(&quot;IntValue&quot;, 5);
+        //ジェネリックで静的に解決出来るので型指定は要らない
+        vm.Set(&quot;StringValue&quot;, &quot;Test&quot;);
+        //BindBaseの場合は型を厳密に指定する必要があるので
+        //明示的に型を指定するケースもある
+        vm.Set&lt;IInterface&gt;(&quot;ClassValue&quot;, new AClass());
+
+        //Commandでイベントを設定できる
+        vm.Command(&quot;EventName&quot;, () =&gt; Debug.Log(&quot;OnEvent&quot;));
+        //ICommandを実装した物でも指定できる
+        vm.Command(&quot;CommandName&quot;, new AppCommand());
+    });
+}
+</code></pre><h3 id="staticviewmodel">StaticViewModel</h3>
+<p>Viewの管理下にあるBindに設定されているPathから、自動でViewModelを出力します。<br>同じパスに型の違う物があるケースやPathが変数名に利用できないケースには正常に出力できませんが、基本的に問題になるケースは少ないと思います。
+<code>View</code>の右上のメニューから実行できます。</p>
+<p><img src="mvvm-static-vm.png" alt="StaticViewModelメニュー"></p>
+<h4 id="configを作成する">Configを作成する</h4>
+<p><code>StaticVM CreteConfig</code>を実行します。
+現状Configファイルは、プロジェクトに付き一つです。</p>
+<h4 id="作成を行う">作成を行う</h4>
+<p><code>StaticVM Generate</code>を実行すると作成ウィザードが表示されます。
+<code>GenerateSetting</code>の大半のパラメーターはConfigの値と連動しています。<br>変更した上でApplyを実行すると現在の設定がConfigに反映されます。<br>Loadを実行すると現在のConfigの値に戻します。<br><code>Preview Output</code>で出力予定のコードが確認できます。</p>
+<p><img src="mvvm-static-vm2.png" alt="StaticViewModelメニュー"></p>
+<h4 id="即時作成を行う">即時作成を行う</h4>
+<p><code>StaticVM CreteConfig</code>を実行するとコンフィグの設定に合わせて、即時にソースファイルを出力します。  </p>
+<h2 id="eventを実行する">Eventを実行する</h2>
+<p>Viewから発行されたイベントはViewModelの<code>EventBroker</code>を通して受け取れます。
+イベントの発行は<code>LightBind</code>の<code>ButtonBind</code>か、<code>EventButton</code>を利用します。
+イベントには<code>EventArgument</code>コンポーネントを用いる事で引数を持たせる事が出来ます。</p>
+<h3 id="eventargument">EventArgument</h3>
+<p>ボタンの対象に<code>EventArgument</code>コンポーネントを張ることで、イベントの発火時に引数を取得して実行できます。<br>例えば<code>InputFieldArgument</code>は、指定した<code>InputField</code>コンポーネントの<code>text</code>プロパティをイベントの引数とするコンポーネントです。<br><code>EventArgument</code>は一つしか指定できません。</p>
+<h4 id="独自の引数を追加する">独自の引数を追加する</h4>
+<p><code>EventArgument&lt;T&gt;</code>を継承する事で実装できます。  </p>
+<p>例:現在時刻を引数に指定するコンポーネント</p>
+<pre><code class="lang-csharp">using System;
+using ILib.MVVM;
+public class DateTimeArgument : EventArgument&lt;DateTime&gt; {
+
+    [SerializeField]
+    bool m_Utc = false;
+
+    public override DateTime GetValue()
+    {
+        return m_Utc ? DateTime.UtcNow : DateTime.Now;
+    }
+
+}
+</code></pre><h3 id="eventbutton">EventButton</h3>
+<p><code>EventButton</code>は<code>Enum</code>をPathに利用してイベントを発行します。<br>受け取り側も<code>Enum</code>を利用してイベントを受け取ります。<br>指定する<code>Enum</code>には<code>[EventKey]</code>属性を設定する必要があります。<br><strong>注意点としてEventButtonはStaticViewModelの出力対象にはなりません。</strong><br>UIの共通処理を行うイベント閉じる・進むなどを汎用的な物に利用します。<br>EventButtonを利用する事で、共通のイベントを全てのViewModelに実装するようなケースを防げます。</p>
+<pre><code class="lang-csharp">//イベントに設定したいenumに[EventKey]属性を追加する
+[EventKey]
+public enum Event
+{
+    Close,
+    Submit,
+}
+
+void Prop()
+{
+    var view = GameObject.FindObjectOfType&lt;View&gt;();
+    view.Attach&lt;GeneralViewModel&gt;(vm =&gt;
+    {
+        vm.Event.Subscribe(Event.Close, () =&gt; {
+            //閉じる
+            Close(view);
+        });
+        //型を明示しなくても動作するが、その場合はボックス化が発生する
+        vm.Event.Subscribe&lt;Event, string&gt;(Event.Submit, (val) =&gt; {
+            Submit(val);
+        });
+    }
+}
+</code></pre><h4 id="eventbutton側の設定">EventButton側の設定</h4>
+<p>対象のボタンに<code>EventButton</code>コンポーネントを貼り付けます。<br><code>Event</code>のパラメータの候補には<code>[EventKey]</code>属性を付けた<code>Enum</code>が候補として表示されます。<br><img src="mvvm-eventbutton.png" alt="EventButtonの表示"></p>
+<h2 id="converterを利用する">Converterを利用する</h2>
+<p>コンバーターを利用する事で<code>BindComponent</code>の入力に、別の型の入力を変換して更新することが出来ます。<br><code>Converter</code>は基本的に対象とするオブジェクトに<code>AddComponent</code>する必要があります。<br>たとえば、<code>IntToBoolConverter</code>はInt値と<code>Converter</code>の比較対象のInt値を、設定された比較方法によってbool値として受け取る事が出来ます。
+<code>Converter</code>は原則一つしか利用できません。</p>
+<h2 id="messengerを利用する">Messengerを利用する</h2>
+<p>Messangerはよくあるイベント通知のシステムです。
+イベントの送受信側がViewModelへの参照をなくすことが出来ます。<br>基本的に飛び道具なので乱用すると危険ですが、適切に利用する分にはViewModelとイベントの受信側の疎結合を実現できます。  </p>
+<pre><code class="lang-csharp">public enum Event
+{
+    Fire
+}
+
+void Prop
+{
+    //イベントを登録
+    Messanger.Default.Register(this, &quot;MSG&quot;, () =&gt; {});
+    //引数も指定できる
+    Messanger.Default.Register&lt;Event, string&gt;(this, Event.Fire, OnFire);
+    //自身に紐づくMessageHandleを登録
+    Messanger.Default.RegisterHandle(this);
+    //自分に紐づくイベントを解除
+    Messanger.Default.Unregister(this);
+    //イベントを発火
+    Messanger.Default.Send(&quot;MSG&quot;);
+    //引数付きでイベントを発火
+    Messanger.Default.Send&lt;Event, string&gt;(Event.Fire, &quot;Fire&quot;);
+
+    // handleがGCで回収されるか
+    // Disposeが実行されるまで保持される
+    // 弱参照でのイベント登録
+    var handle = Messanger.Default.WeakRegister(this, &quot;MSG&quot;, () =&gt; {});
+
+    //イベントの解放
+    handle.Dispose();
+}
+
+//属性で対象をイベントを登録できる
+[MessageHandle(&quot;HandleMessage&quot;)]
+void OnMessage() { }
+
+//Enumも指定できる
+[MessageHandle(Event.Fire)]
+void OnFire() { }
+</code></pre><h3 id="messsagebutton">MesssageButton</h3>
+<p>基本的に<code>EventButton</code>と共通の仕組みで<code>Messanger</code>にイベントを発火するボタンです。<br>引数は<code>EventArgument</code>を利用できます。  </p>
+<h2 id="behaviorを利用する">Behaviorを利用する</h2>
+<p>BehaviorはMessangerからのイベントやViewModelのデータの更新を検知してアクションを行ったり、Viewで完結するアクションを実行するのに利用します。<br>例えば、キャラクターのステータスを表示するUIなどでダメージを受けてViewModelのダメージ時パラメーターが変化した際に、アニメーションを行うなどに利用できます。</p>
+<h2 id="license">LICENSE</h2>
+<p><a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/LICENSE">https://github.com/yazawa-ichio/ilib-mvvm/blob/master/LICENSE</a></p>
 </article>
           </div>
           

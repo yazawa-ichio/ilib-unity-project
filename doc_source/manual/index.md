@@ -43,6 +43,11 @@ manifest.json
 色々は入っているのはUPMのパッケージが依存関係を解決してくれないので、依存関係があるパッケージを全部突っ込んでいます。<br>
 依存関係が解決してくれるようになれば、おそらく分割します。
 
+### [ilib-contents](ilib-contents/index.md) ([リポジトリ](https://github.com/yazawa-ichio/ilib-contents))
+
+プロジェクト全体のコンテンツを管理するツリーベースのステートマシーンです。<br>
+コンテンツ間の追加・終了のフック等を追加出来るため、Unityのシーン管理に紐づけたり、DIコンテナと連動させたり出来ます。
+
 ### [ilib-mvvm](ilib-mvvm/index.md) ([リポジトリ](https://github.com/yazawa-ichio/ilib-mvvm))
 
 UnityでMVVMでUIのバインディングを行うパッケージです。<br>

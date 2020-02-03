@@ -108,12 +108,12 @@
     <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L10">View Source</a>
   </span>
   <a id="ILib_MVVM_EventArgument_Do_" data-uid="ILib.MVVM.EventArgument.Do*"></a>
-  <h4 id="ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IViewEventHandler_" data-uid="ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IViewEventHandler)">Do(String, IViewEventHandler)</h4>
+  <h4 id="ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IViewEventDispatcher_" data-uid="ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IViewEventDispatcher)">Do(String, IViewEventDispatcher)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Do(string name, IViewEventHandler handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void Do(string name, IViewEventDispatcher handler)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,8 +131,42 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="ILib.MVVM.IViewEventHandler.html">IViewEventHandler</a></td>
+        <td><a class="xref" href="ILib.MVVM.IViewEventDispatcher.html">IViewEventDispatcher</a></td>
         <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventArgument.cs/#L11">View Source</a>
+  </span>
+  <a id="ILib_MVVM_EventArgument_Do_" data-uid="ILib.MVVM.EventArgument.Do*"></a>
+  <h4 id="ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_Messenger_" data-uid="ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.Messenger)">Do(String, Messenger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Do(string name, Messenger messenger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ILib.MVVM.Messenger.html">Messenger</a></td>
+        <td><span class="parametername">messenger</span></td>
         <td></td>
       </tr>
     </tbody>
