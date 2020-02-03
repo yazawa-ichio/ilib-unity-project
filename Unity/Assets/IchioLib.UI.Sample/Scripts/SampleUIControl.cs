@@ -32,7 +32,7 @@ namespace ILib.Sample.UI
 
 		protected virtual Task OnCreatedImpl()
 		{
-			Context.SubscribeViewEvent(Event.Close, () => {
+			Context.Event.Subscribe(Event.Close, () => {
 				if (CanBack()) Close();
 			});
 			return Util.Successed;

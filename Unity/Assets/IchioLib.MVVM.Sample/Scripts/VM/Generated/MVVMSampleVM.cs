@@ -161,6 +161,18 @@ namespace ILib.Sample.MVVM
 			}
 		}
 
+		/// BindingPath : ToggleMessage
+		/// Target: ILib.MVVM.TextBind
+		public ReactiveProperty<bool> ToggleMessage
+		{
+			get
+			{
+				if(m_ToggleMessage == null) m_ToggleMessage = new ReactiveProperty<bool>("ToggleMessage", this);
+				return m_ToggleMessage;
+			}
+		}
+		ReactiveProperty<bool> m_ToggleMessage;
+
 
 
 	}

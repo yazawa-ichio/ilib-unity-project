@@ -17,6 +17,28 @@ namespace ILib.Sample.MVVM
 			set { SetImpl<string>("Text", value); }
 		}
 
+		/// BindingPath : Button
+		/// Target: ILib.MVVM.ButtonBind
+		public bool ButtonValue
+		{
+			get { return GetImpl<bool>("Button"); }
+			set { SetImpl<bool>("Button", value); }
+		}
+
+		/// BindingPath : Button
+		/// Sender: ILib.MVVM.ButtonBind
+		public event Action<int> OnButton
+		{
+			add
+			{
+				m_Event.Subscribe<int>("Button", value);
+			}
+			remove
+			{
+				m_Event.Unsubscribe<int>("Button", value);
+			}
+		}
+
 
 
 	}

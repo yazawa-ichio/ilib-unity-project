@@ -112,6 +112,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &428517121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1477298093500710712, guid: 638986d9b3bdead4995e3c4e0c2860e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8468098337348838910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &428517122 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7610551180773429225, guid: 638986d9b3bdead4995e3c4e0c2860e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8468098337348838910}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428517121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &428517123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428517121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fe684a2db02b24d9108db8d5196f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MessangerPath: Messanger
+  m_Event: 
+  m_Button: {fileID: 428517122}
 --- !u!1 &552570978
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +444,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468098335770459490, guid: 638986d9b3bdead4995e3c4e0c2860e9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468098337034798536, guid: 638986d9b3bdead4995e3c4e0c2860e9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000051789852
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 638986d9b3bdead4995e3c4e0c2860e9, type: 3}

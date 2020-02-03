@@ -14,19 +14,20 @@ namespace ILib.Sample.UI
 		[SerializeField]
 		SampleUIQueue m_UIQueue = default;
 
-		private void Start()
+		private async void Start()
 		{
-			m_UIStack.Push("SampleUI", (ViewModel vm) =>
+			await m_UIStack.Push("SampleUI", (GeneralViewModel vm) =>
 			{
-				vm.SubscribeViewEvent(SampleUIControl.Event.Push, () =>
+				vm.Command(SampleUIControl.Event.Push, () =>
 				{
 					Push();
 				});
-				vm.SubscribeViewEvent(SampleUIControl.Event.Change, () =>
+				vm.Command(SampleUIControl.Event.Change, () =>
 				{
-					m_UIStack.Switch("SampleUI2", new ViewModel());
+					m_UIStack.Switch("SampleUI2", new GeneralViewModel());
 				});
 			});
+
 			/*
 			var queue = m_UIStack.Push("SampleUI", new ViewModel());
 			m_UIStack.Push("SampleUI", new ViewModel());
@@ -48,18 +49,18 @@ namespace ILib.Sample.UI
 
 		async void Push()
 		{
-			await m_UIStack.Push("SampleUI", (ViewModel vm) =>
+			await m_UIStack.Push("SampleUI", (GeneralViewModel vm) =>
 			{
-				vm.SubscribeViewEvent(SampleUIControl.Event.Push, () => {
+				vm.Command(SampleUIControl.Event.Push, () => {
 					Push();
 				});
-				vm.SubscribeViewEvent(SampleUIControl.Event.Change, () => {
-					m_UIStack.Switch("SampleUI2", new ViewModel());
+				vm.Command(SampleUIControl.Event.Change, () => {
+					m_UIStack.Switch("SampleUI2", new GeneralViewModel());
 				});
-				vm.SubscribeViewEvent(SampleUIControl.Event.Enqueue, () => {
-					m_UIQueue.Enqueue("SampleUI", new ViewModel());
-					m_UIQueue.Enqueue("SampleUI2", new ViewModel());
-					m_UIQueue.Enqueue("SampleUI", new ViewModel());
+				vm.Command(SampleUIControl.Event.Enqueue, () => {
+					m_UIQueue.Enqueue("SampleUI", new GeneralViewModel());
+					m_UIQueue.Enqueue("SampleUI2", new GeneralViewModel());
+					m_UIQueue.Enqueue("SampleUI", new GeneralViewModel());
 				});
 			});
 		}
