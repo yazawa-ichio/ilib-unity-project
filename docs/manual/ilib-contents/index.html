@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>WIP | Yazawa Ichio Unity Package Document </title>
+    <title>ilib-serv-injector | Yazawa Ichio Unity Package Document </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="WIP | Yazawa Ichio Unity Package Document ">
+    <meta name="title" content="ilib-serv-injector | Yazawa Ichio Unity Package Document ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,8 +77,278 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="wip">WIP</h1>
+<h1 id="ilib-serv-injectorhttpsgithubcomyazawa-ichioilib-contents"><a href="https://github.com/yazawa-ichio/ilib-contents">ilib-serv-injector</a></h1>
 
+<p>Unity Contents Package.</p>
+<p>リポジトリ <a href="https://github.com/yazawa-ichio/ilib-contents">https://github.com/yazawa-ichio/ilib-contents</a></p>
+<h2 id="概要">概要</h2>
+<p>プロジェクト全体のコンテンツを管理するツリーベースのステートマシーンです。<br>コンテンツ間の追加・終了のフック等を追加出来るため、Unityのシーン管理に紐づけたり、DIコンテナと連動させたり出来ます。</p>
+<h1 id="使用方法">使用方法</h1>
+<h2 id="コンテンツを作成する">コンテンツを作成する</h2>
+<p>コンテンツは<code>Content</code>クラスを継承して実装します。<br><code>Content</code>クラスには、起動時のBoot処理やコンテンツが有効になった際のイベント等のフックを追加できます。<br><code>Content&lt;T&gt;</code>を継承する事で明示的にパラメータを起動時に渡すことが出来ます。  </p>
+<pre><code class="lang-csharp">using ILib.Contents;
+using ILib.Caller;
+
+public class GameManager : Content
+{
+    protected override async Task OnBoot()
+    {
+        // 共通で利用するシーンを読み込む
+        await SceneManager.LoadSceneAsync(&quot;Common&quot;).ToTask();
+    }
+
+    protected override async Task OnShutdown()
+    {
+        // 共通で利用するシーンを破棄する
+        await SceneManager.UnloadSceneAsync(&quot;Common&quot;).ToTask();
+    }
+
+    protected override void OnCompleteRun()
+    {
+        //子供に起動シーンを追加
+        Append&lt;BootScene&gt;(null);
+    }
+
+    //再起動イベント
+    [Handle(SystemEvent.Reboot)]
+    void OnReboot()
+    {
+        // 現在のGameManagerのShutdown後に新しいGameManagerのBootが始まる
+        Switch&lt;GameManager&gt;(Param);
+    }
+}
+</code></pre><h2 id="コンテンツの起動">コンテンツの起動</h2>
+<p>コンテンツは<code>ContentsController</code>コンポーネントで制御されます。<br>最初に実行するコンテンツを設定して<code>Boot</code>関数を実行します。<br>起動するコンテンツが一つしかない場合は、<code>ContentsController.Boot&lt;GameManager&gt;(null)</code>のようにも指定できます。  </p>
+<pre><code class="lang-csharp">using UnityEngine;
+using ILib.Contents;
+//起動スクリプト
+public class Main : MonoBehaviour
+{
+    void Start()
+    {
+        var obj = new GameObject(typeof(ContentsController).Name);
+        GameObject.DontDestroyOnLoad(obj);
+        var controller = obj.AddComponent&lt;ContentsController&gt;();
+        //起動時に実行するコンテンツを選択
+        BootParam param = new BootParam();
+        // セーブデータの管理などゲームサイクルに関わらないコンテンツ
+        param.Add&lt;SystemManager&gt;();
+        // ゲームのメインのサイクルを管理するコンテンツ
+        param.Add&lt;GameManager&gt;();
+        //並列起動しない
+        param.ParallelBoot = false;
+        controller.Boot(param);
+    }
+}
+</code></pre><h2 id="コンテンツの操作">コンテンツの操作</h2>
+<p>コンテンツのツリーの操作一覧です。</p>
+<h3 id="追加-appendt">追加 <code>Append&lt;T&gt;</code></h3>
+<p>自分の子供にコンテンツを追加します。</p>
+<h3 id="終了-shutdownt">終了 <code>Shutdown&lt;T&gt;</code></h3>
+<p>自身を終了します。<br>子のコンテンツがある場合、それらも終了します。<br>終了時、親のリストから自身が削除されます。  </p>
+<h3 id="変更-switcht">変更 <code>Switch&lt;T&gt;</code></h3>
+<p>自身を終了し、実行者の親の子供を追加します（=Paraent.Append）</p>
+<h3 id="停止-suspend">停止 <code>Suspend</code></h3>
+<p>コンテンツを停止します。<br>子のコンテンツがある場合、それらも停止します。<br>停止時は<code>Disable</code>イベントが実行されます。<br>実行したコンテンツだけ<code>OnSuspend</code>が呼ばれます。  </p>
+<h3 id="再開-resume">再開 <code>Resume</code></h3>
+<p>停止状態のコンテンツを再開します。<br>子のコンテンツがある場合、それらも再開します。<br>再開時は<code>Enable</code>イベントが実行されます。<br>実行したコンテンツだけ<code>OnRun</code>と<code>OnCompleteRun</code>が呼ばれます。  </p>
+<h2 id="共通処理を挟む">共通処理を挟む</h2>
+<p>コンテンツの共通処理は<code>Module</code>クラスと、interfaceや共通の基底クラスを作る事で対応できます。<br><code>Module</code>は<code>ContentsController</code>か<code>Content</code>に追加できます。  <code>Module</code>の有効範囲は、追加したインスタンスの子供にのみ有効です。</p>
+<pre><code class="lang-csharp">using UnityEngine.SceneManagement;
+using ILib.Contents;
+//別に公開しているilib-servinjectパッケージの実装です。
+using ILib.ServInject;
+
+// ゲームのシーンの共通実装
+public abstract class GameScene : Content, IUnitySceneContent
+{
+    //DIコンテナとの連携
+    [Inject]
+    public IResourceLoader Loader { get; set; }
+    [Inject]
+    public ISystemUI SystemUI { get; set; }
+    [Inject]
+    public ISound Sound { get; set; }
+
+    public virtual string GetUnitySceneName() =&gt; &quot;&quot;;
+}
+
+//コンテンツに紐づけてUnityのシーンを読むためのクラス
+public interface IUnitySceneContent {
+    string GetUnitySceneName();
+}
+
+//Unityのシーンに紐づけるモジュール
+public class UnitySceneModule : Module
+{
+    //イベントを実行するタイミングはTypeで指定する
+    public override ModuleType Type =&gt; ModuleType.PreBoot | ModuleType.Shutdown;
+    public override async Task OnPreBoot (Content content)
+    {
+        if (content is IUnitySceneContent scene)
+        {
+            string name = scene.GetUnitySceneName();
+            if (string.IsNullOrEmpty(name)) return;
+            await SceneManager.LoadSceneAsync(name).ToTask();
+        }
+    }
+
+    public override async Task OnShutdown(Content content)
+    {
+        if (content is IUnitySceneContent scene)
+        {
+            string name = scene.GetUnitySceneName();
+            if (string.IsNullOrEmpty(name)) return;
+            await SceneManager.UnloadSceneAsync(name).ToTask();
+        }
+    }
+}
+
+//DIコンテナでサービスを注入するモジュール
+public class ServiceInstallModule : Module
+{
+    public override ModuleType Type =&gt; ModuleType.PreBoot;
+
+    public override Task OnPreBoot(Content content)
+    {
+        //OnBoot前に登録済みサービスが注入される
+        ServInjector.Inject(content);
+        return Util.Successed;
+    }
+}
+</code></pre><h3 id="moduleを追加する">Moduleを追加する</h3>
+<pre><code class="lang-csharp">using ILib.Contents;
+using ILib.Caller;
+
+public class GameManager : Content
+{
+    protected override async Task OnBoot()
+    {
+        Modules.Add&lt;UnitySceneModule&gt;();
+        Modules.Add&lt;ServiceInstallModule&gt;();
+~~~
+~~~
+    }
+}
+</code></pre><h2 id="モーダル機能">モーダル機能</h2>
+<p>モーダル機能は特定のコンテンツを実行しつつ、その結果を待ちたい場合に利用できます。<br>モーダル実行中は、モーダルを実行したコンテンツに対して<code>Switch</code>(変更)と<code>Append</code>(追加)が出来なくなります。<br>モーダルを実行するには、<code>IModalContent&lt;T&gt;</code>を実装する必要があります。  </p>
+<p>モーダルコンテンツは単純なコンテンツ機能の拡張であるため、コンテンツが持つ共通処理やモジュールのフックが利用出来るのが利点です。</p>
+<pre><code class="lang-csharp">using ILib.Contents;
+
+// この例はSystemUI.InputDialogを直接呼べばいいので少し不適切だが
+// より複雑なケースでコンテンツ間のモジュール機能などが利用できるため便利な場合がある
+public class InputScene : GameScene&lt;InputDialogParam&gt;, IModalContent&lt;string&gt; {
+    public async Task&lt;string&gt; GetModalResult(CancellationToken token)
+    {
+        return await SystemUI.InputDialog(Param)
+    }
+}
+
+public class TitleScene : GameScene
+{
+    public override async Task OnRun()
+    {
+        if (string.IsEmpty(Save.UserName))
+        {
+            var prm = new InputDialogParam(&quot;ユーザー名&quot;)
+            Save.UserName = await Modal&lt;string, InputS
+            cene&gt;(prm);
+        }
+    }
+}
+</code></pre><h2 id="コンテンツ間のイベント">コンテンツ間のイベント</h2>
+<p>コンテンツ間で処理を行いたい場合、<code>EventCall</code>クラスを利用します。<br>イベントの登録は<code>EventCall</code>の<code>Subscribe</code>関数を利用するか。 
+イベントの発火先のクラスのメソッドに<code>Handler</code>属性を設定します。<br>本来、<code>EventCall.Bind</code>を実行する必要がありますが、コンテンツは生成時に登録されます。<br><code>Suspend</code>で停止中はイベントを受けつけなくなります。  </p>
+<pre><code class="lang-csharp">using ILib.Contents;
+using ILib.Caller;
+//イベントの発火元
+public class SelectScene : GameScene
+{
+    public event Event
+    {
+        OK,
+        NO,
+        Param,
+    }
+    public override async Task OnRun()
+    {
+        var ret = await SystemUI.Conform(&quot;選択&quot;);
+        if (ret)
+        {
+            EventCall.Broadcast(Event.OK);
+        }
+        else
+        {
+            EventCall.Broadcast(Event.NO);
+        }
+    }
+}
+//イベントの受け取り先
+public class HogeScene : GameScene
+{
+    public void OnCompleteRun()
+    {
+        Append&lt;SelectScene&gt;(null);
+        //手動で設定。
+        Managed.Manage(EventCall.Subscribe(SelectScene.Event.NO, () =&gt; {});
+        //例として上記のコードを書きましたが、コンテンツでは基本的にHandler経由で設定することを推奨しています。
+    }
+    //属性での指定
+    [Handler(SelectScene.Event.OK)]
+    void OnOK() { }
+    //引数も受け取れる
+    [Handler(SelectScene.Event.Param)]
+    void OnParam(string prm) { }
+}
+</code></pre><h2 id="コンテンツのリソースを管理する">コンテンツのリソースを管理する</h2>
+<p>コンテンツには、コンテンツ内でのみ有効なオブジェクト等を管理する<code>ManagedHolder</code>機能があります。<br>コンテンツが持つ<code>Managed</code>インスタンスに<code>IDisposable</code>を実装したクラスを追加すると、コンテンツが削除された際に自動で<code>Dispose</code>が実行されます。<br>また、非同期で解放処理を行いたい場合は<code>IManagedAsyncDisposable</code>インタフェースを実装する事で、コンテンツの終了時に非同期で実行されます。  </p>
+<pre><code class="lang-csharp">using ILib.Contents;
+public class TitleScene : GameScene
+{
+    public override async Task OnRun()
+    {
+        var asset = Loader.Load(&quot;Asset&quot;)
+        //このコンテンツの終了時にDisposeが実行される
+        Managed.Manage(asset);
+        //事前に解放する事も出来る
+        Managed.Unmanage(asset);
+
+        //UnityのComponentを追加して、コンテンツの破棄に合わせてDestoryも出来る
+        Managed.ManageComponent(Controller.AddComponent&lt;Hoge&gt;());
+
+    }
+}
+</code></pre><h2 id="unityのイベントサイクルに合わせる">Unityのイベントサイクルに合わせる</h2>
+<p>コンテンツからは<code>Routine</code>関数を利用すると、エラーのハンドリングが可能なコルーチンを実行できます。<br><code>Controller</code>でも実行できますが、<code>Routine</code>関数を利用する事でコンテンツの終了時に自動コルーチンが停止します。  </p>
+<pre><code class="lang-csharp">using ILib.Contents;
+public class GameLoopScene : GameScene
+{
+    Routine m_Loop;
+    protected override Task OnEnable()
+    {
+        m_Loop = Routine(Loop());
+        return Util.Successed;
+    }
+    protected override Task OnDisable()
+    {
+        m_Loop.Cancel();
+        return Util.Successed;
+    }
+    IEnumerator Loop()
+    {
+        while (true)
+        {
+            //Update
+            yield return null;
+        }
+    }
+}
+</code></pre><h2 id="コンテンツのフック一覧wiphttpsyazawa-ichiogithubioilib-unity-projectapiilibcontentscontenthtml"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Contents.Content.html">コンテンツのフック一覧(WIP)</a></h2>
+<p>後々まとめます。</p>
+<h2 id="モジュールのフック一覧wiphttpsyazawa-ichiogithubioilib-unity-projectapiilibcontentsmodulehtml"><a href="https://yazawa-ichio.github.io/ilib-unity-project/api/ILib.Contents.Module.html">モジュールのフック一覧(WIP)</a></h2>
+<p>後々まとめます。</p>
+<h2 id="license">LICENSE</h2>
+<p><a href="https://github.com/yazawa-ichio/ilib-contents/blob/master/LICENSE">https://github.com/yazawa-ichio/ilib-contents/blob/master/LICENSE</a></p>
 </article>
           </div>
           

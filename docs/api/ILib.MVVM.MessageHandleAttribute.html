@@ -91,12 +91,16 @@
     <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
     <div class="level2"><span class="xref">MessageHandleAttribute</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">_Attribute</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ILib.MVVM.html">ILib.MVVM</a></h6>
   <h6><strong>Assembly</strong>: IchioLib.MVVM.dll</h6>
   <h5 id="ILib_MVVM_MessageHandleAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Method)]
-public class MessageHandleAttribute : Attribute</code></pre>
+public class MessageHandleAttribute : Attribute, _Attribute</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -189,6 +193,10 @@ public class MessageHandleAttribute : Attribute</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">System.Runtime.InteropServices._Attribute</a>
+  </div>
 </article>
           </div>
           

@@ -92,6 +92,10 @@
     <div class="level2"><span class="xref">UnityEngine.PropertyAttribute</span></div>
     <div class="level3"><span class="xref">EventNameAttribute</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">_Attribute</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -103,7 +107,11 @@
   <h5 id="ILib_MVVM_EventNameAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Field)]
-public class EventNameAttribute : PropertyAttribute</code></pre>
+public class EventNameAttribute : PropertyAttribute, _Attribute</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">System.Runtime.InteropServices._Attribute</a>
   </div>
 </article>
           </div>
