@@ -32,7 +32,7 @@ public class InternalTest : AssetBundleTest
 }
 
 public class SimulateDownloadTest : AssetBundleTest
-{	
+{
 	protected override bool UseCache() { return true; }
 	protected override ILoadOperator LoadOperator(bool useExManifet)
 	{
@@ -824,7 +824,7 @@ public abstract class AssetBundleTest
 	{
 		//エディタモードではテストしない
 		if (IsEditorTest()) return;
-	
+
 		//エラーのハンドリング
 		System.Exception catchError = null;
 		try
@@ -847,7 +847,7 @@ public abstract class AssetBundleTest
 		{
 			LogAssert.ignoreFailingMessages = true;
 			System.Exception handleError = null;
-			
+
 			var loading = ABLoader.Load("dummy");
 			loading.ErrorHandle = x => handleError = x;
 			var now = System.DateTime.Now;

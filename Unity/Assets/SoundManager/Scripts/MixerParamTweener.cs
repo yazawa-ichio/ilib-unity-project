@@ -16,7 +16,7 @@ namespace ILib.Audio.SoundManagement
 		ValueTweener m_Tweener = new ValueTweener(0);
 		public string Param => m_Param;
 
-		public MixerParamTweener(AudioMixer mixer, string param, float start, Func<float,float> conv)
+		public MixerParamTweener(AudioMixer mixer, string param, float start, Func<float, float> conv)
 		{
 			m_Mixer = mixer;
 			m_Param = param;

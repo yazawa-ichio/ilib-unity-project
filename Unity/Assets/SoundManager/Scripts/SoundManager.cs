@@ -9,7 +9,7 @@ namespace ILib.Audio
 	/// <summary>
 	/// ISoundPlayerとIMusicPlayerを利用した標準的なサウンドマネージャーのリファレンス実装です。
 	/// </summary>
-	public static class SoundManager 
+	public static class SoundManager
 	{
 		class SoundManagerInstance : MonoBehaviour
 		{
@@ -85,7 +85,7 @@ namespace ILib.Audio
 		}
 
 
-		static MixerParamTweener GetTweener(string param, System.Func<float,float> func)
+		static MixerParamTweener GetTweener(string param, System.Func<float, float> func)
 		{
 			foreach (var t in s_ParamTweener)
 			{

@@ -12,7 +12,7 @@ public class uGUIBuilderTest : MonoBehaviour
 	{
 		var m_Canvas = new ScWindow()
 		{
-			Layout = new Layout(Vector2.zero, new Vector2(1280,720)),
+			Layout = new Layout(Vector2.zero, new Vector2(1280, 720)),
 			Children = new IScWidget[]
 			{
 				new ScTexture()

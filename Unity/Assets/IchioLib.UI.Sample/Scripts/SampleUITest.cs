@@ -36,7 +36,7 @@ namespace ILib.Sample.UI
 			m_UIStack.Push("SampleUI", new ViewModel());
 			m_UIStack.Push("SampleUI", new ViewModel());
 			*/
-			
+
 			/*
 			var queue = m_UIQueue.Enqueue("SampleUI2", new ViewModel());
 			m_UIQueue.Enqueue("SampleUI2", new ViewModel());
@@ -51,13 +51,16 @@ namespace ILib.Sample.UI
 		{
 			await m_UIStack.Push("SampleUI", (GeneralViewModel vm) =>
 			{
-				vm.Command(SampleUIControl.Event.Push, () => {
+				vm.Command(SampleUIControl.Event.Push, () =>
+				{
 					Push();
 				});
-				vm.Command(SampleUIControl.Event.Change, () => {
+				vm.Command(SampleUIControl.Event.Change, () =>
+				{
 					m_UIStack.Switch("SampleUI2", new GeneralViewModel());
 				});
-				vm.Command(SampleUIControl.Event.Enqueue, () => {
+				vm.Command(SampleUIControl.Event.Enqueue, () =>
+				{
 					m_UIQueue.Enqueue("SampleUI", new GeneralViewModel());
 					m_UIQueue.Enqueue("SampleUI2", new GeneralViewModel());
 					m_UIQueue.Enqueue("SampleUI", new GeneralViewModel());

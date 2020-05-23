@@ -72,7 +72,7 @@ namespace ILib.Audio.Sample
 			SoundManager.Bgm.Pause();
 		}
 
-		[DebugButton("Resume",Path ="BGM")]
+		[DebugButton("Resume", Path = "BGM")]
 		void BgmResume()
 		{
 			SoundManager.Bgm.Resume();

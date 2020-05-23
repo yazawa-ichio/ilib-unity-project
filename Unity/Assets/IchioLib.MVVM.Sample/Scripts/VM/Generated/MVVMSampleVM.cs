@@ -15,7 +15,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_Collection == null) m_Collection = new ReactiveListProperty<ILib.MVVM.IViewModel>("Collection", this);
+				if (m_Collection == null) m_Collection = new ReactiveListProperty<ILib.MVVM.IViewModel>("Collection", this);
 				return m_Collection;
 			}
 		}
@@ -27,7 +27,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_Text == null) m_Text = new ReactiveProperty<string>("Text", this);
+				if (m_Text == null) m_Text = new ReactiveProperty<string>("Text", this);
 				return m_Text;
 			}
 		}
@@ -39,7 +39,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_ButtonValue == null) m_ButtonValue = new ReactiveProperty<bool>("Button", this);
+				if (m_ButtonValue == null) m_ButtonValue = new ReactiveProperty<bool>("Button", this);
 				return m_ButtonValue;
 			}
 		}
@@ -68,7 +68,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_SliderValue == null) m_SliderValue = new ReactiveProperty<float>("Slider", this);
+				if (m_SliderValue == null) m_SliderValue = new ReactiveProperty<float>("Slider", this);
 				return m_SliderValue;
 			}
 		}
@@ -97,7 +97,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_Position == null) m_Position = new ReactiveProperty<UnityEngine.Vector3>("Position", this);
+				if (m_Position == null) m_Position = new ReactiveProperty<UnityEngine.Vector3>("Position", this);
 				return m_Position;
 			}
 		}
@@ -109,7 +109,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_InputValue == null) m_InputValue = new ReactiveProperty<string>("Input", this);
+				if (m_InputValue == null) m_InputValue = new ReactiveProperty<string>("Input", this);
 				return m_InputValue;
 			}
 		}
@@ -138,7 +138,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_SubmitValue == null) m_SubmitValue = new ReactiveProperty<bool>("Submit", this);
+				if (m_SubmitValue == null) m_SubmitValue = new ReactiveProperty<bool>("Submit", this);
 				return m_SubmitValue;
 			}
 		}
@@ -167,7 +167,7 @@ namespace ILib.Sample.MVVM
 		{
 			get
 			{
-				if(m_ToggleMessage == null) m_ToggleMessage = new ReactiveProperty<bool>("ToggleMessage", this);
+				if (m_ToggleMessage == null) m_ToggleMessage = new ReactiveProperty<bool>("ToggleMessage", this);
 				return m_ToggleMessage;
 			}
 		}

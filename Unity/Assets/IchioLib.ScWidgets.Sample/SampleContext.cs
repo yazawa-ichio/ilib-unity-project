@@ -28,7 +28,7 @@ namespace ILib.Sample.Debugs
 		[DebugInput("InputTest2")]
 		public string InputTest2;
 
-		[DebugSlider("DebugSlider2",Path = "PathTest")]
+		[DebugSlider("DebugSlider2", Path = "PathTest")]
 		public float SliderTest2 = 0.5f;
 
 		[DebugToggle("Toggle3", Path = "PathTest")]
@@ -99,7 +99,7 @@ namespace ILib.Sample.Debugs
 			Debug.Log("Test");
 		}
 
-		[DebugButton("TestButton2", Path ="PathTest/Button")]
+		[DebugButton("TestButton2", Path = "PathTest/Button")]
 		void Test2()
 		{
 			Debug.Log("Test2");

@@ -114,7 +114,7 @@ public class TestWindow : EditorWindow
 		{
 			HorizontalCount = 3,
 			VerticalCount = 3,
-			Padding = new Vector2(5,5),
+			Padding = new Vector2(5, 5),
 			Children = new[]{
 				new ScTexture()
 				{
@@ -190,12 +190,12 @@ public class TestWindow : EditorWindow
 			Children = list.ToArray(),
 		});
 
-		m_Drawer = new SkinIMGUIDrawer(m_Canvas, AssetDatabase.LoadAssetAtPath<IMGUIWidgetSkin>("Assets/IchioLib.ScWidgets/Runtime/SkinIMGUI/IMGUIWidgetSkin.asset") );
+		m_Drawer = new SkinIMGUIDrawer(m_Canvas, AssetDatabase.LoadAssetAtPath<IMGUIWidgetSkin>("Assets/IchioLib.ScWidgets/Runtime/SkinIMGUI/IMGUIWidgetSkin.asset"));
 		m_Drawer.IsEditorGUI = true;
 	}
 
-    void OnGUI()
-    {
+	void OnGUI()
+	{
 		m_Drawer.Draw(new Rect(0, 0, position.width, position.height));
 	}
 }
