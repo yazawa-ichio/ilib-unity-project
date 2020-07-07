@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using ILib.MVVM;
 using ILib.UI;
-using ILib.MVVM;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace ILib.Sample.UI
 {
 
-	public class SampleUIControl : UIControl<IViewModel>, IExecuteBack
+	public class SampleUIControl : UIControl<IViewModel>, IExecuteBack, IQueueQueryHandler
 	{
 		[EventKey]
 		public enum Event
@@ -53,6 +51,11 @@ namespace ILib.Sample.UI
 				return true;
 			}
 			return false;
+		}
+
+		public TResult GetResult<TResult>()
+		{
+			return Context.Get<TResult>("QueryResult");
 		}
 
 	}
