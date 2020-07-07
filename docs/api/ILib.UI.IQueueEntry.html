@@ -103,11 +103,12 @@ awaitした場合はCloseを待ちます</p>
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L13">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L17">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_IsClosed_" data-uid="ILib.UI.IQueueEntry.IsClosed*"></a>
   <h4 id="ILib_UI_IQueueEntry_IsClosed" data-uid="ILib.UI.IQueueEntry.IsClosed">IsClosed</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>UIが閉じたか？</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -128,15 +129,45 @@ awaitした場合はCloseを待ちます</p>
       </tr>
     </tbody>
   </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L21">View Source</a>
+  </span>
+  <a id="ILib_UI_IQueueEntry_IsWaitCloseCompleted_" data-uid="ILib.UI.IQueueEntry.IsWaitCloseCompleted*"></a>
+  <h4 id="ILib_UI_IQueueEntry_IsWaitCloseCompleted" data-uid="ILib.UI.IQueueEntry.IsWaitCloseCompleted">IsWaitCloseCompleted</h4>
+  <div class="markdown level1 summary"><p>CloseのタスクをUIの完全なCloseまで待ちます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsWaitCloseCompleted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L14">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L26">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_Close_" data-uid="ILib.UI.IQueueEntry.Close*"></a>
   <h4 id="ILib_UI_IQueueEntry_Close" data-uid="ILib.UI.IQueueEntry.Close">Close()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>UIをCloseします。
+表示待ちの場合はキャンセルされます。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -159,7 +190,7 @@ awaitした場合はCloseを待ちます</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L16">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L32">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_GetAwaiter_" data-uid="ILib.UI.IQueueEntry.GetAwaiter*"></a>
   <h4 id="ILib_UI_IQueueEntry_GetAwaiter" data-uid="ILib.UI.IQueueEntry.GetAwaiter">GetAwaiter()</h4>
@@ -186,11 +217,13 @@ awaitした場合はCloseを待ちます</p>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L15">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L31">View Source</a>
   </span>
   <a id="ILib_UI_IQueueEntry_WaitClose_" data-uid="ILib.UI.IQueueEntry.WaitClose*"></a>
   <h4 id="ILib_UI_IQueueEntry_WaitClose_System_Threading_CancellationToken_" data-uid="ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)">WaitClose(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>UIが閉じるのを待ちます
+キャンセル可能なのは待ち処理です。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,7 +269,7 @@ awaitした場合はCloseを待ちます</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/IQueueEntry.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

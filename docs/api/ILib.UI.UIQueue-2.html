@@ -196,7 +196,7 @@
   <h6><strong>Assembly</strong>: ILib.UI.Control.dll</h6>
   <h5 id="ILib_UI_UIQueue_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class UIQueue&lt;TParam, UControl&gt; : UIController&lt;TParam, UControl&gt;, IController, IQueueController where UControl : class, IControl</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class UIQueue&lt;TParam, UControl&gt; : UIController&lt;TParam, UControl&gt;, IController where UControl : class, IControl</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,11 +217,67 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L23">View Source</a>
+  </span>
+  <a id="ILib_UI_UIQueue_2_Count_" data-uid="ILib.UI.UIQueue`2.Count*"></a>
+  <h4 id="ILib_UI_UIQueue_2_Count" data-uid="ILib.UI.UIQueue`2.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L25">View Source</a>
+  </span>
+  <a id="ILib_UI_UIQueue_2_IsEmpty_" data-uid="ILib.UI.UIQueue`2.IsEmpty*"></a>
+  <h4 id="ILib_UI_UIQueue_2_IsEmpty" data-uid="ILib.UI.UIQueue`2.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L62">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L75">View Source</a>
   </span>
   <a id="ILib_UI_UIQueue_2_Close_" data-uid="ILib.UI.UIQueue`2.Close*"></a>
   <h4 id="ILib_UI_UIQueue_2_Close_ILib_UI_IControl_" data-uid="ILib.UI.UIQueue`2.Close(ILib.UI.IControl)">Close(IControl)</h4>
@@ -267,51 +323,7 @@
   <div><span class="xref">ILib.UI.UIController&lt;TParam, UControl&gt;.Close(ILib.UI.IControl)</span></div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L71">View Source</a>
-  </span>
-  <a id="ILib_UI_UIQueue_2_Close_" data-uid="ILib.UI.UIQueue`2.Close*"></a>
-  <h4 id="ILib_UI_UIQueue_2_Close_ILib_UI_IQueueEntry_" data-uid="ILib.UI.UIQueue`2.Close(ILib.UI.IQueueEntry)">Close(IQueueEntry)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Close(IQueueEntry entry)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="ILib.UI.IQueueEntry.html">IQueueEntry</a></td>
-        <td><span class="parametername">entry</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L34">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L39">View Source</a>
   </span>
   <a id="ILib_UI_UIQueue_2_Enqueue_" data-uid="ILib.UI.UIQueue`2.Enqueue*"></a>
   <h4 id="ILib_UI_UIQueue_2_Enqueue_System_String__0_System_Threading_CancellationToken_" data-uid="ILib.UI.UIQueue`2.Enqueue(System.String,`0,System.Threading.CancellationToken)">Enqueue(String, TParam, CancellationToken)</h4>
@@ -365,7 +377,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L24">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L30">View Source</a>
   </span>
   <a id="ILib_UI_UIQueue_2_GetActive_" data-uid="ILib.UI.UIQueue`2.GetActive*"></a>
   <h4 id="ILib_UI_UIQueue_2_GetActive__1" data-uid="ILib.UI.UIQueue`2.GetActive``1">GetActive&lt;T&gt;()</h4>
@@ -407,6 +419,133 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">ILib.UI.UIController&lt;TParam, UControl&gt;.GetActive&lt;T&gt;()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L84">View Source</a>
+  </span>
+  <a id="ILib_UI_UIQueue_2_HandleError_" data-uid="ILib.UI.UIQueue`2.HandleError*"></a>
+  <h4 id="ILib_UI_UIQueue_2_HandleError_System_Exception_" data-uid="ILib.UI.UIQueue`2.HandleError(System.Exception)">HandleError(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleError(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L47">View Source</a>
+  </span>
+  <a id="ILib_UI_UIQueue_2_Query_" data-uid="ILib.UI.UIQueue`2.Query*"></a>
+  <h4 id="ILib_UI_UIQueue_2_Query__1_System_String__0_System_Threading_CancellationToken_" data-uid="ILib.UI.UIQueue`2.Query``1(System.String,`0,System.Threading.CancellationToken)">Query&lt;TResult&gt;(String, TParam, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueueQuery&lt;TResult&gt; Query&lt;TResult&gt;(string path, TParam prm, CancellationToken token = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TParam</span></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ILib.UI.IQueueQuery-1.html">IQueueQuery</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L56">View Source</a>
+  </span>
+  <a id="ILib_UI_UIQueue_2_RepairError_" data-uid="ILib.UI.UIQueue`2.RepairError*"></a>
+  <h4 id="ILib_UI_UIQueue_2_RepairError_System_Boolean_" data-uid="ILib.UI.UIQueue`2.RepairError(System.Boolean)">RepairError(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RepairError(bool clear = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">clear</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="ILib.UI.IController.html">IController</a>
@@ -426,7 +565,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-ui-control/blob/master/Runtime/UIControl/Queue/UIQueue.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

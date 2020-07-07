@@ -96,13 +96,14 @@
   <h6><strong>Assembly</strong>: ILib.dll</h6>
   <h5 id="ILib_FSM_State_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class State</code></pre>
+    <pre><code class="lang-csharp hljs">[Preserve]
+public abstract class State</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L20">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L21">View Source</a>
   </span>
   <a id="ILib_FSM_State_Owner_" data-uid="ILib.FSM.State.Owner*"></a>
   <h4 id="ILib_FSM_State_Owner" data-uid="ILib.FSM.State.Owner">Owner</h4>
@@ -129,7 +130,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L19">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L20">View Source</a>
   </span>
   <a id="ILib_FSM_State_Param_" data-uid="ILib.FSM.State.Param*"></a>
   <h4 id="ILib_FSM_State_Param" data-uid="ILib.FSM.State.Param">Param</h4>
@@ -158,7 +159,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L23">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L24">View Source</a>
   </span>
   <a id="ILib_FSM_State_OnEnter_" data-uid="ILib.FSM.State.OnEnter*"></a>
   <h4 id="ILib_FSM_State_OnEnter" data-uid="ILib.FSM.State.OnEnter">OnEnter()</h4>
@@ -170,7 +171,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L25">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L26">View Source</a>
   </span>
   <a id="ILib_FSM_State_OnExit_" data-uid="ILib.FSM.State.OnExit*"></a>
   <h4 id="ILib_FSM_State_OnExit" data-uid="ILib.FSM.State.OnExit">OnExit()</h4>
@@ -182,7 +183,7 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L24">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L25">View Source</a>
   </span>
   <a id="ILib_FSM_State_OnUpdate_" data-uid="ILib.FSM.State.OnUpdate*"></a>
   <h4 id="ILib_FSM_State_OnUpdate" data-uid="ILib.FSM.State.OnUpdate">OnUpdate()</h4>
@@ -194,17 +195,18 @@
   </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L36">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L57">View Source</a>
   </span>
-  <a id="ILib_FSM_State_Transition_" data-uid="ILib.FSM.State.Transition*"></a>
-  <h4 id="ILib_FSM_State_Transition_System_Int32_System_Object_" data-uid="ILib.FSM.State.Transition(System.Int32,System.Object)">Transition(Int32, Object)</h4>
+  <a id="ILib_FSM_State_StrictTransition_" data-uid="ILib.FSM.State.StrictTransition*"></a>
+  <h4 id="ILib_FSM_State_StrictTransition_System_Int32_System_Object_" data-uid="ILib.FSM.State.StrictTransition(System.Int32,System.Object)">StrictTransition(Int32, Object)</h4>
   <div class="markdown level1 summary"><p>遷移イベントを発行します
-発火したステートと現在が違う場合無効になります。</p>
+発火したステートと現在が違う場合無効になります。
+遅延等も含めて即時遷移できない場合はfalseが返ります</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool Transition(int eventId, object prm = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool StrictTransition(int eventId, object prm = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -245,18 +247,19 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L46">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L68">View Source</a>
   </span>
-  <a id="ILib_FSM_State_Transition_" data-uid="ILib.FSM.State.Transition*"></a>
-  <h4 id="ILib_FSM_State_Transition__1___0_System_Object_" data-uid="ILib.FSM.State.Transition``1(``0,System.Object)">Transition&lt;TEnum&gt;(TEnum, Object)</h4>
+  <a id="ILib_FSM_State_StrictTransition_" data-uid="ILib.FSM.State.StrictTransition*"></a>
+  <h4 id="ILib_FSM_State_StrictTransition__1___0_System_Object_" data-uid="ILib.FSM.State.StrictTransition``1(``0,System.Object)">StrictTransition&lt;TEnum&gt;(TEnum, Object)</h4>
   <div class="markdown level1 summary"><p>遷移イベントを発行します
 発火したステートと現在が違う場合無効になります。
-Enum暗黙的にintに置き換えられます。</p>
+Enum暗黙的にintに置き換えられます。
+遅延等も含めて即時遷移できない場合はfalseが返ります</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool Transition&lt;TEnum&gt;(TEnum eventId, object prm = null)
+    <pre><code class="lang-csharp hljs">protected bool StrictTransition&lt;TEnum&gt;(TEnum eventId, object prm = null)
     where TEnum : struct, IConvertible</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -292,6 +295,95 @@ Enum暗黙的にintに置き換えられます。</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L37">View Source</a>
+  </span>
+  <a id="ILib_FSM_State_Transition_" data-uid="ILib.FSM.State.Transition*"></a>
+  <h4 id="ILib_FSM_State_Transition_System_Int32_System_Object_" data-uid="ILib.FSM.State.Transition(System.Int32,System.Object)">Transition(Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>遷移イベントを発行します
+発火したステートと現在が違う場合無効になります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Transition(int eventId, object prm = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">prm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-unity-etc/blob/master/IchioLib/FSM/StateMachine.cs/#L47">View Source</a>
+  </span>
+  <a id="ILib_FSM_State_Transition_" data-uid="ILib.FSM.State.Transition*"></a>
+  <h4 id="ILib_FSM_State_Transition__1___0_System_Object_" data-uid="ILib.FSM.State.Transition``1(``0,System.Object)">Transition&lt;TEnum&gt;(TEnum, Object)</h4>
+  <div class="markdown level1 summary"><p>遷移イベントを発行します
+発火したステートと現在が違う場合無効になります。
+Enum暗黙的にintに置き換えられます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Transition&lt;TEnum&gt;(TEnum eventId, object prm = null)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">prm</span></td>
         <td></td>
       </tr>
     </tbody>

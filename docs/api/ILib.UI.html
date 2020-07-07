@@ -91,6 +91,10 @@
       <section><p>Animatorを利用した遷移処理です。
 SHOW・HIDEステートの完了を検知して遷移します。</p>
 </section>
+      <h4><a class="xref" href="ILib.UI.QueryResult-1.html">QueryResult&lt;TResult&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="ILib.UI.QueueQueryHandlerWrapper-1.html">QueueQueryHandlerWrapper&lt;TResult&gt;</a></h4>
+      <section></section>
       <h4><a class="xref" href="ILib.UI.UIControl-1.html">UIControl&lt;TParam&gt;</a></h4>
       <section><p>UIの表示制御を行うクラスです。</p>
 </section>
@@ -139,10 +143,22 @@ Open・Change・Closeの操作を行えます。
       <h4><a class="xref" href="ILib.UI.IExecuteBack.html">IExecuteBack</a></h4>
       <section><p>UIのバック処理</p>
 </section>
+      <h4><a class="xref" href="ILib.UI.IHasQueryResult-1.html">IHasQueryResult&lt;TResult&gt;</a></h4>
+      <section><p>リザルトを保持する事を示すクラスです。
+値をセットすると自動で自身をCloseします。</p>
+</section>
       <h4><a class="xref" href="ILib.UI.IQueueEntry.html">IQueueEntry</a></h4>
       <section><p>UIQueueのリクエストです。
 awaitした場合はCloseを待ちます</p>
 </section>
+      <h4><a class="xref" href="ILib.UI.IQueueQuery-1.html">IQueueQuery&lt;TResult&gt;</a></h4>
+      <section><p>UIQueueを用いた結果受け取り手続きを行うためのクラスです。
+UIControlにIQueueQueryHandler/IHasQueryResultのいずれかを実装する必要があります。</p>
+</section>
+      <h4><a class="xref" href="ILib.UI.IQueueQueryHandler.html">IQueueQueryHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="ILib.UI.IQueueQueryHandler-1.html">IQueueQueryHandler&lt;TResult&gt;</a></h4>
+      <section></section>
       <h4><a class="xref" href="ILib.UI.IStackEntry.html">IStackEntry</a></h4>
       <section><p>UIStackのリクエストです。
 Pushの完了を受け取れます。</p>

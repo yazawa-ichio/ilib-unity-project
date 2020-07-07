@@ -6657,6 +6657,209 @@ references:
   fullName: ILib.Audio.SoundManagement.BgmController.System.IDisposable.Dispose
   nameWithType: BgmController.IDisposable.Dispose
   nameWithType.vb: BgmController.System.IDisposable.Dispose
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1
+  name: BgmControllerWrapper<T>
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html
+  commentId: T:ILib.Audio.SoundManagement.BgmControllerWrapper`1
+  name.vb: BgmControllerWrapper(Of T)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T)
+  nameWithType: BgmControllerWrapper<T>
+  nameWithType.vb: BgmControllerWrapper(Of T)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change(`0,ILib.Audio.MusicPlayConfig,System.Boolean)
+  name: Change(T, MusicPlayConfig, Boolean)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Change__0_ILib_Audio_MusicPlayConfig_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change(`0,ILib.Audio.MusicPlayConfig,System.Boolean)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Change(T, ILib.Audio.MusicPlayConfig, System.Boolean)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Change(T, ILib.Audio.MusicPlayConfig, System.Boolean)
+  nameWithType: BgmControllerWrapper<T>.Change(T, MusicPlayConfig, Boolean)
+  nameWithType.vb: BgmControllerWrapper(Of T).Change(T, MusicPlayConfig, Boolean)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change(`0,System.Single,System.Boolean)
+  name: Change(T, Single, Boolean)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Change__0_System_Single_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change(`0,System.Single,System.Boolean)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Change(T, System.Single, System.Boolean)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Change(T, System.Single, System.Boolean)
+  nameWithType: BgmControllerWrapper<T>.Change(T, Single, Boolean)
+  nameWithType.vb: BgmControllerWrapper(Of T).Change(T, Single, Boolean)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change*
+  name: Change
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Change_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Change
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Change
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Change
+  nameWithType: BgmControllerWrapper<T>.Change
+  nameWithType.vb: BgmControllerWrapper(Of T).Change
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.ClearStack
+  name: ClearStack()
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_ClearStack
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.ClearStack
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.ClearStack()
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).ClearStack()
+  nameWithType: BgmControllerWrapper<T>.ClearStack()
+  nameWithType.vb: BgmControllerWrapper(Of T).ClearStack()
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.ClearStack*
+  name: ClearStack
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_ClearStack_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.ClearStack
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.ClearStack
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).ClearStack
+  nameWithType: BgmControllerWrapper<T>.ClearStack
+  nameWithType.vb: BgmControllerWrapper(Of T).ClearStack
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Current
+  name: Current
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Current
+  commentId: P:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Current
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Current
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Current
+  nameWithType: BgmControllerWrapper<T>.Current
+  nameWithType.vb: BgmControllerWrapper(Of T).Current
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Current*
+  name: Current
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Current_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Current
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Current
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Current
+  nameWithType: BgmControllerWrapper<T>.Current
+  nameWithType.vb: BgmControllerWrapper(Of T).Current
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.GetParam(`0)
+  name: GetParam(T)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_GetParam__0_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.GetParam(`0)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.GetParam(T)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).GetParam(T)
+  nameWithType: BgmControllerWrapper<T>.GetParam(T)
+  nameWithType.vb: BgmControllerWrapper(Of T).GetParam(T)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.GetParam*
+  name: GetParam
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_GetParam_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.GetParam
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.GetParam
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).GetParam
+  nameWithType: BgmControllerWrapper<T>.GetParam
+  nameWithType.vb: BgmControllerWrapper(Of T).GetParam
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.IsCacheInfoInStack
+  name: IsCacheInfoInStack
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_IsCacheInfoInStack
+  commentId: P:ILib.Audio.SoundManagement.BgmControllerWrapper`1.IsCacheInfoInStack
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.IsCacheInfoInStack
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).IsCacheInfoInStack
+  nameWithType: BgmControllerWrapper<T>.IsCacheInfoInStack
+  nameWithType.vb: BgmControllerWrapper(Of T).IsCacheInfoInStack
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.IsCacheInfoInStack*
+  name: IsCacheInfoInStack
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_IsCacheInfoInStack_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.IsCacheInfoInStack
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.IsCacheInfoInStack
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).IsCacheInfoInStack
+  nameWithType: BgmControllerWrapper<T>.IsCacheInfoInStack
+  nameWithType.vb: BgmControllerWrapper(Of T).IsCacheInfoInStack
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pause(System.Single)
+  name: Pause(Single)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Pause_System_Single_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pause(System.Single)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Pause(System.Single)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Pause(System.Single)
+  nameWithType: BgmControllerWrapper<T>.Pause(Single)
+  nameWithType.vb: BgmControllerWrapper(Of T).Pause(Single)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pause*
+  name: Pause
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Pause_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pause
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Pause
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Pause
+  nameWithType: BgmControllerWrapper<T>.Pause
+  nameWithType.vb: BgmControllerWrapper(Of T).Pause
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop(ILib.Audio.MusicPlayConfig,System.Boolean)
+  name: Pop(MusicPlayConfig, Boolean)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Pop_ILib_Audio_MusicPlayConfig_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop(ILib.Audio.MusicPlayConfig,System.Boolean)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Pop(ILib.Audio.MusicPlayConfig, System.Boolean)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Pop(ILib.Audio.MusicPlayConfig, System.Boolean)
+  nameWithType: BgmControllerWrapper<T>.Pop(MusicPlayConfig, Boolean)
+  nameWithType.vb: BgmControllerWrapper(Of T).Pop(MusicPlayConfig, Boolean)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop(System.Single,System.Boolean)
+  name: Pop(Single, Boolean)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Pop_System_Single_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop(System.Single,System.Boolean)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Pop(System.Single, System.Boolean)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Pop(System.Single, System.Boolean)
+  nameWithType: BgmControllerWrapper<T>.Pop(Single, Boolean)
+  nameWithType.vb: BgmControllerWrapper(Of T).Pop(Single, Boolean)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop*
+  name: Pop
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Pop_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Pop
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Pop
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Pop
+  nameWithType: BgmControllerWrapper<T>.Pop
+  nameWithType.vb: BgmControllerWrapper(Of T).Pop
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push(`0,ILib.Audio.MusicPlayConfig)
+  name: Push(T, MusicPlayConfig)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Push__0_ILib_Audio_MusicPlayConfig_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push(`0,ILib.Audio.MusicPlayConfig)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Push(T, ILib.Audio.MusicPlayConfig)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Push(T, ILib.Audio.MusicPlayConfig)
+  nameWithType: BgmControllerWrapper<T>.Push(T, MusicPlayConfig)
+  nameWithType.vb: BgmControllerWrapper(Of T).Push(T, MusicPlayConfig)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push(`0,System.Single)
+  name: Push(T, Single)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Push__0_System_Single_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push(`0,System.Single)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Push(T, System.Single)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Push(T, System.Single)
+  nameWithType: BgmControllerWrapper<T>.Push(T, Single)
+  nameWithType.vb: BgmControllerWrapper(Of T).Push(T, Single)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push*
+  name: Push
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Push_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Push
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Push
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Push
+  nameWithType: BgmControllerWrapper<T>.Push
+  nameWithType.vb: BgmControllerWrapper(Of T).Push
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Resume(System.Single)
+  name: Resume(Single)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Resume_System_Single_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Resume(System.Single)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Resume(System.Single)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Resume(System.Single)
+  nameWithType: BgmControllerWrapper<T>.Resume(Single)
+  nameWithType.vb: BgmControllerWrapper(Of T).Resume(Single)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Resume*
+  name: Resume
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Resume_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Resume
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Resume
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Resume
+  nameWithType: BgmControllerWrapper<T>.Resume
+  nameWithType.vb: BgmControllerWrapper(Of T).Resume
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Stop(System.Single)
+  name: Stop(Single)
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Stop_System_Single_
+  commentId: M:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Stop(System.Single)
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Stop(System.Single)
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Stop(System.Single)
+  nameWithType: BgmControllerWrapper<T>.Stop(Single)
+  nameWithType.vb: BgmControllerWrapper(Of T).Stop(Single)
+- uid: ILib.Audio.SoundManagement.BgmControllerWrapper`1.Stop*
+  name: Stop
+  href: api/ILib.Audio.SoundManagement.BgmControllerWrapper-1.html#ILib_Audio_SoundManagement_BgmControllerWrapper_1_Stop_
+  commentId: Overload:ILib.Audio.SoundManagement.BgmControllerWrapper`1.Stop
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.BgmControllerWrapper<T>.Stop
+  fullName.vb: ILib.Audio.SoundManagement.BgmControllerWrapper(Of T).Stop
+  nameWithType: BgmControllerWrapper<T>.Stop
+  nameWithType.vb: BgmControllerWrapper(Of T).Stop
 - uid: ILib.Audio.SoundManagement.Config
   name: Config
   href: api/ILib.Audio.SoundManagement.Config.html
@@ -6973,6 +7176,196 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.SeController.RemoveCache
   nameWithType: SeController.RemoveCache
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1
+  name: SeControllerWrapper<T>
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html
+  commentId: T:ILib.Audio.SoundManagement.SeControllerWrapper`1
+  name.vb: SeControllerWrapper(Of T)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T)
+  nameWithType: SeControllerWrapper<T>
+  nameWithType.vb: SeControllerWrapper(Of T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.AddCache(`0,System.Action{System.Boolean,System.Exception})
+  name: AddCache(T, Action<Boolean, Exception>)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_AddCache__0_System_Action_System_Boolean_System_Exception__
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.AddCache(`0,System.Action{System.Boolean,System.Exception})
+  name.vb: AddCache(T, Action(Of Boolean, Exception))
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.AddCache(T, System.Action<System.Boolean, System.Exception>)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).AddCache(T, System.Action(Of System.Boolean, System.Exception))
+  nameWithType: SeControllerWrapper<T>.AddCache(T, Action<Boolean, Exception>)
+  nameWithType.vb: SeControllerWrapper(Of T).AddCache(T, Action(Of Boolean, Exception))
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.AddCache*
+  name: AddCache
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_AddCache_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.AddCache
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.AddCache
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).AddCache
+  nameWithType: SeControllerWrapper<T>.AddCache
+  nameWithType.vb: SeControllerWrapper(Of T).AddCache
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.ClearCache(System.Boolean)
+  name: ClearCache(Boolean)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_ClearCache_System_Boolean_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.ClearCache(System.Boolean)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.ClearCache(System.Boolean)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).ClearCache(System.Boolean)
+  nameWithType: SeControllerWrapper<T>.ClearCache(Boolean)
+  nameWithType.vb: SeControllerWrapper(Of T).ClearCache(Boolean)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.ClearCache*
+  name: ClearCache
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_ClearCache_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.ClearCache
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.ClearCache
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).ClearCache
+  nameWithType: SeControllerWrapper<T>.ClearCache
+  nameWithType.vb: SeControllerWrapper(Of T).ClearCache
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.CreateCacheScope(`0[])
+  name: CreateCacheScope(T[])
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_CreateCacheScope__0___
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.CreateCacheScope(`0[])
+  name.vb: CreateCacheScope(T())
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.CreateCacheScope(T[])
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).CreateCacheScope(T())
+  nameWithType: SeControllerWrapper<T>.CreateCacheScope(T[])
+  nameWithType.vb: SeControllerWrapper(Of T).CreateCacheScope(T())
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.CreateCacheScope*
+  name: CreateCacheScope
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_CreateCacheScope_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.CreateCacheScope
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.CreateCacheScope
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).CreateCacheScope
+  nameWithType: SeControllerWrapper<T>.CreateCacheScope
+  nameWithType.vb: SeControllerWrapper(Of T).CreateCacheScope
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.GetParam(`0)
+  name: GetParam(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_GetParam__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.GetParam(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.GetParam(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).GetParam(T)
+  nameWithType: SeControllerWrapper<T>.GetParam(T)
+  nameWithType.vb: SeControllerWrapper(Of T).GetParam(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.GetParam*
+  name: GetParam
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_GetParam_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.GetParam
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.GetParam
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).GetParam
+  nameWithType: SeControllerWrapper<T>.GetParam
+  nameWithType.vb: SeControllerWrapper(Of T).GetParam
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.MaxPoolCount
+  name: MaxPoolCount
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_MaxPoolCount
+  commentId: P:ILib.Audio.SoundManagement.SeControllerWrapper`1.MaxPoolCount
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.MaxPoolCount
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).MaxPoolCount
+  nameWithType: SeControllerWrapper<T>.MaxPoolCount
+  nameWithType.vb: SeControllerWrapper(Of T).MaxPoolCount
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.MaxPoolCount*
+  name: MaxPoolCount
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_MaxPoolCount_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.MaxPoolCount
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.MaxPoolCount
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).MaxPoolCount
+  nameWithType: SeControllerWrapper<T>.MaxPoolCount
+  nameWithType.vb: SeControllerWrapper(Of T).MaxPoolCount
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.Play(`0)
+  name: Play(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_Play__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.Play(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.Play(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).Play(T)
+  nameWithType: SeControllerWrapper<T>.Play(T)
+  nameWithType.vb: SeControllerWrapper(Of T).Play(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.Play*
+  name: Play
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_Play_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.Play
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.Play
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).Play
+  nameWithType: SeControllerWrapper<T>.Play
+  nameWithType.vb: SeControllerWrapper(Of T).Play
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayHandle(`0)
+  name: PlayHandle(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlayHandle__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayHandle(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlayHandle(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlayHandle(T)
+  nameWithType: SeControllerWrapper<T>.PlayHandle(T)
+  nameWithType.vb: SeControllerWrapper(Of T).PlayHandle(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayHandle*
+  name: PlayHandle
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlayHandle_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayHandle
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlayHandle
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlayHandle
+  nameWithType: SeControllerWrapper<T>.PlayHandle
+  nameWithType.vb: SeControllerWrapper(Of T).PlayHandle
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayJingle(`0)
+  name: PlayJingle(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlayJingle__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayJingle(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlayJingle(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlayJingle(T)
+  nameWithType: SeControllerWrapper<T>.PlayJingle(T)
+  nameWithType.vb: SeControllerWrapper(Of T).PlayJingle(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayJingle*
+  name: PlayJingle
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlayJingle_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlayJingle
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlayJingle
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlayJingle
+  nameWithType: SeControllerWrapper<T>.PlayJingle
+  nameWithType.vb: SeControllerWrapper(Of T).PlayJingle
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI(`0)
+  name: PlaySeFromUI(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlaySeFromUI__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlaySeFromUI(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlaySeFromUI(T)
+  nameWithType: SeControllerWrapper<T>.PlaySeFromUI(T)
+  nameWithType.vb: SeControllerWrapper(Of T).PlaySeFromUI(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI(`0,ILib.Audio.IPlayingSoundContext@)
+  name: PlaySeFromUI(T, out IPlayingSoundContext)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlaySeFromUI__0_ILib_Audio_IPlayingSoundContext__
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI(`0,ILib.Audio.IPlayingSoundContext@)
+  name.vb: PlaySeFromUI(T, ByRef IPlayingSoundContext)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlaySeFromUI(T, out ILib.Audio.IPlayingSoundContext)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlaySeFromUI(T, ByRef ILib.Audio.IPlayingSoundContext)
+  nameWithType: SeControllerWrapper<T>.PlaySeFromUI(T, out IPlayingSoundContext)
+  nameWithType.vb: SeControllerWrapper(Of T).PlaySeFromUI(T, ByRef IPlayingSoundContext)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI*
+  name: PlaySeFromUI
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_PlaySeFromUI_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.PlaySeFromUI
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.PlaySeFromUI
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).PlaySeFromUI
+  nameWithType: SeControllerWrapper<T>.PlaySeFromUI
+  nameWithType.vb: SeControllerWrapper(Of T).PlaySeFromUI
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.RemoveCache(`0)
+  name: RemoveCache(T)
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_RemoveCache__0_
+  commentId: M:ILib.Audio.SoundManagement.SeControllerWrapper`1.RemoveCache(`0)
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.RemoveCache(T)
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).RemoveCache(T)
+  nameWithType: SeControllerWrapper<T>.RemoveCache(T)
+  nameWithType.vb: SeControllerWrapper(Of T).RemoveCache(T)
+- uid: ILib.Audio.SoundManagement.SeControllerWrapper`1.RemoveCache*
+  name: RemoveCache
+  href: api/ILib.Audio.SoundManagement.SeControllerWrapper-1.html#ILib_Audio_SoundManagement_SeControllerWrapper_1_RemoveCache_
+  commentId: Overload:ILib.Audio.SoundManagement.SeControllerWrapper`1.RemoveCache
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeControllerWrapper<T>.RemoveCache
+  fullName.vb: ILib.Audio.SoundManagement.SeControllerWrapper(Of T).RemoveCache
+  nameWithType: SeControllerWrapper<T>.RemoveCache
+  nameWithType.vb: SeControllerWrapper(Of T).RemoveCache
 - uid: ILib.Audio.SoundManagement.SoundManagerInstaller
   name: SoundManagerInstaller
   href: api/ILib.Audio.SoundManagement.SoundManagerInstaller.html
@@ -7036,6 +7429,82 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.VoiceController.PlayOneShot
   nameWithType: VoiceController.PlayOneShot
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1
+  name: VoiceControllerWrapper<T>
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html
+  commentId: T:ILib.Audio.SoundManagement.VoiceControllerWrapper`1
+  name.vb: VoiceControllerWrapper(Of T)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T)
+  nameWithType: VoiceControllerWrapper<T>
+  nameWithType.vb: VoiceControllerWrapper(Of T)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.GetParam(`0)
+  name: GetParam(T)
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_GetParam__0_
+  commentId: M:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.GetParam(`0)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.GetParam(T)
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).GetParam(T)
+  nameWithType: VoiceControllerWrapper<T>.GetParam(T)
+  nameWithType.vb: VoiceControllerWrapper(Of T).GetParam(T)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.GetParam*
+  name: GetParam
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_GetParam_
+  commentId: Overload:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.GetParam
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.GetParam
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).GetParam
+  nameWithType: VoiceControllerWrapper<T>.GetParam
+  nameWithType.vb: VoiceControllerWrapper(Of T).GetParam
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play(`0)
+  name: Play(T)
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_Play__0_
+  commentId: M:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play(`0)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.Play(T)
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).Play(T)
+  nameWithType: VoiceControllerWrapper<T>.Play(T)
+  nameWithType.vb: VoiceControllerWrapper(Of T).Play(T)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play(ILib.Audio.SoundInfo)
+  name: Play(SoundInfo)
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_Play_ILib_Audio_SoundInfo_
+  commentId: M:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play(ILib.Audio.SoundInfo)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.Play(ILib.Audio.SoundInfo)
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).Play(ILib.Audio.SoundInfo)
+  nameWithType: VoiceControllerWrapper<T>.Play(SoundInfo)
+  nameWithType.vb: VoiceControllerWrapper(Of T).Play(SoundInfo)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play*
+  name: Play
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_Play_
+  commentId: Overload:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.Play
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.Play
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).Play
+  nameWithType: VoiceControllerWrapper<T>.Play
+  nameWithType.vb: VoiceControllerWrapper(Of T).Play
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot(`0)
+  name: PlayOneShot(T)
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_PlayOneShot__0_
+  commentId: M:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot(`0)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.PlayOneShot(T)
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).PlayOneShot(T)
+  nameWithType: VoiceControllerWrapper<T>.PlayOneShot(T)
+  nameWithType.vb: VoiceControllerWrapper(Of T).PlayOneShot(T)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot(ILib.Audio.SoundInfo)
+  name: PlayOneShot(SoundInfo)
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_PlayOneShot_ILib_Audio_SoundInfo_
+  commentId: M:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot(ILib.Audio.SoundInfo)
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.PlayOneShot(ILib.Audio.SoundInfo)
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).PlayOneShot(ILib.Audio.SoundInfo)
+  nameWithType: VoiceControllerWrapper<T>.PlayOneShot(SoundInfo)
+  nameWithType.vb: VoiceControllerWrapper(Of T).PlayOneShot(SoundInfo)
+- uid: ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot*
+  name: PlayOneShot
+  href: api/ILib.Audio.SoundManagement.VoiceControllerWrapper-1.html#ILib_Audio_SoundManagement_VoiceControllerWrapper_1_PlayOneShot_
+  commentId: Overload:ILib.Audio.SoundManagement.VoiceControllerWrapper`1.PlayOneShot
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.VoiceControllerWrapper<T>.PlayOneShot
+  fullName.vb: ILib.Audio.SoundManagement.VoiceControllerWrapper(Of T).PlayOneShot
+  nameWithType: VoiceControllerWrapper<T>.PlayOneShot
+  nameWithType.vb: VoiceControllerWrapper(Of T).PlayOneShot
 - uid: ILib.Audio.SoundManager
   name: SoundManager
   href: api/ILib.Audio.SoundManager.html
@@ -14420,6 +14889,28 @@ references:
   isSpec: "True"
   fullName: ILib.FSM.State.Param
   nameWithType: State.Param
+- uid: ILib.FSM.State.StrictTransition(System.Int32,System.Object)
+  name: StrictTransition(Int32, Object)
+  href: api/ILib.FSM.State.html#ILib_FSM_State_StrictTransition_System_Int32_System_Object_
+  commentId: M:ILib.FSM.State.StrictTransition(System.Int32,System.Object)
+  fullName: ILib.FSM.State.StrictTransition(System.Int32, System.Object)
+  nameWithType: State.StrictTransition(Int32, Object)
+- uid: ILib.FSM.State.StrictTransition*
+  name: StrictTransition
+  href: api/ILib.FSM.State.html#ILib_FSM_State_StrictTransition_
+  commentId: Overload:ILib.FSM.State.StrictTransition
+  isSpec: "True"
+  fullName: ILib.FSM.State.StrictTransition
+  nameWithType: State.StrictTransition
+- uid: ILib.FSM.State.StrictTransition``1(``0,System.Object)
+  name: StrictTransition<TEnum>(TEnum, Object)
+  href: api/ILib.FSM.State.html#ILib_FSM_State_StrictTransition__1___0_System_Object_
+  commentId: M:ILib.FSM.State.StrictTransition``1(``0,System.Object)
+  name.vb: StrictTransition(Of TEnum)(TEnum, Object)
+  fullName: ILib.FSM.State.StrictTransition<TEnum>(TEnum, System.Object)
+  fullName.vb: ILib.FSM.State.StrictTransition(Of TEnum)(TEnum, System.Object)
+  nameWithType: State.StrictTransition<TEnum>(TEnum, Object)
+  nameWithType.vb: State.StrictTransition(Of TEnum)(TEnum, Object)
 - uid: ILib.FSM.State.Transition(System.Int32,System.Object)
   name: Transition(Int32, Object)
   href: api/ILib.FSM.State.html#ILib_FSM_State_Transition_System_Int32_System_Object_
@@ -14527,6 +15018,38 @@ references:
   fullName.vb: ILib.FSM.StateMachine.AddTransition(Of TEnum)(TEnum, ILib.FSM.State, ILib.FSM.State)
   nameWithType: StateMachine.AddTransition<TEnum>(TEnum, State, State)
   nameWithType.vb: StateMachine.AddTransition(Of TEnum)(TEnum, State, State)
+- uid: ILib.FSM.StateMachine.Execute*
+  name: Execute
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Execute_
+  commentId: Overload:ILib.FSM.StateMachine.Execute
+  isSpec: "True"
+  fullName: ILib.FSM.StateMachine.Execute
+  nameWithType: StateMachine.Execute
+- uid: ILib.FSM.StateMachine.Execute``1(System.Action{``0})
+  name: Execute<T>(Action<T>)
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Execute__1_System_Action___0__
+  commentId: M:ILib.FSM.StateMachine.Execute``1(System.Action{``0})
+  name.vb: Execute(Of T)(Action(Of T))
+  fullName: ILib.FSM.StateMachine.Execute<T>(System.Action<T>)
+  fullName.vb: ILib.FSM.StateMachine.Execute(Of T)(System.Action(Of T))
+  nameWithType: StateMachine.Execute<T>(Action<T>)
+  nameWithType.vb: StateMachine.Execute(Of T)(Action(Of T))
+- uid: ILib.FSM.StateMachine.Get*
+  name: Get
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Get_
+  commentId: Overload:ILib.FSM.StateMachine.Get
+  isSpec: "True"
+  fullName: ILib.FSM.StateMachine.Get
+  nameWithType: StateMachine.Get
+- uid: ILib.FSM.StateMachine.Get``1
+  name: Get<T>()
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Get__1
+  commentId: M:ILib.FSM.StateMachine.Get``1
+  name.vb: Get(Of T)()
+  fullName: ILib.FSM.StateMachine.Get<T>()
+  fullName.vb: ILib.FSM.StateMachine.Get(Of T)()
+  nameWithType: StateMachine.Get<T>()
+  nameWithType.vb: StateMachine.Get(Of T)()
 - uid: ILib.FSM.StateMachine.Init(ILib.FSM.State,System.Object)
   name: Init(State, Object)
   href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Init_ILib_FSM_State_System_Object_
@@ -14559,6 +15082,28 @@ references:
   isSpec: "True"
   fullName: ILib.FSM.StateMachine.Initialized
   nameWithType: StateMachine.Initialized
+- uid: ILib.FSM.StateMachine.StrictTransition(System.Int32,System.Object)
+  name: StrictTransition(Int32, Object)
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_StrictTransition_System_Int32_System_Object_
+  commentId: M:ILib.FSM.StateMachine.StrictTransition(System.Int32,System.Object)
+  fullName: ILib.FSM.StateMachine.StrictTransition(System.Int32, System.Object)
+  nameWithType: StateMachine.StrictTransition(Int32, Object)
+- uid: ILib.FSM.StateMachine.StrictTransition*
+  name: StrictTransition
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_StrictTransition_
+  commentId: Overload:ILib.FSM.StateMachine.StrictTransition
+  isSpec: "True"
+  fullName: ILib.FSM.StateMachine.StrictTransition
+  nameWithType: StateMachine.StrictTransition
+- uid: ILib.FSM.StateMachine.StrictTransition``1(``0,System.Object)
+  name: StrictTransition<TEnum>(TEnum, Object)
+  href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_StrictTransition__1___0_System_Object_
+  commentId: M:ILib.FSM.StateMachine.StrictTransition``1(``0,System.Object)
+  name.vb: StrictTransition(Of TEnum)(TEnum, Object)
+  fullName: ILib.FSM.StateMachine.StrictTransition<TEnum>(TEnum, System.Object)
+  fullName.vb: ILib.FSM.StateMachine.StrictTransition(Of TEnum)(TEnum, System.Object)
+  nameWithType: StateMachine.StrictTransition<TEnum>(TEnum, Object)
+  nameWithType.vb: StateMachine.StrictTransition(Of TEnum)(TEnum, Object)
 - uid: ILib.FSM.StateMachine.Transition(System.Int32,System.Object)
   name: Transition(Int32, Object)
   href: api/ILib.FSM.StateMachine.html#ILib_FSM_StateMachine_Transition_System_Int32_System_Object_
@@ -15763,23 +16308,23 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.Behavior.GetBindables
   nameWithType: Behavior.GetBindables
-- uid: ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messanger
-  name: IBehavior.Messanger
-  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_ILib_MVVM_IBehavior_Messanger
-  commentId: P:ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messanger
-  name.vb: ILib.MVVM.IBehavior.Messanger
-  fullName: ILib.MVVM.Behavior.ILib.MVVM.IBehavior.Messanger
-  nameWithType: Behavior.IBehavior.Messanger
-  nameWithType.vb: Behavior.ILib.MVVM.IBehavior.Messanger
-- uid: ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messanger*
-  name: IBehavior.Messanger
-  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_ILib_MVVM_IBehavior_Messanger_
-  commentId: Overload:ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messanger
+- uid: ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messenger
+  name: IBehavior.Messenger
+  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_ILib_MVVM_IBehavior_Messenger
+  commentId: P:ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messenger
+  name.vb: ILib.MVVM.IBehavior.Messenger
+  fullName: ILib.MVVM.Behavior.ILib.MVVM.IBehavior.Messenger
+  nameWithType: Behavior.IBehavior.Messenger
+  nameWithType.vb: Behavior.ILib.MVVM.IBehavior.Messenger
+- uid: ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messenger*
+  name: IBehavior.Messenger
+  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_ILib_MVVM_IBehavior_Messenger_
+  commentId: Overload:ILib.MVVM.Behavior.ILib#MVVM#IBehavior#Messenger
   isSpec: "True"
-  name.vb: ILib.MVVM.IBehavior.Messanger
-  fullName: ILib.MVVM.Behavior.ILib.MVVM.IBehavior.Messanger
-  nameWithType: Behavior.IBehavior.Messanger
-  nameWithType.vb: Behavior.ILib.MVVM.IBehavior.Messanger
+  name.vb: ILib.MVVM.IBehavior.Messenger
+  fullName: ILib.MVVM.Behavior.ILib.MVVM.IBehavior.Messenger
+  nameWithType: Behavior.IBehavior.Messenger
+  nameWithType.vb: Behavior.ILib.MVVM.IBehavior.Messenger
 - uid: ILib.MVVM.Behavior.ILib#MVVM#IMultipleBindable#GetBindables
   name: IMultipleBindable.GetBindables()
   href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_ILib_MVVM_IMultipleBindable_GetBindables
@@ -15814,25 +16359,25 @@ references:
   fullName: ILib.MVVM.Behavior.ILib.MVVM.IMultipleBindable.OnPrepare
   nameWithType: Behavior.IMultipleBindable.OnPrepare
   nameWithType.vb: Behavior.ILib.MVVM.IMultipleBindable.OnPrepare
-- uid: ILib.MVVM.Behavior.m_Messanger
-  name: m_Messanger
-  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_m_Messanger
-  commentId: F:ILib.MVVM.Behavior.m_Messanger
-  fullName: ILib.MVVM.Behavior.m_Messanger
-  nameWithType: Behavior.m_Messanger
-- uid: ILib.MVVM.Behavior.MessangerPath
-  name: MessangerPath
-  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_MessangerPath
-  commentId: P:ILib.MVVM.Behavior.MessangerPath
-  fullName: ILib.MVVM.Behavior.MessangerPath
-  nameWithType: Behavior.MessangerPath
-- uid: ILib.MVVM.Behavior.MessangerPath*
-  name: MessangerPath
-  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_MessangerPath_
-  commentId: Overload:ILib.MVVM.Behavior.MessangerPath
+- uid: ILib.MVVM.Behavior.m_Messenger
+  name: m_Messenger
+  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_m_Messenger
+  commentId: F:ILib.MVVM.Behavior.m_Messenger
+  fullName: ILib.MVVM.Behavior.m_Messenger
+  nameWithType: Behavior.m_Messenger
+- uid: ILib.MVVM.Behavior.MessengerPath
+  name: MessengerPath
+  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_MessengerPath
+  commentId: P:ILib.MVVM.Behavior.MessengerPath
+  fullName: ILib.MVVM.Behavior.MessengerPath
+  nameWithType: Behavior.MessengerPath
+- uid: ILib.MVVM.Behavior.MessengerPath*
+  name: MessengerPath
+  href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_MessengerPath_
+  commentId: Overload:ILib.MVVM.Behavior.MessengerPath
   isSpec: "True"
-  fullName: ILib.MVVM.Behavior.MessangerPath
-  nameWithType: Behavior.MessangerPath
+  fullName: ILib.MVVM.Behavior.MessengerPath
+  nameWithType: Behavior.MessengerPath
 - uid: ILib.MVVM.Behavior.OnDestroyImpl
   name: OnDestroyImpl()
   href: api/ILib.MVVM.Behavior.html#ILib_MVVM_Behavior_OnDestroyImpl
@@ -16974,12 +17519,15 @@ references:
   fullName.vb: ILib.MVVM.BindingPropertyCollection.Get(Of T)(System.String)
   nameWithType: BindingPropertyCollection.Get<T>(String)
   nameWithType.vb: BindingPropertyCollection.Get(Of T)(String)
-- uid: ILib.MVVM.BindingPropertyCollection.GetAll
-  name: GetAll()
-  href: api/ILib.MVVM.BindingPropertyCollection.html#ILib_MVVM_BindingPropertyCollection_GetAll
-  commentId: M:ILib.MVVM.BindingPropertyCollection.GetAll
-  fullName: ILib.MVVM.BindingPropertyCollection.GetAll()
-  nameWithType: BindingPropertyCollection.GetAll()
+- uid: ILib.MVVM.BindingPropertyCollection.GetAll(System.Collections.Generic.List{ILib.MVVM.IBindingProperty})
+  name: GetAll(List<IBindingProperty>)
+  href: api/ILib.MVVM.BindingPropertyCollection.html#ILib_MVVM_BindingPropertyCollection_GetAll_System_Collections_Generic_List_ILib_MVVM_IBindingProperty__
+  commentId: M:ILib.MVVM.BindingPropertyCollection.GetAll(System.Collections.Generic.List{ILib.MVVM.IBindingProperty})
+  name.vb: GetAll(List(Of IBindingProperty))
+  fullName: ILib.MVVM.BindingPropertyCollection.GetAll(System.Collections.Generic.List<ILib.MVVM.IBindingProperty>)
+  fullName.vb: ILib.MVVM.BindingPropertyCollection.GetAll(System.Collections.Generic.List(Of ILib.MVVM.IBindingProperty))
+  nameWithType: BindingPropertyCollection.GetAll(List<IBindingProperty>)
+  nameWithType.vb: BindingPropertyCollection.GetAll(List(Of IBindingProperty))
 - uid: ILib.MVVM.BindingPropertyCollection.GetAll*
   name: GetAll
   href: api/ILib.MVVM.BindingPropertyCollection.html#ILib_MVVM_BindingPropertyCollection_GetAll_
@@ -17115,6 +17663,19 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.ButtonBind.OnInit
   nameWithType: ButtonBind.OnInit
+- uid: ILib.MVVM.ButtonBind.OnReturn
+  name: OnReturn()
+  href: api/ILib.MVVM.ButtonBind.html#ILib_MVVM_ButtonBind_OnReturn
+  commentId: M:ILib.MVVM.ButtonBind.OnReturn
+  fullName: ILib.MVVM.ButtonBind.OnReturn()
+  nameWithType: ButtonBind.OnReturn()
+- uid: ILib.MVVM.ButtonBind.OnReturn*
+  name: OnReturn
+  href: api/ILib.MVVM.ButtonBind.html#ILib_MVVM_ButtonBind_OnReturn_
+  commentId: Overload:ILib.MVVM.ButtonBind.OnReturn
+  isSpec: "True"
+  fullName: ILib.MVVM.ButtonBind.OnReturn
+  nameWithType: ButtonBind.OnReturn
 - uid: ILib.MVVM.ButtonBind.UpdateValue(System.Boolean)
   name: UpdateValue(Boolean)
   href: api/ILib.MVVM.ButtonBind.html#ILib_MVVM_ButtonBind_UpdateValue_System_Boolean_
@@ -19223,18 +19784,18 @@ references:
   commentId: T:ILib.MVVM.EventArgument
   fullName: ILib.MVVM.EventArgument
   nameWithType: EventArgument
+- uid: ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IMessenger)
+  name: Do(String, IMessenger)
+  href: api/ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IMessenger_
+  commentId: M:ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IMessenger)
+  fullName: ILib.MVVM.EventArgument.Do(System.String, ILib.MVVM.IMessenger)
+  nameWithType: EventArgument.Do(String, IMessenger)
 - uid: ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IViewEventDispatcher)
   name: Do(String, IViewEventDispatcher)
   href: api/ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_IViewEventDispatcher_
   commentId: M:ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.IViewEventDispatcher)
   fullName: ILib.MVVM.EventArgument.Do(System.String, ILib.MVVM.IViewEventDispatcher)
   nameWithType: EventArgument.Do(String, IViewEventDispatcher)
-- uid: ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.Messenger)
-  name: Do(String, Messenger)
-  href: api/ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_System_String_ILib_MVVM_Messenger_
-  commentId: M:ILib.MVVM.EventArgument.Do(System.String,ILib.MVVM.Messenger)
-  fullName: ILib.MVVM.EventArgument.Do(System.String, ILib.MVVM.Messenger)
-  nameWithType: EventArgument.Do(String, Messenger)
 - uid: ILib.MVVM.EventArgument.Do*
   name: Do
   href: api/ILib.MVVM.EventArgument.html#ILib_MVVM_EventArgument_Do_
@@ -19264,6 +19825,14 @@ references:
   fullName.vb: ILib.MVVM.EventArgument(Of T)
   nameWithType: EventArgument<T>
   nameWithType.vb: EventArgument(Of T)
+- uid: ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.IMessenger)
+  name: Do(String, IMessenger)
+  href: api/ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_IMessenger_
+  commentId: M:ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.IMessenger)
+  fullName: ILib.MVVM.EventArgument<T>.Do(System.String, ILib.MVVM.IMessenger)
+  fullName.vb: ILib.MVVM.EventArgument(Of T).Do(System.String, ILib.MVVM.IMessenger)
+  nameWithType: EventArgument<T>.Do(String, IMessenger)
+  nameWithType.vb: EventArgument(Of T).Do(String, IMessenger)
 - uid: ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.IViewEventDispatcher)
   name: Do(String, IViewEventDispatcher)
   href: api/ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_IViewEventDispatcher_
@@ -19272,14 +19841,6 @@ references:
   fullName.vb: ILib.MVVM.EventArgument(Of T).Do(System.String, ILib.MVVM.IViewEventDispatcher)
   nameWithType: EventArgument<T>.Do(String, IViewEventDispatcher)
   nameWithType.vb: EventArgument(Of T).Do(String, IViewEventDispatcher)
-- uid: ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.Messenger)
-  name: Do(String, Messenger)
-  href: api/ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_Do_System_String_ILib_MVVM_Messenger_
-  commentId: M:ILib.MVVM.EventArgument`1.Do(System.String,ILib.MVVM.Messenger)
-  fullName: ILib.MVVM.EventArgument<T>.Do(System.String, ILib.MVVM.Messenger)
-  fullName.vb: ILib.MVVM.EventArgument(Of T).Do(System.String, ILib.MVVM.Messenger)
-  nameWithType: EventArgument<T>.Do(String, Messenger)
-  nameWithType.vb: EventArgument(Of T).Do(String, Messenger)
 - uid: ILib.MVVM.EventArgument`1.Do*
   name: Do
   href: api/ILib.MVVM.EventArgument-1.html#ILib_MVVM_EventArgument_1_Do_
@@ -19614,6 +20175,12 @@ references:
   commentId: T:ILib.MVVM.EventNameAttribute
   fullName: ILib.MVVM.EventNameAttribute
   nameWithType: EventNameAttribute
+- uid: ILib.MVVM.EventNameDrawAttribute
+  name: EventNameDrawAttribute
+  href: api/ILib.MVVM.EventNameDrawAttribute.html
+  commentId: T:ILib.MVVM.EventNameDrawAttribute
+  fullName: ILib.MVVM.EventNameDrawAttribute
+  nameWithType: EventNameDrawAttribute
 - uid: ILib.MVVM.FloatEventButtonBind
   name: FloatEventButtonBind
   href: api/ILib.MVVM.FloatEventButtonBind.html
@@ -19823,32 +20390,32 @@ references:
   commentId: T:ILib.MVVM.IBehavior
   fullName: ILib.MVVM.IBehavior
   nameWithType: IBehavior
-- uid: ILib.MVVM.IBehavior.Messanger
-  name: Messanger
-  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_Messanger
-  commentId: P:ILib.MVVM.IBehavior.Messanger
-  fullName: ILib.MVVM.IBehavior.Messanger
-  nameWithType: IBehavior.Messanger
-- uid: ILib.MVVM.IBehavior.Messanger*
-  name: Messanger
-  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_Messanger_
-  commentId: Overload:ILib.MVVM.IBehavior.Messanger
+- uid: ILib.MVVM.IBehavior.Messenger
+  name: Messenger
+  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_Messenger
+  commentId: P:ILib.MVVM.IBehavior.Messenger
+  fullName: ILib.MVVM.IBehavior.Messenger
+  nameWithType: IBehavior.Messenger
+- uid: ILib.MVVM.IBehavior.Messenger*
+  name: Messenger
+  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_Messenger_
+  commentId: Overload:ILib.MVVM.IBehavior.Messenger
   isSpec: "True"
-  fullName: ILib.MVVM.IBehavior.Messanger
-  nameWithType: IBehavior.Messanger
-- uid: ILib.MVVM.IBehavior.MessangerPath
-  name: MessangerPath
-  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_MessangerPath
-  commentId: P:ILib.MVVM.IBehavior.MessangerPath
-  fullName: ILib.MVVM.IBehavior.MessangerPath
-  nameWithType: IBehavior.MessangerPath
-- uid: ILib.MVVM.IBehavior.MessangerPath*
-  name: MessangerPath
-  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_MessangerPath_
-  commentId: Overload:ILib.MVVM.IBehavior.MessangerPath
+  fullName: ILib.MVVM.IBehavior.Messenger
+  nameWithType: IBehavior.Messenger
+- uid: ILib.MVVM.IBehavior.MessengerPath
+  name: MessengerPath
+  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_MessengerPath
+  commentId: P:ILib.MVVM.IBehavior.MessengerPath
+  fullName: ILib.MVVM.IBehavior.MessengerPath
+  nameWithType: IBehavior.MessengerPath
+- uid: ILib.MVVM.IBehavior.MessengerPath*
+  name: MessengerPath
+  href: api/ILib.MVVM.IBehavior.html#ILib_MVVM_IBehavior_MessengerPath_
+  commentId: Overload:ILib.MVVM.IBehavior.MessengerPath
   isSpec: "True"
-  fullName: ILib.MVVM.IBehavior.MessangerPath
-  nameWithType: IBehavior.MessangerPath
+  fullName: ILib.MVVM.IBehavior.MessengerPath
+  nameWithType: IBehavior.MessengerPath
 - uid: ILib.MVVM.IBindable
   name: IBindable
   href: api/ILib.MVVM.IBindable.html
@@ -20278,6 +20845,19 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.ILightBind.Init
   nameWithType: ILightBind.Init
+- uid: ILib.MVVM.ILightBind.OnReturn
+  name: OnReturn()
+  href: api/ILib.MVVM.ILightBind.html#ILib_MVVM_ILightBind_OnReturn
+  commentId: M:ILib.MVVM.ILightBind.OnReturn
+  fullName: ILib.MVVM.ILightBind.OnReturn()
+  nameWithType: ILightBind.OnReturn()
+- uid: ILib.MVVM.ILightBind.OnReturn*
+  name: OnReturn
+  href: api/ILib.MVVM.ILightBind.html#ILib_MVVM_ILightBind_OnReturn_
+  commentId: Overload:ILib.MVVM.ILightBind.OnReturn
+  isSpec: "True"
+  fullName: ILib.MVVM.ILightBind.OnReturn
+  nameWithType: ILightBind.OnReturn
 - uid: ILib.MVVM.ImageBind
   name: ImageBind
   href: api/ILib.MVVM.ImageBind.html
@@ -20297,6 +20877,197 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.ImageBind.UpdateValue
   nameWithType: ImageBind.UpdateValue
+- uid: ILib.MVVM.IMessenger
+  name: IMessenger
+  href: api/ILib.MVVM.IMessenger.html
+  commentId: T:ILib.MVVM.IMessenger
+  fullName: ILib.MVVM.IMessenger
+  nameWithType: IMessenger
+- uid: ILib.MVVM.IMessenger.Hook
+  name: Hook
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Hook
+  commentId: P:ILib.MVVM.IMessenger.Hook
+  fullName: ILib.MVVM.IMessenger.Hook
+  nameWithType: IMessenger.Hook
+- uid: ILib.MVVM.IMessenger.Hook*
+  name: Hook
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Hook_
+  commentId: Overload:ILib.MVVM.IMessenger.Hook
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.Hook
+  nameWithType: IMessenger.Hook
+- uid: ILib.MVVM.IMessenger.Refresh
+  name: Refresh()
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Refresh
+  commentId: M:ILib.MVVM.IMessenger.Refresh
+  fullName: ILib.MVVM.IMessenger.Refresh()
+  nameWithType: IMessenger.Refresh()
+- uid: ILib.MVVM.IMessenger.Refresh*
+  name: Refresh
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Refresh_
+  commentId: Overload:ILib.MVVM.IMessenger.Refresh
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.Refresh
+  nameWithType: IMessenger.Refresh
+- uid: ILib.MVVM.IMessenger.Register*
+  name: Register
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Register_
+  commentId: Overload:ILib.MVVM.IMessenger.Register
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.Register
+  nameWithType: IMessenger.Register
+- uid: ILib.MVVM.IMessenger.Register``1(System.Object,``0,System.Action)
+  name: Register<TEvent>(Object, TEvent, Action)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Register__1_System_Object___0_System_Action_
+  commentId: M:ILib.MVVM.IMessenger.Register``1(System.Object,``0,System.Action)
+  name.vb: Register(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.IMessenger.Register<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.IMessenger.Register(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: IMessenger.Register<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: IMessenger.Register(Of TEvent)(Object, TEvent, Action)
+- uid: ILib.MVVM.IMessenger.Register``1(System.Object,System.Object,System.Action{``0})
+  name: Register<TMessage>(Object, Object, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Register__1_System_Object_System_Object_System_Action___0__
+  commentId: M:ILib.MVVM.IMessenger.Register``1(System.Object,System.Object,System.Action{``0})
+  name.vb: Register(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.Register<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.Register(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: IMessenger.Register<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: IMessenger.Register(Of TMessage)(Object, Object, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.Register``2(System.Object,``0,System.Action{``1})
+  name: Register<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Register__2_System_Object___0_System_Action___1__
+  commentId: M:ILib.MVVM.IMessenger.Register``2(System.Object,``0,System.Action{``1})
+  name.vb: Register(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.Register<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.Register(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: IMessenger.Register<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: IMessenger.Register(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.RegisterHandle(System.Object)
+  name: RegisterHandle(Object)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_RegisterHandle_System_Object_
+  commentId: M:ILib.MVVM.IMessenger.RegisterHandle(System.Object)
+  fullName: ILib.MVVM.IMessenger.RegisterHandle(System.Object)
+  nameWithType: IMessenger.RegisterHandle(Object)
+- uid: ILib.MVVM.IMessenger.RegisterHandle*
+  name: RegisterHandle
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_RegisterHandle_
+  commentId: Overload:ILib.MVVM.IMessenger.RegisterHandle
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.RegisterHandle
+  nameWithType: IMessenger.RegisterHandle
+- uid: ILib.MVVM.IMessenger.Send*
+  name: Send
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Send_
+  commentId: Overload:ILib.MVVM.IMessenger.Send
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.Send
+  nameWithType: IMessenger.Send
+- uid: ILib.MVVM.IMessenger.Send``1(``0)
+  name: Send<TEvent>(TEvent)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Send__1___0_
+  commentId: M:ILib.MVVM.IMessenger.Send``1(``0)
+  name.vb: Send(Of TEvent)(TEvent)
+  fullName: ILib.MVVM.IMessenger.Send<TEvent>(TEvent)
+  fullName.vb: ILib.MVVM.IMessenger.Send(Of TEvent)(TEvent)
+  nameWithType: IMessenger.Send<TEvent>(TEvent)
+  nameWithType.vb: IMessenger.Send(Of TEvent)(TEvent)
+- uid: ILib.MVVM.IMessenger.Send``2(``0,``1)
+  name: Send<TEvent, TMessage>(TEvent, TMessage)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Send__2___0___1_
+  commentId: M:ILib.MVVM.IMessenger.Send``2(``0,``1)
+  name.vb: Send(Of TEvent, TMessage)(TEvent, TMessage)
+  fullName: ILib.MVVM.IMessenger.Send<TEvent, TMessage>(TEvent, TMessage)
+  fullName.vb: ILib.MVVM.IMessenger.Send(Of TEvent, TMessage)(TEvent, TMessage)
+  nameWithType: IMessenger.Send<TEvent, TMessage>(TEvent, TMessage)
+  nameWithType.vb: IMessenger.Send(Of TEvent, TMessage)(TEvent, TMessage)
+- uid: ILib.MVVM.IMessenger.Unregister(System.Object)
+  name: Unregister(Object)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Unregister_System_Object_
+  commentId: M:ILib.MVVM.IMessenger.Unregister(System.Object)
+  fullName: ILib.MVVM.IMessenger.Unregister(System.Object)
+  nameWithType: IMessenger.Unregister(Object)
+- uid: ILib.MVVM.IMessenger.Unregister*
+  name: Unregister
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Unregister_
+  commentId: Overload:ILib.MVVM.IMessenger.Unregister
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.Unregister
+  nameWithType: IMessenger.Unregister
+- uid: ILib.MVVM.IMessenger.Unregister``1(System.Object,``0,System.Action)
+  name: Unregister<TEvent>(Object, TEvent, Action)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Unregister__1_System_Object___0_System_Action_
+  commentId: M:ILib.MVVM.IMessenger.Unregister``1(System.Object,``0,System.Action)
+  name.vb: Unregister(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.IMessenger.Unregister<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.IMessenger.Unregister(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: IMessenger.Unregister<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: IMessenger.Unregister(Of TEvent)(Object, TEvent, Action)
+- uid: ILib.MVVM.IMessenger.Unregister``1(System.Object,System.Object,System.Action{``0})
+  name: Unregister<TMessage>(Object, Object, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Unregister__1_System_Object_System_Object_System_Action___0__
+  commentId: M:ILib.MVVM.IMessenger.Unregister``1(System.Object,System.Object,System.Action{``0})
+  name.vb: Unregister(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.Unregister<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.Unregister(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: IMessenger.Unregister<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: IMessenger.Unregister(Of TMessage)(Object, Object, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.Unregister``2(System.Object,``0,System.Action{``1})
+  name: Unregister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_Unregister__2_System_Object___0_System_Action___1__
+  commentId: M:ILib.MVVM.IMessenger.Unregister``2(System.Object,``0,System.Action{``1})
+  name.vb: Unregister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.Unregister<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.Unregister(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: IMessenger.Unregister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: IMessenger.Unregister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.WeakRegister*
+  name: WeakRegister
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegister_
+  commentId: Overload:ILib.MVVM.IMessenger.WeakRegister
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.WeakRegister
+  nameWithType: IMessenger.WeakRegister
+- uid: ILib.MVVM.IMessenger.WeakRegister``1(System.Object,``0,System.Action)
+  name: WeakRegister<TEvent>(Object, TEvent, Action)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegister__1_System_Object___0_System_Action_
+  commentId: M:ILib.MVVM.IMessenger.WeakRegister``1(System.Object,``0,System.Action)
+  name.vb: WeakRegister(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.IMessenger.WeakRegister<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.IMessenger.WeakRegister(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: IMessenger.WeakRegister<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: IMessenger.WeakRegister(Of TEvent)(Object, TEvent, Action)
+- uid: ILib.MVVM.IMessenger.WeakRegister``1(System.Object,System.Object,System.Action{``0})
+  name: WeakRegister<TMessage>(Object, Object, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegister__1_System_Object_System_Object_System_Action___0__
+  commentId: M:ILib.MVVM.IMessenger.WeakRegister``1(System.Object,System.Object,System.Action{``0})
+  name.vb: WeakRegister(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.WeakRegister<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.WeakRegister(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: IMessenger.WeakRegister<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: IMessenger.WeakRegister(Of TMessage)(Object, Object, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.WeakRegister``2(System.Object,``0,System.Action{``1})
+  name: WeakRegister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegister__2_System_Object___0_System_Action___1__
+  commentId: M:ILib.MVVM.IMessenger.WeakRegister``2(System.Object,``0,System.Action{``1})
+  name.vb: WeakRegister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.IMessenger.WeakRegister<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.IMessenger.WeakRegister(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: IMessenger.WeakRegister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: IMessenger.WeakRegister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+- uid: ILib.MVVM.IMessenger.WeakRegisterHandle(System.Object)
+  name: WeakRegisterHandle(Object)
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegisterHandle_System_Object_
+  commentId: M:ILib.MVVM.IMessenger.WeakRegisterHandle(System.Object)
+  fullName: ILib.MVVM.IMessenger.WeakRegisterHandle(System.Object)
+  nameWithType: IMessenger.WeakRegisterHandle(Object)
+- uid: ILib.MVVM.IMessenger.WeakRegisterHandle*
+  name: WeakRegisterHandle
+  href: api/ILib.MVVM.IMessenger.html#ILib_MVVM_IMessenger_WeakRegisterHandle_
+  commentId: Overload:ILib.MVVM.IMessenger.WeakRegisterHandle
+  isSpec: "True"
+  fullName: ILib.MVVM.IMessenger.WeakRegisterHandle
+  nameWithType: IMessenger.WeakRegisterHandle
 - uid: ILib.MVVM.IMessengerHook
   name: IMessengerHook
   href: api/ILib.MVVM.IMessengerHook.html
@@ -20541,6 +21312,35 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.IView.Elements
   nameWithType: IView.Elements
+- uid: ILib.MVVM.IView.GetElements(System.Collections.Generic.List{ILib.MVVM.IViewElement})
+  name: GetElements(List<IViewElement>)
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_GetElements_System_Collections_Generic_List_ILib_MVVM_IViewElement__
+  commentId: M:ILib.MVVM.IView.GetElements(System.Collections.Generic.List{ILib.MVVM.IViewElement})
+  name.vb: GetElements(List(Of IViewElement))
+  fullName: ILib.MVVM.IView.GetElements(System.Collections.Generic.List<ILib.MVVM.IViewElement>)
+  fullName.vb: ILib.MVVM.IView.GetElements(System.Collections.Generic.List(Of ILib.MVVM.IViewElement))
+  nameWithType: IView.GetElements(List<IViewElement>)
+  nameWithType.vb: IView.GetElements(List(Of IViewElement))
+- uid: ILib.MVVM.IView.GetElements*
+  name: GetElements
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_GetElements_
+  commentId: Overload:ILib.MVVM.IView.GetElements
+  isSpec: "True"
+  fullName: ILib.MVVM.IView.GetElements
+  nameWithType: IView.GetElements
+- uid: ILib.MVVM.IView.IsActive
+  name: IsActive
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_IsActive
+  commentId: P:ILib.MVVM.IView.IsActive
+  fullName: ILib.MVVM.IView.IsActive
+  nameWithType: IView.IsActive
+- uid: ILib.MVVM.IView.IsActive*
+  name: IsActive
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_IsActive_
+  commentId: Overload:ILib.MVVM.IView.IsActive
+  isSpec: "True"
+  fullName: ILib.MVVM.IView.IsActive
+  nameWithType: IView.IsActive
 - uid: ILib.MVVM.IView.Prepare(System.Boolean)
   name: Prepare(Boolean)
   href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_Prepare_System_Boolean_
@@ -20554,6 +21354,19 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.IView.Prepare
   nameWithType: IView.Prepare
+- uid: ILib.MVVM.IView.TryUpdate
+  name: TryUpdate()
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_TryUpdate
+  commentId: M:ILib.MVVM.IView.TryUpdate
+  fullName: ILib.MVVM.IView.TryUpdate()
+  nameWithType: IView.TryUpdate()
+- uid: ILib.MVVM.IView.TryUpdate*
+  name: TryUpdate
+  href: api/ILib.MVVM.IView.html#ILib_MVVM_IView_TryUpdate_
+  commentId: Overload:ILib.MVVM.IView.TryUpdate
+  isSpec: "True"
+  fullName: ILib.MVVM.IView.TryUpdate
+  nameWithType: IView.TryUpdate
 - uid: ILib.MVVM.IViewElement
   name: IViewElement
   href: api/ILib.MVVM.IViewElement.html
@@ -20919,6 +21732,23 @@ references:
   fullName.vb: ILib.MVVM.LightBind(Of TValue, UTarget).OnInit
   nameWithType: LightBind<TValue, UTarget>.OnInit
   nameWithType.vb: LightBind(Of TValue, UTarget).OnInit
+- uid: ILib.MVVM.LightBind`2.OnReturn
+  name: OnReturn()
+  href: api/ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_OnReturn
+  commentId: M:ILib.MVVM.LightBind`2.OnReturn
+  fullName: ILib.MVVM.LightBind<TValue, UTarget>.OnReturn()
+  fullName.vb: ILib.MVVM.LightBind(Of TValue, UTarget).OnReturn()
+  nameWithType: LightBind<TValue, UTarget>.OnReturn()
+  nameWithType.vb: LightBind(Of TValue, UTarget).OnReturn()
+- uid: ILib.MVVM.LightBind`2.OnReturn*
+  name: OnReturn
+  href: api/ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_OnReturn_
+  commentId: Overload:ILib.MVVM.LightBind`2.OnReturn
+  isSpec: "True"
+  fullName: ILib.MVVM.LightBind<TValue, UTarget>.OnReturn
+  fullName.vb: ILib.MVVM.LightBind(Of TValue, UTarget).OnReturn
+  nameWithType: LightBind<TValue, UTarget>.OnReturn
+  nameWithType.vb: LightBind(Of TValue, UTarget).OnReturn
 - uid: ILib.MVVM.LightBind`2.OnUnbind
   name: OnUnbind()
   href: api/ILib.MVVM.LightBind-2.html#ILib_MVVM_LightBind_2_OnUnbind
@@ -21027,6 +21857,25 @@ references:
   commentId: T:ILib.MVVM.LightBindEntry
   fullName: ILib.MVVM.LightBindEntry
   nameWithType: LightBindEntry
+- uid: ILib.MVVM.LightBindEntry.Get
+  name: Get()
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Get
+  commentId: M:ILib.MVVM.LightBindEntry.Get
+  fullName: ILib.MVVM.LightBindEntry.Get()
+  nameWithType: LightBindEntry.Get()
+- uid: ILib.MVVM.LightBindEntry.Get(System.String)
+  name: Get(String)
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Get_System_String_
+  commentId: M:ILib.MVVM.LightBindEntry.Get(System.String)
+  fullName: ILib.MVVM.LightBindEntry.Get(System.String)
+  nameWithType: LightBindEntry.Get(String)
+- uid: ILib.MVVM.LightBindEntry.Get*
+  name: Get
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Get_
+  commentId: Overload:ILib.MVVM.LightBindEntry.Get
+  isSpec: "True"
+  fullName: ILib.MVVM.LightBindEntry.Get
+  nameWithType: LightBindEntry.Get
 - uid: ILib.MVVM.LightBindEntry.GetEntry(System.String)
   name: GetEntry(String)
   href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_GetEntry_System_String_
@@ -21053,19 +21902,41 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.LightBindEntry.GetKey
   nameWithType: LightBindEntry.GetKey
-- uid: ILib.MVVM.LightBindEntry.Instantiate(System.String)
-  name: Instantiate(String)
-  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Instantiate_System_String_
-  commentId: M:ILib.MVVM.LightBindEntry.Instantiate(System.String)
-  fullName: ILib.MVVM.LightBindEntry.Instantiate(System.String)
-  nameWithType: LightBindEntry.Instantiate(String)
-- uid: ILib.MVVM.LightBindEntry.Instantiate*
-  name: Instantiate
-  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Instantiate_
-  commentId: Overload:ILib.MVVM.LightBindEntry.Instantiate
+- uid: ILib.MVVM.LightBindEntry.Register*
+  name: Register
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Register_
+  commentId: Overload:ILib.MVVM.LightBindEntry.Register
   isSpec: "True"
-  fullName: ILib.MVVM.LightBindEntry.Instantiate
-  nameWithType: LightBindEntry.Instantiate
+  fullName: ILib.MVVM.LightBindEntry.Register
+  nameWithType: LightBindEntry.Register
+- uid: ILib.MVVM.LightBindEntry.Register``1(System.Int32)
+  name: Register<T>(Int32)
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Register__1_System_Int32_
+  commentId: M:ILib.MVVM.LightBindEntry.Register``1(System.Int32)
+  name.vb: Register(Of T)(Int32)
+  fullName: ILib.MVVM.LightBindEntry.Register<T>(System.Int32)
+  fullName.vb: ILib.MVVM.LightBindEntry.Register(Of T)(System.Int32)
+  nameWithType: LightBindEntry.Register<T>(Int32)
+  nameWithType.vb: LightBindEntry.Register(Of T)(Int32)
+- uid: ILib.MVVM.LightBindEntry.Return(ILib.MVVM.ILightBind)
+  name: Return(ILightBind)
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Return_ILib_MVVM_ILightBind_
+  commentId: M:ILib.MVVM.LightBindEntry.Return(ILib.MVVM.ILightBind)
+  fullName: ILib.MVVM.LightBindEntry.Return(ILib.MVVM.ILightBind)
+  nameWithType: LightBindEntry.Return(ILightBind)
+- uid: ILib.MVVM.LightBindEntry.Return(System.String,ILib.MVVM.ILightBind)
+  name: Return(String, ILightBind)
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Return_System_String_ILib_MVVM_ILightBind_
+  commentId: M:ILib.MVVM.LightBindEntry.Return(System.String,ILib.MVVM.ILightBind)
+  fullName: ILib.MVVM.LightBindEntry.Return(System.String, ILib.MVVM.ILightBind)
+  nameWithType: LightBindEntry.Return(String, ILightBind)
+- uid: ILib.MVVM.LightBindEntry.Return*
+  name: Return
+  href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Return_
+  commentId: Overload:ILib.MVVM.LightBindEntry.Return
+  isSpec: "True"
+  fullName: ILib.MVVM.LightBindEntry.Return
+  nameWithType: LightBindEntry.Return
 - uid: ILib.MVVM.LightBindEntry.Type
   name: Type
   href: api/ILib.MVVM.LightBindEntry.html#ILib_MVVM_LightBindEntry_Type
@@ -21084,19 +21955,19 @@ references:
   commentId: T:ILib.MVVM.LightBindHolder
   fullName: ILib.MVVM.LightBindHolder
   nameWithType: LightBindHolder
-- uid: ILib.MVVM.LightBindHolder.Path
-  name: Path
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Path
-  commentId: P:ILib.MVVM.LightBindHolder.Path
-  fullName: ILib.MVVM.LightBindHolder.Path
-  nameWithType: LightBindHolder.Path
-- uid: ILib.MVVM.LightBindHolder.Path*
-  name: Path
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Path_
-  commentId: Overload:ILib.MVVM.LightBindHolder.Path
+- uid: ILib.MVVM.LightBindHolder.Dispose
+  name: Dispose()
+  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Dispose
+  commentId: M:ILib.MVVM.LightBindHolder.Dispose
+  fullName: ILib.MVVM.LightBindHolder.Dispose()
+  nameWithType: LightBindHolder.Dispose()
+- uid: ILib.MVVM.LightBindHolder.Dispose*
+  name: Dispose
+  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Dispose_
+  commentId: Overload:ILib.MVVM.LightBindHolder.Dispose
   isSpec: "True"
-  fullName: ILib.MVVM.LightBindHolder.Path
-  nameWithType: LightBindHolder.Path
+  fullName: ILib.MVVM.LightBindHolder.Dispose
+  nameWithType: LightBindHolder.Dispose
 - uid: ILib.MVVM.LightBindHolder.Resolve
   name: Resolve()
   href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Resolve
@@ -21110,32 +21981,6 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.LightBindHolder.Resolve
   nameWithType: LightBindHolder.Resolve
-- uid: ILib.MVVM.LightBindHolder.Target
-  name: Target
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Target
-  commentId: P:ILib.MVVM.LightBindHolder.Target
-  fullName: ILib.MVVM.LightBindHolder.Target
-  nameWithType: LightBindHolder.Target
-- uid: ILib.MVVM.LightBindHolder.Target*
-  name: Target
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Target_
-  commentId: Overload:ILib.MVVM.LightBindHolder.Target
-  isSpec: "True"
-  fullName: ILib.MVVM.LightBindHolder.Target
-  nameWithType: LightBindHolder.Target
-- uid: ILib.MVVM.LightBindHolder.Type
-  name: Type
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Type
-  commentId: P:ILib.MVVM.LightBindHolder.Type
-  fullName: ILib.MVVM.LightBindHolder.Type
-  nameWithType: LightBindHolder.Type
-- uid: ILib.MVVM.LightBindHolder.Type*
-  name: Type
-  href: api/ILib.MVVM.LightBindHolder.html#ILib_MVVM_LightBindHolder_Type_
-  commentId: Overload:ILib.MVVM.LightBindHolder.Type
-  isSpec: "True"
-  fullName: ILib.MVVM.LightBindHolder.Type
-  nameWithType: LightBindHolder.Type
 - uid: ILib.MVVM.LightEventBind`2
   name: LightEventBind<TValue, UTarget>
   href: api/ILib.MVVM.LightEventBind-2.html
@@ -21267,6 +22112,162 @@ references:
   fullName.vb: ILib.MVVM.LightEventBind(Of TValue, UTarget).ILib.MVVM.IViewEvent.Name
   nameWithType: LightEventBind<TValue, UTarget>.IViewEvent.Name
   nameWithType.vb: LightEventBind(Of TValue, UTarget).ILib.MVVM.IViewEvent.Name
+- uid: ILib.MVVM.LightEventBind`2.OnReturn
+  name: OnReturn()
+  href: api/ILib.MVVM.LightEventBind-2.html#ILib_MVVM_LightEventBind_2_OnReturn
+  commentId: M:ILib.MVVM.LightEventBind`2.OnReturn
+  fullName: ILib.MVVM.LightEventBind<TValue, UTarget>.OnReturn()
+  fullName.vb: ILib.MVVM.LightEventBind(Of TValue, UTarget).OnReturn()
+  nameWithType: LightEventBind<TValue, UTarget>.OnReturn()
+  nameWithType.vb: LightEventBind(Of TValue, UTarget).OnReturn()
+- uid: ILib.MVVM.LightEventBind`2.OnReturn*
+  name: OnReturn
+  href: api/ILib.MVVM.LightEventBind-2.html#ILib_MVVM_LightEventBind_2_OnReturn_
+  commentId: Overload:ILib.MVVM.LightEventBind`2.OnReturn
+  isSpec: "True"
+  fullName: ILib.MVVM.LightEventBind<TValue, UTarget>.OnReturn
+  fullName.vb: ILib.MVVM.LightEventBind(Of TValue, UTarget).OnReturn
+  nameWithType: LightEventBind<TValue, UTarget>.OnReturn
+  nameWithType.vb: LightEventBind(Of TValue, UTarget).OnReturn
+- uid: ILib.MVVM.ListStackPool`1
+  name: ListStackPool<T>
+  href: api/ILib.MVVM.ListStackPool-1.html
+  commentId: T:ILib.MVVM.ListStackPool`1
+  name.vb: ListStackPool(Of T)
+  fullName: ILib.MVVM.ListStackPool<T>
+  fullName.vb: ILib.MVVM.ListStackPool(Of T)
+  nameWithType: ListStackPool<T>
+  nameWithType.vb: ListStackPool(Of T)
+- uid: ILib.MVVM.ListStackPool`1.Clear
+  name: Clear()
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Clear
+  commentId: M:ILib.MVVM.ListStackPool`1.Clear
+  fullName: ILib.MVVM.ListStackPool<T>.Clear()
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Clear()
+  nameWithType: ListStackPool<T>.Clear()
+  nameWithType.vb: ListStackPool(Of T).Clear()
+- uid: ILib.MVVM.ListStackPool`1.Clear*
+  name: Clear
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Clear_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Clear
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Clear
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Clear
+  nameWithType: ListStackPool<T>.Clear
+  nameWithType.vb: ListStackPool(Of T).Clear
+- uid: ILib.MVVM.ListStackPool`1.Get
+  name: Get()
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Get
+  commentId: M:ILib.MVVM.ListStackPool`1.Get
+  fullName: ILib.MVVM.ListStackPool<T>.Get()
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Get()
+  nameWithType: ListStackPool<T>.Get()
+  nameWithType.vb: ListStackPool(Of T).Get()
+- uid: ILib.MVVM.ListStackPool`1.Get*
+  name: Get
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Get_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Get
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Get
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Get
+  nameWithType: ListStackPool<T>.Get
+  nameWithType.vb: ListStackPool(Of T).Get
+- uid: ILib.MVVM.ListStackPool`1.Return(System.Collections.Generic.List{`0})
+  name: Return(List<T>)
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Return_System_Collections_Generic_List__0__
+  commentId: M:ILib.MVVM.ListStackPool`1.Return(System.Collections.Generic.List{`0})
+  name.vb: Return(List(Of T))
+  fullName: ILib.MVVM.ListStackPool<T>.Return(System.Collections.Generic.List<T>)
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Return(System.Collections.Generic.List(Of T))
+  nameWithType: ListStackPool<T>.Return(List<T>)
+  nameWithType.vb: ListStackPool(Of T).Return(List(Of T))
+- uid: ILib.MVVM.ListStackPool`1.Return*
+  name: Return
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Return_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Return
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Return
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Return
+  nameWithType: ListStackPool<T>.Return
+  nameWithType.vb: ListStackPool(Of T).Return
+- uid: ILib.MVVM.ListStackPool`1.Scope
+  name: ListStackPool<T>.Scope
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html
+  commentId: T:ILib.MVVM.ListStackPool`1.Scope
+  name.vb: ListStackPool(Of T).Scope
+  fullName: ILib.MVVM.ListStackPool<T>.Scope
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope
+  nameWithType: ListStackPool<T>.Scope
+  nameWithType.vb: ListStackPool(Of T).Scope
+- uid: ILib.MVVM.ListStackPool`1.Scope.#ctor(ILib.MVVM.ListStackPool{`0})
+  name: Scope(ListStackPool<T>)
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope__ctor_ILib_MVVM_ListStackPool__0__
+  commentId: M:ILib.MVVM.ListStackPool`1.Scope.#ctor(ILib.MVVM.ListStackPool{`0})
+  name.vb: Scope(ListStackPool(Of T))
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.Scope(ILib.MVVM.ListStackPool<T>)
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.Scope(ILib.MVVM.ListStackPool(Of T))
+  nameWithType: ListStackPool<T>.Scope.Scope(ListStackPool<T>)
+  nameWithType.vb: ListStackPool(Of T).Scope.Scope(ListStackPool(Of T))
+- uid: ILib.MVVM.ListStackPool`1.Scope.#ctor*
+  name: Scope
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope__ctor_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Scope.#ctor
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.Scope
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.Scope
+  nameWithType: ListStackPool<T>.Scope.Scope
+  nameWithType.vb: ListStackPool(Of T).Scope.Scope
+- uid: ILib.MVVM.ListStackPool`1.Scope.Dispose
+  name: Dispose()
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope_Dispose
+  commentId: M:ILib.MVVM.ListStackPool`1.Scope.Dispose
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.Dispose()
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.Dispose()
+  nameWithType: ListStackPool<T>.Scope.Dispose()
+  nameWithType.vb: ListStackPool(Of T).Scope.Dispose()
+- uid: ILib.MVVM.ListStackPool`1.Scope.Dispose*
+  name: Dispose
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope_Dispose_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Scope.Dispose
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.Dispose
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.Dispose
+  nameWithType: ListStackPool<T>.Scope.Dispose
+  nameWithType.vb: ListStackPool(Of T).Scope.Dispose
+- uid: ILib.MVVM.ListStackPool`1.Scope.List
+  name: List
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope_List
+  commentId: P:ILib.MVVM.ListStackPool`1.Scope.List
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.List
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.List
+  nameWithType: ListStackPool<T>.Scope.List
+  nameWithType.vb: ListStackPool(Of T).Scope.List
+- uid: ILib.MVVM.ListStackPool`1.Scope.List*
+  name: List
+  href: api/ILib.MVVM.ListStackPool-1.Scope.html#ILib_MVVM_ListStackPool_1_Scope_List_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Scope.List
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Scope.List
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Scope.List
+  nameWithType: ListStackPool<T>.Scope.List
+  nameWithType.vb: ListStackPool(Of T).Scope.List
+- uid: ILib.MVVM.ListStackPool`1.Use
+  name: Use()
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Use
+  commentId: M:ILib.MVVM.ListStackPool`1.Use
+  fullName: ILib.MVVM.ListStackPool<T>.Use()
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Use()
+  nameWithType: ListStackPool<T>.Use()
+  nameWithType.vb: ListStackPool(Of T).Use()
+- uid: ILib.MVVM.ListStackPool`1.Use*
+  name: Use
+  href: api/ILib.MVVM.ListStackPool-1.html#ILib_MVVM_ListStackPool_1_Use_
+  commentId: Overload:ILib.MVVM.ListStackPool`1.Use
+  isSpec: "True"
+  fullName: ILib.MVVM.ListStackPool<T>.Use
+  fullName.vb: ILib.MVVM.ListStackPool(Of T).Use
+  nameWithType: ListStackPool<T>.Use
+  nameWithType.vb: ListStackPool(Of T).Use
 - uid: ILib.MVVM.Message
   name: ILib.MVVM.Message
   href: api/ILib.MVVM.Message.html
@@ -21410,6 +22411,19 @@ references:
   commentId: T:ILib.MVVM.Messenger
   fullName: ILib.MVVM.Messenger
   nameWithType: Messenger
+- uid: ILib.MVVM.Messenger.Create
+  name: Create()
+  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Create
+  commentId: M:ILib.MVVM.Messenger.Create
+  fullName: ILib.MVVM.Messenger.Create()
+  nameWithType: Messenger.Create()
+- uid: ILib.MVVM.Messenger.Create*
+  name: Create
+  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Create_
+  commentId: Overload:ILib.MVVM.Messenger.Create
+  isSpec: "True"
+  fullName: ILib.MVVM.Messenger.Create
+  nameWithType: Messenger.Create
 - uid: ILib.MVVM.Messenger.Default
   name: Default
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Default
@@ -21449,18 +22463,6 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.Messenger.Refresh
   nameWithType: Messenger.Refresh
-- uid: ILib.MVVM.Messenger.Register(System.Object,System.Object,System.Action)
-  name: Register(Object, Object, Action)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register_System_Object_System_Object_System_Action_
-  commentId: M:ILib.MVVM.Messenger.Register(System.Object,System.Object,System.Action)
-  fullName: ILib.MVVM.Messenger.Register(System.Object, System.Object, System.Action)
-  nameWithType: Messenger.Register(Object, Object, Action)
-- uid: ILib.MVVM.Messenger.Register(System.Object,System.String,System.Action)
-  name: Register(Object, String, Action)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register_System_Object_System_String_System_Action_
-  commentId: M:ILib.MVVM.Messenger.Register(System.Object,System.String,System.Action)
-  fullName: ILib.MVVM.Messenger.Register(System.Object, System.String, System.Action)
-  nameWithType: Messenger.Register(Object, String, Action)
 - uid: ILib.MVVM.Messenger.Register*
   name: Register
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register_
@@ -21469,41 +22471,32 @@ references:
   fullName: ILib.MVVM.Messenger.Register
   nameWithType: Messenger.Register
 - uid: ILib.MVVM.Messenger.Register``1(System.Object,``0,System.Action)
-  name: Register<T>(Object, T, Action)
+  name: Register<TEvent>(Object, TEvent, Action)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register__1_System_Object___0_System_Action_
   commentId: M:ILib.MVVM.Messenger.Register``1(System.Object,``0,System.Action)
-  name.vb: Register(Of T)(Object, T, Action)
-  fullName: ILib.MVVM.Messenger.Register<T>(System.Object, T, System.Action)
-  fullName.vb: ILib.MVVM.Messenger.Register(Of T)(System.Object, T, System.Action)
-  nameWithType: Messenger.Register<T>(Object, T, Action)
-  nameWithType.vb: Messenger.Register(Of T)(Object, T, Action)
+  name.vb: Register(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.Messenger.Register<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.Messenger.Register(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: Messenger.Register<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: Messenger.Register(Of TEvent)(Object, TEvent, Action)
 - uid: ILib.MVVM.Messenger.Register``1(System.Object,System.Object,System.Action{``0})
-  name: Register<T>(Object, Object, Action<T>)
+  name: Register<TMessage>(Object, Object, Action<TMessage>)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register__1_System_Object_System_Object_System_Action___0__
   commentId: M:ILib.MVVM.Messenger.Register``1(System.Object,System.Object,System.Action{``0})
-  name.vb: Register(Of T)(Object, Object, Action(Of T))
-  fullName: ILib.MVVM.Messenger.Register<T>(System.Object, System.Object, System.Action<T>)
-  fullName.vb: ILib.MVVM.Messenger.Register(Of T)(System.Object, System.Object, System.Action(Of T))
-  nameWithType: Messenger.Register<T>(Object, Object, Action<T>)
-  nameWithType.vb: Messenger.Register(Of T)(Object, Object, Action(Of T))
-- uid: ILib.MVVM.Messenger.Register``1(System.Object,System.String,System.Action{``0})
-  name: Register<T>(Object, String, Action<T>)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register__1_System_Object_System_String_System_Action___0__
-  commentId: M:ILib.MVVM.Messenger.Register``1(System.Object,System.String,System.Action{``0})
-  name.vb: Register(Of T)(Object, String, Action(Of T))
-  fullName: ILib.MVVM.Messenger.Register<T>(System.Object, System.String, System.Action<T>)
-  fullName.vb: ILib.MVVM.Messenger.Register(Of T)(System.Object, System.String, System.Action(Of T))
-  nameWithType: Messenger.Register<T>(Object, String, Action<T>)
-  nameWithType.vb: Messenger.Register(Of T)(Object, String, Action(Of T))
+  name.vb: Register(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.Register<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.Register(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: Messenger.Register<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: Messenger.Register(Of TMessage)(Object, Object, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.Register``2(System.Object,``0,System.Action{``1})
-  name: Register<T, U>(Object, T, Action<U>)
+  name: Register<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Register__2_System_Object___0_System_Action___1__
   commentId: M:ILib.MVVM.Messenger.Register``2(System.Object,``0,System.Action{``1})
-  name.vb: Register(Of T, U)(Object, T, Action(Of U))
-  fullName: ILib.MVVM.Messenger.Register<T, U>(System.Object, T, System.Action<U>)
-  fullName.vb: ILib.MVVM.Messenger.Register(Of T, U)(System.Object, T, System.Action(Of U))
-  nameWithType: Messenger.Register<T, U>(Object, T, Action<U>)
-  nameWithType.vb: Messenger.Register(Of T, U)(Object, T, Action(Of U))
+  name.vb: Register(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.Register<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.Register(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: Messenger.Register<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: Messenger.Register(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.RegisterHandle(System.Object)
   name: RegisterHandle(Object)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_RegisterHandle_System_Object_
@@ -21517,12 +22510,6 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.Messenger.RegisterHandle
   nameWithType: Messenger.RegisterHandle
-- uid: ILib.MVVM.Messenger.Send(System.String)
-  name: Send(String)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send_System_String_
-  commentId: M:ILib.MVVM.Messenger.Send(System.String)
-  fullName: ILib.MVVM.Messenger.Send(System.String)
-  nameWithType: Messenger.Send(String)
 - uid: ILib.MVVM.Messenger.Send*
   name: Send
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send_
@@ -21531,53 +22518,29 @@ references:
   fullName: ILib.MVVM.Messenger.Send
   nameWithType: Messenger.Send
 - uid: ILib.MVVM.Messenger.Send``1(``0)
-  name: Send<T>(T)
+  name: Send<TEvent>(TEvent)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send__1___0_
   commentId: M:ILib.MVVM.Messenger.Send``1(``0)
-  name.vb: Send(Of T)(T)
-  fullName: ILib.MVVM.Messenger.Send<T>(T)
-  fullName.vb: ILib.MVVM.Messenger.Send(Of T)(T)
-  nameWithType: Messenger.Send<T>(T)
-  nameWithType.vb: Messenger.Send(Of T)(T)
-- uid: ILib.MVVM.Messenger.Send``1(System.Object,``0)
-  name: Send<T>(Object, T)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send__1_System_Object___0_
-  commentId: M:ILib.MVVM.Messenger.Send``1(System.Object,``0)
-  name.vb: Send(Of T)(Object, T)
-  fullName: ILib.MVVM.Messenger.Send<T>(System.Object, T)
-  fullName.vb: ILib.MVVM.Messenger.Send(Of T)(System.Object, T)
-  nameWithType: Messenger.Send<T>(Object, T)
-  nameWithType.vb: Messenger.Send(Of T)(Object, T)
-- uid: ILib.MVVM.Messenger.Send``1(System.String,``0)
-  name: Send<T>(String, T)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send__1_System_String___0_
-  commentId: M:ILib.MVVM.Messenger.Send``1(System.String,``0)
-  name.vb: Send(Of T)(String, T)
-  fullName: ILib.MVVM.Messenger.Send<T>(System.String, T)
-  fullName.vb: ILib.MVVM.Messenger.Send(Of T)(System.String, T)
-  nameWithType: Messenger.Send<T>(String, T)
-  nameWithType.vb: Messenger.Send(Of T)(String, T)
+  name.vb: Send(Of TEvent)(TEvent)
+  fullName: ILib.MVVM.Messenger.Send<TEvent>(TEvent)
+  fullName.vb: ILib.MVVM.Messenger.Send(Of TEvent)(TEvent)
+  nameWithType: Messenger.Send<TEvent>(TEvent)
+  nameWithType.vb: Messenger.Send(Of TEvent)(TEvent)
 - uid: ILib.MVVM.Messenger.Send``2(``0,``1)
-  name: Send<T, U>(T, U)
+  name: Send<TEvent, TMessage>(TEvent, TMessage)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Send__2___0___1_
   commentId: M:ILib.MVVM.Messenger.Send``2(``0,``1)
-  name.vb: Send(Of T, U)(T, U)
-  fullName: ILib.MVVM.Messenger.Send<T, U>(T, U)
-  fullName.vb: ILib.MVVM.Messenger.Send(Of T, U)(T, U)
-  nameWithType: Messenger.Send<T, U>(T, U)
-  nameWithType.vb: Messenger.Send(Of T, U)(T, U)
+  name.vb: Send(Of TEvent, TMessage)(TEvent, TMessage)
+  fullName: ILib.MVVM.Messenger.Send<TEvent, TMessage>(TEvent, TMessage)
+  fullName.vb: ILib.MVVM.Messenger.Send(Of TEvent, TMessage)(TEvent, TMessage)
+  nameWithType: Messenger.Send<TEvent, TMessage>(TEvent, TMessage)
+  nameWithType.vb: Messenger.Send(Of TEvent, TMessage)(TEvent, TMessage)
 - uid: ILib.MVVM.Messenger.Unregister(System.Object)
   name: Unregister(Object)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister_System_Object_
   commentId: M:ILib.MVVM.Messenger.Unregister(System.Object)
   fullName: ILib.MVVM.Messenger.Unregister(System.Object)
   nameWithType: Messenger.Unregister(Object)
-- uid: ILib.MVVM.Messenger.Unregister(System.Object,System.String,System.Action)
-  name: Unregister(Object, String, Action)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister_System_Object_System_String_System_Action_
-  commentId: M:ILib.MVVM.Messenger.Unregister(System.Object,System.String,System.Action)
-  fullName: ILib.MVVM.Messenger.Unregister(System.Object, System.String, System.Action)
-  nameWithType: Messenger.Unregister(Object, String, Action)
 - uid: ILib.MVVM.Messenger.Unregister*
   name: Unregister
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister_
@@ -21586,44 +22549,32 @@ references:
   fullName: ILib.MVVM.Messenger.Unregister
   nameWithType: Messenger.Unregister
 - uid: ILib.MVVM.Messenger.Unregister``1(System.Object,``0,System.Action)
-  name: Unregister<T>(Object, T, Action)
+  name: Unregister<TEvent>(Object, TEvent, Action)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister__1_System_Object___0_System_Action_
   commentId: M:ILib.MVVM.Messenger.Unregister``1(System.Object,``0,System.Action)
-  name.vb: Unregister(Of T)(Object, T, Action)
-  fullName: ILib.MVVM.Messenger.Unregister<T>(System.Object, T, System.Action)
-  fullName.vb: ILib.MVVM.Messenger.Unregister(Of T)(System.Object, T, System.Action)
-  nameWithType: Messenger.Unregister<T>(Object, T, Action)
-  nameWithType.vb: Messenger.Unregister(Of T)(Object, T, Action)
-- uid: ILib.MVVM.Messenger.Unregister``1(System.Object,System.String,System.Action{``0})
-  name: Unregister<T>(Object, String, Action<T>)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister__1_System_Object_System_String_System_Action___0__
-  commentId: M:ILib.MVVM.Messenger.Unregister``1(System.Object,System.String,System.Action{``0})
-  name.vb: Unregister(Of T)(Object, String, Action(Of T))
-  fullName: ILib.MVVM.Messenger.Unregister<T>(System.Object, System.String, System.Action<T>)
-  fullName.vb: ILib.MVVM.Messenger.Unregister(Of T)(System.Object, System.String, System.Action(Of T))
-  nameWithType: Messenger.Unregister<T>(Object, String, Action<T>)
-  nameWithType.vb: Messenger.Unregister(Of T)(Object, String, Action(Of T))
+  name.vb: Unregister(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.Messenger.Unregister<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.Messenger.Unregister(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: Messenger.Unregister<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: Messenger.Unregister(Of TEvent)(Object, TEvent, Action)
+- uid: ILib.MVVM.Messenger.Unregister``1(System.Object,System.Object,System.Action{``0})
+  name: Unregister<TMessage>(Object, Object, Action<TMessage>)
+  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister__1_System_Object_System_Object_System_Action___0__
+  commentId: M:ILib.MVVM.Messenger.Unregister``1(System.Object,System.Object,System.Action{``0})
+  name.vb: Unregister(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.Unregister<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.Unregister(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: Messenger.Unregister<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: Messenger.Unregister(Of TMessage)(Object, Object, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.Unregister``2(System.Object,``0,System.Action{``1})
-  name: Unregister<T, U>(Object, T, Action<U>)
+  name: Unregister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_Unregister__2_System_Object___0_System_Action___1__
   commentId: M:ILib.MVVM.Messenger.Unregister``2(System.Object,``0,System.Action{``1})
-  name.vb: Unregister(Of T, U)(Object, T, Action(Of U))
-  fullName: ILib.MVVM.Messenger.Unregister<T, U>(System.Object, T, System.Action<U>)
-  fullName.vb: ILib.MVVM.Messenger.Unregister(Of T, U)(System.Object, T, System.Action(Of U))
-  nameWithType: Messenger.Unregister<T, U>(Object, T, Action<U>)
-  nameWithType.vb: Messenger.Unregister(Of T, U)(Object, T, Action(Of U))
-- uid: ILib.MVVM.Messenger.WeakRegister(System.Object,System.Object,System.Action)
-  name: WeakRegister(Object, Object, Action)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister_System_Object_System_Object_System_Action_
-  commentId: M:ILib.MVVM.Messenger.WeakRegister(System.Object,System.Object,System.Action)
-  fullName: ILib.MVVM.Messenger.WeakRegister(System.Object, System.Object, System.Action)
-  nameWithType: Messenger.WeakRegister(Object, Object, Action)
-- uid: ILib.MVVM.Messenger.WeakRegister(System.Object,System.String,System.Action)
-  name: WeakRegister(Object, String, Action)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister_System_Object_System_String_System_Action_
-  commentId: M:ILib.MVVM.Messenger.WeakRegister(System.Object,System.String,System.Action)
-  fullName: ILib.MVVM.Messenger.WeakRegister(System.Object, System.String, System.Action)
-  nameWithType: Messenger.WeakRegister(Object, String, Action)
+  name.vb: Unregister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.Unregister<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.Unregister(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: Messenger.Unregister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: Messenger.Unregister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.WeakRegister*
   name: WeakRegister
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister_
@@ -21632,41 +22583,32 @@ references:
   fullName: ILib.MVVM.Messenger.WeakRegister
   nameWithType: Messenger.WeakRegister
 - uid: ILib.MVVM.Messenger.WeakRegister``1(System.Object,``0,System.Action)
-  name: WeakRegister<T>(Object, T, Action)
+  name: WeakRegister<TEvent>(Object, TEvent, Action)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister__1_System_Object___0_System_Action_
   commentId: M:ILib.MVVM.Messenger.WeakRegister``1(System.Object,``0,System.Action)
-  name.vb: WeakRegister(Of T)(Object, T, Action)
-  fullName: ILib.MVVM.Messenger.WeakRegister<T>(System.Object, T, System.Action)
-  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of T)(System.Object, T, System.Action)
-  nameWithType: Messenger.WeakRegister<T>(Object, T, Action)
-  nameWithType.vb: Messenger.WeakRegister(Of T)(Object, T, Action)
+  name.vb: WeakRegister(Of TEvent)(Object, TEvent, Action)
+  fullName: ILib.MVVM.Messenger.WeakRegister<TEvent>(System.Object, TEvent, System.Action)
+  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of TEvent)(System.Object, TEvent, System.Action)
+  nameWithType: Messenger.WeakRegister<TEvent>(Object, TEvent, Action)
+  nameWithType.vb: Messenger.WeakRegister(Of TEvent)(Object, TEvent, Action)
 - uid: ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.Object,System.Action{``0})
-  name: WeakRegister<T>(Object, Object, Action<T>)
+  name: WeakRegister<TMessage>(Object, Object, Action<TMessage>)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister__1_System_Object_System_Object_System_Action___0__
   commentId: M:ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.Object,System.Action{``0})
-  name.vb: WeakRegister(Of T)(Object, Object, Action(Of T))
-  fullName: ILib.MVVM.Messenger.WeakRegister<T>(System.Object, System.Object, System.Action<T>)
-  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of T)(System.Object, System.Object, System.Action(Of T))
-  nameWithType: Messenger.WeakRegister<T>(Object, Object, Action<T>)
-  nameWithType.vb: Messenger.WeakRegister(Of T)(Object, Object, Action(Of T))
-- uid: ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.String,System.Action{``0})
-  name: WeakRegister<T>(Object, String, Action<T>)
-  href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister__1_System_Object_System_String_System_Action___0__
-  commentId: M:ILib.MVVM.Messenger.WeakRegister``1(System.Object,System.String,System.Action{``0})
-  name.vb: WeakRegister(Of T)(Object, String, Action(Of T))
-  fullName: ILib.MVVM.Messenger.WeakRegister<T>(System.Object, System.String, System.Action<T>)
-  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of T)(System.Object, System.String, System.Action(Of T))
-  nameWithType: Messenger.WeakRegister<T>(Object, String, Action<T>)
-  nameWithType.vb: Messenger.WeakRegister(Of T)(Object, String, Action(Of T))
+  name.vb: WeakRegister(Of TMessage)(Object, Object, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.WeakRegister<TMessage>(System.Object, System.Object, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of TMessage)(System.Object, System.Object, System.Action(Of TMessage))
+  nameWithType: Messenger.WeakRegister<TMessage>(Object, Object, Action<TMessage>)
+  nameWithType.vb: Messenger.WeakRegister(Of TMessage)(Object, Object, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.WeakRegister``2(System.Object,``0,System.Action{``1})
-  name: WeakRegister<T, U>(Object, T, Action<U>)
+  name: WeakRegister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegister__2_System_Object___0_System_Action___1__
   commentId: M:ILib.MVVM.Messenger.WeakRegister``2(System.Object,``0,System.Action{``1})
-  name.vb: WeakRegister(Of T, U)(Object, T, Action(Of U))
-  fullName: ILib.MVVM.Messenger.WeakRegister<T, U>(System.Object, T, System.Action<U>)
-  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of T, U)(System.Object, T, System.Action(Of U))
-  nameWithType: Messenger.WeakRegister<T, U>(Object, T, Action<U>)
-  nameWithType.vb: Messenger.WeakRegister(Of T, U)(Object, T, Action(Of U))
+  name.vb: WeakRegister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
+  fullName: ILib.MVVM.Messenger.WeakRegister<TEvent, TMessage>(System.Object, TEvent, System.Action<TMessage>)
+  fullName.vb: ILib.MVVM.Messenger.WeakRegister(Of TEvent, TMessage)(System.Object, TEvent, System.Action(Of TMessage))
+  nameWithType: Messenger.WeakRegister<TEvent, TMessage>(Object, TEvent, Action<TMessage>)
+  nameWithType.vb: Messenger.WeakRegister(Of TEvent, TMessage)(Object, TEvent, Action(Of TMessage))
 - uid: ILib.MVVM.Messenger.WeakRegisterHandle(System.Object)
   name: WeakRegisterHandle(Object)
   href: api/ILib.MVVM.Messenger.html#ILib_MVVM_Messenger_WeakRegisterHandle_System_Object_
@@ -22636,6 +23578,22 @@ references:
   isSpec: "True"
   fullName: ILib.MVVM.View.DataContext
   nameWithType: View.DataContext
+- uid: ILib.MVVM.View.GetElements(System.Collections.Generic.List{ILib.MVVM.IViewElement})
+  name: GetElements(List<IViewElement>)
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_GetElements_System_Collections_Generic_List_ILib_MVVM_IViewElement__
+  commentId: M:ILib.MVVM.View.GetElements(System.Collections.Generic.List{ILib.MVVM.IViewElement})
+  name.vb: GetElements(List(Of IViewElement))
+  fullName: ILib.MVVM.View.GetElements(System.Collections.Generic.List<ILib.MVVM.IViewElement>)
+  fullName.vb: ILib.MVVM.View.GetElements(System.Collections.Generic.List(Of ILib.MVVM.IViewElement))
+  nameWithType: View.GetElements(List<IViewElement>)
+  nameWithType.vb: View.GetElements(List(Of IViewElement))
+- uid: ILib.MVVM.View.GetElements*
+  name: GetElements
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_GetElements_
+  commentId: Overload:ILib.MVVM.View.GetElements
+  isSpec: "True"
+  fullName: ILib.MVVM.View.GetElements
+  nameWithType: View.GetElements
 - uid: ILib.MVVM.View.ILib#MVVM#IView#Elements
   name: IView.Elements
   href: api/ILib.MVVM.View.html#ILib_MVVM_View_ILib_MVVM_IView_Elements
@@ -22653,6 +23611,36 @@ references:
   fullName: ILib.MVVM.View.ILib.MVVM.IView.Elements
   nameWithType: View.IView.Elements
   nameWithType.vb: View.ILib.MVVM.IView.Elements
+- uid: ILib.MVVM.View.ILib#MVVM#IView#IsActive
+  name: IView.IsActive
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_ILib_MVVM_IView_IsActive
+  commentId: P:ILib.MVVM.View.ILib#MVVM#IView#IsActive
+  name.vb: ILib.MVVM.IView.IsActive
+  fullName: ILib.MVVM.View.ILib.MVVM.IView.IsActive
+  nameWithType: View.IView.IsActive
+  nameWithType.vb: View.ILib.MVVM.IView.IsActive
+- uid: ILib.MVVM.View.ILib#MVVM#IView#IsActive*
+  name: IView.IsActive
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_ILib_MVVM_IView_IsActive_
+  commentId: Overload:ILib.MVVM.View.ILib#MVVM#IView#IsActive
+  isSpec: "True"
+  name.vb: ILib.MVVM.IView.IsActive
+  fullName: ILib.MVVM.View.ILib.MVVM.IView.IsActive
+  nameWithType: View.IView.IsActive
+  nameWithType.vb: View.ILib.MVVM.IView.IsActive
+- uid: ILib.MVVM.View.IsActive
+  name: IsActive
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_IsActive
+  commentId: P:ILib.MVVM.View.IsActive
+  fullName: ILib.MVVM.View.IsActive
+  nameWithType: View.IsActive
+- uid: ILib.MVVM.View.IsActive*
+  name: IsActive
+  href: api/ILib.MVVM.View.html#ILib_MVVM_View_IsActive_
+  commentId: Overload:ILib.MVVM.View.IsActive
+  isSpec: "True"
+  fullName: ILib.MVVM.View.IsActive
+  nameWithType: View.IsActive
 - uid: ILib.MVVM.View.OnDestroyImpl
   name: OnDestroyImpl()
   href: api/ILib.MVVM.View.html#ILib_MVVM_View_OnDestroyImpl
@@ -22853,6 +23841,122 @@ references:
   fullName.vb: ILib.MVVM.ViewModelBase.SetImpl(Of T)(System.String, T)
   nameWithType: ViewModelBase.SetImpl<T>(String, T)
   nameWithType.vb: ViewModelBase.SetImpl(Of T)(String, T)
+- uid: ILib.MVVM.ViewUpdater
+  name: ViewUpdater
+  href: api/ILib.MVVM.ViewUpdater.html
+  commentId: T:ILib.MVVM.ViewUpdater
+  fullName: ILib.MVVM.ViewUpdater
+  nameWithType: ViewUpdater
+- uid: ILib.MVVM.ViewUpdater.Register(ILib.MVVM.IView)
+  name: Register(IView)
+  href: api/ILib.MVVM.ViewUpdater.html#ILib_MVVM_ViewUpdater_Register_ILib_MVVM_IView_
+  commentId: M:ILib.MVVM.ViewUpdater.Register(ILib.MVVM.IView)
+  fullName: ILib.MVVM.ViewUpdater.Register(ILib.MVVM.IView)
+  nameWithType: ViewUpdater.Register(IView)
+- uid: ILib.MVVM.ViewUpdater.Register*
+  name: Register
+  href: api/ILib.MVVM.ViewUpdater.html#ILib_MVVM_ViewUpdater_Register_
+  commentId: Overload:ILib.MVVM.ViewUpdater.Register
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUpdater.Register
+  nameWithType: ViewUpdater.Register
+- uid: ILib.MVVM.ViewUpdater.Update
+  name: Update()
+  href: api/ILib.MVVM.ViewUpdater.html#ILib_MVVM_ViewUpdater_Update
+  commentId: M:ILib.MVVM.ViewUpdater.Update
+  fullName: ILib.MVVM.ViewUpdater.Update()
+  nameWithType: ViewUpdater.Update()
+- uid: ILib.MVVM.ViewUpdater.Update*
+  name: Update
+  href: api/ILib.MVVM.ViewUpdater.html#ILib_MVVM_ViewUpdater_Update_
+  commentId: Overload:ILib.MVVM.ViewUpdater.Update
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUpdater.Update
+  nameWithType: ViewUpdater.Update
+- uid: ILib.MVVM.ViewUtil
+  name: ViewUtil
+  href: api/ILib.MVVM.ViewUtil.html
+  commentId: T:ILib.MVVM.ViewUtil
+  fullName: ILib.MVVM.ViewUtil
+  nameWithType: ViewUtil
+- uid: ILib.MVVM.ViewUtil.BindingPropertyListStack
+  name: BindingPropertyListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_BindingPropertyListStack
+  commentId: P:ILib.MVVM.ViewUtil.BindingPropertyListStack
+  fullName: ILib.MVVM.ViewUtil.BindingPropertyListStack
+  nameWithType: ViewUtil.BindingPropertyListStack
+- uid: ILib.MVVM.ViewUtil.BindingPropertyListStack*
+  name: BindingPropertyListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_BindingPropertyListStack_
+  commentId: Overload:ILib.MVVM.ViewUtil.BindingPropertyListStack
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.BindingPropertyListStack
+  nameWithType: ViewUtil.BindingPropertyListStack
+- uid: ILib.MVVM.ViewUtil.ElementListStack
+  name: ElementListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_ElementListStack
+  commentId: P:ILib.MVVM.ViewUtil.ElementListStack
+  fullName: ILib.MVVM.ViewUtil.ElementListStack
+  nameWithType: ViewUtil.ElementListStack
+- uid: ILib.MVVM.ViewUtil.ElementListStack*
+  name: ElementListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_ElementListStack_
+  commentId: Overload:ILib.MVVM.ViewUtil.ElementListStack
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.ElementListStack
+  nameWithType: ViewUtil.ElementListStack
+- uid: ILib.MVVM.ViewUtil.UseBindingPropertyListStack
+  name: UseBindingPropertyListStack()
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseBindingPropertyListStack
+  commentId: M:ILib.MVVM.ViewUtil.UseBindingPropertyListStack
+  fullName: ILib.MVVM.ViewUtil.UseBindingPropertyListStack()
+  nameWithType: ViewUtil.UseBindingPropertyListStack()
+- uid: ILib.MVVM.ViewUtil.UseBindingPropertyListStack*
+  name: UseBindingPropertyListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseBindingPropertyListStack_
+  commentId: Overload:ILib.MVVM.ViewUtil.UseBindingPropertyListStack
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.UseBindingPropertyListStack
+  nameWithType: ViewUtil.UseBindingPropertyListStack
+- uid: ILib.MVVM.ViewUtil.UseElementList
+  name: UseElementList()
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseElementList
+  commentId: M:ILib.MVVM.ViewUtil.UseElementList
+  fullName: ILib.MVVM.ViewUtil.UseElementList()
+  nameWithType: ViewUtil.UseElementList()
+- uid: ILib.MVVM.ViewUtil.UseElementList*
+  name: UseElementList
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseElementList_
+  commentId: Overload:ILib.MVVM.ViewUtil.UseElementList
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.UseElementList
+  nameWithType: ViewUtil.UseElementList
+- uid: ILib.MVVM.ViewUtil.UseViewList
+  name: UseViewList()
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseViewList
+  commentId: M:ILib.MVVM.ViewUtil.UseViewList
+  fullName: ILib.MVVM.ViewUtil.UseViewList()
+  nameWithType: ViewUtil.UseViewList()
+- uid: ILib.MVVM.ViewUtil.UseViewList*
+  name: UseViewList
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_UseViewList_
+  commentId: Overload:ILib.MVVM.ViewUtil.UseViewList
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.UseViewList
+  nameWithType: ViewUtil.UseViewList
+- uid: ILib.MVVM.ViewUtil.ViewListStack
+  name: ViewListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_ViewListStack
+  commentId: P:ILib.MVVM.ViewUtil.ViewListStack
+  fullName: ILib.MVVM.ViewUtil.ViewListStack
+  nameWithType: ViewUtil.ViewListStack
+- uid: ILib.MVVM.ViewUtil.ViewListStack*
+  name: ViewListStack
+  href: api/ILib.MVVM.ViewUtil.html#ILib_MVVM_ViewUtil_ViewListStack_
+  commentId: Overload:ILib.MVVM.ViewUtil.ViewListStack
+  isSpec: "True"
+  fullName: ILib.MVVM.ViewUtil.ViewListStack
+  nameWithType: ViewUtil.ViewListStack
 - uid: ILib.NoResultTaskRoutineException
   name: NoResultTaskRoutineException
   href: api/ILib.NoResultTaskRoutineException.html
@@ -29128,6 +30232,31 @@ references:
   fullName.vb: ILib.ServInject.ServInjector.Resolve(Of T)()
   nameWithType: ServInjector.Resolve<T>()
   nameWithType.vb: ServInjector.Resolve(Of T)()
+- uid: ILib.ServInject.ServInjector.ResolveAsync*
+  name: ResolveAsync
+  href: api/ILib.ServInject.ServInjector.html#ILib_ServInject_ServInjector_ResolveAsync_
+  commentId: Overload:ILib.ServInject.ServInjector.ResolveAsync
+  isSpec: "True"
+  fullName: ILib.ServInject.ServInjector.ResolveAsync
+  nameWithType: ServInjector.ResolveAsync
+- uid: ILib.ServInject.ServInjector.ResolveAsync``1
+  name: ResolveAsync<T>()
+  href: api/ILib.ServInject.ServInjector.html#ILib_ServInject_ServInjector_ResolveAsync__1
+  commentId: M:ILib.ServInject.ServInjector.ResolveAsync``1
+  name.vb: ResolveAsync(Of T)()
+  fullName: ILib.ServInject.ServInjector.ResolveAsync<T>()
+  fullName.vb: ILib.ServInject.ServInjector.ResolveAsync(Of T)()
+  nameWithType: ServInjector.ResolveAsync<T>()
+  nameWithType.vb: ServInjector.ResolveAsync(Of T)()
+- uid: ILib.ServInject.ServInjector.ResolveAsync``1(System.Threading.CancellationToken)
+  name: ResolveAsync<T>(CancellationToken)
+  href: api/ILib.ServInject.ServInjector.html#ILib_ServInject_ServInjector_ResolveAsync__1_System_Threading_CancellationToken_
+  commentId: M:ILib.ServInject.ServInjector.ResolveAsync``1(System.Threading.CancellationToken)
+  name.vb: ResolveAsync(Of T)(CancellationToken)
+  fullName: ILib.ServInject.ServInjector.ResolveAsync<T>(System.Threading.CancellationToken)
+  fullName.vb: ILib.ServInject.ServInjector.ResolveAsync(Of T)(System.Threading.CancellationToken)
+  nameWithType: ServInjector.ResolveAsync<T>(CancellationToken)
+  nameWithType.vb: ServInjector.ResolveAsync(Of T)(CancellationToken)
 - uid: ILib.ServInject.ServInjector.Unbind*
   name: Unbind
   href: api/ILib.ServInject.ServInjector.html#ILib_ServInject_ServInjector_Unbind_
@@ -31391,6 +32520,32 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IExecuteBack.TryBack
   nameWithType: IExecuteBack.TryBack
+- uid: ILib.UI.IHasQueryResult`1
+  name: IHasQueryResult<TResult>
+  href: api/ILib.UI.IHasQueryResult-1.html
+  commentId: T:ILib.UI.IHasQueryResult`1
+  name.vb: IHasQueryResult(Of TResult)
+  fullName: ILib.UI.IHasQueryResult<TResult>
+  fullName.vb: ILib.UI.IHasQueryResult(Of TResult)
+  nameWithType: IHasQueryResult<TResult>
+  nameWithType.vb: IHasQueryResult(Of TResult)
+- uid: ILib.UI.IHasQueryResult`1.QueryResult
+  name: QueryResult
+  href: api/ILib.UI.IHasQueryResult-1.html#ILib_UI_IHasQueryResult_1_QueryResult
+  commentId: P:ILib.UI.IHasQueryResult`1.QueryResult
+  fullName: ILib.UI.IHasQueryResult<TResult>.QueryResult
+  fullName.vb: ILib.UI.IHasQueryResult(Of TResult).QueryResult
+  nameWithType: IHasQueryResult<TResult>.QueryResult
+  nameWithType.vb: IHasQueryResult(Of TResult).QueryResult
+- uid: ILib.UI.IHasQueryResult`1.QueryResult*
+  name: QueryResult
+  href: api/ILib.UI.IHasQueryResult-1.html#ILib_UI_IHasQueryResult_1_QueryResult_
+  commentId: Overload:ILib.UI.IHasQueryResult`1.QueryResult
+  isSpec: "True"
+  fullName: ILib.UI.IHasQueryResult<TResult>.QueryResult
+  fullName.vb: ILib.UI.IHasQueryResult(Of TResult).QueryResult
+  nameWithType: IHasQueryResult<TResult>.QueryResult
+  nameWithType.vb: IHasQueryResult(Of TResult).QueryResult
 - uid: ILib.UI.IQueueEntry
   name: IQueueEntry
   href: api/ILib.UI.IQueueEntry.html
@@ -31436,6 +32591,19 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IQueueEntry.IsClosed
   nameWithType: IQueueEntry.IsClosed
+- uid: ILib.UI.IQueueEntry.IsWaitCloseCompleted
+  name: IsWaitCloseCompleted
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_IsWaitCloseCompleted
+  commentId: P:ILib.UI.IQueueEntry.IsWaitCloseCompleted
+  fullName: ILib.UI.IQueueEntry.IsWaitCloseCompleted
+  nameWithType: IQueueEntry.IsWaitCloseCompleted
+- uid: ILib.UI.IQueueEntry.IsWaitCloseCompleted*
+  name: IsWaitCloseCompleted
+  href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_IsWaitCloseCompleted_
+  commentId: Overload:ILib.UI.IQueueEntry.IsWaitCloseCompleted
+  isSpec: "True"
+  fullName: ILib.UI.IQueueEntry.IsWaitCloseCompleted
+  nameWithType: IQueueEntry.IsWaitCloseCompleted
 - uid: ILib.UI.IQueueEntry.WaitClose(System.Threading.CancellationToken)
   name: WaitClose(CancellationToken)
   href: api/ILib.UI.IQueueEntry.html#ILib_UI_IQueueEntry_WaitClose_System_Threading_CancellationToken_
@@ -31449,6 +32617,97 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IQueueEntry.WaitClose
   nameWithType: IQueueEntry.WaitClose
+- uid: ILib.UI.IQueueQuery`1
+  name: IQueueQuery<TResult>
+  href: api/ILib.UI.IQueueQuery-1.html
+  commentId: T:ILib.UI.IQueueQuery`1
+  name.vb: IQueueQuery(Of TResult)
+  fullName: ILib.UI.IQueueQuery<TResult>
+  fullName.vb: ILib.UI.IQueueQuery(Of TResult)
+  nameWithType: IQueueQuery<TResult>
+  nameWithType.vb: IQueueQuery(Of TResult)
+- uid: ILib.UI.IQueueQuery`1.GetAwaiter
+  name: GetAwaiter()
+  href: api/ILib.UI.IQueueQuery-1.html#ILib_UI_IQueueQuery_1_GetAwaiter
+  commentId: M:ILib.UI.IQueueQuery`1.GetAwaiter
+  fullName: ILib.UI.IQueueQuery<TResult>.GetAwaiter()
+  fullName.vb: ILib.UI.IQueueQuery(Of TResult).GetAwaiter()
+  nameWithType: IQueueQuery<TResult>.GetAwaiter()
+  nameWithType.vb: IQueueQuery(Of TResult).GetAwaiter()
+- uid: ILib.UI.IQueueQuery`1.GetAwaiter*
+  name: GetAwaiter
+  href: api/ILib.UI.IQueueQuery-1.html#ILib_UI_IQueueQuery_1_GetAwaiter_
+  commentId: Overload:ILib.UI.IQueueQuery`1.GetAwaiter
+  isSpec: "True"
+  fullName: ILib.UI.IQueueQuery<TResult>.GetAwaiter
+  fullName.vb: ILib.UI.IQueueQuery(Of TResult).GetAwaiter
+  nameWithType: IQueueQuery<TResult>.GetAwaiter
+  nameWithType.vb: IQueueQuery(Of TResult).GetAwaiter
+- uid: ILib.UI.IQueueQuery`1.WaitResult(System.Threading.CancellationToken)
+  name: WaitResult(CancellationToken)
+  href: api/ILib.UI.IQueueQuery-1.html#ILib_UI_IQueueQuery_1_WaitResult_System_Threading_CancellationToken_
+  commentId: M:ILib.UI.IQueueQuery`1.WaitResult(System.Threading.CancellationToken)
+  fullName: ILib.UI.IQueueQuery<TResult>.WaitResult(System.Threading.CancellationToken)
+  fullName.vb: ILib.UI.IQueueQuery(Of TResult).WaitResult(System.Threading.CancellationToken)
+  nameWithType: IQueueQuery<TResult>.WaitResult(CancellationToken)
+  nameWithType.vb: IQueueQuery(Of TResult).WaitResult(CancellationToken)
+- uid: ILib.UI.IQueueQuery`1.WaitResult*
+  name: WaitResult
+  href: api/ILib.UI.IQueueQuery-1.html#ILib_UI_IQueueQuery_1_WaitResult_
+  commentId: Overload:ILib.UI.IQueueQuery`1.WaitResult
+  isSpec: "True"
+  fullName: ILib.UI.IQueueQuery<TResult>.WaitResult
+  fullName.vb: ILib.UI.IQueueQuery(Of TResult).WaitResult
+  nameWithType: IQueueQuery<TResult>.WaitResult
+  nameWithType.vb: IQueueQuery(Of TResult).WaitResult
+- uid: ILib.UI.IQueueQueryHandler
+  name: IQueueQueryHandler
+  href: api/ILib.UI.IQueueQueryHandler.html
+  commentId: T:ILib.UI.IQueueQueryHandler
+  fullName: ILib.UI.IQueueQueryHandler
+  nameWithType: IQueueQueryHandler
+- uid: ILib.UI.IQueueQueryHandler.GetResult*
+  name: GetResult
+  href: api/ILib.UI.IQueueQueryHandler.html#ILib_UI_IQueueQueryHandler_GetResult_
+  commentId: Overload:ILib.UI.IQueueQueryHandler.GetResult
+  isSpec: "True"
+  fullName: ILib.UI.IQueueQueryHandler.GetResult
+  nameWithType: IQueueQueryHandler.GetResult
+- uid: ILib.UI.IQueueQueryHandler.GetResult``1
+  name: GetResult<TResult>()
+  href: api/ILib.UI.IQueueQueryHandler.html#ILib_UI_IQueueQueryHandler_GetResult__1
+  commentId: M:ILib.UI.IQueueQueryHandler.GetResult``1
+  name.vb: GetResult(Of TResult)()
+  fullName: ILib.UI.IQueueQueryHandler.GetResult<TResult>()
+  fullName.vb: ILib.UI.IQueueQueryHandler.GetResult(Of TResult)()
+  nameWithType: IQueueQueryHandler.GetResult<TResult>()
+  nameWithType.vb: IQueueQueryHandler.GetResult(Of TResult)()
+- uid: ILib.UI.IQueueQueryHandler`1
+  name: IQueueQueryHandler<TResult>
+  href: api/ILib.UI.IQueueQueryHandler-1.html
+  commentId: T:ILib.UI.IQueueQueryHandler`1
+  name.vb: IQueueQueryHandler(Of TResult)
+  fullName: ILib.UI.IQueueQueryHandler<TResult>
+  fullName.vb: ILib.UI.IQueueQueryHandler(Of TResult)
+  nameWithType: IQueueQueryHandler<TResult>
+  nameWithType.vb: IQueueQueryHandler(Of TResult)
+- uid: ILib.UI.IQueueQueryHandler`1.GetResult
+  name: GetResult()
+  href: api/ILib.UI.IQueueQueryHandler-1.html#ILib_UI_IQueueQueryHandler_1_GetResult
+  commentId: M:ILib.UI.IQueueQueryHandler`1.GetResult
+  fullName: ILib.UI.IQueueQueryHandler<TResult>.GetResult()
+  fullName.vb: ILib.UI.IQueueQueryHandler(Of TResult).GetResult()
+  nameWithType: IQueueQueryHandler<TResult>.GetResult()
+  nameWithType.vb: IQueueQueryHandler(Of TResult).GetResult()
+- uid: ILib.UI.IQueueQueryHandler`1.GetResult*
+  name: GetResult
+  href: api/ILib.UI.IQueueQueryHandler-1.html#ILib_UI_IQueueQueryHandler_1_GetResult_
+  commentId: Overload:ILib.UI.IQueueQueryHandler`1.GetResult
+  isSpec: "True"
+  fullName: ILib.UI.IQueueQueryHandler<TResult>.GetResult
+  fullName.vb: ILib.UI.IQueueQueryHandler(Of TResult).GetResult
+  nameWithType: IQueueQueryHandler<TResult>.GetResult
+  nameWithType.vb: IQueueQueryHandler(Of TResult).GetResult
 - uid: ILib.UI.IStackEntry
   name: IStackEntry
   href: api/ILib.UI.IStackEntry.html
@@ -31568,6 +32827,100 @@ references:
   isSpec: "True"
   fullName: ILib.UI.ITransition.Show
   nameWithType: ITransition.Show
+- uid: ILib.UI.QueryResult`1
+  name: QueryResult<TResult>
+  href: api/ILib.UI.QueryResult-1.html
+  commentId: T:ILib.UI.QueryResult`1
+  name.vb: QueryResult(Of TResult)
+  fullName: ILib.UI.QueryResult<TResult>
+  fullName.vb: ILib.UI.QueryResult(Of TResult)
+  nameWithType: QueryResult<TResult>
+  nameWithType.vb: QueryResult(Of TResult)
+- uid: ILib.UI.QueryResult`1.GetResult
+  name: GetResult()
+  href: api/ILib.UI.QueryResult-1.html#ILib_UI_QueryResult_1_GetResult
+  commentId: M:ILib.UI.QueryResult`1.GetResult
+  fullName: ILib.UI.QueryResult<TResult>.GetResult()
+  fullName.vb: ILib.UI.QueryResult(Of TResult).GetResult()
+  nameWithType: QueryResult<TResult>.GetResult()
+  nameWithType.vb: QueryResult(Of TResult).GetResult()
+- uid: ILib.UI.QueryResult`1.GetResult*
+  name: GetResult
+  href: api/ILib.UI.QueryResult-1.html#ILib_UI_QueryResult_1_GetResult_
+  commentId: Overload:ILib.UI.QueryResult`1.GetResult
+  isSpec: "True"
+  fullName: ILib.UI.QueryResult<TResult>.GetResult
+  fullName.vb: ILib.UI.QueryResult(Of TResult).GetResult
+  nameWithType: QueryResult<TResult>.GetResult
+  nameWithType.vb: QueryResult(Of TResult).GetResult
+- uid: ILib.UI.QueryResult`1.Set(`0)
+  name: Set(TResult)
+  href: api/ILib.UI.QueryResult-1.html#ILib_UI_QueryResult_1_Set__0_
+  commentId: M:ILib.UI.QueryResult`1.Set(`0)
+  fullName: ILib.UI.QueryResult<TResult>.Set(TResult)
+  fullName.vb: ILib.UI.QueryResult(Of TResult).Set(TResult)
+  nameWithType: QueryResult<TResult>.Set(TResult)
+  nameWithType.vb: QueryResult(Of TResult).Set(TResult)
+- uid: ILib.UI.QueryResult`1.Set(System.Exception)
+  name: Set(Exception)
+  href: api/ILib.UI.QueryResult-1.html#ILib_UI_QueryResult_1_Set_System_Exception_
+  commentId: M:ILib.UI.QueryResult`1.Set(System.Exception)
+  fullName: ILib.UI.QueryResult<TResult>.Set(System.Exception)
+  fullName.vb: ILib.UI.QueryResult(Of TResult).Set(System.Exception)
+  nameWithType: QueryResult<TResult>.Set(Exception)
+  nameWithType.vb: QueryResult(Of TResult).Set(Exception)
+- uid: ILib.UI.QueryResult`1.Set*
+  name: Set
+  href: api/ILib.UI.QueryResult-1.html#ILib_UI_QueryResult_1_Set_
+  commentId: Overload:ILib.UI.QueryResult`1.Set
+  isSpec: "True"
+  fullName: ILib.UI.QueryResult<TResult>.Set
+  fullName.vb: ILib.UI.QueryResult(Of TResult).Set
+  nameWithType: QueryResult<TResult>.Set
+  nameWithType.vb: QueryResult(Of TResult).Set
+- uid: ILib.UI.QueueQueryHandlerWrapper`1
+  name: QueueQueryHandlerWrapper<TResult>
+  href: api/ILib.UI.QueueQueryHandlerWrapper-1.html
+  commentId: T:ILib.UI.QueueQueryHandlerWrapper`1
+  name.vb: QueueQueryHandlerWrapper(Of TResult)
+  fullName: ILib.UI.QueueQueryHandlerWrapper<TResult>
+  fullName.vb: ILib.UI.QueueQueryHandlerWrapper(Of TResult)
+  nameWithType: QueueQueryHandlerWrapper<TResult>
+  nameWithType.vb: QueueQueryHandlerWrapper(Of TResult)
+- uid: ILib.UI.QueueQueryHandlerWrapper`1.#ctor(ILib.UI.IQueueQueryHandler)
+  name: QueueQueryHandlerWrapper(IQueueQueryHandler)
+  href: api/ILib.UI.QueueQueryHandlerWrapper-1.html#ILib_UI_QueueQueryHandlerWrapper_1__ctor_ILib_UI_IQueueQueryHandler_
+  commentId: M:ILib.UI.QueueQueryHandlerWrapper`1.#ctor(ILib.UI.IQueueQueryHandler)
+  fullName: ILib.UI.QueueQueryHandlerWrapper<TResult>.QueueQueryHandlerWrapper(ILib.UI.IQueueQueryHandler)
+  fullName.vb: ILib.UI.QueueQueryHandlerWrapper(Of TResult).QueueQueryHandlerWrapper(ILib.UI.IQueueQueryHandler)
+  nameWithType: QueueQueryHandlerWrapper<TResult>.QueueQueryHandlerWrapper(IQueueQueryHandler)
+  nameWithType.vb: QueueQueryHandlerWrapper(Of TResult).QueueQueryHandlerWrapper(IQueueQueryHandler)
+- uid: ILib.UI.QueueQueryHandlerWrapper`1.#ctor*
+  name: QueueQueryHandlerWrapper
+  href: api/ILib.UI.QueueQueryHandlerWrapper-1.html#ILib_UI_QueueQueryHandlerWrapper_1__ctor_
+  commentId: Overload:ILib.UI.QueueQueryHandlerWrapper`1.#ctor
+  isSpec: "True"
+  fullName: ILib.UI.QueueQueryHandlerWrapper<TResult>.QueueQueryHandlerWrapper
+  fullName.vb: ILib.UI.QueueQueryHandlerWrapper(Of TResult).QueueQueryHandlerWrapper
+  nameWithType: QueueQueryHandlerWrapper<TResult>.QueueQueryHandlerWrapper
+  nameWithType.vb: QueueQueryHandlerWrapper(Of TResult).QueueQueryHandlerWrapper
+- uid: ILib.UI.QueueQueryHandlerWrapper`1.GetResult
+  name: GetResult()
+  href: api/ILib.UI.QueueQueryHandlerWrapper-1.html#ILib_UI_QueueQueryHandlerWrapper_1_GetResult
+  commentId: M:ILib.UI.QueueQueryHandlerWrapper`1.GetResult
+  fullName: ILib.UI.QueueQueryHandlerWrapper<TResult>.GetResult()
+  fullName.vb: ILib.UI.QueueQueryHandlerWrapper(Of TResult).GetResult()
+  nameWithType: QueueQueryHandlerWrapper<TResult>.GetResult()
+  nameWithType.vb: QueueQueryHandlerWrapper(Of TResult).GetResult()
+- uid: ILib.UI.QueueQueryHandlerWrapper`1.GetResult*
+  name: GetResult
+  href: api/ILib.UI.QueueQueryHandlerWrapper-1.html#ILib_UI_QueueQueryHandlerWrapper_1_GetResult_
+  commentId: Overload:ILib.UI.QueueQueryHandlerWrapper`1.GetResult
+  isSpec: "True"
+  fullName: ILib.UI.QueueQueryHandlerWrapper<TResult>.GetResult
+  fullName.vb: ILib.UI.QueueQueryHandlerWrapper(Of TResult).GetResult
+  nameWithType: QueueQueryHandlerWrapper<TResult>.GetResult
+  nameWithType.vb: QueueQueryHandlerWrapper(Of TResult).GetResult
 - uid: ILib.UI.UIControl`1
   name: UIControl<TParam>
   href: api/ILib.UI.UIControl-1.html
@@ -32635,14 +33988,6 @@ references:
   fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Close(ILib.UI.IControl)
   nameWithType: UIQueue<TParam, UControl>.Close(IControl)
   nameWithType.vb: UIQueue(Of TParam, UControl).Close(IControl)
-- uid: ILib.UI.UIQueue`2.Close(ILib.UI.IQueueEntry)
-  name: Close(IQueueEntry)
-  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Close_ILib_UI_IQueueEntry_
-  commentId: M:ILib.UI.UIQueue`2.Close(ILib.UI.IQueueEntry)
-  fullName: ILib.UI.UIQueue<TParam, UControl>.Close(ILib.UI.IQueueEntry)
-  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Close(ILib.UI.IQueueEntry)
-  nameWithType: UIQueue<TParam, UControl>.Close(IQueueEntry)
-  nameWithType.vb: UIQueue(Of TParam, UControl).Close(IQueueEntry)
 - uid: ILib.UI.UIQueue`2.Close*
   name: Close
   href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Close_
@@ -32652,6 +33997,23 @@ references:
   fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Close
   nameWithType: UIQueue<TParam, UControl>.Close
   nameWithType.vb: UIQueue(Of TParam, UControl).Close
+- uid: ILib.UI.UIQueue`2.Count
+  name: Count
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Count
+  commentId: P:ILib.UI.UIQueue`2.Count
+  fullName: ILib.UI.UIQueue<TParam, UControl>.Count
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Count
+  nameWithType: UIQueue<TParam, UControl>.Count
+  nameWithType.vb: UIQueue(Of TParam, UControl).Count
+- uid: ILib.UI.UIQueue`2.Count*
+  name: Count
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Count_
+  commentId: Overload:ILib.UI.UIQueue`2.Count
+  isSpec: "True"
+  fullName: ILib.UI.UIQueue<TParam, UControl>.Count
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Count
+  nameWithType: UIQueue<TParam, UControl>.Count
+  nameWithType.vb: UIQueue(Of TParam, UControl).Count
 - uid: ILib.UI.UIQueue`2.Enqueue(System.String,`0,System.Threading.CancellationToken)
   name: Enqueue(String, TParam, CancellationToken)
   href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Enqueue_System_String__0_System_Threading_CancellationToken_
@@ -32687,6 +34049,75 @@ references:
   fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).GetActive(Of T)()
   nameWithType: UIQueue<TParam, UControl>.GetActive<T>()
   nameWithType.vb: UIQueue(Of TParam, UControl).GetActive(Of T)()
+- uid: ILib.UI.UIQueue`2.HandleError(System.Exception)
+  name: HandleError(Exception)
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_HandleError_System_Exception_
+  commentId: M:ILib.UI.UIQueue`2.HandleError(System.Exception)
+  fullName: ILib.UI.UIQueue<TParam, UControl>.HandleError(System.Exception)
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).HandleError(System.Exception)
+  nameWithType: UIQueue<TParam, UControl>.HandleError(Exception)
+  nameWithType.vb: UIQueue(Of TParam, UControl).HandleError(Exception)
+- uid: ILib.UI.UIQueue`2.HandleError*
+  name: HandleError
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_HandleError_
+  commentId: Overload:ILib.UI.UIQueue`2.HandleError
+  isSpec: "True"
+  fullName: ILib.UI.UIQueue<TParam, UControl>.HandleError
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).HandleError
+  nameWithType: UIQueue<TParam, UControl>.HandleError
+  nameWithType.vb: UIQueue(Of TParam, UControl).HandleError
+- uid: ILib.UI.UIQueue`2.IsEmpty
+  name: IsEmpty
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_IsEmpty
+  commentId: P:ILib.UI.UIQueue`2.IsEmpty
+  fullName: ILib.UI.UIQueue<TParam, UControl>.IsEmpty
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).IsEmpty
+  nameWithType: UIQueue<TParam, UControl>.IsEmpty
+  nameWithType.vb: UIQueue(Of TParam, UControl).IsEmpty
+- uid: ILib.UI.UIQueue`2.IsEmpty*
+  name: IsEmpty
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_IsEmpty_
+  commentId: Overload:ILib.UI.UIQueue`2.IsEmpty
+  isSpec: "True"
+  fullName: ILib.UI.UIQueue<TParam, UControl>.IsEmpty
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).IsEmpty
+  nameWithType: UIQueue<TParam, UControl>.IsEmpty
+  nameWithType.vb: UIQueue(Of TParam, UControl).IsEmpty
+- uid: ILib.UI.UIQueue`2.Query*
+  name: Query
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Query_
+  commentId: Overload:ILib.UI.UIQueue`2.Query
+  isSpec: "True"
+  fullName: ILib.UI.UIQueue<TParam, UControl>.Query
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Query
+  nameWithType: UIQueue<TParam, UControl>.Query
+  nameWithType.vb: UIQueue(Of TParam, UControl).Query
+- uid: ILib.UI.UIQueue`2.Query``1(System.String,`0,System.Threading.CancellationToken)
+  name: Query<TResult>(String, TParam, CancellationToken)
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_Query__1_System_String__0_System_Threading_CancellationToken_
+  commentId: M:ILib.UI.UIQueue`2.Query``1(System.String,`0,System.Threading.CancellationToken)
+  name.vb: Query(Of TResult)(String, TParam, CancellationToken)
+  fullName: ILib.UI.UIQueue<TParam, UControl>.Query<TResult>(System.String, TParam, System.Threading.CancellationToken)
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).Query(Of TResult)(System.String, TParam, System.Threading.CancellationToken)
+  nameWithType: UIQueue<TParam, UControl>.Query<TResult>(String, TParam, CancellationToken)
+  nameWithType.vb: UIQueue(Of TParam, UControl).Query(Of TResult)(String, TParam, CancellationToken)
+- uid: ILib.UI.UIQueue`2.RepairError(System.Boolean)
+  name: RepairError(Boolean)
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_RepairError_System_Boolean_
+  commentId: M:ILib.UI.UIQueue`2.RepairError(System.Boolean)
+  fullName: ILib.UI.UIQueue<TParam, UControl>.RepairError(System.Boolean)
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).RepairError(System.Boolean)
+  nameWithType: UIQueue<TParam, UControl>.RepairError(Boolean)
+  nameWithType.vb: UIQueue(Of TParam, UControl).RepairError(Boolean)
+- uid: ILib.UI.UIQueue`2.RepairError*
+  name: RepairError
+  href: api/ILib.UI.UIQueue-2.html#ILib_UI_UIQueue_2_RepairError_
+  commentId: Overload:ILib.UI.UIQueue`2.RepairError
+  isSpec: "True"
+  fullName: ILib.UI.UIQueue<TParam, UControl>.RepairError
+  fullName.vb: ILib.UI.UIQueue(Of TParam, UControl).RepairError
+  nameWithType: UIQueue<TParam, UControl>.RepairError
+  nameWithType.vb: UIQueue(Of TParam, UControl).RepairError
 - uid: ILib.UI.UIStack
   name: UIStack
   href: api/ILib.UI.UIStack.html
@@ -32719,6 +34150,23 @@ references:
   fullName.vb: ILib.UI.UIStack(Of TParam, UControl).Close
   nameWithType: UIStack<TParam, UControl>.Close
   nameWithType.vb: UIStack(Of TParam, UControl).Close
+- uid: ILib.UI.UIStack`2.Count
+  name: Count
+  href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_Count
+  commentId: P:ILib.UI.UIStack`2.Count
+  fullName: ILib.UI.UIStack<TParam, UControl>.Count
+  fullName.vb: ILib.UI.UIStack(Of TParam, UControl).Count
+  nameWithType: UIStack<TParam, UControl>.Count
+  nameWithType.vb: UIStack(Of TParam, UControl).Count
+- uid: ILib.UI.UIStack`2.Count*
+  name: Count
+  href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_Count_
+  commentId: Overload:ILib.UI.UIStack`2.Count
+  isSpec: "True"
+  fullName: ILib.UI.UIStack<TParam, UControl>.Count
+  fullName.vb: ILib.UI.UIStack(Of TParam, UControl).Count
+  nameWithType: UIStack<TParam, UControl>.Count
+  nameWithType.vb: UIStack(Of TParam, UControl).Count
 - uid: ILib.UI.UIStack`2.GetActive*
   name: GetActive
   href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_GetActive_
@@ -32737,6 +34185,23 @@ references:
   fullName.vb: ILib.UI.UIStack(Of TParam, UControl).GetActive(Of T)()
   nameWithType: UIStack<TParam, UControl>.GetActive<T>()
   nameWithType.vb: UIStack(Of TParam, UControl).GetActive(Of T)()
+- uid: ILib.UI.UIStack`2.IsEmpty
+  name: IsEmpty
+  href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_IsEmpty
+  commentId: P:ILib.UI.UIStack`2.IsEmpty
+  fullName: ILib.UI.UIStack<TParam, UControl>.IsEmpty
+  fullName.vb: ILib.UI.UIStack(Of TParam, UControl).IsEmpty
+  nameWithType: UIStack<TParam, UControl>.IsEmpty
+  nameWithType.vb: UIStack(Of TParam, UControl).IsEmpty
+- uid: ILib.UI.UIStack`2.IsEmpty*
+  name: IsEmpty
+  href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_IsEmpty_
+  commentId: Overload:ILib.UI.UIStack`2.IsEmpty
+  isSpec: "True"
+  fullName: ILib.UI.UIStack<TParam, UControl>.IsEmpty
+  fullName.vb: ILib.UI.UIStack(Of TParam, UControl).IsEmpty
+  nameWithType: UIStack<TParam, UControl>.IsEmpty
+  nameWithType.vb: UIStack(Of TParam, UControl).IsEmpty
 - uid: ILib.UI.UIStack`2.Pop(System.Int32)
   name: Pop(Int32)
   href: api/ILib.UI.UIStack-2.html#ILib_UI_UIStack_2_Pop_System_Int32_

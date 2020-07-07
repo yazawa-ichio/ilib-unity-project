@@ -90,11 +90,8 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
     <div class="level2"><span class="xref">UnityEngine.PropertyAttribute</span></div>
-    <div class="level3"><span class="xref">EventNameAttribute</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">_Attribute</a></div>
+    <div class="level3"><a class="xref" href="ILib.MVVM.EventNameDrawAttribute.html">EventNameDrawAttribute</a></div>
+    <div class="level4"><span class="xref">EventNameAttribute</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,11 +104,8 @@
   <h5 id="ILib_MVVM_EventNameAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Field)]
-public class EventNameAttribute : PropertyAttribute, _Attribute</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices._attribute">System.Runtime.InteropServices._Attribute</a>
+[Obsolete(&quot;use EventNameDrawAttribute&quot;)]
+public class EventNameAttribute : EventNameDrawAttribute</code></pre>
   </div>
 </article>
           </div>
@@ -121,7 +115,7 @@ public class EventNameAttribute : PropertyAttribute, _Attribute</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventNameAttribute.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-mvvm/blob/master/IchioLib.MVVM/MVVM/Event/EventNameDrawAttribute.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
