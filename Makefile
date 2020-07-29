@@ -1,5 +1,5 @@
 ifndef UNITY_APP
-	UNITY_APP="C:/Program Files/Unity/Hub/Editor/2018.4.8f1/Editor/Unity.exe"
+	UNITY_APP="C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Unity.exe"
 endif
 
 doc-build: doc-metadata
@@ -8,6 +8,9 @@ doc-build: doc-metadata
 doc-metadata:
 	docfx metadata doc_source/docfx.json
 	sh ./sync_doc.sh
+
+format: rebuild-project
+	cd Unity && dotnet-format -w Unity.sln
 
 rebuild-project:
 	echo ${PWD}
