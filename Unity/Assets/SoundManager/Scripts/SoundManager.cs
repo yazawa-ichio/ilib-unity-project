@@ -1,8 +1,8 @@
-﻿using System.Collections;
+﻿using ILib.Audio.SoundManagement;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using ILib.Audio.SoundManagement;
 
 namespace ILib.Audio
 {
@@ -153,10 +153,12 @@ namespace ILib.Audio
 				GameObject.Destroy(s_Instance.gameObject);
 			}
 			Mixer = null;
-
-			foreach (var val in s_ParamTweener)
+			if (s_ParamTweener != null)
 			{
-				val.Dispose();
+				foreach (var val in s_ParamTweener)
+				{
+					val.Dispose();
+				}
 			}
 			s_ParamTweener = null;
 
