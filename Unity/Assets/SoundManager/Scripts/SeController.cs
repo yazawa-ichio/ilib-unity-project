@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace ILib.Audio.SoundManagement
+﻿namespace ILib.Audio.SoundManagement
 {
 
 	public class SeController
@@ -17,6 +13,21 @@ namespace ILib.Audio.SoundManagement
 		{
 			get => m_Game.MaxPoolCount;
 			set => m_Game.MaxPoolCount = value;
+		}
+
+		/// <summary>
+		/// キャッシュになく遅延ロードを行った際に
+		/// ロードしたデータをキャッシュするか？
+		/// </summary>
+		public bool IsAddCacheIfLoad
+		{
+			get => m_Game.IsAddCacheIfLoad;
+			set
+			{
+				m_Game.IsAddCacheIfLoad = value;
+				m_UI.IsAddCacheIfLoad = value;
+				m_Jingle.IsAddCacheIfLoad = value;
+			}
 		}
 
 		public SeController(Config config)
