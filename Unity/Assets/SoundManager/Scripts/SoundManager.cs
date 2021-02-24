@@ -62,15 +62,20 @@ namespace ILib.Audio
 
 		public static AudioMixer Mixer { get; private set; }
 
-		static bool s_Initialized = false;
 		static SoundManagerInstance s_Instance;
 		static Coroutine s_TweenCoroutine;
 		static List<MixerParamTweener> s_ParamTweener;
 
+		public static bool IsValid() => s_Instance != null;
+
 		public static void Initialize(Config config)
 		{
-			if (s_Initialized) return;
-			s_Initialized = true;
+			if (IsValid() && Application.isPlaying && s_Instance.hideFlags != HideFlags.None)
+			{
+				Release();
+			}
+
+			if (IsValid()) return;
 
 			s_Instance = SoundControl.CreateRoot(nameof(SoundManager)).AddComponent<SoundManagerInstance>();
 
@@ -104,9 +109,9 @@ namespace ILib.Audio
 
 		static void SetVolume(string param, float value, float time = 0.2f)
 		{
-			if (!s_Initialized)
+			if (!IsValid())
 			{
-				Debug.Assert(s_Initialized, "未初期化です");
+				Debug.Assert(false, "未初期化です");
 				return;
 			}
 			MixerParamTweener tweener = GetTweener(param, x => SoundUtil.VolumeToDecibel(x));
@@ -119,9 +124,9 @@ namespace ILib.Audio
 
 		public static void SetParamValue(string param, float value, float time = 0.2f)
 		{
-			if (!s_Initialized)
+			if (!IsValid())
 			{
-				Debug.Assert(s_Initialized, "未初期化です");
+				Debug.Assert(false, "未初期化です");
 				return;
 			}
 			MixerParamTweener tweener = GetTweener(param, x => SoundUtil.VolumeToDecibel(x));
@@ -146,12 +151,16 @@ namespace ILib.Audio
 
 		public static void Release()
 		{
-			if (!s_Initialized) return;
-			s_Initialized = false;
-			if (s_Instance != null)
+			if (!IsValid()) return;
+			if (s_Instance.hideFlags != HideFlags.None)
+			{
+				GameObject.DestroyImmediate(s_Instance.gameObject);
+			}
+			else
 			{
 				GameObject.Destroy(s_Instance.gameObject);
 			}
+			s_Instance = null;
 			Mixer = null;
 			if (s_ParamTweener != null)
 			{
@@ -171,5 +180,12 @@ namespace ILib.Audio
 			Voice?.Release();
 			Voice = null;
 		}
+
+#if UNITY_EDITOR
+		public static void ForceUpdateInEditor()
+		{
+			SoundControl.ForceUpdateInEditor();
+		}
+#endif
 	}
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace ILib.Audio.SoundManagement
 {
@@ -16,6 +14,12 @@ namespace ILib.Audio.SoundManagement
 		bool m_DontDestroy = false;
 
 		private void Awake()
+		{
+			SoundManager.Release();
+			Init();
+		}
+
+		public void Init()
 		{
 			var loader = GetComponent<ISoundLoader>();
 			SoundManager.Initialize(m_Config.GetConfig(loader));
