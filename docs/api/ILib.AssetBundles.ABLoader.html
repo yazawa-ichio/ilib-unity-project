@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ABLoader
    | Yazawa Ichio Unity Package Document ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -98,6 +98,34 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class ABLoader</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L47">View Source</a>
+  </span>
+  <h4 id="ILib_AssetBundles_ABLoader_GetReferenceFunc" data-uid="ILib.AssetBundles.ABLoader.GetReferenceFunc">GetReferenceFunc</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;string, (string, string)&gt; GetReferenceFunc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -213,6 +241,35 @@
     <tbody>
       <tr>
         <td><a class="xref" href="ILib.AssetBundles.UnloadMode.html">UnloadMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-abloader/blob/master/ABLoader/Runtime/Scripts/ABLoader.cs/#L37">View Source</a>
+  </span>
+  <a id="ILib_AssetBundles_ABLoader_UseEditorAsset_" data-uid="ILib.AssetBundles.ABLoader.UseEditorAsset*"></a>
+  <h4 id="ILib_AssetBundles_ABLoader_UseEditorAsset" data-uid="ILib.AssetBundles.ABLoader.UseEditorAsset">UseEditorAsset</h4>
+  <div class="markdown level1 summary"><p>エディタ上のアセットを直接読み込みます。
+初期化前にフラグをセットしてください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UseEditorAsset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -458,7 +515,7 @@ onFailは失敗したすべてのリクエストに対して実行されます�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (int, Func&lt;float&gt;)DownloadByTags(string[] tags, Action&lt;bool&gt; onComplete, Action&lt;Exception&gt; onFail = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (int, Func&lt;float&gt;) DownloadByTags(string[] tags, Action&lt;bool&gt; onComplete, Action&lt;Exception&gt; onFail = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -559,7 +616,7 @@ onFailは失敗したすべてのリクエストに対して実行されます�
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (string bundleName, string assetName)GetReference(string id)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (string bundleName, string assetName) GetReference(string id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1266,7 +1323,8 @@ UnloadMode.ImmediatelyモードでDisposeを実行し忘れるとバンドルが
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

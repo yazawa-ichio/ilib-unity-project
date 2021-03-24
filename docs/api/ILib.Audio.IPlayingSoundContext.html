@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IPlayingSoundContext
    | Yazawa Ichio Unity Package Document ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -442,6 +442,68 @@ SoundInfoのPitchに乗算した値が実際には使われます</p>
   </table>
   
   <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L72">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_SetTime_" data-uid="ILib.Audio.IPlayingSoundContext.SetTime*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_SetTime_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.SetTime(System.Single)">SetTime(Single)</h4>
+  <div class="markdown level1 summary"><p>再生時間位置を設定します。
+遅延ロード中も時間を経過した扱いになります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTime(float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L77">View Source</a>
+  </span>
+  <a id="ILib_Audio_IPlayingSoundContext_SetTimeIgnoreLoadingTime_" data-uid="ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime*"></a>
+  <h4 id="ILib_Audio_IPlayingSoundContext_SetTimeIgnoreLoadingTime_System_Single_" data-uid="ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime(System.Single)">SetTimeIgnoreLoadingTime(Single)</h4>
+  <div class="markdown level1 summary"><p>再生時間位置を設定します。
+遅延ロード中の経過時間を無視します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTimeIgnoreLoadingTime(float time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
     <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/IPlayingSoundContext.cs/#L67">View Source</a>
   </span>
   <a id="ILib_Audio_IPlayingSoundContext_Stop_" data-uid="ILib.Audio.IPlayingSoundContext.Stop*"></a>
@@ -468,7 +530,8 @@ SoundInfoのPitchに乗算した値が実際には使われます</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

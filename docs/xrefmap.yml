@@ -119,6 +119,12 @@ references:
   isSpec: "True"
   fullName: ILib.AssetBundles.ABLoader.GetReference
   nameWithType: ABLoader.GetReference
+- uid: ILib.AssetBundles.ABLoader.GetReferenceFunc
+  name: GetReferenceFunc
+  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_GetReferenceFunc
+  commentId: F:ILib.AssetBundles.ABLoader.GetReferenceFunc
+  fullName: ILib.AssetBundles.ABLoader.GetReferenceFunc
+  nameWithType: ABLoader.GetReferenceFunc
 - uid: ILib.AssetBundles.ABLoader.GetSize(System.String[],System.Boolean)
   name: GetSize(String[], Boolean)
   href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_GetSize_System_String___System_Boolean_
@@ -350,6 +356,19 @@ references:
   isSpec: "True"
   fullName: ILib.AssetBundles.ABLoader.UnloadMode
   nameWithType: ABLoader.UnloadMode
+- uid: ILib.AssetBundles.ABLoader.UseEditorAsset
+  name: UseEditorAsset
+  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_UseEditorAsset
+  commentId: P:ILib.AssetBundles.ABLoader.UseEditorAsset
+  fullName: ILib.AssetBundles.ABLoader.UseEditorAsset
+  nameWithType: ABLoader.UseEditorAsset
+- uid: ILib.AssetBundles.ABLoader.UseEditorAsset*
+  name: UseEditorAsset
+  href: api/ILib.AssetBundles.ABLoader.html#ILib_AssetBundles_ABLoader_UseEditorAsset_
+  commentId: Overload:ILib.AssetBundles.ABLoader.UseEditorAsset
+  isSpec: "True"
+  fullName: ILib.AssetBundles.ABLoader.UseEditorAsset
+  nameWithType: ABLoader.UseEditorAsset
 - uid: ILib.AssetBundles.AssetLoading`1
   name: AssetLoading<T>
   href: api/ILib.AssetBundles.AssetLoading-1.html
@@ -867,6 +886,109 @@ references:
   isSpec: "True"
   fullName: ILib.AssetBundles.DownloadException.Request
   nameWithType: DownloadException.Request
+- uid: ILib.AssetBundles.EditorContainer
+  name: EditorContainer
+  href: api/ILib.AssetBundles.EditorContainer.html
+  commentId: T:ILib.AssetBundles.EditorContainer
+  fullName: ILib.AssetBundles.EditorContainer
+  nameWithType: EditorContainer
+- uid: ILib.AssetBundles.EditorContainer.#ctor(System.String)
+  name: EditorContainer(String)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer__ctor_System_String_
+  commentId: M:ILib.AssetBundles.EditorContainer.#ctor(System.String)
+  fullName: ILib.AssetBundles.EditorContainer.EditorContainer(System.String)
+  nameWithType: EditorContainer.EditorContainer(String)
+- uid: ILib.AssetBundles.EditorContainer.#ctor*
+  name: EditorContainer
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer__ctor_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.#ctor
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.EditorContainer
+  nameWithType: EditorContainer.EditorContainer
+- uid: ILib.AssetBundles.EditorContainer.LoadAsset*
+  name: LoadAsset
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadAsset_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.LoadAsset
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.LoadAsset
+  nameWithType: EditorContainer.LoadAsset
+- uid: ILib.AssetBundles.EditorContainer.LoadAsset``1(System.String)
+  name: LoadAsset<T>(String)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadAsset__1_System_String_
+  commentId: M:ILib.AssetBundles.EditorContainer.LoadAsset``1(System.String)
+  name.vb: LoadAsset(Of T)(String)
+  fullName: ILib.AssetBundles.EditorContainer.LoadAsset<T>(System.String)
+  fullName.vb: ILib.AssetBundles.EditorContainer.LoadAsset(Of T)(System.String)
+  nameWithType: EditorContainer.LoadAsset<T>(String)
+  nameWithType.vb: EditorContainer.LoadAsset(Of T)(String)
+- uid: ILib.AssetBundles.EditorContainer.LoadAssetAsync*
+  name: LoadAssetAsync
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadAssetAsync_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.LoadAssetAsync
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.LoadAssetAsync
+  nameWithType: EditorContainer.LoadAssetAsync
+- uid: ILib.AssetBundles.EditorContainer.LoadAssetAsync``1(System.String,System.Action{``0})
+  name: LoadAssetAsync<T>(String, Action<T>)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadAssetAsync__1_System_String_System_Action___0__
+  commentId: M:ILib.AssetBundles.EditorContainer.LoadAssetAsync``1(System.String,System.Action{``0})
+  name.vb: LoadAssetAsync(Of T)(String, Action(Of T))
+  fullName: ILib.AssetBundles.EditorContainer.LoadAssetAsync<T>(System.String, System.Action<T>)
+  fullName.vb: ILib.AssetBundles.EditorContainer.LoadAssetAsync(Of T)(System.String, System.Action(Of T))
+  nameWithType: EditorContainer.LoadAssetAsync<T>(String, Action<T>)
+  nameWithType.vb: EditorContainer.LoadAssetAsync(Of T)(String, Action(Of T))
+- uid: ILib.AssetBundles.EditorContainer.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadScene(String, LoadSceneMode)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadScene_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:ILib.AssetBundles.EditorContainer.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  fullName: ILib.AssetBundles.EditorContainer.LoadScene(System.String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: EditorContainer.LoadScene(String, LoadSceneMode)
+- uid: ILib.AssetBundles.EditorContainer.LoadScene*
+  name: LoadScene
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadScene_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.LoadScene
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.LoadScene
+  nameWithType: EditorContainer.LoadScene
+- uid: ILib.AssetBundles.EditorContainer.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode,System.Action)
+  name: LoadSceneAsync(String, LoadSceneMode, Action)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_System_Action_
+  commentId: M:ILib.AssetBundles.EditorContainer.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode,System.Action)
+  fullName: ILib.AssetBundles.EditorContainer.LoadSceneAsync(System.String, UnityEngine.SceneManagement.LoadSceneMode, System.Action)
+  nameWithType: EditorContainer.LoadSceneAsync(String, LoadSceneMode, Action)
+- uid: ILib.AssetBundles.EditorContainer.LoadSceneAsync*
+  name: LoadSceneAsync
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_LoadSceneAsync_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.LoadSceneAsync
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.LoadSceneAsync
+  nameWithType: EditorContainer.LoadSceneAsync
+- uid: ILib.AssetBundles.EditorContainer.RemoveRef
+  name: RemoveRef()
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_RemoveRef
+  commentId: M:ILib.AssetBundles.EditorContainer.RemoveRef
+  fullName: ILib.AssetBundles.EditorContainer.RemoveRef()
+  nameWithType: EditorContainer.RemoveRef()
+- uid: ILib.AssetBundles.EditorContainer.RemoveRef*
+  name: RemoveRef
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_RemoveRef_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.RemoveRef
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.RemoveRef
+  nameWithType: EditorContainer.RemoveRef
+- uid: ILib.AssetBundles.EditorContainer.SetUnloadAll(System.Boolean,System.Boolean)
+  name: SetUnloadAll(Boolean, Boolean)
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_SetUnloadAll_System_Boolean_System_Boolean_
+  commentId: M:ILib.AssetBundles.EditorContainer.SetUnloadAll(System.Boolean,System.Boolean)
+  fullName: ILib.AssetBundles.EditorContainer.SetUnloadAll(System.Boolean, System.Boolean)
+  nameWithType: EditorContainer.SetUnloadAll(Boolean, Boolean)
+- uid: ILib.AssetBundles.EditorContainer.SetUnloadAll*
+  name: SetUnloadAll
+  href: api/ILib.AssetBundles.EditorContainer.html#ILib_AssetBundles_EditorContainer_SetUnloadAll_
+  commentId: Overload:ILib.AssetBundles.EditorContainer.SetUnloadAll
+  isSpec: "True"
+  fullName: ILib.AssetBundles.EditorContainer.SetUnloadAll
+  nameWithType: EditorContainer.SetUnloadAll
 - uid: ILib.AssetBundles.ExManifest
   name: ILib.AssetBundles.ExManifest
   href: api/ILib.AssetBundles.ExManifest.html
@@ -5036,6 +5158,32 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.IPlayingSoundContext.Pitch
   nameWithType: IPlayingSoundContext.Pitch
+- uid: ILib.Audio.IPlayingSoundContext.SetTime(System.Single)
+  name: SetTime(Single)
+  href: api/ILib.Audio.IPlayingSoundContext.html#ILib_Audio_IPlayingSoundContext_SetTime_System_Single_
+  commentId: M:ILib.Audio.IPlayingSoundContext.SetTime(System.Single)
+  fullName: ILib.Audio.IPlayingSoundContext.SetTime(System.Single)
+  nameWithType: IPlayingSoundContext.SetTime(Single)
+- uid: ILib.Audio.IPlayingSoundContext.SetTime*
+  name: SetTime
+  href: api/ILib.Audio.IPlayingSoundContext.html#ILib_Audio_IPlayingSoundContext_SetTime_
+  commentId: Overload:ILib.Audio.IPlayingSoundContext.SetTime
+  isSpec: "True"
+  fullName: ILib.Audio.IPlayingSoundContext.SetTime
+  nameWithType: IPlayingSoundContext.SetTime
+- uid: ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime(System.Single)
+  name: SetTimeIgnoreLoadingTime(Single)
+  href: api/ILib.Audio.IPlayingSoundContext.html#ILib_Audio_IPlayingSoundContext_SetTimeIgnoreLoadingTime_System_Single_
+  commentId: M:ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime(System.Single)
+  fullName: ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime(System.Single)
+  nameWithType: IPlayingSoundContext.SetTimeIgnoreLoadingTime(Single)
+- uid: ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime*
+  name: SetTimeIgnoreLoadingTime
+  href: api/ILib.Audio.IPlayingSoundContext.html#ILib_Audio_IPlayingSoundContext_SetTimeIgnoreLoadingTime_
+  commentId: Overload:ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime
+  isSpec: "True"
+  fullName: ILib.Audio.IPlayingSoundContext.SetTimeIgnoreLoadingTime
+  nameWithType: IPlayingSoundContext.SetTimeIgnoreLoadingTime
 - uid: ILib.Audio.IPlayingSoundContext.Stop
   name: Stop()
   href: api/ILib.Audio.IPlayingSoundContext.html#ILib_Audio_IPlayingSoundContext_Stop
@@ -6210,6 +6358,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.PlayingList.ReservePool
   nameWithType: PlayingList.ReservePool
+- uid: ILib.Audio.PlayingList.Update
+  name: Update()
+  href: api/ILib.Audio.PlayingList.html#ILib_Audio_PlayingList_Update
+  commentId: M:ILib.Audio.PlayingList.Update
+  fullName: ILib.Audio.PlayingList.Update()
+  nameWithType: PlayingList.Update()
+- uid: ILib.Audio.PlayingList.Update*
+  name: Update
+  href: api/ILib.Audio.PlayingList.html#ILib_Audio_PlayingList_Update_
+  commentId: Overload:ILib.Audio.PlayingList.Update
+  isSpec: "True"
+  fullName: ILib.Audio.PlayingList.Update
+  nameWithType: PlayingList.Update
 - uid: ILib.Audio.PlayingMusic
   name: PlayingMusic
   href: api/ILib.Audio.PlayingMusic.html
@@ -6242,6 +6403,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.PlayingMusic.MaxPoolCount
   nameWithType: PlayingMusic.MaxPoolCount
+- uid: ILib.Audio.PlayingMusic.Update
+  name: Update()
+  href: api/ILib.Audio.PlayingMusic.html#ILib_Audio_PlayingMusic_Update
+  commentId: M:ILib.Audio.PlayingMusic.Update
+  fullName: ILib.Audio.PlayingMusic.Update()
+  nameWithType: PlayingMusic.Update()
+- uid: ILib.Audio.PlayingMusic.Update*
+  name: Update
+  href: api/ILib.Audio.PlayingMusic.html#ILib_Audio_PlayingMusic_Update_
+  commentId: Overload:ILib.Audio.PlayingMusic.Update
+  isSpec: "True"
+  fullName: ILib.Audio.PlayingMusic.Update
+  nameWithType: PlayingMusic.Update
 - uid: ILib.Audio.SoundControl
   name: SoundControl
   href: api/ILib.Audio.SoundControl.html
@@ -6327,19 +6501,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundControl.CreateRoot
   nameWithType: SoundControl.CreateRoot
-- uid: ILib.Audio.SoundControl.Initialize
-  name: Initialize()
-  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_Initialize
-  commentId: M:ILib.Audio.SoundControl.Initialize
-  fullName: ILib.Audio.SoundControl.Initialize()
-  nameWithType: SoundControl.Initialize()
-- uid: ILib.Audio.SoundControl.Initialize*
-  name: Initialize
-  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_Initialize_
-  commentId: Overload:ILib.Audio.SoundControl.Initialize
+- uid: ILib.Audio.SoundControl.ForceUpdateInEditor
+  name: ForceUpdateInEditor()
+  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_ForceUpdateInEditor
+  commentId: M:ILib.Audio.SoundControl.ForceUpdateInEditor
+  fullName: ILib.Audio.SoundControl.ForceUpdateInEditor()
+  nameWithType: SoundControl.ForceUpdateInEditor()
+- uid: ILib.Audio.SoundControl.ForceUpdateInEditor*
+  name: ForceUpdateInEditor
+  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_ForceUpdateInEditor_
+  commentId: Overload:ILib.Audio.SoundControl.ForceUpdateInEditor
   isSpec: "True"
-  fullName: ILib.Audio.SoundControl.Initialize
-  nameWithType: SoundControl.Initialize
+  fullName: ILib.Audio.SoundControl.ForceUpdateInEditor
+  nameWithType: SoundControl.ForceUpdateInEditor
 - uid: ILib.Audio.SoundControl.Release
   name: Release()
   href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_Release
@@ -6366,6 +6540,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundControl.SharedPlayingList
   nameWithType: SoundControl.SharedPlayingList
+- uid: ILib.Audio.SoundControl.TryInitialize
+  name: TryInitialize()
+  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_TryInitialize
+  commentId: M:ILib.Audio.SoundControl.TryInitialize
+  fullName: ILib.Audio.SoundControl.TryInitialize()
+  nameWithType: SoundControl.TryInitialize()
+- uid: ILib.Audio.SoundControl.TryInitialize*
+  name: TryInitialize
+  href: api/ILib.Audio.SoundControl.html#ILib_Audio_SoundControl_TryInitialize_
+  commentId: Overload:ILib.Audio.SoundControl.TryInitialize
+  isSpec: "True"
+  fullName: ILib.Audio.SoundControl.TryInitialize
+  nameWithType: SoundControl.TryInitialize
 - uid: ILib.Audio.SoundData
   name: SoundData
   href: api/ILib.Audio.SoundData.html
@@ -6427,6 +6614,25 @@ references:
   commentId: F:ILib.Audio.SoundData.Volume
   fullName: ILib.Audio.SoundData.Volume
   nameWithType: SoundData.Volume
+- uid: ILib.Audio.SoundDataInspector
+  name: SoundDataInspector
+  href: api/ILib.Audio.SoundDataInspector.html
+  commentId: T:ILib.Audio.SoundDataInspector
+  fullName: ILib.Audio.SoundDataInspector
+  nameWithType: SoundDataInspector
+- uid: ILib.Audio.SoundDataInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/ILib.Audio.SoundDataInspector.html#ILib_Audio_SoundDataInspector_OnInspectorGUI
+  commentId: M:ILib.Audio.SoundDataInspector.OnInspectorGUI
+  fullName: ILib.Audio.SoundDataInspector.OnInspectorGUI()
+  nameWithType: SoundDataInspector.OnInspectorGUI()
+- uid: ILib.Audio.SoundDataInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/ILib.Audio.SoundDataInspector.html#ILib_Audio_SoundDataInspector_OnInspectorGUI_
+  commentId: Overload:ILib.Audio.SoundDataInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: ILib.Audio.SoundDataInspector.OnInspectorGUI
+  nameWithType: SoundDataInspector.OnInspectorGUI
 - uid: ILib.Audio.SoundInfo
   name: SoundInfo
   href: api/ILib.Audio.SoundInfo.html
@@ -7089,6 +7295,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManagement.SeController.CreateCacheScope
   nameWithType: SeController.CreateCacheScope
+- uid: ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad
+  name: IsAddCacheIfLoad
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_IsAddCacheIfLoad
+  commentId: P:ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad
+  fullName: ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad
+  nameWithType: SeController.IsAddCacheIfLoad
+- uid: ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad*
+  name: IsAddCacheIfLoad
+  href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_IsAddCacheIfLoad_
+  commentId: Overload:ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SeController.IsAddCacheIfLoad
+  nameWithType: SeController.IsAddCacheIfLoad
 - uid: ILib.Audio.SoundManagement.SeController.MaxPoolCount
   name: MaxPoolCount
   href: api/ILib.Audio.SoundManagement.SeController.html#ILib_Audio_SoundManagement_SeController_MaxPoolCount
@@ -7372,6 +7591,19 @@ references:
   commentId: T:ILib.Audio.SoundManagement.SoundManagerInstaller
   fullName: ILib.Audio.SoundManagement.SoundManagerInstaller
   nameWithType: SoundManagerInstaller
+- uid: ILib.Audio.SoundManagement.SoundManagerInstaller.Init
+  name: Init()
+  href: api/ILib.Audio.SoundManagement.SoundManagerInstaller.html#ILib_Audio_SoundManagement_SoundManagerInstaller_Init
+  commentId: M:ILib.Audio.SoundManagement.SoundManagerInstaller.Init
+  fullName: ILib.Audio.SoundManagement.SoundManagerInstaller.Init()
+  nameWithType: SoundManagerInstaller.Init()
+- uid: ILib.Audio.SoundManagement.SoundManagerInstaller.Init*
+  name: Init
+  href: api/ILib.Audio.SoundManagement.SoundManagerInstaller.html#ILib_Audio_SoundManagement_SoundManagerInstaller_Init_
+  commentId: Overload:ILib.Audio.SoundManagement.SoundManagerInstaller.Init
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManagement.SoundManagerInstaller.Init
+  nameWithType: SoundManagerInstaller.Init
 - uid: ILib.Audio.SoundManagement.VoiceController
   name: VoiceController
   href: api/ILib.Audio.SoundManagement.VoiceController.html
@@ -7550,6 +7782,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManager.EnableDucking
   nameWithType: SoundManager.EnableDucking
+- uid: ILib.Audio.SoundManager.ForceUpdateInEditor
+  name: ForceUpdateInEditor()
+  href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_ForceUpdateInEditor
+  commentId: M:ILib.Audio.SoundManager.ForceUpdateInEditor
+  fullName: ILib.Audio.SoundManager.ForceUpdateInEditor()
+  nameWithType: SoundManager.ForceUpdateInEditor()
+- uid: ILib.Audio.SoundManager.ForceUpdateInEditor*
+  name: ForceUpdateInEditor
+  href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_ForceUpdateInEditor_
+  commentId: Overload:ILib.Audio.SoundManager.ForceUpdateInEditor
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManager.ForceUpdateInEditor
+  nameWithType: SoundManager.ForceUpdateInEditor
 - uid: ILib.Audio.SoundManager.Initialize(ILib.Audio.SoundManagement.Config)
   name: Initialize(Config)
   href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_Initialize_ILib_Audio_SoundManagement_Config_
@@ -7563,6 +7808,19 @@ references:
   isSpec: "True"
   fullName: ILib.Audio.SoundManager.Initialize
   nameWithType: SoundManager.Initialize
+- uid: ILib.Audio.SoundManager.IsValid
+  name: IsValid()
+  href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_IsValid
+  commentId: M:ILib.Audio.SoundManager.IsValid
+  fullName: ILib.Audio.SoundManager.IsValid()
+  nameWithType: SoundManager.IsValid()
+- uid: ILib.Audio.SoundManager.IsValid*
+  name: IsValid
+  href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_IsValid_
+  commentId: Overload:ILib.Audio.SoundManager.IsValid
+  isSpec: "True"
+  fullName: ILib.Audio.SoundManager.IsValid
+  nameWithType: SoundManager.IsValid
 - uid: ILib.Audio.SoundManager.Mixer
   name: Mixer
   href: api/ILib.Audio.SoundManager.html#ILib_Audio_SoundManager_Mixer
@@ -8246,6 +8504,42 @@ references:
   fullName.vb: ILib.Audio.SoundProviderBase(Of T).PathConversion
   nameWithType: SoundProviderBase<T>.PathConversion
   nameWithType.vb: SoundProviderBase(Of T).PathConversion
+- uid: ILib.Audio.SoundProviderBase`1.ResourcesLoad(System.String,System.Action{ILib.Audio.SoundInfo,System.Exception})
+  name: ResourcesLoad(String, Action<SoundInfo, Exception>)
+  href: api/ILib.Audio.SoundProviderBase-1.html#ILib_Audio_SoundProviderBase_1_ResourcesLoad_System_String_System_Action_ILib_Audio_SoundInfo_System_Exception__
+  commentId: M:ILib.Audio.SoundProviderBase`1.ResourcesLoad(System.String,System.Action{ILib.Audio.SoundInfo,System.Exception})
+  name.vb: ResourcesLoad(String, Action(Of SoundInfo, Exception))
+  fullName: ILib.Audio.SoundProviderBase<T>.ResourcesLoad(System.String, System.Action<ILib.Audio.SoundInfo, System.Exception>)
+  fullName.vb: ILib.Audio.SoundProviderBase(Of T).ResourcesLoad(System.String, System.Action(Of ILib.Audio.SoundInfo, System.Exception))
+  nameWithType: SoundProviderBase<T>.ResourcesLoad(String, Action<SoundInfo, Exception>)
+  nameWithType.vb: SoundProviderBase(Of T).ResourcesLoad(String, Action(Of SoundInfo, Exception))
+- uid: ILib.Audio.SoundProviderBase`1.ResourcesLoad*
+  name: ResourcesLoad
+  href: api/ILib.Audio.SoundProviderBase-1.html#ILib_Audio_SoundProviderBase_1_ResourcesLoad_
+  commentId: Overload:ILib.Audio.SoundProviderBase`1.ResourcesLoad
+  isSpec: "True"
+  fullName: ILib.Audio.SoundProviderBase<T>.ResourcesLoad
+  fullName.vb: ILib.Audio.SoundProviderBase(Of T).ResourcesLoad
+  nameWithType: SoundProviderBase<T>.ResourcesLoad
+  nameWithType.vb: SoundProviderBase(Of T).ResourcesLoad
+- uid: ILib.Audio.SoundProviderBase`1.ResourcesLoadAsync(System.String,System.Action{ILib.Audio.SoundInfo,System.Exception})
+  name: ResourcesLoadAsync(String, Action<SoundInfo, Exception>)
+  href: api/ILib.Audio.SoundProviderBase-1.html#ILib_Audio_SoundProviderBase_1_ResourcesLoadAsync_System_String_System_Action_ILib_Audio_SoundInfo_System_Exception__
+  commentId: M:ILib.Audio.SoundProviderBase`1.ResourcesLoadAsync(System.String,System.Action{ILib.Audio.SoundInfo,System.Exception})
+  name.vb: ResourcesLoadAsync(String, Action(Of SoundInfo, Exception))
+  fullName: ILib.Audio.SoundProviderBase<T>.ResourcesLoadAsync(System.String, System.Action<ILib.Audio.SoundInfo, System.Exception>)
+  fullName.vb: ILib.Audio.SoundProviderBase(Of T).ResourcesLoadAsync(System.String, System.Action(Of ILib.Audio.SoundInfo, System.Exception))
+  nameWithType: SoundProviderBase<T>.ResourcesLoadAsync(String, Action<SoundInfo, Exception>)
+  nameWithType.vb: SoundProviderBase(Of T).ResourcesLoadAsync(String, Action(Of SoundInfo, Exception))
+- uid: ILib.Audio.SoundProviderBase`1.ResourcesLoadAsync*
+  name: ResourcesLoadAsync
+  href: api/ILib.Audio.SoundProviderBase-1.html#ILib_Audio_SoundProviderBase_1_ResourcesLoadAsync_
+  commentId: Overload:ILib.Audio.SoundProviderBase`1.ResourcesLoadAsync
+  isSpec: "True"
+  fullName: ILib.Audio.SoundProviderBase<T>.ResourcesLoadAsync
+  fullName.vb: ILib.Audio.SoundProviderBase(Of T).ResourcesLoadAsync
+  nameWithType: SoundProviderBase<T>.ResourcesLoadAsync
+  nameWithType.vb: SoundProviderBase(Of T).ResourcesLoadAsync
 - uid: ILib.Audio.SoundProviderBase`1.SetPathFormat(System.String)
   name: SetPathFormat(String)
   href: api/ILib.Audio.SoundProviderBase-1.html#ILib_Audio_SoundProviderBase_1_SetPathFormat_System_String_
@@ -19890,6 +20184,19 @@ references:
   commentId: T:ILib.MVVM.EventBroker
   fullName: ILib.MVVM.EventBroker
   nameWithType: EventBroker
+- uid: ILib.MVVM.EventBroker.GetAll
+  name: GetAll()
+  href: api/ILib.MVVM.EventBroker.html#ILib_MVVM_EventBroker_GetAll
+  commentId: M:ILib.MVVM.EventBroker.GetAll
+  fullName: ILib.MVVM.EventBroker.GetAll()
+  nameWithType: EventBroker.GetAll()
+- uid: ILib.MVVM.EventBroker.GetAll*
+  name: GetAll
+  href: api/ILib.MVVM.EventBroker.html#ILib_MVVM_EventBroker_GetAll_
+  commentId: Overload:ILib.MVVM.EventBroker.GetAll
+  isSpec: "True"
+  fullName: ILib.MVVM.EventBroker.GetAll
+  nameWithType: EventBroker.GetAll
 - uid: ILib.MVVM.EventBroker.ILib#MVVM#IViewEventDispatcher#Dispatch(System.String)
   name: IViewEventDispatcher.Dispatch(String)
   href: api/ILib.MVVM.EventBroker.html#ILib_MVVM_EventBroker_ILib_MVVM_IViewEventDispatcher_Dispatch_System_String_

@@ -26,7 +26,7 @@
       "dest": "api",
       "disableGitFeatures": false,
       "properties": {
-        "DefineConstants": "ILIB_DEBUG_MENU"
+        "DefineConstants": "ILIB_DEBUG_MENU;UNITY_EDITOR"
       }
     }
   ],

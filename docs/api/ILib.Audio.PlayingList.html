@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PlayingList
    | Yazawa Ichio Unity Package Document ">
-    <meta name="generator" content="docfx 2.45.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -104,6 +104,7 @@
   <h5 id="ILib_Audio_PlayingList_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;&quot;)]
+[ExecuteAlways]
 public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
@@ -139,7 +140,7 @@ public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L234">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L238">View Source</a>
   </span>
   <a id="ILib_Audio_PlayingList_Dispose_" data-uid="ILib.Audio.PlayingList.Dispose*"></a>
   <h4 id="ILib_Audio_PlayingList_Dispose" data-uid="ILib.Audio.PlayingList.Dispose">Dispose()</h4>
@@ -178,11 +179,23 @@ public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
       </tr>
     </tbody>
   </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L95">View Source</a>
+  </span>
+  <a id="ILib_Audio_PlayingList_Update_" data-uid="ILib.Audio.PlayingList.Update*"></a>
+  <h4 id="ILib_Audio_PlayingList_Update" data-uid="ILib.Audio.PlayingList.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L191">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L195">View Source</a>
   </span>
   <a id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_GetCount_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#GetCount*"></a>
   <h4 id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_GetCount_System_String_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#GetCount(System.String)">IPlayingList.GetCount(String)</h4>
@@ -226,7 +239,7 @@ public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L217">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L221">View Source</a>
   </span>
   <a id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_GetLastPlayStartTime_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#GetLastPlayStartTime*"></a>
   <h4 id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_GetLastPlayStartTime_System_String_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#GetLastPlayStartTime(System.String)">IPlayingList.GetLastPlayStartTime(String)</h4>
@@ -270,7 +283,7 @@ public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L205">View Source</a>
+    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L209">View Source</a>
   </span>
   <a id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_StopAll_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#StopAll*"></a>
   <h4 id="ILib_Audio_PlayingList_ILib_Audio_IPlayingList_StopAll_System_String_" data-uid="ILib.Audio.PlayingList.ILib#Audio#IPlayingList#StopAll(System.String)">IPlayingList.StopAll(String)</h4>
@@ -319,12 +332,13 @@ public class PlayingList : MonoBehaviour, IPlayingList, IDisposable</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/yazawa-ichio/ilib-sound-control/blob/master/Runtime/SoundPlayer/PlayControl/PlayingList.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
