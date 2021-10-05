@@ -1,5 +1,5 @@
 ifndef UNITY_APP
-	UNITY_APP="C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Unity.exe"
+	UNITY_APP="C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Unity.exe"
 endif
 
 doc-build: doc-metadata
