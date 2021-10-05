@@ -10,7 +10,7 @@ doc-metadata:
 	sh ./sync_doc.sh
 
 format: rebuild-project
-	cd Unity && dotnet-format -w Unity.sln
+	cd Unity && dotnet-format -w Unity.sln --exclude Library
 
 rebuild-project:
 	echo ${PWD}
