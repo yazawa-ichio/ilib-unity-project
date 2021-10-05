@@ -32683,6 +32683,61 @@ references:
   isSpec: "True"
   fullName: ILib.UI.AnimatorTransition.Show
   nameWithType: AnimatorTransition.Show
+- uid: ILib.UI.HideTransitionOption
+  name: HideTransitionOption
+  href: api/ILib.UI.HideTransitionOption.html
+  commentId: T:ILib.UI.HideTransitionOption
+  fullName: ILib.UI.HideTransitionOption
+  nameWithType: HideTransitionOption
+- uid: ILib.UI.HideTransitionOption.Deactivate
+  name: Deactivate
+  href: api/ILib.UI.HideTransitionOption.html#ILib_UI_HideTransitionOption_Deactivate
+  commentId: F:ILib.UI.HideTransitionOption.Deactivate
+  fullName: ILib.UI.HideTransitionOption.Deactivate
+  nameWithType: HideTransitionOption.Deactivate
+- uid: ILib.UI.HideTransitionOption.DeactivateOnly
+  name: DeactivateOnly
+  href: api/ILib.UI.HideTransitionOption.html#ILib_UI_HideTransitionOption_DeactivateOnly
+  commentId: F:ILib.UI.HideTransitionOption.DeactivateOnly
+  fullName: ILib.UI.HideTransitionOption.DeactivateOnly
+  nameWithType: HideTransitionOption.DeactivateOnly
+- uid: ILib.UI.HideTransitionOption.Default
+  name: Default
+  href: api/ILib.UI.HideTransitionOption.html#ILib_UI_HideTransitionOption_Default
+  commentId: F:ILib.UI.HideTransitionOption.Default
+  fullName: ILib.UI.HideTransitionOption.Default
+  nameWithType: HideTransitionOption.Default
+- uid: ILib.UI.HideTransitionOption.Disable
+  name: Disable
+  href: api/ILib.UI.HideTransitionOption.html#ILib_UI_HideTransitionOption_Disable
+  commentId: F:ILib.UI.HideTransitionOption.Disable
+  fullName: ILib.UI.HideTransitionOption.Disable
+  nameWithType: HideTransitionOption.Disable
+- uid: ILib.UI.HideTransitionOption.TransitionOnly
+  name: TransitionOnly
+  href: api/ILib.UI.HideTransitionOption.html#ILib_UI_HideTransitionOption_TransitionOnly
+  commentId: F:ILib.UI.HideTransitionOption.TransitionOnly
+  fullName: ILib.UI.HideTransitionOption.TransitionOnly
+  nameWithType: HideTransitionOption.TransitionOnly
+- uid: ILib.UI.IBehindTargetOption
+  name: IBehindTargetOption
+  href: api/ILib.UI.IBehindTargetOption.html
+  commentId: T:ILib.UI.IBehindTargetOption
+  fullName: ILib.UI.IBehindTargetOption
+  nameWithType: IBehindTargetOption
+- uid: ILib.UI.IBehindTargetOption.HideOption
+  name: HideOption
+  href: api/ILib.UI.IBehindTargetOption.html#ILib_UI_IBehindTargetOption_HideOption
+  commentId: P:ILib.UI.IBehindTargetOption.HideOption
+  fullName: ILib.UI.IBehindTargetOption.HideOption
+  nameWithType: IBehindTargetOption.HideOption
+- uid: ILib.UI.IBehindTargetOption.HideOption*
+  name: HideOption
+  href: api/ILib.UI.IBehindTargetOption.html#ILib_UI_IBehindTargetOption_HideOption_
+  commentId: Overload:ILib.UI.IBehindTargetOption.HideOption
+  isSpec: "True"
+  fullName: ILib.UI.IBehindTargetOption.HideOption
+  nameWithType: IBehindTargetOption.HideOption
 - uid: ILib.UI.IControl
   name: IControl
   href: api/ILib.UI.IControl.html
@@ -32715,12 +32770,12 @@ references:
   isSpec: "True"
   fullName: ILib.UI.IControl.IsDeactivateInBehind
   nameWithType: IControl.IsDeactivateInBehind
-- uid: ILib.UI.IControl.OnBehind
-  name: OnBehind()
-  href: api/ILib.UI.IControl.html#ILib_UI_IControl_OnBehind
-  commentId: M:ILib.UI.IControl.OnBehind
-  fullName: ILib.UI.IControl.OnBehind()
-  nameWithType: IControl.OnBehind()
+- uid: ILib.UI.IControl.OnBehind(System.Object)
+  name: OnBehind(Object)
+  href: api/ILib.UI.IControl.html#ILib_UI_IControl_OnBehind_System_Object_
+  commentId: M:ILib.UI.IControl.OnBehind(System.Object)
+  fullName: ILib.UI.IControl.OnBehind(System.Object)
+  nameWithType: IControl.OnBehind(Object)
 - uid: ILib.UI.IControl.OnBehind*
   name: OnBehind
   href: api/ILib.UI.IControl.html#ILib_UI_IControl_OnBehind_
@@ -33288,15 +33343,15 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).GetTransition
   nameWithType: UIControl<TParam>.GetTransition
   nameWithType.vb: UIControl(Of TParam).GetTransition
-- uid: ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind
-  name: IControl.OnBehind()
-  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_ILib_UI_IControl_OnBehind
-  commentId: M:ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind
-  name.vb: ILib.UI.IControl.OnBehind()
-  fullName: ILib.UI.UIControl<TParam>.ILib.UI.IControl.OnBehind()
-  fullName.vb: ILib.UI.UIControl(Of TParam).ILib.UI.IControl.OnBehind()
-  nameWithType: UIControl<TParam>.IControl.OnBehind()
-  nameWithType.vb: UIControl(Of TParam).ILib.UI.IControl.OnBehind()
+- uid: ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind(System.Object)
+  name: IControl.OnBehind(Object)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_ILib_UI_IControl_OnBehind_System_Object_
+  commentId: M:ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind(System.Object)
+  name.vb: ILib.UI.IControl.OnBehind(Object)
+  fullName: ILib.UI.UIControl<TParam>.ILib.UI.IControl.OnBehind(System.Object)
+  fullName.vb: ILib.UI.UIControl(Of TParam).ILib.UI.IControl.OnBehind(System.Object)
+  nameWithType: UIControl<TParam>.IControl.OnBehind(Object)
+  nameWithType.vb: UIControl(Of TParam).ILib.UI.IControl.OnBehind(Object)
 - uid: ILib.UI.UIControl`1.ILib#UI#IControl#OnBehind*
   name: IControl.OnBehind
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_ILib_UI_IControl_OnBehind_
@@ -33400,6 +33455,23 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).IsActive
   nameWithType: UIControl<TParam>.IsActive
   nameWithType.vb: UIControl(Of TParam).IsActive
+- uid: ILib.UI.UIControl`1.IsBehindDeactivate(ILib.UI.HideTransitionOption)
+  name: IsBehindDeactivate(HideTransitionOption)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_IsBehindDeactivate_ILib_UI_HideTransitionOption_
+  commentId: M:ILib.UI.UIControl`1.IsBehindDeactivate(ILib.UI.HideTransitionOption)
+  fullName: ILib.UI.UIControl<TParam>.IsBehindDeactivate(ILib.UI.HideTransitionOption)
+  fullName.vb: ILib.UI.UIControl(Of TParam).IsBehindDeactivate(ILib.UI.HideTransitionOption)
+  nameWithType: UIControl<TParam>.IsBehindDeactivate(HideTransitionOption)
+  nameWithType.vb: UIControl(Of TParam).IsBehindDeactivate(HideTransitionOption)
+- uid: ILib.UI.UIControl`1.IsBehindDeactivate*
+  name: IsBehindDeactivate
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_IsBehindDeactivate_
+  commentId: Overload:ILib.UI.UIControl`1.IsBehindDeactivate
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.IsBehindDeactivate
+  fullName.vb: ILib.UI.UIControl(Of TParam).IsBehindDeactivate
+  nameWithType: UIControl<TParam>.IsBehindDeactivate
+  nameWithType.vb: UIControl(Of TParam).IsBehindDeactivate
 - uid: ILib.UI.UIControl`1.IsDeactivateInBehind
   name: IsDeactivateInBehind
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_IsDeactivateInBehind
@@ -33451,14 +33523,14 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).OnBehind
   nameWithType: UIControl<TParam>.OnBehind
   nameWithType.vb: UIControl(Of TParam).OnBehind
-- uid: ILib.UI.UIControl`1.OnBehindTransition
-  name: OnBehindTransition()
-  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnBehindTransition
-  commentId: M:ILib.UI.UIControl`1.OnBehindTransition
-  fullName: ILib.UI.UIControl<TParam>.OnBehindTransition()
-  fullName.vb: ILib.UI.UIControl(Of TParam).OnBehindTransition()
-  nameWithType: UIControl<TParam>.OnBehindTransition()
-  nameWithType.vb: UIControl(Of TParam).OnBehindTransition()
+- uid: ILib.UI.UIControl`1.OnBehindTransition(ILib.UI.HideTransitionOption)
+  name: OnBehindTransition(HideTransitionOption)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnBehindTransition_ILib_UI_HideTransitionOption_
+  commentId: M:ILib.UI.UIControl`1.OnBehindTransition(ILib.UI.HideTransitionOption)
+  fullName: ILib.UI.UIControl<TParam>.OnBehindTransition(ILib.UI.HideTransitionOption)
+  fullName.vb: ILib.UI.UIControl(Of TParam).OnBehindTransition(ILib.UI.HideTransitionOption)
+  nameWithType: UIControl<TParam>.OnBehindTransition(HideTransitionOption)
+  nameWithType.vb: UIControl(Of TParam).OnBehindTransition(HideTransitionOption)
 - uid: ILib.UI.UIControl`1.OnBehindTransition*
   name: OnBehindTransition
   href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_OnBehindTransition_
@@ -33638,6 +33710,23 @@ references:
   fullName.vb: ILib.UI.UIControl(Of TParam).Transition
   nameWithType: UIControl<TParam>.Transition
   nameWithType.vb: UIControl(Of TParam).Transition
+- uid: ILib.UI.UIControl`1.UseHideTransition(ILib.UI.HideTransitionOption)
+  name: UseHideTransition(HideTransitionOption)
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_UseHideTransition_ILib_UI_HideTransitionOption_
+  commentId: M:ILib.UI.UIControl`1.UseHideTransition(ILib.UI.HideTransitionOption)
+  fullName: ILib.UI.UIControl<TParam>.UseHideTransition(ILib.UI.HideTransitionOption)
+  fullName.vb: ILib.UI.UIControl(Of TParam).UseHideTransition(ILib.UI.HideTransitionOption)
+  nameWithType: UIControl<TParam>.UseHideTransition(HideTransitionOption)
+  nameWithType.vb: UIControl(Of TParam).UseHideTransition(HideTransitionOption)
+- uid: ILib.UI.UIControl`1.UseHideTransition*
+  name: UseHideTransition
+  href: api/ILib.UI.UIControl-1.html#ILib_UI_UIControl_1_UseHideTransition_
+  commentId: Overload:ILib.UI.UIControl`1.UseHideTransition
+  isSpec: "True"
+  fullName: ILib.UI.UIControl<TParam>.UseHideTransition
+  fullName.vb: ILib.UI.UIControl(Of TParam).UseHideTransition
+  nameWithType: UIControl<TParam>.UseHideTransition
+  nameWithType.vb: UIControl(Of TParam).UseHideTransition
 - uid: ILib.UI.UIController`2
   name: UIController<TParam, UControl>
   href: api/ILib.UI.UIController-2.html
