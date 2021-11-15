@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Audio;
-using ILib.Debugs;
+﻿using ILib.Debugs;
 using ILib.Debugs.AutoRegisters;
+using UnityEngine;
 
 namespace ILib.Audio.Sample
 {
@@ -84,6 +81,20 @@ namespace ILib.Audio.Sample
 			SoundManager.Voice.Play("test1");
 		}
 
+		[DebugButton("SetVolume")]
+		void SetVolume()
+		{
+			SoundManager.BgmVolume = 0.1f;
+		}
+
+
+		float m_BgmVolume = 1f;
+		[DebugSlider("BgmVolume")]
+		public float BgmVolume
+		{
+			get => m_BgmVolume;
+			set => m_BgmVolume = SoundManager.BgmVolume = value;
+		}
 	}
 
 }

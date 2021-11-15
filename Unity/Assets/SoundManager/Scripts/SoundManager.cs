@@ -90,7 +90,7 @@ namespace ILib.Audio
 		}
 
 
-		static MixerParamTweener GetTweener(string param, System.Func<float, float> func)
+		static MixerParamTweener GetTweener(string param, System.Func<float, float> inverseConv, System.Func<float, float> conv)
 		{
 			foreach (var t in s_ParamTweener)
 			{
@@ -101,8 +101,8 @@ namespace ILib.Audio
 			}
 			float val;
 			Mixer.GetFloat(param, out val);
-			val = func(val);
-			var tweener = new MixerParamTweener(Mixer, param, val, x => SoundUtil.VolumeToDecibel(x));
+			val = inverseConv(val);
+			var tweener = new MixerParamTweener(Mixer, param, val, conv);
 			s_ParamTweener.Add(tweener);
 			return tweener;
 		}
@@ -114,7 +114,7 @@ namespace ILib.Audio
 				Debug.Assert(false, "未初期化です");
 				return;
 			}
-			MixerParamTweener tweener = GetTweener(param, x => SoundUtil.VolumeToDecibel(x));
+			MixerParamTweener tweener = GetTweener(param, x => SoundUtil.DecibelToVolume(x), x => SoundUtil.VolumeToDecibel(x));
 			tweener.Start(value, time);
 			if (s_TweenCoroutine == null)
 			{
@@ -129,7 +129,7 @@ namespace ILib.Audio
 				Debug.Assert(false, "未初期化です");
 				return;
 			}
-			MixerParamTweener tweener = GetTweener(param, x => SoundUtil.VolumeToDecibel(x));
+			MixerParamTweener tweener = GetTweener(param, x => x, x => x);
 			tweener.Start(value, time);
 			if (s_TweenCoroutine == null)
 			{
